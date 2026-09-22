@@ -1,0 +1,104 @@
+{
+  "benchmark": "evermem",
+  "baseline": "hipporag",
+  "overall": {
+    "accuracy": 0.48,
+    "correct": 1152,
+    "incorrect": 1248,
+    "unclear": 0,
+    "total": 2400,
+    "unclear_rate": 0,
+    "em": 0.1121,
+    "f1": 0.185,
+    "attribution_acc": 0.2338,
+    "attribution_n": 1073
+  },
+  "per_category": {
+    "multiple_choice": {
+      "accuracy": 0.6294,
+      "correct": 1031,
+      "incorrect": 607,
+      "unclear": 0,
+      "total": 1638,
+      "unclear_rate": 0,
+      "em": 0.1233,
+      "f1": 0.1855,
+      "attribution_acc": 0.2249,
+      "attribution_n": 1013
+    },
+    "open_ended": {
+      "accuracy": 0.1588,
+      "correct": 121,
+      "incorrect": 641,
+      "unclear": 0,
+      "total": 762,
+      "unclear_rate": 0,
+      "em": 0.0879,
+      "f1": 0.1839,
+      "attribution_acc": 0.3833,
+      "attribution_n": 60
+    }
+  },
+  "per_unit": {
+    "01": {
+      "accuracy": 0.4693,
+      "correct": 229,
+      "incorrect": 259,
+      "unclear": 0,
+      "total": 488,
+      "unclear_rate": 0,
+      "em": 0.123,
+      "f1": 0.1994,
+      "attribution_acc": 0.261,
+      "attribution_n": 212
+    },
+    "02": {
+      "accuracy": 0.4841,
+      "correct": 228,
+      "incorrect": 243,
+      "unclear": 0,
+      "total": 471,
+      "unclear_rate": 0,
+      "em": 0.1104,
+      "f1": 0.1832,
+      "attribution_acc": 0.2156,
+      "attribution_n": 218
+    },
+    "03": {
+      "accuracy": 0.4925,
+      "correct": 230,
+      "incorrect": 237,
+      "unclear": 0,
+      "total": 467,
+      "unclear_rate": 0,
+      "em": 0.1006,
+      "f1": 0.1849,
+      "attribution_acc": 0.252,
+      "attribution_n": 213
+    },
+    "04": {
+      "accuracy": 0.4595,
+      "correct": 221,
+      "incorrect": 260,
+      "unclear": 0,
+      "total": 481,
+      "unclear_rate": 0,
+      "em": 0.1289,
+      "f1": 0.2058,
+      "attribution_acc": 0.2825,
+      "attribution_n": 210
+    },
+    "05": {
+      "accuracy": 0.4949,
+      "correct": 244,
+      "incorrect": 249,
+      "unclear": 0,
+      "total": 493,
+      "unclear_rate": 0,
+      "em": 0.0974,
+      "f1": 0.1522,
+      "attribution_acc": 0.1614,
+      "attribution_n": 220
+    }
+  }
+}

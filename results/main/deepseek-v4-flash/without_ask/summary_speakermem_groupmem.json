@@ -1,0 +1,98 @@
+{
+  "Finance/multi_hop": {
+    "correct": 27,
+    "total": 48
+  },
+  "Finance/knowledge_update": {
+    "correct": 14,
+    "total": 32
+  },
+  "Finance/term_ambiguity": {
+    "correct": 24,
+    "total": 45
+  },
+  "Finance/user_implicit": {
+    "correct": 7,
+    "total": 15
+  },
+  "Finance/temporal": {
+    "correct": 27,
+    "total": 45
+  },
+  "Finance/abstention": {
+    "correct": 15,
+    "total": 29
+  },
+  "Technology/multi_hop": {
+    "correct": 14,
+    "total": 41
+  },
+  "Technology/knowledge_update": {
+    "correct": 13,
+    "total": 36
+  },
+  "Technology/term_ambiguity": {
+    "correct": 8,
+    "total": 43
+  },
+  "Technology/user_implicit": {
+    "correct": 13,
+    "total": 28
+  },
+  "Technology/temporal": {
+    "correct": 15,
+    "total": 37
+  },
+  "Technology/abstention": {
+    "correct": 23,
+    "total": 28
+  },
+  "Healthcare/multi_hop": {
+    "correct": 17,
+    "total": 48
+  },
+  "Healthcare/knowledge_update": {
+    "correct": 4,
+    "total": 17
+  },
+  "Healthcare/term_ambiguity": {
+    "correct": 2,
+    "total": 7
+  },
+  "Healthcare/user_implicit": {
+    "correct": 2,
+    "total": 2
+  },
+  "Healthcare/temporal": {
+    "correct": 14,
+    "total": 37
+  },
+  "Healthcare/abstention": {
+    "correct": 29,
+    "total": 34
+  },
+  "Manufacturing/multi_hop": {
+    "correct": 16,
+    "total": 45
+  },
+  "Manufacturing/knowledge_update": {
+    "correct": 5,
+    "total": 22
+  },
+  "Manufacturing/term_ambiguity": {
+    "correct": 5,
+    "total": 11
+  },
+  "Manufacturing/user_implicit": {
+    "correct": 0,
+    "total": 4
+  },
+  "Manufacturing/temporal": {
+    "correct": 24,
+    "total": 43
+  },
+  "Manufacturing/abstention": {
+    "correct": 32,
+    "total": 48
+  }
+}

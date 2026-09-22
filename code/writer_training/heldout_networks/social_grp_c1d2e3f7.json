@@ -1,0 +1,3408 @@
+{
+  "schema": "socialmembench-real-v4-source/1",
+  "scenario": "[socialmembench:grp_c1d2e3f7] real benchmark conversation",
+  "speakers": [
+    "Ana",
+    "Beatrix",
+    "Bernard",
+    "Chloe",
+    "Cyrus",
+    "Derek",
+    "Fatima",
+    "Greg",
+    "Helen",
+    "Iris",
+    "Kasper",
+    "Lionel",
+    "Marcus",
+    "Owen",
+    "Priya",
+    "Ravi",
+    "Sonia",
+    "Tasha",
+    "Theo",
+    "Yuki"
+  ],
+  "sessions": [
+    {
+      "session_id": "grp_c1d2e3f7_s01",
+      "session_index": 1,
+      "topic": "Planning the Cascade Ridge race weekend; group introductions and logistics",
+      "ts": "2026-02-02",
+      "turns": [
+        {
+          "turn": "grp_c1d2e3f7_s01_t000",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "evening crew. kicking off planning for the Cascade Ridge weekend in May, want to lock in a course choice by month end. anyone done the south rim variant recently?",
+          "ts": "2026-02-02T19:02:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t001",
+          "speaker": "Priya",
+          "speaker_id": "p_ct02b002",
+          "content": "hi all!! just back from a slow run with some new neighbors, super hyped for this 🌲 @Iris are you in this year?",
+          "ts": "2026-02-02T19:05:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t002",
+          "speaker": "Iris",
+          "speaker_id": "p_ct16d016",
+          "content": "literally yes, but i am NOT racing it omg. just here for the birds. the south rim has those western tanagers nesting if anyone cares 🦉",
+          "ts": "2026-02-02T19:08:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t003",
+          "speaker": "Greg",
+          "speaker_id": "p_ct05e005",
+          "content": "in",
+          "ts": "2026-02-02T19:09:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t004",
+          "speaker": "Lionel",
+          "speaker_id": "p_ct07a007",
+          "content": "Friends, glad to see this thread go up early; logistics in May always slip if we delay. Marcus, are you thinking weekend of the 16th or the 23rd? I will need to coordinate with my grandson visiting that month.",
+          "ts": "2026-02-02T19:12:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t005",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "leaning the 16th, Lionel. and I will say plainly: I am not running anything that starts before 6am this year. last year's 5:30am gun start wrecked me for two days.",
+          "ts": "2026-02-02T19:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t006",
+          "speaker": "Ana",
+          "speaker_id": "p_ct18f018",
+          "content": "Marcus, I can confirm the 16th works for the school calendar; the 23rd is the AP testing weekend. As your cousin I will also gently say you have been complaining about early starts since we were teenagers, so this is not new information. Tagging start time conversation: 7-8am gun would be ideal.",
+          "ts": "2026-02-02T19:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t007",
+          "speaker": "Sonia",
+          "speaker_id": "p_ct12f012",
+          "content": "@Marcus @Ana yes please 7am minimum 🥂 also can we PLEASE do the post-race dinner at Cyrus's bistro this year?? last year's potluck in the parking lot was sad. I will handle the whole thing if y'all just commit. the more bodies at the table the better 🍷",
+          "ts": "2026-02-02T19:20:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t008",
+          "speaker": "Cyrus",
+          "speaker_id": "p_ct20b020",
+          "content": "Team, the bistro is yours that Saturday, no charge for the room. One condition: nothing pre-packaged on the table, that includes the gels you all stash in your packs. I will plate something proper for everyone who comes off the course.",
+          "ts": "2026-02-02T19:23:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t009",
+          "speaker": "Lionel",
+          "speaker_id": "p_ct07a007",
+          "content": "Cyrus, one request from the older flank: an earl grey option in the morning service the day after, not coffee. I refuse to start a recovery day with espresso; never have, never will.",
+          "ts": "2026-02-02T19:26:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t010",
+          "speaker": "Greg",
+          "speaker_id": "p_ct05e005",
+          "content": "earl grey for Lionel got it",
+          "ts": "2026-02-02T19:28:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t011",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "ok so 16th, 7am gun, post dinner at Cyrus's. who is in for the south rim variant vs the loop? @Derek you have done both, what's your read?",
+          "ts": "2026-02-02T19:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t012",
+          "speaker": "Derek",
+          "speaker_id": "p_ct03c003",
+          "content": "fwiw the south rim is the better course if the group can handle 1100m of vertical in the back half. its where the real test is. i could do it half asleep but newer folks should know what they are signing up for. honestly i would just run by feel that day, no watch needed, the trail tells you the pace.",
+          "ts": "2026-02-02T19:33:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t013",
+          "speaker": "Chloe",
+          "speaker_id": "p_ct08b008",
+          "content": "south rim is the answer. only course worth showing up for. I'll be running it 🔥 also fwiw I don't really see the point of these recreational versions, but the south rim at least is competitive enough",
+          "ts": "2026-02-02T19:36:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t014",
+          "speaker": "Tasha",
+          "speaker_id": "p_ct10d010",
+          "content": "south rim sounds great, Banjo will sit it out and I will too if that's the plan, dog-friendly leg only for me. how's everyone holding up after that cold snap last week btw?",
+          "ts": "2026-02-02T19:38:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t015",
+          "speaker": "Bernard",
+          "speaker_id": "p_ct09c009",
+          "content": "One observation: if we are running south rim, the permit cap is 25 starters, and one will need to register the group two weeks in advance. I will handle the paperwork, but I want a final headcount by the end of February.",
+          "ts": "2026-02-02T19:40:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t016",
+          "speaker": "Yuki",
+          "speaker_id": "p_ct06f006",
+          "content": "im in for the dinner ✨ but probably not the race, may already booked for a multi-pitch trip with Helen ❤️",
+          "ts": "2026-02-02T19:42:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t017",
+          "speaker": "Helen",
+          "speaker_id": "p_ct14b014",
+          "content": "yeah Yuki and i have devil's spire on the books for the 17th, sorry to skip. would actually swap a south rim entry for that route any day, sport vs trad mindset i guess",
+          "ts": "2026-02-02T19:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t018",
+          "speaker": "Bernard",
+          "speaker_id": "p_ct09c009",
+          "content": "Noted, Helen. One does hope your spire weather window holds; the forecast models for that ridge are notoriously unreliable.",
+          "ts": "2026-02-02T19:47:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t019",
+          "speaker": "Fatima",
+          "speaker_id": "p_ct04d004",
+          "content": "Question for the group: should the unofficial multi-day in early June still happen the week after the race? I would prefer to plan it now rather than tack it on. Three nights, Olympic peninsula loop. Single-day races have never been my thing, you all know that.",
+          "ts": "2026-02-02T19:49:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t020",
+          "speaker": "Owen",
+          "speaker_id": "p_ct11e011",
+          "content": "Olympic loop sounds right. Foraging window opens late may. Will scout ahead.",
+          "ts": "2026-02-02T19:52:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t021",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "great. Greg and I will shuttle the south rim cars from the start to the finish lot, that's our usual arrangement, two doors down so we just convoy from my driveway. anyone need a ride?",
+          "ts": "2026-02-02T19:54:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t022",
+          "speaker": "Beatrix",
+          "speaker_id": "p_ct19a019",
+          "content": "I notice that we have not heard from Theo on this thread; is he still on fire-prep this month? Just wanted to check before we lock the date.",
+          "ts": "2026-02-02T19:56:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t023",
+          "speaker": "Theo",
+          "speaker_id": "p_ct17e017",
+          "content": "Copy. Available May 16. Will haul the gear truck. No race, support only.",
+          "ts": "2026-02-02T19:58:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t024",
+          "speaker": "Kasper",
+          "speaker_id": "p_ct15c015",
+          "content": "ill bring the bikes for sag, can carry tools and water no prob lol. just dont ask me to actually run",
+          "ts": "2026-02-02T20:01:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t025",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "perfect crew turnout. weather model says cooling pattern through mid Feb, so plan accordingly for the saturday training runs. anyone questions on logistics?",
+          "ts": "2026-02-02T20:03:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s01_t026",
+          "speaker": "Priya",
+          "speaker_id": "p_ct02b002",
+          "content": "no qs, just hyped 🌲☀️",
+          "ts": "2026-02-02T20:05:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_c1d2e3f7_s02",
+      "session_index": 2,
+      "topic": "Saturday training run debrief and trip nutrition discussion",
+      "ts": "2026-02-09",
+      "turns": [
+        {
+          "turn": "grp_c1d2e3f7_s02_t000",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "good run today crew, beautiful conditions. quick debrief: 14 miles on the foothills loop, slight ice on the north switchbacks. anyone have foot issues to flag?",
+          "ts": "2026-02-09T18:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s02_t001",
+          "speaker": "Chloe",
+          "speaker_id": "p_ct08b008",
+          "content": "no issues, was AT pace the whole time. 7:45 average on the climbs 🔥 dropped a strava link in the side group",
+          "ts": "2026-02-09T18:33:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s02_t002",
+          "speaker": "Greg",
+          "speaker_id": "p_ct05e005",
+          "content": "good day. legs fine",
+          "ts": "2026-02-09T18:34:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s02_t003",
+          "speaker": "Priya",
+          "speaker_id": "p_ct02b002",
+          "content": "honestly that ice patch was scarier than i'd admit but it was beautiful in the trees today!! who's in for next saturday? @Tasha you bringing Banjo back?",
+          "ts": "2026-02-09T18:36:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s02_t004",
+          "speaker": "Tasha",
+          "speaker_id": "p_ct10d010",
+          "content": "yes!! Banjo missed it last week. also flagging, Priya we need to do that breakfast plan, because the camp coffee thing wasn't great for you last time. you don't do dairy at trail breakfasts, right? saw you wave off the oatmeal.",
+          "ts": "2026-02-09T18:38:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s02_t005",
+          "speaker": "Priya",
+          "speaker_id": "p_ct02b002",
+          "content": "you're a saint Tasha 🙏 yes oat milk only please, that group oatmeal had butter in it last time and my stomach hated me for hours 😭",
+          "ts": "2026-02-09T18:40:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s02_t006",
+          "speaker": "Tasha",
+          "speaker_id": "p_ct10d010",
+          "content": "noted, will pack accordingly. how's everyone holding up after the early start? <3",
+          "ts": "2026-02-09T18:41:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s02_t007",
+          "speaker": "Derek",
+          "speaker_id": "p_ct03c003",
+          "content": "ran by feel today, no watch, came in around the same time as last month. data is overrated, fwiw the body knows. i pulled my old training log out, was running 90 mile weeks back then, same paces. zone-by-feel works.",
+          "ts": "2026-02-09T18:44:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s02_t008",
+          "speaker": "Chloe",
+          "speaker_id": "p_ct08b008",
+          "content": "you're WRONG about that Derek but ok 🔥 I had my hr in z3 90% of the run, my watch knew exactly what I was doing",
+          "ts": "2026-02-09T18:47:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s02_t009",
+          "speaker": "Derek",
+          "speaker_id": "p_ct03c003",
+          "content": "haha ok ok. cite me one peer reviewed paper that shows recreational runners benefit from continuous hr tracking and i'll concede.",
+          "ts": "2026-02-09T18:49:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s02_t010",
+          "speaker": "Fatima",
+          "speaker_id": "p_ct04d004",
+          "content": "Different topic: what is the food plan for the first night of the Olympic loop? I am thinking freeze-dried for everyone, simple, no cleanup. Owen, you good with that?",
+          "ts": "2026-02-09T18:52:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s02_t011",
+          "speaker": "Owen",
+          "speaker_id": "p_ct11e011",
+          "content": "Freeze dried fine. Will bring chanterelles for night two if the rain holds.",
+          "ts": "2026-02-09T18:54:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s02_t012",
+          "speaker": "Cyrus",
+          "speaker_id": "p_ct20b020",
+          "content": "Team, hard disagree on the freeze-dried. One does not haul packets for a three-day trip when fresh ingredients last 36 hours easily. I can pre-portion the first night, pasta with vegetables and a hard cheese. It travels.",
+          "ts": "2026-02-09T18:56:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s02_t013",
+          "speaker": "Fatima",
+          "speaker_id": "p_ct04d004",
+          "content": "Cyrus, fresh ingredients add three pounds per pack. The freeze-dried is the right tool. I am not running a kitchen on a 60-mile loop.",
+          "ts": "2026-02-09T18:58:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s02_t014",
+          "speaker": "Sonia",
+          "speaker_id": "p_ct12f012",
+          "content": "ok well I am bringing wine regardless, that is non-negotiable 🥂 @Cyrus and I will figure out the food question separately as a SUBCOMMITTEE because we cannot solve it on this thread",
+          "ts": "2026-02-09T19:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s02_t015",
+          "speaker": "Bernard",
+          "speaker_id": "p_ct09c009",
+          "content": "One question: who has the up-to-date emergency contact list for the Olympic trip? I revised the format last fall and would like one master copy.",
+          "ts": "2026-02-09T19:02:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s02_t016",
+          "speaker": "Beatrix",
+          "speaker_id": "p_ct19a019",
+          "content": "I notice that the last two trip threads have collapsed into the food debate within twenty turns. Just naming it. Carry on.",
+          "ts": "2026-02-09T19:05:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s02_t017",
+          "speaker": "Iris",
+          "speaker_id": "p_ct16d016",
+          "content": "haha Beatrix you are SO right. literally every time. i made vegan trail granola again btw, will bring a big batch saturday for whoever wants. omg the smell when toasting it 😂",
+          "ts": "2026-02-09T19:07:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s02_t018",
+          "speaker": "Lionel",
+          "speaker_id": "p_ct07a007",
+          "content": "Iris, I will gladly take a portion if any remains; your granola is one of the best things to come into this collective in years. Friends, on a separate note, I want to flag that the new moon falls on the second night of the May trip; ideal viewing conditions.",
+          "ts": "2026-02-09T19:09:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s02_t019",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "ok wrapping the debrief. Cascade Ridge headcount stands at 9 racers, 4 support. anyone else jumping in? whats the weather plan look like for next weekend, models say warming trend?",
+          "ts": "2026-02-09T19:12:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s02_t020",
+          "speaker": "Helen",
+          "speaker_id": "p_ct14b014",
+          "content": "i'm out next sat, geology field thing in the cascades. rad rocks involved. won't be back til sunday night.",
+          "ts": "2026-02-09T19:14:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s02_t021",
+          "speaker": "Yuki",
+          "speaker_id": "p_ct06f006",
+          "content": "i'm climbing with Helen sunday but free saturday ✨ will be at the foothills run",
+          "ts": "2026-02-09T19:16:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s02_t022",
+          "speaker": "Ravi",
+          "speaker_id": "p_ct13a013",
+          "content": "in for saturday. fine.",
+          "ts": "2026-02-09T19:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s02_t023",
+          "speaker": "Kasper",
+          "speaker_id": "p_ct15c015",
+          "content": "ill bring my mtb saturday, can do the parralel fire road if anyones interested in a slower pace ride 🚴",
+          "ts": "2026-02-09T19:20:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s02_t024",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "thanks crew. saturday 8am at the trailhead, weather looks ok. have a good week everyone.",
+          "ts": "2026-02-09T19:22:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_c1d2e3f7_s03",
+      "session_index": 3,
+      "topic": "Picking the May multi-day backpacking destination",
+      "ts": "2026-02-16",
+      "turns": [
+        {
+          "turn": "grp_c1d2e3f7_s03_t000",
+          "speaker": "Fatima",
+          "speaker_id": "p_ct04d004",
+          "content": "Picking up the multi-day question. Olympic loop is my proposal: 3 nights, 60 miles, low-tide window starts May 28. Alternative is the Wonderland half, but it's a logistical nightmare with the permits.",
+          "ts": "2026-02-16T20:14:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s03_t001",
+          "speaker": "Owen",
+          "speaker_id": "p_ct11e011",
+          "content": "Olympic loop. Done it twice. Foraging good in late may. Beach section is hard but worth it.",
+          "ts": "2026-02-16T20:16:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s03_t002",
+          "speaker": "Fatima",
+          "speaker_id": "p_ct04d004",
+          "content": "Owen and I have done this loop twice together; we know the campsite spacing. New folks should be comfortable with 18-mile days. List of must-pack items going up tomorrow.",
+          "ts": "2026-02-16T20:17:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s03_t003",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "looks great Fatima. crew, who's interested? I'll be there. Greg, you in? we can split the shuttle again",
+          "ts": "2026-02-16T20:20:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s03_t004",
+          "speaker": "Greg",
+          "speaker_id": "p_ct05e005",
+          "content": "in. drive both ways",
+          "ts": "2026-02-16T20:21:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s03_t005",
+          "speaker": "Sonia",
+          "speaker_id": "p_ct12f012",
+          "content": "i love the idea but 18 mile days are not my speed, sorry team. I'd love to be at base camp the last night though if there's any way to coordinate that 🥂🍷 happy to bring the wine and host a proper dinner the night y'all come in",
+          "ts": "2026-02-16T20:23:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s03_t006",
+          "speaker": "Ana",
+          "speaker_id": "p_ct18f018",
+          "content": "Regrettably, school commitments make a 4-day commitment unfeasible for me in late May. I will plan to be at the welcome dinner if scheduling allows.",
+          "ts": "2026-02-16T20:25:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s03_t007",
+          "speaker": "Lionel",
+          "speaker_id": "p_ct07a007",
+          "content": "Friends, I would like to commit to the loop if my hip cooperates; I have been doing the morning yoga routine Beatrix recommended and it has helped considerably. The new moon viewing on night two is a strong draw.",
+          "ts": "2026-02-16T20:27:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s03_t008",
+          "speaker": "Beatrix",
+          "speaker_id": "p_ct19a019",
+          "content": "Glad to hear it Lionel. I am going to defer the multi-day this year, but I will join the welcome dinner. The longer hikes have not been kind to my knee since the surgery.",
+          "ts": "2026-02-16T20:29:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s03_t009",
+          "speaker": "Cyrus",
+          "speaker_id": "p_ct20b020",
+          "content": "Team, consider me for the last night dinner. Real food, no packets. I will arrive separately.",
+          "ts": "2026-02-16T20:31:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s03_t010",
+          "speaker": "Iris",
+          "speaker_id": "p_ct16d016",
+          "content": "i want to do it!! omg 60 miles is so far but i think i could?? i want to bring my bird book and the foraging notes from owen. could i tag along even if i'm slower at the back?",
+          "ts": "2026-02-16T20:33:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s03_t011",
+          "speaker": "Owen",
+          "speaker_id": "p_ct11e011",
+          "content": "Back of pack fine. Will stay back with you on day one if you want.",
+          "ts": "2026-02-16T20:35:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s03_t012",
+          "speaker": "Tasha",
+          "speaker_id": "p_ct10d010",
+          "content": "i'm in, leaving Banjo home this time, the beach section is too rough for him. <3 also im bringing extra trail bars for whoever is running low, you all know me",
+          "ts": "2026-02-16T20:37:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s03_t013",
+          "speaker": "Chloe",
+          "speaker_id": "p_ct08b008",
+          "content": "ill be there, will use it as taper before my next race. easy 60 miles 🔥",
+          "ts": "2026-02-16T20:39:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s03_t014",
+          "speaker": "Derek",
+          "speaker_id": "p_ct03c003",
+          "content": "sounds good. fwiw i'll bring my own electrolyte mix, you all know my system, I won't eat solid food in the last hour before a long day. just leaving that on the record so no one is offended when I skip the group breakfast on day three.",
+          "ts": "2026-02-16T20:41:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s03_t015",
+          "speaker": "Fatima",
+          "speaker_id": "p_ct04d004",
+          "content": "Derek, noted on the breakfast. Counting heads: Marcus, Greg, Owen, Lionel, Tasha, Chloe, Derek, Iris, me. That's nine. Last call?",
+          "ts": "2026-02-16T20:44:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s03_t016",
+          "speaker": "Helen",
+          "speaker_id": "p_ct14b014",
+          "content": "i'll skip, climbing trip with Yuki that weekend probably. but you all should ABSOLUTELY get the wonderland section even though its harder, the metamorphic geology there is unreal",
+          "ts": "2026-02-16T20:46:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s03_t017",
+          "speaker": "Yuki",
+          "speaker_id": "p_ct06f006",
+          "content": "yeah we have the spire follow-up booked... probably ✨",
+          "ts": "2026-02-16T20:48:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s03_t018",
+          "speaker": "Bernard",
+          "speaker_id": "p_ct09c009",
+          "content": "I will not be joining the multi-day. The pack weight involved is incompatible with my back, regrettably. One can imagine I will handle the permit paperwork from home.",
+          "ts": "2026-02-16T20:50:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s03_t019",
+          "speaker": "Ravi",
+          "speaker_id": "p_ct13a013",
+          "content": "i'll come for two nights, leaving early sunday. ER on call.",
+          "ts": "2026-02-16T20:52:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s03_t020",
+          "speaker": "Fatima",
+          "speaker_id": "p_ct04d004",
+          "content": "Ten total. Headcount locked. Permits in by next Friday. Item list:\n- bear can\n- 2L water\n- rain shell\n- sturdy boots or trail runners\n- headlamp\nAny questions, message me direct.",
+          "ts": "2026-02-16T20:54:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s03_t021",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "any final qs before we close out? weather is way out but typical late may is mild, models say warming trend through mid-month.",
+          "ts": "2026-02-16T20:57:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s03_t022",
+          "speaker": "Priya",
+          "speaker_id": "p_ct02b002",
+          "content": "no qs!! 🌲 super excited for this, my first multi day with the group ✨",
+          "ts": "2026-02-16T20:59:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s03_t023",
+          "speaker": "Owen",
+          "speaker_id": "p_ct11e011",
+          "content": "Fatima list good. Will add foraging gear separately.",
+          "ts": "2026-02-16T21:01:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s03_t024",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "great. closing out the thread. cascade ridge race weekend logistics will go up next week.",
+          "ts": "2026-02-16T21:03:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_c1d2e3f7_s04",
+      "session_index": 4,
+      "topic": "Chloe's Bighorn 100 lottery announcement and climbing partner shifts",
+      "ts": "2026-02-23",
+      "turns": [
+        {
+          "turn": "grp_c1d2e3f7_s04_t000",
+          "speaker": "Chloe",
+          "speaker_id": "p_ct08b008",
+          "content": "OK CREW. NOT TO BURY THE LEAD BUT I JUST GOT THE BIGHORN 100 LOTTERY 🔥🔥🔥. June 19. one hundred miles. pacers needed. who's in??",
+          "ts": "2026-02-23T12:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s04_t001",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "no way, congrats Chloe! that is a big one. crew, anyone available to pace?",
+          "ts": "2026-02-23T12:33:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s04_t002",
+          "speaker": "Priya",
+          "speaker_id": "p_ct02b002",
+          "content": "OMG CHLOE!! 🌲🔥 i can pace a 10-mile section but no more, my legs aren't there yet",
+          "ts": "2026-02-23T12:35:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s04_t003",
+          "speaker": "Tasha",
+          "speaker_id": "p_ct10d010",
+          "content": "huge!! amazing news <3 i can crew at the aid stations, banjo and i will be there",
+          "ts": "2026-02-23T12:36:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s04_t004",
+          "speaker": "Derek",
+          "speaker_id": "p_ct03c003",
+          "content": "good lottery pull. fwiw 100 miles is a different beast than the 50k. polarized training is the move now, low intensity for the long stuff. i ran my best 100 on a low volume polarized block, the literature backs it.",
+          "ts": "2026-02-23T12:39:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s04_t005",
+          "speaker": "Chloe",
+          "speaker_id": "p_ct08b008",
+          "content": "I'll think about it Derek but I'm not changing my whole block 4 months out, that's nuts",
+          "ts": "2026-02-23T12:41:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s04_t006",
+          "speaker": "Helen",
+          "speaker_id": "p_ct14b014",
+          "content": "congrats Chloe, that's rad. on a different note, since we're all here, Yuki and i are going to be doing devil's spire on the may 17 weekend. heads up to bernard since i know we usually go together, but yuki's been climbing every weekend with me and the chemistry is just better right now. it's a partner-fit thing.",
+          "ts": "2026-02-23T12:44:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s04_t007",
+          "speaker": "Bernard",
+          "speaker_id": "p_ct09c009",
+          "content": "Helen, I have read the message. One does appreciate the heads-up. I will direct any questions about the spire route, including anchor placement and bail points, to you separately, given the route's history.",
+          "ts": "2026-02-23T12:47:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s04_t008",
+          "speaker": "Yuki",
+          "speaker_id": "p_ct06f006",
+          "content": "thanks Helen for the spot ✨ um Bernard if you want to come along we have an extra harness, the route is super doable...",
+          "ts": "2026-02-23T12:50:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s04_t009",
+          "speaker": "Bernard",
+          "speaker_id": "p_ct09c009",
+          "content": "Thank you, Yuki. I will likely pass.",
+          "ts": "2026-02-23T12:52:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s04_t010",
+          "speaker": "Beatrix",
+          "speaker_id": "p_ct19a019",
+          "content": "I notice the temperature in the room, just naming it. Helen, the partner-fit phrase landed differently than perhaps intended. Bernard, your dignity in this is appreciated.",
+          "ts": "2026-02-23T12:55:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s04_t011",
+          "speaker": "Helen",
+          "speaker_id": "p_ct14b014",
+          "content": "fair point Beatrix. Bernard, didn't mean to make it weird in the group chat. we should grab coffee.",
+          "ts": "2026-02-23T12:57:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s04_t012",
+          "speaker": "Bernard",
+          "speaker_id": "p_ct09c009",
+          "content": "Coffee is fine.",
+          "ts": "2026-02-23T12:59:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s04_t013",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "ok stepping back to chloe's news for a sec, what's the crew sign up list look like? need 4 pacers and 2 aid station volunteers. Greg you in?",
+          "ts": "2026-02-23T13:02:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s04_t014",
+          "speaker": "Greg",
+          "speaker_id": "p_ct05e005",
+          "content": "in. drive too",
+          "ts": "2026-02-23T13:03:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s04_t015",
+          "speaker": "Helen",
+          "speaker_id": "p_ct14b014",
+          "content": "honestly Yuki has the multi-pitch headspace down better than half the climbers i have worked with. she'll lead a pitch on the spire i think. she gravitates to the trad-style problem solving naturally, i can tell from how she sets up runners.",
+          "ts": "2026-02-23T13:05:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s04_t016",
+          "speaker": "Yuki",
+          "speaker_id": "p_ct06f006",
+          "content": "haha Helen don't put me on blast like that... but yeah. i love it ✨ never thought i would but here we are 🥲",
+          "ts": "2026-02-23T13:08:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s04_t017",
+          "speaker": "Chloe",
+          "speaker_id": "p_ct08b008",
+          "content": "ok back to me, pacing list. Priya, Tasha, Greg confirmed. Marcus you pacing?",
+          "ts": "2026-02-23T13:10:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s04_t018",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "I'll pace miles 60-70 Chloe, that's my range without blowing up. crew, any other pacers? whats the weather model showing for june in the bighorns this year, models say warmer than usual?",
+          "ts": "2026-02-23T13:12:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s04_t019",
+          "speaker": "Ravi",
+          "speaker_id": "p_ct13a013",
+          "content": "i can do an aid station overnight. fine.",
+          "ts": "2026-02-23T13:14:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s04_t020",
+          "speaker": "Tasha",
+          "speaker_id": "p_ct10d010",
+          "content": "@Ravi yes! that helps the night crew so much",
+          "ts": "2026-02-23T13:16:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s04_t021",
+          "speaker": "Sonia",
+          "speaker_id": "p_ct12f012",
+          "content": "I'll be at the finish line for sure with bubbly @Chloe!! ALSO can we please please please do a proper sendoff dinner the week before, like big group at Cyrus's 🥂",
+          "ts": "2026-02-23T13:19:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s04_t022",
+          "speaker": "Cyrus",
+          "speaker_id": "p_ct20b020",
+          "content": "Team, the dinner is on. Two weeks before the race. I will design the menu around her training week.",
+          "ts": "2026-02-23T13:21:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s04_t023",
+          "speaker": "Chloe",
+          "speaker_id": "p_ct08b008",
+          "content": "AMAZING. ok pacers, I'll send a doodle. need to finalize by mid-march",
+          "ts": "2026-02-23T13:23:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s04_t024",
+          "speaker": "Beatrix",
+          "speaker_id": "p_ct19a019",
+          "content": "Quietly proud of this group. From a hundred miler to a partner-shift, this is what real community looks like. Carry on.",
+          "ts": "2026-02-23T13:25:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_c1d2e3f7_s05",
+      "session_index": 5,
+      "topic": "Spring gear swap thread and recovery check; group lunch planning",
+      "ts": "2026-03-02",
+      "turns": [
+        {
+          "turn": "grp_c1d2e3f7_s05_t000",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "evening crew. gear swap thread is open: anyone needs anything for spring, post here. and recovery check, who's nursing something?",
+          "ts": "2026-03-02T19:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t001",
+          "speaker": "Greg",
+          "speaker_id": "p_ct05e005",
+          "content": "looking for trail runners size 12. done with the leather boots. blisters every long descent now, switching to trail runners for everything going forward.",
+          "ts": "2026-03-02T19:32:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t002",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "Greg got it, will check the gear closet, I think Cyrus had a pair he wasn't using. you sure on that switch though? you've had those leathers since I've known you",
+          "ts": "2026-03-02T19:34:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t003",
+          "speaker": "Greg",
+          "speaker_id": "p_ct05e005",
+          "content": "yep. done",
+          "ts": "2026-03-02T19:35:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t004",
+          "speaker": "Cyrus",
+          "speaker_id": "p_ct20b020",
+          "content": "Team, I have a pair of Hoka Speedgoat 5s in 12, barely worn. Greg, yours.",
+          "ts": "2026-03-02T19:37:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t005",
+          "speaker": "Iris",
+          "speaker_id": "p_ct16d016",
+          "content": "i need someone to talk me into something. the saturday runs have been getting kinda intense lately and i feel like everyone's racing each other not just being outside?? like i love you all but i didn't sign up to be timed lol. honestly i think i just want to walk slow and look at birds and that's ok. is that ok?",
+          "ts": "2026-03-02T19:40:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t006",
+          "speaker": "Beatrix",
+          "speaker_id": "p_ct19a019",
+          "content": "Iris, that is more than ok. I notice that this group has multiple paces; we just default to the front-pack one in chat. You name it for everyone when you say it.",
+          "ts": "2026-03-02T19:42:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t007",
+          "speaker": "Lionel",
+          "speaker_id": "p_ct07a007",
+          "content": "Friends, Iris is correct. I have been finishing at the back of the pack lately precisely because the conversations there are better; the front pack has its place but it is not the whole point. Beatrix and I have been doing the slow Sunday walks together for what, a year now? It is some of the best time I spend.",
+          "ts": "2026-03-02T19:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t008",
+          "speaker": "Tasha",
+          "speaker_id": "p_ct10d010",
+          "content": "Iris i love that you said that <3 you can always walk with me too, banjo sets the pace and it is a slow pace",
+          "ts": "2026-03-02T19:47:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t009",
+          "speaker": "Priya",
+          "speaker_id": "p_ct02b002",
+          "content": "@Iris yes!! we should make a slow saturday option for whoever wants it 🌲",
+          "ts": "2026-03-02T19:49:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t010",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "great idea. crew, we'll formalize a 'slow saturday' option starting next week, two paces from the same trailhead. anyone else got gear needs?",
+          "ts": "2026-03-02T19:51:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t011",
+          "speaker": "Helen",
+          "speaker_id": "p_ct14b014",
+          "content": "i need a 60m half rope for the spire trip, willing to buy. anyone selling?",
+          "ts": "2026-03-02T19:53:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t012",
+          "speaker": "Bernard",
+          "speaker_id": "p_ct09c009",
+          "content": "Helen, one notes that one has a serviceable 60m in the closet, used twice. Yours, no charge.",
+          "ts": "2026-03-02T19:55:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t013",
+          "speaker": "Helen",
+          "speaker_id": "p_ct14b014",
+          "content": "Bernard you sweetheart, thank you. i'll grab it sunday.",
+          "ts": "2026-03-02T19:57:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t014",
+          "speaker": "Sonia",
+          "speaker_id": "p_ct12f012",
+          "content": "ok separately, for the saturday we're at Cyrus's bistro post-run, I'm thinking we coordinate one of those ridiculous group orders, family style menu, everyone in??",
+          "ts": "2026-03-02T20:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t015",
+          "speaker": "Cyrus",
+          "speaker_id": "p_ct20b020",
+          "content": "Team, I will set the family-style menu for Saturday at noon. Twelve seats reserved. One unanimous yes from the group?",
+          "ts": "2026-03-02T20:02:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t016",
+          "speaker": "Yuki",
+          "speaker_id": "p_ct06f006",
+          "content": "yes!! ✨",
+          "ts": "2026-03-02T20:04:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t017",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "yep",
+          "ts": "2026-03-02T20:05:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t018",
+          "speaker": "Priya",
+          "speaker_id": "p_ct02b002",
+          "content": "yes!!",
+          "ts": "2026-03-02T20:06:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t019",
+          "speaker": "Chloe",
+          "speaker_id": "p_ct08b008",
+          "content": "yes 🔥",
+          "ts": "2026-03-02T20:07:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t020",
+          "speaker": "Tasha",
+          "speaker_id": "p_ct10d010",
+          "content": "yes <3",
+          "ts": "2026-03-02T20:08:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t021",
+          "speaker": "Sonia",
+          "speaker_id": "p_ct12f012",
+          "content": "@Bernard you in for saturday lunch??",
+          "ts": "2026-03-02T20:09:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t022",
+          "speaker": "Bernard",
+          "speaker_id": "p_ct09c009",
+          "content": "I will likely come for the conversation, but one prefers black coffee and an apple at midday. I will not be ordering off the menu.",
+          "ts": "2026-03-02T20:12:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t023",
+          "speaker": "Sonia",
+          "speaker_id": "p_ct12f012",
+          "content": "🙄🙄🙄 Bernard let yourself enjoy something. anyway, Cyrus, count us in for 11",
+          "ts": "2026-03-02T20:14:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t024",
+          "speaker": "Cyrus",
+          "speaker_id": "p_ct20b020",
+          "content": "Team, eleven confirmed. One non-orderer. Saturday 12 noon, see you all then.",
+          "ts": "2026-03-02T20:16:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t025",
+          "speaker": "Derek",
+          "speaker_id": "p_ct03c003",
+          "content": "i'm on track sessions saturday, will skip lunch. fwiw the polarized block is going well, lower volume but better quality. read a study by stoggl that confirmed it.",
+          "ts": "2026-03-02T20:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s05_t026",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "ok wrapping up. saturday 8am trail, two pace groups, lunch at cyrus's at noon. weather looks decent.",
+          "ts": "2026-03-02T20:20:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_c1d2e3f7_s06",
+      "session_index": 6,
+      "topic": "Sunrise meet-time controversy and the early-start convention",
+      "ts": "2026-03-09",
+      "turns": [
+        {
+          "turn": "grp_c1d2e3f7_s06_t000",
+          "speaker": "Bernard",
+          "speaker_id": "p_ct09c009",
+          "content": "Group reminder: the spring race-prep series begins Saturday. Per long-standing convention, we meet at the trailhead thirty minutes before sunrise. Sunrise on Saturday is 6:42am, so meet time is 6:12am.",
+          "ts": "2026-03-09T07:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t001",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "ugh. ok. crew, we are NOT doing 5:30am again this year. last year killed me. can we make this 6:30am soft start, sunrise plus zero, instead?",
+          "ts": "2026-03-09T07:22:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t002",
+          "speaker": "Bernard",
+          "speaker_id": "p_ct09c009",
+          "content": "Marcus, with respect, the convention exists for a reason: light at the trailhead is poor before sunrise, and the warmup proper begins at sunrise itself. Moving the meet forty minutes later changes the entire structure.",
+          "ts": "2026-03-09T07:25:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t003",
+          "speaker": "Chloe",
+          "speaker_id": "p_ct08b008",
+          "content": "lol you all know I'm with bernard on this. sunrise is the right call. get up earlier 🔥",
+          "ts": "2026-03-09T07:28:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t004",
+          "speaker": "Derek",
+          "speaker_id": "p_ct03c003",
+          "content": "fwiw the body adapts to the early start within two weeks. published research on circadian flexibility supports this; i can share the paper.",
+          "ts": "2026-03-09T07:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t005",
+          "speaker": "Sonia",
+          "speaker_id": "p_ct12f012",
+          "content": "🙃🙃🙃 some of us are not running pre-dawn, sorry team. i'll catch up at the trailhead breakfast at 8:30am. no early start for me ever. i didn't join a running club to wake up at 5am every saturday, that is a fact 🥂",
+          "ts": "2026-03-09T07:33:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t006",
+          "speaker": "Iris",
+          "speaker_id": "p_ct16d016",
+          "content": "yeah honestly i don't think i can do pre-sunrise either... like the birds aren't even up yet?? that's literally when the dawn chorus STARTS, you can't bird before dawn lol. i'll do my own thing for early starts, sorry",
+          "ts": "2026-03-09T07:35:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t007",
+          "speaker": "Greg",
+          "speaker_id": "p_ct05e005",
+          "content": "early fine for me",
+          "ts": "2026-03-09T07:38:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t008",
+          "speaker": "Theo",
+          "speaker_id": "p_ct17e017",
+          "content": "Pre-dawn meet is operationally correct. I will be there at six.",
+          "ts": "2026-03-09T07:40:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t009",
+          "speaker": "Beatrix",
+          "speaker_id": "p_ct19a019",
+          "content": "I notice that the early-start convention has always been written as universal, but we have at least three people right now saying it does not work for them. Maybe it has never quite been universal. Worth flagging.",
+          "ts": "2026-03-09T07:42:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t010",
+          "speaker": "Bernard",
+          "speaker_id": "p_ct09c009",
+          "content": "Beatrix, fair point. The convention has held because the alternative is logistical chaos. One is open to a two-meet system if there are volunteers to coordinate it.",
+          "ts": "2026-03-09T07:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t011",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "ok proposal: 6:12am meet for the sunrise crowd, 7:30am meet for the second wave. same trail, second group catches up at the first water stop. Greg and I will lead the second wave. all good?",
+          "ts": "2026-03-09T07:48:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t012",
+          "speaker": "Sonia",
+          "speaker_id": "p_ct12f012",
+          "content": "PERFECT yes 🙏",
+          "ts": "2026-03-09T07:50:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t013",
+          "speaker": "Iris",
+          "speaker_id": "p_ct16d016",
+          "content": "yes!! literally amazing thank you",
+          "ts": "2026-03-09T07:52:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t014",
+          "speaker": "Bernard",
+          "speaker_id": "p_ct09c009",
+          "content": "Acceptable. One will draft the new logistics this week.",
+          "ts": "2026-03-09T07:54:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t015",
+          "speaker": "Tasha",
+          "speaker_id": "p_ct10d010",
+          "content": "this is healthier for the group <3 thanks Marcus for naming it",
+          "ts": "2026-03-09T07:56:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t016",
+          "speaker": "Priya",
+          "speaker_id": "p_ct02b002",
+          "content": "honestly thank you, i have been pretending to enjoy the 5am thing for two years 😭",
+          "ts": "2026-03-09T07:58:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t017",
+          "speaker": "Derek",
+          "speaker_id": "p_ct03c003",
+          "content": "different topic, but marcus, given we're talking training, i think we should bring back the longer base block this year. eight years of doing it your way and our injury rate is worse than the broader club averages. fwiw.",
+          "ts": "2026-03-09T08:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t018",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "derek we have had this conversation many times. we'll talk on saturday. crew, focus on logistics please.",
+          "ts": "2026-03-09T08:03:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t019",
+          "speaker": "Helen",
+          "speaker_id": "p_ct14b014",
+          "content": "yall handle it. i'll be on the spire ridge",
+          "ts": "2026-03-09T08:05:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t020",
+          "speaker": "Yuki",
+          "speaker_id": "p_ct06f006",
+          "content": "✨ on the spire",
+          "ts": "2026-03-09T08:07:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t021",
+          "speaker": "Lionel",
+          "speaker_id": "p_ct07a007",
+          "content": "Friends, I will be at the second-wave meet; my hip thanks you, Marcus.",
+          "ts": "2026-03-09T08:09:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t022",
+          "speaker": "Cyrus",
+          "speaker_id": "p_ct20b020",
+          "content": "Team, I will set up coffee and pastries at the trailhead at 7am for the second wave. Black coffee for those who want it.",
+          "ts": "2026-03-09T08:11:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t023",
+          "speaker": "Lionel",
+          "speaker_id": "p_ct07a007",
+          "content": "Cyrus, an earl grey if at all possible.",
+          "ts": "2026-03-09T08:13:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t024",
+          "speaker": "Cyrus",
+          "speaker_id": "p_ct20b020",
+          "content": "Team, earl grey for Lionel will always be on the table.",
+          "ts": "2026-03-09T08:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s06_t025",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "great. saturday is locked. ana you joining either wave?",
+          "ts": "2026-03-09T08:17:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_c1d2e3f7_s07",
+      "session_index": 7,
+      "topic": "Devil's Spire multi-pitch climbing weekend recap",
+      "ts": "2026-03-16",
+      "turns": [
+        {
+          "turn": "grp_c1d2e3f7_s07_t000",
+          "speaker": "Yuki",
+          "speaker_id": "p_ct06f006",
+          "content": "WE DID IT ✨✨ devil's spire all six pitches, no falls, Helen and i topped out at 4pm yesterday. i can't believe i lead the third pitch. brought onigiri up for summit lunch, of course 🍙",
+          "ts": "2026-03-16T21:12:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s07_t001",
+          "speaker": "Helen",
+          "speaker_id": "p_ct14b014",
+          "content": "yuki absolutely crushed it. honest review: she's a better trad climber than half the crew that's been doing it longer. the headspace thing translated immediately, the way she reads the rock and places gear. that third pitch lead was clean.",
+          "ts": "2026-03-16T21:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s07_t002",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "incredible work both of you! photos coming?",
+          "ts": "2026-03-16T21:17:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s07_t003",
+          "speaker": "Yuki",
+          "speaker_id": "p_ct06f006",
+          "content": "photo dump tomorrow once i go through them, i shot like 400 frames lol 🥲 it was a clean weekend, no rain, perfect light",
+          "ts": "2026-03-16T21:19:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s07_t004",
+          "speaker": "Bernard",
+          "speaker_id": "p_ct09c009",
+          "content": "Congratulations to both. One has reviewed the route topo; the third pitch is non-trivial. Helen, what was the actual leader fall risk on pitch four given the runout to the second cam placement?",
+          "ts": "2026-03-16T21:22:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s07_t005",
+          "speaker": "Helen",
+          "speaker_id": "p_ct14b014",
+          "content": "honestly bernard the runout was real but the rock was bomber, no slipping potential. yuki and i discussed bail points before each pitch, i wouldn't have let her on it if i had concerns. the partnership thing matters here, you know that better than anyone, you and i used to read that route together. fast and light when conditions allow, just like you used to say.",
+          "ts": "2026-03-16T21:25:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s07_t006",
+          "speaker": "Bernard",
+          "speaker_id": "p_ct09c009",
+          "content": "Helen, with respect, my position on fast and light has evolved since the cascade traverse near-miss two years ago. I no longer endorse the approach for any climb above grade 5.7, regardless of conditions. The risk profile is unjustifiable for recreational climbing.",
+          "ts": "2026-03-16T21:28:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s07_t007",
+          "speaker": "Helen",
+          "speaker_id": "p_ct14b014",
+          "content": "i hear you. it's still the right call for the right route, and the spire was the right route. let's not relitigate.",
+          "ts": "2026-03-16T21:31:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s07_t008",
+          "speaker": "Yuki",
+          "speaker_id": "p_ct06f006",
+          "content": "i think we did everything Bernard would have done btw, double cam placements at the cruxes, full anchor backups, just how he taught me at the gym ✨",
+          "ts": "2026-03-16T21:33:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s07_t009",
+          "speaker": "Bernard",
+          "speaker_id": "p_ct09c009",
+          "content": "Yuki, that is gratifying to hear.",
+          "ts": "2026-03-16T21:35:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s07_t010",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "ok love this, glad everyone is safe. on a separate logistics note, cascade ridge headcount stands at 11. anyone else want in or out?",
+          "ts": "2026-03-16T21:37:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s07_t011",
+          "speaker": "Iris",
+          "speaker_id": "p_ct16d016",
+          "content": "i was BIRDING all weekend, found a black-throated gray warbler!! omg!! life list grows. literally was at the back of the pack on the trails saturday and finally felt like i was doing the thing i came to do. hasn't been like that in months.",
+          "ts": "2026-03-16T21:39:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s07_t012",
+          "speaker": "Beatrix",
+          "speaker_id": "p_ct19a019",
+          "content": "Iris, that is wonderful. The slow saturday change has clearly landed.",
+          "ts": "2026-03-16T21:41:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s07_t013",
+          "speaker": "Tasha",
+          "speaker_id": "p_ct10d010",
+          "content": "<3 also Banjo got compliments from at least four hikers we passed, just saying",
+          "ts": "2026-03-16T21:43:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s07_t014",
+          "speaker": "Greg",
+          "speaker_id": "p_ct05e005",
+          "content": "good weekend. tired",
+          "ts": "2026-03-16T21:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s07_t015",
+          "speaker": "Helen",
+          "speaker_id": "p_ct14b014",
+          "content": "yuki, when's the next one? i'm thinking south face of mount index, june, four pitches but committing",
+          "ts": "2026-03-16T21:47:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s07_t016",
+          "speaker": "Yuki",
+          "speaker_id": "p_ct06f006",
+          "content": "i'm in ✨",
+          "ts": "2026-03-16T21:49:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s07_t017",
+          "speaker": "Sonia",
+          "speaker_id": "p_ct12f012",
+          "content": "i feel SO uncool not having an epic weekend report 😭 my report is i tried a new wine bar and met a lovely couple. anyway who's in for the bistro lunch this saturday",
+          "ts": "2026-03-16T21:51:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s07_t018",
+          "speaker": "Cyrus",
+          "speaker_id": "p_ct20b020",
+          "content": "Team, lunch is on. Same menu as last week, since it went well. New addition: a smoked trout that just came in, paired well with a Gruner.",
+          "ts": "2026-03-16T21:53:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s07_t019",
+          "speaker": "Sonia",
+          "speaker_id": "p_ct12f012",
+          "content": "🥂🥂🥂",
+          "ts": "2026-03-16T21:55:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s07_t020",
+          "speaker": "Lionel",
+          "speaker_id": "p_ct07a007",
+          "content": "I will be there. Friends, weather is perfect for a moonless night this Friday; if anyone wants to do a star outing instead of a saturday morning, I am open. Iris, you would love it.",
+          "ts": "2026-03-16T21:57:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s07_t021",
+          "speaker": "Iris",
+          "speaker_id": "p_ct16d016",
+          "content": "OMG yes please 🦉",
+          "ts": "2026-03-16T21:59:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s07_t022",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "ok crew, signing off. great weekend reports. weather model says rain pattern incoming next week, plan accordingly.",
+          "ts": "2026-03-16T22:01:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s07_t023",
+          "speaker": "Ravi",
+          "speaker_id": "p_ct13a013",
+          "content": "fine.",
+          "ts": "2026-03-16T22:03:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_c1d2e3f7_s08",
+      "session_index": 8,
+      "topic": "Tasha and Ravi's relationship surfaces; Lionel's birthday dinner planning",
+      "ts": "2026-03-23",
+      "turns": [
+        {
+          "turn": "grp_c1d2e3f7_s08_t000",
+          "speaker": "Sonia",
+          "speaker_id": "p_ct12f012",
+          "content": "OK confession: i was at Cyrus's last night for dinner with my husband and i SAW @Tasha and @Ravi at a corner table being VERY couple-coded 👀💕💕 are we finally allowed to acknowledge this in the chat????",
+          "ts": "2026-03-23T18:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s08_t001",
+          "speaker": "Tasha",
+          "speaker_id": "p_ct10d010",
+          "content": "lol Sonia 🙃 ok yes Ravi and i are dating, have been for a few months. i was going to wait until it felt less weird in the group but i guess this is the moment <3",
+          "ts": "2026-03-23T18:04:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s08_t002",
+          "speaker": "Priya",
+          "speaker_id": "p_ct02b002",
+          "content": "FINALLY!! i mean we all knew but congrats!! 🌲💕",
+          "ts": "2026-03-23T18:06:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s08_t003",
+          "speaker": "Yuki",
+          "speaker_id": "p_ct06f006",
+          "content": "✨✨✨ i love it",
+          "ts": "2026-03-23T18:07:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s08_t004",
+          "speaker": "Beatrix",
+          "speaker_id": "p_ct19a019",
+          "content": "Tasha, lovely. Ravi, how are you with the public acknowledgement? You have always been more reserved about it.",
+          "ts": "2026-03-23T18:09:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s08_t005",
+          "speaker": "Ravi",
+          "speaker_id": "p_ct13a013",
+          "content": "...",
+          "ts": "2026-03-23T18:12:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s08_t006",
+          "speaker": "Tasha",
+          "speaker_id": "p_ct10d010",
+          "content": "@Ravi you ok?",
+          "ts": "2026-03-23T18:14:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s08_t007",
+          "speaker": "Ravi",
+          "speaker_id": "p_ct13a013",
+          "content": "i'm fine. just don't love it being a chat topic.",
+          "ts": "2026-03-23T18:17:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s08_t008",
+          "speaker": "Sonia",
+          "speaker_id": "p_ct12f012",
+          "content": "oh shit Ravi sorry, didn't mean to outl you. i'll dial it back",
+          "ts": "2026-03-23T18:19:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s08_t009",
+          "speaker": "Tasha",
+          "speaker_id": "p_ct10d010",
+          "content": "all good Sonia, we'll handle it. honestly y'all our weekend default has shifted, we mostly do dog walks together now, like that's the rhythm. used to do solo trail runs every saturday but it's different now <3",
+          "ts": "2026-03-23T18:21:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s08_t010",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "happy for you both, no surprise on this end honestly. ok pivoting, group dinner planning, lionel's birthday is in three weeks, sonia you have something cooking?",
+          "ts": "2026-03-23T18:24:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s08_t011",
+          "speaker": "Sonia",
+          "speaker_id": "p_ct12f012",
+          "content": "YES ok @Lionel we are doing a proper birthday for you, big group, april 24, friday night, Cyrus's bistro, i'm coordinating with him 🥂🍷 the more bodies the better, that's my forever motto",
+          "ts": "2026-03-23T18:26:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s08_t012",
+          "speaker": "Lionel",
+          "speaker_id": "p_ct07a007",
+          "content": "Friends, that is more than I deserve and exactly what I would want; quoting Whitman, 'I am large, I contain multitudes.' Would Beatrix come? She has to come.",
+          "ts": "2026-03-23T18:29:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s08_t013",
+          "speaker": "Beatrix",
+          "speaker_id": "p_ct19a019",
+          "content": "I will be there, Lionel. Wouldn't miss it.",
+          "ts": "2026-03-23T18:31:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s08_t014",
+          "speaker": "Cyrus",
+          "speaker_id": "p_ct20b020",
+          "content": "Team, the menu I have in mind: a crudo course, a long-braised lamb, and a tarte tatin for dessert. Lionel, your earl grey for the morning service after, of course.",
+          "ts": "2026-03-23T18:33:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s08_t015",
+          "speaker": "Iris",
+          "speaker_id": "p_ct16d016",
+          "content": "i'll bring something vegan!! i can make a roasted veg thing 🌱",
+          "ts": "2026-03-23T18:35:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s08_t016",
+          "speaker": "Cyrus",
+          "speaker_id": "p_ct20b020",
+          "content": "Iris, the menu has a vegan course built in already. Bring yourself.",
+          "ts": "2026-03-23T18:37:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s08_t017",
+          "speaker": "Helen",
+          "speaker_id": "p_ct14b014",
+          "content": "i'll be there. bernard, you in?",
+          "ts": "2026-03-23T18:40:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s08_t018",
+          "speaker": "Bernard",
+          "speaker_id": "p_ct09c009",
+          "content": "I will attend, Helen. I will not order off the menu, but I will be there.",
+          "ts": "2026-03-23T18:42:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s08_t019",
+          "speaker": "Helen",
+          "speaker_id": "p_ct14b014",
+          "content": "of course you won't 🙄 ok lionel get ready",
+          "ts": "2026-03-23T18:44:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s08_t020",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "great. crew, april 24 on the calendar. weather model says the warming pattern continues through april, mostly sunny by then. anything else for the chat?",
+          "ts": "2026-03-23T18:47:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s08_t021",
+          "speaker": "Greg",
+          "speaker_id": "p_ct05e005",
+          "content": "Theo back from fire training next week",
+          "ts": "2026-03-23T18:49:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s08_t022",
+          "speaker": "Theo",
+          "speaker_id": "p_ct17e017",
+          "content": "Affirmative. Returning April 5. Will be operational for Cascade Ridge weekend.",
+          "ts": "2026-03-23T18:52:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s08_t023",
+          "speaker": "Tasha",
+          "speaker_id": "p_ct10d010",
+          "content": "yay everyone!! how's everyone holding up after the busy week? <3",
+          "ts": "2026-03-23T18:54:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s08_t024",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "all good crew. signing off.",
+          "ts": "2026-03-23T18:56:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_c1d2e3f7_s09",
+      "session_index": 9,
+      "topic": "Spring trail-maintenance day coordination",
+      "ts": "2026-03-30",
+      "turns": [
+        {
+          "turn": "grp_c1d2e3f7_s09_t000",
+          "speaker": "Owen",
+          "speaker_id": "p_ct11e011",
+          "content": "Spring maintenance day. Saturday. Wickham trail. Need 6 volunteers. Heavy work, downed trees and tread repair. Will have axes and saws.",
+          "ts": "2026-03-30T08:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t001",
+          "speaker": "Greg",
+          "speaker_id": "p_ct05e005",
+          "content": "in. drive the truck",
+          "ts": "2026-03-30T08:02:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t002",
+          "speaker": "Owen",
+          "speaker_id": "p_ct11e011",
+          "content": "Greg good. Same crew as last spring. We split Wickham at the falls, you take upper, I take lower. Done by 4.",
+          "ts": "2026-03-30T08:04:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t003",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "i'll be there. crew, need 4 more, this is a good cause and a chance to scout the variants for cascade ridge",
+          "ts": "2026-03-30T08:06:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t004",
+          "speaker": "Iris",
+          "speaker_id": "p_ct16d016",
+          "content": "i can come!! omg i love trail work, also i was wondering, owen, the upper section near the falls has a chanterelle patch right? could we go off-trail to scout it after work??",
+          "ts": "2026-03-30T08:08:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t005",
+          "speaker": "Owen",
+          "speaker_id": "p_ct11e011",
+          "content": "Yes. After work, off-trail scout fine. Bushwhack the south slope. That's where the good ones are. Chanterelles best off the marked trails always.",
+          "ts": "2026-03-30T08:10:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t006",
+          "speaker": "Helen",
+          "speaker_id": "p_ct14b014",
+          "content": "i'll come, off-trail scouting is rad. won't bring climbing gear",
+          "ts": "2026-03-30T08:12:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t007",
+          "speaker": "Bernard",
+          "speaker_id": "p_ct09c009",
+          "content": "I can attend; one will handle the liability waivers and the permit pre-clearance for the off-trail portion, which technically requires a separate sign-off.",
+          "ts": "2026-03-30T08:14:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t008",
+          "speaker": "Owen",
+          "speaker_id": "p_ct11e011",
+          "content": "Bernard noted. South slope is in the maintenance zone, no separate sign-off needed.",
+          "ts": "2026-03-30T08:17:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t009",
+          "speaker": "Sonia",
+          "speaker_id": "p_ct12f012",
+          "content": "i'll come for the morning but cannot do trail work all day, my hands cannot 🥂 will bring lunch for the crew though, and we should ALL go to the brewery after right?? Hawthorne's is always our default, who's in??",
+          "ts": "2026-03-30T08:19:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t010",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "yeah Hawthorne's after for sure, that's the default move",
+          "ts": "2026-03-30T08:22:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t011",
+          "speaker": "Chloe",
+          "speaker_id": "p_ct08b008",
+          "content": "yeah brewery 🔥",
+          "ts": "2026-03-30T08:24:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t012",
+          "speaker": "Tasha",
+          "speaker_id": "p_ct10d010",
+          "content": "i'll come <3 banjo too, he'll snooze in the truck",
+          "ts": "2026-03-30T08:26:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t013",
+          "speaker": "Sonia",
+          "speaker_id": "p_ct12f012",
+          "content": "@Owen @Bernard @Ana brewery yes??",
+          "ts": "2026-03-30T08:28:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t014",
+          "speaker": "Owen",
+          "speaker_id": "p_ct11e011",
+          "content": "Brewery pass.",
+          "ts": "2026-03-30T08:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t015",
+          "speaker": "Bernard",
+          "speaker_id": "p_ct09c009",
+          "content": "I will not be joining the brewery either; one will head home directly.",
+          "ts": "2026-03-30T08:32:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t016",
+          "speaker": "Ana",
+          "speaker_id": "p_ct18f018",
+          "content": "Regrettably, I have a school board call at 5pm Saturday. I will skip the brewery; I would rather wrap and get back than try to cut something short. The brewery has never been my scene to be honest.",
+          "ts": "2026-03-30T08:34:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t017",
+          "speaker": "Sonia",
+          "speaker_id": "p_ct12f012",
+          "content": "fine fine 🙄 the rest of us will represent at hawthorne's",
+          "ts": "2026-03-30T08:36:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t018",
+          "speaker": "Beatrix",
+          "speaker_id": "p_ct19a019",
+          "content": "I notice we have three people quietly opting out of the brewery convention. Just naming the pattern.",
+          "ts": "2026-03-30T08:38:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t019",
+          "speaker": "Iris",
+          "speaker_id": "p_ct16d016",
+          "content": "honestly i used to push myself to keep up with the front pack on these trail days because i thought that's what we did, but i'm done with that. i want to be in the back with banjo identifying lichens lol. that's the whole reason i joined this group, just took me a year to admit it.",
+          "ts": "2026-03-30T08:40:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t020",
+          "speaker": "Lionel",
+          "speaker_id": "p_ct07a007",
+          "content": "Iris, that is the entire wisdom of this collective in one message. Friends, I will join the maintenance morning but bow out of the brewery; the slow walk home with Beatrix calls more strongly.",
+          "ts": "2026-03-30T08:42:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t021",
+          "speaker": "Owen",
+          "speaker_id": "p_ct11e011",
+          "content": "Crew confirmed: Greg, Marcus, Iris, Helen, Bernard for upper; me, Sonia until lunch, Tasha for lower. Lionel morning support. 8am at the trailhead.",
+          "ts": "2026-03-30T08:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t022",
+          "speaker": "Greg",
+          "speaker_id": "p_ct05e005",
+          "content": "copy",
+          "ts": "2026-03-30T08:47:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t023",
+          "speaker": "Theo",
+          "speaker_id": "p_ct17e017",
+          "content": "Will be back from training and can work the lower section. Adding myself.",
+          "ts": "2026-03-30T08:50:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t024",
+          "speaker": "Owen",
+          "speaker_id": "p_ct11e011",
+          "content": "Theo good. Lower section then.",
+          "ts": "2026-03-30T08:52:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s09_t025",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "great. saturday is set. weather model says clear and 60s, ideal. signing off.",
+          "ts": "2026-03-30T08:54:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_c1d2e3f7_s10",
+      "session_index": 10,
+      "topic": "Cascade Ridge race weekend recap and summer planning",
+      "ts": "2026-04-06",
+      "turns": [
+        {
+          "turn": "grp_c1d2e3f7_s10_t000",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "evening crew. cascade ridge recap. 9 racers, all finished, no injuries. greg and i shuttled cleanly, ana and bernard handled the welcome desk. cyrus and sonia put on a hell of a dinner. proud of the whole crew.",
+          "ts": "2026-04-06T19:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s10_t001",
+          "speaker": "Chloe",
+          "speaker_id": "p_ct08b008",
+          "content": "PERSONAL BEST 🔥🔥🔥 south rim under 4 hours. dropped the strava link in the side group",
+          "ts": "2026-04-06T19:32:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s10_t002",
+          "speaker": "Priya",
+          "speaker_id": "p_ct02b002",
+          "content": "i finished and my legs are ruined and i loved every second of it ☀️🌲",
+          "ts": "2026-04-06T19:34:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s10_t003",
+          "speaker": "Greg",
+          "speaker_id": "p_ct05e005",
+          "content": "good weekend. tired",
+          "ts": "2026-04-06T19:35:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s10_t004",
+          "speaker": "Sonia",
+          "speaker_id": "p_ct12f012",
+          "content": "the dinner was MAGIC y'all 🥂🍷 cyrus outdid himself, the lamb braise was unreal, and we had 19 people at the table at one point. that's the dream. i live for this 🍷✨",
+          "ts": "2026-04-06T19:38:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s10_t005",
+          "speaker": "Cyrus",
+          "speaker_id": "p_ct20b020",
+          "content": "Team, it was an honor to plate for the crew. The lamb braise was the simplest thing on the menu and it carried the table. One does not ever fail to be moved by a long table after a long day in the mountains.",
+          "ts": "2026-04-06T19:40:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s10_t006",
+          "speaker": "Lionel",
+          "speaker_id": "p_ct07a007",
+          "content": "Friends, the night sky after dinner was extraordinary; Iris, did you see the moon-rise over the south rim? I was on a quiet walk back from the cabin with Beatrix and we both stopped to watch it for a quarter hour. Friends, this is what I joined for; the running is, in many ways, an excuse for the rest of this. Anyway: I hope a few of you will come along to the next dark-sky outing, those night walks remain my favorite kind of group time.",
+          "ts": "2026-04-06T19:43:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s10_t007",
+          "speaker": "Beatrix",
+          "speaker_id": "p_ct19a019",
+          "content": "Lionel and I have been doing those Sunday walks for over a year now; the moonrise viewing felt of a piece. Friends, this group is the steadiest thing in my week.",
+          "ts": "2026-04-06T19:46:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s10_t008",
+          "speaker": "Iris",
+          "speaker_id": "p_ct16d016",
+          "content": "i missed the moonrise OMG no!! but i did see a great horned owl literally on the trail back. life list grows 🦉",
+          "ts": "2026-04-06T19:48:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s10_t009",
+          "speaker": "Helen",
+          "speaker_id": "p_ct14b014",
+          "content": "great weekend all. yuki and i are heading up index this saturday, will report back. bernard, route topo updated, sent it to you",
+          "ts": "2026-04-06T19:50:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s10_t010",
+          "speaker": "Bernard",
+          "speaker_id": "p_ct09c009",
+          "content": "Helen, received and reviewed. One has annotated the bail points and returned the file. Good luck.",
+          "ts": "2026-04-06T19:53:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s10_t011",
+          "speaker": "Yuki",
+          "speaker_id": "p_ct06f006",
+          "content": "✨ ready for index",
+          "ts": "2026-04-06T19:55:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s10_t012",
+          "speaker": "Tasha",
+          "speaker_id": "p_ct10d010",
+          "content": "ravi and i are doing a quiet weekend at the cabin <3 banjo will be on the porch",
+          "ts": "2026-04-06T19:57:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s10_t013",
+          "speaker": "Ravi",
+          "speaker_id": "p_ct13a013",
+          "content": "fine.",
+          "ts": "2026-04-06T20:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s10_t014",
+          "speaker": "Sonia",
+          "speaker_id": "p_ct12f012",
+          "content": "ok summer planning, what's the bighorn 100 weekend look like? @Chloe pacers locked?",
+          "ts": "2026-04-06T20:02:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s10_t015",
+          "speaker": "Chloe",
+          "speaker_id": "p_ct08b008",
+          "content": "pacers locked. priya, marcus, tasha, greg. ravi at aid station. june 19. all locked. i'm doing a 50k taper race in two weeks.",
+          "ts": "2026-04-06T20:04:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s10_t016",
+          "speaker": "Derek",
+          "speaker_id": "p_ct03c003",
+          "content": "fwiw chloe, the polarized block is showing up in your taper. you ran better at cascade ridge than at the same point last year. by feel that day was clearly your right call. i was wrong to push the volume conversation in march. on the record.",
+          "ts": "2026-04-06T20:06:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s10_t017",
+          "speaker": "Chloe",
+          "speaker_id": "p_ct08b008",
+          "content": "appreciated derek 🔥",
+          "ts": "2026-04-06T20:08:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s10_t018",
+          "speaker": "Fatima",
+          "speaker_id": "p_ct04d004",
+          "content": "Olympic loop reminder: ten of us, may 28 to 31. Final pre-trip meeting next week. Items list going out tomorrow.",
+          "ts": "2026-04-06T20:10:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s10_t019",
+          "speaker": "Owen",
+          "speaker_id": "p_ct11e011",
+          "content": "Chanterelles likely up by then. Will scout midweek.",
+          "ts": "2026-04-06T20:12:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s10_t020",
+          "speaker": "Theo",
+          "speaker_id": "p_ct17e017",
+          "content": "Fire crew confirmed June through September. I am out for all summer outings. Will assist for the may multi-day, supporting role only.",
+          "ts": "2026-04-06T20:14:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s10_t021",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "great crew. weather model says we'll have a hot july but a cool august, plan accordingly. anyone got anything else?",
+          "ts": "2026-04-06T20:16:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s10_t022",
+          "speaker": "Beatrix",
+          "speaker_id": "p_ct19a019",
+          "content": "Just a thank you, all of you. Carry on.",
+          "ts": "2026-04-06T20:19:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f7_s10_t023",
+          "speaker": "Marcus",
+          "speaker_id": "p_ct01a001",
+          "content": "thank YOU beatrix. signing off, cascade trail collective. see you saturday.",
+          "ts": "2026-04-06T20:22:00",
+          "reply_to": ""
+        }
+      ]
+    }
+  ],
+  "qa_pairs": [
+    {
+      "id": "Q1_c1d2e3f701",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Marcus's behavior suggest about how he reacts to extremely early starts on outing days, and what specifically in the conversation makes that visible?",
+      "answer": "Marcus consistently pushes back against pre-dawn meet times. He says plainly that he is not running anything that starts before 6am after last year's 5:30am gun start, and weeks later he reopens that fight when the sunrise convention comes up, asking for a 6:30am soft start instead and adding that the early start \"killed me.\" The pattern is a settled aversion, expressed in his own voice, not a one-off complaint.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c1d2e3f7_s01_t005",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "leaning the 16th, Lionel. and I will say plainly: I am not running anything that starts before 6am this year. last year's 5:30am gun start wrecked me for two days.",
+          "relevance": "Direct evidence: Marcus expresses dislikes outings that start before 6am"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_c1d2e3f7_s06_t001",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "ugh. ok. crew, we are NOT doing 5:30am again this year. last year killed me. can we make this 6:30am soft start, sunrise plus zero, instead?",
+          "relevance": "Direct evidence: Marcus expresses dislikes outings that start before 6am"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_c1d2e3f702",
+      "category": "Q1",
+      "difficulty": "easy",
+      "question": "What does Lionel's behavior reveal about his morning beverage habits at camp, and how is that visible in the conversation?",
+      "answer": "Lionel drinks earl grey in the mornings and refuses coffee. He explicitly asks for an earl grey option in the morning service after the race weekend, framing it as a hard line: \"never have, never will.\" The Cyrus thread later confirms it as something the group accommodates without asking. The signal is verbal but framed as a long-standing personal stance rather than a passing request.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c1d2e3f7_s01_t009",
+          "speaker_display_name": "Lionel",
+          "message_excerpt": "Cyrus, one request from the older flank: an earl grey option in the morning service the day after, not coffee. I refuse to start a recovery day with espresso; never have, never will.",
+          "relevance": "Direct evidence: Lionel expresses drinks earl grey, refuses coffee at camp mornings"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_c1d2e3f703",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Derek's behavior suggest about how he prefers to manage his pace and effort on long runs, and how does the conversation make that visible?",
+      "answer": "Derek dismisses GPS-watch dependence and prefers to run by feel. He recommends running the south rim variant by feel without a watch, saying the trail tells you the pace, then later doubles down by reporting a Saturday training run completed without a watch and asserting that \"data is overrated, the body knows.\" The framing is consistent across the corpus and the position is held against direct pushback from Chloe.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c1d2e3f7_s01_t012",
+          "speaker_display_name": "Derek",
+          "message_excerpt": "fwiw the south rim is the better course if the group can handle 1100m of vertical in the back half. its where the real test is. i could do it half asleep but newer folks should know what they are sign",
+          "relevance": "Direct evidence: Derek expresses dismissive of GPS-watch dependence, prefers running by feel"
+        },
+        {
+          "session_index": 2,
+          "turn_id": "grp_c1d2e3f7_s02_t007",
+          "speaker_display_name": "Derek",
+          "message_excerpt": "ran by feel today, no watch, came in around the same time as last month. data is overrated, fwiw the body knows. i pulled my old training log out, was running 90 mile weeks back then, same paces. zone",
+          "relevance": "Direct evidence: Derek expresses dismissive of GPS-watch dependence, runs by feel"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_c1d2e3f704",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "Based on Fatima's contributions, what kind of outings does she actually want to be on, and what does the conversation show about that?",
+      "answer": "Fatima prefers multi-day backpacking trips over single-day races. She introduces a three-night Olympic peninsula loop without prompting, calls single-day races \"never my thing,\" and later anchors the multi-day planning thread with the route, headcount, and item list. Her voice in the corpus is most active on multi-day logistics and quietest on race-format conversations, reinforcing the same preference.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c1d2e3f7_s01_t019",
+          "speaker_display_name": "Fatima",
+          "message_excerpt": "Question for the group: should the unofficial multi-day in early June still happen the week after the race? I would prefer to plan it now rather than tack it on. Three nights, Olympic peninsula loop. ",
+          "relevance": "Direct evidence: Fatima expresses prefers multi-day trips over single-day races"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_c1d2e3f705",
+      "category": "Q1",
+      "difficulty": "easy",
+      "question": "What does Derek's account of his own training session reveal about how he relates to wearable data, and how does the conversation make that visible?",
+      "answer": "Derek treats wearable data as superfluous. He reports running by feel without a watch and finishing close to last month's time, and frames it as proof that the body knows the pace better than the watch. The same framing appears earlier when he advises the group to run the south rim by feel. Together, the two moments show a settled stance against continuous heart-rate tracking, not a one-off opinion.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_c1d2e3f7_s02_t007",
+          "speaker_display_name": "Derek",
+          "message_excerpt": "ran by feel today, no watch, came in around the same time as last month. data is overrated, fwiw the body knows. i pulled my old training log out, was running 90 mile weeks back then, same paces. zone",
+          "relevance": "Direct evidence: Derek expresses dismissive of GPS-watch dependence, runs by feel"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_c1d2e3f706",
+      "category": "Q1",
+      "difficulty": "easy",
+      "question": "What does Fatima's contribution to the multi-day food planning show about her preferred camp-meal style, and how is that visible in the conversation?",
+      "answer": "Fatima prefers freeze-dried meals over fresh-cooked at camp. She proposes freeze-dried for the first night of the Olympic loop, framing it as \"simple, no cleanup,\" and pushes back on Cyrus's fresh-ingredients counter-proposal by citing pack weight. The position is functional and unambiguous in her own words.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_c1d2e3f7_s02_t010",
+          "speaker_display_name": "Fatima",
+          "message_excerpt": "Different topic: what is the food plan for the first night of the Olympic loop? I am thinking freeze-dried for everyone, simple, no cleanup. Owen, you good with that?",
+          "relevance": "Direct evidence: Fatima expresses prefers freeze-dried meals over fresh-cooked at camp"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_c1d2e3f707",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Iris's pattern at group runs suggest about how she relates to the group's competitive pace, and what specifically in the conversation reveals that?",
+      "answer": "Iris is uncomfortable with the group's competitiveness around pace. She names this directly when she pushes back on the saturday runs feeling like everyone is racing each other rather than just being outside, saying she did not sign up to be timed. The group's response, including a formalized slow saturday option, shows the discomfort was visible enough to others that the structure changed in response. A later message reinforces it where Iris admits she had been pushing herself to match the front pack and is done with that.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_c1d2e3f7_s05_t005",
+          "speaker_display_name": "Iris",
+          "message_excerpt": "i need someone to talk me into something. the saturday runs have been getting kinda intense lately and i feel like everyone's racing each other not just being outside?? like i love you all but i didn'",
+          "relevance": "Direct evidence: Iris expresses Iris is uncomfortable with group competitiveness around pace"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_c1d2e3f708",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Marcus's reaction to the early-start convention reveal about his preferred outing time, and how does the conversation reinforce it across the corpus?",
+      "answer": "Marcus consistently dislikes outings that start before 6am. The pattern shows up first when he flatly refuses a pre-6am race start, then again on the morning Bernard reopens the sunrise meet-time, where Marcus asks the group to move the meet to 6:30am, calling the previous year's pre-dawn start something that \"killed me.\" Ana's cousin-comment that he has been complaining about early starts since they were teenagers further frames it as a long-standing, not situational, preference.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 6,
+          "turn_id": "grp_c1d2e3f7_s06_t001",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "ugh. ok. crew, we are NOT doing 5:30am again this year. last year killed me. can we make this 6:30am soft start, sunrise plus zero, instead?",
+          "relevance": "Direct evidence: Marcus expresses dislikes outings that start before 6am"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_c1d2e3f7_s01_t005",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "leaning the 16th, Lionel. and I will say plainly: I am not running anything that starts before 6am this year. last year's 5:30am gun start wrecked me for two days.",
+          "relevance": "Direct evidence: Marcus expresses dislikes outings that start before 6am"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_c1d2e3f709",
+      "category": "Q1",
+      "difficulty": "hard",
+      "question": "What does Ravi's response to the public surfacing of his relationship reveal about his comfort with being publicly paired in the group chat, and what specifically in his message tells you that?",
+      "answer": "Ravi is uncomfortable being publicly paired with Tasha in the group chat. When the relationship is brought into the open, he replies first with a single ellipsis, then with a clipped statement that he is \"fine\" but does not love it being a chat topic. The mechanism is the gap between his stated \"fine\" and the visible discomfort: a deflecting \"...\", a request not to make it a chat topic, and his typical clinical brevity used here as a way to step out of the thread without engaging further.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 8,
+          "turn_id": "grp_c1d2e3f7_s08_t007",
+          "speaker_display_name": "Ravi",
+          "message_excerpt": "i'm fine. just don't love it being a chat topic.",
+          "relevance": "Direct evidence: Ravi expresses Ravi is uncomfortable being publicly paired with Tasha in the group chat"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_c1d2e3f70a",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Owen's contribution to the trail-maintenance scout reveal about his relationship to marked vs. off-trail terrain, and how does the conversation show that?",
+      "answer": "Owen prefers off-trail bushwhacking over marked trails. He confirms the group can scout chanterelles by bushwhacking the south slope and adds that the good chanterelles are \"best off the marked trails always,\" generalizing the off-trail preference beyond the immediate plan. He pushes back on Bernard's worry about needing a separate sign-off, treating off-trail as the natural option rather than the exception.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 9,
+          "turn_id": "grp_c1d2e3f7_s09_t005",
+          "speaker_display_name": "Owen",
+          "message_excerpt": "Yes. After work, off-trail scout fine. Bushwhack the south slope. That's where the good ones are. Chanterelles best off the marked trails always.",
+          "relevance": "Direct evidence: Owen expresses prefers off-trail bushwhacking over marked trails"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_c1d2e3f70b",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Lionel's wrap-up of the race weekend reveal about the kind of group activities he most wants to be part of, and how is that visible in his message?",
+      "answer": "Lionel prefers night hikes and astronomy outings over crowded weekend trips. The race-recap message is the clearest signal: he describes the moonrise as the part of the weekend he stopped to watch with Beatrix, says the running is \"in many ways an excuse for the rest of this,\" and explicitly invites people to the next dark-sky outing as his favorite kind of group time. The framing places night outings above the high-attendance race weekend in his own words.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 10,
+          "turn_id": "grp_c1d2e3f7_s10_t006",
+          "speaker_display_name": "Lionel",
+          "message_excerpt": "Friends, the night sky after dinner was extraordinary; Iris, did you see the moon-rise over the south rim? I was on a quiet walk back from the cabin with Beatrix and we both stopped to watch it for a ",
+          "relevance": "Direct evidence: Lionel expresses prefers night hikes and astronomy outings over crowded weekend trips"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_c1d2e3f70c",
+      "category": "Q2",
+      "difficulty": "medium",
+      "question": "The group settled on a family-style group lunch at Cyrus's bistro for the Saturday after the spring training run. What did Bernard's response to that plan signal about his actual position on the group meal, and what specifically in how he replied tells you that?",
+      "answer": "The group's decision was a family-style group lunch at Cyrus's bistro on Saturday. Bernard's reply signaled that he was opting out as a diner without trying to block the plan. The specific signal is the way he framed it: he said he would come for the conversation, but stated as a personal rule that he prefers black coffee and an apple at midday and would not be ordering off the menu. Phrasing it as \"one prefers\" and \"will not be ordering\" rather than a softer hedge marks a settled personal exception, not a momentary disinterest.",
+      "answer_format": "multiple_choice",
+      "options": [
+        "A. Sonia",
+        "B. Bernard",
+        "C. Marcus",
+        "D. Yuki"
+      ],
+      "correct_option": "B",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_c1d2e3f7_s05_t022",
+          "speaker_display_name": "Bernard",
+          "message_excerpt": "I will likely come for the conversation, but one prefers black coffee and an apple at midday. I will not be ordering off the menu.",
+          "relevance": "Direct evidence: Bernard expresses group decides on family-style group lunch at Cyrus's bistro; Bernard verbally opts out, preferring black coffee and apple"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_c1d2e3f70d",
+      "category": "Q2",
+      "difficulty": "hard",
+      "question": "After the spring trail-maintenance day was scheduled, the group locked in a brewery stop at Hawthorne's afterward as the default plan. What did Owen's reaction to that plan reveal about how he actually felt about the brewery convention, and what specifically in how he responded would have told you that?",
+      "answer": "The group decided on an after-work brewery stop at Hawthorne's, which Sonia framed as the default. Owen's reaction was a clipped \"Brewery pass.\" The mechanism is the brevity itself, paired with the fact that he did not engage with the social plan at all and exited it without explanation. In Owen's voice this is the strongest form of non-engagement available, since he writes in clipped imperatives by default and rarely uses softening language. The two-word reply is the dissent, not its absence.",
+      "answer_format": "multiple_choice",
+      "options": [
+        "A. Greg",
+        "B. Marcus",
+        "C. Owen",
+        "D. Sonia"
+      ],
+      "correct_option": "C",
+      "evidence_anchors": [
+        {
+          "session_index": 9,
+          "turn_id": "grp_c1d2e3f7_s09_t014",
+          "speaker_display_name": "Owen",
+          "message_excerpt": "Brewery pass.",
+          "relevance": "Direct evidence: Owen expresses group decides on Hawthorne's brewery stop after maintenance day; Owen explicitly opts out, consistent with skipping post-outing brewery stops"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q3_c1d2e3f70e",
+      "category": "Q3",
+      "difficulty": "hard",
+      "question": "Based on the conversations, what are each group member's preferences regarding where in the pace order (front vs back of pack) they want to be on group runs?",
+      "answer": "Across the corpus, several members signal clear pace-position preferences while others stay neutral.\n\n- Iris: prefers the back of the pack so she can identify birds and lichens; explicitly says she is done trying to keep up with the front pack and that staying back was the whole reason she joined.\n- Lionel: prefers the back, where he says the conversations are better; finishes the sunrise-meet thread by joining the second-wave 7:30am group and later flags the slow Sunday walks with Beatrix as his preferred rhythm.\n- Beatrix: prefers slower walking pace; defers the multi-day trip and joins the slow Saturday option; after knee surgery she says the longer hikes have not been kind to her.\n- Marcus: leads the second-wave (later, slower) meet group with Greg.\n- Chloe: prefers the front; reports running her Saturday training at AT pace and competes for course bests.\n- Derek: trains at competitive paces but does so by feel rather than to lead; not strongly anchored front or back.\n- Priya: comfortable with the slower side; supports the slow Saturday option and rarely claims front pack.\n- Tasha: walks at Banjo's pace; explicitly back-of-pack for dog hikes.\n- Owen, Greg, Theo: function-driven; no expressed pace preference, they take whichever role the day requires.\n- Helen, Yuki: climbing-focused; not running pace-position salient.\n- Sonia: skips the runs themselves and joins for breakfast or dinner; not on the pace spectrum.\n- Bernard, Ana, Cyrus, Fatima, Ravi, Iris's specific pace shift, Kasper: not strongly signaled.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 9,
+          "turn_id": "grp_c1d2e3f7_s09_t019",
+          "speaker_display_name": "Iris",
+          "message_excerpt": "honestly i used to push myself to keep up with the front pack on these trail days because i thought that's what we did, but i'm done with that. i want to be in the back with banjo identifying lichens ",
+          "relevance": "Direct evidence: Iris expresses Iris shifted from trying to keep up with the front pack to deliberately staying at the back identifying species"
+        },
+        {
+          "session_index": 7,
+          "turn_id": "grp_c1d2e3f7_s07_t011",
+          "speaker_display_name": "Iris",
+          "message_excerpt": "i was BIRDING all weekend, found a black-throated gray warbler!! omg!! life list grows. literally was at the back of the pack on the trails saturday and finally felt like i was doing the thing i came ",
+          "relevance": "Direct evidence: Iris expresses Iris shifted from trying to keep up with the front pack to staying at the back identifying species"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_c1d2e3f7_s05_t007",
+          "speaker_display_name": "Lionel",
+          "message_excerpt": "Friends, Iris is correct. I have been finishing at the back of the pack lately precisely because the conversations there are better; the front pack has its place but it is not the whole point. Beatrix",
+          "relevance": "Direct evidence: Lionel expresses Lionel and Beatrix share regular Sunday walks as close friends"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q3_c1d2e3f70f",
+      "category": "Q3",
+      "difficulty": "medium",
+      "question": "Based on the conversations, what are each group member's preferences regarding morning food and drink at camp or post-outing?",
+      "answer": "Three members express clear morning food/drink preferences across the corpus, with the rest unsignalled.\n\n- Lionel: drinks earl grey, refuses coffee. He asks for earl grey at the post-race morning service and frames it as \"never have, never will\"; Cyrus later confirms earl grey is always on the table for him.\n- Priya: vegetarian, avoids dairy at trail breakfasts. She reacts to Tasha's check by confirming oat milk only, and explains the previous group oatmeal had butter that upset her stomach.\n- Bernard: prefers black coffee and an apple at midday; opts out of group meals while still attending the social part.\n- Cyrus: brings real food, refuses anything pre-packaged; his framing is anti-packet rather than anti-restaurant.\n- All other members: no morning food/drink preference is expressed in the conversations.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c1d2e3f7_s01_t009",
+          "speaker_display_name": "Lionel",
+          "message_excerpt": "Cyrus, one request from the older flank: an earl grey option in the morning service the day after, not coffee. I refuse to start a recovery day with espresso; never have, never will.",
+          "relevance": "Direct evidence: Lionel expresses drinks earl grey, refuses coffee at camp mornings"
+        },
+        {
+          "session_index": 2,
+          "turn_id": "grp_c1d2e3f7_s02_t004",
+          "speaker_display_name": "Tasha",
+          "message_excerpt": "yes!! Banjo missed it last week. also flagging, Priya we need to do that breakfast plan, because the camp coffee thing wasn't great for you last time. you don't do dairy at trail breakfasts, right? sa",
+          "relevance": "Direct evidence: Tasha expresses Priya is vegetarian and avoids dairy at trail breakfasts"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_c1d2e3f7_s05_t022",
+          "speaker_display_name": "Bernard",
+          "message_excerpt": "I will likely come for the conversation, but one prefers black coffee and an apple at midday. I will not be ordering off the menu.",
+          "relevance": "Direct evidence: Bernard expresses group decides on family-style group lunch at Cyrus's bistro; Bernard verbally opts out, preferring black coffee and apple"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q4_c1d2e3f710",
+      "category": "Q4",
+      "difficulty": "hard",
+      "question": "Someone in the group, when the post-race dinner was being planned, set the rule that nothing pre-packaged including gels would be on the table, framing it as a condition of hosting. Who said it?",
+      "answer": "Cyrus said it. He told the group the bistro was theirs that Saturday with one condition: nothing pre-packaged on the table, including the gels stashed in their packs, and that he would plate something proper for everyone coming off the course. The phrasing is anchored in food-quality language and a host's framing rather than a social-volume framing.",
+      "answer_format": "multiple_choice",
+      "options": [
+        "A. Sonia",
+        "B. Marcus",
+        "C. Bernard",
+        "D. Cyrus"
+      ],
+      "correct_option": "D",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c1d2e3f7_s01_t008",
+          "speaker_display_name": "Cyrus",
+          "message_excerpt": "Team, the bistro is yours that Saturday, no charge for the room. One condition: nothing pre-packaged on the table, that includes the gels you all stash in your packs. I will plate something proper for",
+          "relevance": "Direct evidence: Cyrus expresses Cyrus advocates real-food dinners but with the framing of refusing pre-packaged food, distinct from Sonia's social-volume framing"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q4_c1d2e3f711",
+      "category": "Q4",
+      "difficulty": "medium",
+      "question": "Someone in the group strongly pushed for the post-race meal to be at the bistro instead of a parking-lot potluck, framing it around getting more bodies around the table. Who was it?",
+      "answer": "Sonia pushed for the bistro dinner. She tagged Marcus and Ana, said \"can we PLEASE\" do the post-race dinner at Cyrus's bistro, and called the previous year's parking-lot potluck \"sad,\" volunteering to handle the whole thing if the group committed. Her framing is about volume and atmosphere, not food quality.",
+      "answer_format": "multiple_choice",
+      "options": [
+        "A. Cyrus",
+        "B. Sonia",
+        "C. Marcus",
+        "D. Tasha"
+      ],
+      "correct_option": "B",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c1d2e3f7_s01_t007",
+          "speaker_display_name": "Sonia",
+          "message_excerpt": "@Marcus @Ana yes please 7am minimum 🥂 also can we PLEASE do the post-race dinner at Cyrus's bistro this year?? last year's potluck in the parking lot was sad. I will handle the whole thing if y'all ju",
+          "relevance": "Direct evidence: Sonia expresses Sonia advocates loudly for big restaurant dinners; Cyrus also pushes real-food dining but from a different angle"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_c1d2e3f712",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "What is Priya's preference around trail breakfasts, and how does Tasha know this, what in the conversation shows they had this knowledge?",
+      "answer": "Priya is vegetarian and avoids dairy at trail breakfasts. Tasha revealed prior knowledge of this when she opened the breakfast plan unprompted by asking Priya \"you don't do dairy at trail breakfasts, right?\" and added \"saw you wave off the oatmeal.\" The chat behavior that grounds the knowledge is the unsolicited offer paired with a specific observation of Priya's prior food choice. Tasha is acting on something she has noticed at past outings rather than asking Priya for the first time, and Priya's reaction (\"you're a saint\") confirms the prior reading was correct.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_c1d2e3f7_s02_t004",
+          "speaker_display_name": "Tasha",
+          "message_excerpt": "yes!! Banjo missed it last week. also flagging, Priya we need to do that breakfast plan, because the camp coffee thing wasn't great for you last time. you don't do dairy at trail breakfasts, right? sa",
+          "relevance": "Direct evidence: Tasha expresses Priya is vegetarian and avoids dairy at trail breakfasts"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_c1d2e3f713",
+      "category": "Q5",
+      "difficulty": "hard",
+      "question": "What is Yuki's preference around climbing style (sport vs. trad multi-pitch), and how does Helen show in the conversation that she had read this about Yuki?",
+      "answer": "Yuki gravitates toward trad-style multi-pitch climbing. Helen reveals prior knowledge of this when she tells the group, unprompted, that Yuki has the multi-pitch headspace down, will lead a pitch, and \"gravitates to the trad-style problem solving naturally.\" The knowledge is grounded in observable chat behavior: Helen cites how Yuki \"reads the rock and places gear\" as her evidence, which is a description of climbing decisions Helen has watched her make over multiple outings, not an after-the-fact inference. Yuki's response (\"don't put me on blast\") confirms Helen had read her correctly.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_c1d2e3f7_s04_t015",
+          "speaker_display_name": "Helen",
+          "message_excerpt": "honestly Yuki has the multi-pitch headspace down better than half the climbers i have worked with. she'll lead a pitch on the spire i think. she gravitates to the trad-style problem solving naturally,",
+          "relevance": "Direct evidence: Helen expresses Yuki gravitates toward trad-style multi-pitch climbing rather than sport"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q6_c1d2e3f714",
+      "category": "Q6",
+      "difficulty": "medium",
+      "question": "The group has long described their pre-dawn meet at the trailhead on race-prep days as the standard. Does this convention apply to everyone? If not, name one member who pushes against it and what they actually prefer.",
+      "answer": "No, the convention does not apply to everyone. Sonia is one clear exception: when the meet-time was reopened, she said flatly that \"some of us are not running pre-dawn\" and that she would catch up at the trailhead breakfast at 8:30am, framing it as a fact about her, \"i didn't join a running club to wake up at 5am every saturday.\" The same exchange surfaces Iris and Marcus pushing back on the same convention, leading the group to formalize a 6:12am wave and a 7:30am wave instead of one universal pre-dawn meet.",
+      "answer_format": "multiple_choice",
+      "options": [
+        "A. Marcus",
+        "B. Sonia",
+        "C. Iris",
+        "D. Bernard"
+      ],
+      "correct_option": "B",
+      "evidence_anchors": [
+        {
+          "session_index": 6,
+          "turn_id": "grp_c1d2e3f7_s06_t001",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "ugh. ok. crew, we are NOT doing 5:30am again this year. last year killed me. can we make this 6:30am soft start, sunrise plus zero, instead?",
+          "relevance": "Direct evidence: Marcus expresses dislikes outings that start before 6am"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q6_c1d2e3f715",
+      "category": "Q6",
+      "difficulty": "medium",
+      "question": "The group treats the post-outing brewery stop at Hawthorne's as the default plan after long days out. Does this default actually apply to everyone? If not, name one member who quietly opts out and what they prefer instead.",
+      "answer": "No, the default does not apply to everyone. Owen quietly opts out: when Sonia named the brewery as the default after the maintenance day, Owen replied \"Brewery pass.\" In his voice that two-word reply is decisive, and the same conversation surfaces Bernard and Ana also stepping out. Owen's actual preference, made visible across the corpus, is to go straight from trail work into off-trail scouting or home, not to a social bar setting.",
+      "answer_format": "multiple_choice",
+      "options": [
+        "A. Owen",
+        "B. Sonia",
+        "C. Marcus",
+        "D. Tasha"
+      ],
+      "correct_option": "A",
+      "evidence_anchors": [
+        {
+          "session_index": 9,
+          "turn_id": "grp_c1d2e3f7_s09_t014",
+          "speaker_display_name": "Owen",
+          "message_excerpt": "Brewery pass.",
+          "relevance": "Direct evidence: Owen expresses group decides on Hawthorne's brewery stop after maintenance day; Owen explicitly opts out, consistent with skipping post-outing brewery stops"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_c1d2e3f716",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does the conversation reveal about the nature of Lionel and Beatrix's relationship within the group, and what evidence makes that visible?",
+      "answer": "Lionel and Beatrix have a settled, close friendship anchored in a recurring slow walk together. Lionel surfaces it in the gear-swap thread when he tells the group that he has been finishing at the back of the pack precisely because the conversations there are better, and that \"Beatrix and I have been doing the slow Sunday walks together for what, a year now? It is some of the best time I spend.\" Beatrix names the same ritual at the race recap when she says they have been doing the Sunday walks for over a year and that the post-dinner moonrise viewing felt of a piece with that. The group treats the pairing as known and stable, with both of them publicly choosing each other for off-pace, low-volume time over the rest of the group's bigger outings.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "close friends",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_c1d2e3f7_s05_t007",
+          "speaker_display_name": "Lionel",
+          "message_excerpt": "Friends, Iris is correct. I have been finishing at the back of the pack lately precisely because the conversations there are better; the front pack has its place but it is not the whole point. Beatrix",
+          "relevance": "Direct evidence: Lionel expresses Lionel and Beatrix share regular Sunday walks as close friends"
+        },
+        {
+          "session_index": 10,
+          "turn_id": "grp_c1d2e3f7_s10_t007",
+          "speaker_display_name": "Beatrix",
+          "message_excerpt": "Lionel and I have been doing those Sunday walks for over a year now; the moonrise viewing felt of a piece. Friends, this group is the steadiest thing in my week.",
+          "relevance": "Direct evidence: Beatrix expresses Lionel and Beatrix share weekly Sunday walks as a foundational close-friendship ritual"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_c1d2e3f717",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does the conversation reveal about the nature of Fatima and Owen's working relationship in the group, and what specifically makes that visible?",
+      "answer": "Fatima and Owen are the group's backpacking core, a working partnership built on shared multi-day trip planning. The conversation makes this visible during the May-trip thread when Owen says of the Olympic loop \"Done it twice. Foraging good in late may,\" and Fatima follows with \"Owen and I have done this loop twice together; we know the campsite spacing.\" When Iris asks if she can come along even though she would be slower, Owen volunteers to stay back with her on day one, treating Fatima's lead role as taken as given. The relationship in chat is functional and complementary: Fatima leads route logistics, Owen leads the on-trail scouting, and they coordinate without ceremony.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "multi-day backpacking partners",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_c1d2e3f7_s03_t001",
+          "speaker_display_name": "Owen",
+          "message_excerpt": "Olympic loop. Done it twice. Foraging good in late may. Beach section is hard but worth it.",
+          "relevance": "Direct evidence: Owen expresses Fatima and Owen are the backpacking core who plan multi-day trips together"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_c1d2e3f7_s03_t002",
+          "speaker_display_name": "Fatima",
+          "message_excerpt": "Owen and I have done this loop twice together; we know the campsite spacing. New folks should be comfortable with 18-mile days. List of must-pack items going up tomorrow.",
+          "relevance": "Direct evidence: Fatima expresses Fatima and Owen co-plan and have completed the Olympic loop together twice"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_c1d2e3f718",
+      "category": "Q7",
+      "difficulty": "hard",
+      "question": "What does the conversation reveal about the nature of Marcus and Derek's relationship inside the collective, and what specifically makes that visible?",
+      "answer": "Marcus and Derek are old co-founders with low-grade ongoing friction over training philosophy. The mechanism is visible in the meet-time thread when Derek pivots from logistics to a structural challenge, telling Marcus \"eight years of doing it your way and our injury rate is worse than the broader club averages\" and pushing for a longer base block. Marcus responds with \"derek we have had this conversation many times. we'll talk on saturday,\" deferring rather than engaging, which signals the disagreement is recurring. By the race-weekend recap thread, Derek partly walks back the pressure (\"i was wrong to push the volume conversation in march. on the record\"), confirming that the underlying tension is a real ongoing one, not a single flare-up. The relationship reads as mutual respect with a worn-in seam.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "old co-founders with training-philosophy friction",
+      "evidence_anchors": [
+        {
+          "session_index": 6,
+          "turn_id": "grp_c1d2e3f7_s06_t017",
+          "speaker_display_name": "Derek",
+          "message_excerpt": "different topic, but marcus, given we're talking training, i think we should bring back the longer base block this year. eight years of doing it your way and our injury rate is worse than the broader ",
+          "relevance": "Direct evidence: Derek expresses Marcus and Derek are old co-founders with friction over training philosophy"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_c1d2e3f719",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does the conversation reveal about the nature of Tasha and Ravi's relationship, and what specifically makes that visible?",
+      "answer": "Tasha and Ravi are dating, but had been keeping the relationship as an open secret in the group until Sonia surfaced it after spotting them at Cyrus's bistro. Tasha confirms it directly in chat (\"Ravi and i are dating, have been for a few months. i was going to wait until it felt less weird in the group\"), and adds that their weekend default has shifted toward couple's dog walks together. Ravi's discomfort with the public airing is visible in his response, where he replies first with an ellipsis and then says he is \"fine\" but does not love it being a chat topic. The relationship reads as established and acknowledged, but with one partner clearly more reserved about its visibility than the other.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "dating partners (open secret)",
+      "evidence_anchors": [
+        {
+          "session_index": 8,
+          "turn_id": "grp_c1d2e3f7_s08_t001",
+          "speaker_display_name": "Tasha",
+          "message_excerpt": "lol Sonia 🙃 ok yes Ravi and i are dating, have been for a few months. i was going to wait until it felt less weird in the group but i guess this is the moment <3",
+          "relevance": "Direct evidence: Tasha expresses Tasha and Ravi are in a dating relationship that they have kept as an open secret in the group"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q8_c1d2e3f71a",
+      "category": "Q8",
+      "difficulty": "hard",
+      "question": "What in the conversation signals that Helen's default climbing partner has shifted, and what appears to have driven the change?",
+      "answer": "Early state: Helen's default climbing partner had long been Bernard. The corpus opens with the two of them in a settled climbing-pair role; Bernard handles the route paperwork and Helen describes them as having read climbing routes \"together\" historically.\n\nShift signal: In the lottery-and-partner-shift session, Helen tells the group she and Yuki are doing Devil's Spire on the may 17 weekend, gives Bernard a heads-up about it as a partner change, and explains that \"yuki's been climbing every weekend with me and the chemistry is just better right now.\"\n\nTrigger: Yuki's rapid improvement and the partner-fit phrase Helen uses publicly. By the climbing-recap thread, Helen says outright that Yuki's headspace and her ability to read rock and place gear made her the natural multi-pitch partner. Bernard's evolved risk stance after the Cascade traverse near-miss appears to be the underlying push: he no longer endorses fast-and-light climbing, while Helen still does for the right route.\n\nEvolved state: Yuki is now Helen's regular climbing partner. The next planned outing (south face of Mount Index) is also booked with Yuki, while Bernard has moved into a route-review role rather than a partner role, and Helen and Bernard have agreed they need to have coffee about it offline.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_c1d2e3f7_s04_t006",
+          "speaker_display_name": "Helen",
+          "message_excerpt": "congrats Chloe, that's rad. on a different note, since we're all here, Yuki and i are going to be doing devil's spire on the may 17 weekend. heads up to bernard since i know we usually go together, bu",
+          "relevance": "Direct evidence: Helen expresses Helen's default climbing partner shifted from Bernard to Yuki"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_c1d2e3f7_s04_t007",
+          "speaker_display_name": "Bernard",
+          "message_excerpt": "Helen, I have read the message. One does appreciate the heads-up. I will direct any questions about the spire route, including anchor placement and bail points, to you separately, given the route's hi",
+          "relevance": "Direct evidence: Bernard expresses Bernard and Helen have visible tension after Helen drifted toward Yuki as climbing partner"
+        },
+        {
+          "session_index": 7,
+          "turn_id": "grp_c1d2e3f7_s07_t015",
+          "speaker_display_name": "Helen",
+          "message_excerpt": "yuki, when's the next one? i'm thinking south face of mount index, june, four pitches but committing",
+          "relevance": "Helen books the next climbing trip with Yuki, confirming the partner shift has stabilized"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "Helen and Bernard read as the default climbing pair"
+        },
+        {
+          "session_index": 4,
+          "value": "Helen names Yuki as the new partner; Bernard moved to advisory role"
+        },
+        {
+          "session_index": 7,
+          "value": "Helen and Yuki summit Devil's Spire; next trip also booked together"
+        }
+      ]
+    },
+    {
+      "id": "Q8_c1d2e3f71b",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "When does Greg's footwear preference first change in the conversation, and what explains why?",
+      "answer": "Early state: Greg has been a leather-boot wearer for years; Marcus references him having worn the leathers \"since I've known you\" as a long-standing fact about him.\n\nShift signal: In the spring gear-swap thread, Greg announces he is \"looking for trail runners size 12. done with the leather boots,\" framing the change as final.\n\nTrigger: Greg names blisters on long descents as the cause: \"blisters every long descent now, switching to trail runners for everything going forward.\" Marcus asks if he is sure given how long he has worn the leathers, and Greg replies with his standard one-word \"yep,\" confirming the decision is settled.\n\nEvolved state: Trail runners for everything. Cyrus immediately offers a pair of barely-worn Speedgoats in his size and Greg accepts, putting the new gear in his rotation by the end of the same thread.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_c1d2e3f7_s05_t001",
+          "speaker_display_name": "Greg",
+          "message_excerpt": "looking for trail runners size 12. done with the leather boots. blisters every long descent now, switching to trail runners for everything going forward.",
+          "relevance": "Direct evidence: Greg expresses Greg switched from leather full-grain boots to trail runners"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_c1d2e3f7_s05_t002",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "Greg got it, will check the gear closet, I think Cyrus had a pair he wasn't using. you sure on that switch though? you've had those leathers since I've known you",
+          "relevance": "Marcus confirms the prior leather-boot pattern was long-standing, anchoring the magnitude of the shift"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "Greg implicitly still on leather boots; not flagged"
+        },
+        {
+          "session_index": 5,
+          "value": "Greg announces switch to trail runners; cites blisters on long descents"
+        }
+      ]
+    },
+    {
+      "id": "Q8_c1d2e3f71c",
+      "category": "Q8",
+      "difficulty": "hard",
+      "question": "What in the conversation signals that Iris's relationship to the group's pace order has shifted, and what appears to have driven it?",
+      "answer": "Early state: Iris had been pushing herself to keep up with the front pack, treating it as the default mode of the group. She describes this retrospectively in her own words: \"i used to push myself to keep up with the front pack on these trail days because i thought that's what we did.\"\n\nShift signal: The first explicit signal comes in the gear-swap thread, when Iris pushes back against the saturday runs feeling like everyone is racing each other; she says she did not sign up to be timed and asks if it is okay to walk slow and look at birds. The group's response is to formalize a slow saturday option, validating the shift.\n\nTrigger: Iris names the realization itself as the cause: she says staying at the back \"is the whole reason i joined this group, just took me a year to admit it.\" The slow saturday formalization gives her social cover to do it openly. There is no external trigger, only an internal recognition that the front-pack mode was not what she wanted.\n\nEvolved state: Iris is now openly at the back, identifying species. By the climbing-recap thread she reports a black-throated gray warbler sighting and says she finally felt like she was doing the thing she came to do. By the maintenance-day thread she states the new mode plainly: \"i want to be in the back with banjo identifying lichens.\"",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_c1d2e3f7_s05_t005",
+          "speaker_display_name": "Iris",
+          "message_excerpt": "i need someone to talk me into something. the saturday runs have been getting kinda intense lately and i feel like everyone's racing each other not just being outside?? like i love you all but i didn'",
+          "relevance": "Direct evidence: Iris expresses Iris is uncomfortable with group competitiveness around pace"
+        },
+        {
+          "session_index": 7,
+          "turn_id": "grp_c1d2e3f7_s07_t011",
+          "speaker_display_name": "Iris",
+          "message_excerpt": "i was BIRDING all weekend, found a black-throated gray warbler!! omg!! life list grows. literally was at the back of the pack on the trails saturday and finally felt like i was doing the thing i came ",
+          "relevance": "Direct evidence: Iris expresses Iris shifted from trying to keep up with the front pack to staying at the back identifying species"
+        },
+        {
+          "session_index": 9,
+          "turn_id": "grp_c1d2e3f7_s09_t019",
+          "speaker_display_name": "Iris",
+          "message_excerpt": "honestly i used to push myself to keep up with the front pack on these trail days because i thought that's what we did, but i'm done with that. i want to be in the back with banjo identifying lichens ",
+          "relevance": "Direct evidence: Iris expresses Iris shifted from trying to keep up with the front pack to deliberately staying at the back identifying species"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 5,
+          "value": "Iris names her discomfort with the racing pace; group formalizes a slow saturday option"
+        },
+        {
+          "session_index": 7,
+          "value": "Iris reports finally feeling like she is doing the thing she came to do"
+        },
+        {
+          "session_index": 9,
+          "value": "Iris states the back-of-pack identity plainly"
+        }
+      ]
+    },
+    {
+      "id": "Q8_c1d2e3f71d",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What in the conversation signals that Tasha's default weekend activity has shifted, and what explains why?",
+      "answer": "Early state: Tasha's previous weekend default had been solo trail runs every saturday, an established personal rhythm she names directly in retrospect.\n\nShift signal: When the relationship with Ravi is brought into the open, Tasha tells the group: \"our weekend default has shifted, we mostly do dog walks together now, like that's the rhythm. used to do solo trail runs every saturday but it's different now.\" The shift is named in her own voice, not inferred.\n\nTrigger: The dating relationship with Ravi. The transition emerges from the same exchange that publicly surfaces them as a couple, and Tasha frames the new rhythm as a couple's pattern (dog walks together) rather than an injury or schedule change.\n\nEvolved state: Couple's hikes together with Banjo, replacing the solo run as her default. By the race-weekend recap, she says she and Ravi are doing a quiet weekend at the cabin, confirming the new pattern has held past the disclosure moment.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 8,
+          "turn_id": "grp_c1d2e3f7_s08_t009",
+          "speaker_display_name": "Tasha",
+          "message_excerpt": "all good Sonia, we'll handle it. honestly y'all our weekend default has shifted, we mostly do dog walks together now, like that's the rhythm. used to do solo trail runs every saturday but it's differe",
+          "relevance": "Direct evidence: Tasha expresses Tasha's weekend default shifted from solo trail runs to couple's hikes with Ravi"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_c1d2e3f7_s08_t001",
+          "speaker_display_name": "Tasha",
+          "message_excerpt": "lol Sonia 🙃 ok yes Ravi and i are dating, have been for a few months. i was going to wait until it felt less weird in the group but i guess this is the moment <3",
+          "relevance": "Direct evidence: Tasha expresses Tasha and Ravi are in a dating relationship that they have kept as an open secret in the group"
+        },
+        {
+          "session_index": 10,
+          "turn_id": "grp_c1d2e3f7_s10_t012",
+          "speaker_display_name": "Tasha",
+          "message_excerpt": "ravi and i are doing a quiet weekend at the cabin <3 banjo will be on the porch",
+          "relevance": "Tasha confirms the new couple-default pattern has stabilized after the disclosure"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 8,
+          "value": "Tasha names the shift from solo trail runs to couple's dog walks with Ravi"
+        },
+        {
+          "session_index": 10,
+          "value": "Tasha confirms the new pattern with a couple's cabin weekend"
+        }
+      ]
+    },
+    {
+      "id": "Q1_c1d2e3f71e",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Sonia's behavior across group decisions reveal about the kind of group settings she most enjoys, and what specifically in the conversation makes that visible?",
+      "answer": "Sonia thrives in large camp gatherings and pushes for high-attendance social meals. The pattern shows up first when she lobbies for the post-race dinner at the bistro and tells the group \"the more bodies at the table the better,\" and again when she brings up Lionel's birthday and reuses the same line: \"the more bodies the better, that's my forever motto.\" Both moments frame her preference as a stable identity claim rather than a one-off pitch, and her advocacy is consistently against parking-lot potlucks and small two-person outings.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c1d2e3f7_s01_t007",
+          "speaker_display_name": "Sonia",
+          "message_excerpt": "@Marcus @Ana yes please 7am minimum 🥂 also can we PLEASE do the post-race dinner at Cyrus's bistro this year?? last year's potluck in the parking lot was sad. I will handle the whole thing if y'all ju",
+          "relevance": "Direct evidence: Sonia expresses Sonia advocates loudly for big restaurant dinners; Cyrus also pushes real-food dining but from a different angle"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_c1d2e3f7_s08_t011",
+          "speaker_display_name": "Sonia",
+          "message_excerpt": "YES ok @Lionel we are doing a proper birthday for you, big group, april 24, friday night, Cyrus's bistro, i'm coordinating with him 🥂🍷 the more bodies the better, that's my forever motto",
+          "relevance": "Reinforces Sonia's stable preference for large group dinners",
+          "turn_index": 12
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_c1d2e3f71f",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Cyrus's behavior reveal about his relationship to pre-packaged food and group meals, and how does the conversation reinforce that across the corpus?",
+      "answer": "Cyrus refuses pre-packaged food and brings real cooking to every group meal. The first signal is the dinner thread, where he hosts the bistro on the condition that nothing pre-packaged is on the table, including the trail gels people stash in their packs, and pledges to plate something proper. He repeats the position when Fatima proposes freeze-dried for the multi-day, telling her \"one does not haul packets for a three-day trip when fresh ingredients last 36 hours easily\" and offering to pre-portion fresh pasta for night one. Across both threads the framing is consistent: real food, prepared by him, no exceptions.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c1d2e3f7_s01_t008",
+          "speaker_display_name": "Cyrus",
+          "message_excerpt": "Team, the bistro is yours that Saturday, no charge for the room. One condition: nothing pre-packaged on the table, that includes the gels you all stash in your packs. I will plate something proper for",
+          "relevance": "Direct evidence: Cyrus expresses Cyrus advocates real-food dinners but with the framing of refusing pre-packaged food, distinct from Sonia's social-volume framing"
+        },
+        {
+          "session_index": 2,
+          "turn_id": "grp_c1d2e3f7_s02_t012",
+          "speaker_display_name": "Cyrus",
+          "message_excerpt": "Team, hard disagree on the freeze-dried. One does not haul packets for a three-day trip when fresh ingredients last 36 hours easily. I can pre-portion the first night, pasta with vegetables and a hard cheese. It travels.",
+          "relevance": "Reinforces Cyrus's anti-pre-packaged stance in a separate context",
+          "turn_index": 13
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_c1d2e3f720",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Beatrix's pattern of contributions reveal about how she relates to the group's social dynamics, and what specifically in the conversation makes that visible?",
+      "answer": "Beatrix consistently watches and names the group's emotional dynamics rather than weighing in on logistics. Across the corpus she opens with reflective framings like \"I notice that...\" and points out things others would walk past: she names that the trip threads collapse into food debates, flags the temperature in the room when Helen's partner-shift announcement lands sharply on Bernard, and points out that the early-start convention is being treated as universal when several people clearly do not endorse it. By the maintenance-day thread she names a quiet pattern of three people opting out of the brewery norm. Her role across the conversation is observational and stabilizing, not directive.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_c1d2e3f7_s04_t010",
+          "speaker_display_name": "Beatrix",
+          "message_excerpt": "I notice the temperature in the room, just naming it. Helen, the partner-fit phrase landed differently than perhaps intended. Bernard, your dignity in this is appreciated.",
+          "relevance": "Beatrix names a sharp emotional moment that others would have moved past",
+          "turn_index": 11
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_c1d2e3f7_s06_t009",
+          "speaker_display_name": "Beatrix",
+          "message_excerpt": "I notice that the early-start convention has always been written as universal, but we have at least three people right now saying it does not work for them. Maybe it has never quite been universal. Worth flagging.",
+          "relevance": "Beatrix names a structural pattern in the group's norms that nobody else surfaces"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_c1d2e3f721",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Chloe's behavior across the corpus reveal about her relationship to competitive racing versus recreational outings, and what specifically makes that visible?",
+      "answer": "Chloe is unmistakably oriented toward competitive racing over recreational outings. Her contributions consistently filter group activities through a race lens: she calls the south rim variant the only Cascade Ridge course \"worth showing up for\" and dismisses recreational versions, drops Strava links to track her training paces, treats the multi-day Olympic loop as taper for her next race, and announces a Bighorn 100 lottery win as headline news for the chat. Her dietary signal (gels and Honey Stinger waffles only) and her reaction to Derek's training pushback both reinforce a settled identity as a racer rather than a casual outing-goer.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c1d2e3f7_s01_t013",
+          "speaker_display_name": "Chloe",
+          "message_excerpt": "south rim is the answer. only course worth showing up for. I'll be running it 🔥 also fwiw I don't really see the point of these recreational versions, but the south rim at least is competitive enough",
+          "relevance": "Chloe explicitly dismisses recreational versions in favor of the competitive course"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_c1d2e3f7_s04_t000",
+          "speaker_display_name": "Chloe",
+          "message_excerpt": "OK CREW. NOT TO BURY THE LEAD BUT I JUST GOT THE BIGHORN 100 LOTTERY 🔥🔥🔥. June 19. one hundred miles. pacers needed. who's in??",
+          "relevance": "Chloe centers a 100-mile race as the reference point for her training year"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_c1d2e3f722",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Theo's pattern in the chat reveal about how he engages with the group's social side, and what specifically makes that visible?",
+      "answer": "Theo engages the group only on operational logistics, not on social banter. Across the corpus he speaks almost exclusively to confirm availability, role, or arrival, using military-style brevity (\"Copy. Available May 16. Will haul the gear truck. No race, support only.\"; \"Affirmative. Returning April 5.\"; \"Will be back from training and can work the lower section.\"). He never participates in the food debates, the dating disclosure, the climbing recap, or the brewery-stop conversations, despite being active in the same threads. The absence is the signal: he treats the chat as a logistics channel and stays out of everything else.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c1d2e3f7_s01_t023",
+          "speaker_display_name": "Theo",
+          "message_excerpt": "Copy. Available May 16. Will haul the gear truck. No race, support only.",
+          "relevance": "Theo's first appearance is a pure logistics confirmation",
+          "turn_index": 24
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_c1d2e3f7_s08_t022",
+          "speaker_display_name": "Theo",
+          "message_excerpt": "Affirmative. Returning April 5. Will be operational for Cascade Ridge weekend.",
+          "relevance": "Theo's later messages remain operational with no social engagement",
+          "turn_index": 23
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_c1d2e3f723",
+      "category": "Q7",
+      "difficulty": "easy",
+      "question": "What does the conversation reveal about the nature of Marcus and Ana's relationship in the group, and what specifically makes that visible?",
+      "answer": "Marcus and Ana are cousins who grew up together. Ana surfaces this directly when she pushes back on Marcus's complaint about pre-dawn race starts, telling him \"As your cousin I will also gently say you have been complaining about early starts since we were teenagers, so this is not new information.\" The framing places the relationship as long-standing and familial rather than purely social, and Ana's confidence in correcting Marcus across the group chat reflects a closeness predating the collective.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "cousins",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c1d2e3f7_s01_t006",
+          "speaker_display_name": "Ana",
+          "message_excerpt": "Marcus, I can confirm the 16th works for the school calendar; the 23rd is the AP testing weekend. As your cousin I will also gently say you have been complaining about early starts since we were teena",
+          "relevance": "Direct evidence: Ana expresses Marcus and Ana are cousins who grew up together"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_c1d2e3f724",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does the conversation reveal about Marcus and Greg's relationship outside the group's formal outings, and what specifically makes that visible?",
+      "answer": "Marcus and Greg are close neighbors who live two doors apart and regularly shuttle each other to outings. The relationship surfaces during the Cascade Ridge logistics planning, where Marcus tells the group that he and Greg will handle the south-rim car shuttle as their usual arrangement, framing it as routine because they live two doors down and just convoy from his driveway. The shuttle pair-up holds across the multi-day plan as well, where Greg again volunteers to drive both ways with Marcus. The chat treats the partnership as a fixed logistical given rather than a one-off favor.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "neighbors and shuttle partners",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c1d2e3f7_s01_t021",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "great. Greg and I will shuttle the south rim cars from the start to the finish lot, that's our usual arrangement, two doors down so we just convoy from my driveway. anyone need a ride?",
+          "relevance": "Direct evidence: Marcus expresses Marcus and Greg are neighbors two doors apart and shuttle together"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_c1d2e3f725",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does the conversation reveal about Greg and Owen's working pattern inside the group, and how is that visible in the chat?",
+      "answer": "Greg and Owen are a settled trail-maintenance pair who do the same yearly split together. The dynamic is visible when Owen opens the spring maintenance day thread and Greg replies \"in. drive the truck\" without prompting; Owen then assigns roles automatically: \"Same crew as last spring. We split Wickham at the falls, you take upper, I take lower. Done by 4.\" Neither asks the other to confirm, and the routine is treated as a known annual pattern rather than something being negotiated. They show up in the same operational mode across the corpus, both quiet, both functional, both arriving at the work without small talk.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "trail-maintenance partners",
+      "evidence_anchors": [
+        {
+          "session_index": 9,
+          "turn_id": "grp_c1d2e3f7_s09_t002",
+          "speaker_display_name": "Owen",
+          "message_excerpt": "Greg good. Same crew as last spring. We split Wickham at the falls, you take upper, I take lower. Done by 4.",
+          "relevance": "Direct evidence: Owen expresses Greg and Owen are the regular trail-maintenance pair who do the same split each spring"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_c1d2e3f726",
+      "category": "Q7",
+      "difficulty": "hard",
+      "question": "What does the conversation reveal about Helen and Bernard's current relationship inside the climbing side of the group, and what specifically makes that visible?",
+      "answer": "Helen and Bernard are former climbing partners whose relationship has cooled into a respectful but tense formality. The fracture is visible the moment Helen announces she will be doing Devil's Spire with Yuki and frames it as a chemistry-and-partner-fit issue; Bernard replies with a careful \"One does appreciate the heads-up\" and a pointed offer to direct any spire-route questions \"separately, given the route's history.\" When Yuki invites him along, Bernard declines flatly. By the climbing recap, they re-litigate his evolved fast-and-light stance against Helen's, and Helen ends with \"let's not relitigate.\" By the gear-swap and route-review threads, Helen is asking for ropes and Bernard is reviewing topo annotations for her, but they no longer climb together, and the partner role has clearly transferred to Yuki.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "former climbing partners with tense aftermath",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_c1d2e3f7_s04_t007",
+          "speaker_display_name": "Bernard",
+          "message_excerpt": "Helen, I have read the message. One does appreciate the heads-up. I will direct any questions about the spire route, including anchor placement and bail points, to you separately, given the route's hi",
+          "relevance": "Direct evidence: Bernard expresses Bernard and Helen have visible tension after Helen drifted toward Yuki as climbing partner"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_c1d2e3f727",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Yuki's pattern of activity choices across the corpus reveal about her preferred outing type, and what specifically makes that visible?",
+      "answer": "Yuki consistently chooses climbing days over running days, and prioritizes multi-pitch routes when given a choice. She skips the May race weekend because she has a multi-pitch trip booked with Helen, opts in for the dinner but not the race, books a follow-up climb for the weekend before the multi-day backpacking trip, and reports back from Devil's Spire with photos and onigiri summit lunches. By the race-weekend recap, she has the next climbing weekend on Mount Index already locked. She still attends some run days (Saturday foothills run is one), but every solo planning choice she makes leans toward climbing.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c1d2e3f7_s01_t016",
+          "speaker_display_name": "Yuki",
+          "message_excerpt": "im in for the dinner ✨ but probably not the race, may already booked for a multi-pitch trip with Helen ❤️",
+          "relevance": "Yuki opts out of a race weekend for a climbing trip without prompting",
+          "turn_index": 17
+        },
+        {
+          "session_index": 7,
+          "turn_id": "grp_c1d2e3f7_s07_t000",
+          "speaker_display_name": "Yuki",
+          "message_excerpt": "WE DID IT ✨✨ devil's spire all six pitches, no falls, Helen and i topped out at 4pm yesterday. i can't believe i lead the third pitch. brought onigiri up for summit lunch, of course 🍙",
+          "relevance": "Yuki centers her climbing-weekend report as a personal milestone"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_c1d2e3f728",
+      "category": "Q1",
+      "difficulty": "hard",
+      "question": "What does Bernard's behavior in the climbing-related threads reveal about his current attitude toward fast-and-light climbing and how that fits with his role in the group, and what specifically makes that visible?",
+      "answer": "Bernard now openly rejects fast-and-light climbing for any route above grade 5.7, framing it as \"unjustifiable\" for recreational climbing. The mechanism is visible in the climbing recap, where Helen invokes their old shared philosophy with \"fast and light when conditions allow, just like you used to say,\" and Bernard answers by stating directly that his position has evolved since the cascade traverse near-miss two years ago and that he no longer endorses the approach. He pairs the view with operational rigor (probing pitch four's leader-fall risk, asking about cam placement runouts) consistent with his long-standing role as the group's permit and safety officer. The signal is that the philosophical change shows up not as a one-line preference, but as a change in how he interrogates routes the group is climbing.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 7,
+          "turn_id": "grp_c1d2e3f7_s07_t006",
+          "speaker_display_name": "Bernard",
+          "message_excerpt": "Helen, with respect, my position on fast and light has evolved since the cascade traverse near-miss two years ago. I no longer endorse the approach for any climb above grade 5.7, regardless of conditions. The risk profile is unjustifiable for recreational climbing.",
+          "relevance": "Bernard states his current climbing risk position directly"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_c1d2e3f729",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Tasha's pattern of contributions reveal about how she habitually engages with other members during group threads, and what specifically makes that visible?",
+      "answer": "Tasha consistently functions as a quiet caretaker in the group's chat. The pattern shows up in small repeated moves: she pre-empts Priya's dietary needs without being asked, asks the group \"how's everyone holding up\" in two separate sessions, brings extra trail bars on the multi-day for whoever runs low, mentions checking in privately with quieter members, and validates Iris with affection when she pushes back on the racing pace. Her individual messages are small, but the cumulative effect across the corpus is a steady caretaking role that the rest of the group has come to rely on.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_c1d2e3f7_s02_t004",
+          "speaker_display_name": "Tasha",
+          "message_excerpt": "yes!! Banjo missed it last week. also flagging, Priya we need to do that breakfast plan, because the camp coffee thing wasn't great for you last time. you don't do dairy at trail breakfasts, right? sa",
+          "relevance": "Direct evidence: Tasha expresses Tasha and Priya are close enough that Tasha pre-empts Priya's dietary needs without asking"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_c1d2e3f7_s03_t012",
+          "speaker_display_name": "Tasha",
+          "message_excerpt": "i'm in, leaving Banjo home this time, the beach section is too rough for him. <3 also im bringing extra trail bars for whoever is running low, you all know me",
+          "relevance": "Tasha frames bringing extra trail bars for others as a known and identifying pattern"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q3_c1d2e3f72a",
+      "category": "Q3",
+      "difficulty": "hard",
+      "question": "Based on the conversations, what are each group member's preferences regarding what kind of post-outing social setting (brewery vs. restaurant vs. skip) they actually want?",
+      "answer": "Several members signal clear preferences on post-outing socializing across the corpus, with the rest unspecified.\n\n- Sonia: prefers high-attendance restaurant dinners; treats the bistro as the upgrade over parking-lot potlucks and uses the line \"the more bodies at the table the better\" twice across the corpus.\n- Cyrus: prefers proper plated meals with no pre-packaged food; happiest hosting at his bistro, which he confirms when he opens the bistro for the post-race dinner.\n- Owen: declines the brewery convention with a clipped \"Brewery pass\"; prefers off-trail scouting or going home over social bar settings.\n- Bernard: opts out of both the brewery and the family-style bistro lunch; says he will come for the conversation but prefers black coffee and an apple at midday and will not order off menus.\n- Ana: skips the brewery; states it has never been her scene and that she would rather wrap and get back than try to cut something short for it.\n- Lionel: skips the brewery to do the slow Sunday walks with Beatrix; prefers small low-volume settings.\n- Beatrix: prefers small low-volume gatherings; defers the multi-day, joins for slower walks and the bistro birthday dinner only.\n- Marcus, Chloe, Priya, Tasha, Yuki: opt in to the bistro lunch; no strong stance on the brewery beyond going along.\n- Greg, Theo, Owen (already noted), Derek, Helen, Iris, Kasper, Ravi, Fatima, Cyrus (host): no expressed brewery-specific preference beyond noted exceptions.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 9,
+          "turn_id": "grp_c1d2e3f7_s09_t014",
+          "speaker_display_name": "Owen",
+          "message_excerpt": "Brewery pass.",
+          "relevance": "Direct evidence: Owen expresses group decides on Hawthorne's brewery stop after maintenance day; Owen explicitly opts out, consistent with skipping post-outing brewery stops"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_c1d2e3f7_s05_t022",
+          "speaker_display_name": "Bernard",
+          "message_excerpt": "I will likely come for the conversation, but one prefers black coffee and an apple at midday. I will not be ordering off the menu.",
+          "relevance": "Direct evidence: Bernard expresses group decides on family-style group lunch at Cyrus's bistro; Bernard verbally opts out, preferring black coffee and apple"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_c1d2e3f7_s01_t007",
+          "speaker_display_name": "Sonia",
+          "message_excerpt": "@Marcus @Ana yes please 7am minimum 🥂 also can we PLEASE do the post-race dinner at Cyrus's bistro this year?? last year's potluck in the parking lot was sad. I will handle the whole thing if y'all ju",
+          "relevance": "Direct evidence: Sonia expresses Sonia advocates loudly for big restaurant dinners; Cyrus also pushes real-food dining but from a different angle"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_c1d2e3f72b",
+      "category": "Q1",
+      "difficulty": "easy",
+      "question": "What does Iris's behavior across food and outing threads reveal about her dietary practice and what she brings to group days, and how is that visible in the conversation?",
+      "answer": "Iris is vegan and brings homemade vegan food to group outings, particularly trail granola for everyone. She names the granola directly in the training-debrief thread (\"i made vegan trail granola again btw, will bring a big batch saturday for whoever wants\"), and at the birthday dinner she offers to make a vegan roasted-vegetable dish before Cyrus tells her the menu already has a vegan course. The pattern is identifying for her: food is part of how she shows up to the group, and her vegan framing is consistent across two separate threads.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_c1d2e3f7_s02_t017",
+          "speaker_display_name": "Iris",
+          "message_excerpt": "haha Beatrix you are SO right. literally every time. i made vegan trail granola again btw, will bring a big batch saturday for whoever wants. omg the smell when toasting it 😂",
+          "relevance": "Iris explicitly frames her contribution as vegan trail granola for the group"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_c1d2e3f7_s08_t015",
+          "speaker_display_name": "Iris",
+          "message_excerpt": "i'll bring something vegan!! i can make a roasted veg thing 🌱",
+          "relevance": "Iris reinforces the vegan framing for a separate group dinner"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_c1d2e3f72c",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Greg's pattern of contributions reveal about his role in the group and how he engages with logistics, and what specifically makes that visible?",
+      "answer": "Greg occupies a quiet, dependable logistics role: he shows up, he drives, and he says almost nothing. The pattern is built from message after message that consists of one or two words: \"in,\" \"in. drive too,\" \"in. drive the truck,\" \"good day. legs fine,\" \"copy.\" When the maintenance day requires a truck, the climbing weekend recap goes long, or the multi-day backpacking trip needs a shuttle driver, Greg signs up the same way each time. The signal is not the content of any single message but the cumulative consistency: across ten sessions, he never breaks character and never fails to volunteer for the work nobody else wants to coordinate.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c1d2e3f7_s01_t003",
+          "speaker_display_name": "Greg",
+          "message_excerpt": "in",
+          "relevance": "Greg's first message in the corpus sets the one-word pattern"
+        },
+        {
+          "session_index": 9,
+          "turn_id": "grp_c1d2e3f7_s09_t001",
+          "speaker_display_name": "Greg",
+          "message_excerpt": "in. drive the truck",
+          "relevance": "Greg's logistics-focused commitment pattern repeats across sessions"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_c1d2e3f72d",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Helen's pattern across the climbing-related threads reveal about how her professional background shows up in the chat, and what specifically makes that visible?",
+      "answer": "Helen's geology background regularly bleeds into how she frames climbing routes for the group. She uses the word \"rad\" unironically about rocks (\"geology field thing in the cascades. rad rocks involved\"), pushes the group toward the harder Wonderland section because \"the metamorphic geology there is unreal,\" and explains gear and climbing decisions in long, technical bursts that pivot smoothly between geology, partnership, and route-reading. The pattern is steady: when Helen writes longer messages, they almost always involve some combination of rock type, route topography, and what the rock will let her do. The professional layer is not a one-off; it is part of how she relates to the group's climbing side.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_c1d2e3f7_s02_t020",
+          "speaker_display_name": "Helen",
+          "message_excerpt": "i'm out next sat, geology field thing in the cascades. rad rocks involved. won't be back til sunday night.",
+          "relevance": "Helen blends professional and recreational language as a stable pattern",
+          "turn_index": 21
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_c1d2e3f7_s03_t016",
+          "speaker_display_name": "Helen",
+          "message_excerpt": "i'll skip, climbing trip with Yuki that weekend probably. but you all should ABSOLUTELY get the wonderland section even though its harder, the metamorphic geology there is unreal",
+          "relevance": "Helen's geological framing reappears to argue for a harder route option",
+          "turn_index": 17
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_c1d2e3f72e",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Ana's pattern across the scheduling threads reveal about how she relates to time and group commitments, and what specifically makes that visible?",
+      "answer": "Ana relates to group commitments through tightly bounded scheduling and explicit availability windows. The pattern shows up in her first appearance, when she confirms the May 16 date by anchoring it in the school calendar and naming why the alternative weekend is impossible. She uses \"Regrettably\" repeatedly to decline outings that exceed her time budget (the multi-day, the brewery stop) and explicitly says she would rather wrap and get back than try to cut something short. Her contributions consistently come with start times, end times, and reasons, and she opts out cleanly when something does not fit, never trying to renegotiate the structure of the outing to accommodate her schedule.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c1d2e3f7_s01_t006",
+          "speaker_display_name": "Ana",
+          "message_excerpt": "Marcus, I can confirm the 16th works for the school calendar; the 23rd is the AP testing weekend. As your cousin I will also gently say you have been complaining about early starts since we were teenagers, so this is not new information. Tagging start time conversation: 7-8am gun would be ideal.",
+          "relevance": "Ana opens with a tightly time-anchored confirmation"
+        },
+        {
+          "session_index": 9,
+          "turn_id": "grp_c1d2e3f7_s09_t016",
+          "speaker_display_name": "Ana",
+          "message_excerpt": "Regrettably, I have a school board call at 5pm Saturday. I will skip the brewery; I would rather wrap and get back than try to cut something short. The brewery has never been my scene to be honest.",
+          "relevance": "Ana's habitual time-bounded opt-out pattern is consistent across threads",
+          "turn_index": 17
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_c1d2e3f72f",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does the conversation reveal about Sonia and Cyrus's working relationship within the group, and how is that visible across the threads?",
+      "answer": "Sonia and Cyrus operate as a settled co-organizing pair on every group dinner and post-outing meal. The dynamic shows up first when Sonia drives the post-race dinner thread by lobbying for the bistro and Cyrus follows her by opening the bistro and setting the food rules. The pattern repeats for the saturday bistro lunch, where Sonia floats the family-style group order and Cyrus immediately commits the venue and menu. By Lionel's birthday thread, Sonia announces the date and Cyrus confirms the menu in the same exchange, treating coordination as automatic. Across the corpus they never disagree publicly: Sonia handles social-volume framing and Cyrus handles food and venue, and the division of labor is treated as known by everyone else in the chat.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "social-event co-organizers",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_c1d2e3f7_s05_t014",
+          "speaker_display_name": "Sonia",
+          "message_excerpt": "ok separately, for the saturday we're at Cyrus's bistro post-run, I'm thinking we coordinate one of those ridiculous group orders, family style menu, everyone in??",
+          "relevance": "Sonia drives the social plan; Cyrus operationalizes the next message",
+          "turn_index": 15
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_c1d2e3f7_s05_t015",
+          "speaker_display_name": "Cyrus",
+          "message_excerpt": "Team, I will set the family-style menu for Saturday at noon. Twelve seats reserved. One unanimous yes from the group?",
+          "relevance": "Cyrus immediately commits the venue and menu, completing the coordination pattern",
+          "turn_index": 16
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_c1d2e3f730",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does the conversation reveal about the nature of Yuki and Helen's relationship inside the group, and what specifically makes that visible?",
+      "answer": "Yuki and Helen are climbing partners whose relationship has matured from a mentor-mentee dynamic into a genuine partnership. The mentor framing shows up early when Yuki tells the group the May trip is booked with Helen, and Helen explains in the partner-shift announcement that Yuki has been climbing every weekend with her and the chemistry is just better. By the climbing-weekend recap, Helen describes Yuki not as a learner but as a peer (\"better trad climber than half the crew that's been doing it longer\"), and Yuki has taken a clean pitch lead on Devil's Spire. Their next outing, the south face of Mount Index, is booked the same evening. The relationship reads in the chat as professional respect and warm friendship combined.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "climbing partners (mentor-to-peer)",
+      "evidence_anchors": [
+        {
+          "session_index": 7,
+          "turn_id": "grp_c1d2e3f7_s07_t001",
+          "speaker_display_name": "Helen",
+          "message_excerpt": "yuki absolutely crushed it. honest review: she's a better trad climber than half the crew that's been doing it longer. the headspace thing translated immediately, the way she reads the rock and places gear. that third pitch lead was clean.",
+          "relevance": "Helen frames Yuki as peer-grade after the multi-pitch trip, completing the mentor-to-partner transition"
+        }
+      ],
+      "temporal_anchors": []
+    }
+  ],
+  "meta": {
+    "source": "SocialMemBench",
+    "source_kind": "real_benchmark",
+    "network_id": "grp_c1d2e3f7",
+    "n_sessions": 10,
+    "n_turns": 254,
+    "v4_correct": 39,
+    "v4_total": 48,
+    "v4_errors": 9,
+    "v4_accuracy": 0.8125
+  }
+}

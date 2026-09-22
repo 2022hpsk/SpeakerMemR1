@@ -1,0 +1,719 @@
+{
+  "schema": "socialmembench-real-v4-source/1",
+  "scenario": "[socialmembench:grp_5e6f7a8b] real benchmark conversation",
+  "speakers": [
+    "Claudette",
+    "Femi",
+    "Jordan",
+    "Marcus",
+    "Vera"
+  ],
+  "sessions": [
+    {
+      "session_id": "grp_5e6f7a8b_s01",
+      "session_index": 1,
+      "topic": "Planning objection to no. 22 loft conversion",
+      "ts": "2025-05-05",
+      "turns": [
+        {
+          "turn": "grp_5e6f7a8b_s01_t000",
+          "speaker": "Femi",
+          "speaker_id": "p_a5a1b2c3",
+          "content": "Quick question for the street, has anyone seen the planning notice on no. 22's gate? They're applying for a rear dormer and loft conversion. Consultation closes Friday.",
+          "ts": "2025-05-05T11:04:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_5e6f7a8b_s01_t001",
+          "speaker": "Claudette",
+          "speaker_id": "p_a5b2c3d4",
+          "content": "I saw it this morning. I remember when no. 22 was a single-storey cottage. This street does not need any more bulk added to it. I shall be objecting.",
+          "ts": "2025-05-05T11:17:00",
+          "reply_to": "grp_5e6f7a8b_s01_t000"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s01_t002",
+          "speaker": "Marcus",
+          "speaker_id": "p_a5e5f6a7",
+          "content": "I'd want to know about the skip and scaffolding access. Last time there was building work that side it blocked the school gate for two weeks.",
+          "ts": "2025-05-05T11:22:00",
+          "reply_to": "grp_5e6f7a8b_s01_t000"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s01_t003",
+          "speaker": "Femi",
+          "speaker_id": "p_a5a1b2c3",
+          "content": "Good points both. Just checking, does anyone want to do a joint letter? A collective objection carries more weight than individual ones. Worth considering before Friday.",
+          "ts": "2025-05-05T11:31:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_5e6f7a8b_s01_t004",
+          "speaker": "Claudette",
+          "speaker_id": "p_a5b2c3d4",
+          "content": "I would prefer a joint letter, yes. Thirty years on this street and I have always found we do better together when it comes to planning. Individual letters get filed. A joint letter gets read.",
+          "ts": "2025-05-05T11:45:00",
+          "reply_to": "grp_5e6f7a8b_s01_t003"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s01_t005",
+          "speaker": "Jordan",
+          "speaker_id": "p_a5c3d4e5",
+          "content": "not really my fight tbh, I rent 🙂 happy to add my name if it helps?",
+          "ts": "2025-05-05T12:03:00",
+          "reply_to": "grp_5e6f7a8b_s01_t003"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s01_t006",
+          "speaker": "Femi",
+          "speaker_id": "p_a5a1b2c3",
+          "content": "Every name helps, Jordan. Thanks all, I'll draft something and share it here before we send. Let's keep it on the street first before anyone goes straight to the council.",
+          "ts": "2025-05-05T12:14:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_5e6f7a8b_s01_t007",
+          "speaker": "Vera",
+          "speaker_id": "p_a5d4e5f6",
+          "content": "Already sent mine to the council. Main concerns: scaffolding access, parking disruption during works.",
+          "ts": "2025-05-05T18:52:00",
+          "reply_to": "grp_5e6f7a8b_s01_t003"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s01_t008",
+          "speaker": "Jordan",
+          "speaker_id": "p_a5c3d4e5",
+          "content": "ah ok fair, I can still add my name to the joint one if you're sending both",
+          "ts": "2025-05-05T18:54:00",
+          "reply_to": "grp_5e6f7a8b_s01_t007"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s01_t009",
+          "speaker": "Femi",
+          "speaker_id": "p_a5a1b2c3",
+          "content": "yes please, still helps. I'll share a draft tonight.",
+          "ts": "2025-05-05T18:56:00",
+          "reply_to": "grp_5e6f7a8b_s01_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_5e6f7a8b_s02",
+      "session_index": 2,
+      "topic": "Street party planning; residents' parking scheme consultation",
+      "ts": "2025-05-12",
+      "turns": [
+        {
+          "turn": "grp_5e6f7a8b_s02_t000",
+          "speaker": "Femi",
+          "speaker_id": "p_a5a1b2c3",
+          "content": "Quick question for the street, the council is consulting on a Residents' Parking Zone for our road. Proposal is controlled hours Mon–Fri 8am–6pm, permits at £80/year. Thoughts? I want to know where everyone stands before the meeting.",
+          "ts": "2025-05-12T15:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_5e6f7a8b_s02_t001",
+          "speaker": "Claudette",
+          "speaker_id": "p_a5b2c3d4",
+          "content": "I have mixed feelings. I understand the frustration with commuter parking. But £80 a year is an additional burden on residents who have always parked freely here. I remember when you could park outside your own home without paying for the privilege. I am not convinced.",
+          "ts": "2025-05-12T15:28:00",
+          "reply_to": "grp_5e6f7a8b_s02_t000"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s02_t002",
+          "speaker": "Marcus",
+          "speaker_id": "p_a5e5f6a7",
+          "content": "I'm in favour. As a parent, the school gate situation is untenable, people park on the pavement all morning. Permits would fix that overnight.",
+          "ts": "2025-05-12T15:35:00",
+          "reply_to": "grp_5e6f7a8b_s02_t000"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s02_t003",
+          "speaker": "Jordan",
+          "speaker_id": "p_a5c3d4e5",
+          "content": "I don't have a car so it doesn't really affect me 🙂 but £80 still feels steep",
+          "ts": "2025-05-12T15:41:00",
+          "reply_to": "grp_5e6f7a8b_s02_t000"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s02_t004",
+          "speaker": "Femi",
+          "speaker_id": "p_a5a1b2c3",
+          "content": "I'm broadly in favour. My concern is the commuter overflow onto the next street.",
+          "ts": "2025-05-12T15:49:00",
+          "reply_to": "grp_5e6f7a8b_s02_t000"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s02_t005",
+          "speaker": "Vera",
+          "speaker_id": "p_a5d4e5f6",
+          "content": "Support the scheme. Home visits mean I need parking here on clinic days.",
+          "ts": "2025-05-12T18:03:00",
+          "reply_to": "grp_5e6f7a8b_s02_t000"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s02_t006",
+          "speaker": "Femi",
+          "speaker_id": "p_a5a1b2c3",
+          "content": "Good to have views from everyone. So: Vera and Marcus in favour, Claudette against, Jordan neutral, me broadly yes with caveats. I'll represent that range at the consultation meeting. Thanks all.",
+          "ts": "2025-05-12T18:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_5e6f7a8b_s02_t007",
+          "speaker": "Jordan",
+          "speaker_id": "p_a5c3d4e5",
+          "content": "if they do it I'd want a review after a year tbh",
+          "ts": "2025-05-12T18:17:00",
+          "reply_to": "grp_5e6f7a8b_s02_t006"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s02_t008",
+          "speaker": "Vera",
+          "speaker_id": "p_a5d4e5f6",
+          "content": "a review clause would be sensible",
+          "ts": "2025-05-12T18:19:00",
+          "reply_to": "grp_5e6f7a8b_s02_t007"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s02_t009",
+          "speaker": "Claudette",
+          "speaker_id": "p_a5b2c3d4",
+          "content": "a trial period I could live with. Permanence is what irritates me",
+          "ts": "2025-05-12T18:21:00",
+          "reply_to": "grp_5e6f7a8b_s02_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_5e6f7a8b_s03",
+      "session_index": 3,
+      "topic": "Near-miss at school gate; Vera's noise complaint",
+      "ts": "2025-05-19",
+      "turns": [
+        {
+          "turn": "grp_5e6f7a8b_s03_t000",
+          "speaker": "Marcus",
+          "speaker_id": "p_a5e5f6a7",
+          "content": "Really concerning one from the school gate this morning. A car reversed off no. 19's driveway and my son was right there, driver didn't see him. He's fine but I'm shaking. I'm raising this formally today.",
+          "ts": "2025-05-19T08:47:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_5e6f7a8b_s03_t001",
+          "speaker": "Femi",
+          "speaker_id": "p_a5a1b2c3",
+          "content": "Marcus, so glad your son is okay. Absolutely raise it. Do you want to coordinate with the rest of us first? A joint request for a traffic assessment would carry more weight.",
+          "ts": "2025-05-19T08:53:00",
+          "reply_to": "grp_5e6f7a8b_s03_t000"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s03_t002",
+          "speaker": "Claudette",
+          "speaker_id": "p_a5b2c3d4",
+          "content": "How frightening. I remember when this was a quiet road. All this traffic is exactly what happens when you allow more development, more occupants, more cars, more danger for our children.",
+          "ts": "2025-05-19T09:02:00",
+          "reply_to": "grp_5e6f7a8b_s03_t000"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s03_t003",
+          "speaker": "Jordan",
+          "speaker_id": "p_a5c3d4e5",
+          "content": "oh that's so scary, glad he's ok 💛 lmk if there's something I can sign",
+          "ts": "2025-05-19T09:08:00",
+          "reply_to": "grp_5e6f7a8b_s03_t000"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s03_t004",
+          "speaker": "Vera",
+          "speaker_id": "p_a5d4e5f6",
+          "content": "Already contacted highways directly about the school gate. Didn't post here first. Needed immediate action.",
+          "ts": "2025-05-19T19:14:00",
+          "reply_to": "grp_5e6f7a8b_s03_t000"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s03_t005",
+          "speaker": "Femi",
+          "speaker_id": "p_a5a1b2c3",
+          "content": "Vera, understood. I'd just ask that we try to coordinate when we can. It's more effective. But noted. Thanks all, I'll follow up with highways too.",
+          "ts": "2025-05-19T19:28:00",
+          "reply_to": "grp_5e6f7a8b_s03_t004"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s03_t006",
+          "speaker": "Marcus",
+          "speaker_id": "p_a5e5f6a7",
+          "content": "thanks all. I'm sorry, I'm still properly shaken",
+          "ts": "2025-05-19T19:30:00",
+          "reply_to": "grp_5e6f7a8b_s03_t005"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s03_t007",
+          "speaker": "Jordan",
+          "speaker_id": "p_a5c3d4e5",
+          "content": "send us whatever you need signed and I'll do it",
+          "ts": "2025-05-19T19:32:00",
+          "reply_to": "grp_5e6f7a8b_s03_t006"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s03_t008",
+          "speaker": "Claudette",
+          "speaker_id": "p_a5b2c3d4",
+          "content": "include the driveway at no. 19 in the note. That corner has been bad for months",
+          "ts": "2025-05-19T19:34:00",
+          "reply_to": "grp_5e6f7a8b_s03_t007"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s03_t009",
+          "speaker": "Femi",
+          "speaker_id": "p_a5a1b2c3",
+          "content": "will do. I'll draft something tonight and drop it here first",
+          "ts": "2025-05-19T19:36:00",
+          "reply_to": "grp_5e6f7a8b_s03_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_5e6f7a8b_s04",
+      "session_index": 4,
+      "topic": "Street party planning; Femi steps up as organiser",
+      "ts": "2025-05-26",
+      "turns": [
+        {
+          "turn": "grp_5e6f7a8b_s04_t000",
+          "speaker": "Femi",
+          "speaker_id": "p_a5a1b2c3",
+          "content": "Quick question for the street, summer street party! I know Len used to organise this but since he moved I've gone ahead and booked the road closure for the last Saturday of July. Same format as before: tables out front, bring something to share. Is everyone in? Need to know numbers for the council permit.",
+          "ts": "2025-05-26T17:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_5e6f7a8b_s04_t001",
+          "speaker": "Claudette",
+          "speaker_id": "p_a5b2c3d4",
+          "content": "Wonderful. I will bring my Victoria sponge. I remember when Len used to get thirty people out. We should aim for that again.",
+          "ts": "2025-05-26T17:41:00",
+          "reply_to": "grp_5e6f7a8b_s04_t000"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s04_t002",
+          "speaker": "Marcus",
+          "speaker_id": "p_a5e5f6a7",
+          "content": "We're in 🙌 kids will love it. I'll do the face painting station again.",
+          "ts": "2025-05-26T17:44:00",
+          "reply_to": "grp_5e6f7a8b_s04_t000"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s04_t003",
+          "speaker": "Jordan",
+          "speaker_id": "p_a5c3d4e5",
+          "content": "yes!! I'll come 🎉 happy to help set up in the morning if needed",
+          "ts": "2025-05-26T17:47:00",
+          "reply_to": "grp_5e6f7a8b_s04_t000"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s04_t004",
+          "speaker": "Femi",
+          "speaker_id": "p_a5a1b2c3",
+          "content": "Great, that's Claudette, Marcus's family, Jordan, and me confirmed. Vera, are you able to join this year?",
+          "ts": "2025-05-26T18:02:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_5e6f7a8b_s04_t005",
+          "speaker": "Vera",
+          "speaker_id": "p_a5d4e5f6",
+          "content": "On call that weekend. Apologies.",
+          "ts": "2025-05-26T21:11:00",
+          "reply_to": "grp_5e6f7a8b_s04_t004"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s04_t006",
+          "speaker": "Femi",
+          "speaker_id": "p_a5a1b2c3",
+          "content": "Understood, we'll save you a slice. Jordan already knows Claudette doesn't want new faces from outside the street, so let's keep it residents only this year.",
+          "ts": "2025-05-26T21:16:00",
+          "reply_to": "grp_5e6f7a8b_s04_t003"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s04_t007",
+          "speaker": "Claudette",
+          "speaker_id": "p_a5b2c3d4",
+          "content": "residents only feels right to me. It keeps the day neighbourly",
+          "ts": "2025-05-26T21:18:00",
+          "reply_to": "grp_5e6f7a8b_s04_t006"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s04_t008",
+          "speaker": "Jordan",
+          "speaker_id": "p_a5c3d4e5",
+          "content": "perfect, I'll do folding tables and tape if that helps",
+          "ts": "2025-05-26T21:20:00",
+          "reply_to": "grp_5e6f7a8b_s04_t007"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s04_t009",
+          "speaker": "Femi",
+          "speaker_id": "p_a5a1b2c3",
+          "content": "that helps a lot, thanks Jordan",
+          "ts": "2025-05-26T21:22:00",
+          "reply_to": "grp_5e6f7a8b_s04_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_5e6f7a8b_s05",
+      "session_index": 5,
+      "topic": "Post-party; Femi and Claudette relationship",
+      "ts": "2025-06-02",
+      "turns": [
+        {
+          "turn": "grp_5e6f7a8b_s05_t000",
+          "speaker": "Femi",
+          "speaker_id": "p_a5a1b2c3",
+          "content": "What a day. Best turnout we've had in years. Thanks all for making it work. Jordan, you were brilliant on the set-up. Claudette's sponge was the centrepiece as ever. Thanks all!",
+          "ts": "2025-06-02T16:02:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_5e6f7a8b_s05_t001",
+          "speaker": "Claudette",
+          "speaker_id": "p_a5b2c3d4",
+          "content": "Femi, you have done Len proud. I was quite emotional seeing the whole street out together. This is what Maple Street is for, people, not parking schemes.",
+          "ts": "2025-06-02T16:19:00",
+          "reply_to": "grp_5e6f7a8b_s05_t000"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s05_t002",
+          "speaker": "Jordan",
+          "speaker_id": "p_a5c3d4e5",
+          "content": "so lovely 🥹 Claudette tell me about Maple Street in the 90s sometime",
+          "ts": "2025-06-02T16:24:00",
+          "reply_to": "grp_5e6f7a8b_s05_t001"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s05_t003",
+          "speaker": "Marcus",
+          "speaker_id": "p_a5e5f6a7",
+          "content": "My two are still talking about the face paint 😂 as a parent this is exactly what I want them growing up with. Same time next year Femi?",
+          "ts": "2025-06-02T16:31:00",
+          "reply_to": "grp_5e6f7a8b_s05_t000"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s05_t004",
+          "speaker": "Femi",
+          "speaker_id": "p_a5a1b2c3",
+          "content": "Already booked the date. Claudette, you're on sponge duty forever. Thanks all.",
+          "ts": "2025-06-02T16:38:00",
+          "reply_to": "grp_5e6f7a8b_s05_t000"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s05_t005",
+          "speaker": "Jordan",
+          "speaker_id": "p_a5c3d4e5",
+          "content": "seriously though Claudette, were the old parties this busy?",
+          "ts": "2025-06-02T16:40:00",
+          "reply_to": "grp_5e6f7a8b_s05_t004"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s05_t006",
+          "speaker": "Claudette",
+          "speaker_id": "p_a5b2c3d4",
+          "content": "busier sometimes. In the 90s people brought out cassette decks and stayed until dusk",
+          "ts": "2025-06-02T16:42:00",
+          "reply_to": "grp_5e6f7a8b_s05_t005"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s05_t007",
+          "speaker": "Marcus",
+          "speaker_id": "p_a5e5f6a7",
+          "content": "my two would absolutely love that version next year 😂",
+          "ts": "2025-06-02T16:44:00",
+          "reply_to": "grp_5e6f7a8b_s05_t006"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s05_t008",
+          "speaker": "Femi",
+          "speaker_id": "p_a5a1b2c3",
+          "content": "noted. same layout next year, maybe better speakers",
+          "ts": "2025-06-02T16:46:00",
+          "reply_to": "grp_5e6f7a8b_s05_t007"
+        },
+        {
+          "turn": "grp_5e6f7a8b_s05_t009",
+          "speaker": "Vera",
+          "speaker_id": "p_a5d4e5f6",
+          "content": "glad it went well. Save me a slice next time if I'm not on call",
+          "ts": "2025-06-02T16:48:00",
+          "reply_to": "grp_5e6f7a8b_s05_t008"
+        }
+      ]
+    }
+  ],
+  "qa_pairs": [
+    {
+      "id": "Q1_a5s1c1",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Claudette's behavior suggest about her stance on development and change on Maple Street?",
+      "answer": "Claudette consistently opposes any planning application that would alter the street's residential character. In Session 1, her immediate response to the no. 22 loft conversion notice was 'This street does not need any more bulk added to it. I shall be objecting.' She frames this in terms of visual impact and preserving the street's character — not noise, not traffic. In Session 3, she linked the traffic danger Marcus experienced to development ('All this traffic is exactly what happens when you allow more development'). Her thirty-year tenure gives her a before-and-after frame that shapes all of her planning opinions.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_5e6f7a8b_s01_t001",
+          "speaker_display_name": "Claudette",
+          "message_excerpt": "This street does not need any more bulk added to it. I shall be objecting.",
+          "relevance": "Claudette's opposition stated immediately and without qualification — aesthetic bulk is her framing"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_5e6f7a8b_s03_t002",
+          "speaker_display_name": "Claudette",
+          "message_excerpt": "All this traffic is exactly what happens when you allow more development, more occupants, more cars, more danger for our children.",
+          "relevance": "Claudette connects all street problems back to development — consistent anti-change framing"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q3_a5s2c1",
+      "category": "Q3",
+      "difficulty": "medium",
+      "question": "All five members of the Maple Street group shared their views on the proposed residents' parking scheme. What was each person's position and reasoning?",
+      "answer": "All five weighed in with distinct positions and reasons: Claudette was against — she objected on cost grounds ('£80 a year is an additional burden on residents who have always parked freely here') and felt paying for previously free parking was wrong. Marcus was in favour — his reason was child safety at the school gate, where pavement parking creates danger during the school run. Jordan was neutral — they have no car and the scheme does not affect them directly, though they noted empathy for those on tight budgets. Femi was broadly in favour but had one reservation: displaced commuter parking moving to neighbouring streets. Vera was in favour — her reason was professional: home visits mean she needs parking near the house on clinic days.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_5e6f7a8b_s02_t001",
+          "speaker_display_name": "Claudette",
+          "message_excerpt": "But £80 a year is an additional burden on residents who have always parked freely here.",
+          "relevance": "Claudette: against, reason is cost burden on residents who previously had free parking"
+        },
+        {
+          "session_index": 2,
+          "turn_id": "grp_5e6f7a8b_s02_t002",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "the school gate situation is untenable, people park on the pavement all morning. Permits would fix that overnight.",
+          "relevance": "Marcus: in favour, reason is child safety at the school gate"
+        },
+        {
+          "session_index": 2,
+          "turn_id": "grp_5e6f7a8b_s02_t003",
+          "speaker_display_name": "Jordan",
+          "message_excerpt": "I don't have a car so it doesn't really affect me",
+          "relevance": "Jordan: neutral, no car — scheme doesn't apply to them"
+        },
+        {
+          "session_index": 2,
+          "turn_id": "grp_5e6f7a8b_s02_t004",
+          "speaker_display_name": "Femi",
+          "message_excerpt": "I'm broadly in favour. My concern is the commuter overflow onto the next street.",
+          "relevance": "Femi: broadly in favour, caveat about displacing commuters to neighbouring streets"
+        },
+        {
+          "session_index": 2,
+          "turn_id": "grp_5e6f7a8b_s02_t005",
+          "speaker_display_name": "Vera",
+          "message_excerpt": "Home visits mean I need parking here on clinic days.",
+          "relevance": "Vera: in favour, reason is professional necessity — home visits require reliable nearby parking"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q4_a5s1c2",
+      "category": "Q4",
+      "difficulty": "hard",
+      "question": "Both Claudette and Vera expressed concern about parking in relation to the no. 22 planning application. Who was specifically concerned about parking being blocked during construction works, and who was opposed to the development on character grounds?",
+      "answer": "Vera raised the parking concern specifically about construction disruption — her objection to the council included 'scaffolding access, parking disruption during works.' This is a practical, temporary concern about her ability to park during the build period. Claudette's objection was on character grounds entirely: 'This street does not need any more bulk added to it.' She never mentioned parking. Their concerns look similar on the surface (both object to the application) but are entirely different in kind: Vera's is logistical and temporary; Claudette's is aesthetic and permanent.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Claudette",
+        "B": "Femi",
+        "C": "Jordan",
+        "D": "Vera"
+      },
+      "correct_option": "D",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_5e6f7a8b_s01_t007",
+          "speaker_display_name": "Vera",
+          "message_excerpt": "scaffolding access, parking disruption during works",
+          "relevance": "Vera's objection is specifically about temporary construction parking disruption — functional, not aesthetic"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_5e6f7a8b_s01_t001",
+          "speaker_display_name": "Claudette",
+          "message_excerpt": "This street does not need any more bulk added to it. I shall be objecting.",
+          "relevance": "Claudette's objection is about visual bulk and street character — she never mentions parking"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q8_a5s3c1",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "How has Marcus's engagement with traffic and safety issues on Maple Street changed over the sessions?",
+      "answer": "Marcus mentioned traffic concerns incidentally in Session 1 (worried about scaffolding blocking the school gate during works) but did not escalate. By Session 3, after a car reversed toward his son at the school gate without seeing him, Marcus shifted immediately to formal escalation: 'As a parent this has to be dealt with. I'm raising this formally today.' From that point his engagement intensified — he frames almost every subsequent safety or development discussion through the lens of child safety at the school gate, and he follows up unresolved threads rather than letting them drop.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_5e6f7a8b_s01_t002",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "I'd want to know about the skip and scaffolding access. Last time there was building work that side it blocked the school gate for two weeks.",
+          "relevance": "Session 1 baseline: Marcus mentions school gate as a concern but doesn't escalate"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_5e6f7a8b_s03_t000",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "A car reversed off no. 19's driveway and my son was right there, driver didn't see him. He's fine but I'm shaking. I'm raising this formally today.",
+          "relevance": "The triggering event — near-miss shifts Marcus from incidental concern to urgent formal escalation"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "mentions school gate concern incidentally; no escalation"
+        },
+        {
+          "session_index": 3,
+          "value": "near-miss with his child — immediate shift to formal escalation and active advocacy"
+        },
+        {
+          "session_index": 4,
+          "value": "frames street party in terms of child wellbeing; safety lens now pervasive"
+        }
+      ]
+    },
+    {
+      "id": "Q6_a5s3c2",
+      "category": "Q6",
+      "difficulty": "medium",
+      "question": "The group has a norm of raising issues in the chat before contacting the council. Does that norm apply to everyone?",
+      "answer": "No — Vera explicitly and repeatedly bypasses it. In Session 1, she sent her own objection to the council before the group had even agreed to a joint letter. In Session 3, after Marcus's school gate near-miss, she posted: 'Didn't post here first. Needed immediate action.' She is aware of the norm — she flags her departure from it rather than ignoring it — but she does not consider the norm binding on herself. Femi has gently challenged this twice; Vera has acknowledged and continued. The norm is real for the rest of the group but Vera operates outside it consistently.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Claudette",
+        "B": "Femi",
+        "C": "Jordan",
+        "D": "Vera"
+      },
+      "correct_option": "D",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_5e6f7a8b_s01_t007",
+          "speaker_display_name": "Vera",
+          "message_excerpt": "Already sent mine to the council.",
+          "relevance": "Vera goes straight to the council before the group has coordinated — first norm bypass"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_5e6f7a8b_s03_t004",
+          "speaker_display_name": "Vera",
+          "message_excerpt": "Didn't post here first. Needed immediate action.",
+          "relevance": "Vera explicitly flags that she bypassed the norm — she is aware of it but does not follow it"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_a5s4c1",
+      "category": "Q2",
+      "difficulty": "easy",
+      "question": "Did everyone on Maple Street attend the summer street party?",
+      "answer": "No — Vera did not attend. She responded to Femi's invitation with 'On call that weekend. Apologies.' Everyone else confirmed: Claudette (bringing her Victoria sponge), Marcus and his children, and Jordan (who helped set up). Vera's absence is consistent with her pattern of skipping most street social events due to professional commitments.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Claudette",
+        "B": "Femi",
+        "C": "Jordan",
+        "D": "Vera"
+      },
+      "correct_option": "D",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_5e6f7a8b_s04_t005",
+          "speaker_display_name": "Vera",
+          "message_excerpt": "On call that weekend. Apologies.",
+          "relevance": "Vera is the only person who did not attend — she was on call"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_a5s4c2",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "What preference of Claudette's did Femi act on, and how do we know he knew it already?",
+      "answer": "Femi told Jordan that Claudette prefers the party to be residents-only and managed this preference without asking Claudette again: 'Jordan already knows Claudette doesn't want new faces from outside the street, so let's keep it residents only this year.' This demonstrates that Femi knows Claudette's preference well enough to enforce it on her behalf — he did not need to consult her. This knowledge comes from their long working relationship as co-organisers; Claudette's preference for keeping the street party intimate and inward-facing is something Femi has internalized.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_5e6f7a8b_s04_t006",
+          "speaker_display_name": "Femi",
+          "message_excerpt": "Jordan already knows Claudette doesn't want new faces from outside the street, so let's keep it residents only this year.",
+          "relevance": "Femi acts on Claudette's known preference without asking her — demonstrating he holds this as established knowledge about her"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_a5s5c1",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does the conversation reveal about the relationship between Femi and Claudette on Maple Street?",
+      "answer": "Femi and Claudette function as the street's institutional core — Femi provides the organisation and energy; Claudette provides the historical legitimacy and continuity. Femi described organising the street party as doing 'what Len used to do,' and Claudette responded that he had 'done Len proud.' Femi defers to Claudette's preferences publicly — managing the residents-only guest list on her behalf without consultation. Claudette has adopted Femi's approach of raising issues collectively rather than going to the council alone, which she explicitly credits to his influence from Session 1. They have run three street parties together and submitted a joint planning objection. Their relationship is warm, complementary, and mutually dependent.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "institutional core",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_5e6f7a8b_s05_t001",
+          "speaker_display_name": "Claudette",
+          "message_excerpt": "Femi, you have done Len proud.",
+          "relevance": "Claudette confers institutional approval on Femi — treating him as the legitimate successor to the previous organiser"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_5e6f7a8b_s04_t006",
+          "speaker_display_name": "Femi",
+          "message_excerpt": "Jordan already knows Claudette doesn't want new faces from outside the street, so let's keep it residents only this year.",
+          "relevance": "Femi publicly cements Claudette's role — the relationship is warm, mutual, and publicly acknowledged"
+        }
+      ],
+      "temporal_anchors": []
+    }
+  ],
+  "meta": {
+    "source": "SocialMemBench",
+    "source_kind": "real_benchmark",
+    "network_id": "grp_5e6f7a8b",
+    "n_sessions": 5,
+    "n_turns": 50,
+    "n_qa": 8,
+    "v4_correct": 4,
+    "v4_total": 8,
+    "v4_errors": 4,
+    "v4_accuracy": 0.5,
+    "heldout_heldout_excluded": true
+  }
+}

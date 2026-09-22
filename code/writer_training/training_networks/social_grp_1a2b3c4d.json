@@ -1,0 +1,1235 @@
+{
+  "schema": "socialmembench-real-v4-source/1",
+  "scenario": "[socialmembench:grp_1a2b3c4d] real benchmark conversation",
+  "speakers": [
+    "Jordan",
+    "Lena",
+    "Maya",
+    "Priya",
+    "Sam"
+  ],
+  "sessions": [
+    {
+      "session_id": "grp_1a2b3c4d_s01",
+      "session_index": 1,
+      "topic": "Brunch debate and Maya's cilantro veto",
+      "ts": "2025-01-06",
+      "turns": [
+        {
+          "turn": "grp_1a2b3c4d_s01_t000",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "ok plans for sunday 🙌 are we doing brunch again?",
+          "ts": "2025-01-06T11:23:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_1a2b3c4d_s01_t001",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "honestly been thinking about that new place on Clement",
+          "ts": "2025-01-06T11:23:00",
+          "reply_to": "grp_1a2b3c4d_s01_t000"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s01_t002",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "Mariposa? anyone been?",
+          "ts": "2025-01-06T11:24:00",
+          "reply_to": "grp_1a2b3c4d_s01_t001"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s01_t003",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "ok so YES been wanting to try it",
+          "ts": "2025-01-06T11:31:00",
+          "reply_to": "grp_1a2b3c4d_s01_t002"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s01_t004",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "ngl I looked at the menu and it looks good",
+          "ts": "2025-01-06T11:31:00",
+          "reply_to": "grp_1a2b3c4d_s01_t003"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s01_t005",
+          "speaker": "Lena",
+          "speaker_id": "p_l5e6f7a8",
+          "content": "I'm definitely in! Should we book ahead? Last time we waited 45 minutes 😅",
+          "ts": "2025-01-06T11:33:00",
+          "reply_to": "grp_1a2b3c4d_s01_t002"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s01_t006",
+          "speaker": "Jordan",
+          "speaker_id": "p_j2b3c4d5",
+          "content": "What time.",
+          "ts": "2025-01-06T11:41:00",
+          "reply_to": "grp_1a2b3c4d_s01_t005"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s01_t007",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "maybe 11:30? 😊",
+          "ts": "2025-01-06T11:42:00",
+          "reply_to": "grp_1a2b3c4d_s01_t006"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s01_t008",
+          "speaker": "Jordan",
+          "speaker_id": "p_j2b3c4d5",
+          "content": "Fine.",
+          "ts": "2025-01-06T11:42:00",
+          "reply_to": "grp_1a2b3c4d_s01_t007"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s01_t009",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "wait I just looked closer, they put cilantro in like everything on this menu",
+          "ts": "2025-01-06T11:48:00",
+          "reply_to": "grp_1a2b3c4d_s01_t004"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s01_t010",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "ok so not Mariposa. that herb ruins everything ngl",
+          "ts": "2025-01-06T11:48:00",
+          "reply_to": "grp_1a2b3c4d_s01_t009"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s01_t011",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "lol ok ok fair",
+          "ts": "2025-01-06T11:49:00",
+          "reply_to": "grp_1a2b3c4d_s01_t010"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s01_t012",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "what about the noodle place on Judah? honestly I've heard it's really good, and it looks calm enough that we could actually sit and talk",
+          "ts": "2025-01-06T11:49:00",
+          "reply_to": "grp_1a2b3c4d_s01_t011"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s01_t013",
+          "speaker": "Jordan",
+          "speaker_id": "p_j2b3c4d5",
+          "content": "Quieter. Better.",
+          "ts": "2025-01-06T11:54:00",
+          "reply_to": "grp_1a2b3c4d_s01_t012"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s01_t014",
+          "speaker": "Lena",
+          "speaker_id": "p_l5e6f7a8",
+          "content": "Works for me! Should I book for 11:30? 😊",
+          "ts": "2025-01-06T11:55:00",
+          "reply_to": "grp_1a2b3c4d_s01_t013"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s01_t015",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "yes please! honestly I just want somewhere you can actually have a conversation 😭",
+          "ts": "2025-01-06T11:55:00",
+          "reply_to": "grp_1a2b3c4d_s01_t014"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s01_t016",
+          "speaker": "Jordan",
+          "speaker_id": "p_j2b3c4d5",
+          "content": "noted.",
+          "ts": "2025-01-06T11:56:00",
+          "reply_to": "grp_1a2b3c4d_s01_t015"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s01_t017",
+          "speaker": "Lena",
+          "speaker_id": "p_l5e6f7a8",
+          "content": "Booked! Table for 5 at 11:30 on Sunday 😊",
+          "ts": "2025-01-06T11:58:00",
+          "reply_to": "grp_1a2b3c4d_s01_t015"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s01_t018",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "ok so perfect, see everyone Sunday 🙌",
+          "ts": "2025-01-06T11:59:00",
+          "reply_to": "grp_1a2b3c4d_s01_t017"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s01_t019",
+          "speaker": "Sam",
+          "speaker_id": "p_s4d5e6f7",
+          "content": "sure",
+          "ts": "2025-01-06T14:14:00",
+          "reply_to": "grp_1a2b3c4d_s01_t017"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_1a2b3c4d_s02",
+      "session_index": 2,
+      "topic": "Dinner plans, Jordan's sports veto, and Mt. Tam gossip",
+      "ts": "2025-01-13",
+      "turns": [
+        {
+          "turn": "grp_1a2b3c4d_s02_t000",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "ok so who wants to do dinner this week",
+          "ts": "2025-01-13T19:14:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_1a2b3c4d_s02_t001",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "yes!! 🙌 Wednesday?",
+          "ts": "2025-01-13T19:15:00",
+          "reply_to": "grp_1a2b3c4d_s02_t000"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s02_t002",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "I found this ramen place on 9th, it's supposed to be incredible honestly",
+          "ts": "2025-01-13T19:15:00",
+          "reply_to": "grp_1a2b3c4d_s02_t001"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s02_t003",
+          "speaker": "Lena",
+          "speaker_id": "p_l5e6f7a8",
+          "content": "Wednesday works for me 😊 which place?",
+          "ts": "2025-01-13T19:17:00",
+          "reply_to": "grp_1a2b3c4d_s02_t002"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s02_t004",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "Tanuki on 9th! the mushroom broth ramen is their signature apparently, and three people at work told me the queue is worth it 🍜",
+          "ts": "2025-01-13T19:17:00",
+          "reply_to": "grp_1a2b3c4d_s02_t003"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s02_t005",
+          "speaker": "Sam",
+          "speaker_id": "p_s4d5e6f7",
+          "content": "I'll do the chicken one.",
+          "ts": "2025-01-13T19:29:00",
+          "reply_to": "grp_1a2b3c4d_s02_t004"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s02_t006",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "Sam is the mushroom broth not good there?",
+          "ts": "2025-01-13T19:31:00",
+          "reply_to": "grp_1a2b3c4d_s02_t005"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s02_t007",
+          "speaker": "Sam",
+          "speaker_id": "p_s4d5e6f7",
+          "content": "just prefer the chicken...",
+          "ts": "2025-01-13T19:44:00",
+          "reply_to": "grp_1a2b3c4d_s02_t006"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s02_t008",
+          "speaker": "Jordan",
+          "speaker_id": "p_j2b3c4d5",
+          "content": "Fine. 7pm.",
+          "ts": "2025-01-13T19:46:00",
+          "reply_to": "grp_1a2b3c4d_s02_t004"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s02_t009",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "Jordan are you going to the work football thing Priya's office is doing",
+          "ts": "2025-01-13T19:48:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_1a2b3c4d_s02_t010",
+          "speaker": "Jordan",
+          "speaker_id": "p_j2b3c4d5",
+          "content": "No.",
+          "ts": "2025-01-13T19:49:00",
+          "reply_to": "grp_1a2b3c4d_s02_t009"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s02_t011",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "yeah figured, team sports aren't really your thing",
+          "ts": "2025-01-13T19:49:00",
+          "reply_to": "grp_1a2b3c4d_s02_t010"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s02_t012",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "haha it's a very low-key thing honestly",
+          "ts": "2025-01-13T19:50:00",
+          "reply_to": "grp_1a2b3c4d_s02_t011"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s02_t013",
+          "speaker": "Jordan",
+          "speaker_id": "p_j2b3c4d5",
+          "content": "Still no.",
+          "ts": "2025-01-13T19:51:00",
+          "reply_to": "grp_1a2b3c4d_s02_t012"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s02_t014",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "ok ok 😂 Wednesday 7pm Tanuki confirmed",
+          "ts": "2025-01-13T19:51:00",
+          "reply_to": "grp_1a2b3c4d_s02_t013"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s02_t015",
+          "speaker": "Lena",
+          "speaker_id": "p_l5e6f7a8",
+          "content": "Perfect! Are we definitely all going? Just checking 😊",
+          "ts": "2025-01-13T19:53:00",
+          "reply_to": "grp_1a2b3c4d_s02_t014"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s02_t016",
+          "speaker": "Sam",
+          "speaker_id": "p_s4d5e6f7",
+          "content": "Jordan did you ever fully recover from the Mt. Tam thing",
+          "ts": "2025-01-13T20:32:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_1a2b3c4d_s02_t017",
+          "speaker": "Jordan",
+          "speaker_id": "p_j2b3c4d5",
+          "content": "I've chosen not to think about it.",
+          "ts": "2025-01-13T20:33:00",
+          "reply_to": "grp_1a2b3c4d_s02_t016"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s02_t018",
+          "speaker": "Sam",
+          "speaker_id": "p_s4d5e6f7",
+          "content": "smart.",
+          "ts": "2025-01-13T20:34:00",
+          "reply_to": "grp_1a2b3c4d_s02_t017"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s02_t019",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "ok so what happened at Mt. Tam",
+          "ts": "2025-01-13T20:35:00",
+          "reply_to": "grp_1a2b3c4d_s02_t017"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s02_t020",
+          "speaker": "Jordan",
+          "speaker_id": "p_j2b3c4d5",
+          "content": "Ask Sam.",
+          "ts": "2025-01-13T20:35:00",
+          "reply_to": "grp_1a2b3c4d_s02_t019"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s02_t021",
+          "speaker": "Sam",
+          "speaker_id": "p_s4d5e6f7",
+          "content": "another time",
+          "ts": "2025-01-13T20:37:00",
+          "reply_to": "grp_1a2b3c4d_s02_t020"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_1a2b3c4d_s03",
+      "session_index": 3,
+      "topic": "Night-out plans, Sam's venue hesitation, and Jordan stepping back",
+      "ts": "2025-01-20",
+      "turns": [
+        {
+          "turn": "grp_1a2b3c4d_s03_t000",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "ok so after ramen, drinks?",
+          "ts": "2025-01-20T17:47:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_1a2b3c4d_s03_t001",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "someone said Rooftop Fox is good",
+          "ts": "2025-01-20T17:47:00",
+          "reply_to": "grp_1a2b3c4d_s03_t000"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s03_t002",
+          "speaker": "Lena",
+          "speaker_id": "p_l5e6f7a8",
+          "content": "Ooh I've been wanting to go! 😊",
+          "ts": "2025-01-20T17:51:00",
+          "reply_to": "grp_1a2b3c4d_s03_t001"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s03_t003",
+          "speaker": "Jordan",
+          "speaker_id": "p_j2b3c4d5",
+          "content": "Fine.",
+          "ts": "2025-01-20T17:58:00",
+          "reply_to": "grp_1a2b3c4d_s03_t001"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s03_t004",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "Sam you in?",
+          "ts": "2025-01-20T17:59:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_1a2b3c4d_s03_t005",
+          "speaker": "Sam",
+          "speaker_id": "p_s4d5e6f7",
+          "content": "...",
+          "ts": "2025-01-20T18:22:00",
+          "reply_to": "grp_1a2b3c4d_s03_t004"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s03_t006",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "Sam?",
+          "ts": "2025-01-20T18:23:00",
+          "reply_to": "grp_1a2b3c4d_s03_t005"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s03_t007",
+          "speaker": "Sam",
+          "speaker_id": "p_s4d5e6f7",
+          "content": "sure",
+          "ts": "2025-01-20T18:25:00",
+          "reply_to": "grp_1a2b3c4d_s03_t006"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s03_t008",
+          "speaker": "Lena",
+          "speaker_id": "p_l5e6f7a8",
+          "content": "Should I book? Or does someone else want to? 😊",
+          "ts": "2025-01-20T18:26:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_1a2b3c4d_s03_t009",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "Jordan used to handle all the bookings remember 😂",
+          "ts": "2025-01-20T18:27:00",
+          "reply_to": "grp_1a2b3c4d_s03_t008"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s03_t010",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "Jordan? you always knew where to go",
+          "ts": "2025-01-20T18:27:00",
+          "reply_to": "grp_1a2b3c4d_s03_t009"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s03_t011",
+          "speaker": "Jordan",
+          "speaker_id": "p_j2b3c4d5",
+          "content": "Lena can do it.",
+          "ts": "2025-01-20T18:31:00",
+          "reply_to": "grp_1a2b3c4d_s03_t010"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s03_t012",
+          "speaker": "Lena",
+          "speaker_id": "p_l5e6f7a8",
+          "content": "Of course! Happy to 😊 I'll grab a table for 5 after 9",
+          "ts": "2025-01-20T18:32:00",
+          "reply_to": "grp_1a2b3c4d_s03_t011"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s03_t013",
+          "speaker": "Sam",
+          "speaker_id": "p_s4d5e6f7",
+          "content": "does it have outdoor seating",
+          "ts": "2025-01-20T18:47:00",
+          "reply_to": "grp_1a2b3c4d_s03_t012"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s03_t014",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "the whole thing is a rooftop Sam",
+          "ts": "2025-01-20T18:48:00",
+          "reply_to": "grp_1a2b3c4d_s03_t013"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s03_t015",
+          "speaker": "Sam",
+          "speaker_id": "p_s4d5e6f7",
+          "content": "ok",
+          "ts": "2025-01-20T18:49:00",
+          "reply_to": "grp_1a2b3c4d_s03_t014"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s03_t016",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "sorry just catching up, sounds fun! 🙌",
+          "ts": "2025-01-20T19:02:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_1a2b3c4d_s03_t017",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "honestly a rooftop sounds perfect",
+          "ts": "2025-01-20T19:02:00",
+          "reply_to": "grp_1a2b3c4d_s03_t016"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s03_t018",
+          "speaker": "Jordan",
+          "speaker_id": "p_j2b3c4d5",
+          "content": "It'll be loud.",
+          "ts": "2025-01-20T19:04:00",
+          "reply_to": "grp_1a2b3c4d_s03_t017"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_1a2b3c4d_s04",
+      "session_index": 4,
+      "topic": "Sonoma plans, Sam's ankle, and Maya's no-drinks shift",
+      "ts": "2025-01-27",
+      "turns": [
+        {
+          "turn": "grp_1a2b3c4d_s04_t000",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "ok weekend trip!! 🙌 🙌 I found this place in Sonoma",
+          "ts": "2025-01-27T10:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_1a2b3c4d_s04_t001",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "does wine country work for everyone? honestly it looks incredible, big old house, little tasting room, and enough space that we wouldn't be yelling over strangers",
+          "ts": "2025-01-27T10:15:00",
+          "reply_to": "grp_1a2b3c4d_s04_t000"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s04_t002",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "ok so YES please",
+          "ts": "2025-01-27T10:22:00",
+          "reply_to": "grp_1a2b3c4d_s04_t001"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s04_t003",
+          "speaker": "Jordan",
+          "speaker_id": "p_j2b3c4d5",
+          "content": "Fine. When.",
+          "ts": "2025-01-27T10:28:00",
+          "reply_to": "grp_1a2b3c4d_s04_t001"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s04_t004",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "thinking last weekend of the month? 😊",
+          "ts": "2025-01-27T10:29:00",
+          "reply_to": "grp_1a2b3c4d_s04_t003"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s04_t005",
+          "speaker": "Lena",
+          "speaker_id": "p_l5e6f7a8",
+          "content": "That works for me! Is it a driving trip? 😊",
+          "ts": "2025-01-27T10:31:00",
+          "reply_to": "grp_1a2b3c4d_s04_t004"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s04_t006",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "yeah we can carpool! there are hiking trails too if people want 🙌",
+          "ts": "2025-01-27T10:32:00",
+          "reply_to": "grp_1a2b3c4d_s04_t005"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s04_t007",
+          "speaker": "Sam",
+          "speaker_id": "p_s4d5e6f7",
+          "content": "I'll sit the hiking out",
+          "ts": "2025-01-27T10:51:00",
+          "reply_to": "grp_1a2b3c4d_s04_t006"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s04_t008",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "Sam you ok?",
+          "ts": "2025-01-27T10:53:00",
+          "reply_to": "grp_1a2b3c4d_s04_t007"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s04_t009",
+          "speaker": "Sam",
+          "speaker_id": "p_s4d5e6f7",
+          "content": "ankle still isn't great",
+          "ts": "2025-01-27T10:55:00",
+          "reply_to": "grp_1a2b3c4d_s04_t008"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s04_t010",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "ah ok yeah no worries at all",
+          "ts": "2025-01-27T10:55:00",
+          "reply_to": "grp_1a2b3c4d_s04_t009"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s04_t011",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "Maya they have an amazing wine bar at the estate, you'll love it 🍷",
+          "ts": "2025-01-27T10:56:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_1a2b3c4d_s04_t012",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "ngl I'll probably just get the sparkling water",
+          "ts": "2025-01-27T10:57:00",
+          "reply_to": "grp_1a2b3c4d_s04_t011"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s04_t013",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "oh wait are you still off drinks? I'll see if they do good mocktails 😊",
+          "ts": "2025-01-27T10:58:00",
+          "reply_to": "grp_1a2b3c4d_s04_t012"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s04_t014",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "haha yeah, honestly don't worry about it I'm fine",
+          "ts": "2025-01-27T10:58:00",
+          "reply_to": "grp_1a2b3c4d_s04_t013"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s04_t015",
+          "speaker": "Lena",
+          "speaker_id": "p_l5e6f7a8",
+          "content": "Do they have food there too? I always like to check menus in advance 😊",
+          "ts": "2025-01-27T11:01:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_1a2b3c4d_s04_t016",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "yes! small plates and charcuterie 🙌",
+          "ts": "2025-01-27T11:01:00",
+          "reply_to": "grp_1a2b3c4d_s04_t015"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s04_t017",
+          "speaker": "Lena",
+          "speaker_id": "p_l5e6f7a8",
+          "content": "Great. I'll just check for my usual... dietary things when we get there 😊",
+          "ts": "2025-01-27T11:03:00",
+          "reply_to": "grp_1a2b3c4d_s04_t016"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s04_t018",
+          "speaker": "Jordan",
+          "speaker_id": "p_j2b3c4d5",
+          "content": "What's the address.",
+          "ts": "2025-01-27T11:09:00",
+          "reply_to": "grp_1a2b3c4d_s04_t004"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s04_t019",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "I'll send the full link! 🙌",
+          "ts": "2025-01-27T11:10:00",
+          "reply_to": "grp_1a2b3c4d_s04_t018"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_1a2b3c4d_s05",
+      "session_index": 5,
+      "topic": "Jordan bails for cycling, brunch chemistry goes on",
+      "ts": "2025-02-03",
+      "turns": [
+        {
+          "turn": "grp_1a2b3c4d_s05_t000",
+          "speaker": "Lena",
+          "speaker_id": "p_l5e6f7a8",
+          "content": "Are we still on for today? 😊",
+          "ts": "2025-02-03T09:47:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_1a2b3c4d_s05_t001",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "yes!! on my way 🙌",
+          "ts": "2025-02-03T09:48:00",
+          "reply_to": "grp_1a2b3c4d_s05_t000"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s05_t002",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "ok so heading out in 10",
+          "ts": "2025-02-03T09:49:00",
+          "reply_to": "grp_1a2b3c4d_s05_t000"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s05_t003",
+          "speaker": "Jordan",
+          "speaker_id": "p_j2b3c4d5",
+          "content": "Not coming. Weather is perfect. Riding.",
+          "ts": "2025-02-03T09:51:00",
+          "reply_to": "grp_1a2b3c4d_s05_t000"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s05_t004",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "Jordan",
+          "ts": "2025-02-03T09:51:00",
+          "reply_to": "grp_1a2b3c4d_s05_t003"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s05_t005",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "Jordan!! 😭 this is like the third time",
+          "ts": "2025-02-03T09:52:00",
+          "reply_to": "grp_1a2b3c4d_s05_t003"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s05_t006",
+          "speaker": "Lena",
+          "speaker_id": "p_l5e6f7a8",
+          "content": "It's fine, it's fine 😅",
+          "ts": "2025-02-03T09:53:00",
+          "reply_to": "grp_1a2b3c4d_s05_t005"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s05_t007",
+          "speaker": "Jordan",
+          "speaker_id": "p_j2b3c4d5",
+          "content": "Next week.",
+          "ts": "2025-02-03T09:53:00",
+          "reply_to": "grp_1a2b3c4d_s05_t005"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s05_t008",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "ok so the four of us, let's just go",
+          "ts": "2025-02-03T09:54:00",
+          "reply_to": "grp_1a2b3c4d_s05_t007"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s05_t009",
+          "speaker": "Sam",
+          "speaker_id": "p_s4d5e6f7",
+          "content": "already there",
+          "ts": "2025-02-03T09:54:00",
+          "reply_to": "grp_1a2b3c4d_s05_t008"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s05_t010",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "wait you're already there?",
+          "ts": "2025-02-03T09:54:00",
+          "reply_to": "grp_1a2b3c4d_s05_t009"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s05_t011",
+          "speaker": "Sam",
+          "speaker_id": "p_s4d5e6f7",
+          "content": "outside. been here ten minutes.",
+          "ts": "2025-02-03T09:55:00",
+          "reply_to": "grp_1a2b3c4d_s05_t010"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s05_t012",
+          "speaker": "Lena",
+          "speaker_id": "p_l5e6f7a8",
+          "content": "Haha sorry Sam! Running ten minutes behind 😊",
+          "ts": "2025-02-03T09:56:00",
+          "reply_to": "grp_1a2b3c4d_s05_t011"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s05_t013",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "Lena and I will grab the table, she needs someone to help decode the menu anyway 😂",
+          "ts": "2025-02-03T09:57:00",
+          "reply_to": "grp_1a2b3c4d_s05_t012"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s05_t014",
+          "speaker": "Lena",
+          "speaker_id": "p_l5e6f7a8",
+          "content": "Honestly Priya is the reason I survive these brunches 😊",
+          "ts": "2025-02-03T09:57:00",
+          "reply_to": "grp_1a2b3c4d_s05_t013"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s05_t015",
+          "speaker": "Priya",
+          "speaker_id": "p_p3c4d5e6",
+          "content": "we have our system 🙌",
+          "ts": "2025-02-03T09:58:00",
+          "reply_to": "grp_1a2b3c4d_s05_t014"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s05_t016",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "ok so the dynamic duo",
+          "ts": "2025-02-03T09:59:00",
+          "reply_to": "grp_1a2b3c4d_s05_t015"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s05_t017",
+          "speaker": "Sam",
+          "speaker_id": "p_s4d5e6f7",
+          "content": "it's genuinely impressive",
+          "ts": "2025-02-03T10:01:00",
+          "reply_to": "grp_1a2b3c4d_s05_t015"
+        },
+        {
+          "turn": "grp_1a2b3c4d_s05_t018",
+          "speaker": "Maya",
+          "speaker_id": "p_m1a2b3c4",
+          "content": "Jordan you are genuinely missing out ngl",
+          "ts": "2025-02-03T10:01:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_1a2b3c4d_s05_t019",
+          "speaker": "Jordan",
+          "speaker_id": "p_j2b3c4d5",
+          "content": "noted.",
+          "ts": "2025-02-03T10:04:00",
+          "reply_to": "grp_1a2b3c4d_s05_t018"
+        }
+      ]
+    }
+  ],
+  "qa_pairs": [
+    {
+      "id": "Q1_a1b2c3d4",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "Based on the group's conversations, what can you tell about Maya's food preferences?",
+      "answer": "Maya has a strong aversion to cilantro. In Session 1, when the group was considering Mariposa for brunch, Maya immediately vetoed it after looking at the menu more closely, noting they 'put cilantro in like everything' and calling it 'that herb that ruins everything.' She treats cilantro as a dealbreaker when choosing restaurants, though she never describes it as an allergy — just a strong distaste.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_1a2b3c4d_s01_t009",
+          "speaker_display_name": "Maya",
+          "message_excerpt": "wait I just looked closer, they put cilantro in like everything on this menu",
+          "relevance": "Maya's reaction to cilantro on the menu is the trigger for vetoing the restaurant, revealing the aversion implicitly"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_1a2b3c4d_s01_t010",
+          "speaker_display_name": "Maya",
+          "message_excerpt": "ok so not Mariposa. that herb ruins everything ngl",
+          "relevance": "Confirms the strength of aversion — described as something that 'ruins' a meal"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_b2c3d4e5",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Sam's behavior at the ramen dinner suggest about their food preferences?",
+      "answer": "Sam has an aversion to mushrooms. When Priya described Tanuki's signature mushroom broth ramen, Sam immediately said 'I'll do the chicken one' without explanation. When Maya asked if the mushroom wasn't good, Sam gave only a vague 'just prefer the chicken...' — deflecting rather than explaining. Sam never names mushrooms as the issue, but the pattern of avoidance is clear.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_1a2b3c4d_s02_t005",
+          "speaker_display_name": "Sam",
+          "message_excerpt": "I'll do the chicken one.",
+          "relevance": "Sam immediately pivots away from the mushroom dish without being prompted"
+        },
+        {
+          "session_index": 2,
+          "turn_id": "grp_1a2b3c4d_s02_t007",
+          "speaker_display_name": "Sam",
+          "message_excerpt": "just prefer the chicken...",
+          "relevance": "When asked directly, Sam gives only a vague preference rather than naming the actual reason"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_c3d4e5f6",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "Does Lena appear to have any dietary restrictions based on the conversations?",
+      "answer": "Yes. Lena appears to manage a dietary restriction she doesn't name directly. When the group was discussing the Sonoma wine bar's food options, Lena asked if there was food available, then said she'd 'check for my usual... dietary things when we get there' — a vague, casual reference suggesting she has a standing dietary need she handles quietly and doesn't want to make into a discussion.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_1a2b3c4d_s04_t017",
+          "speaker_display_name": "Lena",
+          "message_excerpt": "I'll just check for my usual... dietary things when we get there",
+          "relevance": "The ellipsis and vague framing ('my usual dietary things') signals a known restriction she manages privately"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_e1f2a3b4",
+      "category": "Q2",
+      "difficulty": "hard",
+      "question": "What did the group decide about where to go for drinks after dinner? Did everyone seem equally on board?",
+      "answer": "The group decided on Rooftop Fox, a loud rooftop bar. Most members confirmed quickly — Lena was enthusiastic, Jordan said 'Fine,' and Priya joined late and called it 'perfect.' Sam was the exception: when asked directly, Sam initially responded with only '...' and then, when prompted again, gave a minimal 'sure.' Sam later asked about outdoor seating but didn't raise any objection — their reluctance was visible only through the silence and delayed response.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Jordan",
+        "B": "Maya",
+        "C": "Priya",
+        "D": "Sam"
+      },
+      "correct_option": "D",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_1a2b3c4d_s03_t005",
+          "speaker_display_name": "Sam",
+          "message_excerpt": "...",
+          "relevance": "Sam's non-response when asked directly about joining reveals implicit reluctance that the group doesn't notice"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_1a2b3c4d_s03_t007",
+          "speaker_display_name": "Sam",
+          "message_excerpt": "sure",
+          "relevance": "Sam's eventual 'sure' comes only after a follow-up prompt — minimal and unenthusiastic"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q4_d4e5f6a7",
+      "category": "Q4",
+      "difficulty": "hard",
+      "question": "Someone in the group expressed a clear preference for quieter venues where people can actually have a real conversation. Who said it?",
+      "answer": "Jordan said it. When Priya suggested a noodle bar on Judah as an alternative to Mariposa, Jordan responded with 'Quieter. Better.' — a terse, direct expression of preference for quieter venues. Priya also expressed a similar sentiment shortly after ('I just want somewhere you can actually have a conversation'), but the more direct and first-stated preference came from Jordan.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Jordan",
+        "B": "Maya",
+        "C": "Priya",
+        "D": "Sam"
+      },
+      "correct_option": "A",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_1a2b3c4d_s01_t013",
+          "speaker_display_name": "Jordan",
+          "message_excerpt": "Quieter. Better.",
+          "relevance": "Jordan's two-word assessment is the clearest direct statement about venue noise preference in the session"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_e5f6a7b8",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "What is Jordan's attitude toward team sports and group physical activities? And who in the conversation revealed this?",
+      "answer": "Jordan strongly dislikes team sports and group fitness activities. This was revealed by Maya in Session 2. When Jordan bluntly declined an invitation to Priya's office football event, Maya immediately said 'yeah figured, team sports aren't really your thing' — demonstrating that she already knew about this preference without needing to ask. Jordan confirmed with 'Still no.' but Maya's comment was the revealing moment: she had prior knowledge of Jordan's aversion and stated it as a known fact.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_1a2b3c4d_s02_t011",
+          "speaker_display_name": "Maya",
+          "message_excerpt": "yeah figured, team sports aren't really your thing",
+          "relevance": "Maya volunteers her knowledge of Jordan's preference before Jordan has to explain — the ToM signal is in her unsurprised reaction and pre-emptive framing"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q6_f2a3b4c5",
+      "category": "Q6",
+      "difficulty": "easy",
+      "question": "The group seems to treat Sunday brunches as a standing commitment — something everyone shows up to. Does that hold for all members of the group?",
+      "answer": "No — Jordan is an exception. In Session 5, Jordan cancelled on the morning of Sunday brunch saying 'Not coming. Weather is perfect. Riding.' Priya's reaction — 'this is like the third time' — confirms this is a recurring pattern, not a one-off. Jordan appears to prioritize cycling when conditions are good, treating the brunch as optional despite the group norm. The other four members treat it as the commitment Priya's comment implies it should be.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Jordan",
+        "B": "Maya",
+        "C": "Priya",
+        "D": "Sam"
+      },
+      "correct_option": "A",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_1a2b3c4d_s05_t003",
+          "speaker_display_name": "Jordan",
+          "message_excerpt": "Not coming. Weather is perfect. Riding.",
+          "relevance": "Jordan's cancellation directly surfaces the contested norm — cycling wins over brunch"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_1a2b3c4d_s05_t005",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "Jordan!! 😭 this is like the third time",
+          "relevance": "Priya's reaction establishes that this is a pattern, not an isolated case"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_f6a7b8c9",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does the conversation reveal about the history between Jordan and Sam?",
+      "answer": "The conversation reveals that Jordan and Sam share a history involving a hiking trip to Mt. Tam that went badly. In Session 2, Sam brought it up out of nowhere: 'Jordan did you ever fully recover from the Mt. Tam thing.' Jordan's response — 'I've chosen not to think about it' — confirmed it was a memorable negative experience. Neither explains what happened, and when Maya asked, Sam deferred ('another time'). The exchange is casual and knowing, suggesting this incident is a standing private reference point between them that they don't share with the wider group.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "The conversation reveals that Jordan and Sam share",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_1a2b3c4d_s02_t016",
+          "speaker_display_name": "Sam",
+          "message_excerpt": "Jordan did you ever fully recover from the Mt. Tam thing",
+          "relevance": "Sam raises the incident unprompted — treating it as a shared private reference with Jordan"
+        },
+        {
+          "session_index": 2,
+          "turn_id": "grp_1a2b3c4d_s02_t017",
+          "speaker_display_name": "Jordan",
+          "message_excerpt": "I've chosen not to think about it.",
+          "relevance": "Jordan's response confirms the incident was significant enough that he actively avoids recalling it"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_a7b8c9d0",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does the conversation suggest about the relationship between Priya and Lena within the group?",
+      "answer": "Priya and Lena appear to be the closest pairing within the group, with an established dynamic where Priya helps Lena navigate group social situations. In Session 5, when Lena was running late to brunch, Priya immediately offered to go ahead with her: 'Lena and I will grab the table, she needs someone to help decode the menu anyway.' Lena confirmed this arrangement affectionately: 'Honestly Priya is the reason I survive these brunches.' The exchange suggests a well-worn pattern, not a one-time gesture.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "closest pair",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_1a2b3c4d_s05_t013",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "Lena and I will grab the table, she needs someone to help decode the menu anyway",
+          "relevance": "Priya's framing reveals an established role in helping Lena, stated as a casual given rather than an offer"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_1a2b3c4d_s05_t014",
+          "speaker_display_name": "Lena",
+          "message_excerpt": "Honestly Priya is the reason I survive these brunches",
+          "relevance": "Lena confirms Priya's support role explicitly, with warmth that signals this is a recognized dynamic"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q8_b8c9d0e1",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "How did Jordan's role in organizing group plans change over the course of the conversations?",
+      "answer": "Jordan's role as group organizer clearly eroded across the sessions. In Session 1, Maya referenced Jordan's old role implicitly ('Jordan used to handle all the bookings') and appealed to him for help booking a venue in Session 3. By Session 3, Jordan declined entirely: when Maya said 'you always knew where to go,' Jordan responded with 'Lena can do it.' — passing all logistics to Lena without explanation. The shift was from default organizer to complete disengagement; the group adjusted around it without directly challenging him.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_1a2b3c4d_s03_t009",
+          "speaker_display_name": "Maya",
+          "message_excerpt": "Jordan used to handle all the bookings remember",
+          "relevance": "Maya's use of past tense ('used to') establishes the baseline — Jordan was previously the organizer"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_1a2b3c4d_s03_t011",
+          "speaker_display_name": "Jordan",
+          "message_excerpt": "Lena can do it.",
+          "relevance": "Jordan's flat refusal to engage with logistics, directing it to Lena, marks the post-shift behavior"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "referenced as former group organizer by Maya"
+        },
+        {
+          "session_index": 3,
+          "value": "deflects all logistics; will not engage regardless of prompting"
+        }
+      ]
+    },
+    {
+      "id": "Q8_c9d0e1f2",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "How did Maya's relationship with alcohol come across in the conversations — was there any sign of a change?",
+      "answer": "Maya's drinking preferences shifted noticeably across the sessions. In earlier sessions, no drinking preference was stated. By Session 4, when Priya pointed her toward a wine bar, Maya said she'd 'probably just get the sparkling water.' Priya's follow-up — 'are you still off drinks?' — confirmed this was a known and ongoing change. Maya didn't explain it, just said 'yeah, honestly don't worry about it.' The phrasing ('still off drinks') indicates the shift predates Session 4 and was already established enough that Priya knew about it.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_1a2b3c4d_s01_t003",
+          "speaker_display_name": "Maya",
+          "message_excerpt": "ok so YES been wanting to try it",
+          "relevance": "Session 1 baseline — Maya is enthusiastic about brunch with no mention of any drink preference"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_1a2b3c4d_s04_t012",
+          "speaker_display_name": "Maya",
+          "message_excerpt": "ngl I'll probably just get the sparkling water",
+          "relevance": "Maya declines wine at a wine bar — the shift is now visible in behavior"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_1a2b3c4d_s04_t013",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "oh wait are you still off drinks? I'll see if they do good mocktails",
+          "relevance": "Priya's phrasing confirms the change is ongoing and previously known"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "no stated alcohol preference — baseline"
+        },
+        {
+          "session_index": 4,
+          "value": "orders sparkling water at wine bar; Priya confirms she is 'still off drinks'"
+        }
+      ]
+    },
+    {
+      "id": "Q8_d0e1f2a3",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "Did Sam's willingness to participate in outdoor activities like hiking change across the conversations?",
+      "answer": "Yes. In Sessions 1–3, Sam showed no objection to group outdoor activities — there was no mention of hiking limitations. In Session 4, when Priya mentioned hiking trails on the Sonoma trip, Sam immediately said 'I'll sit the hiking out.' When Maya asked if they were OK, Sam explained 'ankle still isn't great' — suggesting a recent injury that had changed their ability or willingness to hike. The shift was clear and sudden, anchored to the ankle injury, which Sam mentioned only briefly and didn't elaborate on.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_1a2b3c4d_s02_t016",
+          "speaker_display_name": "Sam",
+          "message_excerpt": "Jordan did you ever fully recover from the Mt. Tam thing",
+          "relevance": "Sam references a past hike casually, showing hiking was previously a normal group activity without stated limitations"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_1a2b3c4d_s04_t007",
+          "speaker_display_name": "Sam",
+          "message_excerpt": "I'll sit the hiking out",
+          "relevance": "Sam opts out of hiking unprompted — marking the behavioral shift"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_1a2b3c4d_s04_t009",
+          "speaker_display_name": "Sam",
+          "message_excerpt": "ankle still isn't great",
+          "relevance": "The ankle injury is named as the reason — briefly, without elaboration"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 2,
+          "value": "references past hiking casually; no stated limitations"
+        },
+        {
+          "session_index": 4,
+          "value": "opts out of hiking; ankle injury cited"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "source": "SocialMemBench",
+    "source_kind": "real_benchmark",
+    "network_id": "grp_1a2b3c4d",
+    "n_sessions": 5,
+    "n_turns": 101,
+    "n_qa": 12,
+    "v4_correct": 6,
+    "v4_total": 12,
+    "v4_errors": 6,
+    "v4_accuracy": 0.5,
+    "heldout_heldout_excluded": true
+  }
+}

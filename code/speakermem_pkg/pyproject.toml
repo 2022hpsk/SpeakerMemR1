@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "speakermem"
+version = "0.1.0"
+description = "Speaker-grounded structured memory for multi-party conversations (SpeakerMem-R1 inference framework)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "SpeakerMem-R1 authors" }]
+keywords = ["llm", "memory", "multi-party", "rag", "speaker", "agent"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+]
+dependencies = [
+    "numpy>=1.21",
+    "sentence-transformers>=2.2",
+    "openai>=1.0",
+]
+
+[project.optional-dependencies]
+faiss = ["faiss-cpu>=1.7"]
+chroma = ["chromadb>=0.4"]
+rerank = ["sentence-transformers>=2.2"]   # Optional CrossEncoder reranking
+dev = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+speakermem = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

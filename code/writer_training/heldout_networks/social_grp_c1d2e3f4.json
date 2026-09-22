@@ -1,0 +1,2071 @@
+{
+  "schema": "socialmembench-real-v4-source/1",
+  "scenario": "[socialmembench:grp_c1d2e3f4] real benchmark conversation",
+  "speakers": [
+    "Diane",
+    "Kevin",
+    "Loretta",
+    "Marcus",
+    "Tanya"
+  ],
+  "sessions": [
+    {
+      "session_id": "grp_c1d2e3f4_s01",
+      "session_index": 1,
+      "topic": "Loretta's upcoming cardiology appointment and family check-in",
+      "ts": "2026-01-11",
+      "turns": [
+        {
+          "turn": "grp_c1d2e3f4_s01_t000",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Good Sunday everyone. Re: this week, just a reminder that Mama's cardiology follow-up is Thursday at 10am. I've confirmed the appointment. Someone should check she has a ride sorted, just flagging.",
+          "ts": "2026-01-11T16:02:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f4_s01_t001",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Diane, I have a ride. Reverend Cooper's wife is taking me. I've had this appointment on my calendar for six weeks.",
+          "ts": "2026-01-11T16:08:00",
+          "reply_to": "grp_c1d2e3f4_s01_t000"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s01_t002",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "Grandma you're on it as always 😊 Do you remember if Dr. Mensah wanted you to bring the BP log or just the last reading?",
+          "ts": "2026-01-11T16:10:00",
+          "reply_to": "grp_c1d2e3f4_s01_t001"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s01_t003",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Tanya, he said the full log. I've been keeping it in the little notebook you left me. Every morning, right after coffee.",
+          "ts": "2026-01-11T16:14:00",
+          "reply_to": "grp_c1d2e3f4_s01_t002"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s01_t004",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "Perfect. That's exactly what he needs. You're ahead of half my actual patients 😄",
+          "ts": "2026-01-11T16:15:00",
+          "reply_to": "grp_c1d2e3f4_s01_t003"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s01_t005",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Mama I can call Thursday morning before you leave, just to make sure everything is set. Or we could do a quick video call so I can see you before you go.",
+          "ts": "2026-01-11T16:17:00",
+          "reply_to": "grp_c1d2e3f4_s01_t003"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s01_t006",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Diane, a call is fine. I'll be ready by nine. No need for video, I'll be running around getting my coat and bag on.",
+          "ts": "2026-01-11T16:22:00",
+          "reply_to": "grp_c1d2e3f4_s01_t005"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s01_t007",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "good luck thursday grandma 🙏 you got this",
+          "ts": "2026-01-11T16:25:00",
+          "reply_to": "grp_c1d2e3f4_s01_t006"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s01_t008",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "👍",
+          "ts": "2026-01-11T16:26:00",
+          "reply_to": "grp_c1d2e3f4_s01_t006"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s01_t009",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Marcus, are you still planning to come by Saturday? The kitchen faucet has been dripping for a week and a half.",
+          "ts": "2026-01-11T16:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f4_s01_t010",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "yeah Saturday. Bringing the parts already. Might look at the gutter on the south side too.",
+          "ts": "2026-01-11T16:33:00",
+          "reply_to": "grp_c1d2e3f4_s01_t009"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s01_t011",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Good. I'll make you something to eat. Come hungry.",
+          "ts": "2026-01-11T16:35:00",
+          "reply_to": "grp_c1d2e3f4_s01_t010"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s01_t012",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "Uncle Marcus always gets the home-cooked welcome 😄 Meanwhile I drove up in October and got a sandwich from the freezer",
+          "ts": "2026-01-11T16:38:00",
+          "reply_to": "grp_c1d2e3f4_s01_t011"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s01_t013",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Tanya, you arrived at ten at night. That freezer sandwich was made with love.",
+          "ts": "2026-01-11T16:40:00",
+          "reply_to": "grp_c1d2e3f4_s01_t012"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s01_t014",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "lol the freezer sandwich defense 💀",
+          "ts": "2026-01-11T16:41:00",
+          "reply_to": "grp_c1d2e3f4_s01_t013"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s01_t015",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Re: Thursday, Mama, please ask Dr. Mensah about the fluid retention question I emailed you last week. I know you don't check email much but I want to make sure he addresses it. I can send Tanya the note if that's easier.",
+          "ts": "2026-01-11T16:44:00",
+          "reply_to": "grp_c1d2e3f4_s01_t001"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s01_t016",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "Send it to me, I'll flag it with Dr. Mensah's office tomorrow. The question is actually worth asking, the timing of the follow-up is right for it.",
+          "ts": "2026-01-11T16:46:00",
+          "reply_to": "grp_c1d2e3f4_s01_t015"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s01_t017",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "I'll say this once. I am going to that appointment, I am bringing the notebook, and I am going to tell Dr. Mensah everything that needs telling. You are all welcome to pray for good results on Thursday.",
+          "ts": "2026-01-11T16:49:00",
+          "reply_to": "grp_c1d2e3f4_s01_t016"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s01_t018",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "noted lol. will be praying 🙏",
+          "ts": "2026-01-11T16:50:00",
+          "reply_to": "grp_c1d2e3f4_s01_t017"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s01_t019",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "yeah",
+          "ts": "2026-01-11T16:51:00",
+          "reply_to": "grp_c1d2e3f4_s01_t017"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_c1d2e3f4_s02",
+      "session_index": 2,
+      "topic": "Kevin's Chicago work project; Loretta shares memories of old Durham neighborhoods",
+      "ts": "2026-01-18",
+      "turns": [
+        {
+          "turn": "grp_c1d2e3f4_s02_t000",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "ok so I need to tell someone - the Southside project got a full budget approval this week. like we've been fighting for this for eight months and it actually went through",
+          "ts": "2026-01-18T15:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f4_s02_t001",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "Kevin!! That's huge, congratulations 🎉 Eight months is a long time to carry something",
+          "ts": "2026-01-18T15:47:00",
+          "reply_to": "grp_c1d2e3f4_s02_t000"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s02_t002",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Kevin that is wonderful news, I'm so proud of you! What does full budget approval mean in practice, is this the revitalization corridor project you mentioned at Christmas? Just so I understand the scope.",
+          "ts": "2026-01-18T15:49:00",
+          "reply_to": "grp_c1d2e3f4_s02_t000"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s02_t003",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "yeah exactly that one. basically we're doing a full transit-access and green-corridor study for three Southside neighborhoods, with actual implementation funding attached. not just a report that sits on a shelf",
+          "ts": "2026-01-18T15:52:00",
+          "reply_to": "grp_c1d2e3f4_s02_t002"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s02_t004",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "nice work son",
+          "ts": "2026-01-18T15:54:00",
+          "reply_to": "grp_c1d2e3f4_s02_t003"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s02_t005",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Kevin, I want you to know that I am very proud. A real project with real money attached. That is how things used to get done in Durham before they started writing reports about writing reports.",
+          "ts": "2026-01-18T15:58:00",
+          "reply_to": "grp_c1d2e3f4_s02_t003"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s02_t006",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "honestly that means more than anything else in this chat lol. speaking of which grandma - the Southside actually reminds me of Hayti. the pattern of how the neighborhood got cut is almost identical. did you ever know anyone who lived on Pettigrew Street before 147 came through?",
+          "ts": "2026-01-18T16:01:00",
+          "reply_to": "grp_c1d2e3f4_s02_t005"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s02_t007",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Kevin, yes. The Chestnut family had a dry goods store on that block. The father was a deacon at White Rock. They were gone by 1968, moved out to Bragtown. The highway came straight through the middle of everything and nobody who was not from there ever seemed to understand what was actually lost.",
+          "ts": "2026-01-18T16:07:00",
+          "reply_to": "grp_c1d2e3f4_s02_t006"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s02_t008",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "the Chestnut family, ok I'm writing that down. and that line about what was lost - ngl that's going in my presentation notes with your name on it if that's ok",
+          "ts": "2026-01-18T16:09:00",
+          "reply_to": "grp_c1d2e3f4_s02_t007"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s02_t009",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "You may use it. I'd like to be cited in a government document before I leave this earth.",
+          "ts": "2026-01-18T16:11:00",
+          "reply_to": "grp_c1d2e3f4_s02_t008"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s02_t010",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "😂 Grandma is going to be in a federal transit report, I love this family",
+          "ts": "2026-01-18T16:12:00",
+          "reply_to": "grp_c1d2e3f4_s02_t009"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s02_t011",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Kevin, on the project timeline, does this mean you'll be based in Chicago through at least end of year? I ask because we're starting to think about summer logistics and it helps to know who is where.",
+          "ts": "2026-01-18T16:15:00",
+          "reply_to": "grp_c1d2e3f4_s02_t000"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s02_t012",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "yeah through end of year for sure. honestly probably longer. I renewed the lease in December, didn't really make a big thing of it but it's a two-year",
+          "ts": "2026-01-18T16:17:00",
+          "reply_to": "grp_c1d2e3f4_s02_t011"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s02_t013",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "two year. ok. Chicago sticking then",
+          "ts": "2026-01-18T16:19:00",
+          "reply_to": "grp_c1d2e3f4_s02_t012"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s02_t014",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "for now yeah. the work is here",
+          "ts": "2026-01-18T16:20:00",
+          "reply_to": "grp_c1d2e3f4_s02_t013"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s02_t015",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "so this means someone needs to actually get to Chicago and see what Kevin's been building his life around. I keep saying this.",
+          "ts": "2026-01-18T16:22:00",
+          "reply_to": "grp_c1d2e3f4_s02_t014"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s02_t016",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Agreed, I've been trying to find a window. Re: Mama's appointments, I don't want to travel during a cardiology month, just so we're all aware. But a Chicago trip is on my list.",
+          "ts": "2026-01-18T16:24:00",
+          "reply_to": "grp_c1d2e3f4_s02_t015"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s02_t017",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Kevin, I want you to call me this week. Not in the chat. I have more about Pettigrew Street and there is a woman from my bridge group whose father ran the barbershop two doors from the Chestnuts. You should talk to her.",
+          "ts": "2026-01-18T16:27:00",
+          "reply_to": "grp_c1d2e3f4_s02_t009"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s02_t018",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "grandma YES. calling Tuesday evening if that works",
+          "ts": "2026-01-18T16:28:00",
+          "reply_to": "grp_c1d2e3f4_s02_t017"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s02_t019",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "so just a note, Tuesday she has bridge until about 4 and she doesn't love calls right after because she's tired. maybe Tuesday at 6 or Wednesday?",
+          "ts": "2026-01-18T16:30:00",
+          "reply_to": "grp_c1d2e3f4_s02_t018"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_c1d2e3f4_s03",
+      "session_index": 3,
+      "topic": "Planning a February visit to Loretta in Durham — logistics, food, and where to eat",
+      "ts": "2026-01-25",
+      "turns": [
+        {
+          "turn": "grp_c1d2e3f4_s03_t000",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Re: February visit. I'm thinking the weekend of the 14th. I can drive up from Atlanta Friday evening, stay through Sunday. Marcus, are you able to come that weekend? And Kevin, I know Chicago is far but even if you can't make it we should keep Mama in the loop.",
+          "ts": "2026-01-25T14:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f4_s03_t001",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Diane, I want you to know that the fourteenth is perfectly fine. I'll have the guest room ready. And I'll cook on Saturday.",
+          "ts": "2026-01-25T14:38:00",
+          "reply_to": "grp_c1d2e3f4_s03_t000"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s03_t002",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "14th works. can come Friday night after I wrap a job in Concord.",
+          "ts": "2026-01-25T14:41:00",
+          "reply_to": "grp_c1d2e3f4_s03_t000"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s03_t003",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "I can do Saturday only - I'm on call Friday. But I'll drive up early Saturday morning, that works",
+          "ts": "2026-01-25T14:43:00",
+          "reply_to": "grp_c1d2e3f4_s03_t000"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s03_t004",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "honestly I want to come but flights are rough that weekend. I'll see what I can find. if not I'll call in on Saturday 😞",
+          "ts": "2026-01-25T14:45:00",
+          "reply_to": "grp_c1d2e3f4_s03_t000"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s03_t005",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Great. So Marcus, Tanya, and me confirmed for the 14th. Kevin we'll keep a seat warm. Now, Saturday dinner. I was thinking we could go somewhere nice in Durham for once, make it a proper outing. Bull Durham Beef isn't too far, or there's a new place on Ninth Street that Tanya mentioned.",
+          "ts": "2026-01-25T14:48:00",
+          "reply_to": "grp_c1d2e3f4_s03_t004"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s03_t006",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Diane, I said I'll cook on Saturday. We have a perfectly good kitchen.",
+          "ts": "2026-01-25T14:52:00",
+          "reply_to": "grp_c1d2e3f4_s03_t005"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s03_t007",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "I can handle Saturday too. I'll bring the portable grill. Weather looks okay for mid-February.",
+          "ts": "2026-01-25T14:53:00",
+          "reply_to": "grp_c1d2e3f4_s03_t006"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s03_t008",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "so we've gone from a restaurant dinner to two people offering to cook before Diane finished her sentence 😄 I love it. Grandma what are you thinking of making?",
+          "ts": "2026-01-25T14:55:00",
+          "reply_to": "grp_c1d2e3f4_s03_t007"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s03_t009",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Fried chicken, collards, macaroni. Marcus can do whatever he wants on that grill in addition. But the main meal is mine.",
+          "ts": "2026-01-25T15:01:00",
+          "reply_to": "grp_c1d2e3f4_s03_t008"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s03_t010",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "That's fine, Mama. I had hoped to take you out somewhere nice since you don't get out as much, just flagging. But home is lovely too. I'll bring wine and a dessert.",
+          "ts": "2026-01-25T15:03:00",
+          "reply_to": "grp_c1d2e3f4_s03_t009"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s03_t011",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Diane, I get out plenty. Bridge is every Tuesday. Church is most Sundays. I am not homebound.",
+          "ts": "2026-01-25T15:06:00",
+          "reply_to": "grp_c1d2e3f4_s03_t010"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s03_t012",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "grandma with the receipts 😂 honestly if I can get there I am very much in for fried chicken and whatever uncle marcus puts on the grill",
+          "ts": "2026-01-25T15:08:00",
+          "reply_to": "grp_c1d2e3f4_s03_t011"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s03_t013",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "so mom, I was going to suggest we do a walk Saturday morning before everyone gets into cooking mode. there's a trail along the Eno that Grandma's neighbor was telling me about. nothing strenuous.",
+          "ts": "2026-01-25T15:11:00",
+          "reply_to": "grp_c1d2e3f4_s03_t010"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s03_t014",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "I love that idea, yes. Mama, do you want to join the walk or would you rather have a slower morning? I know you don't love being rushed before we've all settled in, just so we plan right.",
+          "ts": "2026-01-25T15:13:00",
+          "reply_to": "grp_c1d2e3f4_s03_t013"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s03_t015",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "I'll walk with you. The Eno is worth seeing in February when the leaves are off. I know that trail. I'd rather you not set an alarm time for it, though. We'll go when we're ready.",
+          "ts": "2026-01-25T15:17:00",
+          "reply_to": "grp_c1d2e3f4_s03_t014"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s03_t016",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "yeah I'll skip the walk. More time to set up the grill.",
+          "ts": "2026-01-25T15:19:00",
+          "reply_to": "grp_c1d2e3f4_s03_t015"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s03_t017",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "Marcus always has his priorities sorted 😄 ok so Saturday plan: no fixed alarm, walk when ready, grill goes on by noon, main meal by 2. Does that work for everyone?",
+          "ts": "2026-01-25T15:20:00",
+          "reply_to": "grp_c1d2e3f4_s03_t016"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s03_t018",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Works for me. I'll send a logistics summary Monday so everyone has it. Kevin, if you manage flights, let us know by Wednesday so Mama can plan the guest situation. Love, Diane",
+          "ts": "2026-01-25T15:22:00",
+          "reply_to": "grp_c1d2e3f4_s03_t017"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s03_t019",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "a logistics summary 😭 ok will check flights tonight and report back",
+          "ts": "2026-01-25T15:23:00",
+          "reply_to": "grp_c1d2e3f4_s03_t018"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_c1d2e3f4_s04",
+      "session_index": 4,
+      "topic": "Loretta's cardiology results and her changed stance on follow-up appointments",
+      "ts": "2026-02-01",
+      "turns": [
+        {
+          "turn": "grp_c1d2e3f4_s04_t000",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Mama, how did Thursday go? You said you'd call but I didn't hear anything. Just flagging, I'm not trying to hover, I just want to know you're alright.",
+          "ts": "2026-02-01T17:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f4_s04_t001",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Diane, the appointment was Thursday. I had things to do Thursday evening. Dr. Mensah was pleased with the readings. He wants to see me again in three months. I've already put it in the calendar.",
+          "ts": "2026-02-01T17:24:00",
+          "reply_to": "grp_c1d2e3f4_s04_t000"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s04_t002",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "So glad to hear it 😊 Dr. Mensah is good. Three months is right on schedule for where your numbers have been.",
+          "ts": "2026-02-01T17:26:00",
+          "reply_to": "grp_c1d2e3f4_s04_t001"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s04_t003",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "That's good news, Mama. Did he address the fluid retention question? And did Tanya's note reach his office in time?",
+          "ts": "2026-02-01T17:28:00",
+          "reply_to": "grp_c1d2e3f4_s04_t001"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s04_t004",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "He did. He said it was a sensible question and not a current concern. Tanya, I assume that was your doing.",
+          "ts": "2026-02-01T17:33:00",
+          "reply_to": "grp_c1d2e3f4_s04_t003"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s04_t005",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "Mom sent me the note, I forwarded it to the office Monday. Proactive is always better with cardiology, it lets them prepare rather than react in-room.",
+          "ts": "2026-02-01T17:35:00",
+          "reply_to": "grp_c1d2e3f4_s04_t004"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s04_t006",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "good news. faucet is fixed by the way. and I checked the water heater while I was there.",
+          "ts": "2026-02-01T17:37:00",
+          "reply_to": "grp_c1d2e3f4_s04_t001"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s04_t007",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Marcus, I told you the water heater was fine. But thank you for looking.",
+          "ts": "2026-02-01T17:40:00",
+          "reply_to": "grp_c1d2e3f4_s04_t006"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s04_t008",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "good news all around. grandma I looked for flights btw - found something workable for the 14th, I just need to confirm the return. 80% chance I'm there",
+          "ts": "2026-02-01T17:42:00",
+          "reply_to": "grp_c1d2e3f4_s04_t007"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s04_t009",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Kevin, I want you to know that 80% is not the same as a yes. But I'll count you as likely and buy extra chicken.",
+          "ts": "2026-02-01T17:46:00",
+          "reply_to": "grp_c1d2e3f4_s04_t008"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s04_t010",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "lol fair enough grandma. I'll confirm by Tuesday",
+          "ts": "2026-02-01T17:47:00",
+          "reply_to": "grp_c1d2e3f4_s04_t009"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s04_t011",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Mama, I want to ask you something and I want you to hear it without reading anything into it. Has the dizziness come back at all since the ER trip? Tanya said the last visit was clean but I want to hear it from you.",
+          "ts": "2026-02-01T17:50:00",
+          "reply_to": "grp_c1d2e3f4_s04_t001"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s04_t012",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "No dizziness. I've been careful. I told Tanya already that the mornings are steady, the readings are in range. Diane, I know why you ask. I'm telling you it's been fine.",
+          "ts": "2026-02-01T17:56:00",
+          "reply_to": "grp_c1d2e3f4_s04_t011"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s04_t013",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "so here's the thing. she has been keeping that log really consistently, her numbers have been better than the three months before the ER visit. Dr. Mensah said it directly. The monitoring is doing what it's supposed to do.",
+          "ts": "2026-02-01T17:58:00",
+          "reply_to": "grp_c1d2e3f4_s04_t012"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s04_t014",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Good. That's good. Mama, I'm glad. I know I can be a lot about this, just so we're all aware. I'm working on it.",
+          "ts": "2026-02-01T18:01:00",
+          "reply_to": "grp_c1d2e3f4_s04_t013"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s04_t015",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Diane, you come by it honestly. Your grandmother was the same way about me. I know you mean well. Next appointment is April. I'll tell you how it goes.",
+          "ts": "2026-02-01T18:04:00",
+          "reply_to": "grp_c1d2e3f4_s04_t014"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s04_t016",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "ngl that might be the most wholesome thing I've seen in this chat in months",
+          "ts": "2026-02-01T18:06:00",
+          "reply_to": "grp_c1d2e3f4_s04_t015"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s04_t017",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "yeah",
+          "ts": "2026-02-01T18:07:00",
+          "reply_to": "grp_c1d2e3f4_s04_t015"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s04_t018",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "ok good. so we're confirmed for the 14th, Kevin is 80% probable, and Grandma is going to feed us all and report back in April. I think that's a good week 😊",
+          "ts": "2026-02-01T18:09:00",
+          "reply_to": "grp_c1d2e3f4_s04_t016"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s04_t019",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "It is a good week. Kevin, I will be expecting that confirmation by Tuesday. Do not make me count extra chickens for nothing.",
+          "ts": "2026-02-01T18:12:00",
+          "reply_to": "grp_c1d2e3f4_s04_t018"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_c1d2e3f4_s05",
+      "session_index": 5,
+      "topic": "After the February visit — Diane calls Marcus directly; Tanya's career hint surfaces",
+      "ts": "2026-02-08",
+      "turns": [
+        {
+          "turn": "grp_c1d2e3f4_s05_t000",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "I want everyone to know I am still full from Saturday. Marcus, that chicken was very good. Diane, thank you for driving. Kevin, next time you will be there.",
+          "ts": "2026-02-08T15:20:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f4_s05_t001",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "grandma I feel that from chicago 😭 glad it was good though. was marcus actually on his grill behavior or did he just stand next to it",
+          "ts": "2026-02-08T15:22:00",
+          "reply_to": "grp_c1d2e3f4_s05_t000"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s05_t002",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "handled it",
+          "ts": "2026-02-08T15:24:00",
+          "reply_to": "grp_c1d2e3f4_s05_t001"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s05_t003",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "it was actually really good. also Grandma tried to sneak back into the kitchen three times during cleanup and we had to physically block the doorway 😄",
+          "ts": "2026-02-08T15:27:00",
+          "reply_to": "grp_c1d2e3f4_s05_t002"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s05_t004",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Tanya, it is my kitchen. I was supervising.",
+          "ts": "2026-02-08T15:29:00",
+          "reply_to": "grp_c1d2e3f4_s05_t003"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s05_t005",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Re: the visit, it was a good day. Mama looked well and the Eno walk was the right call. Marcus, I also want to flag that I called you Thursday evening about the April visit coordination. I know it went to voicemail but I wanted to say in the chat that I'm going to keep doing that going forward. Just calling directly rather than routing through Tanya. Just so we're all aware.",
+          "ts": "2026-02-08T15:32:00",
+          "reply_to": "grp_c1d2e3f4_s05_t000"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s05_t006",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "ok. call Thursdays after 5. I'm usually wrapping a job before that.",
+          "ts": "2026-02-08T15:35:00",
+          "reply_to": "grp_c1d2e3f4_s05_t005"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s05_t007",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "that's good to know. the Thursday window actually works 👍",
+          "ts": "2026-02-08T15:37:00",
+          "reply_to": "grp_c1d2e3f4_s05_t006"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s05_t008",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "I am glad everyone is speaking to each other directly. That is how a family ought to work.",
+          "ts": "2026-02-08T15:41:00",
+          "reply_to": "grp_c1d2e3f4_s05_t006"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s05_t009",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "ok but real talk can we acknowledge that dad answering with a scheduling window was actually growth 😂",
+          "ts": "2026-02-08T15:43:00",
+          "reply_to": "grp_c1d2e3f4_s05_t006"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s05_t010",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "yeah",
+          "ts": "2026-02-08T15:45:00",
+          "reply_to": "grp_c1d2e3f4_s05_t009"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s05_t011",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Re: April. I want to plan something before Mama's next cardiology appointment. The 11th is a Saturday, if that works. Marcus, I'll call you Thursday to talk through who can come. Kevin, same question.",
+          "ts": "2026-02-08T15:48:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f4_s05_t012",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "I'll check my schedule this week. I might have a thing at Emory that Saturday - still figuring out if I need to go in person or if I can do it remotely.",
+          "ts": "2026-02-08T15:51:00",
+          "reply_to": "grp_c1d2e3f4_s05_t011"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s05_t013",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "What kind of thing? I didn't know you had Emory obligations on weekends. Just flagging so I can understand the constraints.",
+          "ts": "2026-02-08T15:53:00",
+          "reply_to": "grp_c1d2e3f4_s05_t012"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s05_t014",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "it's nothing yet. just looking into something. I'll know more in a week or two.",
+          "ts": "2026-02-08T15:55:00",
+          "reply_to": "grp_c1d2e3f4_s05_t013"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s05_t015",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "noted 👀 anyway april 11 - let me check flights. probably doable from here",
+          "ts": "2026-02-08T15:57:00",
+          "reply_to": "grp_c1d2e3f4_s05_t014"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s05_t016",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Tanya, when you know something you will tell us. That is understood. Kevin, I'll buy the chicken now if that helps with the decision.",
+          "ts": "2026-02-08T16:01:00",
+          "reply_to": "grp_c1d2e3f4_s05_t014"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s05_t017",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "lol ok that sealed it. I'm checking flights tonight",
+          "ts": "2026-02-08T16:02:00",
+          "reply_to": "grp_c1d2e3f4_s05_t016"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s05_t018",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "April 11 works. I'll bring the grill again.",
+          "ts": "2026-02-08T16:04:00",
+          "reply_to": "grp_c1d2e3f4_s05_t011"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s05_t019",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Good. Marcus I'll call you Thursday after 5 as discussed. Tanya, whatever it is, I'm glad you're looking into things. Love, Diane",
+          "ts": "2026-02-08T16:07:00",
+          "reply_to": "grp_c1d2e3f4_s05_t018"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_c1d2e3f4_s06",
+      "session_index": 6,
+      "topic": "Marcus's late-night call from Loretta; quiet shift on her living situation",
+      "ts": "2026-02-15",
+      "turns": [
+        {
+          "turn": "grp_c1d2e3f4_s06_t000",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Checking in on everyone. Tanya, how was your week? Marcus, did the Thursday call happen? Just doing a general round.",
+          "ts": "2026-02-15T16:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f4_s06_t001",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "week was a lot. three in the unit this week. I'm ok but I'm tired.",
+          "ts": "2026-02-15T16:47:00",
+          "reply_to": "grp_c1d2e3f4_s06_t000"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s06_t002",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Tanya, I want you to know that I hear you. Three is a hard week. You rest tonight.",
+          "ts": "2026-02-15T16:51:00",
+          "reply_to": "grp_c1d2e3f4_s06_t001"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s06_t003",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "Thursday call happened. April 11 is sorted from my side.",
+          "ts": "2026-02-15T16:53:00",
+          "reply_to": "grp_c1d2e3f4_s06_t000"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s06_t004",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Good, thank you Marcus. Tanya, I'm sorry. Do you want to talk? I can call tonight.",
+          "ts": "2026-02-15T16:55:00",
+          "reply_to": "grp_c1d2e3f4_s06_t001"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s06_t005",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "I'm fine, I promise. I just need a quiet evening. Also Marcus, I wanted to ask - did something happen Tuesday night? I saw Grandma was awake late because she replied to a meme Kevin sent at like 11pm.",
+          "ts": "2026-02-15T16:57:00",
+          "reply_to": "grp_c1d2e3f4_s06_t004"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s06_t006",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "she called me. couldn't find her BP meds. went up Tuesday night, stayed through Wednesday.",
+          "ts": "2026-02-15T17:02:00",
+          "reply_to": "grp_c1d2e3f4_s06_t005"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s06_t007",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Marcus. She called you at 11pm and you went up that night and you are telling us now? That is exactly the kind of thing this chat is for. I'm not angry, I just want to understand what happened. Was she alright?",
+          "ts": "2026-02-15T17:04:00",
+          "reply_to": "grp_c1d2e3f4_s06_t006"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s06_t008",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "she was fine. scared more than anything. meds had gotten mixed in with some other stuff in a cabinet. I went up, found them, reorganized the kitchen while I was there. she didn't want me to make a thing of it.",
+          "ts": "2026-02-15T17:07:00",
+          "reply_to": "grp_c1d2e3f4_s06_t007"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s06_t009",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "ok so a few things. first - Marcus did the right thing going up immediately. second - Grandma calling at 11pm for meds means she was anxious, not just disorganized. I want to check in with her this week about the storage setup.",
+          "ts": "2026-02-15T17:09:00",
+          "reply_to": "grp_c1d2e3f4_s06_t008"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s06_t010",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "I'll say this once. I found my medication. Marcus came, the kitchen is in better order now. I did not need an 11pm crisis, I needed someone to come look. There is a difference. Marcus, thank you for coming without making it a production.",
+          "ts": "2026-02-15T17:14:00",
+          "reply_to": "grp_c1d2e3f4_s06_t009"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s06_t011",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "grandma I love you and I also want to say dad going up same night is a big deal and we should name that 🙏",
+          "ts": "2026-02-15T17:16:00",
+          "reply_to": "grp_c1d2e3f4_s06_t010"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s06_t012",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Agreed. Marcus, that was the right thing. I do think we should talk about medication storage as a general matter. Not a crisis conversation, just practical. Tanya is right that the setup should be consistent. Marcus, thoughts?",
+          "ts": "2026-02-15T17:18:00",
+          "reply_to": "grp_c1d2e3f4_s06_t011"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s06_t013",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "already did it. labeled the cabinet, put the daily meds in the same spot every time. pill organizer on the counter. not hard.",
+          "ts": "2026-02-15T17:22:00",
+          "reply_to": "grp_c1d2e3f4_s06_t012"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s06_t014",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "That's good. I do think longer term we need to have a broader conversation about the house and how things are set up generally. Not now, not in front of Mama, but eventually. Marcus, I know your view has been that she manages fine. I just want to note that Tuesday was a different kind of moment, even if it ended well.",
+          "ts": "2026-02-15T17:25:00",
+          "reply_to": "grp_c1d2e3f4_s06_t013"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s06_t015",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "yeah. probably need to think about some things.",
+          "ts": "2026-02-15T17:29:00",
+          "reply_to": "grp_c1d2e3f4_s06_t014"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s06_t016",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "so that right there is actually what I needed to hear. we don't have to solve it today. just knowing we're all in the same place is enough for now.",
+          "ts": "2026-02-15T17:31:00",
+          "reply_to": "grp_c1d2e3f4_s06_t015"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s06_t017",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "I want to be clear that I am still here and can read this chat. Whatever you are planning, I would like to be part of that conversation when the time comes.",
+          "ts": "2026-02-15T17:35:00",
+          "reply_to": "grp_c1d2e3f4_s06_t016"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s06_t018",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "grandma. 100%. always.",
+          "ts": "2026-02-15T17:37:00",
+          "reply_to": "grp_c1d2e3f4_s06_t017"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s06_t019",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Of course, Mama. That has always been the intention. When we do have that conversation, it will be with you. I'm glad the kitchen is sorted and I'm glad Marcus went up. Love, Diane",
+          "ts": "2026-02-15T17:40:00",
+          "reply_to": "grp_c1d2e3f4_s06_t017"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_c1d2e3f4_s07",
+      "session_index": 7,
+      "topic": "Loretta's driving habit surfaces; how the family sub-groups actually coordinate",
+      "ts": "2026-02-22",
+      "turns": [
+        {
+          "turn": "grp_c1d2e3f4_s07_t000",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "so Grandma mentioned in passing this week that she skipped the evening part of the church auxiliary meeting on Thursday. said it was too late to drive back. I just want to name that out loud because I think it's a change.",
+          "ts": "2026-02-22T14:55:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f4_s07_t001",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "What do you mean a change? She drives to that meeting every month. She's been going since before Earl passed.",
+          "ts": "2026-02-22T14:58:00",
+          "reply_to": "grp_c1d2e3f4_s07_t000"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s07_t002",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "she still goes. she just didn't stay for the 8pm part. said she didn't want to be driving that late. that's the bit I'm flagging.",
+          "ts": "2026-02-22T15:01:00",
+          "reply_to": "grp_c1d2e3f4_s07_t001"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s07_t003",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Tanya. I told you that as conversation, not as a report to the family.",
+          "ts": "2026-02-22T15:07:00",
+          "reply_to": "grp_c1d2e3f4_s07_t002"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s07_t004",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "I know. I'm sorry. I still think it's worth the family knowing. Not as a crisis, just as a thing that happened.",
+          "ts": "2026-02-22T15:09:00",
+          "reply_to": "grp_c1d2e3f4_s07_t003"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s07_t005",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "I made a decision. I am not driving after dark anymore. I have given myself that rule. It is my decision and I am telling you now directly. I didn't want a conversation about it. I just wanted it to be my thing.",
+          "ts": "2026-02-22T15:13:00",
+          "reply_to": "grp_c1d2e3f4_s07_t004"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s07_t006",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Mama, I think that is a good and wise decision. I'm not going to say anything beyond that.",
+          "ts": "2026-02-22T15:16:00",
+          "reply_to": "grp_c1d2e3f4_s07_t005"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s07_t007",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "good call Mama",
+          "ts": "2026-02-22T15:17:00",
+          "reply_to": "grp_c1d2e3f4_s07_t005"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s07_t008",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "ok I respect that completely. and can we all agree to just take it as the decision it is and not turn it into a thing 👍",
+          "ts": "2026-02-22T15:19:00",
+          "reply_to": "grp_c1d2e3f4_s07_t006"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s07_t009",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Thank you, Kevin. That is what I needed.",
+          "ts": "2026-02-22T15:21:00",
+          "reply_to": "grp_c1d2e3f4_s07_t008"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s07_t010",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Re: practical side - Mama, is there someone from church who can take you to evening things when they run late? Or we should know who Reverend Cooper's wife can reach when it's not her week. Just so there's a backup that isn't a crisis call.",
+          "ts": "2026-02-22T15:24:00",
+          "reply_to": "grp_c1d2e3f4_s07_t009"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s07_t011",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Diane, I have a whole church full of people. Mrs. Garrett two doors down, Sister Thompson from the altar guild. I have already spoken to both of them. I am not without a plan.",
+          "ts": "2026-02-22T15:28:00",
+          "reply_to": "grp_c1d2e3f4_s07_t010"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s07_t012",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "so can I ask a different question - how does everyone actually find out what's happening with Grandma? Because I feel like the real network is not this chat.",
+          "ts": "2026-02-22T15:30:00",
+          "reply_to": "grp_c1d2e3f4_s07_t011"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s07_t013",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "lol I call her directly. she tells me things. that's my system",
+          "ts": "2026-02-22T15:32:00",
+          "reply_to": "grp_c1d2e3f4_s07_t012"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s07_t014",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "I go up. see with my own eyes. Mama tells me things she doesn't put in here.",
+          "ts": "2026-02-22T15:33:00",
+          "reply_to": "grp_c1d2e3f4_s07_t012"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s07_t015",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "I call every few days. Tanya sends me a clinical summary when something happens that she judges I need to know. Marcus shows up. Kevin calls about Durham. So this chat is the fourth or fifth information layer, not the first. Just so we're all aware of what we're actually running here.",
+          "ts": "2026-02-22T15:36:00",
+          "reply_to": "grp_c1d2e3f4_s07_t012"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s07_t016",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "that's actually a good description. so the question is what this chat is actually for. I think it's the place we feel like we're all together even when we're not. it has a different function from information.",
+          "ts": "2026-02-22T15:38:00",
+          "reply_to": "grp_c1d2e3f4_s07_t015"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s07_t017",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Tanya, that is exactly right. This chat is Sunday dinner. It is not the doctor's office.",
+          "ts": "2026-02-22T15:42:00",
+          "reply_to": "grp_c1d2e3f4_s07_t016"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s07_t018",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "grandma that is genuinely the best thing anyone has said in this chat. someone screenshot that.",
+          "ts": "2026-02-22T15:44:00",
+          "reply_to": "grp_c1d2e3f4_s07_t017"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s07_t019",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "👍",
+          "ts": "2026-02-22T15:45:00",
+          "reply_to": "grp_c1d2e3f4_s07_t018"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_c1d2e3f4_s08",
+      "session_index": 8,
+      "topic": "Loretta's implicit stance on the house; Diane and Tanya's parallel observations about Marcus",
+      "ts": "2026-03-01",
+      "turns": [
+        {
+          "turn": "grp_c1d2e3f4_s08_t000",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "I want to tell you something. I was in the garden this morning and I realized the forsythia is about to come in. It comes in every year, right at the end of February, and Earl always said it meant the house was working. I have been in this house fifty-four years. I am not interested in leaving it.",
+          "ts": "2026-03-01T16:10:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c1d2e3f4_s08_t001",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "grandma that's beautiful. and noted. loud and clear.",
+          "ts": "2026-03-01T16:13:00",
+          "reply_to": "grp_c1d2e3f4_s08_t000"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s08_t002",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "I hear you Grandma. The forsythia thing is genuinely lovely. Also I think the family should hear that and take it at face value, not as a debate opener.",
+          "ts": "2026-03-01T16:15:00",
+          "reply_to": "grp_c1d2e3f4_s08_t000"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s08_t003",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Mama, no one is asking you to leave. I want to be clear about that. What we were discussing last week was about having a plan, not about making a decision. I'll take the forsythia as a sign that the garden is in good hands.",
+          "ts": "2026-03-01T16:17:00",
+          "reply_to": "grp_c1d2e3f4_s08_t000"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s08_t004",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "nobody's moving you anywhere Mama",
+          "ts": "2026-03-01T16:19:00",
+          "reply_to": "grp_c1d2e3f4_s08_t000"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s08_t005",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Good. That is settled then. Now. How is everyone?",
+          "ts": "2026-03-01T16:22:00",
+          "reply_to": "grp_c1d2e3f4_s08_t004"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s08_t006",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "good. project is in implementation phase now, actually doing the thing instead of studying it. it's a different kind of work",
+          "ts": "2026-03-01T16:25:00",
+          "reply_to": "grp_c1d2e3f4_s08_t005"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s08_t007",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "I had a better week. The Emory thing is moving forward. I'll tell everyone more when there's actually something to tell.",
+          "ts": "2026-03-01T16:28:00",
+          "reply_to": "grp_c1d2e3f4_s08_t005"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s08_t008",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "I'm looking forward to hearing it whenever you're ready. Re: Marcus, I called Thursday as discussed. We talked through the April visit and also just generally. I notice he's been more present this month, in a different way.",
+          "ts": "2026-03-01T16:30:00",
+          "reply_to": "grp_c1d2e3f4_s08_t007"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s08_t009",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "I was going to say the same thing actually. he texted me separately this week to ask about Grandma's meds schedule. like unprompted. that's new.",
+          "ts": "2026-03-01T16:32:00",
+          "reply_to": "grp_c1d2e3f4_s08_t008"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s08_t010",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "just want to know what I'm looking at when I go up",
+          "ts": "2026-03-01T16:34:00",
+          "reply_to": "grp_c1d2e3f4_s08_t009"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s08_t011",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "dad that's honestly the most you've said in a month about grandma's situation and I mean that as a good thing 🙏",
+          "ts": "2026-03-01T16:36:00",
+          "reply_to": "grp_c1d2e3f4_s08_t010"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s08_t012",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Marcus, I am glad you asked Tanya. That is the kind of thing that matters. Not the big conversations. The small careful ones.",
+          "ts": "2026-03-01T16:39:00",
+          "reply_to": "grp_c1d2e3f4_s08_t010"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s08_t013",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Agreed. Re: April 11, I've sent Marcus the logistics draft. Kevin, have you confirmed flights? And Mama, is the guest room still set up from February or does it need resetting? Just so I know what to plan for.",
+          "ts": "2026-03-01T16:42:00",
+          "reply_to": "grp_c1d2e3f4_s08_t012"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s08_t014",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "The guest room is always ready. I do not take it apart between visits.",
+          "ts": "2026-03-01T16:45:00",
+          "reply_to": "grp_c1d2e3f4_s08_t013"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s08_t015",
+          "speaker": "Kevin",
+          "speaker_id": "p_c1d2e3f5",
+          "content": "flights confirmed. I'm there April 11. already told grandma on the phone but putting it in the chat officially 🎉",
+          "ts": "2026-03-01T16:47:00",
+          "reply_to": "grp_c1d2e3f4_s08_t013"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s08_t016",
+          "speaker": "Loretta",
+          "speaker_id": "p_c1d2e3f1",
+          "content": "Kevin, I am buying the chicken tomorrow morning.",
+          "ts": "2026-03-01T16:50:00",
+          "reply_to": "grp_c1d2e3f4_s08_t015"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s08_t017",
+          "speaker": "Tanya",
+          "speaker_id": "p_c1d2e3f4",
+          "content": "ok this family. I love you all. Kevin is confirmed, Marcus is asking about medications, Grandma has forsythia and a full freezer. things are ok.",
+          "ts": "2026-03-01T16:52:00",
+          "reply_to": "grp_c1d2e3f4_s08_t016"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s08_t018",
+          "speaker": "Marcus",
+          "speaker_id": "p_c1d2e3f3",
+          "content": "bringing the grill April 11",
+          "ts": "2026-03-01T16:54:00",
+          "reply_to": "grp_c1d2e3f4_s08_t017"
+        },
+        {
+          "turn": "grp_c1d2e3f4_s08_t019",
+          "speaker": "Diane",
+          "speaker_id": "p_c1d2e3f2",
+          "content": "Perfect. I will bring wine, a dessert, and absolutely nothing to worry about. Love, Diane",
+          "ts": "2026-03-01T16:57:00",
+          "reply_to": "grp_c1d2e3f4_s08_t017"
+        }
+      ]
+    }
+  ],
+  "qa_pairs": [
+    {
+      "id": "Q1_98e809a0",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Loretta's response to Diane's suggestion reveal about how she prefers to communicate with family when she has something important happening?",
+      "answer": "Loretta consistently deflects video calls in favor of voice calls, framing any refusal as a practical inconvenience rather than a stated preference. In Session 1, when Diane offered a video call before the cardiology appointment, Loretta redirected with 'a call is fine... No need for video, I'll be running around getting my coat and bag on' — using busyness as the reason rather than admitting she dislikes video calls. The preference is not stated directly but is visible in the pattern: she never proposes video contact, accepts phone calls as sufficient, and frames video as disruptive to her routine. The practical excuse functions as a polite but firm deflection.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c1d2e3f4_s01_t006",
+          "speaker_display_name": "Loretta",
+          "message_excerpt": "a call is fine. I'll be ready by nine. No need for video, I'll be running around getting my coat and bag on.",
+          "relevance": "Loretta declines video in favor of voice, disguising the preference as scheduling practicality"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_c1d2e3f4_s01_t005",
+          "speaker_display_name": "Diane",
+          "message_excerpt": "I can call Thursday morning before you leave, just to make sure everything is set. Or we could do a quick video call so I can see you before you go.",
+          "relevance": "The video call offer Loretta is responding to — context for her deflection"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_fca07c65",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Kevin's approach to housing suggest about how he has been thinking about his future in the city where he lives?",
+      "answer": "Kevin has quietly shifted from treating Chicago as a temporary posting to displaying the markers of someone who has settled. In Session 2, when Diane asked about his timeline, Kevin mentioned renewing a two-year lease in December — 'didn't really make a big thing of it but it's a two-year' — embedding this significant decision in a passing remark rather than presenting it as news. He also added 'for now yeah. the work is here,' a non-committal hedge that nonetheless signals his frame has changed from 'eventually moving south' to 'staying for the foreseeable future.' The combination of the long lease and his casual delivery suggests rootedness he has not consciously declared but is already living.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_c1d2e3f4_s02_t012",
+          "speaker_display_name": "Kevin",
+          "message_excerpt": "I renewed the lease in December, didn't really make a big thing of it but it's a two-year",
+          "relevance": "Kevin buries a two-year lease renewal inside a passing remark, signaling rootedness without announcement"
+        },
+        {
+          "session_index": 2,
+          "turn_id": "grp_c1d2e3f4_s02_t014",
+          "speaker_display_name": "Kevin",
+          "message_excerpt": "for now yeah. the work is here",
+          "relevance": "Kevin's continued hedge reinforces present-tense attachment rather than a future-directed plan to leave"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_4b2b7ad8",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Marcus's reaction — when Loretta called him late at night about a problem at the house — reveal about how he shows up for family when there is a need?",
+      "answer": "Marcus responds to family need through immediate physical presence rather than coordination or communication. When Loretta called at 11pm about her BP medication, Marcus drove to Durham that same night and stayed through Wednesday — not alerting the group chat at the time, not escalating it as a crisis, and not delegating. He described it tersely: 'she called me. couldn't find her BP meds. went up Tuesday night, stayed through Wednesday.' In Session 6 he also reveals he reorganized the kitchen while there — the kind of concrete physical action that characterizes how he expresses care. He did not report it to the group until Tanya surfaced it indirectly. The pattern is consistent: he shows up, fixes what he can see, and does not dramatize it.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 6,
+          "turn_id": "grp_c1d2e3f4_s06_t006",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "she called me. couldn't find her BP meds. went up Tuesday night, stayed through Wednesday.",
+          "relevance": "Marcus's terse account of an immediate overnight response to Loretta's call — shows physical presence as default care mode"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_c1d2e3f4_s06_t008",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "she was fine. scared more than anything. meds had gotten mixed in with some other stuff in a cabinet. I went up, found them, reorganized the kitchen while I was there.",
+          "relevance": "Marcus expanded on the physical actions taken — fixing and organizing as the natural expression of his response"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_8cfe0300",
+      "category": "Q1",
+      "difficulty": "easy",
+      "question": "What does Loretta's opening message suggest about her position on where she intends to spend the rest of her life, and what context prompted her to say it when she did?",
+      "answer": "Loretta opens Session 8 by volunteering an unprompted statement about the house — describing the forsythia coming in every year, Earl's association with it, and her fifty-four years in the home — before ending with 'I am not interested in leaving it.' The statement was not a response to a direct question; it came at the start of the session, suggesting she had been thinking about the family's recent planning conversation and chose to pre-empt any further discussion by staking her position clearly. The evidence is explicit rather than inferred: 'I have been in this house fifty-four years. I am not interested in leaving it.'",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 8,
+          "turn_id": "grp_c1d2e3f4_s08_t000",
+          "speaker_display_name": "Loretta",
+          "message_excerpt": "I have been in this house fifty-four years. I am not interested in leaving it.",
+          "relevance": "Loretta's direct statement of attachment, offered unprompted, reveals her position on the living situation discussion"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_eb97940c",
+      "category": "Q2",
+      "difficulty": "medium",
+      "question": "The group settled on cooking at home for the Saturday dinner rather than going out. What did Marcus's specific response in that moment signal about his actual preference, and what in how he responded tells you that?",
+      "answer": "The group landed on a home-cooked dinner, with Loretta taking the lead. Marcus did not voice a preference about the decision directly — he immediately volunteered to bring a portable grill rather than engaging with the restaurant idea at all: 'I can handle Saturday too. I'll bring the portable grill.' He did not say he disliked eating out; he sidestepped the decision by moving straight to his preferred mode of contributing. The sidestep is the signal — Marcus redirected the conversation toward cooking so efficiently that the restaurant option quietly disappeared. Tanya noticed this, commenting 'so we've gone from a restaurant dinner to two people offering to cook before Diane finished her sentence.' Marcus's preference for cooking over restaurant outings for family occasions was revealed through action rather than stated opposition.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Kevin",
+        "B": "Marcus",
+        "C": "Diane",
+        "D": "Tanya"
+      },
+      "correct_option": "B",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_c1d2e3f4_s03_t007",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "I can handle Saturday too. I'll bring the portable grill. Weather looks okay for mid-February.",
+          "relevance": "Marcus volunteers to bring the grill rather than engaging with the restaurant proposal — sidestep that reveals preference"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_48eb480d",
+      "category": "Q2",
+      "difficulty": "hard",
+      "question": "What did the family appear to agree on regarding planning for Loretta's care, and what did Marcus's response in that exchange actually reveal about whether the agreement was complete?",
+      "answer": "The family appeared to reach a consensus that some future planning for Loretta's care was needed — a significant shift from earlier sessions. Marcus's response 'yeah. probably need to think about some things.' was the moment that made the consensus seem complete. However, Loretta's immediate follow-up — 'I want to be clear that I am still here and can read this chat. Whatever you are planning, I would like to be part of that conversation when the time comes' — reveals that the conversation had effectively happened around her rather than with her. Marcus's concession was minimal: he did not elaborate, did not propose anything, and did not respond when Loretta intervened. The 'agreement' was more a quiet capitulation than a genuine resolution; Marcus stopped shutting the conversation down without actually joining it. The dissent from the apparent consensus is Loretta's, who was the subject of the discussion rather than a participant in it.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Tanya",
+        "B": "Kevin",
+        "C": "Loretta",
+        "D": "Marcus"
+      },
+      "correct_option": "C",
+      "evidence_anchors": [
+        {
+          "session_index": 6,
+          "turn_id": "grp_c1d2e3f4_s06_t015",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "yeah. probably need to think about some things.",
+          "relevance": "Marcus's minimal concession — signals the start of apparent consensus, but with no commitment"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_c1d2e3f4_s06_t017",
+          "speaker_display_name": "Loretta",
+          "message_excerpt": "I want to be clear that I am still here and can read this chat. Whatever you are planning, I would like to be part of that conversation when the time comes.",
+          "relevance": "Loretta's intervention reveals the planning conversation excluded her — the consensus was not complete"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q4_2cad9568",
+      "category": "Q4",
+      "difficulty": "medium",
+      "question": "Who was it that mentioned sending a prepared note to Tanya so she could relay a specific medical question to the doctor before Loretta's appointment?",
+      "answer": "Diane made the suggestion, in turn grp_c1d2e3f4_s01_t015: 'I can send Tanya the note if that's easier.' What distinguishes Diane as the source is that she had already established the note — she mentions it as something she emailed to Loretta the previous week and now considers routing through Tanya. This is a second-stage routing decision, not just a spontaneous offer to help. Tanya's response in the following turn ('Send it to me, I'll flag it with Dr. Mensah's office') confirms she is receiving the note from Diane, not generating it.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Loretta",
+        "B": "Tanya",
+        "C": "Diane",
+        "D": "Kevin"
+      },
+      "correct_option": "C",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c1d2e3f4_s01_t015",
+          "speaker_display_name": "Diane",
+          "message_excerpt": "I can send Tanya the note if that's easier",
+          "relevance": "Diane proposes routing the medical note through Tanya — she is the originator of the research note, not Tanya"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q4_1128be29",
+      "category": "Q4",
+      "difficulty": "medium",
+      "question": "Who in the family mentioned not wanting to travel during months when Loretta has a major medical appointment, and framed it as a coordination constraint?",
+      "answer": "Diane said it, in turn grp_c1d2e3f4_s02_t016: 'I don't want to travel during a cardiology month, just so we're all aware.' The tell is her signature phrase 'just so we're all aware' — a marker she uses specifically when flagging information she considers important but wants to appear non-pressuring. The framing treats Loretta's appointment schedule as a logistical input into her own travel planning, consistent with her healthcare administrator orientation and her ongoing role as primary care coordinator.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Marcus",
+        "B": "Tanya",
+        "C": "Kevin",
+        "D": "Diane"
+      },
+      "correct_option": "D",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_c1d2e3f4_s02_t016",
+          "speaker_display_name": "Diane",
+          "message_excerpt": "I don't want to travel during a cardiology month, just so we're all aware.",
+          "relevance": "Diane ties her own travel calendar to Loretta's medical schedule — the 'just so we're all aware' is a Diane signature phrase"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q4_00fb42d9",
+      "category": "Q4",
+      "difficulty": "hard",
+      "question": "Who first observed that Marcus had been more present and engaged with Loretta's situation in a qualitatively different way compared to the previous month?",
+      "answer": "Diane made the observation first, in turn grp_c1d2e3f4_s08_t008: 'I notice he's been more present this month, in a different way.' Tanya then followed with her own version in the next turn: 'I was going to say the same thing actually — he texted me separately this week to ask about Grandma's meds schedule. like unprompted. that's new.' The distinction is that Diane's observation is general and relational ('more present… in a different way'), while Tanya adds a specific behavioral data point (the unprompted meds text). Diane spoke first and framed the change; Tanya provided evidence for it.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Kevin",
+        "B": "Diane",
+        "C": "Loretta",
+        "D": "Tanya"
+      },
+      "correct_option": "B",
+      "evidence_anchors": [
+        {
+          "session_index": 8,
+          "turn_id": "grp_c1d2e3f4_s08_t008",
+          "speaker_display_name": "Diane",
+          "message_excerpt": "I notice he's been more present this month, in a different way.",
+          "relevance": "Diane is the first to name the change in Marcus's engagement level"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_c1d2e3f4_s08_t009",
+          "speaker_display_name": "Tanya",
+          "message_excerpt": "I was going to say the same thing actually. he texted me separately this week to ask about Grandma's meds schedule. like unprompted. that's new.",
+          "relevance": "Tanya follows with a specific corroborating behavior — she did not originate the observation"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q4_91076c64",
+      "category": "Q4",
+      "difficulty": "hard",
+      "question": "Who provided the specific behavioral evidence that Marcus had been asking unprompted about Loretta's medication schedule?",
+      "answer": "Tanya reported it, in turn grp_c1d2e3f4_s08_t009: 'he texted me separately this week to ask about Grandma's meds schedule. like unprompted. that's new.' The evidence is grounded in direct receipt — Marcus texted Tanya specifically, making her the person who has the behavioral data. Diane's observation in the previous turn was a general impression ('more present this month, in a different way'), not a specific clinical interaction. The unprompted meds text is Tanya's evidence because it came to her inbox.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Tanya",
+        "B": "Diane",
+        "C": "Loretta",
+        "D": "Kevin"
+      },
+      "correct_option": "A",
+      "evidence_anchors": [
+        {
+          "session_index": 8,
+          "turn_id": "grp_c1d2e3f4_s08_t009",
+          "speaker_display_name": "Tanya",
+          "message_excerpt": "he texted me separately this week to ask about Grandma's meds schedule. like unprompted. that's new.",
+          "relevance": "Tanya received the unprompted text from Marcus — the behavioral specificity is hers, not Diane's"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_5d399566",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "What is Loretta's preference about taking phone calls immediately after her Tuesday bridge game, and how does Tanya's behavior show that she already had this knowledge before anyone else in the chat did?",
+      "answer": "Loretta prefers not to receive phone calls immediately after bridge because she is tired — she needs recovery time after the game. Tanya revealed this in Session 2 when Kevin proposed calling Loretta on Tuesday evening: 'so just a note, Tuesday she has bridge until about 4 and she doesn't love calls right after because she's tired. maybe Tuesday at 6 or Wednesday?' Tanya did not ask Loretta for this information in the chat — she offered it as a known fact, unprompted by Loretta. This implies she had learned it through their regular calls outside the group chat. Tanya functions as a quiet holder of Loretta's daily rhythms in ways the group does not have direct access to, and this turn is a visible moment where that knowledge surfaces.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_c1d2e3f4_s02_t019",
+          "speaker_display_name": "Tanya",
+          "message_excerpt": "Tuesday she has bridge until about 4 and she doesn't love calls right after because she's tired. maybe Tuesday at 6 or Wednesday?",
+          "relevance": "Tanya offers Loretta's energy pattern as known fact without checking with Loretta — the knowledge was pre-existing, not acquired in this exchange"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_17b38e7a",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "What is Loretta's preference about pacing during the opening of a family visit, and what specific behavior does Diane display that reveals she already understood this before Loretta said anything?",
+      "answer": "Loretta prefers not to be rushed during the settling-in period at the start of a family visit — she wants to be comfortable before activities are organized. Diane revealed this knowledge in Session 3 when she asked about the Saturday walk: 'Mama, do you want to join the walk or would you rather have a slower morning? I know you don't love being rushed before we've all settled in, just so we plan right.' Diane inserted this knowledge as a parenthetical — 'I know you don't love being rushed' — without asking Loretta whether this was true. The unsolicited insertion of this preference-detail is the observable behavior that proves Diane had it already. Loretta's subsequent response ('I'd rather you not set an alarm time for it... We'll go when we're ready') confirms the preference is accurate.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_c1d2e3f4_s03_t014",
+          "speaker_display_name": "Diane",
+          "message_excerpt": "I know you don't love being rushed before we've all settled in, just so we plan right.",
+          "relevance": "Diane inserts Loretta's pace preference as assumed knowledge rather than asking — reveals pre-existing awareness"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_c1d2e3f4_s03_t015",
+          "speaker_display_name": "Loretta",
+          "message_excerpt": "I'd rather you not set an alarm time for it, though. We'll go when we're ready.",
+          "relevance": "Loretta's response confirms the preference Diane anticipated — corroborates Diane's prior knowledge"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_3ae93cd7",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "What change had occurred in Loretta's driving behavior earlier, and how does Tanya's opening move in the conversation show she already knew about the change — and where she got that knowledge from?",
+      "answer": "Loretta had stopped attending the late portion of evening church events because she did not want to drive home after dark — a voluntary behavioral change she had made privately. Tanya surfaced this in Session 7: 'Grandma mentioned in passing this week that she skipped the evening part of the church auxiliary meeting on Thursday. said it was too late to drive back. I just want to name that out loud because I think it's a change.' The key phrase is 'mentioned in passing this week' — Tanya is reporting on a private conversation she had with Loretta outside the group chat. She flagged it to the family as clinically significant, despite Loretta's preference to keep it private ('Tanya. I told you that as conversation, not as a report to the family.'). Tanya's knowledge came from direct contact with Loretta, not from anything in the group chat, and her clinical training made her recognize the behavioral shift as worth naming.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 7,
+          "turn_id": "grp_c1d2e3f4_s07_t000",
+          "speaker_display_name": "Tanya",
+          "message_excerpt": "so Grandma mentioned in passing this week that she skipped the evening part of the church auxiliary meeting on Thursday. said it was too late to drive back. I just want to name that out loud because I think it's a change.",
+          "relevance": "Tanya relays information from a private conversation with Loretta — the 'mentioned in passing this week' establishes direct prior contact as the source"
+        },
+        {
+          "session_index": 7,
+          "turn_id": "grp_c1d2e3f4_s07_t003",
+          "speaker_display_name": "Loretta",
+          "message_excerpt": "Tanya. I told you that as conversation, not as a report to the family.",
+          "relevance": "Loretta's reproach confirms the information came from a direct private exchange, not the group chat"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_5beebc9d",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "Based on what unfolds in Sessions 1 and 2, what does the conversation reveal about the nature of the relationship between Loretta and Tanya when it comes to health-related matters?",
+      "answer": "The conversation shows that Loretta and Tanya have a peer-level, clinically grounded relationship that operates outside the family's anxiety layer. In Session 1, Loretta reports to Tanya on her BP log protocol ('he said the full log. I've been keeping it in the little notebook you left me. Every morning, right after coffee.') — volunteering detail she did not share with Diane. Tanya had given Loretta the notebook and established the protocol; Loretta is reporting compliance directly to her as if to a treating clinician rather than a worried relative. Tanya's response reinforces this register ('You're ahead of half my actual patients') — treating Loretta as an equal interlocutor rather than a care recipient. The relationship is revealed in this turn's texture: Loretta's directness, Tanya's clinical affirmation, and the complete absence of the anxious framing Diane brings.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "peer-level clinical trust between grandmother and granddaughter",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c1d2e3f4_s01_t003",
+          "speaker_display_name": "Loretta",
+          "message_excerpt": "he said the full log. I've been keeping it in the little notebook you left me. Every morning, right after coffee.",
+          "relevance": "Loretta reports protocol compliance to Tanya directly — treating her as the clinical interlocutor"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_c1d2e3f4_s01_t004",
+          "speaker_display_name": "Tanya",
+          "message_excerpt": "You're ahead of half my actual patients",
+          "relevance": "Tanya affirms Loretta in clinical terms, confirming the peer-level register of their health communication"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_014b5caf",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does Kevin's behavior in the middle of the celebration thread reveal about the specific interest that connects him and Loretta in a way that sets their relationship apart from the others in the group?",
+      "answer": "Midway through a thread celebrating Kevin's major Southside project success, Kevin pivoted without prompting to ask Loretta a specific historical question about Durham's Hayti neighborhood and Pettigrew Street: 'the Southside actually reminds me of Hayti. the pattern of how the neighborhood got cut is almost identical. did you ever know anyone who lived on Pettigrew Street before 147 came through?' This pivot — from professional news to an obscure piece of local history — is not a social nicety. Kevin is using his work to unlock a conversation he is genuinely interested in having with Loretta specifically. Loretta responded with a detailed account (the Chestnut family, White Rock deacon, the move to Bragtown) that suggests they have had related conversations before. Kevin is writing the information down and linking it to a government presentation. No other family member engages with this exchange. Their relationship is built partly on this shared urban history vocabulary that the rest of the family lacks.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "shared interest in urban history and Durham neighborhood memory",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_c1d2e3f4_s02_t006",
+          "speaker_display_name": "Kevin",
+          "message_excerpt": "the Southside actually reminds me of Hayti. the pattern of how the neighborhood got cut is almost identical. did you ever know anyone who lived on Pettigrew Street",
+          "relevance": "Kevin interrupts his own celebration to ask Loretta a specific urban history question — reveals the particular shared interest"
+        },
+        {
+          "session_index": 2,
+          "turn_id": "grp_c1d2e3f4_s02_t007",
+          "speaker_display_name": "Loretta",
+          "message_excerpt": "Kevin, yes. The Chestnut family had a dry goods store on that block. The father was a deacon at White Rock. They were gone by 1968, moved out to Bragtown.",
+          "relevance": "Loretta's detailed response suggests this is not a new conversation topic between them — she holds this knowledge ready"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_8cf98402",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does the exchange between Tanya and the rest of the family reveal about the role Tanya plays in coordinating communication between Diane and Loretta's medical team?",
+      "answer": "Session 4 reveals that Tanya acts as a quiet intermediary between Diane's research and Loretta's clinical team. After Diane's cardiology question came up in Session 1, Tanya received the note from Diane and forwarded it to Dr. Mensah's office before the appointment: 'Mom sent me the note, I forwarded it to the office Monday.' She explains her reasoning in clinical terms — 'Proactive is always better with cardiology, it lets them prepare rather than react in-room' — suggesting this is not a one-off favor but a practised coordination approach. Loretta's response ('Tanya, I assume that was your doing') confirms that Tanya's clinical involvement in the appointment was recognized. The role is triangular: Diane generates the research, Tanya transmits it clinically, Loretta benefits. This coordination channel is not visible in the group chat until it surfaces here.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "Tanya serves as medical intermediary between Diane's research and Loretta's clinical team",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_c1d2e3f4_s04_t005",
+          "speaker_display_name": "Tanya",
+          "message_excerpt": "Mom sent me the note, I forwarded it to the office Monday. Proactive is always better with cardiology, it lets them prepare rather than react in-room.",
+          "relevance": "Tanya reveals the transmission she made between Diane's note and the cardiologist's office — the coordination role becomes explicit"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_a072b871",
+      "category": "Q7",
+      "difficulty": "hard",
+      "question": "What does Tanya's behavior — in response to Diane's direct question about what she has going on at Emory — reveal about the nature of the information boundary between Tanya and her mother?",
+      "answer": "When Diane asked 'What kind of thing?' about Tanya's Emory scheduling conflict, Tanya responded: 'it's nothing yet. just looking into something. I'll know more in a week or two.' She provided the minimum necessary to close the question without explaining the actual nature of the engagement. The deflection is informative: Diane is asking directly, Tanya clearly has something specific to report (she mentioned it as a possible scheduling conflict, implying she knows what it is), and she chose not to share it. This reveals that Tanya actively manages what she discloses to her mother, particularly when the information is not yet complete or when sharing it might generate anxiety before there is anything concrete to report. The Emory engagement is real — it is being withheld on Tanya's timeline, not because it doesn't exist.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "Tanya withholds developing personal news from Diane until she judges it ready to share",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_c1d2e3f4_s05_t014",
+          "speaker_display_name": "Tanya",
+          "message_excerpt": "it's nothing yet. just looking into something. I'll know more in a week or two.",
+          "relevance": "Tanya's deflection of Diane's direct question — revealing she is managing the disclosure deliberately"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_c1d2e3f4_s05_t013",
+          "speaker_display_name": "Diane",
+          "message_excerpt": "What kind of thing? I didn't know you had Emory obligations on weekends. Just flagging so I can understand the constraints.",
+          "relevance": "Diane's direct probe — the specificity of the question makes Tanya's deflection more deliberate"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_fc8d0944",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does Marcus's contribution to the discussion about how family members actually learn what is happening with Loretta reveal about the nature of his relationship with her?",
+      "answer": "In Session 7, when Tanya raised the question of how everyone finds out what is happening with Loretta, Marcus answered: 'I go up. see with my own eyes. Mama tells me things she doesn't put in here.' This three-sentence account reveals two things: first, Marcus's access to Loretta is physical and in-person, not mediated by the group chat; second, Loretta shares information with him privately that the group chat does not receive. The turn confirms a parallel communication channel between Marcus and Loretta that operates via his visits and that gives him access to a different layer of information than what the group coordinates around. The 'she doesn't put in here' clause is the key: Marcus is not saying Loretta tells him things she tells no one — he is saying she tells him things she does not tell the group.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "Marcus has a private information channel with Loretta through in-person visits outside the group chat",
+      "evidence_anchors": [
+        {
+          "session_index": 7,
+          "turn_id": "grp_c1d2e3f4_s07_t014",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "I go up. see with my own eyes. Mama tells me things she doesn't put in here.",
+          "relevance": "Marcus reveals Loretta shares with him privately what she withholds from the group — names the parallel channel directly"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_dc350f4e",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does Diane's turn — when the family discusses how they each stay informed about Loretta — reveal about how information about Loretta's wellbeing actually flows through the family?",
+      "answer": "Diane maps the actual coordination structure explicitly: 'I call every few days. Tanya sends me a clinical summary when something happens that she judges I need to know. Marcus shows up. Kevin calls about Durham. So this chat is the fourth or fifth information layer, not the first.' The group chat is described as the surface layer of a structure that has at least four parallel channels: Diane's regular calls to Loretta, Tanya's clinical summaries to Diane, Marcus's physical visits, and Kevin's direct calls about Durham. These channels are independent and carry different types of information — clinical, relational, historical. Diane's framing also reveals that Tanya curates what Diane receives from the clinical channel ('when something happens that she judges I need to know'), meaning Diane's clinical information is filtered by Tanya's judgment, not unmediated.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "The group chat is a surface layer over multiple parallel information channels between family members and Loretta",
+      "evidence_anchors": [
+        {
+          "session_index": 7,
+          "turn_id": "grp_c1d2e3f4_s07_t015",
+          "speaker_display_name": "Diane",
+          "message_excerpt": "Tanya sends me a clinical summary when something happens that she judges I need to know. Marcus shows up. Kevin calls about Durham. So this chat is the fourth or fifth information layer",
+          "relevance": "Diane names the parallel channels explicitly — maps the family's actual communication structure"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_dab43da5",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does Tanya's brief mention about a development at Emory reveal about how she manages information disclosure within the family?",
+      "answer": "In Session 8, Tanya mentioned the Emory engagement moving forward without elaborating: 'The Emory thing is moving forward. I'll tell everyone more when there's actually something to tell.' This continues the pattern from Session 5 where she deflected Diane's direct question. The phrase 'when there's actually something to tell' is a deliberate deferral — she acknowledges something is happening but declines to share it, framing the timing as her own to control. The disclosure is happening in fragments: Session 5 was a first inadvertent mention; Session 8 is a voluntary confirmation that it is progressing, but still without content. Tanya is managing this disclosure on her own schedule, keeping the family in a state of partial awareness rather than complete ignorance or full transparency.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "Tanya controls information about her career exploration on her own timeline, sharing in fragments",
+      "evidence_anchors": [
+        {
+          "session_index": 8,
+          "turn_id": "grp_c1d2e3f4_s08_t007",
+          "speaker_display_name": "Tanya",
+          "message_excerpt": "The Emory thing is moving forward. I'll tell everyone more when there's actually something to tell.",
+          "relevance": "Tanya confirms progress but withholds specifics — the deferral language ('when there's actually something to tell') reveals deliberate pacing"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q8_ce7e4cf8",
+      "category": "Q8",
+      "difficulty": "hard",
+      "question": "What in the conversation explains why Loretta's relationship to her cardiology follow-up appointments shifted earlier in the conversation, and what specifically drove that change?",
+      "answer": "Early state (Session 1): Loretta had been resistant to specialist appointments before the cardiology monitoring started. The family's anxiety about her health was a source of friction; she treated medical coordination as an imposition on her autonomy. Shift signal (Session 4): When reporting on the appointment, Loretta volunteered that Dr. Mensah wants to see her again in three months and added 'I've already put it in the calendar' — proactively managing the next visit without family prompting. This is the behavioral marker of the shift: she is now the one tracking follow-up dates rather than resisting them. Trigger: The persona data establishes that a dizzy spell in the kitchen followed by Tanya taking her to the ER was the precipitating event — specifically, Tanya's clinical explanations persuaded her in a way the family's general worry had not. This persuasion by clinical reasoning rather than family anxiety is the mechanism. Evolved state (Sessions 4–8): Loretta references appointments matter-of-factly, never defensively, and tracks the next appointment date herself.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c1d2e3f4_s01_t003",
+          "speaker_display_name": "Loretta",
+          "message_excerpt": "he said the full log. I've been keeping it in the little notebook you left me. Every morning, right after coffee.",
+          "relevance": "By Session 1 the monitoring routine is already established — this is the 'after' baseline for the log habit, showing the shift has already occurred before the corpus starts"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_c1d2e3f4_s04_t001",
+          "speaker_display_name": "Loretta",
+          "message_excerpt": "He wants to see me again in three months. I've already put it in the calendar.",
+          "relevance": "Loretta proactively reports the next appointment and confirms she calendared it — the shift from resistance to routine acceptance is complete"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_c1d2e3f4_s04_t015",
+          "speaker_display_name": "Loretta",
+          "message_excerpt": "Next appointment is April. I'll tell you how it goes.",
+          "relevance": "Loretta volunteers the April date unprompted — further evidence of normalized engagement with the follow-up schedule"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "resistant to specialist appointments; monitoring established but recently adopted"
+        },
+        {
+          "session_index": 4,
+          "value": "proactively calendars next appointment without prompting; treats follow-ups as routine"
+        }
+      ]
+    },
+    {
+      "id": "Q8_a436aea5",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What drove the change in how Diane coordinates with Marcus about family logistics, and what first signals this shift had occurred?",
+      "answer": "Early state (Sessions 1–4): Diane routed family coordination involving Marcus through Tanya rather than engaging him directly, treating his communication avoidance as a fixed parameter to work around. Shift signal (Session 5): Diane announces in the group chat that she had already called Marcus directly the previous Thursday, and states explicitly: 'I'm going to keep doing that going forward. Just calling directly rather than routing through Tanya. Just so we're all aware.' This is a deliberate and public declaration of a changed approach, not a gradual drift. Trigger: Tanya had pointed out to Diane (outside the chat, referenced implicitly) that her workarounds were enabling Marcus to avoid responsibility. Diane found this accurate and acted on it — she calls the Thursday evening window Marcus gives her in the same session. Evolved state (Sessions 5–8): Diane and Marcus are in direct contact on Thursdays; the routing through Tanya ceases in the conversation.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_c1d2e3f4_s05_t005",
+          "speaker_display_name": "Diane",
+          "message_excerpt": "I'm going to keep doing that going forward. Just calling directly rather than routing through Tanya. Just so we're all aware.",
+          "relevance": "Diane announces the change explicitly — this is the shift signal, a deliberate change of approach"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_c1d2e3f4_s05_t006",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "ok. call Thursdays after 5. I'm usually wrapping a job before that.",
+          "relevance": "Marcus provides a scheduling window — the new direct communication channel is immediately operative"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "routes Marcus coordination through Tanya; treats his avoidance as fixed"
+        },
+        {
+          "session_index": 5,
+          "value": "calls Marcus directly; announces the change as deliberate; Marcus responds with a scheduling window"
+        }
+      ]
+    },
+    {
+      "id": "Q8_4f5ee135",
+      "category": "Q8",
+      "difficulty": "hard",
+      "question": "What signals that Tanya's relationship to her current clinical role has shifted, and why does the earlier moment appear to be the trigger rather than something that came before it?",
+      "answer": "Early state (Sessions 1–4): Tanya is described throughout as fully committed to her role at Grady Memorial — she uses clinical language confidently, coordinates care efficiently, and shows no hesitation about her professional path. Shift signal (Session 5): Tanya mentions 'a thing at Emory' as a possible scheduling conflict, deflects when Diane probes, and says 'it's nothing yet. just looking into something. I'll know more in a week or two.' The fact that she mentioned it at all — despite the deflection — suggests the Emory engagement is real and already active. A week or two timeline indicates something with a specific near-term decision point. Trigger: The persona data establishes that a run of particularly hard deaths in the palliative unit over three weeks preceded Session 5 — not a breakdown but a slow recalibration. The session prior (Session 4) showed Tanya describing the monitoring as 'doing what it's supposed to do' in a way that is professionally controlled but also tired. The Emory inquiry is where this recalibration surfaces as action. Evolved state (Session 8): 'The Emory thing is moving forward. I'll tell everyone more when there's actually something to tell' — Tanya confirms the exploration is progressing without disclosing details.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_c1d2e3f4_s05_t012",
+          "speaker_display_name": "Tanya",
+          "message_excerpt": "I might have a thing at Emory that Saturday - still figuring out if I need to go in person or if I can do it remotely.",
+          "relevance": "First mention of Emory engagement — the conflict-framing implies a real commitment, not a vague interest"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_c1d2e3f4_s05_t014",
+          "speaker_display_name": "Tanya",
+          "message_excerpt": "it's nothing yet. just looking into something. I'll know more in a week or two.",
+          "relevance": "Tanya's deflection confirms something specific is underway — the 'in a week or two' timeline implies a near-term decision"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_c1d2e3f4_s08_t007",
+          "speaker_display_name": "Tanya",
+          "message_excerpt": "The Emory thing is moving forward. I'll tell everyone more when there's actually something to tell.",
+          "relevance": "Tanya confirms the Emory engagement is progressing — the shift from committed Grady staff to exploring a faculty role is underway"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 5,
+          "value": "first signal of Emory engagement; deflects questions; 'just looking into something'"
+        },
+        {
+          "session_index": 8,
+          "value": "confirms Emory engagement is moving forward; maintains information control on disclosure timing"
+        }
+      ]
+    },
+    {
+      "id": "Q8_9d588767",
+      "category": "Q8",
+      "difficulty": "hard",
+      "question": "What triggered Marcus's shift in how he talks about planning for Loretta's living situation, and what shows the shift happened there rather than gradually?",
+      "answer": "Early state (Sessions 1–5): Marcus's default position is that Loretta is fine, that she has always managed, and that eldercare conversations are premature. He deflects by going quiet when the family raises the topic and has never offered to engage with long-term planning. Shift signal (Session 6): After Diane explicitly states that the medication incident was 'a different kind of moment, even if it ended well' and invites Marcus's thoughts, he responds: 'yeah. probably need to think about some things.' This is four words of concession that do not elaborate, propose, or commit — but notably, Marcus does not shut the conversation down or go quiet, which is his prior pattern. Trigger: The late-night medication call is the mechanism. Marcus had driven to Durham at 11pm and spent two days there — he experienced Loretta's vulnerability directly, in his home territory (the house, her kitchen), without the filter of Diane's anxiety or Tanya's clinical framing. The experience changed his frame without him saying so. Evolved state (Sessions 7–8): Marcus asks Tanya about medication schedules unprompted (Session 8) and supports the night-driving decision without adding resistance — the concession from Session 6 is quietly operationalized.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 6,
+          "turn_id": "grp_c1d2e3f4_s06_t006",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "she called me. couldn't find her BP meds. went up Tuesday night, stayed through Wednesday.",
+          "relevance": "The triggering event — Marcus's direct experience of Loretta's nighttime vulnerability, prior to the shift"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_c1d2e3f4_s06_t015",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "yeah. probably need to think about some things.",
+          "relevance": "Marcus's concession — four words that mark the shift from dismissal to quiet acceptance of the need for planning"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_c1d2e3f4_s08_t009",
+          "speaker_display_name": "Tanya",
+          "message_excerpt": "he texted me separately this week to ask about Grandma's meds schedule. like unprompted. that's new.",
+          "relevance": "Evidence from Session 8 that Marcus's shift from Session 6 is being operationalized through new behavior"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "maintains Loretta is fine; deflects eldercare conversations as premature"
+        },
+        {
+          "session_index": 6,
+          "value": "concedes planning may be needed; stops shutting the conversation down"
+        }
+      ]
+    },
+    {
+      "id": "Q8_1f49317d",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What explains Loretta's decision to stop driving after dark, and why does the conversation suggest this was a self-directed change rather than one imposed by the family?",
+      "answer": "Early state (Sessions 1–6): Loretta drives herself everywhere including evening commitments, and the family has not raised this directly. The night-driving habit is background to the family's narrative. Shift signal (Session 7): Tanya surfaces that Loretta skipped the evening portion of a church auxiliary meeting because 'she didn't want to be driving that late.' Loretta confirms it in the same session with unusual directness: 'I made a decision. I am not driving after dark anymore. I have given myself that rule. It is my decision and I am telling you now directly. I didn't want a conversation about it. I just wanted it to be my thing.' Trigger: The night misjudgment coming back from a church event (referenced in background — not described in the chat) appears to be the cause; Tanya inferred it from context. Loretta's framing — 'I have given myself that rule' — is notable because it asserts ownership of the decision. It is not a concession to the family or a response to their concern; it is a private judgment she made and then communicated. Evolved state (Session 8): No reference to nighttime events; Loretta's church transport is now covered by arrangements she has made independently.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 7,
+          "turn_id": "grp_c1d2e3f4_s07_t002",
+          "speaker_display_name": "Tanya",
+          "message_excerpt": "she just didn't stay for the 8pm part. said she didn't want to be driving that late. that's the bit I'm flagging.",
+          "relevance": "Tanya surfaces the behavioral change — Loretta skipping late-night driving is flagged as new"
+        },
+        {
+          "session_index": 7,
+          "turn_id": "grp_c1d2e3f4_s07_t005",
+          "speaker_display_name": "Loretta",
+          "message_excerpt": "I made a decision. I am not driving after dark anymore. I have given myself that rule. It is my decision and I am telling you now directly. I didn't want a conversation about it. I just wanted it to be my thing.",
+          "relevance": "Loretta confirms the change and claims ownership of it — framing as self-directed is deliberate"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "drives to evening commitments; no restriction on night driving mentioned"
+        },
+        {
+          "session_index": 7,
+          "value": "voluntarily stopped driving after dark; frames it as a personal rule made privately"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "source": "SocialMemBench",
+    "source_kind": "real_benchmark",
+    "network_id": "grp_c1d2e3f4",
+    "n_sessions": 8,
+    "n_turns": 160,
+    "v4_correct": 17,
+    "v4_total": 25,
+    "v4_errors": 8,
+    "v4_accuracy": 0.68
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "hf_repo": "anon4data/socialmembench",
+  "configs": {
+    "networks": {
+      "行数": 43,
+      "字段": [
+        "network_id",
+        "group_name",
+        "group_type",
+        "group_size",
+        "tier",
+        "n_personas",
+        "edges_json",
+        "group_norms_json",
+        "metadata_json"
+      ],
+      "文件": "networks.jsonl"
+    },
+    "conversations": {
+      "行数": 7355,
+      "字段": [
+        "network_id",
+        "session_id",
+        "session_index",
+        "session_topic",
+        "session_date_label",
+        "session_date",
+        "session_gap_days",
+        "active_participants_json",
+        "corpus_start_date",
+        "turn_id",
+        "speaker_persona_id",
+        "speaker_display_name",
+        "timestamp_label",
+        "timestamp",
+        "message",
+        "message_index",
+        "reply_to_turn_id"
+      ],
+      "文件": "conversations.jsonl"
+    },
+    "qa": {
+      "行数": 1031,
+      "字段": [
+        "qa_id",
+        "network_id",
+        "query_type",
+        "difficulty",
+        "question",
+        "answer",
+        "answer_format",
+        "options_json",
+        "correct_option",
+        "evidence_anchors_json",
+        "contamination_foil",
+        "temporal_anchors_json",
+        "qc_phase1_score",
+        "qc_phase2_grounded",
+        "qc_phase3_flagged",
+        "source_challenge_id",
+        "generation_seed",
+        "metadata_json"
+      ],
+      "文件": "qa.jsonl"
+    }
+  }
+}

@@ -1,0 +1,2234 @@
+{
+  "schema": "socialmembench-real-v4-source/1",
+  "scenario": "[socialmembench:grp_d2e3f4a5] real benchmark conversation",
+  "speakers": [
+    "Adaeze",
+    "Chisom",
+    "Emeka",
+    "Ifeoma",
+    "Kingsley",
+    "Nkechi",
+    "Obiageli",
+    "Tobenna"
+  ],
+  "sessions": [
+    {
+      "session_id": "grp_d2e3f4a5_s01",
+      "session_index": 1,
+      "topic": "health news — Chisom's exhausting rotation, Nkechi checking in on everyone",
+      "ts": "2025-10-19",
+      "turns": [
+        {
+          "turn": "grp_d2e3f4a5_s01_t000",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children, good morning. I hope everybody slept well and has eaten something today. I am thinking of you all this Sunday. Chisom, I have not heard your voice since Wednesday. How is this new placement treating you? 🙏",
+          "ts": "2025-10-19T11:04:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_d2e3f4a5_s01_t001",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "okay SO mummy I literally just got in from a night shift and I am lying on the floor of my flat because I could not make it to the bed 😭😭 this rotation is something else. A&E overnight is not for the weak. I sent you a voice note earlier did you not get it??",
+          "ts": "2025-10-19T11:09:00",
+          "reply_to": "grp_d2e3f4a5_s01_t000"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s01_t002",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "actually wait I just checked I sent it to the wrong chat lmaooo ignore that 💀",
+          "ts": "2025-10-19T11:09:00",
+          "reply_to": "grp_d2e3f4a5_s01_t001"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s01_t003",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "Chisom I did not receive any voice note. I am reading your message here. Get up from the floor and go to your bed, please. Drink some water first. And I want a proper update when you wake up - text me, not a voice note. 😕",
+          "ts": "2025-10-19T11:14:00",
+          "reply_to": "grp_d2e3f4a5_s01_t002"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s01_t004",
+          "speaker": "Tobenna",
+          "speaker_id": "p_d4e5f6a7",
+          "content": "😭😭",
+          "ts": "2025-10-19T11:16:00",
+          "reply_to": "grp_d2e3f4a5_s01_t002"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s01_t005",
+          "speaker": "Tobenna",
+          "speaker_id": "p_d4e5f6a7",
+          "content": "chi get some sleep tbf you've been on it all week",
+          "ts": "2025-10-19T11:16:00",
+          "reply_to": "grp_d2e3f4a5_s01_t002"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s01_t006",
+          "speaker": "Adaeze",
+          "speaker_id": "p_c3d4e5f6",
+          "content": "Chisom!! Floor?? 😂 babe go to bed. Also Mum, good morning. I spoke to her on Thursday, she was already running on fumes then.",
+          "ts": "2025-10-19T11:21:00",
+          "reply_to": "grp_d2e3f4a5_s01_t002"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s01_t007",
+          "speaker": "Obiageli",
+          "speaker_id": "p_f6a7b8c9",
+          "content": "Greetings my people, good morning to all. Chisom, I hear you are exhausted. This is the price of the calling you have chosen and you must carry it with dignity. Rest well. In our family, we have always said that a body that is not rested cannot serve others properly. Nkechi, how are you today?",
+          "ts": "2025-10-19T11:28:00",
+          "reply_to": "grp_d2e3f4a5_s01_t002"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s01_t008",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My sister, I am well, thank you. I went to see Dr Osei on Thursday for my six-month check. Blood pressure behaving itself at last, which is good news. He has adjusted my medication slightly. Nothing to worry about, God willing, I will be fine. I just wish the surgery was not forty minutes on the bus.",
+          "ts": "2025-10-19T11:33:00",
+          "reply_to": "grp_d2e3f4a5_s01_t007"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s01_t009",
+          "speaker": "Emeka",
+          "speaker_id": "p_b2c3d4e5",
+          "content": "Mum. Medication adjusted how. What did he change.",
+          "ts": "2025-10-19T11:37:00",
+          "reply_to": "grp_d2e3f4a5_s01_t008"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s01_t010",
+          "speaker": "Obiageli",
+          "speaker_id": "p_f6a7b8c9",
+          "content": "Nkechi, I would also like to know. Medication changes at this stage of life should not be taken lightly. You must get a second opinion if there is any doubt. I say this with love.",
+          "ts": "2025-10-19T11:39:00",
+          "reply_to": "grp_d2e3f4a5_s01_t008"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s01_t011",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children, there is no need to panic. He reduced the amlodipine dose, that is all. My ankles were swelling slightly so he has brought it down. Emeka, Dr Osei has been my GP for eleven years. I trust him completely. Oby, your concern is noted and appreciated. I will report back next month. 🙏",
+          "ts": "2025-10-19T11:45:00",
+          "reply_to": "grp_d2e3f4a5_s01_t009"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s01_t012",
+          "speaker": "Emeka",
+          "speaker_id": "p_b2c3d4e5",
+          "content": "Amlodipine reduction for ankle oedema is appropriate. Fine. Let me know if symptoms change.",
+          "ts": "2025-10-19T11:47:00",
+          "reply_to": "grp_d2e3f4a5_s01_t011"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s01_t013",
+          "speaker": "Adaeze",
+          "speaker_id": "p_c3d4e5f6",
+          "content": "glad it's nothing serious 😮‍💨 Mum please don't bury the lede like that next time, you said 'nothing to worry about' and then said medication adjustment in the same breath 😅",
+          "ts": "2025-10-19T11:50:00",
+          "reply_to": "grp_d2e3f4a5_s01_t011"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s01_t014",
+          "speaker": "Kingsley",
+          "speaker_id": "p_a7b8c9d0",
+          "content": "Aunty Nkechi glad to hear you're good! Oedema is just your body asking for a rest. Hear me out though, you need someone to drive you to that surgery, forty minutes on a bus is not it. I can come through Reading one Saturday this month, on God 🙏",
+          "ts": "2025-10-19T11:54:00",
+          "reply_to": "grp_d2e3f4a5_s01_t008"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s01_t015",
+          "speaker": "Ifeoma",
+          "speaker_id": "p_b8c9d0e1",
+          "content": "Aunty Nkechi, I am glad you went to the appointment. Worth noting that ankles can start acting up this time of year with the cold too. Please rest when you can.",
+          "ts": "2025-10-19T11:57:00",
+          "reply_to": "grp_d2e3f4a5_s01_t008"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s01_t016",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children, honestly. I am sixty-four, not ninety-four. But I appreciate you all. Kingsley, do not make promises you will not keep. You said you were coming to Reading in September and I did not see you. Come when you can, by His grace. Ifeoma, you are probably right about the cold. I will invest in a proper pair of socks.",
+          "ts": "2025-10-19T12:02:00",
+          "reply_to": "grp_d2e3f4a5_s01_t014"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s01_t017",
+          "speaker": "Kingsley",
+          "speaker_id": "p_a7b8c9d0",
+          "content": "Aunty, details, details, September fell through for good reasons. This time I'm serious. I'll put it in the calendar right now 📅 watch this space",
+          "ts": "2025-10-19T12:05:00",
+          "reply_to": "grp_d2e3f4a5_s01_t016"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s01_t018",
+          "speaker": "Obiageli",
+          "speaker_id": "p_f6a7b8c9",
+          "content": "Greetings. Kingsley, your aunt is right. Our mother used to say that a man who cannot keep small promises will not keep large ones. Nkechi, I am relieved the appointment was reassuring. I remember when your mother had the same issue with her ankles and she refused to take it seriously for three years. Please do not do the same.",
+          "ts": "2025-10-19T12:08:00",
+          "reply_to": "grp_d2e3f4a5_s01_t016"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s01_t019",
+          "speaker": "Tobenna",
+          "speaker_id": "p_d4e5f6a7",
+          "content": "👀 kingsley adding to the calendar like we havent heard that before",
+          "ts": "2025-10-19T12:11:00",
+          "reply_to": "grp_d2e3f4a5_s01_t017"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s01_t020",
+          "speaker": "Adaeze",
+          "speaker_id": "p_c3d4e5f6",
+          "content": "Tobenna 💀💀 anyway Mum are you eating properly? you mentioned you've been gardening a lot and I worry you're burning calories and not replacing them",
+          "ts": "2025-10-19T12:14:00",
+          "reply_to": "grp_d2e3f4a5_s01_t019"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s01_t021",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children, I am eating very well, thank you. I made ofe onugbu this week and there is still some in the freezer. Adaeze, when are you next in Reading? You should come and collect some, God willing. The garden is just my hobby, it keeps me active. I would rather be in the garden than sitting watching television.",
+          "ts": "2025-10-19T12:17:00",
+          "reply_to": "grp_d2e3f4a5_s01_t020"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s01_t022",
+          "speaker": "Emeka",
+          "speaker_id": "p_b2c3d4e5",
+          "content": "Gardening is fine for cardiovascular health at your age. As long as you are not carrying heavy things alone. E",
+          "ts": "2025-10-19T12:20:00",
+          "reply_to": "grp_d2e3f4a5_s01_t021"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_d2e3f4a5_s02",
+      "session_index": 2,
+      "topic": "cultural/family tradition — Obiageli raises Christmas gathering protocol, mixed-gathering stance shift begins",
+      "ts": "2025-10-26",
+      "turns": [
+        {
+          "turn": "grp_d2e3f4a5_s02_t000",
+          "speaker": "Obiageli",
+          "speaker_id": "p_f6a7b8c9",
+          "content": "Greetings my people, good afternoon. I write to raise something before it becomes too late to plan properly. Christmas is nine weeks away. I wish to know how we are handling the gathering this year, who is hosting, who is bringing what, and I am asking now so that there are no surprises at the last minute.",
+          "ts": "2025-10-26T15:12:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_d2e3f4a5_s02_t001",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children, Oby is right to raise this now. I am hosting again as always. I will cook. We have always done Christmas at mine - your father set that tradition and I see no reason to change it. I expect everyone on 25th or 26th at the latest. God willing, I will have ofe onugbu and jollof rice ready as usual. 🙏",
+          "ts": "2025-10-26T15:19:00",
+          "reply_to": "grp_d2e3f4a5_s02_t000"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s02_t002",
+          "speaker": "Adaeze",
+          "speaker_id": "p_c3d4e5f6",
+          "content": "okay so before we get into logistics I just want to flag - Emeka, are you and Funmi definitely coming this year? Last year was a bit last-minute from your side. (no stress!) just helps with the planning 😊",
+          "ts": "2025-10-26T15:24:00",
+          "reply_to": "grp_d2e3f4a5_s02_t001"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s02_t003",
+          "speaker": "Emeka",
+          "speaker_id": "p_b2c3d4e5",
+          "content": "We are coming. Funmi and both children. Confirm us for the 25th.",
+          "ts": "2025-10-26T15:28:00",
+          "reply_to": "grp_d2e3f4a5_s02_t002"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s02_t004",
+          "speaker": "Obiageli",
+          "speaker_id": "p_f6a7b8c9",
+          "content": "I am glad Emeka is confirming this. I also note that Funmi is welcome, of course. I have been giving this some thought since last Christmas. She carries herself with respect and she is practically one of us now. I will say this once so there is no confusion later.",
+          "ts": "2025-10-26T15:33:00",
+          "reply_to": "grp_d2e3f4a5_s02_t003"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s02_t005",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My sister. Thank you for that. Funmi has been part of this family for seven years, she is family. 🙏 Kingsley, I assume you are coming. And your sister?",
+          "ts": "2025-10-26T15:37:00",
+          "reply_to": "grp_d2e3f4a5_s02_t004"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s02_t006",
+          "speaker": "Kingsley",
+          "speaker_id": "p_a7b8c9d0",
+          "content": "Aunty, hear me out. I'm definitely coming. Ifeoma too, I'll drag her up from Bristol personally if I have to 😂 Also while we're planning, and I know this is early, I know, but what about a pre-Christmas drinks thing at mine in South London? Open it up a bit. I've got space.",
+          "ts": "2025-10-26T15:40:00",
+          "reply_to": "grp_d2e3f4a5_s02_t005"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s02_t007",
+          "speaker": "Obiageli",
+          "speaker_id": "p_f6a7b8c9",
+          "content": "Kingsley. A pre-Christmas gathering at your property is a separate matter. The Christmas Day gathering itself is family. I trust you understand the distinction I am making.",
+          "ts": "2025-10-26T15:45:00",
+          "reply_to": "grp_d2e3f4a5_s02_t006"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s02_t008",
+          "speaker": "Kingsley",
+          "speaker_id": "p_a7b8c9d0",
+          "content": "yeah yeah of course Aunty Oby, the pre-drinks would just be family and a couple of close friends, nothing mad. details, details - anyway I'll sort the date and drop it in the chat 🎄",
+          "ts": "2025-10-26T15:48:00",
+          "reply_to": "grp_d2e3f4a5_s02_t007"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s02_t009",
+          "speaker": "Ifeoma",
+          "speaker_id": "p_b8c9d0e1",
+          "content": "I am coming to Christmas, Aunty Nkechi, I already blocked the dates. Kingsley I think what might help here is you confirm a specific date for the pre-Christmas thing rather than leaving it open, otherwise it just won't happen.",
+          "ts": "2025-10-26T15:52:00",
+          "reply_to": "grp_d2e3f4a5_s02_t008"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s02_t010",
+          "speaker": "Tobenna",
+          "speaker_id": "p_d4e5f6a7",
+          "content": "👆",
+          "ts": "2025-10-26T15:55:00",
+          "reply_to": "grp_d2e3f4a5_s02_t009"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s02_t011",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "okay SO I'm in for both 🙌 pre-drinks AND Christmas. Aunty Oby I love how you said Funmi is practically one of us already lmao we been knew. also Kingsley please actually set a date I am begging",
+          "ts": "2025-10-26T15:58:00",
+          "reply_to": "grp_d2e3f4a5_s02_t009"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s02_t012",
+          "speaker": "Obiageli",
+          "speaker_id": "p_f6a7b8c9",
+          "content": "Chisom, I am glad you understand. This is a matter of how we have always operated as a family. Your grandfather insisted that when the family gathers, it gathers properly, all present, no distractions, the meal shared without rushing. That is what Christmas means in this family.",
+          "ts": "2025-10-26T16:03:00",
+          "reply_to": "grp_d2e3f4a5_s02_t011"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s02_t013",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children, your Aunty Oby is speaking wisdom. And nobody thought to ask whether I need any help with the cooking this year? You know I will do it alone if nobody volunteers, but I will remember who did not ask. 🙂",
+          "ts": "2025-10-26T16:08:00",
+          "reply_to": "grp_d2e3f4a5_s02_t012"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s02_t014",
+          "speaker": "Adaeze",
+          "speaker_id": "p_c3d4e5f6",
+          "content": "Mum 😂 okay so I will come the 24th to help you prep. I'll bring chin chin and puff puff as usual. Can we also talk about the fund? I want to confirm everyone's transferring before 1st December please, I'm chasing again this year and I would rather not.",
+          "ts": "2025-10-26T16:11:00",
+          "reply_to": "grp_d2e3f4a5_s02_t013"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s02_t015",
+          "speaker": "Emeka",
+          "speaker_id": "p_b2c3d4e5",
+          "content": "Mine is already done. Transferred Friday. E",
+          "ts": "2025-10-26T16:14:00",
+          "reply_to": "grp_d2e3f4a5_s02_t014"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s02_t016",
+          "speaker": "Kingsley",
+          "speaker_id": "p_a7b8c9d0",
+          "content": "sorted by end of week, promise 🤝",
+          "ts": "2025-10-26T16:16:00",
+          "reply_to": "grp_d2e3f4a5_s02_t014"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s02_t017",
+          "speaker": "Tobenna",
+          "speaker_id": "p_d4e5f6a7",
+          "content": "yeah mine this week too",
+          "ts": "2025-10-26T16:18:00",
+          "reply_to": "grp_d2e3f4a5_s02_t014"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s02_t018",
+          "speaker": "Obiageli",
+          "speaker_id": "p_f6a7b8c9",
+          "content": "I will transfer mine on Wednesday from Enugu. Adaeze, you do this every year. I have said before that Nkechi or Emeka should share this responsibility with you. You should not be chasing grown people for money alone.",
+          "ts": "2025-10-26T16:22:00",
+          "reply_to": "grp_d2e3f4a5_s02_t014"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s02_t019",
+          "speaker": "Adaeze",
+          "speaker_id": "p_c3d4e5f6",
+          "content": "Aunty Oby I appreciate that, genuinely. It's fine for now. Let's just get through this year and we can revisit the setup after. 😊",
+          "ts": "2025-10-26T16:25:00",
+          "reply_to": "grp_d2e3f4a5_s02_t018"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s02_t020",
+          "speaker": "Ifeoma",
+          "speaker_id": "p_b8c9d0e1",
+          "content": "Worth noting that 'fine for now' has been the answer for a couple of years. I think Aunty Oby is raising something real. Not pushing, just saying it should be on the agenda properly at some point. x",
+          "ts": "2025-10-26T16:28:00",
+          "reply_to": "grp_d2e3f4a5_s02_t019"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s02_t021",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "Ada you always say it's fine and it is never fully fine though 😭 I see you",
+          "ts": "2025-10-26T16:31:00",
+          "reply_to": "grp_d2e3f4a5_s02_t019"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s02_t022",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children, Adaeze carries too much and she does not complain. I am proud of her. We will discuss this properly in December. God willing, we will sort it out as a family. Chisom, have you confirmed your dates? I need to know if you will be there from the 24th.",
+          "ts": "2025-10-26T16:35:00",
+          "reply_to": "grp_d2e3f4a5_s02_t021"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_d2e3f4a5_s03",
+      "session_index": 3,
+      "topic": "sibling announcement — Emeka shares what his daughter said about cousins, signals willingness to come to more family events",
+      "ts": "2025-11-02",
+      "turns": [
+        {
+          "turn": "grp_d2e3f4a5_s03_t000",
+          "speaker": "Emeka",
+          "speaker_id": "p_b2c3d4e5",
+          "content": "Something happened at dinner last night. My daughter asked why the cousins from London never come to Leeds. She is seven. I did not have a good answer.",
+          "ts": "2025-11-02T17:48:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_d2e3f4a5_s03_t001",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children. Emeka. Do you see? Even your daughter can see it. She is seven years old and she has already noticed that her family is scattered. What does that tell you. 🙏",
+          "ts": "2025-11-02T17:52:00",
+          "reply_to": "grp_d2e3f4a5_s03_t000"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s03_t002",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "okay SO that is the most painfully relatable thing I've ever heard 😭 I feel like that's the kind of thing that just hits you and you can't unfeel it. Emeka are you okay",
+          "ts": "2025-11-02T17:55:00",
+          "reply_to": "grp_d2e3f4a5_s03_t000"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s03_t003",
+          "speaker": "Emeka",
+          "speaker_id": "p_b2c3d4e5",
+          "content": "I am fine. It just made me think. That is all.",
+          "ts": "2025-11-02T17:57:00",
+          "reply_to": "grp_d2e3f4a5_s03_t002"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s03_t004",
+          "speaker": "Adaeze",
+          "speaker_id": "p_c3d4e5f6",
+          "content": "okay so we have literally all been thinking this for a while. I'm glad she said it. Emeka, what does 'made me think' actually mean here, for you? Because if it means what I think it means we should talk about it properly.",
+          "ts": "2025-11-02T18:02:00",
+          "reply_to": "grp_d2e3f4a5_s03_t003"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s03_t005",
+          "speaker": "Emeka",
+          "speaker_id": "p_b2c3d4e5",
+          "content": "It means I should probably show up more than twice a year. I said I am fine. What is the actual decision point here - do you want me to commit to something or just process this.",
+          "ts": "2025-11-02T18:05:00",
+          "reply_to": "grp_d2e3f4a5_s03_t004"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s03_t006",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children. We are processing AND deciding. Emeka, you have said it yourself. More than twice a year. So let us decide. What does more look like from you. I am not asking for the world, God willing. One extra gathering before summer. That is all I want to hear. 🙏",
+          "ts": "2025-11-02T18:08:00",
+          "reply_to": "grp_d2e3f4a5_s03_t005"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s03_t007",
+          "speaker": "Emeka",
+          "speaker_id": "p_b2c3d4e5",
+          "content": "Fine. One gathering per quarter from next year. I can commit to that.",
+          "ts": "2025-11-02T18:10:00",
+          "reply_to": "grp_d2e3f4a5_s03_t006"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s03_t008",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "QUARTERLY?? Emeka who are you and what have you done with my brother 😭😭 I'm actually screaming",
+          "ts": "2025-11-02T18:12:00",
+          "reply_to": "grp_d2e3f4a5_s03_t007"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s03_t009",
+          "speaker": "Tobenna",
+          "speaker_id": "p_d4e5f6a7",
+          "content": "😂😂 tbf that's more than I expected",
+          "ts": "2025-11-02T18:13:00",
+          "reply_to": "grp_d2e3f4a5_s03_t007"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s03_t010",
+          "speaker": "Obiageli",
+          "speaker_id": "p_f6a7b8c9",
+          "content": "Greetings my people. Emeka, this is good. Your grandfather always said that a man who makes himself available to his family is richer than one who merely provides for them. I am glad your daughter has spoken into you what we have hoped for.",
+          "ts": "2025-11-02T18:17:00",
+          "reply_to": "grp_d2e3f4a5_s03_t007"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s03_t011",
+          "speaker": "Adaeze",
+          "speaker_id": "p_c3d4e5f6",
+          "content": "okay so I'm going to pin this message 📌 I texted you separately but I'll say it here too - I'm glad you said it. I'm not joking about the quarterly thing, I'll hold you to it.",
+          "ts": "2025-11-02T18:20:00",
+          "reply_to": "grp_d2e3f4a5_s03_t007"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s03_t012",
+          "speaker": "Ifeoma",
+          "speaker_id": "p_b8c9d0e1",
+          "content": "That is a real thing, Emeka. Worth noting that the kids will remember this period, the ages they are now is when family becomes a reference point for them. x",
+          "ts": "2025-11-02T18:23:00",
+          "reply_to": "grp_d2e3f4a5_s03_t007"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s03_t013",
+          "speaker": "Kingsley",
+          "speaker_id": "p_a7b8c9d0",
+          "content": "Emeka on God that is the right call! Hear me out, we set a spring thing in Leeds. I'll come up. Tobenna you're in Manchester, basically round the corner. We make it happen 🤝",
+          "ts": "2025-11-02T18:26:00",
+          "reply_to": "grp_d2e3f4a5_s03_t007"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s03_t014",
+          "speaker": "Tobenna",
+          "speaker_id": "p_d4e5f6a7",
+          "content": "tbf i'm up for it. might rope chi in too",
+          "ts": "2025-11-02T18:28:00",
+          "reply_to": "grp_d2e3f4a5_s03_t013"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s03_t015",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "obviously I'm in 🙋 just needs to not be a Saturday I'm on call, send me dates",
+          "ts": "2025-11-02T18:29:00",
+          "reply_to": "grp_d2e3f4a5_s03_t014"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s03_t016",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children. This is what I have been praying for. Leeds in spring, God willing. Emeka, I expect you to actually plan it this time, not leave it to Adaeze. Your daughter started this conversation, you should be the one who finishes it. 🙏",
+          "ts": "2025-11-02T18:33:00",
+          "reply_to": "grp_d2e3f4a5_s03_t013"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s03_t017",
+          "speaker": "Emeka",
+          "speaker_id": "p_b2c3d4e5",
+          "content": "I will sort dates and send them before the end of November. E",
+          "ts": "2025-11-02T18:35:00",
+          "reply_to": "grp_d2e3f4a5_s03_t016"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s03_t018",
+          "speaker": "Adaeze",
+          "speaker_id": "p_c3d4e5f6",
+          "content": "noted in the diary 📆 and Emeka, I know you two have your own thing but I am glad you said this in the chat for once",
+          "ts": "2025-11-02T18:38:00",
+          "reply_to": "grp_d2e3f4a5_s03_t017"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s03_t019",
+          "speaker": "Emeka",
+          "speaker_id": "p_b2c3d4e5",
+          "content": "There is no 'thing'. E",
+          "ts": "2025-11-02T18:40:00",
+          "reply_to": "grp_d2e3f4a5_s03_t018"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s03_t020",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "there is ABSOLUTELY a thing 💀 Ada everyone knows about the Sunday voice notes",
+          "ts": "2025-11-02T18:41:00",
+          "reply_to": "grp_d2e3f4a5_s03_t019"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s03_t021",
+          "speaker": "Tobenna",
+          "speaker_id": "p_d4e5f6a7",
+          "content": "👀",
+          "ts": "2025-11-02T18:42:00",
+          "reply_to": "grp_d2e3f4a5_s03_t020"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s03_t022",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children, please mind your business. Emeka, I am looking forward to Leeds. God willing. 🙂",
+          "ts": "2025-11-02T18:45:00",
+          "reply_to": "grp_d2e3f4a5_s03_t020"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_d2e3f4a5_s04",
+      "session_index": 4,
+      "topic": "logistics and money — Christmas fund deadline approaching, Leeds spring trip planning, Adaeze quietly strained again",
+      "ts": "2025-11-09",
+      "turns": [
+        {
+          "turn": "grp_d2e3f4a5_s04_t000",
+          "speaker": "Adaeze",
+          "speaker_id": "p_c3d4e5f6",
+          "content": "okay so the 1st December deadline is in three weeks. I have Emeka and Aunty Oby already done. Still waiting on Tobenna, Kingsley, Chisom, and Ifeoma. Just a heads up, not a chase. (no stress!)",
+          "ts": "2025-11-09T19:03:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_d2e3f4a5_s04_t001",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "okay SO I literally forgot 😭😭 doing it now from my banking app. hold on",
+          "ts": "2025-11-09T19:07:00",
+          "reply_to": "grp_d2e3f4a5_s04_t000"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s04_t002",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "done! sorry Ada 🙈",
+          "ts": "2025-11-09T19:08:00",
+          "reply_to": "grp_d2e3f4a5_s04_t001"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s04_t003",
+          "speaker": "Tobenna",
+          "speaker_id": "p_d4e5f6a7",
+          "content": "sorting mine tomorrow morning tbf",
+          "ts": "2025-11-09T19:10:00",
+          "reply_to": "grp_d2e3f4a5_s04_t000"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s04_t004",
+          "speaker": "Kingsley",
+          "speaker_id": "p_a7b8c9d0",
+          "content": "hear me out, I will do mine this week, I'm just waiting on a payment to clear. On God it's all fine. Adaeze can I send it in two parts this year? 🙏",
+          "ts": "2025-11-09T19:14:00",
+          "reply_to": "grp_d2e3f4a5_s04_t000"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s04_t005",
+          "speaker": "Adaeze",
+          "speaker_id": "p_c3d4e5f6",
+          "content": "yes Kingsley that's fine, just before the 1st please. Ifeoma?",
+          "ts": "2025-11-09T19:16:00",
+          "reply_to": "grp_d2e3f4a5_s04_t004"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s04_t006",
+          "speaker": "Ifeoma",
+          "speaker_id": "p_b8c9d0e1",
+          "content": "Sorry, I meant to do it last week. Done now. Worth noting that it might be easier next year if there is a standing order set up, that way Adaeze is not chasing anyone.",
+          "ts": "2025-11-09T19:19:00",
+          "reply_to": "grp_d2e3f4a5_s04_t005"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s04_t007",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children, Ifeoma is right. A standing order would save Adaeze having to send reminders every year. God willing, we should set that up in January. Adaeze, how much do we have so far? Is it enough for the usual gifts and the Christmas day food budget?",
+          "ts": "2025-11-09T19:23:00",
+          "reply_to": "grp_d2e3f4a5_s04_t006"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s04_t008",
+          "speaker": "Adaeze",
+          "speaker_id": "p_c3d4e5f6",
+          "content": "okay so current total with what just came in is good for gifts and Mum's food budget. Once Kingsley's second half arrives we should be fine. I'll send the full breakdown to whoever wants it. I've been keeping a spreadsheet. Sixth year running now. 😅",
+          "ts": "2025-11-09T19:29:00",
+          "reply_to": "grp_d2e3f4a5_s04_t007"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s04_t009",
+          "speaker": "Obiageli",
+          "speaker_id": "p_f6a7b8c9",
+          "content": "Greetings my people. Six years. I have been watching Adaeze carry this and I will say it again in this chat, plainly: someone else in this family should be learning this process from her. Not next year. Now.",
+          "ts": "2025-11-09T19:33:00",
+          "reply_to": "grp_d2e3f4a5_s04_t008"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s04_t010",
+          "speaker": "Emeka",
+          "speaker_id": "p_b2c3d4e5",
+          "content": "Adaeze and I have already discussed this privately. She will brief me on the process after Christmas.",
+          "ts": "2025-11-09T19:36:00",
+          "reply_to": "grp_d2e3f4a5_s04_t009"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s04_t011",
+          "speaker": "Obiageli",
+          "speaker_id": "p_f6a7b8c9",
+          "content": "That is good to hear, Emeka. Thank you. I am glad it is settled.",
+          "ts": "2025-11-09T19:39:00",
+          "reply_to": "grp_d2e3f4a5_s04_t010"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s04_t012",
+          "speaker": "Adaeze",
+          "speaker_id": "p_c3d4e5f6",
+          "content": "yes that's the plan 😊 thank you Emeka. okay so switching topics, Emeka, have you sent out dates for Leeds yet? You said before the end of November.",
+          "ts": "2025-11-09T19:41:00",
+          "reply_to": "grp_d2e3f4a5_s04_t010"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s04_t013",
+          "speaker": "Emeka",
+          "speaker_id": "p_b2c3d4e5",
+          "content": "I have three weekends blocked in late April. Send me a group message if those do not work and I will find alternatives. I am handling this.",
+          "ts": "2025-11-09T19:44:00",
+          "reply_to": "grp_d2e3f4a5_s04_t012"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s04_t014",
+          "speaker": "Kingsley",
+          "speaker_id": "p_a7b8c9d0",
+          "content": "late April works for me, hear me out, I've already been googling things to do in Leeds with kids. There are some decent parks and a proper food market on Saturdays. I can do a full itinerary, on God 🗓️",
+          "ts": "2025-11-09T19:47:00",
+          "reply_to": "grp_d2e3f4a5_s04_t013"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s04_t015",
+          "speaker": "Tobenna",
+          "speaker_id": "p_d4e5f6a7",
+          "content": "tbf april works for me too. just let me know which weekend and i'll drive across",
+          "ts": "2025-11-09T19:49:00",
+          "reply_to": "grp_d2e3f4a5_s04_t013"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s04_t016",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "okay SO all three April weekends work for me PROVISIONALLY but I won't know my rota until March so if you can give like a 6-week warning that would be amazing 🙏 also Kingsley an itinerary from you?? I'll believe it when I see it 😂",
+          "ts": "2025-11-09T19:52:00",
+          "reply_to": "grp_d2e3f4a5_s04_t014"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s04_t017",
+          "speaker": "Ifeoma",
+          "speaker_id": "p_b8c9d0e1",
+          "content": "April works. I think what might help here is a shared note where people drop their unavailable dates, then Emeka can pick the one with fewest conflicts. Easier than a group thread.",
+          "ts": "2025-11-09T19:55:00",
+          "reply_to": "grp_d2e3f4a5_s04_t014"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s04_t018",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children, I will come to Leeds also if the dates work for me. God willing. I have not been to see Emeka's house in eight months. This is the problem, we live one country away from each other and behave like it is another continent. Leeds, Bristol, Manchester, Reading. These are not far places.",
+          "ts": "2025-11-09T20:00:00",
+          "reply_to": "grp_d2e3f4a5_s04_t017"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s04_t019",
+          "speaker": "Emeka",
+          "speaker_id": "p_b2c3d4e5",
+          "content": "Mum. You are absolutely coming. I will collect you from Reading. We will make a weekend of it.",
+          "ts": "2025-11-09T20:02:00",
+          "reply_to": "grp_d2e3f4a5_s04_t018"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s04_t020",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "EMEKA collecting Mum from Reading?? okay the quarterly thing is REAL 😭😭 I'm emotional actually",
+          "ts": "2025-11-09T20:04:00",
+          "reply_to": "grp_d2e3f4a5_s04_t019"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s04_t021",
+          "speaker": "Tobenna",
+          "speaker_id": "p_d4e5f6a7",
+          "content": "😂😂 alright alright",
+          "ts": "2025-11-09T20:05:00",
+          "reply_to": "grp_d2e3f4a5_s04_t020"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s04_t022",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children, you see what happens when we decide to show up. Chisom, stop crying. Tobenna, confirm April. Kingsley, please sort the Christmas fund half before Friday. God willing, we will have a good Christmas and a proper Leeds trip. 🙏",
+          "ts": "2025-11-09T20:09:00",
+          "reply_to": "grp_d2e3f4a5_s04_t021"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_d2e3f4a5_s05",
+      "session_index": 5,
+      "topic": "relationship news — Chisom shares something personal, Nkechi's video call stance shifts, Kingsley follows through on venue deposit",
+      "ts": "2025-11-16",
+      "turns": [
+        {
+          "turn": "grp_d2e3f4a5_s05_t000",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "okay SO I have been sitting on something for three weeks and I need to just say it in the family chat because it's getting ridiculous keeping it in 😭",
+          "ts": "2025-11-16T16:22:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_d2e3f4a5_s05_t001",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "I've been seeing someone. his name is Marcus. he's a pharmacist at the hospital. we've been properly dating for about six weeks now and I did not want to say anything until it felt real and it feels real 🙈🙈",
+          "ts": "2025-11-16T16:22:00",
+          "reply_to": "grp_d2e3f4a5_s05_t000"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s05_t002",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children. Chisom. You kept this from your mother for six weeks? Six weeks! And nobody thought to tell me first? 🙏 But I am happy for you. God willing, a pharmacist is a good thing. I want to see him on video call. This Sunday. Can you arrange it?",
+          "ts": "2025-11-16T16:27:00",
+          "reply_to": "grp_d2e3f4a5_s05_t001"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s05_t003",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "Mummy I JUST told you and already you want a video call 😭😭 give me at least a month before you inspect him please",
+          "ts": "2025-11-16T16:29:00",
+          "reply_to": "grp_d2e3f4a5_s05_t002"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s05_t004",
+          "speaker": "Adaeze",
+          "speaker_id": "p_c3d4e5f6",
+          "content": "CHISOM!! 😭😭 six weeks!! I had no idea! okay so I need details immediately, what does he look like, how did it start, is he Igbo? (no stress on the Igbo thing just asking 😂)",
+          "ts": "2025-11-16T16:31:00",
+          "reply_to": "grp_d2e3f4a5_s05_t001"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s05_t005",
+          "speaker": "Tobenna",
+          "speaker_id": "p_d4e5f6a7",
+          "content": "👀👀",
+          "ts": "2025-11-16T16:32:00",
+          "reply_to": "grp_d2e3f4a5_s05_t001"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s05_t006",
+          "speaker": "Tobenna",
+          "speaker_id": "p_d4e5f6a7",
+          "content": "tbf you did mention a pharmacist friend a few weeks back. thought nothing of it",
+          "ts": "2025-11-16T16:33:00",
+          "reply_to": "grp_d2e3f4a5_s05_t001"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s05_t007",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "Tobenna I can't with you 💀 Ada he is mixed, Jamaican and Yoruba if you must know. very tall. started because we kept crossing paths in the corridors and then he asked if I wanted to grab food after a shift and I said yes obviously",
+          "ts": "2025-11-16T16:34:00",
+          "reply_to": "grp_d2e3f4a5_s05_t004"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s05_t008",
+          "speaker": "Kingsley",
+          "speaker_id": "p_a7b8c9d0",
+          "content": "LETS GOOO Chi!! hear me out, a pharmacist-doctor couple is elite, the medical conversations alone 😂 on God I'm happy for you. Yoruba though, interesting. Aunty Nkechi is already composing a welcome speech 🎉",
+          "ts": "2025-11-16T16:36:00",
+          "reply_to": "grp_d2e3f4a5_s05_t007"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s05_t009",
+          "speaker": "Obiageli",
+          "speaker_id": "p_f6a7b8c9",
+          "content": "Greetings my people. Chisom, this is good news and I receive it with a glad heart. Yoruba is not Igbo but he is Nigerian and that counts for something. In our family, we have always welcomed those who carry themselves with purpose. A pharmacist working with doctors is a serious person. When will we meet him properly?",
+          "ts": "2025-11-16T16:41:00",
+          "reply_to": "grp_d2e3f4a5_s05_t007"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s05_t010",
+          "speaker": "Ifeoma",
+          "speaker_id": "p_b8c9d0e1",
+          "content": "Chisom, really lovely to hear this. Worth noting that six weeks in is exactly the right time to tell the family, early enough that it feels like news, late enough that you know it's real. x",
+          "ts": "2025-11-16T16:45:00",
+          "reply_to": "grp_d2e3f4a5_s05_t001"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s05_t011",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children, Ifeoma says it well. Chisom, I will not push for this week. But I am saying now, I want to see his face before Christmas. A video call is fine - I have come to see that these calls can be just as good as being in the room, by His grace. So I am ready when you are. 🙏",
+          "ts": "2025-11-16T16:49:00",
+          "reply_to": "grp_d2e3f4a5_s05_t003"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s05_t012",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "wait Mum did you just say video call is fine?? who are you 😭 okay yes. maybe two weeks. let me ease him in gently",
+          "ts": "2025-11-16T16:51:00",
+          "reply_to": "grp_d2e3f4a5_s05_t011"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s05_t013",
+          "speaker": "Emeka",
+          "speaker_id": "p_b2c3d4e5",
+          "content": "Congratulations. Is he serious about you.",
+          "ts": "2025-11-16T16:54:00",
+          "reply_to": "grp_d2e3f4a5_s05_t001"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s05_t014",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "Emeka I literally cannot 😭 yes he is serious, it is six weeks not six months, calm down",
+          "ts": "2025-11-16T16:55:00",
+          "reply_to": "grp_d2e3f4a5_s05_t013"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s05_t015",
+          "speaker": "Adaeze",
+          "speaker_id": "p_c3d4e5f6",
+          "content": "okay so Emeka you could have led with 'I'm happy for you' 😂 Chi ignore him. we are all rooting for you. also on a completely separate note - Kingsley. the venue deposit.",
+          "ts": "2025-11-16T16:57:00",
+          "reply_to": "grp_d2e3f4a5_s05_t013"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s05_t016",
+          "speaker": "Kingsley",
+          "speaker_id": "p_a7b8c9d0",
+          "content": "hear me out - I actually did it. booked Wednesday. confirmation is in my email, I'll forward it to you now. on God Adaeze I surprised even myself 😂📋",
+          "ts": "2025-11-16T16:59:00",
+          "reply_to": "grp_d2e3f4a5_s05_t015"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s05_t017",
+          "speaker": "Adaeze",
+          "speaker_id": "p_c3d4e5f6",
+          "content": "okay so I actually just received it. I'm reading it. this is real. Kingsley you booked the venue. I am genuinely shocked 😂😂 okay well done, seriously.",
+          "ts": "2025-11-16T17:01:00",
+          "reply_to": "grp_d2e3f4a5_s05_t016"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s05_t018",
+          "speaker": "Tobenna",
+          "speaker_id": "p_d4e5f6a7",
+          "content": "👏👏 tbf didn't see that coming",
+          "ts": "2025-11-16T17:02:00",
+          "reply_to": "grp_d2e3f4a5_s05_t016"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s05_t019",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children. Kingsley has booked the venue. Chisom has found a serious young man. Today is a good Sunday. God willing, this family is turning a corner. Kingsley, I take back nothing I have said to you over the years but I acknowledge this. Well done. 🙏",
+          "ts": "2025-11-16T17:06:00",
+          "reply_to": "grp_d2e3f4a5_s05_t017"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s05_t020",
+          "speaker": "Ifeoma",
+          "speaker_id": "p_b8c9d0e1",
+          "content": "I think what might help here is someone sends Kingsley a proper well done without a caveat attached 😄 I'll do it. Kingsley, well done. Genuinely.",
+          "ts": "2025-11-16T17:09:00",
+          "reply_to": "grp_d2e3f4a5_s05_t019"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s05_t021",
+          "speaker": "Kingsley",
+          "speaker_id": "p_a7b8c9d0",
+          "content": "Ifeoma thank you!! details, details on the caveat, what matters is we have a venue. summer party is happening people 🎉🎉",
+          "ts": "2025-11-16T17:10:00",
+          "reply_to": "grp_d2e3f4a5_s05_t020"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_d2e3f4a5_s06",
+      "session_index": 6,
+      "topic": "home and property — Kingsley pitches a family property idea, Adaeze openly asks for help with Christmas fund, Aunty Oby encourages Ifeoma to share the archive",
+      "ts": "2025-11-23",
+      "turns": [
+        {
+          "turn": "grp_d2e3f4a5_s06_t000",
+          "speaker": "Kingsley",
+          "speaker_id": "p_a7b8c9d0",
+          "content": "hear me out. I've been looking at a 3-bed in Peterborough that could work as a family base. rental yield is decent, but the actual pitch is, family uses it for gatherings, short lets when nobody's there. on God this could pay for itself inside four years. who wants the numbers?",
+          "ts": "2025-11-23T18:07:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_d2e3f4a5_s06_t001",
+          "speaker": "Adaeze",
+          "speaker_id": "p_c3d4e5f6",
+          "content": "okay so Kingsley I appreciate the energy but Peterborough? who is driving to Peterborough for a family gathering. send me the numbers anyway. (no stress!) just want to see what you're actually looking at 😊",
+          "ts": "2025-11-23T18:12:00",
+          "reply_to": "grp_d2e3f4a5_s06_t000"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s06_t002",
+          "speaker": "Emeka",
+          "speaker_id": "p_b2c3d4e5",
+          "content": "What is the asking price and what is the current rental yield on comparable properties in that area.",
+          "ts": "2025-11-23T18:14:00",
+          "reply_to": "grp_d2e3f4a5_s06_t000"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s06_t003",
+          "speaker": "Kingsley",
+          "speaker_id": "p_a7b8c9d0",
+          "content": "details, details, it's listed at 230k, estimated yield around 5.8% if fully let. But that's the short-let side, I'd handle that. The family bit is separate. Think of it less as investment more as a home base. Emeka I'll send you the full Rightmove link 📊",
+          "ts": "2025-11-23T18:17:00",
+          "reply_to": "grp_d2e3f4a5_s06_t001"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s06_t004",
+          "speaker": "Obiageli",
+          "speaker_id": "p_f6a7b8c9",
+          "content": "Greetings my people. Kingsley, the idea of a family home is something your grandfather would have approved of. As your grandfather used to say, a family that has nowhere to anchor itself will drift apart. But I agree with Adaeze, the location must make sense for everyone. Peterborough is not convenient from Bristol or Birmingham.",
+          "ts": "2025-11-23T18:22:00",
+          "reply_to": "grp_d2e3f4a5_s06_t003"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s06_t005",
+          "speaker": "Ifeoma",
+          "speaker_id": "p_b8c9d0e1",
+          "content": "Worth noting the logistics: Bristol to Peterborough is about two and a half hours. It's not impossible. What I'd want to know is whether the building has space for everyone at once, that's the whole point, isn't it.",
+          "ts": "2025-11-23T18:25:00",
+          "reply_to": "grp_d2e3f4a5_s06_t004"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s06_t006",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children, I like the idea in principle. God willing, a family that has its own property stands on its own feet. But we need to know who is contributing and how. Kingsley, are you expecting people to invest money or is this your project that we benefit from? These are not the same thing.",
+          "ts": "2025-11-23T18:29:00",
+          "reply_to": "grp_d2e3f4a5_s06_t004"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s06_t007",
+          "speaker": "Kingsley",
+          "speaker_id": "p_a7b8c9d0",
+          "content": "Aunty I'm the one buying it. no one needs to put money in. the return covers the mortgage over time. all I need from the family is a commitment to actually use it for gatherings, so I'm not short-letting it every weekend. on God this is more gift than investment from you lot 😂",
+          "ts": "2025-11-23T18:32:00",
+          "reply_to": "grp_d2e3f4a5_s06_t006"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s06_t008",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "okay SO if it costs me nothing and there is a place we can all go for long weekends I am IN 🙌 Kingsley you are actually coming through lately, first the summer venue now this. who are you??",
+          "ts": "2025-11-23T18:35:00",
+          "reply_to": "grp_d2e3f4a5_s06_t007"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s06_t009",
+          "speaker": "Tobenna",
+          "speaker_id": "p_d4e5f6a7",
+          "content": "tbf if it's genuinely free for family use I don't see the issue. 3 beds works for a small group",
+          "ts": "2025-11-23T18:37:00",
+          "reply_to": "grp_d2e3f4a5_s06_t007"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s06_t010",
+          "speaker": "Emeka",
+          "speaker_id": "p_b2c3d4e5",
+          "content": "Send me the Rightmove link and the lease terms. I will look at it properly before the end of next week. If the numbers are clean I have no objection. E",
+          "ts": "2025-11-23T18:40:00",
+          "reply_to": "grp_d2e3f4a5_s06_t007"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s06_t011",
+          "speaker": "Adaeze",
+          "speaker_id": "p_c3d4e5f6",
+          "content": "okay so before we move on I need to say something about the Christmas fund. I love doing this but I genuinely need someone to share this with me this year - I nearly dropped it in November. six years is a long time to be doing the chasing and the reconciling alone. I'm asking properly now, not hinting. who will co-manage it with me from this December?",
+          "ts": "2025-11-23T18:44:00",
+          "reply_to": "grp_d2e3f4a5_s06_t010"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s06_t012",
+          "speaker": "Obiageli",
+          "speaker_id": "p_f6a7b8c9",
+          "content": "Greetings. Adaeze. Thank you for saying this clearly. I have been waiting two years for you to stop saying it is fine. In our family, we have always believed that no one person should carry what belongs to everyone. Emeka has already offered. I suggest you formalise it this week. Do not leave it for January.",
+          "ts": "2025-11-23T18:48:00",
+          "reply_to": "grp_d2e3f4a5_s06_t011"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s06_t013",
+          "speaker": "Emeka",
+          "speaker_id": "p_b2c3d4e5",
+          "content": "I am already doing it. Adaeze is briefing me on the spreadsheet this week. E",
+          "ts": "2025-11-23T18:51:00",
+          "reply_to": "grp_d2e3f4a5_s06_t012"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s06_t014",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children. This is good. Adaeze, I should have pressed harder sooner. I knew it was wearing on you. God willing, next year this will run differently. Thank you for speaking up. 🙏",
+          "ts": "2025-11-23T18:54:00",
+          "reply_to": "grp_d2e3f4a5_s06_t011"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s06_t015",
+          "speaker": "Ifeoma",
+          "speaker_id": "p_b8c9d0e1",
+          "content": "Ada, well done for saying it. x",
+          "ts": "2025-11-23T18:57:00",
+          "reply_to": "grp_d2e3f4a5_s06_t011"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s06_t016",
+          "speaker": "Obiageli",
+          "speaker_id": "p_f6a7b8c9",
+          "content": "Greetings. There is one more thing I wish to raise. Ifeoma, show them what you showed me - these children do not know where they come from. She has been doing research on our family history and she has photographs of documents that most of you have never seen. Ifeoma, post them here.",
+          "ts": "2025-11-23T19:02:00",
+          "reply_to": "grp_d2e3f4a5_s06_t015"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s06_t017",
+          "speaker": "Ifeoma",
+          "speaker_id": "p_b8c9d0e1",
+          "content": "Aunty Oby, all right. I have been cautious about sharing these - I never wanted it to feel like a lecture. But here are three. The first is a photograph of the family compound in Enugu, probably late 1960s. The second is a land document with your grandfather's signature, Aunty Nkechi. The third is a letter from your father to his brother - that is Kingsley's father - about the move to the UK.",
+          "ts": "2025-11-23T19:07:00",
+          "reply_to": "grp_d2e3f4a5_s06_t016"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s06_t018",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children. The compound. I have not seen a photograph of that compound in thirty years. My God. And Papa's signature there on that document, that handwriting. By His grace, Ifeoma, where did you find these? 🙏🙏",
+          "ts": "2025-11-23T19:11:00",
+          "reply_to": "grp_d2e3f4a5_s06_t017"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s06_t019",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "okay SO I am actually emotional right now 😭😭 the letter between the two brothers. I can't. Ifeoma you have been sitting on THIS? how long have you had these??",
+          "ts": "2025-11-23T19:13:00",
+          "reply_to": "grp_d2e3f4a5_s06_t017"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s06_t020",
+          "speaker": "Kingsley",
+          "speaker_id": "p_a7b8c9d0",
+          "content": "that letter is my dad's. I've never seen it. on God Ifeoma this is something else. send me the full size image please",
+          "ts": "2025-11-23T19:15:00",
+          "reply_to": "grp_d2e3f4a5_s06_t017"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s06_t021",
+          "speaker": "Ifeoma",
+          "speaker_id": "p_b8c9d0e1",
+          "content": "Kingsley, of course. I have been photographing documents for about two years; Aunty Oby has been my main source. I have quite a bit more. I will share in stages so it does not overwhelm. Worth noting that the land document has implications for the family plot; I would like to talk through it with someone who understands property law.",
+          "ts": "2025-11-23T19:18:00",
+          "reply_to": "grp_d2e3f4a5_s06_t020"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s06_t022",
+          "speaker": "Kingsley",
+          "speaker_id": "p_a7b8c9d0",
+          "content": "hear me out, that is literally what I do. Ifeoma send me everything you have on the plot. this could actually connect to the family property idea as well. on God this is getting interesting 🤔📋",
+          "ts": "2025-11-23T19:20:00",
+          "reply_to": "grp_d2e3f4a5_s06_t021"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_d2e3f4a5_s07",
+      "session_index": 7,
+      "topic": "career — Chisom returns from psychiatry rotation with a surprising change of heart about surgery",
+      "ts": "2025-11-30",
+      "turns": [
+        {
+          "turn": "grp_d2e3f4a5_s07_t000",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "okay SO I just finished my psychiatry rotation and I need to debrief with someone and you are all it 😭",
+          "ts": "2025-11-30T15:14:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_d2e3f4a5_s07_t001",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "I went in thinking it was the rotation I had to get through before surgery and I am coming out of it genuinely confused about everything. like it was the first time on a placement where I felt like I was actually helping someone not just patching them and sending them home",
+          "ts": "2025-11-30T15:15:00",
+          "reply_to": "grp_d2e3f4a5_s07_t000"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s07_t002",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children. Chisom what are you saying exactly. You have been talking about surgery since you got into medical school. Every conversation. Surgery surgery surgery. And I want to understand what you are telling us now. 🙏",
+          "ts": "2025-11-30T15:19:00",
+          "reply_to": "grp_d2e3f4a5_s07_t001"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s07_t003",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "I am not saying I'm dropping surgery Mum!! I'm saying I didn't expect to feel like this. the patients I saw, the conversations. I can't explain it properly. it was just different",
+          "ts": "2025-11-30T15:21:00",
+          "reply_to": "grp_d2e3f4a5_s07_t002"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s07_t004",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "like there was a patient this week, I can't give details obviously, but I stayed an extra hour after my shift because I didn't want to just hand over mid-conversation. I have never done that in A&E. not once",
+          "ts": "2025-11-30T15:22:00",
+          "reply_to": "grp_d2e3f4a5_s07_t003"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s07_t005",
+          "speaker": "Tobenna",
+          "speaker_id": "p_d4e5f6a7",
+          "content": "tbf that sounds like it meant something. you don't stay late for nothing",
+          "ts": "2025-11-30T15:24:00",
+          "reply_to": "grp_d2e3f4a5_s07_t004"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s07_t006",
+          "speaker": "Adaeze",
+          "speaker_id": "p_c3d4e5f6",
+          "content": "okay so Chi I actually think you should sit with this feeling before making any decisions. (no stress!) just, it's only been one rotation. what does your consultant say?",
+          "ts": "2025-11-30T15:26:00",
+          "reply_to": "grp_d2e3f4a5_s07_t004"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s07_t007",
+          "speaker": "Emeka",
+          "speaker_id": "p_b2c3d4e5",
+          "content": "How many months left of foundation year.",
+          "ts": "2025-11-30T15:29:00",
+          "reply_to": "grp_d2e3f4a5_s07_t001"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s07_t008",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "Emeka six months give or take. and Ada my consultant actually said to me on Friday, completely unprompted, that I have a natural ability to hold space with patients. she has never said anything like that to me before. I nearly cried in the corridor 😭",
+          "ts": "2025-11-30T15:31:00",
+          "reply_to": "grp_d2e3f4a5_s07_t007"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s07_t009",
+          "speaker": "Emeka",
+          "speaker_id": "p_b2c3d4e5",
+          "content": "Then you have time. Do not make any ST3 decisions before you have done at least one more relevant rotation. That is all I will say. E",
+          "ts": "2025-11-30T15:33:00",
+          "reply_to": "grp_d2e3f4a5_s07_t008"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s07_t010",
+          "speaker": "Ifeoma",
+          "speaker_id": "p_b8c9d0e1",
+          "content": "I think what might help here is not trying to resolve it this afternoon. You stayed late for a patient. A consultant noticed something in you. Those are real things. x",
+          "ts": "2025-11-30T15:36:00",
+          "reply_to": "grp_d2e3f4a5_s07_t008"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s07_t011",
+          "speaker": "Obiageli",
+          "speaker_id": "p_f6a7b8c9",
+          "content": "Greetings my people. Chisom, in our family we have always believed that a calling reveals itself to a willing heart. Your grandfather trained as an engineer but his real gift was mediation. He spent twenty years settling land disputes after he retired. A vocation does not always look like you expected it to. You must pray on this and listen.",
+          "ts": "2025-11-30T15:41:00",
+          "reply_to": "grp_d2e3f4a5_s07_t008"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s07_t012",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children, what Oby says is true. Chisom, I ran a school for twenty-two years and I spent at least five of them thinking I should have been a nurse instead. But I stayed, and I found I was exactly where I was supposed to be. God willing, you will find the same clarity. Do not rush it. 🙏",
+          "ts": "2025-11-30T15:47:00",
+          "reply_to": "grp_d2e3f4a5_s07_t011"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s07_t013",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "wait Mum you wanted to be a nurse?? I did not know that 😭 okay actually that helps somehow. I thought I was the only one who second-guessed the whole plan",
+          "ts": "2025-11-30T15:50:00",
+          "reply_to": "grp_d2e3f4a5_s07_t012"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s07_t014",
+          "speaker": "Kingsley",
+          "speaker_id": "p_a7b8c9d0",
+          "content": "hear me out Chi, surgery is a flex but psychiatry? that's the future. mental health is having its moment, the funding is moving there, and the need is massive. on God I actually think your consultant clocked something real. trust the rotation",
+          "ts": "2025-11-30T15:53:00",
+          "reply_to": "grp_d2e3f4a5_s07_t008"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s07_t015",
+          "speaker": "Tobenna",
+          "speaker_id": "p_d4e5f6a7",
+          "content": "👆 kingsley actually making sense for once",
+          "ts": "2025-11-30T15:55:00",
+          "reply_to": "grp_d2e3f4a5_s07_t014"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s07_t016",
+          "speaker": "Kingsley",
+          "speaker_id": "p_a7b8c9d0",
+          "content": "Tobenna!! that actually hurts 😂 I always make sense. you just don't listen",
+          "ts": "2025-11-30T15:56:00",
+          "reply_to": "grp_d2e3f4a5_s07_t015"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s07_t017",
+          "speaker": "Adaeze",
+          "speaker_id": "p_c3d4e5f6",
+          "content": "okay so I want to say this to Chi: you have told this whole family 'I'm going to be a surgeon' since you were about seventeen. and I always believed you. but this sounds like something different. not doubt. more like you found a room in a house you didn't know was there",
+          "ts": "2025-11-30T15:59:00",
+          "reply_to": "grp_d2e3f4a5_s07_t013"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s07_t018",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "Ada I can't with that sentence 😭😭 a room in a house you didn't know was there. okay that is exactly it. I might change my plan. I'm not saying I am, I'm saying I might. and this is the first time I've admitted that out loud",
+          "ts": "2025-11-30T16:02:00",
+          "reply_to": "grp_d2e3f4a5_s07_t017"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s07_t019",
+          "speaker": "Ifeoma",
+          "speaker_id": "p_b8c9d0e1",
+          "content": "Worth noting, you told us. That matters. x",
+          "ts": "2025-11-30T16:06:00",
+          "reply_to": "grp_d2e3f4a5_s07_t018"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s07_t020",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children. Chisom, whatever you decide, I am here. God willing, you will know when you know. We are not going anywhere. 🙏",
+          "ts": "2025-11-30T16:10:00",
+          "reply_to": "grp_d2e3f4a5_s07_t018"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_d2e3f4a5_s08",
+      "session_index": 8,
+      "topic": "Christmas preparations — who is coming, where, what Nkechi is cooking, small friction over guest list",
+      "ts": "2025-12-07",
+      "turns": [
+        {
+          "turn": "grp_d2e3f4a5_s08_t000",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children, good evening. Christmas is eighteen days away and I need a headcount. Who is coming to Reading this year and who is not? I want answers by Wednesday so I know how much ofe onugbu and jollof to prepare. 🙏",
+          "ts": "2025-12-07T17:33:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_d2e3f4a5_s08_t001",
+          "speaker": "Emeka",
+          "speaker_id": "p_b2c3d4e5",
+          "content": "Leeds to Reading on the 25th is three hours if we leave by 9. We will be there. Funmi and both kids. E",
+          "ts": "2025-12-07T17:36:00",
+          "reply_to": "grp_d2e3f4a5_s08_t000"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s08_t002",
+          "speaker": "Adaeze",
+          "speaker_id": "p_c3d4e5f6",
+          "content": "okay so I am in, travelling down Christmas Eve and staying through the 27th. Mum I'm bringing chin chin and puff puff as usual, the children will be very upset if I don't 😊",
+          "ts": "2025-12-07T17:38:00",
+          "reply_to": "grp_d2e3f4a5_s08_t000"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s08_t003",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "I am COMING 🙌🙌 I have the 24th off and my next shift is the 28th so I have four whole days. Mum I could actually eat an entire pot of jollof right now, hospital canteen rice is a hate crime",
+          "ts": "2025-12-07T17:41:00",
+          "reply_to": "grp_d2e3f4a5_s08_t000"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s08_t004",
+          "speaker": "Tobenna",
+          "speaker_id": "p_d4e5f6a7",
+          "content": "tbf I'm in. train on the 25th unless there are engineering works again 🙄 bringing drinks as usual",
+          "ts": "2025-12-07T17:43:00",
+          "reply_to": "grp_d2e3f4a5_s08_t000"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s08_t005",
+          "speaker": "Kingsley",
+          "speaker_id": "p_a7b8c9d0",
+          "content": "hear me out. I am coming and I am bringing the suya. on God nobody is eating dry chicken on Christmas Day while I'm in the building. Aunty Nkechi I know you have the jollof covered but let me handle the meat. I'll bring my own grill if I have to 🔥",
+          "ts": "2025-12-07T17:46:00",
+          "reply_to": "grp_d2e3f4a5_s08_t000"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s08_t006",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children. Kingsley the kitchen in this house is not a barbecue pit. But I will allow the suya if you keep the smoke outside. Adaeze, chin chin is expected, do not arrive without it. God willing, I have a full house this year. Oby, are you joining us from Enugu via video? 🙏",
+          "ts": "2025-12-07T17:49:00",
+          "reply_to": "grp_d2e3f4a5_s08_t005"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s08_t007",
+          "speaker": "Obiageli",
+          "speaker_id": "p_f6a7b8c9",
+          "content": "Greetings my people. I will not be able to travel this December. My knees have been difficult since October and the consultant has advised against long flights before January. I will join on video call on Christmas Day if someone sets it up properly. Nkechi, this is my request.",
+          "ts": "2025-12-07T18:01:00",
+          "reply_to": "grp_d2e3f4a5_s08_t006"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s08_t008",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My sister. Your knees. I am sorry to hear this. We will set up the video call first thing on the 25th before the food is served so you are there from the beginning, by His grace. Ifeoma, you are also coming I hope? 🙏",
+          "ts": "2025-12-07T18:04:00",
+          "reply_to": "grp_d2e3f4a5_s08_t007"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s08_t009",
+          "speaker": "Ifeoma",
+          "speaker_id": "p_b8c9d0e1",
+          "content": "Yes, Bristol to Reading is fine. I will drive Christmas morning. Worth noting that I am pescatarian so if someone is doing a fish dish I will not need anything special, but I am more than happy with everything else on the table.",
+          "ts": "2025-12-07T18:07:00",
+          "reply_to": "grp_d2e3f4a5_s08_t008"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s08_t010",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "Ifeoma I totally forgot!! okay SO Mum can you do a small pot of egusi with stockfish? that would sort Ifeoma and honestly I would also eat that 😭",
+          "ts": "2025-12-07T18:09:00",
+          "reply_to": "grp_d2e3f4a5_s08_t009"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s08_t011",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children. I will make egusi with stockfish. Ifeoma, I have remembered every year but it is good that you mentioned it. The menu is settled then: ofe onugbu, jollof, egusi with stockfish. Kingsley handles his suya outside. Adaeze brings chin chin and puff puff. 🙏",
+          "ts": "2025-12-07T18:11:00",
+          "reply_to": "grp_d2e3f4a5_s08_t010"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s08_t012",
+          "speaker": "Adaeze",
+          "speaker_id": "p_c3d4e5f6",
+          "content": "okay so very quick question. Chisom, is Marcus coming? (no stress if not, I just want to know so Mum can adjust the headcount 😊)",
+          "ts": "2025-12-07T18:14:00",
+          "reply_to": "grp_d2e3f4a5_s08_t011"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s08_t013",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "Ada I actually can't 😭 it has been two months. he is not meeting the full Okonkwo family deployment on Christmas Day. we'll do something separate in January",
+          "ts": "2025-12-07T18:15:00",
+          "reply_to": "grp_d2e3f4a5_s08_t012"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s08_t014",
+          "speaker": "Kingsley",
+          "speaker_id": "p_a7b8c9d0",
+          "content": "Chi fair play, January is smarter. details, details on the timing but Christmas is family only, I respect that. Aunty Nkechi will have him vetted properly by spring 😂",
+          "ts": "2025-12-07T18:17:00",
+          "reply_to": "grp_d2e3f4a5_s08_t013"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s08_t015",
+          "speaker": "Obiageli",
+          "speaker_id": "p_f6a7b8c9",
+          "content": "Greetings. Christmas Day should be family only. Chisom is wise to wait. In our family, we have always believed that a man who meets the family in haste leaves in haste also. January is correct.",
+          "ts": "2025-12-07T18:22:00",
+          "reply_to": "grp_d2e3f4a5_s08_t014"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s08_t016",
+          "speaker": "Tobenna",
+          "speaker_id": "p_d4e5f6a7",
+          "content": "👍",
+          "ts": "2025-12-07T18:24:00",
+          "reply_to": "grp_d2e3f4a5_s08_t015"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s08_t017",
+          "speaker": "Ifeoma",
+          "speaker_id": "p_b8c9d0e1",
+          "content": "I think what might help is someone sets a group schedule for Christmas Day so we are not winging it. Last year the video call with Aunty Oby started two hours late because nobody had tested the link.",
+          "ts": "2025-12-07T18:27:00",
+          "reply_to": "grp_d2e3f4a5_s08_t015"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s08_t018",
+          "speaker": "Adaeze",
+          "speaker_id": "p_c3d4e5f6",
+          "content": "okay so on it. I'll put together a running order: 1. Video call with Aunty Oby at 11am before food 2. Food from 2pm 3. Emeka's lot arriving by 12 based on his message. (no stress, I'll circulate it by Friday!) 😊",
+          "ts": "2025-12-07T18:29:00",
+          "reply_to": "grp_d2e3f4a5_s08_t017"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s08_t019",
+          "speaker": "Nkechi",
+          "speaker_id": "p_a1b2c3d4",
+          "content": "My children. Adaeze thank you. Oby, we will have you on screen from 11am, God willing. You will see everyone and we will see you. This family is growing up. By His grace we will all be in the same room again soon. 🙏",
+          "ts": "2025-12-07T18:33:00",
+          "reply_to": "grp_d2e3f4a5_s08_t018"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s08_t020",
+          "speaker": "Obiageli",
+          "speaker_id": "p_f6a7b8c9",
+          "content": "Greetings. Nkechi, I will be there at 11am. I will dress properly as if I were seated at the table with you. That is how we shall do it.",
+          "ts": "2025-12-07T18:36:00",
+          "reply_to": "grp_d2e3f4a5_s08_t019"
+        },
+        {
+          "turn": "grp_d2e3f4a5_s08_t021",
+          "speaker": "Chisom",
+          "speaker_id": "p_e5f6a7b8",
+          "content": "okay SO Aunty Oby dressing up for a video call is genuinely the sweetest thing I've heard all week 😭😭 right I need to book my train before engineering works eat my entire plan. see everyone in 18 days!!! 🎄🎄",
+          "ts": "2025-12-07T18:38:00",
+          "reply_to": "grp_d2e3f4a5_s08_t020"
+        }
+      ]
+    }
+  ],
+  "qa_pairs": [
+    {
+      "id": "Q1_a1f9b2e3",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "When family members try to reach Nkechi using audio messages, what does her pattern of responses across the conversation reveal about how she prefers to receive updates?",
+      "answer": "Nkechi consistently declines to engage with voice messages and redirects communication to text. In Session 1, after Chisom mentions sending a voice note, Nkechi explicitly says she did not receive it — and even if she had, her instruction is 'text me, not a voice note.' This preference is reinforced in Session 2 and beyond, where Nkechi's own messages are always written text, and she never acknowledges or returns voice notes. The pattern suggests she actively resists audio-format communication and expects text even when the other party uses voice.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_d2e3f4a5_s01_t003",
+          "speaker_display_name": "Nkechi",
+          "message_excerpt": "text me, not a voice note",
+          "relevance": "Direct instruction revealing Nkechi's preference to avoid voice messages and receive updates via text only"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_4a9c7e2f",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "Based on Aunty Oby's behaviour, what does her stance toward non-blood family members attending the Christmas gathering appear to be, and what is notable about how she expressed it?",
+      "answer": "Aunty Oby accepts that Emeka's wife Funmi is welcome at Christmas, saying 'she is practically one of us now' — but she does so as a deliberate, one-time concession rather than as a general open-door principle. Her phrasing 'I will say this once so there is no confusion later' signals that she regards this as a special ruling, not a changed default. In the same session she immediately draws a firm line: any pre-Christmas event can be more open, but Christmas Day itself must remain family. The implicit preference is that Funmi has earned inclusion, while outsiders as a class have not.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_d2e3f4a5_s02_t004",
+          "speaker_display_name": "Obiageli",
+          "message_excerpt": "Funmi is welcome, of course. I have been giving this some thought since last Christmas. She carries herself with respect and she is practically one of us now.",
+          "relevance": "Obiageli concedes a specific exception while framing it as a deliberate ruling — revealing her underlying restrictive default"
+        },
+        {
+          "session_index": 2,
+          "turn_id": "grp_d2e3f4a5_s02_t007",
+          "speaker_display_name": "Obiageli",
+          "message_excerpt": "The Christmas Day gathering itself is family. I trust you understand the distinction I am making.",
+          "relevance": "Immediately after the concession, she draws the limit — showing the concession is individual, not a general shift"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_4b7d9e3f",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Adaeze's communication style around the Christmas fund in Sessions 2 and 4 reveal about how she actually feels about being its sole manager, and how does she signal this without saying it directly?",
+      "answer": "Adaeze signals quiet exhaustion through deflection and small textual cues rather than direct complaint. In Session 2, when Aunty Oby raises the fund burden, Adaeze brushes it off with 'It's fine for now. Let's just get through this year and we can revisit the setup after.' In Session 4, after completing the fund reconciliation, she adds 'Sixth year running now. 😅' — the exhausted-face emoji after a plain statement of years of labour is the clearest unspoken signal that the effort is wearing on her. She does not complain but the deflection pattern, the tired emoji, and her instinct to close down the conversation all suggest a person who has been absorbing more than she wants to admit.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_d2e3f4a5_s02_t019",
+          "speaker_display_name": "Adaeze",
+          "message_excerpt": "It's fine for now. Let's just get through this year and we can revisit the setup after.",
+          "relevance": "Deflects legitimate concern about fund burden — her go-to minimising response that recurs across sessions"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_d2e3f4a5_s04_t008",
+          "speaker_display_name": "Adaeze",
+          "message_excerpt": "Sixth year running now. 😅",
+          "relevance": "The tired emoji after a flat statement of duration — a small but clear signal of accumulated weariness without explicit complaint"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_b1c2d3e4",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Nkechi's approach to planning Christmas food across Sessions 2 and 8 reveal about how she views her role as host, and how does she communicate what is and is not up for discussion?",
+      "answer": "Nkechi treats her Christmas cooking as a fixed given rather than a subject for negotiation. In Session 2, she announces she will cook 'ofe onugbu and jollof rice as usual' without soliciting preferences, and frames this as continuing a tradition set by her late husband. In Session 8, she opens with a headcount request that presupposes the menu — 'I need to know how much ofe onugbu and jollof to prepare' — again without asking what anyone wants. When the menu is eventually settled (S8 t011), she declares it herself: 'The menu is settled then.' The implicit stance is that her cooking at Christmas is a service she provides on her own terms, and anyone suggesting alternatives (such as Chisom's egusi request) is received as a supplement rather than a challenge.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_d2e3f4a5_s02_t001",
+          "speaker_display_name": "Nkechi",
+          "message_excerpt": "I will cook. We have always done Christmas at mine - your father set that tradition and I see no reason to change it.",
+          "relevance": "Establishes cooking as tradition-bound and not open for renegotiation"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_d2e3f4a5_s08_t000",
+          "speaker_display_name": "Nkechi",
+          "message_excerpt": "I know how much ofe onugbu and jollof to prepare",
+          "relevance": "Announces the menu without consulting preferences — treats these dishes as the default Christmas food"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_c2d3e4f5",
+      "category": "Q1",
+      "difficulty": "easy",
+      "question": "What role does Kingsley consistently claim for himself at family gatherings involving food, and what does his behaviour reveal about whether this is a considered offer or a default instinct?",
+      "answer": "Kingsley takes charge of the meat at any family gathering without being asked. In Session 8 he announces he is bringing suya and will 'handle the meat,' framing it as preventing a culinary failure ('nobody is eating dry chicken on Christmas Day while I'm in the building') rather than as a response to anyone's request. He even offers to bring his own grill. This is a unilateral move, not an offer — he informs rather than asks. The phrasing suggests this is a standing self-appointed role he exercises at every gathering.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 8,
+          "turn_id": "grp_d2e3f4a5_s08_t005",
+          "speaker_display_name": "Kingsley",
+          "message_excerpt": "I am bringing the suya. on God nobody is eating dry chicken on Christmas Day while I'm in the building. Aunty Nkechi I know you have",
+          "relevance": "Unilateral announcement rather than an offer — reveals Kingsley's default instinct to take over grill duties"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_d3e4f5a6",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Ifeoma's approach to communicating her dietary needs reveal about how she typically handles situations where her preferences differ from the group default?",
+      "answer": "Ifeoma mentions her pescatarianism as a matter-of-fact note rather than a request or a demand. She states it once ('I am pescatarian so if someone is doing a fish dish I will not need anything special'), immediately softens any potential inconvenience ('but I am more than happy with everything else on the table'), and does not return to the topic. Nkechi's response confirms this is a known pattern ('I have remembered every year but it is good that you mentioned it'). The behaviour — stating a difference clearly, offering a solution, and stepping back — is characteristic of someone who wants to be accommodated without becoming a burden or drawing attention to the difference.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 8,
+          "turn_id": "grp_d2e3f4a5_s08_t009",
+          "speaker_display_name": "Ifeoma",
+          "message_excerpt": "I am pescatarian so if someone is doing a fish dish I will not need anything special, but I am more than happy with everything else on the table.",
+          "relevance": "Classic one-mention pattern — states dietary constraint, immediately minimises it, does not raise it again"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_d2e3f4a5_s08_t011",
+          "speaker_display_name": "Nkechi",
+          "message_excerpt": "Ifeoma, I have remembered every year but it is good that you mentioned it",
+          "relevance": "Nkechi's response confirms this is an established pattern — Ifeoma mentions it yearly, briefly, then drops it"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_1b6d3f9a",
+      "category": "Q2",
+      "difficulty": "medium",
+      "question": "The group reached a position on whether the Christmas Day gathering should include people outside the immediate family. What did the group decide, and what did Kingsley's response to that decision signal about his actual position on it?",
+      "answer": "The group affirmed that Christmas Day itself is family-only. Aunty Oby drew an explicit line: pre-Christmas drinks could be more open, but Christmas Day is family. Kingsley's response — 'yeah yeah of course Aunty Oby, the pre-drinks would just be family and a couple of close friends, nothing mad. details, details' — technically agrees while subtly holding ground: he describes the pre-drinks as 'family and a couple of close friends,' which is exactly what Aunty Oby was drawing a line against. The 'details, details' dismissal signals he sees this as splitting hairs rather than a principle he is fully embracing. He complies verbally but the qualifier 'nothing mad' and the pivot reveal he doesn't feel this is a real boundary.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Emeka",
+        "B": "Kingsley",
+        "C": "Chisom",
+        "D": "Tobenna"
+      },
+      "correct_option": "B",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_d2e3f4a5_s02_t007",
+          "speaker_display_name": "Obiageli",
+          "message_excerpt": "The Christmas Day gathering itself is family. I trust you understand the distinction I am making.",
+          "relevance": "The group's accepted position on Christmas Day guest policy"
+        },
+        {
+          "session_index": 2,
+          "turn_id": "grp_d2e3f4a5_s02_t008",
+          "speaker_display_name": "Kingsley",
+          "message_excerpt": "yeah yeah of course Aunty Oby, the pre-drinks would just be family and a couple of close friends, nothing mad. details, details",
+          "relevance": "Verbal compliance that still frames 'close friends' as acceptable — reveals he has not fully accepted the family-only principle"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_3f5a8d0c",
+      "category": "Q2",
+      "difficulty": "medium",
+      "question": "The family reached an agreement about how often Emeka would attend family gatherings going forward. What did the group decide, and what specifically in how Emeka responded to that decision reveals how he actually felt about committing to it?",
+      "answer": "The group agreed — pushed by Nkechi — that Emeka would attend at least one family gathering per quarter from the following year. Emeka's reply was a single word: 'Fine.' followed by the practical commitment ('One gathering per quarter from next year. I can commit to that.'). The 'Fine.' opener is not enthusiasm — it is the word someone uses when they have accepted something under pressure. Chisom's reaction ('QUARTERLY?? Emeka who are you') and Tobenna's 'tbf that's more than I expected' both confirm the family read this as a concession from a reluctant participant, not a willing volunteer. The word 'commit' — formal and slightly stiff — signals that Emeka views this as a contractual obligation rather than something he wanted.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Emeka",
+        "B": "Adaeze",
+        "C": "Tobenna",
+        "D": "Chisom"
+      },
+      "correct_option": "A",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_d2e3f4a5_s03_t007",
+          "speaker_display_name": "Emeka",
+          "message_excerpt": "Fine. One gathering per quarter from next year. I can commit to that.",
+          "relevance": "The 'Fine.' opener and formal 'commit' language signal acceptance under pressure, not genuine buy-in"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q4_2a5f8c1d",
+      "category": "Q4",
+      "difficulty": "medium",
+      "question": "Two people observe that Adaeze saying 'it's fine' about the Christmas fund has become a recurring pattern and that the issue deserves to be put on the agenda properly. Which of the following made this specific observation — and what in how they expressed it distinguishes their message from the other person who said something similar immediately before?",
+      "answer": "Ifeoma made this observation. Her message reads: ''fine for now' has been the answer for a couple of years. I think Aunty Oby is raising something real. Not pushing, just saying it should be on the agenda properly at some point. x' The distinguishing features are: (1) she frames the observation as endorsing Aunty Oby's point rather than making her own independent claim ('I think Aunty Oby is raising something real'); (2) she hedges with 'Not pushing, just saying'; (3) she signs off with 'x'. Aunty Oby in the preceding turn was declarative and instructional ('I have said before...you should not be chasing grown people for money alone') — a more authoritative register without deference or hedging.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Obiageli",
+        "B": "Chisom",
+        "C": "Nkechi",
+        "D": "Ifeoma"
+      },
+      "correct_option": "D",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_d2e3f4a5_s02_t020",
+          "speaker_display_name": "Ifeoma",
+          "message_excerpt": "'fine for now' has been the answer for a couple of years. I think Aunty Oby is raising something real.",
+          "relevance": "True speaker — deferential, hedged framing distinguishes Ifeoma from Obiageli's direct declarative in the preceding turn"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_6c0e5a8d",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "What is Adaeze's actual attitude toward managing the Christmas fund on her own, and how does Aunty Oby's behaviour show that she had already understood this — and had been watching it — for some time before Adaeze said anything directly?",
+      "answer": "Adaeze finds managing the Christmas fund alone genuinely exhausting, even though she consistently deflects concern with 'it's fine for now.' Aunty Oby reveals prior awareness of this in Session 2 when she says 'you do this every year. I have said before that Nkechi or Emeka should share this responsibility with you.' The phrase 'I have said before' is the key observable signal — it tells us Aunty Oby has been making this point in previous contexts, which means she has been paying attention to Adaeze's pattern long enough to form a sustained view and advocate for change before Adaeze ever asked. This is not a reactive response to new information; it is a position Aunty Oby already held, expressed here because the topic came up publicly.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_d2e3f4a5_s02_t018",
+          "speaker_display_name": "Obiageli",
+          "message_excerpt": "you do this every year. I have said before that Nkechi or Emeka should share this responsibility with you. You should not be chasing grown people for money alone.",
+          "relevance": "'I have said before' establishes that Aunty Oby has been observing and forming this view across multiple years — demonstrating she already knew Adaeze was carrying the fund alone and finding it hard before Adaeze explicitly confirmed it"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_7e1a3c6b",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "What does Emeka's opening message reveal about his emotional state, and how does Chisom's response in that same session show she already understood what was underneath it — in a way that she doesn't typically do with Emeka?",
+      "answer": "Emeka's Session 3 message — 'Something happened at dinner last night. My daughter asked why the cousins from London never come to Leeds. She is seven. I did not have a good answer.' — is unusually personal and candid for him. He does not frame it as a logistics problem or a decision point; he simply shares the moment. This signals he is unsettled. Chisom's immediate response — 'that is the most painfully relatable thing I've ever heard. Emeka are you okay' — is the observable evidence of her reading. Checking in emotionally on Emeka is something she demonstrably does not usually do ('I literally cannot' is her normal register with him, and their relationship is described as sparse). The direct 'are you okay' directed at Emeka signals she recognised his message as emotionally out-of-character, which required reading what was beneath the surface rather than just processing the words.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_d2e3f4a5_s03_t000",
+          "speaker_display_name": "Emeka",
+          "message_excerpt": "Something happened at dinner last night. My daughter asked why the cousins from London never come to Leeds. She is seven. I did not have a good answer.",
+          "relevance": "Unusually personal and reflective opening from Emeka — the departure from his normal decisional register signals emotional unsettledness"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_d2e3f4a5_s03_t002",
+          "speaker_display_name": "Chisom",
+          "message_excerpt": "that is the most painfully relatable thing I've ever heard 😭 I feel like that's the",
+          "relevance": "Chisom's direct emotional check-in — atypical for her relationship with Emeka — is the observable behaviour showing she registered what was beneath his message"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q6_d3e4f5a6",
+      "category": "Q6",
+      "difficulty": "medium",
+      "question": "The family operates with an understanding that when Nkechi cooks for a gathering, everyone eats what she has prepared without requesting alternatives. Does this expectation apply to all family members equally? If not, who behaves differently, and what makes this visible without it becoming a conflict?",
+      "answer": "No — Ifeoma is an exception to this norm, and Nkechi herself has accommodated it consistently for years. In Session 8, Ifeoma mentions she is pescatarian and notes that she only needs special provision if there is already a fish dish, otherwise she is happy with whatever is on the table. Nkechi's response — 'I have remembered every year but it is good that you mentioned it' — confirms that this has been an established, quietly managed exception across multiple gatherings. Ifeoma does not challenge the norm or ask for it to be changed; she navigates around it with a single factual mention. The accommodation is mutual and invisible — the norm holds for everyone else, but Ifeoma has a known, accepted dietary difference that Nkechi accounts for without making it a group issue.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Emeka",
+        "B": "Tobenna",
+        "C": "Ifeoma",
+        "D": "Chisom"
+      },
+      "correct_option": "C",
+      "evidence_anchors": [
+        {
+          "session_index": 8,
+          "turn_id": "grp_d2e3f4a5_s08_t009",
+          "speaker_display_name": "Ifeoma",
+          "message_excerpt": "I am pescatarian so if someone is doing a fish dish I will not need anything special, but I am more than happy with everything else on the table.",
+          "relevance": "Ifeoma states her dietary difference once — the implicit exception to the norm that Nkechi's cooking is the default for all"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_d2e3f4a5_s08_t011",
+          "speaker_display_name": "Nkechi",
+          "message_excerpt": "Ifeoma, I have remembered every year but it is good that you mentioned it",
+          "relevance": "Confirms this is an established annual exception Nkechi accommodates privately — the norm bends for Ifeoma and has for years"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_2f7a4c9e",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "Based on what is revealed in Sessions 1 and 5, what pattern characterises Nkechi's relationship with Kingsley when it comes to his promises and commitments, and how does the group's reaction to him in those sessions confirm that this is an established dynamic?",
+      "answer": "Nkechi holds Kingsley to account publicly for commitments he does not follow through on, and the rest of the family treats this as expected rather than surprising. In Session 1 she calls him out directly: 'Kingsley, do not make promises you will not keep. You said you were coming to Reading in September and I did not see you.' Tobenna's emoji reaction ('👀 kingsley adding to the calendar like we havent heard that before') confirms the group has seen this pattern repeatedly. Nkechi's tone is corrective but not cold — she still says 'Come when you can, by His grace' — suggesting she is fond of him but has long since stopped taking his promises at face value. By Session 5, when Kingsley actually follows through on the venue deposit, the shock is universal ('I am genuinely shocked', 'didn't see that coming'), which retrospectively confirms how reliable the break-promise pattern had been.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "Nkechi corrects Kingsley's reliability pattern publicly while remaining fond of him; group reactions confirm it is a long-standing dynamic",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_d2e3f4a5_s01_t016",
+          "speaker_display_name": "Nkechi",
+          "message_excerpt": "Kingsley, do not make promises you will not keep. You said you were coming to Reading in September and I did not see you.",
+          "relevance": "Direct public call-out establishing the unreliability pattern between Nkechi and Kingsley"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_d2e3f4a5_s01_t019",
+          "speaker_display_name": "Tobenna",
+          "message_excerpt": "👀 kingsley adding to the calendar like we havent heard that before",
+          "relevance": "Group confirmation that this is a known recurring pattern, not a one-off event"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_5e8b0d3a",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What reveals the depth of the history between Aunty Oby and Nkechi, beyond the fact that they are sisters, and what specific piece of evidence makes this visible in the chat?",
+      "answer": "Aunty Oby's message in Session 1 makes visible that she and Nkechi grew up together with the same mother — she references 'Our mother' in passing when offering historical family context ('Our mother used to say that a man who cannot keep small promises will not keep large ones') and then explicitly recalls a memory of their shared mother having the same ankle trouble ('I remember when your mother had the same issue with her ankles'). The shift from 'your mother' to 'Our mother' within the same message is telling — she catches herself using the possessive that signals shared parentage. Combined with the specific recalled memory (their mother's ankle problem, refusal to take it seriously), this reveals a siblinghood that extends back to childhood and shared domestic history.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "Shared childhood and same mother — confirmed by Obiageli's 'Our mother used to say' and recalled memory of their mother's ankle trouble",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_d2e3f4a5_s01_t018",
+          "speaker_display_name": "Obiageli",
+          "message_excerpt": "I remember when your mother had the same issue with her ankles and she refused to take it ser",
+          "relevance": "The shift to 'Our mother' reveals shared parentage and a childhood memory of their mother — confirming the sisterhood goes back to shared early life in Enugu"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_8d2e6f1b",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "Where in Sessions 3 and 4 does evidence first emerge that Emeka and Adaeze are coordinating family logistics through a private channel outside the main group chat, and what does their exchange reveal about how that working relationship actually functions?",
+      "answer": "The private channel surfaces in Session 3 when Adaeze says 'I texted you separately but I'll say it here too — I'm glad you said it,' directly acknowledging an off-chat exchange with Emeka. It becomes explicit in Session 4 when Emeka discloses in the main chat: 'Adaeze and I have already discussed this privately. She will brief me on the process after Christmas.' This confirms they have a working arrangement for logistics and financial succession planning that bypasses the group. The relationship functions as a practical partnership: Adaeze holds and executes, Emeka makes himself available as a technical resource when needed. The group dynamic shows this is not resented but is treated as a known feature ('Emeka and Ada everyone knows about the Sunday voice notes,' per Chisom in S3).",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "Emeka and Adaeze maintain a private logistics coordination channel — first named in S3 by Adaeze, confirmed explicitly by Emeka in S4",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_d2e3f4a5_s03_t011",
+          "speaker_display_name": "Adaeze",
+          "message_excerpt": "I texted you separately but I'll say it here too - I'm glad you said it",
+          "relevance": "Adaeze references a separate private text to Emeka, confirming off-group communication"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_d2e3f4a5_s04_t010",
+          "speaker_display_name": "Emeka",
+          "message_excerpt": "Adaeze and I have already discussed this privately. She will brief me on the process after Christmas.",
+          "relevance": "Emeka explicitly confirms the private channel and reveals they are already coordinating on the fund handover"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_1c4e9a2d",
+      "category": "Q7",
+      "difficulty": "hard",
+      "question": "What in Sessions 3 and 5 reveals the specific character of Tobenna's relationship with Chisom compared to how he relates to the rest of the family, and what would a reader need to notice across both sessions to understand the pattern?",
+      "answer": "Two details across Sessions 3 and 5 reveal that Tobenna has a closer, more attentive relationship with Chisom than with any other family member. In Session 3, when discussing a potential spring Leeds gathering, Tobenna's immediate instinct is 'might rope chi in too' — he thinks of her first, without being asked, in a casual aside that signals she is his default social pairing. In Session 5, when Chisom announces she is dating Marcus for six weeks, Tobenna reveals he already knew: 'tbf you did mention a pharmacist friend a few weeks back, thought nothing of it.' He had been told something in confidence (or passing) before it was group news. The two details together show that Tobenna and Chisom share a selective closeness — she tells him things she doesn't share with the group, and his instinct is to include her in plans others might forget to mention.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "Selective closeness — Tobenna is Chisom's default include and receives confidences she keeps from the group before they become announcements",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_d2e3f4a5_s03_t014",
+          "speaker_display_name": "Tobenna",
+          "message_excerpt": "might rope chi in too",
+          "relevance": "Reflex to include Chisom in a plan being discussed with others — signals she is his default social pairing"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_d2e3f4a5_s05_t006",
+          "speaker_display_name": "Tobenna",
+          "message_excerpt": "tbf you did mention a pharmacist friend a few weeks back. thought nothing of it",
+          "relevance": "Tobenna knew a detail Chisom had not yet shared with the group — confirming she confides in him selectively before group announcements"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_0e6c2f8a",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "Based on Aunty Oby's behaviour across Sessions 2 and 4, what does her relationship to Adaeze appear to be, and what does her persistence on the Christmas fund issue reveal about how she sees her own role in the family?",
+      "answer": "Aunty Oby positions herself as a senior family voice with both the authority and the responsibility to name problems others are managing quietly. In Session 2 she says 'Adaeze, you do this every year. I have said before that Nkechi or Emeka should share this responsibility with you.' In Session 4 she escalates: 'Six years. I have been watching Adaeze carry this... someone else in this family should be learning this process from her. Not next year. Now.' The repetition across sessions, the escalating directness, and the 'Not next year. Now' suggest Aunty Oby sees herself as the person who names the things others work around. Her relationship to Adaeze here is that of a protective elder — she is advocating for Adaeze's welfare in the family arena in a way that Adaeze herself will not. The friction this creates with the family's inertia is part of how she exercises authority.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "Protective elder advocate — Aunty Oby repeatedly names Adaeze's fund burden in public, positioning herself as a senior voice who forces issues others deflect",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_d2e3f4a5_s02_t018",
+          "speaker_display_name": "Obiageli",
+          "message_excerpt": "you do this every year. I have said before that Nkechi or Emeka should share this responsibility with you.",
+          "relevance": "First public advocacy for Adaeze — establishes prior observation and willingness to press publicly"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_d2e3f4a5_s04_t009",
+          "speaker_display_name": "Obiageli",
+          "message_excerpt": "Six years. I have been watching Adaeze carry this and I will say it again in this chat, plainly: someone else in this family should be learning thi",
+          "relevance": "Escalated public pressure — the 'Not next year. Now.' reveals she sees herself as the person who forces resolution when others defer"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_a8b9c0d1",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What personal history did Nkechi choose to share about her own professional life, and what prompted her to share it in the group chat at that moment?",
+      "answer": "Nkechi reveals in Session 7 that during her 22-year career as a school principal, she spent at least five years wondering whether she should have become a nurse instead. She shares this in direct response to Chisom expressing confusion about whether to pursue psychiatry or stay on the surgery path. The prompt is Chisom's self-doubt — Nkechi is offering her own experience of professional ambivalence as evidence that such doubt is survivable and does not require resolution immediately. The disclosure is in-chat and observable: 'I ran a school for twenty-two years and I spent at least five of them thinking I should have been a nurse instead. But I stayed, and I found I was exactly where I was supposed to be.' Chisom's reaction — 'wait Mum you wanted to be a nurse?? I did not know that' — confirms this was a genuinely new piece of family knowledge, not previously shared.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "Nkechi spent five years of her principalship wishing she had become a nurse — shared in Session 7 to support Chisom's career doubt, in direct response to Chisom's psychiatry rotation revelation",
+      "evidence_anchors": [
+        {
+          "session_index": 7,
+          "turn_id": "grp_d2e3f4a5_s07_t012",
+          "speaker_display_name": "Nkechi",
+          "message_excerpt": "I ran a school for twenty-two years and I spent at least five of them thinking I should have been a nurse instead",
+          "relevance": "In-chat disclosure of personal career doubt — prompted by Chisom's psychiatry rotation revelation and shared as direct emotional support"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q8_9d2b4f7e",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What prompted Emeka to reconsider how often he attends family gatherings, and what in the conversation and the next tells you this was a genuine shift rather than a statement made in the heat of a family conversation?",
+      "answer": "Early state (Sessions 1-2): Emeka is present but minimally engaged — he participates in decisions but does not initiate anything, attends only Christmas and summer, and makes no mention of wanting more connection. Shift signal (Session 3): Emeka opens the session unprompted with a personal moment — his daughter asked why cousins from London never come to Leeds. His 'I did not have a good answer' signals he has been sitting with the question. When Adaeze presses him, he says 'I should probably show up more than twice a year' and then commits: 'Fine. One gathering per quarter from next year.' Trigger: his daughter's question at dinner the previous night — the first time a family member younger than him had named the absence. Evolved state (Session 4): he confirms three April weekends are already blocked for Leeds and then says 'Mum. You are absolutely coming. I will collect you from Reading' — a level of initiative that the whole family reads as genuinely new.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_d2e3f4a5_s03_t005",
+          "speaker_display_name": "Emeka",
+          "message_excerpt": "I should probably show up more than twice a year.",
+          "relevance": "The shift signal — Emeka names his own pattern of underattendance for the first time, triggered by his daughter's question"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_d2e3f4a5_s03_t000",
+          "speaker_display_name": "Emeka",
+          "message_excerpt": "My daughter asked why the cousins from London never come to Leeds. She is seven. I did not have a good answer.",
+          "relevance": "The trigger — his daughter's question is the moment that caused the shift"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_d2e3f4a5_s04_t019",
+          "speaker_display_name": "Emeka",
+          "message_excerpt": "Mum. You are absolutely coming. I will collect you from Reading. We will make a weekend of it.",
+          "relevance": "Evolved state — proactive initiative by Emeka confirms the shift was real"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "attends family events only at Christmas and summer — does not initiate additional gatherings"
+        },
+        {
+          "session_index": 3,
+          "value": "commits to at least one additional gathering per quarter, triggered by daughter's question about absent cousins"
+        }
+      ]
+    },
+    {
+      "id": "Q8_b2c3d4e5",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What signals that Nkechi's long-standing preference for in-person family contact had shifted, and what makes this change most striking when the two are read together?",
+      "answer": "Early state (Session 1): Nkechi tells Chisom 'text me, not a voice note' — refusing audio format — and is characterised throughout as someone who says 'you should come and see me' rather than arrange calls. She consistently positions in-person visits as superior and resists remote formats. Shift signal (Session 5): When Chisom announces she is dating Marcus and Nkechi wants to meet him, she says: 'A video call is fine — I have come to see that these calls can be just as good as being in the room, by His grace. So I am ready when you are.' The phrase 'I have come to see' — which implies a process of changing her mind over time — is the clearest signal of shift. Trigger: the motivation appears to be Nkechi's own health episode (she could not travel for several weeks) during which the family set up regular Sunday video calls she found she valued. Evolved state (Session 8): she proactively asks Aunty Oby to join via video call for Christmas — she initiates the call herself, no longer treating it as a substitute but as the natural option.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_d2e3f4a5_s01_t003",
+          "speaker_display_name": "Nkechi",
+          "message_excerpt": "text me, not a voice note",
+          "relevance": "Early state — Nkechi refuses audio formats entirely; prefers written text over any remote audio or video communication"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_d2e3f4a5_s05_t011",
+          "speaker_display_name": "Nkechi",
+          "message_excerpt": "A video call is fine - I have come to see that these calls can be just as good as being in the room, by His grace. So I am ready when you are.",
+          "relevance": "Shift signal — 'I have come to see' signals a conscious change of view; she now actively proposes video calls"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_d2e3f4a5_s08_t006",
+          "speaker_display_name": "Nkechi",
+          "message_excerpt": "Oby, are you joining us from Enugu via video?",
+          "relevance": "Evolved state — Nkechi initiates the video call invitation herself, confirming the shift is established rather than situational"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "resists voice notes and video calls — insists on in-person visits or text only"
+        },
+        {
+          "session_index": 5,
+          "value": "actively offers to meet Chisom's partner via video call; says video calls can be as good as being in the room"
+        }
+      ]
+    },
+    {
+      "id": "Q8_c3d4e5f6",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "Where in the conversation did Kingsley's behaviour around family event planning first appear to change, and what in the conversation explains why it happened when it did rather than in the sessions before it?",
+      "answer": "Early state (Sessions 1-4): Kingsley's pattern is to generate big ideas — pre-Christmas drinks at his, Lagos reunion, a family Airbnb property in Peterborough — and hand off execution to others. In Session 1, Nkechi calls him out for missing a September visit he had promised. In Sessions 3-4, he enthusiastically endorses the Leeds trip and promises to contribute, but the planning moves forward through Emeka and Adaeze rather than Kingsley. Shift signal (Session 5): Kingsley announces he has actually booked the summer venue deposit — confirmed by a forwarded email. Trigger: Adaeze addressed him directly in the chat — 'Kingsley. the venue deposit.' — naming him as the accountable party by name, in public, in a single sentence with no padding. This was different from the ambient praise or gentle reminders of previous sessions; it placed sole accountability on him publicly with no escape. Evolved state: the group's collective shock ('I am genuinely shocked', 'didn't see that coming') retroactively confirms how consistent his non-follow-through had been.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_d2e3f4a5_s01_t016",
+          "speaker_display_name": "Nkechi",
+          "message_excerpt": "Kingsley, do not make promises you will not keep. You said you were coming to Reading in September and I did not see you.",
+          "relevance": "Early state — Nkechi calls out the established pattern of broken promises, confirming it predates the conversation"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_d2e3f4a5_s05_t015",
+          "speaker_display_name": "Adaeze",
+          "message_excerpt": "also on a completely separate note - Kingsley. the venue deposit.",
+          "relevance": "Trigger — Adaeze names Kingsley publicly as the sole accountable party with no softening"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_d2e3f4a5_s05_t016",
+          "speaker_display_name": "Kingsley",
+          "message_excerpt": "I actually did it. booked Wednesday. confirmation is in my email, I'll forward it to you now.",
+          "relevance": "Shift signal and evolved state — Kingsley followed through for the first time, confirming his own surprise at himself"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "promises to visit Reading but was called out for missing the September visit"
+        },
+        {
+          "session_index": 5,
+          "value": "actually booked and confirmed the summer venue deposit after Adaeze named him publicly as accountable"
+        }
+      ]
+    },
+    {
+      "id": "Q8_d4e5f6a7",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What signals that Adaeze's approach to the Christmas fund had finally changed, and what earlier moments in the conversation explain why it took until that session for her to say it directly?",
+      "answer": "Early state (Sessions 2-4): Adaeze deflects every offer of help or expression of concern about the fund with variants of 'it's fine for now' (S2 t019) or quiet accommodation. By Session 4 her 'Sixth year running now. 😅' hints at exhaustion but she still does not ask for help. Shift signal (Session 6): Adaeze says: 'I love doing this but I genuinely need someone to share this with me this year — I nearly dropped it in November. I'm asking properly now, not hinting.' Trigger: the accumulation of pressure — Aunty Oby has pushed this in Sessions 2 and 4, Ifeoma echoed it, the fund is in its sixth year — combined with a concrete near-miss ('nearly dropped it in November') that gave her a specific reason rather than just a feeling of exhaustion. Evolved state: Emeka immediately steps up ('I am already doing it. Adaeze is briefing me on the spreadsheet this week'), Nkechi says she should have pressed harder sooner, Ifeoma congratulates her for saying it — a collective affirmation that the ask was overdue.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_d2e3f4a5_s02_t019",
+          "speaker_display_name": "Adaeze",
+          "message_excerpt": "It's fine for now. Let's just get through this year and we can revisit the setup after.",
+          "relevance": "Early state — deflection of help offer, establishes the 'it's fine' pattern"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_d2e3f4a5_s06_t011",
+          "speaker_display_name": "Adaeze",
+          "message_excerpt": "I love doing this but I genuinely need someone to share this with me this year - I nearly dropped it in November. six years is a long time to be doing the ch",
+          "relevance": "Shift signal — first time she explicitly asks for help rather than deflecting; the near-miss is the trigger"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 2,
+          "value": "deflects concern about fund burden with 'it's fine for now'"
+        },
+        {
+          "session_index": 6,
+          "value": "openly asks for a co-administrator, cites near-collapse in November as catalyst"
+        }
+      ]
+    },
+    {
+      "id": "Q8_e5f6a7b8",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What drove Ifeoma to share her family archive photos publicly, and what in her own message in the conversation reveals how she had felt about sharing this material before that moment?",
+      "answer": "Early state (Sessions 1-5): Ifeoma makes no mention of a family history project in the group chat across five sessions, keeping it entirely private. Shift signal and trigger (Session 6): Aunty Oby publicly names the project and instructs Ifeoma to share: 'Ifeoma, show them what you showed me — these children do not know where they come from.' This public call-out from the family's most senior voice — and a figure Ifeoma clearly respects — gave her the permission she had been waiting for. Evolved state: Ifeoma posts three archive photographs and describes them in the group for the first time. The self-explanation in her own message is the clearest evidence of her prior hesitation: 'I have been cautious about sharing these — I never wanted it to feel like a lecture.' This sentence tells you exactly what had been holding her back — fear of being perceived as performing or lecturing — and it took an explicit instruction from Aunty Oby to override that reluctance. The group reaction (Nkechi, Chisom, Kingsley all visibly moved) confirms the photos had real impact.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 6,
+          "turn_id": "grp_d2e3f4a5_s06_t016",
+          "speaker_display_name": "Obiageli",
+          "message_excerpt": "Ifeoma, show them what you showed me - these children do not know where they come from.",
+          "relevance": "Trigger — Aunty Oby's public instruction gave Ifeoma the permission and the push she needed"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_d2e3f4a5_s06_t017",
+          "speaker_display_name": "Ifeoma",
+          "message_excerpt": "I have been cautious about sharing these - I never wanted it to feel like a lecture. But here are three.",
+          "relevance": "Shift signal — Ifeoma's own explanation of what held her back ('never wanted it to feel like a lecture') reveals the precise prior hesitation"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "family history project not mentioned in the group chat — kept entirely private"
+        },
+        {
+          "session_index": 6,
+          "value": "shares three archive photos publicly after Aunty Oby's direct encouragement; explains she had been cautious about being seen to lecture"
+        }
+      ]
+    },
+    {
+      "id": "Q8_f7a2b3c4",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What signalled that Chisom's long-held career plan might be changing, and what specifically in her own words explains what the psychiatry rotation revealed to her that her previous placements had not?",
+      "answer": "Early state (Sessions 1-6): Chisom's plan to pursue surgery is treated as settled fact across the conversation — Nkechi references it in Session 7 ('you have been talking about surgery since you got into medical school. Every conversation.'). No doubt is expressed by Chisom in earlier sessions; surgery is her stated future. Shift signal (Session 7): Chisom returns from her psychiatry rotation and says it was 'the first time on a placement where I felt like I was actually helping someone not just patching them and sending them home.' This is the specific distinction she names: other placements felt like technical fixes; psychiatry felt like genuine help. She stays an extra hour after her shift voluntarily — something she says she has 'never done in A&E. not once.' Trigger: the psychiatry rotation itself, specifically an unnamed patient conversation she stayed late for. Evolved state: by the end of Session 7, Chisom says 'I might change my plan. I'm not saying I am, I'm saying I might. And this is the first time I've admitted that out loud' — a clear shift from certainty to open doubt about surgery as her path.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 7,
+          "turn_id": "grp_d2e3f4a5_s07_t001",
+          "speaker_display_name": "Chisom",
+          "message_excerpt": "the first time on a placement where I felt like I was actually helping someone not just patching them and sending them home",
+          "relevance": "Shift signal — Chisom names the specific qualitative difference between psychiatry and prior placements that caused her to reconsider surgery"
+        },
+        {
+          "session_index": 7,
+          "turn_id": "grp_d2e3f4a5_s07_t018",
+          "speaker_display_name": "Chisom",
+          "message_excerpt": "I might change my plan. I'm not saying I am, I'm saying I might. and this is the first time I've admitted that out loud",
+          "relevance": "Evolved state — first explicit admission of doubt about the surgery plan; marks the end of certainty"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_d2e3f4a5_s01_t001",
+          "speaker_display_name": "Chisom",
+          "message_excerpt": "okay SO mummy I literally just got in from a night shift and I am lying on the floor of my flat because I could not make it to the bed",
+          "relevance": "Early state context — Chisom in A&E rotation, fully committed to the medical path including A&E and surgery, no doubt expressed"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "surgery plan stated as settled — A&E rotation in progress, no doubt expressed"
+        },
+        {
+          "session_index": 7,
+          "value": "considers psychiatry after rotation; admits for first time she might change her career plan"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "source": "SocialMemBench",
+    "source_kind": "real_benchmark",
+    "network_id": "grp_d2e3f4a5",
+    "n_sessions": 8,
+    "n_turns": 180,
+    "v4_correct": 19,
+    "v4_total": 24,
+    "v4_errors": 5,
+    "v4_accuracy": 0.7916666666666666
+  }
+}

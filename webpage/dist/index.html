@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fafbfc">
+  <meta name="description" content="SpeakerMem-R1: speaker-centered dual-track memory for multi-party dialogue.">
+  <title>SpeakerMem-R1 · Speaker-Centered Dual-Track Memory</title>
+  <link rel="canonical" href="https://2022hpsk.github.io/SpeakerMemR1/">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="ambient ambient-c" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="SpeakerMem-R1 home"><span class="brand-mark"><i></i><i></i><i></i></span><span>SpeakerMem<span class="brand-suffix">-R1</span></span></a>
+    <nav class="nav-links" aria-label="Page sections">
+      <a class="active" href="#overview">Overview</a>
+      <a href="#method">Method</a>
+      <a href="#results">Results</a>
+      <a href="#demos">Demos</a>
+      <a href="#supplement">Supplement</a>
+    </nav>
+    <a class="header-link" href="#resources"><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg>Paper <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell" id="overview">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Multi-party memory research</p>
+        <h1>SpeakerMem<span class="title-suffix">-R1</span></h1>
+        <p class="hero-subtitle">Speaker-Centered Dual-Track Memory<br>for Multi-Party Dialogue</p>
+        <div class="authors" aria-label="Placeholder authors"><a href="https://example.com/author-one" target="_blank" rel="noreferrer">First Author<sup>1</sup></a><a href="https://example.com/author-two" target="_blank" rel="noreferrer">Second Author<sup>1</sup></a><a href="https://example.com/author-three" target="_blank" rel="noreferrer">Third Author<sup>2</sup></a></div><p class="affiliations"><sup>1</sup> Institution One &nbsp; <sup>2</sup> Institution Two <span>Author and affiliation placeholders</span></p>
+        <p class="hero-lede">SpeakerMem-R1 stores speaker-labeled messages verbatim and organizes derived states by person and group. At query time, it combines evidence from both tracks by participant, event, and time, preserving attribution and state changes in multi-party dialogue.</p>
+        <div class="hero-actions resource-badges"><button class="button button-primary coming-soon" type="button" disabled><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg>Paper <small>Coming soon</small></button><a class="button button-ghost" href="https://github.com/2022hpsk/SpeakerMemR1" target="_blank" rel="noreferrer"><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4 1-4-2-6-2m12 5v-4a3.5 3.5 0 0 0-1-2.7c3.3-.4 6.7-1.6 6.7-7.3A5.7 5.7 0 0 0 19.2 4a5.3 5.3 0 0 0-.1-4s-1.3-.4-4.1 1.5a14.2 14.2 0 0 0-7 0C5.2-.4 3.9 0 3.9 0a5.3 5.3 0 0 0-.1 4A5.7 5.7 0 0 0 2.3 8c0 5.7 3.4 6.9 6.7 7.3A3.5 3.5 0 0 0 8 18v4"/></svg>Code</a><a class="button button-ghost" href="#demos"><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg>Interactive demos</a></div>
+        <div class="hero-meta"><span>Verbatim evidence</span><span>Structured states</span><span>Local Writer-R1</span></div>
+      </div>
+      <div class="hero-visual reveal delay-one">
+        <div class="visual-label"><span>Architecture</span><span>01</span></div>
+        <button class="figure-frame hero-frame image-trigger" data-image="./assets/figure2_latest.webp" aria-label="Open SpeakerMem-R1 architecture figure"><img src="./assets/figure2_latest.webp" alt="SpeakerMem-R1 architecture figure" decoding="async"><span class="zoom-hint">Click to expand <b>↗</b></span></button>
+        <div class="hero-visual-caption"><span>Verbatim messages stay traceable.</span><span>Derived states retain provenance.</span></div>
+      </div>
+    </section>
+
+    <section class="metric-rail section-shell reveal" aria-label="Headline results">
+      <div class="metric-item"><strong>64.9<span>%</span></strong><span>SocialMemBench<br><b>binary accuracy</b></span></div>
+      <div class="metric-item"><strong>47.9<span>%</span></strong><span>GroupMemBench<br><b>binary accuracy</b></span></div>
+      <div class="metric-item"><strong>61.9<span>%</span></strong><span>EverMemBench<br><b>binary accuracy</b></span></div>
+      <div class="metric-item metric-accent"><strong>95.4<span>%</span></strong><span>of the LLM writer<br><b>controlled Writer result</b></span></div>
+    </section>
+
+    <section class="section-shell story-section" id="story">
+      <div class="section-heading reveal"><p class="eyebrow">01 / The problem</p><h2>Attribution and state reconstruction<br>in multi-party dialogue</h2><p>Relevance alone cannot answer a relational question. A useful memory must preserve who spoke, whom a statement concerns, whether it belongs to a person or the group, and which state is current.</p></div>
+      <div class="story-grid">
+        <div class="story-copy reveal">
+          <div class="quote-block"><span class="quote-mark">“</span><p>Who said what is different from what is true about whom.</p></div>
+          <div class="challenge-list">
+            <article><span class="challenge-index">01</span><div><h3>Attribution</h3><p>Separate <b>source</b> from <b>owner</b> so a report about Bob does not become Bob’s self-report.</p></div></article>
+            <article><span class="challenge-index">02</span><div><h3>Scope</h3><p>Keep personal preferences, cross-person observations, group decisions, and group norms distinct.</p></div></article>
+            <article><span class="challenge-index">03</span><div><h3>State reconstruction</h3><p>Follow updates across interleaved members, events, and time without erasing the evidence trail.</p></div></article>
+          </div>
+        </div>
+        <button class="figure-frame story-figure image-trigger reveal delay-one" data-image="./assets/figure1_latest.webp" aria-label="Open problem figure"><img src="./assets/figure1_latest.webp" alt="Problem figure showing multi-party attribution and state reconstruction" loading="lazy" decoding="async"><span class="zoom-hint">Open figure <b>↗</b></span></button>
+      </div>
+    </section>
+
+    <section class="section-shell method-section" id="method">
+      <div class="section-heading centered reveal"><p class="eyebrow">02 / The method</p><h2>Speaker-centered memory,<br>two complementary tracks</h2><p>SpeakerMem-R1 separates memory construction from query-time evidence selection. The Writer, retrieval procedure, and frozen answerer remain explicit and inspectable.</p></div>
+      <div class="method-steps reveal">
+        <article><span>01</span><h3>Write</h3><p>Store every incoming message verbatim, then let the Writer add only derived records that help retrieval by person, relationship, event, and time.</p></article>
+        <article><span>02</span><h3>Project</h3><p>Turn a question into target rows, issue, mode, and PERSON/GROUP scope before searching either track.</p></article>
+        <article><span>03</span><h3>Select + resolve</h3><p>Recall System 1 candidates, optionally expand neighboring messages, select System 2 records under owner/source constraints, and organize a compact evidence set.</p></article>
+        <article><span>04</span><h3>Compose</h3><p>Give the frozen answerer the resolved evidence, preserving the source coordinates needed for a checkable answer.</p></article>
+      </div>
+      <div class="track-grid reveal">
+        <article class="track-card raw-track"><div class="track-top"><span class="track-number">SYSTEM 01</span><span class="track-chip cyan">Verbatim</span></div><h3>Raw messages</h3><p>Speaker, time, channel, exact wording, and local context remain available as the factual anchor.</p><div class="track-footer"><span>Auditable</span><span>Speaker indexed</span><span>Local context</span></div></article>
+        <article class="track-card derived-track"><div class="track-top"><span class="track-number">SYSTEM 02</span><span class="track-chip lime">Derived</span></div><h3>Structured states</h3><p>The Writer creates compact records with owner/source fields, PERSON/GROUP scope, action type, and provenance links to the verbatim track.</p><div class="track-footer"><span>Core</span><span>Profile</span><span>Interaction</span><span>Insight</span></div></article>
+      </div>
+      <div class="query-band reveal"><div><span class="panel-kicker">Query-time contract</span><h3>Anchor → Separate → Resolve → Compose</h3><p>System 1 recall-n defaults to 40 before the final top-k=10; System 2 uses owner-k=2 and source-k=1 in the main evaluation, with query and answer modules frozen for Writer comparisons.</p></div><div class="query-stat"><strong>40</strong><span>default S1 recall-n</span><small>top-k 10 · S2 2 / source 1</small></div></div>
+      <div class="layers-wrap reveal"><div class="mini-heading"><span>Five memory layers</span><span>Writer contract</span></div><div class="layers-table"><div class="layer-row layer-head"><span>Track</span><span>Scope</span><span>Layer</span><span>Definition and use</span></div><div class="layer-row"><span>System 1</span><span>PERSON</span><b>Episodic</b><span>Verbatim message, speaker, time, channel</span></div><div class="layer-row"><span>System 2</span><span>PERSON</span><b>Core</b><span>Stable identity, facts, stances, recurring behavior</span></div><div class="layer-row"><span></span><span>PERSON</span><b>Profile</b><span>Observations or beliefs about a person</span></div><div class="layer-row"><span></span><span>GROUP</span><b>Interaction</b><span>Cross-speaker events, relations, decisions</span></div><div class="layer-row"><span></span><span>GROUP</span><b>Insight</b><span>Group norms, consensus, and exceptions</span></div></div></div>
+    </section>
+
+    <section class="section-shell writer-section" id="writer">
+      <div class="section-heading reveal"><p class="eyebrow">03 / Writer-R1</p><h2>Reinforcement learning<br>for a locally deployable Writer</h2><p>RL trains the Qwen2.5-3B Writer while System 1 writing, query organization, and answering remain frozen. The controlled study tests whether a locally deployable Writer can approach the LLM writer reference under the same memory contract.</p></div>
+      <div class="writer-grid"><button class="figure-frame writer-figure image-trigger reveal" data-image="./assets/figure3_latest.webp" aria-label="Open Writer-R1 training figure"><img src="./assets/figure3_latest.webp" alt="Writer-R1 training figure" loading="lazy" decoding="async"><span class="zoom-hint">Open training figure <b>↗</b></span></button><div class="writer-results reveal delay-one"><div class="writer-result-head"><span>10 held-out SocialMem networks</span><b>305 questions</b></div><div class="writer-score"><span>SFT</span><strong>57.38<span>%</span></strong><small>Qwen2.5-3B · epoch 10</small></div><div class="score-line"><i class="score-sft"></i></div><div class="writer-score highlighted"><span>Writer-R1</span><strong>68.20<span>%</span></strong><small>30 steps · +10.82 pp</small></div><div class="score-line"><i class="score-r1"></i></div><div class="writer-score"><span>LLM writer</span><strong>71.48<span>%</span></strong><small>DeepSeek-V4-Flash</small></div><div class="score-line"><i class="score-llm"></i></div><div class="writer-callout"><b>95.4%</b><span>of the LLM writer accuracy</span></div></div></div>
+      <div class="training-notes reveal"><div><span class="note-label">Signal</span><p>SpeakerLevenshtein matches structured states within owner buckets, combining token overlap and sequence matching.</p></div><div><span class="note-label">Data</span><p>The training list contains 15 complete networks, 73 Writer segments, 89 terminal QA items, and 452 supervised actions.</p></div><div><span class="note-label">Scope</span><p>The controlled result evaluates a locally deployable Writer under a frozen query and answer pipeline; it does not establish broad cross-domain RL generalization.</p></div></div>
+    </section>
+
+    <section class="section-shell results-section" id="results">
+      <div class="section-heading reveal"><p class="eyebrow">04 / Results</p><h2>Evaluation across<br>long-term dialogue benchmarks</h2><p>Results on GroupMemBench, SocialMemBench, and EverMemBench evaluate multi-party memory. The public EverMemBench comparison and a two-person LoCoMo boundary test provide complementary evaluations.</p></div>
+      <div class="result-tabs reveal" role="tablist" aria-label="Result tables"><button class="result-tab active" data-result="main" role="tab" aria-selected="true">Main benchmarks</button><button class="result-tab" data-result="evermem" role="tab" aria-selected="false">Public EverMemBench</button><button class="result-tab" data-result="locomo" role="tab" aria-selected="false">LoCoMo</button></div>
+      <div class="table-card reveal" id="result-panel" role="tabpanel" aria-label="Main benchmarks"><div class="results-controls" id="main-model-controls"><div class="switch-label">Main benchmarks · model</div><div class="segmented" role="group" aria-label="Main benchmark language-model configuration"><button class="model-switch active" data-model="deepseek" aria-pressed="true">DeepSeek-V4-Flash</button><button class="model-switch" data-model="luna" aria-pressed="false">GPT-5.6-luna</button></div><span class="judge-note">Acc.: GPT-4o-mini judge · token-F1 direct</span></div><div class="table-caption" id="result-caption"></div><div class="table-scroll" id="result-table" tabindex="0" role="region" aria-label="Benchmark results, scroll horizontally for all columns"></div></div>
+      <div class="result-note" id="result-note"></div>
+      <div class="results-footnote reveal"><span><b>Protocol:</b> official code, recommended configuration, and official prompt per method; common data, metrics, judge, and evaluation interface.</span><span><b>Full context:</b> feasible only on SocialMemBench.</span></div>
+    </section>
+
+    <section class="section-shell demos-section" id="demos">
+      <div class="section-heading centered reveal"><p class="eyebrow">05 / See the memory in action</p><h2>From conversation to memory<br>and retrieved evidence</h2><p>These short illustrative conversations make the paper's design choices concrete: source versus owner, personal versus group scope, and updates that preserve history.</p></div>
+      <div class="demo-switcher reveal" role="tablist" aria-label="Illustrative memory demos"><button class="demo-tab active" data-demo="attribution" role="tab" aria-selected="true">Source ≠ owner</button><button class="demo-tab" data-demo="decision" role="tab" aria-selected="false">Group decision</button><button class="demo-tab" data-demo="update" role="tab" aria-selected="false">State update</button><button class="demo-tab" data-demo="coverage" role="tab" aria-selected="false">Member coverage</button><button class="demo-tab" data-demo="norm" role="tab" aria-selected="false">Group norm</button></div>
+      <div class="demo-panel reveal"><div class="demo-conversation"><div class="demo-panel-label">Conversation</div><div id="demo-messages"></div><div class="demo-query"><span class="trace-label">Query</span><p id="demo-query-text"></p></div><div class="demo-answer"><span class="trace-label">Composed answer</span><p id="demo-answer-text"></p></div></div><div class="demo-flow"><div class="demo-panel-label" id="trace-heading">Memory &amp; retrieval trace <span>Scroll to explore ↓</span></div><div class="demo-trace-scroll" tabindex="0" role="region" aria-labelledby="trace-heading"><div id="demo-memory"></div></div></div></div>
+      <p class="demo-disclaimer">Illustrative examples follow the memory contract described in the paper; they are not additional benchmark samples.</p>
+    </section>
+
+    <section class="section-shell analysis-section" id="supplement">
+      <div class="section-heading reveal"><p class="eyebrow">06 / Supplement</p><h2>Ablations and<br>additional analyses</h2><p>Controlled Writer comparisons, retrieval-budget sensitivity, category-level results, and token accounting examine the contributions and limitations of the design.</p></div>
+      <div class="supplement-grid">
+        <details class="supp-card reveal" open><summary><span><b>Controlled Writer table</b><small>10 held-out networks · 305 questions</small></span><i>+</i></summary><div id="writer-table" class="table-scroll"></div><p class="supp-text">With the query and answer modules frozen, Writer-R1 reaches 68.20% on 305 held-out questions, compared with 57.38% for SFT and 71.48% for the LLM writer. This controlled comparison measures the usefulness of the RL-trained local Writer under the deployment configuration.</p></details>
+        <details class="supp-card reveal"><summary><span><b>Dual-track and hierarchy ablations</b><small>Same top-k and source budgets</small></span><i>+</i></summary><div id="ablation-table" class="table-scroll"></div><p class="supp-text">The ablation table uses the DeepSeek-V4-Flash main configuration and the default query budgets. Removing either track reduces accuracy across the three benchmarks. Keeping only the per-speaker or group view also loses performance, showing that raw messages and the two structured scopes provide complementary evidence. ASK changes the balance across benchmarks, so both the no-ASK row and the complete system are retained.</p></details>
+        <details class="supp-card reveal" open><summary><span><b>Retrieval top-k sensitivity</b><small>9 settings · held-out eval10</small></span><i>+</i></summary><div class="supp-figures"><img src="./assets/fig_topk_sensitivity_curves_latest.webp" alt="Top-k sensitivity curves" loading="lazy" decoding="async"><img src="./assets/fig_topk_sensitivity_grid_latest.webp" alt="Top-k sensitivity grid" loading="lazy" decoding="async"></div><div id="topk-table" class="table-scroll"></div><p class="supp-text">Across the nine no-ASK settings, S1 top-k=20 and S2 k=4 gives the highest observed Acc (73.11%) and token-F1 (26.53%). Increasing S2 beyond four can add redundant structured records, while the main experiments keep the more economical S1 top-k=10, S2 k=2, source-k=1 configuration.</p></details>
+        <details class="supp-card reveal"><summary><span><b>Category diagnostics</b><small>Accuracies and token-F1</small></span><i>+</i></summary><p class="supp-text">The five challenge dimensions are an analysis framework mapped from official question requirements and recurring error patterns; they are not independently human-annotated labels.</p><p class="supp-text">The category tables keep the official benchmark categories as the quantitative units. The weaker term-ambiguity, multi-hop, and open-domain entries expose where attribution, event disambiguation, and cross-evidence composition remain difficult.</p><div class="mini-table-title">GroupMemBench · DeepSeek-V4-Flash · accuracy</div><div id="gm-acc-table" class="table-scroll"></div><div class="mini-table-title">SocialMemBench · DeepSeek-V4-Flash · accuracy</div><div id="sm-acc-table" class="table-scroll"></div><div class="mini-table-title">GroupMemBench · DeepSeek-V4-Flash · token-F1</div><div id="gm-f1-table" class="table-scroll"></div><div class="mini-table-title">SocialMemBench · DeepSeek-V4-Flash · token-F1</div><div id="sm-f1-table" class="table-scroll"></div></details>
+        <details class="supp-card reveal"><summary><span><b>Cross-model category results</b><small>GPT-5.6-luna configuration</small></span><i>+</i></summary><p class="supp-text">Changing the model used for memory construction, retrieval-time interpretation, and answer generation changes absolute scores but preserves the same evaluation interface and query budgets. This is a cross-model robustness check, not a separate training setting.</p><div class="mini-table-title">GroupMemBench accuracy</div><div id="gm-luna-table" class="table-scroll"></div><div class="mini-table-title">SocialMemBench accuracy</div><div id="sm-luna-table" class="table-scroll"></div></details>
+        <details class="supp-card reveal"><summary><span><b>Token accounting</b><small>Ingestion, QA, answer, total</small></span><i>+</i></summary><p class="supp-text">Totals count prompts, messages, memories, and answers processed at each stage; judge calls are excluded. SpeakerMem uses session-level ingestion on SocialMemBench and Window25 on GroupMemBench/EverMemBench. Mem0, A-MEM, and HippoRAG use chunk5.</p><p class="supp-text">Ingestion dominates the memory systems that repeatedly rewrite message chunks. SpeakerMem avoids one call per message by writing a window or session at a time, while BM25 and local Embed have no LLM ingestion stage in this accounting.</p><div id="token-overview-table" class="table-scroll"></div><div class="mini-table-title">SocialMemBench</div><div id="token-social-table" class="table-scroll"></div><div class="mini-table-title">GroupMemBench</div><div id="token-group-table" class="table-scroll"></div><div class="mini-table-title">EverMemBench</div><div id="token-ever-table" class="table-scroll"></div></details>
+        <details class="supp-card reveal"><summary><span><b>LoCoMo category breakdown</b><small>Two-person boundary test</small></span><i>+</i></summary><div id="locomo-breakdown-table" class="table-scroll"></div><p class="supp-text">SpeakerMem-R1 reaches 70.85% overall (1,407/1,986). Single-hop and temporal recall remain stronger than multi-hop and open-domain questions, which expose the current boundary of the system on cross-segment composition and external knowledge.</p></details>
+      </div>
+    </section>
+
+    <section class="section-shell resources-section" id="resources">
+      <div class="resource-card reveal"><div><p class="eyebrow">07 / Resources</p><h2>Paper and resources</h2><p>The paper will be available on arXiv soon. Explore the code and research figures below.</p></div><div class="resource-actions"><button class="resource-link coming-soon" type="button" disabled><span><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg>Paper</span> <small>Coming soon</small></button><a class="resource-link" href="https://github.com/2022hpsk/SpeakerMemR1" target="_blank" rel="noreferrer"><span><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4 1-4-2-6-2m12 5v-4a3.5 3.5 0 0 0-1-2.7c3.3-.4 6.7-1.6 6.7-7.3A5.7 5.7 0 0 0 19.2 4a5.3 5.3 0 0 0-.1-4s-1.3-.4-4.1 1.5a14.2 14.2 0 0 0-7 0C5.2-.4 3.9 0 3.9 0a5.3 5.3 0 0 0-.1 4A5.7 5.7 0 0 0 2.3 8c0 5.7 3.4 6.9 6.7 7.3A3.5 3.5 0 0 0 8 18v4"/></svg>GitHub</span><b>↗</b></a><button class="resource-link" id="bibtex-button"><span><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7H4v7h5v-7Zm11 0h-5v7h5V7ZM9 14c0 3-2 4-4 4m15-4c0 3-2 4-4 4"/></svg>BibTeX</span><b>+</b></button></div></div>
+      <div class="bibtex-panel" id="bibtex-panel" hidden><pre>@misc{anonymous_speakermemr1,
+  title  = {SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue},
+  author = {First Author and Second Author and Third Author},
+  note   = {Research manuscript}
+}</pre><button class="copy-button" id="copy-bibtex">Copy BibTeX</button></div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell"><div class="brand"><span class="brand-mark"><i></i><i></i><i></i></span><span>SpeakerMem<span class="brand-suffix">-R1</span></span></div><span>Speaker-centered memory for multi-party dialogue.</span><a class="back-top" href="#top">Back to top <span>↑</span></a></footer>
+
+  <dialog class="image-modal" id="image-modal"><button class="modal-close" id="modal-close" aria-label="Close figure">×</button><img id="modal-image" src="" alt=""><p id="modal-caption"></p></dialog>
+  <script src="./app.js"></script>
+</body>
+</html>

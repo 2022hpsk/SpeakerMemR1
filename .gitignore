@@ -1,0 +1,68 @@
+# Credentials and local environments
+.env
+.env.*
+!.env.example
+!**/.env.example
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local memory stores and vector indexes
+*.db
+*.sqlite
+*.sqlite3
+*.faiss
+*.index
+.speakermem_*/
+local_stores/
+memory_stores/
+stores/
+
+# Model artifacts and training runtime output
+checkpoints/
+**/checkpoints/
+model_cache/
+models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.log
+logs/
+wandb/
+tensorboard/
+
+# Downloaded benchmark payloads and temporary evaluation data
+code/SocialMemBench/networks.jsonl
+code/SocialMemBench/personas.jsonl
+code/SocialMemBench/conversations.jsonl
+code/SocialMemBench/qa.jsonl
+code/GroupMemBench/data/
+code/GroupMemBench/questions/
+code/EverMemBench-Dynamic/dialogues.jsonl
+code/EverMemBench-Dynamic/profiles.jsonl
+code/EverMemBench-Dynamic/qars.jsonl
+code/LoCoMo/locomo10.json
+rl_prep/
+
+# Generated local outputs (the checked-in aggregate artifacts under results/
+# remain tracked; use a different directory for ad-hoc runs.)
+results_local/
+results_local_*/
+results_speakermem_pkg/
+results_baseline_local/
+*.tmp
+*.swp
+*.swo
+
+# OS/editor metadata
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

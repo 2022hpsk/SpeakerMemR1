@@ -1,0 +1,3524 @@
+{
+  "schema": "speakermem-v4-trajectories/1",
+  "prompt_version": "13fae86a84be0b22",
+  "teacher": {
+    "model": "human-authored-v4",
+    "temperature": 0.0,
+    "thinking": false,
+    "max_tokens": 4096
+  },
+  "window_size": 5,
+  "network_id": "manual_update_alpha",
+  "source": {
+    "path": "manual_v4_networks",
+    "meta": {
+      "source_kind": "human_authored"
+    }
+  },
+  "transitions": [
+    {
+      "turn": 0,
+      "session_id": "manual_update_alpha_s01",
+      "ts": "2026-08-10T10:00:00Z",
+      "messages": [
+        {
+          "speaker": "Alice",
+          "content": "Release 1.0 owner: Alice; first review is Friday.",
+          "session": "manual_update_alpha_s01",
+          "ts": "2026-08-10T10:00:00Z",
+          "msg_id": "0",
+          "meta": {}
+        },
+        {
+          "speaker": "Bob",
+          "content": "I will review the API checklist.",
+          "session": "manual_update_alpha_s01",
+          "ts": "2026-08-10T10:01:00Z",
+          "msg_id": "1",
+          "meta": {}
+        },
+        {
+          "speaker": "Alice",
+          "content": "The test environment is ready.",
+          "session": "manual_update_alpha_s01",
+          "ts": "2026-08-10T10:02:00Z",
+          "msg_id": "2",
+          "meta": {}
+        },
+        {
+          "speaker": "Bob",
+          "content": "I prefer concise checklists.",
+          "session": "manual_update_alpha_s01",
+          "ts": "2026-08-10T10:03:00Z",
+          "msg_id": "3",
+          "meta": {}
+        },
+        {
+          "speaker": "Alice",
+          "content": "No blocker is known yet.",
+          "session": "manual_update_alpha_s01",
+          "ts": "2026-08-10T10:04:00Z",
+          "msg_id": "4",
+          "meta": {}
+        }
+      ],
+      "prompt": [
+        {
+          "role": "system",
+          "content": "You are an ONLINE memory manager for a MULTI-PARTY group chat, maintaining a speaker-indexed layered memory.\n\nPREMISE: every raw message of this segment is ALREADY stored VERBATIM (raw track). Your job is NOT to restate the raw text, but to add STRUCTURED derived memory on top of it, so that retrieval by person / relationship / time becomes possible.\n\nFOUR DERIVED LAYERS YOU MAY WRITE\n(raw messages are already written to per_speaker_episodic by the system - never produce that layer)\n- per_speaker_core     a person's STABLE fact / identity / hardened stance / RECURRING BEHAVIOUR\n- per_speaker_profile  how the group sees a person, or one person's OBSERVATION about another\n                       (\"A says B is X\" -> owner=B, source=A)\n- group_interaction    cross-speaker event / relationship / group DECISION   (owner=GROUP)\n                       *** WHO SAID IT IS NOT WHO IT BELONGS TO ***\n                       A decision announced by ONE person on behalf of the group is STILL a\n                       group decision: owner=GROUP, source=<the speaker>.\n                       Triggers: \"then it is settled\", \"so we agreed\", \"that is decided\",\n                       \"we will go with X\" -> owner=GROUP, layer=group_interaction,\n                       utype=decision. Do NOT file it as that speaker's personal preference.\n                       (A personal preference is \"I would rather X\"; a decision is \"X is settled\".)\n- group_insight        group NORM / consensus / meta-observation             (owner=GROUP)\n                       ONLY when the conversation gives evidence, note which member conspicuously\n                       relates to a norm differently. NEVER guess a member's compliance.\n\nACTIONS - exactly three, output nothing else\n  {\"action\":\"ADD\",\"owner\":\"<who it is ABOUT>\",\"source\":\"<who SAID/observed it>\",\"layer\":\"<one of the four above>\",\"utype\":\"fact|stance|observation|decision|relation\",\"content\":\"<the memory>\"}\n  {\"action\":\"UPDATE\",\"entry_id\":\"<existing entry being updated>\",\"content\":\"<the NEW, current state>\"}\n  {\"action\":\"NOOP\"}\n\nUPDATE BOUNDARIES (important)\n- *** BEFORE EVERY ADD, SEARCH CURRENT MEMORY FIRST *** Is there already an entry about this\n  same matter / same work item / same person-and-topic? If yes -> UPDATE that entry.\n  ADD is only for matters that NOTHING in CURRENT MEMORY covers yet.\n- Use UPDATE whenever an existing entry about the SAME MATTER has MOVED ON. Read this broadly:\n    * a number / percentage / progress advanced   e.g. 38% complete -> 97% complete\n    * a date or deadline shifted                  e.g. freeze 2025-06-20 -> 2025-06-27\n    * a status moved                              e.g. blocked -> resolved, planned -> shipped\n    * a stance / belief / plan changed\n    * a later, more specific statement supersedes an earlier vaguer one about the same item\n  It does NOT have to contradict the old entry. Any progression on the same item is an UPDATE.\n  A recurring behaviour observed AGAIN is also an UPDATE (record that it happened again).\n- *** THE NEW CONTENT MUST DIFFER SUBSTANTIVELY FROM THE ENTRY BEING UPDATED. *** If what you\n  would write is the same as the existing entry (same value, same status, same wording),\n  output NOOP - not UPDATE. An UPDATE that changes nothing is worse than no action: it buries\n  the real history under identical links.\n- entry_id MUST come from the CURRENT MEMORY list below.\n- Give ONLY the new state. How the old entry is preserved and chained is handled by the system.\n- Do NOT restate the old content (never write \"was X, now Y\" - write only Y).\n- Do NOT repeat owner / source / layer - the system reuses them from the updated entry.\n- DISAGREEMENT BETWEEN DIFFERENT PEOPLE is always separate ADDs. Never merge them via UPDATE.\n- ONE MATTER = ONE ENTRY. If a matter is ALREADY in CURRENT MEMORY - or you already wrote an\n  ADD for it EARLIER IN THIS SAME OUTPUT - never ADD a second entry for it: UPDATE it if its\n  state changed, otherwise output nothing. This holds for every kind of memory (not just\n  stances), for the GROUP row no matter who voices it this time, and however differently the\n  matter is worded. Merely re-stating / confirming / agreeing with something already listed is\n  not new state -> neither ADD nor UPDATE.\n\nGRANULARITY - PREFER FINE OVER COARSE (important)\n- One derived memory = ONE atomic fact / ONE stance / ONE observation.\n- If a person said N distinct things in this segment -> produce N entries, never one summary.\n  BAD : \"Mum's overall view on the 40th: wants a party, worried about budget, March is awkward\"\n  GOOD: three separate entries (celebration format / budget / timing)\n- But do NOT copy raw messages verbatim into derived memory (raw is already stored).\n\nCAPTURE BEHAVIOUR, NOT ONLY STATED FACTS\nExplicit facts (\"closed a Series A\", \"the code is 4-8-1-9\") are easy - you will not miss them.\nEqually important and far more often missed are IMPLICIT traits: a habit, an avoidance, a role\nsomeone keeps taking on, a subject someone never engages with, a way of replying that repeats,\nwho they defer to, what they joke about instead of answering.\n  e.g. \"deflects questions about his own career with a joke, then redirects to someone else\"\n       \"is always the one who handles logistics\" / \"never comments on anyone's promotion\"\nFile them as per_speaker_core (the person's own pattern) or per_speaker_profile (how others\nread them). Base them on what actually happened - describe the behaviour, never guess a motive.\nA pattern occurring AGAIN is NOT a duplicate, it is EVIDENCE: UPDATE that entry to record that\nit happened again (and when), instead of NOOP.\nSomeone who talks a lot but states few hard facts should still end up with entries - if a person\nspoke repeatedly this segment and you wrote nothing about them, you have missed their behaviour.\n\nOTHER CONSTRAINTS\n- owner = who the memory is ABOUT; source = who said/observed it.\n- If A claims something about B -> owner=B, source=A. Never file B's matter under A.\n- Invent nothing unsupported. Prefer faithful wording over paraphrase.\n- Write memory content in the SAME LANGUAGE as the conversation (so that retrieval embeddings\n  of memory and of raw text live in the same space).\n\nOutput JSON only, no explanation: {\"actions\":[ ... ]}"
+        },
+        {
+          "role": "user",
+          "content": "Speakers present: Alice, Bob\nSession: manual_update_alpha_s01    Time: 2026-08-10T10:00:00Z\n\nCURRENT MEMORY (ALL derived memory of this group; each slot shows its LATEST state only)\nformat: <entry_id> [layer|owner(by source)@date] content\n(no derived memory yet)\n\nNEW MESSAGES IN THIS SEGMENT\n[Alice @ 2026-08-10T10:00:00Z] Release 1.0 owner: Alice; first review is Friday.\n[Bob @ 2026-08-10T10:01:00Z] I will review the API checklist.\n[Alice @ 2026-08-10T10:02:00Z] The test environment is ready.\n[Bob @ 2026-08-10T10:03:00Z] I prefer concise checklists.\n[Alice @ 2026-08-10T10:04:00Z] No blocker is known yet.\n\nHARD OUTPUT LIMIT: return at most 10 actions. Stop after the last NOVEL action, close the JSON immediately, and NEVER repeat an action already emitted in this output.\n\nOutput {\"actions\":[ ... ]}"
+        }
+      ],
+      "pre_state_text": "(no derived memory yet)",
+      "actions": [
+        {
+          "action": "ADD",
+          "owner": "Alice",
+          "source": "Alice",
+          "layer": "per_speaker_core",
+          "utype": "decision",
+          "content": "Alice owns Release 1.0"
+        },
+        {
+          "action": "ADD",
+          "owner": "Bob",
+          "source": "Bob",
+          "layer": "per_speaker_profile",
+          "utype": "stance",
+          "content": "Bob prefers concise checklists"
+        }
+      ],
+      "target_text": "{\"actions\":[{\"action\":\"ADD\",\"owner\":\"Alice\",\"source\":\"Alice\",\"layer\":\"per_speaker_core\",\"utype\":\"decision\",\"content\":\"Alice owns Release 1.0\"},{\"action\":\"ADD\",\"owner\":\"Bob\",\"source\":\"Bob\",\"layer\":\"per_speaker_profile\",\"utype\":\"stance\",\"content\":\"Bob prefers concise checklists\"}]}",
+      "report": {
+        "json_valid": true,
+        "attempted": 2,
+        "applied": 2,
+        "noop": 0,
+        "errors": [],
+        "created_ids": [
+          "efa95903",
+          "da791b57"
+        ],
+        "updated_from": [],
+        "schema_valid_actions": 2,
+        "valid": true
+      },
+      "pre_state": {
+        "entries": [],
+        "heads": [],
+        "update_edges": [],
+        "roster": []
+      },
+      "post_state": {
+        "entries": [
+          {
+            "content": "Bob prefers concise checklists",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7,
+            "from_ids": [
+              "ecba36a5",
+              "d9f1dd95",
+              "64c5fe1e"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "da791b57"
+          },
+          {
+            "content": "Alice owns Release 1.0",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "3a79580b",
+              "64c5fe1e",
+              "43ab4375"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efa95903"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Bob prefers concise checklists",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7,
+            "from_ids": [
+              "ecba36a5",
+              "d9f1dd95",
+              "64c5fe1e"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "da791b57"
+          },
+          {
+            "content": "Alice owns Release 1.0",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "3a79580b",
+              "64c5fe1e",
+              "43ab4375"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efa95903"
+          }
+        ],
+        "update_edges": [],
+        "roster": [
+          "Alice",
+          "Bob"
+        ]
+      },
+      "segment_index": 0,
+      "source_session_index": 0,
+      "metadata": {
+        "source_topic": "manual_topic_manual_update_alpha_1"
+      }
+    },
+    {
+      "turn": 1,
+      "session_id": "manual_update_alpha_s02",
+      "ts": "2026-08-11T10:00:00Z",
+      "messages": [
+        {
+          "speaker": "Carol",
+          "content": "Carol will prepare the migration notes.",
+          "session": "manual_update_alpha_s02",
+          "ts": "2026-08-11T10:00:00Z",
+          "msg_id": "0",
+          "meta": {}
+        },
+        {
+          "speaker": "Alice",
+          "content": "The first review moved to Thursday.",
+          "session": "manual_update_alpha_s02",
+          "ts": "2026-08-11T10:01:00Z",
+          "msg_id": "1",
+          "meta": {}
+        },
+        {
+          "speaker": "Bob",
+          "content": "The API checklist now includes auth cases.",
+          "session": "manual_update_alpha_s02",
+          "ts": "2026-08-11T10:02:00Z",
+          "msg_id": "2",
+          "meta": {}
+        },
+        {
+          "speaker": "Carol",
+          "content": "Migration notes will cover rollback.",
+          "session": "manual_update_alpha_s02",
+          "ts": "2026-08-11T10:03:00Z",
+          "msg_id": "3",
+          "meta": {}
+        },
+        {
+          "speaker": "Alice",
+          "content": "Release scope stays limited to the API.",
+          "session": "manual_update_alpha_s02",
+          "ts": "2026-08-11T10:04:00Z",
+          "msg_id": "4",
+          "meta": {}
+        }
+      ],
+      "prompt": [
+        {
+          "role": "system",
+          "content": "You are an ONLINE memory manager for a MULTI-PARTY group chat, maintaining a speaker-indexed layered memory.\n\nPREMISE: every raw message of this segment is ALREADY stored VERBATIM (raw track). Your job is NOT to restate the raw text, but to add STRUCTURED derived memory on top of it, so that retrieval by person / relationship / time becomes possible.\n\nFOUR DERIVED LAYERS YOU MAY WRITE\n(raw messages are already written to per_speaker_episodic by the system - never produce that layer)\n- per_speaker_core     a person's STABLE fact / identity / hardened stance / RECURRING BEHAVIOUR\n- per_speaker_profile  how the group sees a person, or one person's OBSERVATION about another\n                       (\"A says B is X\" -> owner=B, source=A)\n- group_interaction    cross-speaker event / relationship / group DECISION   (owner=GROUP)\n                       *** WHO SAID IT IS NOT WHO IT BELONGS TO ***\n                       A decision announced by ONE person on behalf of the group is STILL a\n                       group decision: owner=GROUP, source=<the speaker>.\n                       Triggers: \"then it is settled\", \"so we agreed\", \"that is decided\",\n                       \"we will go with X\" -> owner=GROUP, layer=group_interaction,\n                       utype=decision. Do NOT file it as that speaker's personal preference.\n                       (A personal preference is \"I would rather X\"; a decision is \"X is settled\".)\n- group_insight        group NORM / consensus / meta-observation             (owner=GROUP)\n                       ONLY when the conversation gives evidence, note which member conspicuously\n                       relates to a norm differently. NEVER guess a member's compliance.\n\nACTIONS - exactly three, output nothing else\n  {\"action\":\"ADD\",\"owner\":\"<who it is ABOUT>\",\"source\":\"<who SAID/observed it>\",\"layer\":\"<one of the four above>\",\"utype\":\"fact|stance|observation|decision|relation\",\"content\":\"<the memory>\"}\n  {\"action\":\"UPDATE\",\"entry_id\":\"<existing entry being updated>\",\"content\":\"<the NEW, current state>\"}\n  {\"action\":\"NOOP\"}\n\nUPDATE BOUNDARIES (important)\n- *** BEFORE EVERY ADD, SEARCH CURRENT MEMORY FIRST *** Is there already an entry about this\n  same matter / same work item / same person-and-topic? If yes -> UPDATE that entry.\n  ADD is only for matters that NOTHING in CURRENT MEMORY covers yet.\n- Use UPDATE whenever an existing entry about the SAME MATTER has MOVED ON. Read this broadly:\n    * a number / percentage / progress advanced   e.g. 38% complete -> 97% complete\n    * a date or deadline shifted                  e.g. freeze 2025-06-20 -> 2025-06-27\n    * a status moved                              e.g. blocked -> resolved, planned -> shipped\n    * a stance / belief / plan changed\n    * a later, more specific statement supersedes an earlier vaguer one about the same item\n  It does NOT have to contradict the old entry. Any progression on the same item is an UPDATE.\n  A recurring behaviour observed AGAIN is also an UPDATE (record that it happened again).\n- *** THE NEW CONTENT MUST DIFFER SUBSTANTIVELY FROM THE ENTRY BEING UPDATED. *** If what you\n  would write is the same as the existing entry (same value, same status, same wording),\n  output NOOP - not UPDATE. An UPDATE that changes nothing is worse than no action: it buries\n  the real history under identical links.\n- entry_id MUST come from the CURRENT MEMORY list below.\n- Give ONLY the new state. How the old entry is preserved and chained is handled by the system.\n- Do NOT restate the old content (never write \"was X, now Y\" - write only Y).\n- Do NOT repeat owner / source / layer - the system reuses them from the updated entry.\n- DISAGREEMENT BETWEEN DIFFERENT PEOPLE is always separate ADDs. Never merge them via UPDATE.\n- ONE MATTER = ONE ENTRY. If a matter is ALREADY in CURRENT MEMORY - or you already wrote an\n  ADD for it EARLIER IN THIS SAME OUTPUT - never ADD a second entry for it: UPDATE it if its\n  state changed, otherwise output nothing. This holds for every kind of memory (not just\n  stances), for the GROUP row no matter who voices it this time, and however differently the\n  matter is worded. Merely re-stating / confirming / agreeing with something already listed is\n  not new state -> neither ADD nor UPDATE.\n\nGRANULARITY - PREFER FINE OVER COARSE (important)\n- One derived memory = ONE atomic fact / ONE stance / ONE observation.\n- If a person said N distinct things in this segment -> produce N entries, never one summary.\n  BAD : \"Mum's overall view on the 40th: wants a party, worried about budget, March is awkward\"\n  GOOD: three separate entries (celebration format / budget / timing)\n- But do NOT copy raw messages verbatim into derived memory (raw is already stored).\n\nCAPTURE BEHAVIOUR, NOT ONLY STATED FACTS\nExplicit facts (\"closed a Series A\", \"the code is 4-8-1-9\") are easy - you will not miss them.\nEqually important and far more often missed are IMPLICIT traits: a habit, an avoidance, a role\nsomeone keeps taking on, a subject someone never engages with, a way of replying that repeats,\nwho they defer to, what they joke about instead of answering.\n  e.g. \"deflects questions about his own career with a joke, then redirects to someone else\"\n       \"is always the one who handles logistics\" / \"never comments on anyone's promotion\"\nFile them as per_speaker_core (the person's own pattern) or per_speaker_profile (how others\nread them). Base them on what actually happened - describe the behaviour, never guess a motive.\nA pattern occurring AGAIN is NOT a duplicate, it is EVIDENCE: UPDATE that entry to record that\nit happened again (and when), instead of NOOP.\nSomeone who talks a lot but states few hard facts should still end up with entries - if a person\nspoke repeatedly this segment and you wrote nothing about them, you have missed their behaviour.\n\nOTHER CONSTRAINTS\n- owner = who the memory is ABOUT; source = who said/observed it.\n- If A claims something about B -> owner=B, source=A. Never file B's matter under A.\n- Invent nothing unsupported. Prefer faithful wording over paraphrase.\n- Write memory content in the SAME LANGUAGE as the conversation (so that retrieval embeddings\n  of memory and of raw text live in the same space).\n\nOutput JSON only, no explanation: {\"actions\":[ ... ]}"
+        },
+        {
+          "role": "user",
+          "content": "Speakers present: Alice, Bob, Carol\nSession: manual_update_alpha_s02    Time: 2026-08-11T10:00:00Z\n\nCURRENT MEMORY (ALL derived memory of this group; each slot shows its LATEST state only)\nformat: <entry_id> [layer|owner(by source)@date] content\n  [Alice]\n    efa95903 [core|Alice@2026-08-10] Alice owns Release 1.0\n  [Bob]\n    da791b57 [profile|Bob@2026-08-10] Bob prefers concise checklists\n\nNEW MESSAGES IN THIS SEGMENT\n[Carol @ 2026-08-11T10:00:00Z] Carol will prepare the migration notes.\n[Alice @ 2026-08-11T10:01:00Z] The first review moved to Thursday.\n[Bob @ 2026-08-11T10:02:00Z] The API checklist now includes auth cases.\n[Carol @ 2026-08-11T10:03:00Z] Migration notes will cover rollback.\n[Alice @ 2026-08-11T10:04:00Z] Release scope stays limited to the API.\n\nHARD OUTPUT LIMIT: return at most 10 actions. Stop after the last NOVEL action, close the JSON immediately, and NEVER repeat an action already emitted in this output.\n\nOutput {\"actions\":[ ... ]}"
+        }
+      ],
+      "pre_state_text": "  [Alice]\n    efa95903 [core|Alice@2026-08-10] Alice owns Release 1.0\n  [Bob]\n    da791b57 [profile|Bob@2026-08-10] Bob prefers concise checklists",
+      "actions": [
+        {
+          "action": "ADD",
+          "owner": "Carol",
+          "source": "Carol",
+          "layer": "per_speaker_core",
+          "utype": "fact",
+          "content": "Carol prepares migration notes"
+        },
+        {
+          "action": "ADD",
+          "owner": "GROUP",
+          "source": "Alice",
+          "layer": "group_interaction",
+          "utype": "decision",
+          "content": "The team schedules the first review for Friday"
+        }
+      ],
+      "target_text": "{\"actions\":[{\"action\":\"ADD\",\"owner\":\"Carol\",\"source\":\"Carol\",\"layer\":\"per_speaker_core\",\"utype\":\"fact\",\"content\":\"Carol prepares migration notes\"},{\"action\":\"ADD\",\"owner\":\"GROUP\",\"source\":\"Alice\",\"layer\":\"group_interaction\",\"utype\":\"decision\",\"content\":\"The team schedules the first review for Friday\"}]}",
+      "report": {
+        "json_valid": true,
+        "attempted": 2,
+        "applied": 2,
+        "noop": 0,
+        "errors": [],
+        "created_ids": [
+          "6731e6b1",
+          "3fd049fb"
+        ],
+        "updated_from": [],
+        "schema_valid_actions": 2,
+        "valid": true
+      },
+      "pre_state": {
+        "entries": [
+          {
+            "content": "Bob prefers concise checklists",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7,
+            "from_ids": [
+              "ecba36a5",
+              "d9f1dd95",
+              "64c5fe1e"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "da791b57"
+          },
+          {
+            "content": "Alice owns Release 1.0",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "3a79580b",
+              "64c5fe1e",
+              "43ab4375"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efa95903"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Bob prefers concise checklists",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7,
+            "from_ids": [
+              "ecba36a5",
+              "d9f1dd95",
+              "64c5fe1e"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "da791b57"
+          },
+          {
+            "content": "Alice owns Release 1.0",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "3a79580b",
+              "64c5fe1e",
+              "43ab4375"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efa95903"
+          }
+        ],
+        "update_edges": [],
+        "roster": [
+          "Alice",
+          "Bob"
+        ]
+      },
+      "post_state": {
+        "entries": [
+          {
+            "content": "Bob prefers concise checklists",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7,
+            "from_ids": [
+              "ecba36a5",
+              "d9f1dd95",
+              "64c5fe1e"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "da791b57"
+          },
+          {
+            "content": "Alice owns Release 1.0",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "3a79580b",
+              "64c5fe1e",
+              "43ab4375"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efa95903"
+          },
+          {
+            "content": "The team schedules the first review for Friday",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "d59fa35c",
+              "189e4b89",
+              "29407194"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "3fd049fb"
+          },
+          {
+            "content": "Carol prepares migration notes",
+            "owner": "Carol",
+            "source": "Carol",
+            "layer": "per_speaker_core",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e922d269",
+              "96e12e1d",
+              "189e4b89"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "6731e6b1"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Bob prefers concise checklists",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7,
+            "from_ids": [
+              "ecba36a5",
+              "d9f1dd95",
+              "64c5fe1e"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "da791b57"
+          },
+          {
+            "content": "Alice owns Release 1.0",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "3a79580b",
+              "64c5fe1e",
+              "43ab4375"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efa95903"
+          },
+          {
+            "content": "The team schedules the first review for Friday",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "d59fa35c",
+              "189e4b89",
+              "29407194"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "3fd049fb"
+          },
+          {
+            "content": "Carol prepares migration notes",
+            "owner": "Carol",
+            "source": "Carol",
+            "layer": "per_speaker_core",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e922d269",
+              "96e12e1d",
+              "189e4b89"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "6731e6b1"
+          }
+        ],
+        "update_edges": [],
+        "roster": [
+          "Alice",
+          "Bob",
+          "Carol"
+        ]
+      },
+      "segment_index": 0,
+      "source_session_index": 1,
+      "metadata": {
+        "source_topic": "manual_topic_manual_update_alpha_2"
+      }
+    },
+    {
+      "turn": 2,
+      "session_id": "manual_update_alpha_s03",
+      "ts": "2026-08-12T10:00:00Z",
+      "messages": [
+        {
+          "speaker": "Alice",
+          "content": "The review is complete; two auth cases failed.",
+          "session": "manual_update_alpha_s03",
+          "ts": "2026-08-12T10:00:00Z",
+          "msg_id": "0",
+          "meta": {}
+        },
+        {
+          "speaker": "Bob",
+          "content": "I will retest auth failures.",
+          "session": "manual_update_alpha_s03",
+          "ts": "2026-08-12T10:01:00Z",
+          "msg_id": "1",
+          "meta": {}
+        },
+        {
+          "speaker": "Carol",
+          "content": "Rollback notes are drafted.",
+          "session": "manual_update_alpha_s03",
+          "ts": "2026-08-12T10:02:00Z",
+          "msg_id": "2",
+          "meta": {}
+        },
+        {
+          "speaker": "Alice",
+          "content": "The deadline is Friday again.",
+          "session": "manual_update_alpha_s03",
+          "ts": "2026-08-12T10:03:00Z",
+          "msg_id": "3",
+          "meta": {}
+        },
+        {
+          "speaker": "Bob",
+          "content": "The checklist should keep the auth section first.",
+          "session": "manual_update_alpha_s03",
+          "ts": "2026-08-12T10:04:00Z",
+          "msg_id": "4",
+          "meta": {}
+        }
+      ],
+      "prompt": [
+        {
+          "role": "system",
+          "content": "You are an ONLINE memory manager for a MULTI-PARTY group chat, maintaining a speaker-indexed layered memory.\n\nPREMISE: every raw message of this segment is ALREADY stored VERBATIM (raw track). Your job is NOT to restate the raw text, but to add STRUCTURED derived memory on top of it, so that retrieval by person / relationship / time becomes possible.\n\nFOUR DERIVED LAYERS YOU MAY WRITE\n(raw messages are already written to per_speaker_episodic by the system - never produce that layer)\n- per_speaker_core     a person's STABLE fact / identity / hardened stance / RECURRING BEHAVIOUR\n- per_speaker_profile  how the group sees a person, or one person's OBSERVATION about another\n                       (\"A says B is X\" -> owner=B, source=A)\n- group_interaction    cross-speaker event / relationship / group DECISION   (owner=GROUP)\n                       *** WHO SAID IT IS NOT WHO IT BELONGS TO ***\n                       A decision announced by ONE person on behalf of the group is STILL a\n                       group decision: owner=GROUP, source=<the speaker>.\n                       Triggers: \"then it is settled\", \"so we agreed\", \"that is decided\",\n                       \"we will go with X\" -> owner=GROUP, layer=group_interaction,\n                       utype=decision. Do NOT file it as that speaker's personal preference.\n                       (A personal preference is \"I would rather X\"; a decision is \"X is settled\".)\n- group_insight        group NORM / consensus / meta-observation             (owner=GROUP)\n                       ONLY when the conversation gives evidence, note which member conspicuously\n                       relates to a norm differently. NEVER guess a member's compliance.\n\nACTIONS - exactly three, output nothing else\n  {\"action\":\"ADD\",\"owner\":\"<who it is ABOUT>\",\"source\":\"<who SAID/observed it>\",\"layer\":\"<one of the four above>\",\"utype\":\"fact|stance|observation|decision|relation\",\"content\":\"<the memory>\"}\n  {\"action\":\"UPDATE\",\"entry_id\":\"<existing entry being updated>\",\"content\":\"<the NEW, current state>\"}\n  {\"action\":\"NOOP\"}\n\nUPDATE BOUNDARIES (important)\n- *** BEFORE EVERY ADD, SEARCH CURRENT MEMORY FIRST *** Is there already an entry about this\n  same matter / same work item / same person-and-topic? If yes -> UPDATE that entry.\n  ADD is only for matters that NOTHING in CURRENT MEMORY covers yet.\n- Use UPDATE whenever an existing entry about the SAME MATTER has MOVED ON. Read this broadly:\n    * a number / percentage / progress advanced   e.g. 38% complete -> 97% complete\n    * a date or deadline shifted                  e.g. freeze 2025-06-20 -> 2025-06-27\n    * a status moved                              e.g. blocked -> resolved, planned -> shipped\n    * a stance / belief / plan changed\n    * a later, more specific statement supersedes an earlier vaguer one about the same item\n  It does NOT have to contradict the old entry. Any progression on the same item is an UPDATE.\n  A recurring behaviour observed AGAIN is also an UPDATE (record that it happened again).\n- *** THE NEW CONTENT MUST DIFFER SUBSTANTIVELY FROM THE ENTRY BEING UPDATED. *** If what you\n  would write is the same as the existing entry (same value, same status, same wording),\n  output NOOP - not UPDATE. An UPDATE that changes nothing is worse than no action: it buries\n  the real history under identical links.\n- entry_id MUST come from the CURRENT MEMORY list below.\n- Give ONLY the new state. How the old entry is preserved and chained is handled by the system.\n- Do NOT restate the old content (never write \"was X, now Y\" - write only Y).\n- Do NOT repeat owner / source / layer - the system reuses them from the updated entry.\n- DISAGREEMENT BETWEEN DIFFERENT PEOPLE is always separate ADDs. Never merge them via UPDATE.\n- ONE MATTER = ONE ENTRY. If a matter is ALREADY in CURRENT MEMORY - or you already wrote an\n  ADD for it EARLIER IN THIS SAME OUTPUT - never ADD a second entry for it: UPDATE it if its\n  state changed, otherwise output nothing. This holds for every kind of memory (not just\n  stances), for the GROUP row no matter who voices it this time, and however differently the\n  matter is worded. Merely re-stating / confirming / agreeing with something already listed is\n  not new state -> neither ADD nor UPDATE.\n\nGRANULARITY - PREFER FINE OVER COARSE (important)\n- One derived memory = ONE atomic fact / ONE stance / ONE observation.\n- If a person said N distinct things in this segment -> produce N entries, never one summary.\n  BAD : \"Mum's overall view on the 40th: wants a party, worried about budget, March is awkward\"\n  GOOD: three separate entries (celebration format / budget / timing)\n- But do NOT copy raw messages verbatim into derived memory (raw is already stored).\n\nCAPTURE BEHAVIOUR, NOT ONLY STATED FACTS\nExplicit facts (\"closed a Series A\", \"the code is 4-8-1-9\") are easy - you will not miss them.\nEqually important and far more often missed are IMPLICIT traits: a habit, an avoidance, a role\nsomeone keeps taking on, a subject someone never engages with, a way of replying that repeats,\nwho they defer to, what they joke about instead of answering.\n  e.g. \"deflects questions about his own career with a joke, then redirects to someone else\"\n       \"is always the one who handles logistics\" / \"never comments on anyone's promotion\"\nFile them as per_speaker_core (the person's own pattern) or per_speaker_profile (how others\nread them). Base them on what actually happened - describe the behaviour, never guess a motive.\nA pattern occurring AGAIN is NOT a duplicate, it is EVIDENCE: UPDATE that entry to record that\nit happened again (and when), instead of NOOP.\nSomeone who talks a lot but states few hard facts should still end up with entries - if a person\nspoke repeatedly this segment and you wrote nothing about them, you have missed their behaviour.\n\nOTHER CONSTRAINTS\n- owner = who the memory is ABOUT; source = who said/observed it.\n- If A claims something about B -> owner=B, source=A. Never file B's matter under A.\n- Invent nothing unsupported. Prefer faithful wording over paraphrase.\n- Write memory content in the SAME LANGUAGE as the conversation (so that retrieval embeddings\n  of memory and of raw text live in the same space).\n\nOutput JSON only, no explanation: {\"actions\":[ ... ]}"
+        },
+        {
+          "role": "user",
+          "content": "Speakers present: Alice, Bob, Carol\nSession: manual_update_alpha_s03    Time: 2026-08-12T10:00:00Z\n\nCURRENT MEMORY (ALL derived memory of this group; each slot shows its LATEST state only)\nformat: <entry_id> [layer|owner(by source)@date] content\n  [Alice]\n    efa95903 [core|Alice@2026-08-10] Alice owns Release 1.0\n  [Bob]\n    da791b57 [profile|Bob@2026-08-10] Bob prefers concise checklists\n  [Carol]\n    6731e6b1 [core|Carol@2026-08-11] Carol prepares migration notes\n  [GROUP]\n    3fd049fb [g-interaction|GROUP(by Alice)@2026-08-11] The team schedules the first review for Friday\n\nNEW MESSAGES IN THIS SEGMENT\n[Alice @ 2026-08-12T10:00:00Z] The review is complete; two auth cases failed.\n[Bob @ 2026-08-12T10:01:00Z] I will retest auth failures.\n[Carol @ 2026-08-12T10:02:00Z] Rollback notes are drafted.\n[Alice @ 2026-08-12T10:03:00Z] The deadline is Friday again.\n[Bob @ 2026-08-12T10:04:00Z] The checklist should keep the auth section first.\n\nHARD OUTPUT LIMIT: return at most 10 actions. Stop after the last NOVEL action, close the JSON immediately, and NEVER repeat an action already emitted in this output.\n\nOutput {\"actions\":[ ... ]}"
+        }
+      ],
+      "pre_state_text": "  [Alice]\n    efa95903 [core|Alice@2026-08-10] Alice owns Release 1.0\n  [Bob]\n    da791b57 [profile|Bob@2026-08-10] Bob prefers concise checklists\n  [Carol]\n    6731e6b1 [core|Carol@2026-08-11] Carol prepares migration notes\n  [GROUP]\n    3fd049fb [g-interaction|GROUP(by Alice)@2026-08-11] The team schedules the first review for Friday",
+      "actions": [
+        {
+          "action": "UPDATE",
+          "entry_id": "efa95903",
+          "content": "Alice owns Release 1.0 and the review"
+        },
+        {
+          "action": "UPDATE",
+          "entry_id": "3fd049fb",
+          "content": "The team moves the first review to Thursday"
+        }
+      ],
+      "target_text": "{\"actions\":[{\"action\":\"UPDATE\",\"entry_id\":\"efa95903\",\"content\":\"Alice owns Release 1.0 and the review\"},{\"action\":\"UPDATE\",\"entry_id\":\"3fd049fb\",\"content\":\"The team moves the first review to Thursday\"}]}",
+      "report": {
+        "json_valid": true,
+        "attempted": 2,
+        "applied": 2,
+        "noop": 0,
+        "errors": [],
+        "created_ids": [
+          "0e0a2f9f",
+          "2c3f0959"
+        ],
+        "updated_from": [
+          "efa95903",
+          "3fd049fb"
+        ],
+        "schema_valid_actions": 2,
+        "valid": true
+      },
+      "pre_state": {
+        "entries": [
+          {
+            "content": "Bob prefers concise checklists",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7,
+            "from_ids": [
+              "ecba36a5",
+              "d9f1dd95",
+              "64c5fe1e"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "da791b57"
+          },
+          {
+            "content": "Alice owns Release 1.0",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "3a79580b",
+              "64c5fe1e",
+              "43ab4375"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efa95903"
+          },
+          {
+            "content": "The team schedules the first review for Friday",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "d59fa35c",
+              "189e4b89",
+              "29407194"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "3fd049fb"
+          },
+          {
+            "content": "Carol prepares migration notes",
+            "owner": "Carol",
+            "source": "Carol",
+            "layer": "per_speaker_core",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e922d269",
+              "96e12e1d",
+              "189e4b89"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "6731e6b1"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Bob prefers concise checklists",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7,
+            "from_ids": [
+              "ecba36a5",
+              "d9f1dd95",
+              "64c5fe1e"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "da791b57"
+          },
+          {
+            "content": "Alice owns Release 1.0",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "3a79580b",
+              "64c5fe1e",
+              "43ab4375"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efa95903"
+          },
+          {
+            "content": "The team schedules the first review for Friday",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "d59fa35c",
+              "189e4b89",
+              "29407194"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "3fd049fb"
+          },
+          {
+            "content": "Carol prepares migration notes",
+            "owner": "Carol",
+            "source": "Carol",
+            "layer": "per_speaker_core",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e922d269",
+              "96e12e1d",
+              "189e4b89"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "6731e6b1"
+          }
+        ],
+        "update_edges": [],
+        "roster": [
+          "Alice",
+          "Bob",
+          "Carol"
+        ]
+      },
+      "post_state": {
+        "entries": [
+          {
+            "content": "Bob prefers concise checklists",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7,
+            "from_ids": [
+              "ecba36a5",
+              "d9f1dd95",
+              "64c5fe1e"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "da791b57"
+          },
+          {
+            "content": "Alice owns Release 1.0",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "3a79580b",
+              "64c5fe1e",
+              "43ab4375"
+            ],
+            "links": [],
+            "superseded_by": "0e0a2f9f",
+            "entry_id": "efa95903"
+          },
+          {
+            "content": "The team schedules the first review for Friday",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "d59fa35c",
+              "189e4b89",
+              "29407194"
+            ],
+            "links": [],
+            "superseded_by": "2c3f0959",
+            "entry_id": "3fd049fb"
+          },
+          {
+            "content": "Carol prepares migration notes",
+            "owner": "Carol",
+            "source": "Carol",
+            "layer": "per_speaker_core",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e922d269",
+              "96e12e1d",
+              "189e4b89"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "6731e6b1"
+          },
+          {
+            "content": "Alice owns Release 1.0 and the review",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "00069393",
+              "cf943aaf",
+              "a3c6773f"
+            ],
+            "links": [
+              "efa95903"
+            ],
+            "superseded_by": "",
+            "entry_id": "0e0a2f9f"
+          },
+          {
+            "content": "The team moves the first review to Thursday",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "00069393",
+              "44a0007c",
+              "cf943aaf"
+            ],
+            "links": [
+              "3fd049fb"
+            ],
+            "superseded_by": "",
+            "entry_id": "2c3f0959"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Bob prefers concise checklists",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7,
+            "from_ids": [
+              "ecba36a5",
+              "d9f1dd95",
+              "64c5fe1e"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "da791b57"
+          },
+          {
+            "content": "Carol prepares migration notes",
+            "owner": "Carol",
+            "source": "Carol",
+            "layer": "per_speaker_core",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e922d269",
+              "96e12e1d",
+              "189e4b89"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "6731e6b1"
+          },
+          {
+            "content": "Alice owns Release 1.0 and the review",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "00069393",
+              "cf943aaf",
+              "a3c6773f"
+            ],
+            "links": [
+              "efa95903"
+            ],
+            "superseded_by": "",
+            "entry_id": "0e0a2f9f"
+          },
+          {
+            "content": "The team moves the first review to Thursday",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "00069393",
+              "44a0007c",
+              "cf943aaf"
+            ],
+            "links": [
+              "3fd049fb"
+            ],
+            "superseded_by": "",
+            "entry_id": "2c3f0959"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "efa95903",
+            "new": "0e0a2f9f"
+          },
+          {
+            "old": "3fd049fb",
+            "new": "2c3f0959"
+          }
+        ],
+        "roster": [
+          "Alice",
+          "Bob",
+          "Carol"
+        ]
+      },
+      "segment_index": 0,
+      "source_session_index": 2,
+      "metadata": {
+        "source_topic": "manual_topic_manual_update_alpha_3"
+      }
+    },
+    {
+      "turn": 3,
+      "session_id": "manual_update_alpha_s04",
+      "ts": "2026-08-13T10:00:00Z",
+      "messages": [
+        {
+          "speaker": "Carol",
+          "content": "The migration dry run passed.",
+          "session": "manual_update_alpha_s04",
+          "ts": "2026-08-13T10:00:00Z",
+          "msg_id": "0",
+          "meta": {}
+        },
+        {
+          "speaker": "Alice",
+          "content": "The release candidate is ready for QA.",
+          "session": "manual_update_alpha_s04",
+          "ts": "2026-08-13T10:01:00Z",
+          "msg_id": "1",
+          "meta": {}
+        },
+        {
+          "speaker": "Bob",
+          "content": "QA will retest the two auth cases.",
+          "session": "manual_update_alpha_s04",
+          "ts": "2026-08-13T10:02:00Z",
+          "msg_id": "2",
+          "meta": {}
+        },
+        {
+          "speaker": "Carol",
+          "content": "Rollback is tested in staging.",
+          "session": "manual_update_alpha_s04",
+          "ts": "2026-08-13T10:03:00Z",
+          "msg_id": "3",
+          "meta": {}
+        },
+        {
+          "speaker": "Alice",
+          "content": "We should ship only after QA sign-off.",
+          "session": "manual_update_alpha_s04",
+          "ts": "2026-08-13T10:04:00Z",
+          "msg_id": "4",
+          "meta": {}
+        }
+      ],
+      "prompt": [
+        {
+          "role": "system",
+          "content": "You are an ONLINE memory manager for a MULTI-PARTY group chat, maintaining a speaker-indexed layered memory.\n\nPREMISE: every raw message of this segment is ALREADY stored VERBATIM (raw track). Your job is NOT to restate the raw text, but to add STRUCTURED derived memory on top of it, so that retrieval by person / relationship / time becomes possible.\n\nFOUR DERIVED LAYERS YOU MAY WRITE\n(raw messages are already written to per_speaker_episodic by the system - never produce that layer)\n- per_speaker_core     a person's STABLE fact / identity / hardened stance / RECURRING BEHAVIOUR\n- per_speaker_profile  how the group sees a person, or one person's OBSERVATION about another\n                       (\"A says B is X\" -> owner=B, source=A)\n- group_interaction    cross-speaker event / relationship / group DECISION   (owner=GROUP)\n                       *** WHO SAID IT IS NOT WHO IT BELONGS TO ***\n                       A decision announced by ONE person on behalf of the group is STILL a\n                       group decision: owner=GROUP, source=<the speaker>.\n                       Triggers: \"then it is settled\", \"so we agreed\", \"that is decided\",\n                       \"we will go with X\" -> owner=GROUP, layer=group_interaction,\n                       utype=decision. Do NOT file it as that speaker's personal preference.\n                       (A personal preference is \"I would rather X\"; a decision is \"X is settled\".)\n- group_insight        group NORM / consensus / meta-observation             (owner=GROUP)\n                       ONLY when the conversation gives evidence, note which member conspicuously\n                       relates to a norm differently. NEVER guess a member's compliance.\n\nACTIONS - exactly three, output nothing else\n  {\"action\":\"ADD\",\"owner\":\"<who it is ABOUT>\",\"source\":\"<who SAID/observed it>\",\"layer\":\"<one of the four above>\",\"utype\":\"fact|stance|observation|decision|relation\",\"content\":\"<the memory>\"}\n  {\"action\":\"UPDATE\",\"entry_id\":\"<existing entry being updated>\",\"content\":\"<the NEW, current state>\"}\n  {\"action\":\"NOOP\"}\n\nUPDATE BOUNDARIES (important)\n- *** BEFORE EVERY ADD, SEARCH CURRENT MEMORY FIRST *** Is there already an entry about this\n  same matter / same work item / same person-and-topic? If yes -> UPDATE that entry.\n  ADD is only for matters that NOTHING in CURRENT MEMORY covers yet.\n- Use UPDATE whenever an existing entry about the SAME MATTER has MOVED ON. Read this broadly:\n    * a number / percentage / progress advanced   e.g. 38% complete -> 97% complete\n    * a date or deadline shifted                  e.g. freeze 2025-06-20 -> 2025-06-27\n    * a status moved                              e.g. blocked -> resolved, planned -> shipped\n    * a stance / belief / plan changed\n    * a later, more specific statement supersedes an earlier vaguer one about the same item\n  It does NOT have to contradict the old entry. Any progression on the same item is an UPDATE.\n  A recurring behaviour observed AGAIN is also an UPDATE (record that it happened again).\n- *** THE NEW CONTENT MUST DIFFER SUBSTANTIVELY FROM THE ENTRY BEING UPDATED. *** If what you\n  would write is the same as the existing entry (same value, same status, same wording),\n  output NOOP - not UPDATE. An UPDATE that changes nothing is worse than no action: it buries\n  the real history under identical links.\n- entry_id MUST come from the CURRENT MEMORY list below.\n- Give ONLY the new state. How the old entry is preserved and chained is handled by the system.\n- Do NOT restate the old content (never write \"was X, now Y\" - write only Y).\n- Do NOT repeat owner / source / layer - the system reuses them from the updated entry.\n- DISAGREEMENT BETWEEN DIFFERENT PEOPLE is always separate ADDs. Never merge them via UPDATE.\n- ONE MATTER = ONE ENTRY. If a matter is ALREADY in CURRENT MEMORY - or you already wrote an\n  ADD for it EARLIER IN THIS SAME OUTPUT - never ADD a second entry for it: UPDATE it if its\n  state changed, otherwise output nothing. This holds for every kind of memory (not just\n  stances), for the GROUP row no matter who voices it this time, and however differently the\n  matter is worded. Merely re-stating / confirming / agreeing with something already listed is\n  not new state -> neither ADD nor UPDATE.\n\nGRANULARITY - PREFER FINE OVER COARSE (important)\n- One derived memory = ONE atomic fact / ONE stance / ONE observation.\n- If a person said N distinct things in this segment -> produce N entries, never one summary.\n  BAD : \"Mum's overall view on the 40th: wants a party, worried about budget, March is awkward\"\n  GOOD: three separate entries (celebration format / budget / timing)\n- But do NOT copy raw messages verbatim into derived memory (raw is already stored).\n\nCAPTURE BEHAVIOUR, NOT ONLY STATED FACTS\nExplicit facts (\"closed a Series A\", \"the code is 4-8-1-9\") are easy - you will not miss them.\nEqually important and far more often missed are IMPLICIT traits: a habit, an avoidance, a role\nsomeone keeps taking on, a subject someone never engages with, a way of replying that repeats,\nwho they defer to, what they joke about instead of answering.\n  e.g. \"deflects questions about his own career with a joke, then redirects to someone else\"\n       \"is always the one who handles logistics\" / \"never comments on anyone's promotion\"\nFile them as per_speaker_core (the person's own pattern) or per_speaker_profile (how others\nread them). Base them on what actually happened - describe the behaviour, never guess a motive.\nA pattern occurring AGAIN is NOT a duplicate, it is EVIDENCE: UPDATE that entry to record that\nit happened again (and when), instead of NOOP.\nSomeone who talks a lot but states few hard facts should still end up with entries - if a person\nspoke repeatedly this segment and you wrote nothing about them, you have missed their behaviour.\n\nOTHER CONSTRAINTS\n- owner = who the memory is ABOUT; source = who said/observed it.\n- If A claims something about B -> owner=B, source=A. Never file B's matter under A.\n- Invent nothing unsupported. Prefer faithful wording over paraphrase.\n- Write memory content in the SAME LANGUAGE as the conversation (so that retrieval embeddings\n  of memory and of raw text live in the same space).\n\nOutput JSON only, no explanation: {\"actions\":[ ... ]}"
+        },
+        {
+          "role": "user",
+          "content": "Speakers present: Alice, Bob, Carol\nSession: manual_update_alpha_s04    Time: 2026-08-13T10:00:00Z\n\nCURRENT MEMORY (ALL derived memory of this group; each slot shows its LATEST state only)\nformat: <entry_id> [layer|owner(by source)@date] content\n  [Alice]\n    0e0a2f9f [core|Alice@2026-08-12] Alice owns Release 1.0 and the review\n  [Bob]\n    da791b57 [profile|Bob@2026-08-10] Bob prefers concise checklists\n  [Carol]\n    6731e6b1 [core|Carol@2026-08-11] Carol prepares migration notes\n  [GROUP]\n    2c3f0959 [g-interaction|GROUP(by Alice)@2026-08-12] The team moves the first review to Thursday\n\nNEW MESSAGES IN THIS SEGMENT\n[Carol @ 2026-08-13T10:00:00Z] The migration dry run passed.\n[Alice @ 2026-08-13T10:01:00Z] The release candidate is ready for QA.\n[Bob @ 2026-08-13T10:02:00Z] QA will retest the two auth cases.\n[Carol @ 2026-08-13T10:03:00Z] Rollback is tested in staging.\n[Alice @ 2026-08-13T10:04:00Z] We should ship only after QA sign-off.\n\nHARD OUTPUT LIMIT: return at most 10 actions. Stop after the last NOVEL action, close the JSON immediately, and NEVER repeat an action already emitted in this output.\n\nOutput {\"actions\":[ ... ]}"
+        }
+      ],
+      "pre_state_text": "  [Alice]\n    0e0a2f9f [core|Alice@2026-08-12] Alice owns Release 1.0 and the review\n  [Bob]\n    da791b57 [profile|Bob@2026-08-10] Bob prefers concise checklists\n  [Carol]\n    6731e6b1 [core|Carol@2026-08-11] Carol prepares migration notes\n  [GROUP]\n    2c3f0959 [g-interaction|GROUP(by Alice)@2026-08-12] The team moves the first review to Thursday",
+      "actions": [
+        {
+          "action": "UPDATE",
+          "entry_id": "6731e6b1",
+          "content": "Carol prepares migration notes with rollback"
+        },
+        {
+          "action": "UPDATE",
+          "entry_id": "da791b57",
+          "content": "Bob prefers concise checklists with auth cases"
+        }
+      ],
+      "target_text": "{\"actions\":[{\"action\":\"UPDATE\",\"entry_id\":\"6731e6b1\",\"content\":\"Carol prepares migration notes with rollback\"},{\"action\":\"UPDATE\",\"entry_id\":\"da791b57\",\"content\":\"Bob prefers concise checklists with auth cases\"}]}",
+      "report": {
+        "json_valid": true,
+        "attempted": 2,
+        "applied": 2,
+        "noop": 0,
+        "errors": [],
+        "created_ids": [
+          "a509f249",
+          "9d1c08de"
+        ],
+        "updated_from": [
+          "6731e6b1",
+          "da791b57"
+        ],
+        "schema_valid_actions": 2,
+        "valid": true
+      },
+      "pre_state": {
+        "entries": [
+          {
+            "content": "Bob prefers concise checklists",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7,
+            "from_ids": [
+              "ecba36a5",
+              "d9f1dd95",
+              "64c5fe1e"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "da791b57"
+          },
+          {
+            "content": "Alice owns Release 1.0",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "3a79580b",
+              "64c5fe1e",
+              "43ab4375"
+            ],
+            "links": [],
+            "superseded_by": "0e0a2f9f",
+            "entry_id": "efa95903"
+          },
+          {
+            "content": "The team schedules the first review for Friday",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "d59fa35c",
+              "189e4b89",
+              "29407194"
+            ],
+            "links": [],
+            "superseded_by": "2c3f0959",
+            "entry_id": "3fd049fb"
+          },
+          {
+            "content": "Carol prepares migration notes",
+            "owner": "Carol",
+            "source": "Carol",
+            "layer": "per_speaker_core",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e922d269",
+              "96e12e1d",
+              "189e4b89"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "6731e6b1"
+          },
+          {
+            "content": "Alice owns Release 1.0 and the review",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "00069393",
+              "cf943aaf",
+              "a3c6773f"
+            ],
+            "links": [
+              "efa95903"
+            ],
+            "superseded_by": "",
+            "entry_id": "0e0a2f9f"
+          },
+          {
+            "content": "The team moves the first review to Thursday",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "00069393",
+              "44a0007c",
+              "cf943aaf"
+            ],
+            "links": [
+              "3fd049fb"
+            ],
+            "superseded_by": "",
+            "entry_id": "2c3f0959"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Bob prefers concise checklists",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7,
+            "from_ids": [
+              "ecba36a5",
+              "d9f1dd95",
+              "64c5fe1e"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "da791b57"
+          },
+          {
+            "content": "Carol prepares migration notes",
+            "owner": "Carol",
+            "source": "Carol",
+            "layer": "per_speaker_core",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e922d269",
+              "96e12e1d",
+              "189e4b89"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "6731e6b1"
+          },
+          {
+            "content": "Alice owns Release 1.0 and the review",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "00069393",
+              "cf943aaf",
+              "a3c6773f"
+            ],
+            "links": [
+              "efa95903"
+            ],
+            "superseded_by": "",
+            "entry_id": "0e0a2f9f"
+          },
+          {
+            "content": "The team moves the first review to Thursday",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "00069393",
+              "44a0007c",
+              "cf943aaf"
+            ],
+            "links": [
+              "3fd049fb"
+            ],
+            "superseded_by": "",
+            "entry_id": "2c3f0959"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "efa95903",
+            "new": "0e0a2f9f"
+          },
+          {
+            "old": "3fd049fb",
+            "new": "2c3f0959"
+          }
+        ],
+        "roster": [
+          "Alice",
+          "Bob",
+          "Carol"
+        ]
+      },
+      "post_state": {
+        "entries": [
+          {
+            "content": "Bob prefers concise checklists",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7,
+            "from_ids": [
+              "ecba36a5",
+              "d9f1dd95",
+              "64c5fe1e"
+            ],
+            "links": [],
+            "superseded_by": "9d1c08de",
+            "entry_id": "da791b57"
+          },
+          {
+            "content": "Alice owns Release 1.0",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "3a79580b",
+              "64c5fe1e",
+              "43ab4375"
+            ],
+            "links": [],
+            "superseded_by": "0e0a2f9f",
+            "entry_id": "efa95903"
+          },
+          {
+            "content": "The team schedules the first review for Friday",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "d59fa35c",
+              "189e4b89",
+              "29407194"
+            ],
+            "links": [],
+            "superseded_by": "2c3f0959",
+            "entry_id": "3fd049fb"
+          },
+          {
+            "content": "Carol prepares migration notes",
+            "owner": "Carol",
+            "source": "Carol",
+            "layer": "per_speaker_core",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e922d269",
+              "96e12e1d",
+              "189e4b89"
+            ],
+            "links": [],
+            "superseded_by": "a509f249",
+            "entry_id": "6731e6b1"
+          },
+          {
+            "content": "Alice owns Release 1.0 and the review",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "00069393",
+              "cf943aaf",
+              "a3c6773f"
+            ],
+            "links": [
+              "efa95903"
+            ],
+            "superseded_by": "",
+            "entry_id": "0e0a2f9f"
+          },
+          {
+            "content": "The team moves the first review to Thursday",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "00069393",
+              "44a0007c",
+              "cf943aaf"
+            ],
+            "links": [
+              "3fd049fb"
+            ],
+            "superseded_by": "",
+            "entry_id": "2c3f0959"
+          },
+          {
+            "content": "Bob prefers concise checklists with auth cases",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "28350d8f",
+              "6dcb1c67",
+              "982f0447"
+            ],
+            "links": [
+              "da791b57"
+            ],
+            "superseded_by": "",
+            "entry_id": "9d1c08de"
+          },
+          {
+            "content": "Carol prepares migration notes with rollback",
+            "owner": "Carol",
+            "source": "Carol",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "6dcb1c67",
+              "982f0447",
+              "28350d8f"
+            ],
+            "links": [
+              "6731e6b1"
+            ],
+            "superseded_by": "",
+            "entry_id": "a509f249"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Alice owns Release 1.0 and the review",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "00069393",
+              "cf943aaf",
+              "a3c6773f"
+            ],
+            "links": [
+              "efa95903"
+            ],
+            "superseded_by": "",
+            "entry_id": "0e0a2f9f"
+          },
+          {
+            "content": "The team moves the first review to Thursday",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "00069393",
+              "44a0007c",
+              "cf943aaf"
+            ],
+            "links": [
+              "3fd049fb"
+            ],
+            "superseded_by": "",
+            "entry_id": "2c3f0959"
+          },
+          {
+            "content": "Bob prefers concise checklists with auth cases",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "28350d8f",
+              "6dcb1c67",
+              "982f0447"
+            ],
+            "links": [
+              "da791b57"
+            ],
+            "superseded_by": "",
+            "entry_id": "9d1c08de"
+          },
+          {
+            "content": "Carol prepares migration notes with rollback",
+            "owner": "Carol",
+            "source": "Carol",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "6dcb1c67",
+              "982f0447",
+              "28350d8f"
+            ],
+            "links": [
+              "6731e6b1"
+            ],
+            "superseded_by": "",
+            "entry_id": "a509f249"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "da791b57",
+            "new": "9d1c08de"
+          },
+          {
+            "old": "efa95903",
+            "new": "0e0a2f9f"
+          },
+          {
+            "old": "3fd049fb",
+            "new": "2c3f0959"
+          },
+          {
+            "old": "6731e6b1",
+            "new": "a509f249"
+          }
+        ],
+        "roster": [
+          "Alice",
+          "Bob",
+          "Carol"
+        ]
+      },
+      "segment_index": 0,
+      "source_session_index": 3,
+      "metadata": {
+        "source_topic": "manual_topic_manual_update_alpha_4"
+      }
+    },
+    {
+      "turn": 4,
+      "session_id": "manual_update_alpha_s05",
+      "ts": "2026-08-14T10:00:00Z",
+      "messages": [
+        {
+          "speaker": "Alice",
+          "content": "QA fixed both auth cases.",
+          "session": "manual_update_alpha_s05",
+          "ts": "2026-08-14T10:00:00Z",
+          "msg_id": "0",
+          "meta": {}
+        },
+        {
+          "speaker": "Bob",
+          "content": "The checklist is now approved.",
+          "session": "manual_update_alpha_s05",
+          "ts": "2026-08-14T10:01:00Z",
+          "msg_id": "1",
+          "meta": {}
+        },
+        {
+          "speaker": "Carol",
+          "content": "Migration notes include the tested rollback.",
+          "session": "manual_update_alpha_s05",
+          "ts": "2026-08-14T10:02:00Z",
+          "msg_id": "2",
+          "meta": {}
+        },
+        {
+          "speaker": "Alice",
+          "content": "The release candidate is approved.",
+          "session": "manual_update_alpha_s05",
+          "ts": "2026-08-14T10:03:00Z",
+          "msg_id": "3",
+          "meta": {}
+        },
+        {
+          "speaker": "Bob",
+          "content": "I support shipping Friday.",
+          "session": "manual_update_alpha_s05",
+          "ts": "2026-08-14T10:04:00Z",
+          "msg_id": "4",
+          "meta": {}
+        }
+      ],
+      "prompt": [
+        {
+          "role": "system",
+          "content": "You are an ONLINE memory manager for a MULTI-PARTY group chat, maintaining a speaker-indexed layered memory.\n\nPREMISE: every raw message of this segment is ALREADY stored VERBATIM (raw track). Your job is NOT to restate the raw text, but to add STRUCTURED derived memory on top of it, so that retrieval by person / relationship / time becomes possible.\n\nFOUR DERIVED LAYERS YOU MAY WRITE\n(raw messages are already written to per_speaker_episodic by the system - never produce that layer)\n- per_speaker_core     a person's STABLE fact / identity / hardened stance / RECURRING BEHAVIOUR\n- per_speaker_profile  how the group sees a person, or one person's OBSERVATION about another\n                       (\"A says B is X\" -> owner=B, source=A)\n- group_interaction    cross-speaker event / relationship / group DECISION   (owner=GROUP)\n                       *** WHO SAID IT IS NOT WHO IT BELONGS TO ***\n                       A decision announced by ONE person on behalf of the group is STILL a\n                       group decision: owner=GROUP, source=<the speaker>.\n                       Triggers: \"then it is settled\", \"so we agreed\", \"that is decided\",\n                       \"we will go with X\" -> owner=GROUP, layer=group_interaction,\n                       utype=decision. Do NOT file it as that speaker's personal preference.\n                       (A personal preference is \"I would rather X\"; a decision is \"X is settled\".)\n- group_insight        group NORM / consensus / meta-observation             (owner=GROUP)\n                       ONLY when the conversation gives evidence, note which member conspicuously\n                       relates to a norm differently. NEVER guess a member's compliance.\n\nACTIONS - exactly three, output nothing else\n  {\"action\":\"ADD\",\"owner\":\"<who it is ABOUT>\",\"source\":\"<who SAID/observed it>\",\"layer\":\"<one of the four above>\",\"utype\":\"fact|stance|observation|decision|relation\",\"content\":\"<the memory>\"}\n  {\"action\":\"UPDATE\",\"entry_id\":\"<existing entry being updated>\",\"content\":\"<the NEW, current state>\"}\n  {\"action\":\"NOOP\"}\n\nUPDATE BOUNDARIES (important)\n- *** BEFORE EVERY ADD, SEARCH CURRENT MEMORY FIRST *** Is there already an entry about this\n  same matter / same work item / same person-and-topic? If yes -> UPDATE that entry.\n  ADD is only for matters that NOTHING in CURRENT MEMORY covers yet.\n- Use UPDATE whenever an existing entry about the SAME MATTER has MOVED ON. Read this broadly:\n    * a number / percentage / progress advanced   e.g. 38% complete -> 97% complete\n    * a date or deadline shifted                  e.g. freeze 2025-06-20 -> 2025-06-27\n    * a status moved                              e.g. blocked -> resolved, planned -> shipped\n    * a stance / belief / plan changed\n    * a later, more specific statement supersedes an earlier vaguer one about the same item\n  It does NOT have to contradict the old entry. Any progression on the same item is an UPDATE.\n  A recurring behaviour observed AGAIN is also an UPDATE (record that it happened again).\n- *** THE NEW CONTENT MUST DIFFER SUBSTANTIVELY FROM THE ENTRY BEING UPDATED. *** If what you\n  would write is the same as the existing entry (same value, same status, same wording),\n  output NOOP - not UPDATE. An UPDATE that changes nothing is worse than no action: it buries\n  the real history under identical links.\n- entry_id MUST come from the CURRENT MEMORY list below.\n- Give ONLY the new state. How the old entry is preserved and chained is handled by the system.\n- Do NOT restate the old content (never write \"was X, now Y\" - write only Y).\n- Do NOT repeat owner / source / layer - the system reuses them from the updated entry.\n- DISAGREEMENT BETWEEN DIFFERENT PEOPLE is always separate ADDs. Never merge them via UPDATE.\n- ONE MATTER = ONE ENTRY. If a matter is ALREADY in CURRENT MEMORY - or you already wrote an\n  ADD for it EARLIER IN THIS SAME OUTPUT - never ADD a second entry for it: UPDATE it if its\n  state changed, otherwise output nothing. This holds for every kind of memory (not just\n  stances), for the GROUP row no matter who voices it this time, and however differently the\n  matter is worded. Merely re-stating / confirming / agreeing with something already listed is\n  not new state -> neither ADD nor UPDATE.\n\nGRANULARITY - PREFER FINE OVER COARSE (important)\n- One derived memory = ONE atomic fact / ONE stance / ONE observation.\n- If a person said N distinct things in this segment -> produce N entries, never one summary.\n  BAD : \"Mum's overall view on the 40th: wants a party, worried about budget, March is awkward\"\n  GOOD: three separate entries (celebration format / budget / timing)\n- But do NOT copy raw messages verbatim into derived memory (raw is already stored).\n\nCAPTURE BEHAVIOUR, NOT ONLY STATED FACTS\nExplicit facts (\"closed a Series A\", \"the code is 4-8-1-9\") are easy - you will not miss them.\nEqually important and far more often missed are IMPLICIT traits: a habit, an avoidance, a role\nsomeone keeps taking on, a subject someone never engages with, a way of replying that repeats,\nwho they defer to, what they joke about instead of answering.\n  e.g. \"deflects questions about his own career with a joke, then redirects to someone else\"\n       \"is always the one who handles logistics\" / \"never comments on anyone's promotion\"\nFile them as per_speaker_core (the person's own pattern) or per_speaker_profile (how others\nread them). Base them on what actually happened - describe the behaviour, never guess a motive.\nA pattern occurring AGAIN is NOT a duplicate, it is EVIDENCE: UPDATE that entry to record that\nit happened again (and when), instead of NOOP.\nSomeone who talks a lot but states few hard facts should still end up with entries - if a person\nspoke repeatedly this segment and you wrote nothing about them, you have missed their behaviour.\n\nOTHER CONSTRAINTS\n- owner = who the memory is ABOUT; source = who said/observed it.\n- If A claims something about B -> owner=B, source=A. Never file B's matter under A.\n- Invent nothing unsupported. Prefer faithful wording over paraphrase.\n- Write memory content in the SAME LANGUAGE as the conversation (so that retrieval embeddings\n  of memory and of raw text live in the same space).\n\nOutput JSON only, no explanation: {\"actions\":[ ... ]}"
+        },
+        {
+          "role": "user",
+          "content": "Speakers present: Alice, Bob, Carol\nSession: manual_update_alpha_s05    Time: 2026-08-14T10:00:00Z\n\nCURRENT MEMORY (ALL derived memory of this group; each slot shows its LATEST state only)\nformat: <entry_id> [layer|owner(by source)@date] content\n  [Alice]\n    0e0a2f9f [core|Alice@2026-08-12] Alice owns Release 1.0 and the review\n  [Bob]\n    9d1c08de [profile|Bob@2026-08-13] Bob prefers concise checklists with auth cases\n  [Carol]\n    a509f249 [core|Carol@2026-08-13] Carol prepares migration notes with rollback\n  [GROUP]\n    2c3f0959 [g-interaction|GROUP(by Alice)@2026-08-12] The team moves the first review to Thursday\n\nNEW MESSAGES IN THIS SEGMENT\n[Alice @ 2026-08-14T10:00:00Z] QA fixed both auth cases.\n[Bob @ 2026-08-14T10:01:00Z] The checklist is now approved.\n[Carol @ 2026-08-14T10:02:00Z] Migration notes include the tested rollback.\n[Alice @ 2026-08-14T10:03:00Z] The release candidate is approved.\n[Bob @ 2026-08-14T10:04:00Z] I support shipping Friday.\n\nHARD OUTPUT LIMIT: return at most 10 actions. Stop after the last NOVEL action, close the JSON immediately, and NEVER repeat an action already emitted in this output.\n\nOutput {\"actions\":[ ... ]}"
+        }
+      ],
+      "pre_state_text": "  [Alice]\n    0e0a2f9f [core|Alice@2026-08-12] Alice owns Release 1.0 and the review\n  [Bob]\n    9d1c08de [profile|Bob@2026-08-13] Bob prefers concise checklists with auth cases\n  [Carol]\n    a509f249 [core|Carol@2026-08-13] Carol prepares migration notes with rollback\n  [GROUP]\n    2c3f0959 [g-interaction|GROUP(by Alice)@2026-08-12] The team moves the first review to Thursday",
+      "actions": [
+        {
+          "action": "UPDATE",
+          "entry_id": "0e0a2f9f",
+          "content": "Alice owns the approved Release 1.0 candidate"
+        }
+      ],
+      "target_text": "{\"actions\":[{\"action\":\"UPDATE\",\"entry_id\":\"0e0a2f9f\",\"content\":\"Alice owns the approved Release 1.0 candidate\"}]}",
+      "report": {
+        "json_valid": true,
+        "attempted": 1,
+        "applied": 1,
+        "noop": 0,
+        "errors": [],
+        "created_ids": [
+          "57e08784"
+        ],
+        "updated_from": [
+          "0e0a2f9f"
+        ],
+        "schema_valid_actions": 1,
+        "valid": true
+      },
+      "pre_state": {
+        "entries": [
+          {
+            "content": "Bob prefers concise checklists",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7,
+            "from_ids": [
+              "ecba36a5",
+              "d9f1dd95",
+              "64c5fe1e"
+            ],
+            "links": [],
+            "superseded_by": "9d1c08de",
+            "entry_id": "da791b57"
+          },
+          {
+            "content": "Alice owns Release 1.0",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "3a79580b",
+              "64c5fe1e",
+              "43ab4375"
+            ],
+            "links": [],
+            "superseded_by": "0e0a2f9f",
+            "entry_id": "efa95903"
+          },
+          {
+            "content": "The team schedules the first review for Friday",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "d59fa35c",
+              "189e4b89",
+              "29407194"
+            ],
+            "links": [],
+            "superseded_by": "2c3f0959",
+            "entry_id": "3fd049fb"
+          },
+          {
+            "content": "Carol prepares migration notes",
+            "owner": "Carol",
+            "source": "Carol",
+            "layer": "per_speaker_core",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e922d269",
+              "96e12e1d",
+              "189e4b89"
+            ],
+            "links": [],
+            "superseded_by": "a509f249",
+            "entry_id": "6731e6b1"
+          },
+          {
+            "content": "Alice owns Release 1.0 and the review",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "00069393",
+              "cf943aaf",
+              "a3c6773f"
+            ],
+            "links": [
+              "efa95903"
+            ],
+            "superseded_by": "",
+            "entry_id": "0e0a2f9f"
+          },
+          {
+            "content": "The team moves the first review to Thursday",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "00069393",
+              "44a0007c",
+              "cf943aaf"
+            ],
+            "links": [
+              "3fd049fb"
+            ],
+            "superseded_by": "",
+            "entry_id": "2c3f0959"
+          },
+          {
+            "content": "Bob prefers concise checklists with auth cases",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "28350d8f",
+              "6dcb1c67",
+              "982f0447"
+            ],
+            "links": [
+              "da791b57"
+            ],
+            "superseded_by": "",
+            "entry_id": "9d1c08de"
+          },
+          {
+            "content": "Carol prepares migration notes with rollback",
+            "owner": "Carol",
+            "source": "Carol",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "6dcb1c67",
+              "982f0447",
+              "28350d8f"
+            ],
+            "links": [
+              "6731e6b1"
+            ],
+            "superseded_by": "",
+            "entry_id": "a509f249"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Alice owns Release 1.0 and the review",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "00069393",
+              "cf943aaf",
+              "a3c6773f"
+            ],
+            "links": [
+              "efa95903"
+            ],
+            "superseded_by": "",
+            "entry_id": "0e0a2f9f"
+          },
+          {
+            "content": "The team moves the first review to Thursday",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "00069393",
+              "44a0007c",
+              "cf943aaf"
+            ],
+            "links": [
+              "3fd049fb"
+            ],
+            "superseded_by": "",
+            "entry_id": "2c3f0959"
+          },
+          {
+            "content": "Bob prefers concise checklists with auth cases",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "28350d8f",
+              "6dcb1c67",
+              "982f0447"
+            ],
+            "links": [
+              "da791b57"
+            ],
+            "superseded_by": "",
+            "entry_id": "9d1c08de"
+          },
+          {
+            "content": "Carol prepares migration notes with rollback",
+            "owner": "Carol",
+            "source": "Carol",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "6dcb1c67",
+              "982f0447",
+              "28350d8f"
+            ],
+            "links": [
+              "6731e6b1"
+            ],
+            "superseded_by": "",
+            "entry_id": "a509f249"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "da791b57",
+            "new": "9d1c08de"
+          },
+          {
+            "old": "efa95903",
+            "new": "0e0a2f9f"
+          },
+          {
+            "old": "3fd049fb",
+            "new": "2c3f0959"
+          },
+          {
+            "old": "6731e6b1",
+            "new": "a509f249"
+          }
+        ],
+        "roster": [
+          "Alice",
+          "Bob",
+          "Carol"
+        ]
+      },
+      "post_state": {
+        "entries": [
+          {
+            "content": "Bob prefers concise checklists",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7,
+            "from_ids": [
+              "ecba36a5",
+              "d9f1dd95",
+              "64c5fe1e"
+            ],
+            "links": [],
+            "superseded_by": "9d1c08de",
+            "entry_id": "da791b57"
+          },
+          {
+            "content": "Alice owns Release 1.0",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "3a79580b",
+              "64c5fe1e",
+              "43ab4375"
+            ],
+            "links": [],
+            "superseded_by": "0e0a2f9f",
+            "entry_id": "efa95903"
+          },
+          {
+            "content": "The team schedules the first review for Friday",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "d59fa35c",
+              "189e4b89",
+              "29407194"
+            ],
+            "links": [],
+            "superseded_by": "2c3f0959",
+            "entry_id": "3fd049fb"
+          },
+          {
+            "content": "Carol prepares migration notes",
+            "owner": "Carol",
+            "source": "Carol",
+            "layer": "per_speaker_core",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e922d269",
+              "96e12e1d",
+              "189e4b89"
+            ],
+            "links": [],
+            "superseded_by": "a509f249",
+            "entry_id": "6731e6b1"
+          },
+          {
+            "content": "Alice owns Release 1.0 and the review",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "00069393",
+              "cf943aaf",
+              "a3c6773f"
+            ],
+            "links": [
+              "efa95903"
+            ],
+            "superseded_by": "57e08784",
+            "entry_id": "0e0a2f9f"
+          },
+          {
+            "content": "The team moves the first review to Thursday",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "00069393",
+              "44a0007c",
+              "cf943aaf"
+            ],
+            "links": [
+              "3fd049fb"
+            ],
+            "superseded_by": "",
+            "entry_id": "2c3f0959"
+          },
+          {
+            "content": "Bob prefers concise checklists with auth cases",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "28350d8f",
+              "6dcb1c67",
+              "982f0447"
+            ],
+            "links": [
+              "da791b57"
+            ],
+            "superseded_by": "",
+            "entry_id": "9d1c08de"
+          },
+          {
+            "content": "Carol prepares migration notes with rollback",
+            "owner": "Carol",
+            "source": "Carol",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "6dcb1c67",
+              "982f0447",
+              "28350d8f"
+            ],
+            "links": [
+              "6731e6b1"
+            ],
+            "superseded_by": "",
+            "entry_id": "a509f249"
+          },
+          {
+            "content": "Alice owns the approved Release 1.0 candidate",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 4,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-14T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "d3fa5be4",
+              "bd571e31",
+              "16a24758"
+            ],
+            "links": [
+              "0e0a2f9f"
+            ],
+            "superseded_by": "",
+            "entry_id": "57e08784"
+          }
+        ],
+        "heads": [
+          {
+            "content": "The team moves the first review to Thursday",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "00069393",
+              "44a0007c",
+              "cf943aaf"
+            ],
+            "links": [
+              "3fd049fb"
+            ],
+            "superseded_by": "",
+            "entry_id": "2c3f0959"
+          },
+          {
+            "content": "Bob prefers concise checklists with auth cases",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "28350d8f",
+              "6dcb1c67",
+              "982f0447"
+            ],
+            "links": [
+              "da791b57"
+            ],
+            "superseded_by": "",
+            "entry_id": "9d1c08de"
+          },
+          {
+            "content": "Carol prepares migration notes with rollback",
+            "owner": "Carol",
+            "source": "Carol",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "6dcb1c67",
+              "982f0447",
+              "28350d8f"
+            ],
+            "links": [
+              "6731e6b1"
+            ],
+            "superseded_by": "",
+            "entry_id": "a509f249"
+          },
+          {
+            "content": "Alice owns the approved Release 1.0 candidate",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 4,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-14T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "d3fa5be4",
+              "bd571e31",
+              "16a24758"
+            ],
+            "links": [
+              "0e0a2f9f"
+            ],
+            "superseded_by": "",
+            "entry_id": "57e08784"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "da791b57",
+            "new": "9d1c08de"
+          },
+          {
+            "old": "efa95903",
+            "new": "0e0a2f9f"
+          },
+          {
+            "old": "3fd049fb",
+            "new": "2c3f0959"
+          },
+          {
+            "old": "6731e6b1",
+            "new": "a509f249"
+          },
+          {
+            "old": "0e0a2f9f",
+            "new": "57e08784"
+          }
+        ],
+        "roster": [
+          "Alice",
+          "Bob",
+          "Carol"
+        ]
+      },
+      "segment_index": 0,
+      "source_session_index": 4,
+      "metadata": {
+        "source_topic": "manual_topic_manual_update_alpha_5"
+      }
+    },
+    {
+      "turn": 5,
+      "session_id": "manual_update_alpha_s06",
+      "ts": "2026-08-15T10:00:00Z",
+      "messages": [
+        {
+          "speaker": "Alice",
+          "content": "Release 1.0 shipped Friday.",
+          "session": "manual_update_alpha_s06",
+          "ts": "2026-08-15T10:00:00Z",
+          "msg_id": "0",
+          "meta": {}
+        },
+        {
+          "speaker": "Bob",
+          "content": "Post-release monitoring starts today.",
+          "session": "manual_update_alpha_s06",
+          "ts": "2026-08-15T10:01:00Z",
+          "msg_id": "1",
+          "meta": {}
+        },
+        {
+          "speaker": "Carol",
+          "content": "No rollback was needed.",
+          "session": "manual_update_alpha_s06",
+          "ts": "2026-08-15T10:02:00Z",
+          "msg_id": "2",
+          "meta": {}
+        },
+        {
+          "speaker": "Alice",
+          "content": "The API scope was unchanged.",
+          "session": "manual_update_alpha_s06",
+          "ts": "2026-08-15T10:03:00Z",
+          "msg_id": "3",
+          "meta": {}
+        },
+        {
+          "speaker": "Bob",
+          "content": "The final checklist is archived.",
+          "session": "manual_update_alpha_s06",
+          "ts": "2026-08-15T10:04:00Z",
+          "msg_id": "4",
+          "meta": {}
+        }
+      ],
+      "prompt": [
+        {
+          "role": "system",
+          "content": "You are an ONLINE memory manager for a MULTI-PARTY group chat, maintaining a speaker-indexed layered memory.\n\nPREMISE: every raw message of this segment is ALREADY stored VERBATIM (raw track). Your job is NOT to restate the raw text, but to add STRUCTURED derived memory on top of it, so that retrieval by person / relationship / time becomes possible.\n\nFOUR DERIVED LAYERS YOU MAY WRITE\n(raw messages are already written to per_speaker_episodic by the system - never produce that layer)\n- per_speaker_core     a person's STABLE fact / identity / hardened stance / RECURRING BEHAVIOUR\n- per_speaker_profile  how the group sees a person, or one person's OBSERVATION about another\n                       (\"A says B is X\" -> owner=B, source=A)\n- group_interaction    cross-speaker event / relationship / group DECISION   (owner=GROUP)\n                       *** WHO SAID IT IS NOT WHO IT BELONGS TO ***\n                       A decision announced by ONE person on behalf of the group is STILL a\n                       group decision: owner=GROUP, source=<the speaker>.\n                       Triggers: \"then it is settled\", \"so we agreed\", \"that is decided\",\n                       \"we will go with X\" -> owner=GROUP, layer=group_interaction,\n                       utype=decision. Do NOT file it as that speaker's personal preference.\n                       (A personal preference is \"I would rather X\"; a decision is \"X is settled\".)\n- group_insight        group NORM / consensus / meta-observation             (owner=GROUP)\n                       ONLY when the conversation gives evidence, note which member conspicuously\n                       relates to a norm differently. NEVER guess a member's compliance.\n\nACTIONS - exactly three, output nothing else\n  {\"action\":\"ADD\",\"owner\":\"<who it is ABOUT>\",\"source\":\"<who SAID/observed it>\",\"layer\":\"<one of the four above>\",\"utype\":\"fact|stance|observation|decision|relation\",\"content\":\"<the memory>\"}\n  {\"action\":\"UPDATE\",\"entry_id\":\"<existing entry being updated>\",\"content\":\"<the NEW, current state>\"}\n  {\"action\":\"NOOP\"}\n\nUPDATE BOUNDARIES (important)\n- *** BEFORE EVERY ADD, SEARCH CURRENT MEMORY FIRST *** Is there already an entry about this\n  same matter / same work item / same person-and-topic? If yes -> UPDATE that entry.\n  ADD is only for matters that NOTHING in CURRENT MEMORY covers yet.\n- Use UPDATE whenever an existing entry about the SAME MATTER has MOVED ON. Read this broadly:\n    * a number / percentage / progress advanced   e.g. 38% complete -> 97% complete\n    * a date or deadline shifted                  e.g. freeze 2025-06-20 -> 2025-06-27\n    * a status moved                              e.g. blocked -> resolved, planned -> shipped\n    * a stance / belief / plan changed\n    * a later, more specific statement supersedes an earlier vaguer one about the same item\n  It does NOT have to contradict the old entry. Any progression on the same item is an UPDATE.\n  A recurring behaviour observed AGAIN is also an UPDATE (record that it happened again).\n- *** THE NEW CONTENT MUST DIFFER SUBSTANTIVELY FROM THE ENTRY BEING UPDATED. *** If what you\n  would write is the same as the existing entry (same value, same status, same wording),\n  output NOOP - not UPDATE. An UPDATE that changes nothing is worse than no action: it buries\n  the real history under identical links.\n- entry_id MUST come from the CURRENT MEMORY list below.\n- Give ONLY the new state. How the old entry is preserved and chained is handled by the system.\n- Do NOT restate the old content (never write \"was X, now Y\" - write only Y).\n- Do NOT repeat owner / source / layer - the system reuses them from the updated entry.\n- DISAGREEMENT BETWEEN DIFFERENT PEOPLE is always separate ADDs. Never merge them via UPDATE.\n- ONE MATTER = ONE ENTRY. If a matter is ALREADY in CURRENT MEMORY - or you already wrote an\n  ADD for it EARLIER IN THIS SAME OUTPUT - never ADD a second entry for it: UPDATE it if its\n  state changed, otherwise output nothing. This holds for every kind of memory (not just\n  stances), for the GROUP row no matter who voices it this time, and however differently the\n  matter is worded. Merely re-stating / confirming / agreeing with something already listed is\n  not new state -> neither ADD nor UPDATE.\n\nGRANULARITY - PREFER FINE OVER COARSE (important)\n- One derived memory = ONE atomic fact / ONE stance / ONE observation.\n- If a person said N distinct things in this segment -> produce N entries, never one summary.\n  BAD : \"Mum's overall view on the 40th: wants a party, worried about budget, March is awkward\"\n  GOOD: three separate entries (celebration format / budget / timing)\n- But do NOT copy raw messages verbatim into derived memory (raw is already stored).\n\nCAPTURE BEHAVIOUR, NOT ONLY STATED FACTS\nExplicit facts (\"closed a Series A\", \"the code is 4-8-1-9\") are easy - you will not miss them.\nEqually important and far more often missed are IMPLICIT traits: a habit, an avoidance, a role\nsomeone keeps taking on, a subject someone never engages with, a way of replying that repeats,\nwho they defer to, what they joke about instead of answering.\n  e.g. \"deflects questions about his own career with a joke, then redirects to someone else\"\n       \"is always the one who handles logistics\" / \"never comments on anyone's promotion\"\nFile them as per_speaker_core (the person's own pattern) or per_speaker_profile (how others\nread them). Base them on what actually happened - describe the behaviour, never guess a motive.\nA pattern occurring AGAIN is NOT a duplicate, it is EVIDENCE: UPDATE that entry to record that\nit happened again (and when), instead of NOOP.\nSomeone who talks a lot but states few hard facts should still end up with entries - if a person\nspoke repeatedly this segment and you wrote nothing about them, you have missed their behaviour.\n\nOTHER CONSTRAINTS\n- owner = who the memory is ABOUT; source = who said/observed it.\n- If A claims something about B -> owner=B, source=A. Never file B's matter under A.\n- Invent nothing unsupported. Prefer faithful wording over paraphrase.\n- Write memory content in the SAME LANGUAGE as the conversation (so that retrieval embeddings\n  of memory and of raw text live in the same space).\n\nOutput JSON only, no explanation: {\"actions\":[ ... ]}"
+        },
+        {
+          "role": "user",
+          "content": "Speakers present: Alice, Bob, Carol\nSession: manual_update_alpha_s06    Time: 2026-08-15T10:00:00Z\n\nCURRENT MEMORY (ALL derived memory of this group; each slot shows its LATEST state only)\nformat: <entry_id> [layer|owner(by source)@date] content\n  [Alice]\n    57e08784 [core|Alice@2026-08-14] Alice owns the approved Release 1.0 candidate\n  [Bob]\n    9d1c08de [profile|Bob@2026-08-13] Bob prefers concise checklists with auth cases\n  [Carol]\n    a509f249 [core|Carol@2026-08-13] Carol prepares migration notes with rollback\n  [GROUP]\n    2c3f0959 [g-interaction|GROUP(by Alice)@2026-08-12] The team moves the first review to Thursday\n\nNEW MESSAGES IN THIS SEGMENT\n[Alice @ 2026-08-15T10:00:00Z] Release 1.0 shipped Friday.\n[Bob @ 2026-08-15T10:01:00Z] Post-release monitoring starts today.\n[Carol @ 2026-08-15T10:02:00Z] No rollback was needed.\n[Alice @ 2026-08-15T10:03:00Z] The API scope was unchanged.\n[Bob @ 2026-08-15T10:04:00Z] The final checklist is archived.\n\nHARD OUTPUT LIMIT: return at most 10 actions. Stop after the last NOVEL action, close the JSON immediately, and NEVER repeat an action already emitted in this output.\n\nOutput {\"actions\":[ ... ]}"
+        }
+      ],
+      "pre_state_text": "  [Alice]\n    57e08784 [core|Alice@2026-08-14] Alice owns the approved Release 1.0 candidate\n  [Bob]\n    9d1c08de [profile|Bob@2026-08-13] Bob prefers concise checklists with auth cases\n  [Carol]\n    a509f249 [core|Carol@2026-08-13] Carol prepares migration notes with rollback\n  [GROUP]\n    2c3f0959 [g-interaction|GROUP(by Alice)@2026-08-12] The team moves the first review to Thursday",
+      "actions": [
+        {
+          "action": "UPDATE",
+          "entry_id": "2c3f0959",
+          "content": "The team ships Release 1.0 on Friday after QA sign-off"
+        }
+      ],
+      "target_text": "{\"actions\":[{\"action\":\"UPDATE\",\"entry_id\":\"2c3f0959\",\"content\":\"The team ships Release 1.0 on Friday after QA sign-off\"}]}",
+      "report": {
+        "json_valid": true,
+        "attempted": 1,
+        "applied": 1,
+        "noop": 0,
+        "errors": [],
+        "created_ids": [
+          "b94fea9b"
+        ],
+        "updated_from": [
+          "2c3f0959"
+        ],
+        "schema_valid_actions": 1,
+        "valid": true
+      },
+      "pre_state": {
+        "entries": [
+          {
+            "content": "Bob prefers concise checklists",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7,
+            "from_ids": [
+              "ecba36a5",
+              "d9f1dd95",
+              "64c5fe1e"
+            ],
+            "links": [],
+            "superseded_by": "9d1c08de",
+            "entry_id": "da791b57"
+          },
+          {
+            "content": "Alice owns Release 1.0",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "3a79580b",
+              "64c5fe1e",
+              "43ab4375"
+            ],
+            "links": [],
+            "superseded_by": "0e0a2f9f",
+            "entry_id": "efa95903"
+          },
+          {
+            "content": "The team schedules the first review for Friday",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "d59fa35c",
+              "189e4b89",
+              "29407194"
+            ],
+            "links": [],
+            "superseded_by": "2c3f0959",
+            "entry_id": "3fd049fb"
+          },
+          {
+            "content": "Carol prepares migration notes",
+            "owner": "Carol",
+            "source": "Carol",
+            "layer": "per_speaker_core",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e922d269",
+              "96e12e1d",
+              "189e4b89"
+            ],
+            "links": [],
+            "superseded_by": "a509f249",
+            "entry_id": "6731e6b1"
+          },
+          {
+            "content": "Alice owns Release 1.0 and the review",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "00069393",
+              "cf943aaf",
+              "a3c6773f"
+            ],
+            "links": [
+              "efa95903"
+            ],
+            "superseded_by": "57e08784",
+            "entry_id": "0e0a2f9f"
+          },
+          {
+            "content": "The team moves the first review to Thursday",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "00069393",
+              "44a0007c",
+              "cf943aaf"
+            ],
+            "links": [
+              "3fd049fb"
+            ],
+            "superseded_by": "",
+            "entry_id": "2c3f0959"
+          },
+          {
+            "content": "Bob prefers concise checklists with auth cases",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "28350d8f",
+              "6dcb1c67",
+              "982f0447"
+            ],
+            "links": [
+              "da791b57"
+            ],
+            "superseded_by": "",
+            "entry_id": "9d1c08de"
+          },
+          {
+            "content": "Carol prepares migration notes with rollback",
+            "owner": "Carol",
+            "source": "Carol",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "6dcb1c67",
+              "982f0447",
+              "28350d8f"
+            ],
+            "links": [
+              "6731e6b1"
+            ],
+            "superseded_by": "",
+            "entry_id": "a509f249"
+          },
+          {
+            "content": "Alice owns the approved Release 1.0 candidate",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 4,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-14T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "d3fa5be4",
+              "bd571e31",
+              "16a24758"
+            ],
+            "links": [
+              "0e0a2f9f"
+            ],
+            "superseded_by": "",
+            "entry_id": "57e08784"
+          }
+        ],
+        "heads": [
+          {
+            "content": "The team moves the first review to Thursday",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "00069393",
+              "44a0007c",
+              "cf943aaf"
+            ],
+            "links": [
+              "3fd049fb"
+            ],
+            "superseded_by": "",
+            "entry_id": "2c3f0959"
+          },
+          {
+            "content": "Bob prefers concise checklists with auth cases",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "28350d8f",
+              "6dcb1c67",
+              "982f0447"
+            ],
+            "links": [
+              "da791b57"
+            ],
+            "superseded_by": "",
+            "entry_id": "9d1c08de"
+          },
+          {
+            "content": "Carol prepares migration notes with rollback",
+            "owner": "Carol",
+            "source": "Carol",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "6dcb1c67",
+              "982f0447",
+              "28350d8f"
+            ],
+            "links": [
+              "6731e6b1"
+            ],
+            "superseded_by": "",
+            "entry_id": "a509f249"
+          },
+          {
+            "content": "Alice owns the approved Release 1.0 candidate",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 4,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-14T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "d3fa5be4",
+              "bd571e31",
+              "16a24758"
+            ],
+            "links": [
+              "0e0a2f9f"
+            ],
+            "superseded_by": "",
+            "entry_id": "57e08784"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "da791b57",
+            "new": "9d1c08de"
+          },
+          {
+            "old": "efa95903",
+            "new": "0e0a2f9f"
+          },
+          {
+            "old": "3fd049fb",
+            "new": "2c3f0959"
+          },
+          {
+            "old": "6731e6b1",
+            "new": "a509f249"
+          },
+          {
+            "old": "0e0a2f9f",
+            "new": "57e08784"
+          }
+        ],
+        "roster": [
+          "Alice",
+          "Bob",
+          "Carol"
+        ]
+      },
+      "post_state": {
+        "entries": [
+          {
+            "content": "Bob prefers concise checklists",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7,
+            "from_ids": [
+              "ecba36a5",
+              "d9f1dd95",
+              "64c5fe1e"
+            ],
+            "links": [],
+            "superseded_by": "9d1c08de",
+            "entry_id": "da791b57"
+          },
+          {
+            "content": "Alice owns Release 1.0",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "3a79580b",
+              "64c5fe1e",
+              "43ab4375"
+            ],
+            "links": [],
+            "superseded_by": "0e0a2f9f",
+            "entry_id": "efa95903"
+          },
+          {
+            "content": "The team schedules the first review for Friday",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "d59fa35c",
+              "189e4b89",
+              "29407194"
+            ],
+            "links": [],
+            "superseded_by": "2c3f0959",
+            "entry_id": "3fd049fb"
+          },
+          {
+            "content": "Carol prepares migration notes",
+            "owner": "Carol",
+            "source": "Carol",
+            "layer": "per_speaker_core",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e922d269",
+              "96e12e1d",
+              "189e4b89"
+            ],
+            "links": [],
+            "superseded_by": "a509f249",
+            "entry_id": "6731e6b1"
+          },
+          {
+            "content": "Alice owns Release 1.0 and the review",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "00069393",
+              "cf943aaf",
+              "a3c6773f"
+            ],
+            "links": [
+              "efa95903"
+            ],
+            "superseded_by": "57e08784",
+            "entry_id": "0e0a2f9f"
+          },
+          {
+            "content": "The team moves the first review to Thursday",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "00069393",
+              "44a0007c",
+              "cf943aaf"
+            ],
+            "links": [
+              "3fd049fb"
+            ],
+            "superseded_by": "b94fea9b",
+            "entry_id": "2c3f0959"
+          },
+          {
+            "content": "Bob prefers concise checklists with auth cases",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "28350d8f",
+              "6dcb1c67",
+              "982f0447"
+            ],
+            "links": [
+              "da791b57"
+            ],
+            "superseded_by": "",
+            "entry_id": "9d1c08de"
+          },
+          {
+            "content": "Carol prepares migration notes with rollback",
+            "owner": "Carol",
+            "source": "Carol",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "6dcb1c67",
+              "982f0447",
+              "28350d8f"
+            ],
+            "links": [
+              "6731e6b1"
+            ],
+            "superseded_by": "",
+            "entry_id": "a509f249"
+          },
+          {
+            "content": "Alice owns the approved Release 1.0 candidate",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 4,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-14T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "d3fa5be4",
+              "bd571e31",
+              "16a24758"
+            ],
+            "links": [
+              "0e0a2f9f"
+            ],
+            "superseded_by": "",
+            "entry_id": "57e08784"
+          },
+          {
+            "content": "The team ships Release 1.0 on Friday after QA sign-off",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 5,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-15T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "3a3c9223",
+              "55c19d79",
+              "aa4f9841"
+            ],
+            "links": [
+              "2c3f0959"
+            ],
+            "superseded_by": "",
+            "entry_id": "b94fea9b"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Bob prefers concise checklists with auth cases",
+            "owner": "Bob",
+            "source": "Bob",
+            "layer": "per_speaker_profile",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "stance",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "28350d8f",
+              "6dcb1c67",
+              "982f0447"
+            ],
+            "links": [
+              "da791b57"
+            ],
+            "superseded_by": "",
+            "entry_id": "9d1c08de"
+          },
+          {
+            "content": "Carol prepares migration notes with rollback",
+            "owner": "Carol",
+            "source": "Carol",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "6dcb1c67",
+              "982f0447",
+              "28350d8f"
+            ],
+            "links": [
+              "6731e6b1"
+            ],
+            "superseded_by": "",
+            "entry_id": "a509f249"
+          },
+          {
+            "content": "Alice owns the approved Release 1.0 candidate",
+            "owner": "Alice",
+            "source": "Alice",
+            "layer": "per_speaker_core",
+            "turn_created": 4,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-14T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "d3fa5be4",
+              "bd571e31",
+              "16a24758"
+            ],
+            "links": [
+              "0e0a2f9f"
+            ],
+            "superseded_by": "",
+            "entry_id": "57e08784"
+          },
+          {
+            "content": "The team ships Release 1.0 on Friday after QA sign-off",
+            "owner": "GROUP",
+            "source": "Alice",
+            "layer": "group_interaction",
+            "turn_created": 5,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-15T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "3a3c9223",
+              "55c19d79",
+              "aa4f9841"
+            ],
+            "links": [
+              "2c3f0959"
+            ],
+            "superseded_by": "",
+            "entry_id": "b94fea9b"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "da791b57",
+            "new": "9d1c08de"
+          },
+          {
+            "old": "efa95903",
+            "new": "0e0a2f9f"
+          },
+          {
+            "old": "3fd049fb",
+            "new": "2c3f0959"
+          },
+          {
+            "old": "6731e6b1",
+            "new": "a509f249"
+          },
+          {
+            "old": "0e0a2f9f",
+            "new": "57e08784"
+          },
+          {
+            "old": "2c3f0959",
+            "new": "b94fea9b"
+          }
+        ],
+        "roster": [
+          "Alice",
+          "Bob",
+          "Carol"
+        ]
+      },
+      "segment_index": 0,
+      "source_session_index": 5,
+      "metadata": {
+        "source_topic": "manual_topic_manual_update_alpha_6"
+      }
+    }
+  ],
+  "final_state": {
+    "entries": [
+      {
+        "content": "Bob prefers concise checklists",
+        "owner": "Bob",
+        "source": "Bob",
+        "layer": "per_speaker_profile",
+        "turn_created": 0,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-10T10:00:00Z",
+        "utype": "stance",
+        "confidence": 0.7,
+        "from_ids": [
+          "ecba36a5",
+          "d9f1dd95",
+          "64c5fe1e"
+        ],
+        "links": [],
+        "superseded_by": "9d1c08de",
+        "entry_id": "da791b57"
+      },
+      {
+        "content": "Alice owns Release 1.0",
+        "owner": "Alice",
+        "source": "Alice",
+        "layer": "per_speaker_core",
+        "turn_created": 0,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-10T10:00:00Z",
+        "utype": "decision",
+        "confidence": 0.7,
+        "from_ids": [
+          "3a79580b",
+          "64c5fe1e",
+          "43ab4375"
+        ],
+        "links": [],
+        "superseded_by": "0e0a2f9f",
+        "entry_id": "efa95903"
+      },
+      {
+        "content": "The team schedules the first review for Friday",
+        "owner": "GROUP",
+        "source": "Alice",
+        "layer": "group_interaction",
+        "turn_created": 1,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-11T10:00:00Z",
+        "utype": "decision",
+        "confidence": 0.7,
+        "from_ids": [
+          "d59fa35c",
+          "189e4b89",
+          "29407194"
+        ],
+        "links": [],
+        "superseded_by": "2c3f0959",
+        "entry_id": "3fd049fb"
+      },
+      {
+        "content": "Carol prepares migration notes",
+        "owner": "Carol",
+        "source": "Carol",
+        "layer": "per_speaker_core",
+        "turn_created": 1,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-11T10:00:00Z",
+        "utype": "fact",
+        "confidence": 0.7,
+        "from_ids": [
+          "e922d269",
+          "96e12e1d",
+          "189e4b89"
+        ],
+        "links": [],
+        "superseded_by": "a509f249",
+        "entry_id": "6731e6b1"
+      },
+      {
+        "content": "Alice owns Release 1.0 and the review",
+        "owner": "Alice",
+        "source": "Alice",
+        "layer": "per_speaker_core",
+        "turn_created": 2,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-12T10:00:00Z",
+        "utype": "decision",
+        "confidence": 0.7999999999999999,
+        "from_ids": [
+          "00069393",
+          "cf943aaf",
+          "a3c6773f"
+        ],
+        "links": [
+          "efa95903"
+        ],
+        "superseded_by": "57e08784",
+        "entry_id": "0e0a2f9f"
+      },
+      {
+        "content": "The team moves the first review to Thursday",
+        "owner": "GROUP",
+        "source": "Alice",
+        "layer": "group_interaction",
+        "turn_created": 2,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-12T10:00:00Z",
+        "utype": "decision",
+        "confidence": 0.7999999999999999,
+        "from_ids": [
+          "00069393",
+          "44a0007c",
+          "cf943aaf"
+        ],
+        "links": [
+          "3fd049fb"
+        ],
+        "superseded_by": "b94fea9b",
+        "entry_id": "2c3f0959"
+      },
+      {
+        "content": "Bob prefers concise checklists with auth cases",
+        "owner": "Bob",
+        "source": "Bob",
+        "layer": "per_speaker_profile",
+        "turn_created": 3,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-13T10:00:00Z",
+        "utype": "stance",
+        "confidence": 0.7999999999999999,
+        "from_ids": [
+          "28350d8f",
+          "6dcb1c67",
+          "982f0447"
+        ],
+        "links": [
+          "da791b57"
+        ],
+        "superseded_by": "",
+        "entry_id": "9d1c08de"
+      },
+      {
+        "content": "Carol prepares migration notes with rollback",
+        "owner": "Carol",
+        "source": "Carol",
+        "layer": "per_speaker_core",
+        "turn_created": 3,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-13T10:00:00Z",
+        "utype": "fact",
+        "confidence": 0.7999999999999999,
+        "from_ids": [
+          "6dcb1c67",
+          "982f0447",
+          "28350d8f"
+        ],
+        "links": [
+          "6731e6b1"
+        ],
+        "superseded_by": "",
+        "entry_id": "a509f249"
+      },
+      {
+        "content": "Alice owns the approved Release 1.0 candidate",
+        "owner": "Alice",
+        "source": "Alice",
+        "layer": "per_speaker_core",
+        "turn_created": 4,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-14T10:00:00Z",
+        "utype": "decision",
+        "confidence": 0.8999999999999999,
+        "from_ids": [
+          "d3fa5be4",
+          "bd571e31",
+          "16a24758"
+        ],
+        "links": [
+          "0e0a2f9f"
+        ],
+        "superseded_by": "",
+        "entry_id": "57e08784"
+      },
+      {
+        "content": "The team ships Release 1.0 on Friday after QA sign-off",
+        "owner": "GROUP",
+        "source": "Alice",
+        "layer": "group_interaction",
+        "turn_created": 5,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-15T10:00:00Z",
+        "utype": "decision",
+        "confidence": 0.8999999999999999,
+        "from_ids": [
+          "3a3c9223",
+          "55c19d79",
+          "aa4f9841"
+        ],
+        "links": [
+          "2c3f0959"
+        ],
+        "superseded_by": "",
+        "entry_id": "b94fea9b"
+      }
+    ],
+    "heads": [
+      {
+        "content": "Bob prefers concise checklists with auth cases",
+        "owner": "Bob",
+        "source": "Bob",
+        "layer": "per_speaker_profile",
+        "turn_created": 3,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-13T10:00:00Z",
+        "utype": "stance",
+        "confidence": 0.7999999999999999,
+        "from_ids": [
+          "28350d8f",
+          "6dcb1c67",
+          "982f0447"
+        ],
+        "links": [
+          "da791b57"
+        ],
+        "superseded_by": "",
+        "entry_id": "9d1c08de"
+      },
+      {
+        "content": "Carol prepares migration notes with rollback",
+        "owner": "Carol",
+        "source": "Carol",
+        "layer": "per_speaker_core",
+        "turn_created": 3,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-13T10:00:00Z",
+        "utype": "fact",
+        "confidence": 0.7999999999999999,
+        "from_ids": [
+          "6dcb1c67",
+          "982f0447",
+          "28350d8f"
+        ],
+        "links": [
+          "6731e6b1"
+        ],
+        "superseded_by": "",
+        "entry_id": "a509f249"
+      },
+      {
+        "content": "Alice owns the approved Release 1.0 candidate",
+        "owner": "Alice",
+        "source": "Alice",
+        "layer": "per_speaker_core",
+        "turn_created": 4,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-14T10:00:00Z",
+        "utype": "decision",
+        "confidence": 0.8999999999999999,
+        "from_ids": [
+          "d3fa5be4",
+          "bd571e31",
+          "16a24758"
+        ],
+        "links": [
+          "0e0a2f9f"
+        ],
+        "superseded_by": "",
+        "entry_id": "57e08784"
+      },
+      {
+        "content": "The team ships Release 1.0 on Friday after QA sign-off",
+        "owner": "GROUP",
+        "source": "Alice",
+        "layer": "group_interaction",
+        "turn_created": 5,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-15T10:00:00Z",
+        "utype": "decision",
+        "confidence": 0.8999999999999999,
+        "from_ids": [
+          "3a3c9223",
+          "55c19d79",
+          "aa4f9841"
+        ],
+        "links": [
+          "2c3f0959"
+        ],
+        "superseded_by": "",
+        "entry_id": "b94fea9b"
+      }
+    ],
+    "update_edges": [
+      {
+        "old": "da791b57",
+        "new": "9d1c08de"
+      },
+      {
+        "old": "efa95903",
+        "new": "0e0a2f9f"
+      },
+      {
+        "old": "3fd049fb",
+        "new": "2c3f0959"
+      },
+      {
+        "old": "6731e6b1",
+        "new": "a509f249"
+      },
+      {
+        "old": "0e0a2f9f",
+        "new": "57e08784"
+      },
+      {
+        "old": "2c3f0959",
+        "new": "b94fea9b"
+      }
+    ],
+    "roster": [
+      "Alice",
+      "Bob",
+      "Carol"
+    ]
+  },
+  "qa_pairs": [
+    {
+      "id": "q1",
+      "category": "update",
+      "question": "Who owns Release 1.0 after the final updates?",
+      "answer": "Alice owns the approved Release 1.0 candidate.",
+      "difficulty": "medium",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "manual_update_alpha_s05_t003",
+          "speaker_display_name": "Alice",
+          "message_excerpt": "The release candidate is approved.",
+          "relevance": "The final candidate approval supports the recorded Release 1.0 owner state."
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "q2",
+      "category": "update",
+      "question": "When did the team ship Release 1.0?",
+      "answer": "The team shipped it on Friday after QA sign-off.",
+      "difficulty": "medium",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 6,
+          "turn_id": "manual_update_alpha_s06_t000",
+          "speaker_display_name": "Alice",
+          "message_excerpt": "Release 1.0 shipped Friday.",
+          "relevance": "Direct shipping date evidence."
+        },
+        {
+          "session_index": 4,
+          "turn_id": "manual_update_alpha_s04_t004",
+          "speaker_display_name": "Alice",
+          "message_excerpt": "We should ship only after QA sign-off.",
+          "relevance": "The group required QA sign-off before shipping."
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "q3",
+      "category": "profile",
+      "question": "What kind of checklist does Bob prefer?",
+      "answer": "Bob prefers concise checklists with auth cases.",
+      "difficulty": "medium",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "manual_update_alpha_s02_t002",
+          "speaker_display_name": "Bob",
+          "message_excerpt": "The API checklist now includes auth cases.",
+          "relevance": "Directly supports Bob preferring a concise checklist with the auth section."
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "q4",
+      "category": "group",
+      "question": "What did the team require before shipping?",
+      "answer": "QA sign-off was required before shipping.",
+      "difficulty": "medium",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "manual_update_alpha_s04_t004",
+          "speaker_display_name": "Alice",
+          "message_excerpt": "We should ship only after QA sign-off.",
+          "relevance": "Direct prerequisite for shipping."
+        }
+      ],
+      "temporal_anchors": []
+    }
+  ],
+  "stats": {
+    "transitions": 6,
+    "actions": {
+      "ADD": 4,
+      "UPDATE": 6
+    },
+    "derived_entries": 10,
+    "update_edges": 6
+  }
+}

@@ -1,0 +1,786 @@
+{
+  "schema": "socialmembench-real-v4-source/1",
+  "scenario": "[socialmembench:grp_3c4d5e6f] real benchmark conversation",
+  "speakers": [
+    "Bev",
+    "Cass",
+    "Dani",
+    "Marcus",
+    "Yusuf"
+  ],
+  "sessions": [
+    {
+      "session_id": "grp_3c4d5e6f_s01",
+      "session_index": 1,
+      "topic": "Planning the next hike, route options",
+      "ts": "2025-03-03",
+      "turns": [
+        {
+          "turn": "grp_3c4d5e6f_s01_t000",
+          "speaker": "Dani",
+          "speaker_id": "p_r3a1b2c3",
+          "content": "Ok team! 🏔️ Two options for Saturday: the Heron Ridgeline (12k, 600m ascent) or the Millbrook loop (8k, flat). Ridgeline is obviously the better hike 😂",
+          "ts": "2025-03-03T19:12:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_3c4d5e6f_s01_t001",
+          "speaker": "Marcus",
+          "speaker_id": "p_r3b2c3d4",
+          "content": "Ridgeline should be fine weather permitting 👍",
+          "ts": "2025-03-03T19:19:00",
+          "reply_to": "grp_3c4d5e6f_s01_t000"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s01_t002",
+          "speaker": "Bev",
+          "speaker_id": "p_r3c3d4e5",
+          "content": "Is there a cafe on the ridgeline route? 🙏 I need to know the tea situation before I commit 😂",
+          "ts": "2025-03-03T19:22:00",
+          "reply_to": "grp_3c4d5e6f_s01_t000"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s01_t003",
+          "speaker": "Dani",
+          "speaker_id": "p_r3a1b2c3",
+          "content": "BEV 😂 we can do the Heron Cafe at the end! No stopping mid-route though, we need to maintain pace",
+          "ts": "2025-03-03T19:23:00",
+          "reply_to": "grp_3c4d5e6f_s01_t002"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s01_t004",
+          "speaker": "Cass",
+          "speaker_id": "p_r3e5f6a7",
+          "content": "does the ridgeline go over the upper plateau? I'd actually prefer a woodland section, the Millbrook loop goes through Hartley Wood",
+          "ts": "2025-03-03T19:31:00",
+          "reply_to": "grp_3c4d5e6f_s01_t000"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s01_t005",
+          "speaker": "Yusuf",
+          "speaker_id": "p_r3d4e5f6",
+          "content": "Ridgeline is manageable. Fine with either.",
+          "ts": "2025-03-03T19:35:00",
+          "reply_to": "grp_3c4d5e6f_s01_t000"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s01_t006",
+          "speaker": "Bev",
+          "speaker_id": "p_r3c3d4e5",
+          "content": "Cass makes a fair point about Millbrook honestly! Plus we could actually talk on the flat 😂 the ridgeline everyone is too breathless for a conversation",
+          "ts": "2025-03-03T19:37:00",
+          "reply_to": "grp_3c4d5e6f_s01_t004"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s01_t007",
+          "speaker": "Dani",
+          "speaker_id": "p_r3a1b2c3",
+          "content": "The whole point is to push ourselves 😤 vote: ridgeline or Millbrook? I'm ridgeline obviously",
+          "ts": "2025-03-03T19:38:00",
+          "reply_to": "grp_3c4d5e6f_s01_t006"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s01_t008",
+          "speaker": "Marcus",
+          "speaker_id": "p_r3b2c3d4",
+          "content": "Millbrook 👍",
+          "ts": "2025-03-03T19:41:00",
+          "reply_to": "grp_3c4d5e6f_s01_t007"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s01_t009",
+          "speaker": "Bev",
+          "speaker_id": "p_r3c3d4e5",
+          "content": "Millbrook!! 🙌",
+          "ts": "2025-03-03T19:41:00",
+          "reply_to": "grp_3c4d5e6f_s01_t007"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s01_t010",
+          "speaker": "Cass",
+          "speaker_id": "p_r3e5f6a7",
+          "content": "Millbrook",
+          "ts": "2025-03-03T19:42:00",
+          "reply_to": "grp_3c4d5e6f_s01_t007"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s01_t011",
+          "speaker": "Yusuf",
+          "speaker_id": "p_r3d4e5f6",
+          "content": "Millbrook. Democracy has spoken, Dani.",
+          "ts": "2025-03-03T19:43:00",
+          "reply_to": "grp_3c4d5e6f_s01_t007"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s01_t012",
+          "speaker": "Dani",
+          "speaker_id": "p_r3a1b2c3",
+          "content": "Fine 😤 but I'm planning a proper ridgeline for next month. Parking is the layby on Mill Lane, 8:30am 🏔️",
+          "ts": "2025-03-03T19:44:00",
+          "reply_to": "grp_3c4d5e6f_s01_t011"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_3c4d5e6f_s02",
+      "session_index": 2,
+      "topic": "Post-Millbrook; Dani proposes the ridgeline scramble",
+      "ts": "2025-03-10",
+      "turns": [
+        {
+          "turn": "grp_3c4d5e6f_s02_t000",
+          "speaker": "Dani",
+          "speaker_id": "p_r3a1b2c3",
+          "content": "Great walk today everyone!! 🏔️🏔️ Right, I've been sitting on this one for months so here goes: I'm proposing the Blackmoor Scramble for September. 15k, 800m of ascent, class A scrambling on the north ridge. It's not just a walk. There are two or three sections where you actually use your hands, proper exposure on the crest, and the summit view is one of the best in the region if the weather plays ball 🙌 I've done the approach three times now so I know how to pace it so we're not wrecked before the scramble section even starts. There's a solid descent option on the south side for anyone who wants to skip the hands-on bits. Who's in?? 🏔️🏔️",
+          "ts": "2025-03-10T16:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_3c4d5e6f_s02_t001",
+          "speaker": "Bev",
+          "speaker_id": "p_r3c3d4e5",
+          "content": "Dani... 800m and a scramble?? 😅 whatever happened to the social side of this group",
+          "ts": "2025-03-10T16:51:00",
+          "reply_to": "grp_3c4d5e6f_s02_t000"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s02_t002",
+          "speaker": "Cass",
+          "speaker_id": "p_r3e5f6a7",
+          "content": "is this the one over the ridge above the SSSI? ravens nest there in spring actually",
+          "ts": "2025-03-10T16:57:00",
+          "reply_to": "grp_3c4d5e6f_s02_t000"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s02_t003",
+          "speaker": "Dani",
+          "speaker_id": "p_r3a1b2c3",
+          "content": "Ravens are fine in September!! They're not nesting then 😂 Marcus? Yusuf? What do you think",
+          "ts": "2025-03-10T16:58:00",
+          "reply_to": "grp_3c4d5e6f_s02_t002"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s02_t004",
+          "speaker": "Marcus",
+          "speaker_id": "p_r3b2c3d4",
+          "content": "Should be fine. What are the descent sections like?",
+          "ts": "2025-03-10T16:59:00",
+          "reply_to": "grp_3c4d5e6f_s02_t003"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s02_t005",
+          "speaker": "Dani",
+          "speaker_id": "p_r3a1b2c3",
+          "content": "Technical on the north face, straightforward on the south. Total scrambling maybe 200m? It's class A, totally manageable 🙌",
+          "ts": "2025-03-10T17:00:00",
+          "reply_to": "grp_3c4d5e6f_s02_t004"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s02_t006",
+          "speaker": "Marcus",
+          "speaker_id": "p_r3b2c3d4",
+          "content": "I can take the south route on descent 👍",
+          "ts": "2025-03-10T17:03:00",
+          "reply_to": "grp_3c4d5e6f_s02_t005"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s02_t007",
+          "speaker": "Yusuf",
+          "speaker_id": "p_r3d4e5f6",
+          "content": "Doable. Though regrettably September may be difficult for me.",
+          "ts": "2025-03-10T17:11:00",
+          "reply_to": "grp_3c4d5e6f_s02_t003"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s02_t008",
+          "speaker": "Dani",
+          "speaker_id": "p_r3a1b2c3",
+          "content": "Yusuf you always say that about September! 😂 We'll do a Saturday so you can come",
+          "ts": "2025-03-10T17:12:00",
+          "reply_to": "grp_3c4d5e6f_s02_t007"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s02_t009",
+          "speaker": "Bev",
+          "speaker_id": "p_r3c3d4e5",
+          "content": "Does the Blackmoor Cafe at the trailhead have plant-based options? asking for Cass 😊",
+          "ts": "2025-03-10T17:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_3c4d5e6f_s02_t010",
+          "speaker": "Cass",
+          "speaker_id": "p_r3e5f6a7",
+          "content": "haha thanks Bev. yeah I'll check, usually fine if they have soup",
+          "ts": "2025-03-10T17:17:00",
+          "reply_to": "grp_3c4d5e6f_s02_t009"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s02_t011",
+          "speaker": "Dani",
+          "speaker_id": "p_r3a1b2c3",
+          "content": "Ok ok I'll check the cafe 😂 September it is, I'll send dates!",
+          "ts": "2025-03-10T17:18:00",
+          "reply_to": "grp_3c4d5e6f_s02_t010"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_3c4d5e6f_s03",
+      "session_index": 3,
+      "topic": "Post-hike scramble check-in, Marcus's knee and bird discussion, Bev's half-marathon tangent",
+      "ts": "2025-03-17",
+      "turns": [
+        {
+          "turn": "grp_3c4d5e6f_s03_t000",
+          "speaker": "Dani",
+          "speaker_id": "p_r3a1b2c3",
+          "content": "Brilliant day!! 🏔️🏔️🏔️ Marcus how's the knee?",
+          "ts": "2025-03-17T18:22:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_3c4d5e6f_s03_t001",
+          "speaker": "Marcus",
+          "speaker_id": "p_r3b2c3d4",
+          "content": "Fine. South route was sensible.",
+          "ts": "2025-03-17T18:28:00",
+          "reply_to": "grp_3c4d5e6f_s03_t000"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s03_t002",
+          "speaker": "Bev",
+          "speaker_id": "p_r3c3d4e5",
+          "content": "Marcus I saw you limping at the end 😟 the knee has been bothering you for a while hasn't it",
+          "ts": "2025-03-17T18:31:00",
+          "reply_to": "grp_3c4d5e6f_s03_t001"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s03_t003",
+          "speaker": "Marcus",
+          "speaker_id": "p_r3b2c3d4",
+          "content": "It's fine Bev. Gets a bit stiff on descents.",
+          "ts": "2025-03-17T18:33:00",
+          "reply_to": "grp_3c4d5e6f_s03_t002"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s03_t004",
+          "speaker": "Cass",
+          "speaker_id": "p_r3e5f6a7",
+          "content": "on the ridgeline today, I actually saw three skylarks nesting near the top path. we should route around that section in future",
+          "ts": "2025-03-17T18:44:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_3c4d5e6f_s03_t005",
+          "speaker": "Dani",
+          "speaker_id": "p_r3a1b2c3",
+          "content": "We're not rerouting a whole hike for skylarks Cass 😂 they cope fine with walkers",
+          "ts": "2025-03-17T18:46:00",
+          "reply_to": "grp_3c4d5e6f_s03_t004"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s03_t006",
+          "speaker": "Cass",
+          "speaker_id": "p_r3e5f6a7",
+          "content": "they usually don't during nesting season. ground nesters fail if walkers keep cutting through there. I can send the NatureEngland note if useful",
+          "ts": "2025-03-17T18:48:00",
+          "reply_to": "grp_3c4d5e6f_s03_t005"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s03_t007",
+          "speaker": "Bev",
+          "speaker_id": "p_r3c3d4e5",
+          "content": "Cass is right tbh! And honestly if we're routing anyway let's find somewhere with a better cafe on the return 😂",
+          "ts": "2025-03-17T18:51:00",
+          "reply_to": "grp_3c4d5e6f_s03_t006"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s03_t008",
+          "speaker": "Yusuf",
+          "speaker_id": "p_r3d4e5f6",
+          "content": "Worth considering. Also, September. I did mention this.",
+          "ts": "2025-03-17T18:55:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_3c4d5e6f_s03_t009",
+          "speaker": "Dani",
+          "speaker_id": "p_r3a1b2c3",
+          "content": "Yusuf we went on a Saturday! 😂 You were there!",
+          "ts": "2025-03-17T18:56:00",
+          "reply_to": "grp_3c4d5e6f_s03_t008"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s03_t010",
+          "speaker": "Yusuf",
+          "speaker_id": "p_r3d4e5f6",
+          "content": "This Saturday yes. October will be harder.",
+          "ts": "2025-03-17T18:58:00",
+          "reply_to": "grp_3c4d5e6f_s03_t009"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s03_t011",
+          "speaker": "Bev",
+          "speaker_id": "p_r3c3d4e5",
+          "content": "totally off topic but I signed up for the Thornfield charity half marathon in May!! 😬😬 I honestly don't know how it happened, someone at work mentioned it and I thought yeah ok why not, and then before I knew it I'd paid the entry fee and committed to training. It's raising money for the local hospice which is a genuinely lovely cause and the whole vibe of the event is very much not competitive, more of a community thing. The route is flat, goes along the river path and through the village centre, about as far from a Dani-style suffer-fest as you can get 😂 And there is a massive tea tent with proper cake stalls at the finish, which honestly was probably the deciding factor. Anyone want to come? Even just to spectate and eat cake? I think we'd have a brilliant time 🍰😊",
+          "ts": "2025-03-17T19:04:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_3c4d5e6f_s03_t012",
+          "speaker": "Dani",
+          "speaker_id": "p_r3a1b2c3",
+          "content": "BEV a FLAT half? 😂😂 I'll do it but only if we find a proper hilly one to enter at the same time 🏔️",
+          "ts": "2025-03-17T19:05:00",
+          "reply_to": "grp_3c4d5e6f_s03_t011"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s03_t013",
+          "speaker": "Marcus",
+          "speaker_id": "p_r3b2c3d4",
+          "content": "That's quite a lot of road running. Not sure my knee is up to it right now. 👍",
+          "ts": "2025-03-17T19:09:00",
+          "reply_to": "grp_3c4d5e6f_s03_t011"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s03_t014",
+          "speaker": "Cass",
+          "speaker_id": "p_r3e5f6a7",
+          "content": "the route goes through Thornfield nature reserve actually, there's a section through the fen. I'd consider it for that bit alone 🌿",
+          "ts": "2025-03-17T19:13:00",
+          "reply_to": "grp_3c4d5e6f_s03_t011"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_3c4d5e6f_s04",
+      "session_index": 4,
+      "topic": "Autumn hike dates and Yusuf's marking-season conflict",
+      "ts": "2025-03-24",
+      "turns": [
+        {
+          "turn": "grp_3c4d5e6f_s04_t000",
+          "speaker": "Dani",
+          "speaker_id": "p_r3a1b2c3",
+          "content": "Ok autumn dates! 🍂 I'm thinking a big one in October, the Cairngorms if we can get transport sorted. Who's in? 🏔️",
+          "ts": "2025-03-24T19:05:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_3c4d5e6f_s04_t001",
+          "speaker": "Yusuf",
+          "speaker_id": "p_r3d4e5f6",
+          "content": "Regrettably I'm unavailable weekends from the 1st of October through to December. Marking season. I have mentioned this before.",
+          "ts": "2025-03-24T19:09:00",
+          "reply_to": "grp_3c4d5e6f_s04_t000"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s04_t002",
+          "speaker": "Dani",
+          "speaker_id": "p_r3a1b2c3",
+          "content": "Yusuf!! every year 😂 ok then, do we shift this to September before marking swallows you whole?",
+          "ts": "2025-03-24T19:10:00",
+          "reply_to": "grp_3c4d5e6f_s04_t001"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s04_t003",
+          "speaker": "Yusuf",
+          "speaker_id": "p_r3d4e5f6",
+          "content": "Saturdays are also marking days in October. I cannot attend autumn hikes. This is an annual fact.",
+          "ts": "2025-03-24T19:12:00",
+          "reply_to": "grp_3c4d5e6f_s04_t002"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s04_t004",
+          "speaker": "Bev",
+          "speaker_id": "p_r3c3d4e5",
+          "content": "We should really write this down 😂😂 Yusuf: no autumn. Got it",
+          "ts": "2025-03-24T19:14:00",
+          "reply_to": "grp_3c4d5e6f_s04_t003"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s04_t005",
+          "speaker": "Marcus",
+          "speaker_id": "p_r3b2c3d4",
+          "content": "Cairngorms in October would be tough in any case. Weather can be serious up there. What's the descent profile?",
+          "ts": "2025-03-24T19:17:00",
+          "reply_to": "grp_3c4d5e6f_s04_t000"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s04_t006",
+          "speaker": "Cass",
+          "speaker_id": "p_r3e5f6a7",
+          "content": "worth checking if any plateau paths cross red deer rutting ground in October, that's a real disturbance issue",
+          "ts": "2025-03-24T19:24:00",
+          "reply_to": "grp_3c4d5e6f_s04_t004"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s04_t007",
+          "speaker": "Dani",
+          "speaker_id": "p_r3a1b2c3",
+          "content": "CASS 😂😂 ok fine. let me look at September dates before Yusuf vanishes on us. send your availability everyone!",
+          "ts": "2025-03-24T19:26:00",
+          "reply_to": "grp_3c4d5e6f_s04_t006"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s04_t008",
+          "speaker": "Bev",
+          "speaker_id": "p_r3c3d4e5",
+          "content": "Please make it somewhere with a decent tea stop this time 😂 if we're doing September I want morale built in",
+          "ts": "2025-03-24T19:28:00",
+          "reply_to": "grp_3c4d5e6f_s04_t007"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s04_t009",
+          "speaker": "Marcus",
+          "speaker_id": "p_r3b2c3d4",
+          "content": "September is safer all round. Better weather and fewer route complications.",
+          "ts": "2025-03-24T19:31:00",
+          "reply_to": "grp_3c4d5e6f_s04_t007"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_3c4d5e6f_s05",
+      "session_index": 5,
+      "topic": "Dani proposes new ridgeline; group pushes back",
+      "ts": "2025-03-31",
+      "turns": [
+        {
+          "turn": "grp_3c4d5e6f_s05_t000",
+          "speaker": "Dani",
+          "speaker_id": "p_r3a1b2c3",
+          "content": "OK NEW PLAN 🏔️ I found a brilliant ridgeline, Stanmore Edge. 14k, 700m, mostly exposed ridge. Last week of August so Yusuf can come! Vote?",
+          "ts": "2025-03-31T18:48:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_3c4d5e6f_s05_t001",
+          "speaker": "Cass",
+          "speaker_id": "p_r3e5f6a7",
+          "content": "stanmore crosses the skyline, and the lapwing there are still within second-clutch breeding window in late August",
+          "ts": "2025-03-31T18:52:00",
+          "reply_to": "grp_3c4d5e6f_s05_t000"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s05_t002",
+          "speaker": "Bev",
+          "speaker_id": "p_r3c3d4e5",
+          "content": "I was going to say mostly exposed ridge means nowhere to stop for tea either 😂 is there a woodland variant?",
+          "ts": "2025-03-31T18:55:00",
+          "reply_to": "grp_3c4d5e6f_s05_t000"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s05_t003",
+          "speaker": "Marcus",
+          "speaker_id": "p_r3b2c3d4",
+          "content": "What's the descent like on the south side? 👍",
+          "ts": "2025-03-31T18:58:00",
+          "reply_to": "grp_3c4d5e6f_s05_t000"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s05_t004",
+          "speaker": "Dani",
+          "speaker_id": "p_r3a1b2c3",
+          "content": "Marcus the south face is a gentle grassy slope! 😂 Cass I'm going to need sources on the lapwing thing. Bev there's a cafe in the village at the end",
+          "ts": "2025-03-31T18:59:00",
+          "reply_to": "grp_3c4d5e6f_s05_t003"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s05_t005",
+          "speaker": "Yusuf",
+          "speaker_id": "p_r3d4e5f6",
+          "content": "Late August I can do. Stanmore is steep. The south descent is manageable.",
+          "ts": "2025-03-31T19:04:00",
+          "reply_to": "grp_3c4d5e6f_s05_t000"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s05_t006",
+          "speaker": "Cass",
+          "speaker_id": "p_r3e5f6a7",
+          "content": "sending the BTO survey link. three years of site data. I'm not inventing it Dani",
+          "ts": "2025-03-31T19:06:00",
+          "reply_to": "grp_3c4d5e6f_s05_t004"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s05_t007",
+          "speaker": "Bev",
+          "speaker_id": "p_r3c3d4e5",
+          "content": "Cass and I vote woodland. Marcus probably does too. Dani the group speaks 😂",
+          "ts": "2025-03-31T19:08:00",
+          "reply_to": "grp_3c4d5e6f_s05_t006"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s05_t008",
+          "speaker": "Dani",
+          "speaker_id": "p_r3a1b2c3",
+          "content": "FINE. Someone find a woodland route with 700m gain and I'll consider it 😤🏔️",
+          "ts": "2025-03-31T19:10:00",
+          "reply_to": "grp_3c4d5e6f_s05_t007"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s05_t009",
+          "speaker": "Yusuf",
+          "speaker_id": "p_r3d4e5f6",
+          "content": "A woodland route with solid gain does exist. They're simply less fashionable than exposed ridges.",
+          "ts": "2025-03-31T19:12:00",
+          "reply_to": "grp_3c4d5e6f_s05_t008"
+        },
+        {
+          "turn": "grp_3c4d5e6f_s05_t010",
+          "speaker": "Bev",
+          "speaker_id": "p_r3c3d4e5",
+          "content": "Unfashionable and elite tea potential, that's my kind of route 😂",
+          "ts": "2025-03-31T19:13:00",
+          "reply_to": "grp_3c4d5e6f_s05_t009"
+        }
+      ]
+    }
+  ],
+  "qa_pairs": [
+    {
+      "id": "Q1_r3a1b2c3",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Cass's behavior suggest about their preferences when choosing hiking routes?",
+      "answer": "Cass consistently advocates for woodland or ecologically rich routes over open ridgelines. In Session 1, they suggested Millbrook specifically because it passes through Hartley Wood. By Session 3, they had moved from preference to active advocacy, citing ground-nesting skylark disturbance as a reason to reroute. In Sessions 4 and 5 they raised deer rutting grounds and lapwing breeding data respectively. The ecological rationale is always present alongside the route preference.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_3c4d5e6f_s01_t004",
+          "speaker_display_name": "Cass",
+          "message_excerpt": "I'd actually prefer a woodland section, the Millbrook loop goes through Hartley Wood",
+          "relevance": "First direct statement of the woodland preference, framed as a route suggestion"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_r3b2c3d4",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "Has Marcus mentioned anything about physical limitations on hikes?",
+      "answer": "Marcus has a knee problem that affects him on descents, but he never states it directly. He consistently volunteers to take the easier descent route ('I can take the south route on descent') and when Bev observed him limping after the Blackmoor Scramble, he acknowledged only that his knee 'gets a bit stiff on descents.' He also frames his descent queries as logistics rather than personal concern ('What's the descent like on the south side?').",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_3c4d5e6f_s02_t006",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "I can take the south route on descent",
+          "relevance": "Marcus quietly self-assigns to the easier descent without explaining why"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_3c4d5e6f_s03_t003",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "Gets a bit stiff on descents.",
+          "relevance": "The most direct acknowledgment Marcus gives of the knee issue — minimized and presented as minor"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_r3c3d4e5",
+      "category": "Q2",
+      "difficulty": "easy",
+      "question": "The group has a September and October big-hike tradition. Does everyone participate in autumn hikes?",
+      "answer": "No — Yusuf is unavailable for weekend hikes from October through December every year due to teaching and marking commitments. He stated this directly in Session 4: 'Regrettably I'm unavailable weekends from the 1st of October through to December. Marking season. I have mentioned this before.' He confirmed in the same session that Saturdays in October are also marking days. Bev noted the group should 'write this down' — suggesting it has been forgotten multiple times.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Bev",
+        "B": "Dani",
+        "C": "Marcus",
+        "D": "Yusuf"
+      },
+      "correct_option": "D",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_3c4d5e6f_s04_t001",
+          "speaker_display_name": "Yusuf",
+          "message_excerpt": "Regrettably I'm unavailable weekends from the 1st of October through to December. Marking season. I have mentioned this before.",
+          "relevance": "Yusuf's explicit statement of his autumn unavailability, with the pointed 'I have mentioned this before'"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q4_r3d4e5f6",
+      "category": "Q4",
+      "difficulty": "hard",
+      "question": "Two members pushed back on Dani's ridgeline proposal and both seemed to prefer easier terrain. Who brought up the social element of hiking as a reason to go with the flatter route?",
+      "answer": "Bev. In Session 1, Bev said 'we could actually talk on the flat — the ridgeline everyone is too breathless for a conversation.' This is a social argument: easier terrain enables conversation. Cass also supported the flatter Millbrook route in the same session, but for a different reason — they specifically mentioned wanting a woodland section and cited Hartley Wood. Their pushback was ecological, not social.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Bev",
+        "B": "Dani",
+        "C": "Marcus",
+        "D": "Yusuf"
+      },
+      "correct_option": "A",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_3c4d5e6f_s01_t006",
+          "speaker_display_name": "Bev",
+          "message_excerpt": "Plus we could actually talk on the flat 😂 the ridgeline everyone is too breathless for a conversation",
+          "relevance": "Bev's reasoning for preferring the flatter route is explicitly social — conversation and camaraderie"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_r3e5f6a7",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "Does Cass have any dietary preferences that affect cafe stop planning? And who in the group knows about this?",
+      "answer": "Cass is vegan and needs plant-based options at cafe stops. This was revealed by Bev, not Cass. In Session 2, when the Blackmoor Cafe was mentioned, Bev proactively asked 'Does the Blackmoor Cafe have plant-based options? asking for Cass' — demonstrating she already knew about Cass's dietary needs. Cass then confirmed: 'yeah I'll check, usually fine if they have soup.' Cass hadn't raised it themselves.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_3c4d5e6f_s02_t009",
+          "speaker_display_name": "Bev",
+          "message_excerpt": "Does the Blackmoor Cafe at the trailhead have plant-based options? asking for Cass",
+          "relevance": "Bev names Cass's dietary need on their behalf — demonstrating she already knew without being told in this conversation"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_r3a7b8c9",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does the conversation reveal about the relationship between Bev and Marcus within the group?",
+      "answer": "Bev and Marcus function as quiet allies — both prefer more moderate routes compared to Dani's increasingly ambitious proposals, and Bev actively looks out for Marcus. In Session 3, Bev noticed Marcus limping after the scramble and called it out directly: 'The knee has been bothering you for a while hasn't it.' This shows she has been paying attention to his physical state over multiple hikes, even though Marcus minimizes it. In Session 5, Bev told Dani 'Cass and I vote woodland. Marcus probably does too' — speaking on Marcus's behalf as a natural extension of their alignment.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "quiet allies",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_3c4d5e6f_s03_t002",
+          "speaker_display_name": "Bev",
+          "message_excerpt": "Marcus I saw you limping at the end 😟 the knee has been bothering you for a while hasn't it",
+          "relevance": "Bev names Marcus's ongoing physical issue that he won't raise himself — demonstrates close observational attention to his wellbeing"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_3c4d5e6f_s05_t007",
+          "speaker_display_name": "Bev",
+          "message_excerpt": "Cass and I vote woodland. Marcus probably does too.",
+          "relevance": "Bev presumes Marcus's vote and includes him in the coalition without asking — signals an understood alignment between them"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q8_r3b8c9d0",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "How did Cass's approach to influencing route choices change across the conversations?",
+      "answer": "Cass moved from passive preference-stating to active advocacy backed by data. In Session 1, Cass simply expressed a preference for woodland routes ('I'd actually prefer a woodland section'). By Session 3, after observing skylarks nesting, they shifted to arguing the group should actively reroute for ecological reasons. In Sessions 4 and 5 they escalated further — raising deer rutting grounds and then sending a BTO survey link with three years of lapwing data to counter Dani's dismissal. The preference became a position backed by evidence.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_3c4d5e6f_s01_t004",
+          "speaker_display_name": "Cass",
+          "message_excerpt": "I'd actually prefer a woodland section, the Millbrook loop goes through Hartley Wood",
+          "relevance": "Session 1 baseline: quiet personal preference stated without argument"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_3c4d5e6f_s03_t004",
+          "speaker_display_name": "Cass",
+          "message_excerpt": "I actually saw three skylarks nesting near the top path. we should route around that section in future",
+          "relevance": "Shift from preference to advocacy — using direct observation as evidence for a rerouting recommendation"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_3c4d5e6f_s05_t006",
+          "speaker_display_name": "Cass",
+          "message_excerpt": "sending the BTO survey link. three years of site data. I'm not inventing it Dani",
+          "relevance": "Escalation to data-backed challenge — Cass now pushes back assertively when dismissed"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "quiet woodland preference stated as personal choice"
+        },
+        {
+          "session_index": 3,
+          "value": "ecological advocacy — asks group to reroute based on nesting birds"
+        },
+        {
+          "session_index": 5,
+          "value": "data-backed challenge — sends BTO survey to counter Dani's dismissal"
+        }
+      ]
+    },
+    {
+      "id": "Q6_r3c1d2e3",
+      "category": "Q6",
+      "difficulty": "medium",
+      "question": "Dani keeps the group moving on hikes and expects everyone to push through to the end without stopping. Is that actually how all members prefer to approach a day out?",
+      "answer": "No — Bev consistently dissents from the no-stopping norm. Across multiple sessions, her first question when a route is proposed is whether there is a cafe stop built in. In Session 1, she asked about the \"tea situation\" before even committing to the route. By Session 4 she was explicitly asking Dani to pick routes with \"a decent tea stop this time,\" and in Session 5 she named the lack of anywhere to stop as a mark against an exposed ridgeline route. For Bev, the social stop is not optional — it is the point of the outing, and she signals this consistently even though the group norm runs the other way.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Bev",
+        "B": "Dani",
+        "C": "Marcus",
+        "D": "Yusuf"
+      },
+      "correct_option": "A",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_3c4d5e6f_s01_t002",
+          "speaker_display_name": "Bev",
+          "message_excerpt": "Is there a cafe on the ridgeline route? 🙏 I need to know the tea situation before I commit 😂",
+          "relevance": "Bev makes a cafe stop a precondition for participation before the hike is even agreed — her first response to any route proposal"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_3c4d5e6f_s04_t008",
+          "speaker_display_name": "Bev",
+          "message_excerpt": "Please make it somewhere with a decent tea stop this time",
+          "relevance": "Bev frames a tea stop as a standing request — \"this time\" implies it has been absent before and she wants it fixed"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_3c4d5e6f_s05_t002",
+          "speaker_display_name": "Bev",
+          "message_excerpt": "mostly exposed ridge means nowhere to stop for tea either 😂 is there a woodland variant?",
+          "relevance": "Bev raises no-stop as a negative attribute of the proposed route, reinforcing that stopping is a requirement for her"
+        }
+      ],
+      "temporal_anchors": []
+    }
+  ],
+  "meta": {
+    "source": "SocialMemBench",
+    "source_kind": "real_benchmark",
+    "network_id": "grp_3c4d5e6f",
+    "n_sessions": 5,
+    "n_turns": 61,
+    "n_qa": 8,
+    "v4_correct": 6,
+    "v4_total": 8,
+    "v4_errors": 2,
+    "v4_accuracy": 0.75,
+    "heldout_heldout_excluded": true
+  }
+}

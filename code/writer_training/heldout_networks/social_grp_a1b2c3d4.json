@@ -1,0 +1,2433 @@
+{
+  "schema": "socialmembench-real-v4-source/1",
+  "scenario": "[socialmembench:grp_a1b2c3d4] real benchmark conversation",
+  "speakers": [
+    "Derek",
+    "Felix",
+    "Kezia",
+    "Lena",
+    "Marcus",
+    "Nadia",
+    "Priya",
+    "Raj",
+    "Soo-Yeon",
+    "Tomasz"
+  ],
+  "sessions": [
+    {
+      "session_id": "grp_a1b2c3d4_s01",
+      "session_index": 1,
+      "topic": "Game night logistics and Collective history",
+      "ts": "2026-03-02",
+      "turns": [
+        {
+          "turn": "grp_a1b2c3d4_s01_t000",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "ok everyone!! next session is at Raj's place on the 9th, right? 🎲 just confirming before i send the calendar invite. also what are we playing, any votes?",
+          "ts": "2026-03-02T19:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t001",
+          "speaker": "Raj",
+          "speaker_id": "p_bb88cc99",
+          "content": "Confirmed, my place on the 9th. I'll set up the table early so we're not scrambling again like last time 😄",
+          "ts": "2026-03-02T19:02:00",
+          "reply_to": "grp_a1b2c3d4_s01_t000"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t002",
+          "speaker": "Tomasz",
+          "speaker_id": "p_cc33dd44",
+          "content": "Good. In my experience, we should decide the game before the night so people can read the rules. Nothing worse than spending the first hour on a rules explanation.",
+          "ts": "2026-03-02T19:03:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t003",
+          "speaker": "Derek",
+          "speaker_id": "p_dd44ee55",
+          "content": "agree. read the rules people",
+          "ts": "2026-03-02T19:04:00",
+          "reply_to": "grp_a1b2c3d4_s01_t002"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t004",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "Seconded. If we're playing something new, whoever owns it should send the rulebook link by Wednesday. Cuts setup time by at least 30 minutes.",
+          "ts": "2026-03-02T19:05:00",
+          "reply_to": "grp_a1b2c3d4_s01_t003"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t005",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "ok ok teacher mode activated lol 😂 i'll send a poll for the game. Felix you and Kezia are the newest so do you have anything you've been wanting to try?",
+          "ts": "2026-03-02T19:06:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t006",
+          "speaker": "Felix",
+          "speaker_id": "p_dd00ee11",
+          "content": "YES ok so honestly I've been obsessed with Oath lately 🙌",
+          "ts": "2026-03-02T19:08:00",
+          "reply_to": "grp_a1b2c3d4_s01_t005"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t007",
+          "speaker": "Felix",
+          "speaker_id": "p_dd00ee11",
+          "content": "it's like if a 4X strategy game and a narrative RPG had a baby and the baby was also a legacy game 🎮",
+          "ts": "2026-03-02T19:08:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t008",
+          "speaker": "Felix",
+          "speaker_id": "p_dd00ee11",
+          "content": "the design is honestly genius, like every mechanic feeds into the theme in a way most video games don't even manage",
+          "ts": "2026-03-02T19:09:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t009",
+          "speaker": "Tomasz",
+          "speaker_id": "p_cc33dd44",
+          "content": "Oath has a learning curve that would eat the whole evening. In my experience, new members need something with a shorter rules overhead first. Perhaps we revisit it when everyone has a baseline.",
+          "ts": "2026-03-02T19:11:00",
+          "reply_to": "grp_a1b2c3d4_s01_t008"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t010",
+          "speaker": "Soo-Yeon",
+          "speaker_id": "p_ee55ff66",
+          "content": "sounds good to me 🙂",
+          "ts": "2026-03-02T19:12:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t011",
+          "speaker": "Raj",
+          "speaker_id": "p_bb88cc99",
+          "content": "Tomasz is right, to be fair. Oath's structural design is beautiful but the load-bearing mechanic is the oath itself and that needs a full session to click.",
+          "ts": "2026-03-02T19:13:00",
+          "reply_to": "grp_a1b2c3d4_s01_t009"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t012",
+          "speaker": "Felix",
+          "speaker_id": "p_dd00ee11",
+          "content": "ok ok fair enough 😅 what about something like Dune Imperium, it's like a worker placement deckbuilder hybrid, honestly way more accessible",
+          "ts": "2026-03-02T19:14:00",
+          "reply_to": "grp_a1b2c3d4_s01_t011"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t013",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "Dune Imperium has a good strategy ceiling. It would work. Priya, run the poll.",
+          "ts": "2026-03-02T19:15:00",
+          "reply_to": "grp_a1b2c3d4_s01_t012"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t014",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "poll sent! 🗳️ also can we talk about snacks? i was thinking since it's Dune themed we could do spiced nuts and flatbread, like a desert planet situation lol",
+          "ts": "2026-03-02T19:16:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t015",
+          "speaker": "Derek",
+          "speaker_id": "p_dd44ee55",
+          "content": "or just pizza",
+          "ts": "2026-03-02T19:17:00",
+          "reply_to": "grp_a1b2c3d4_s01_t014"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t016",
+          "speaker": "Lena",
+          "speaker_id": "p_aa77bb88",
+          "content": "so basically the themed snack thing is actually a nice warm-up ritual tbh, it sets the tone before the game even starts. one could argue it's part of the social contract of game night",
+          "ts": "2026-03-02T19:18:00",
+          "reply_to": "grp_a1b2c3d4_s01_t015"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t017",
+          "speaker": "Nadia",
+          "speaker_id": "p_cc99dd00",
+          "content": "I will be there at 7. What time do we start playing.",
+          "ts": "2026-03-02T19:19:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t018",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "7:30 target start honestly, a little warmup time first 😊 Raj how long do you want for setup?",
+          "ts": "2026-03-02T19:20:00",
+          "reply_to": "grp_a1b2c3d4_s01_t017"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t019",
+          "speaker": "Raj",
+          "speaker_id": "p_bb88cc99",
+          "content": "20 mins is enough if I do the insert sorting beforehand 😄",
+          "ts": "2026-03-02T19:21:00",
+          "reply_to": "grp_a1b2c3d4_s01_t018"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t020",
+          "speaker": "Kezia",
+          "speaker_id": "p_ff66aa77",
+          "content": "omg Raj your inserts are always so good 😍 how long have you been doing the custom ones",
+          "ts": "2026-03-02T19:22:00",
+          "reply_to": "grp_a1b2c3d4_s01_t019"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t021",
+          "speaker": "Raj",
+          "speaker_id": "p_bb88cc99",
+          "content": "Since before the Collective started, honestly.",
+          "ts": "2026-03-02T19:23:00",
+          "reply_to": "grp_a1b2c3d4_s01_t020"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t022",
+          "speaker": "Tomasz",
+          "speaker_id": "p_cc33dd44",
+          "content": "Raj brought his first printed insert to the very first session we ran together, five years ago. That is how I knew he was serious about this.",
+          "ts": "2026-03-02T19:24:00",
+          "reply_to": "grp_a1b2c3d4_s01_t021"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t023",
+          "speaker": "Felix",
+          "speaker_id": "p_dd00ee11",
+          "content": "wait you two literally started this whole thing?? like it was just you both at the beginning? 👀",
+          "ts": "2026-03-02T19:25:00",
+          "reply_to": "grp_a1b2c3d4_s01_t022"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t024",
+          "speaker": "Raj",
+          "speaker_id": "p_bb88cc99",
+          "content": "Three of us. Marcus joined in the first month 😄",
+          "ts": "2026-03-02T19:26:00",
+          "reply_to": "grp_a1b2c3d4_s01_t023"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t025",
+          "speaker": "Derek",
+          "speaker_id": "p_dd44ee55",
+          "content": "how long have i been in",
+          "ts": "2026-03-02T19:27:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t026",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "Three years. You've lost 47% of games played in that time, for the record.",
+          "ts": "2026-03-02T19:28:00",
+          "reply_to": "grp_a1b2c3d4_s01_t025"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t027",
+          "speaker": "Derek",
+          "speaker_id": "p_dd44ee55",
+          "content": "nah that cant be right",
+          "ts": "2026-03-02T19:28:00",
+          "reply_to": "grp_a1b2c3d4_s01_t026"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t028",
+          "speaker": "Kezia",
+          "speaker_id": "p_ff66aa77",
+          "content": "lol 47% is so specific 😂",
+          "ts": "2026-03-02T19:29:00",
+          "reply_to": "grp_a1b2c3d4_s01_t027"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s01_t029",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "I have a spreadsheet.",
+          "ts": "2026-03-02T19:30:00",
+          "reply_to": "grp_a1b2c3d4_s01_t028"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_a1b2c3d4_s02",
+      "session_index": 2,
+      "topic": "Game selection debate and upcoming session prep",
+      "ts": "2026-03-09",
+      "turns": [
+        {
+          "turn": "grp_a1b2c3d4_s02_t000",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "ok we're live at Raj's!! 🎉 rulebooks were sent out Wednesday like Marcus asked, everyone had a chance to look? honestly the Dune theme is doing a lot of heavy lifting for me already",
+          "ts": "2026-03-09T19:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t001",
+          "speaker": "Derek",
+          "speaker_id": "p_dd44ee55",
+          "content": "read it. lets go",
+          "ts": "2026-03-09T19:01:00",
+          "reply_to": "grp_a1b2c3d4_s02_t000"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t002",
+          "speaker": "Lena",
+          "speaker_id": "p_aa77bb88",
+          "content": "so basically I skimmed it but the intrigue card economy is where the interesting decision space is tbh, the combat feels almost vestigial as a mechanic",
+          "ts": "2026-03-09T19:02:00",
+          "reply_to": "grp_a1b2c3d4_s02_t000"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t003",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "Actually, combat is the primary threat mechanic. The intrigue cards resolve it. They're not separate systems.",
+          "ts": "2026-03-09T19:03:00",
+          "reply_to": "grp_a1b2c3d4_s02_t002"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t004",
+          "speaker": "Lena",
+          "speaker_id": "p_aa77bb88",
+          "content": "one could argue that framing the combat as vestigial is precisely the point, it's deliberately uncertain which is a design choice to reduce the runaway leader problem tbh",
+          "ts": "2026-03-09T19:05:00",
+          "reply_to": "grp_a1b2c3d4_s02_t003"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t005",
+          "speaker": "Raj",
+          "speaker_id": "p_bb88cc99",
+          "content": "To be fair to both of you, the design is doing something structural here.",
+          "ts": "2026-03-09T19:06:00",
+          "reply_to": "grp_a1b2c3d4_s02_t004"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t006",
+          "speaker": "Raj",
+          "speaker_id": "p_bb88cc99",
+          "content": "The uncertainty is load-bearing. Remove it and the whole faction balance collapses 🎲",
+          "ts": "2026-03-09T19:07:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t007",
+          "speaker": "Tomasz",
+          "speaker_id": "p_cc33dd44",
+          "content": "The Dune IP is also doing historical work here, which is relevant context. Herbert was modeling political systems, not combat. In my experience, thematic games are always more satisfying when the mechanics mirror the source material.",
+          "ts": "2026-03-09T19:09:00",
+          "reply_to": "grp_a1b2c3d4_s02_t006"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t008",
+          "speaker": "Felix",
+          "speaker_id": "p_dd00ee11",
+          "content": "exactly!! like in Crusader Kings the political maneuvering is what makes the violence meaningful 🎮",
+          "ts": "2026-03-09T19:10:00",
+          "reply_to": "grp_a1b2c3d4_s02_t007"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t009",
+          "speaker": "Felix",
+          "speaker_id": "p_dd00ee11",
+          "content": "wait Kezia didn't make it tonight?",
+          "ts": "2026-03-09T19:10:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t010",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "she texted, late shift at the cafe. she'll be at the next one! 😊 Nadia also skipping tonight, i think",
+          "ts": "2026-03-09T19:11:00",
+          "reply_to": "grp_a1b2c3d4_s02_t009"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t011",
+          "speaker": "Felix",
+          "speaker_id": "p_dd00ee11",
+          "content": "honestly Kezia got me into this group, we know each other from the design community online, she basically said you all are the real deal 👾",
+          "ts": "2026-03-09T19:12:00",
+          "reply_to": "grp_a1b2c3d4_s02_t010"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t012",
+          "speaker": "Soo-Yeon",
+          "speaker_id": "p_ee55ff66",
+          "content": "she has good taste in groups 🙂",
+          "ts": "2026-03-09T19:13:00",
+          "reply_to": "grp_a1b2c3d4_s02_t011"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t013",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "We should do the rules rundown for Felix since he hasn't played. Lena, you mentioned the intrigue deck. Want to walk him through that interaction?",
+          "ts": "2026-03-09T19:14:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t014",
+          "speaker": "Lena",
+          "speaker_id": "p_aa77bb88",
+          "content": "so basically the intrigue cards are your secret advantage, you accumulate them through agents, and you play them in combat to flip outcomes. the evidence suggests they're designed to reward players who invest in the political track over pure military, tbh that's where I want to focus",
+          "ts": "2026-03-09T19:16:00",
+          "reply_to": "grp_a1b2c3d4_s02_t013"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t015",
+          "speaker": "Derek",
+          "speaker_id": "p_dd44ee55",
+          "content": "military track won me 2 of my 3 Dune plays",
+          "ts": "2026-03-09T19:18:00",
+          "reply_to": "grp_a1b2c3d4_s02_t014"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t016",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "At a table that didn't know the political counter. Different story here.",
+          "ts": "2026-03-09T19:19:00",
+          "reply_to": "grp_a1b2c3d4_s02_t015"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t017",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "ok before this turns into a two-hour pregame theory session, can we also talk about what's after Dune for the next few weeks? i have a list 😄 Wingspan is on there, Marcus haven't you been saying it's good for mixed groups?",
+          "ts": "2026-03-09T19:21:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t018",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "Wingspan works. Medium weight, good depth, minimal luck. The card draw adds some variance but it's manageable.",
+          "ts": "2026-03-09T19:22:00",
+          "reply_to": "grp_a1b2c3d4_s02_t017"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t019",
+          "speaker": "Lena",
+          "speaker_id": "p_aa77bb88",
+          "content": "I've been curious about Wingspan tbh. The engine-building is supposed to be elegant. Though I'll admit, doesn't the bird feeder die add variance Marcus would usually object to?",
+          "ts": "2026-03-09T19:23:00",
+          "reply_to": "grp_a1b2c3d4_s02_t018"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t020",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "The die is mitigated by rerolls. It's not pure luck.",
+          "ts": "2026-03-09T19:24:00",
+          "reply_to": "grp_a1b2c3d4_s02_t019"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t021",
+          "speaker": "Soo-Yeon",
+          "speaker_id": "p_ee55ff66",
+          "content": "Priya mentioned pizza for tonight. Can we do something lighter? I had a heavy lunch 😅",
+          "ts": "2026-03-09T19:26:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t022",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "ooh good call, Raj do you have any of those rice crackers left from last time? or we could do hummus and stuff 😊",
+          "ts": "2026-03-09T19:27:00",
+          "reply_to": "grp_a1b2c3d4_s02_t021"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t023",
+          "speaker": "Raj",
+          "speaker_id": "p_bb88cc99",
+          "content": "I can do that 😄 also grabbed some mixed nuts",
+          "ts": "2026-03-09T19:28:00",
+          "reply_to": "grp_a1b2c3d4_s02_t022"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t024",
+          "speaker": "Derek",
+          "speaker_id": "p_dd44ee55",
+          "content": "can we just start",
+          "ts": "2026-03-09T19:29:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t025",
+          "speaker": "Tomasz",
+          "speaker_id": "p_cc33dd44",
+          "content": "Let us begin. I will take House Atreides. In my experience they reward the diplomatic playstyle.",
+          "ts": "2026-03-09T19:30:00",
+          "reply_to": "grp_a1b2c3d4_s02_t024"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t026",
+          "speaker": "Derek",
+          "speaker_id": "p_dd44ee55",
+          "content": "harkonnen. obviously",
+          "ts": "2026-03-09T19:31:00",
+          "reply_to": "grp_a1b2c3d4_s02_t025"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s02_t027",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "lol of course you did Derek 😂 ok Soo-Yeon, Felix, what are you taking?",
+          "ts": "2026-03-09T19:32:00",
+          "reply_to": "grp_a1b2c3d4_s02_t026"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_a1b2c3d4_s03",
+      "session_index": 3,
+      "topic": "Post-Dune debrief drifting into personal chat and Priya's Wingspan surprise",
+      "ts": "2026-03-16",
+      "turns": [
+        {
+          "turn": "grp_a1b2c3d4_s03_t000",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "ok we're at Soo-Yeon's tonight for Wingspan 🦅 and honestly I am SO ready for this. Tomasz you owe us all an explanation for that last-round Dune betrayal last week btw",
+          "ts": "2026-03-16T19:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s03_t001",
+          "speaker": "Tomasz",
+          "speaker_id": "p_cc33dd44",
+          "content": "It was not a betrayal. It was a historically accurate diplomatic pivot. Atreides are not above opportunism. Page 14 of the rulebook permits it explicitly.",
+          "ts": "2026-03-16T19:01:00",
+          "reply_to": "grp_a1b2c3d4_s03_t000"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s03_t002",
+          "speaker": "Nadia",
+          "speaker_id": "p_cc99dd00",
+          "content": "Correct. The intrigue card played was legal. I reviewed it.",
+          "ts": "2026-03-16T19:02:00",
+          "reply_to": "grp_a1b2c3d4_s03_t001"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s03_t003",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "It was legal. It was also the correct play given the board state. I would have done the same.",
+          "ts": "2026-03-16T19:03:00",
+          "reply_to": "grp_a1b2c3d4_s03_t002"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s03_t004",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "fine fine the rules lawyers have spoken 😤 ok Wingspan, who's setting up? Nadia can you do the bird tray?",
+          "ts": "2026-03-16T19:04:00",
+          "reply_to": "grp_a1b2c3d4_s03_t003"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s03_t005",
+          "speaker": "Nadia",
+          "speaker_id": "p_cc99dd00",
+          "content": "Yes. Everyone keep their food away from the card area please.",
+          "ts": "2026-03-16T19:05:00",
+          "reply_to": "grp_a1b2c3d4_s03_t004"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s03_t006",
+          "speaker": "Kezia",
+          "speaker_id": "p_ff66aa77",
+          "content": "omg the bird cards are so pretty 😍 Priya did you pick this game because of the art",
+          "ts": "2026-03-16T19:06:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s03_t007",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "honestly yes but also Marcus said the engine-building is really satisfying even if you lose, which, coming from him is basically a five-star review 😄",
+          "ts": "2026-03-16T19:07:00",
+          "reply_to": "grp_a1b2c3d4_s03_t006"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s03_t008",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "ok so that was genuinely wonderful 🥹 I went full forest-bird engine and won! Honestly i came in expecting to just enjoy the art and ended up actually caring about winning. is this what you all feel every session??",
+          "ts": "2026-03-16T19:10:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s03_t009",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "Technically you won because Derek made a suboptimal prairie bird choice in round three.",
+          "ts": "2026-03-16T19:11:00",
+          "reply_to": "grp_a1b2c3d4_s03_t008"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s03_t010",
+          "speaker": "Lena",
+          "speaker_id": "p_aa77bb88",
+          "content": "so basically Priya your forest engine was genuinely the tightest build at the table tbh, the evidence supports your win even accounting for Derek's blunder",
+          "ts": "2026-03-16T19:12:00",
+          "reply_to": "grp_a1b2c3d4_s03_t009"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s03_t011",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "ok i'll take it 😊 we should definitely put this in the rotation. do you think cooperative and competitive can coexist in a rotation or does one crowd the other out?",
+          "ts": "2026-03-16T19:14:00",
+          "reply_to": "grp_a1b2c3d4_s03_t010"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s03_t012",
+          "speaker": "Soo-Yeon",
+          "speaker_id": "p_ee55ff66",
+          "content": "they coexist fine if we alternate 🙂",
+          "ts": "2026-03-16T19:15:00",
+          "reply_to": "grp_a1b2c3d4_s03_t011"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s03_t013",
+          "speaker": "Raj",
+          "speaker_id": "p_bb88cc99",
+          "content": "Food situation: I brought more of those flatbreads. Can we decide before we start round two? Who's ordering and what?",
+          "ts": "2026-03-16T19:16:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s03_t014",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "i vote we all just grab something from the deli on the corner, everyone can choose? that way nobody's stuck with whatever",
+          "ts": "2026-03-16T19:17:00",
+          "reply_to": "grp_a1b2c3d4_s03_t013"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s03_t015",
+          "speaker": "Tomasz",
+          "speaker_id": "p_cc33dd44",
+          "content": "Pizza delivery is more efficient. In my experience the deli run breaks session flow.",
+          "ts": "2026-03-16T19:18:00",
+          "reply_to": "grp_a1b2c3d4_s03_t014"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s03_t016",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "Pizza works. Hands stay clean if we use plates.",
+          "ts": "2026-03-16T19:19:00",
+          "reply_to": "grp_a1b2c3d4_s03_t015"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s03_t017",
+          "speaker": "Kezia",
+          "speaker_id": "p_ff66aa77",
+          "content": "fine with pizza 🍕",
+          "ts": "2026-03-16T19:19:00",
+          "reply_to": "grp_a1b2c3d4_s03_t016"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s03_t018",
+          "speaker": "Soo-Yeon",
+          "speaker_id": "p_ee55ff66",
+          "content": "I'll just have Raj's flatbread.",
+          "ts": "2026-03-16T19:20:00",
+          "reply_to": "grp_a1b2c3d4_s03_t017"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s03_t019",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "lol ok pizza it is i guess 😅 majority wins. Nadia you want in on the order?",
+          "ts": "2026-03-16T19:21:00",
+          "reply_to": "grp_a1b2c3d4_s03_t018"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s03_t020",
+          "speaker": "Nadia",
+          "speaker_id": "p_cc99dd00",
+          "content": "No. I do not eat during sessions. Order what you want.",
+          "ts": "2026-03-16T19:22:00",
+          "reply_to": "grp_a1b2c3d4_s03_t019"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s03_t021",
+          "speaker": "Lena",
+          "speaker_id": "p_aa77bb88",
+          "content": "Priya you mentioned a relational disclosure earlier that I wanted to follow up on tbh. you and Derek seem to have different vibes about the session energy. like i've noticed he tends to go quiet when cooperative options are even mentioned?",
+          "ts": "2026-03-16T19:24:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s03_t022",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "honestly yes. we kind of have opposite taste and he's been pretty vocal about it when the vote doesn't go his way. it's fine, we work around it. do you think it's worth raising as a group thing?",
+          "ts": "2026-03-16T19:25:00",
+          "reply_to": "grp_a1b2c3d4_s03_t021"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s03_t023",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "The rotation handles it. He gets his competitive nights, others get theirs.",
+          "ts": "2026-03-16T19:27:00",
+          "reply_to": "grp_a1b2c3d4_s03_t022"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_a1b2c3d4_s04",
+      "session_index": 4,
+      "topic": "Hosting rotation change and Kezia's game weight evolution",
+      "ts": "2026-03-23",
+      "turns": [
+        {
+          "turn": "grp_a1b2c3d4_s04_t000",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "ok we're at Marcus's tonight!! 🎲 Tomasz what's on the table today?",
+          "ts": "2026-03-23T19:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s04_t001",
+          "speaker": "Tomasz",
+          "speaker_id": "p_cc33dd44",
+          "content": "I was going to suggest Agricola but given our newer members, perhaps something mid-weight. Kezia, what have you been playing at home this week?",
+          "ts": "2026-03-23T19:01:00",
+          "reply_to": "grp_a1b2c3d4_s04_t000"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s04_t002",
+          "speaker": "Kezia",
+          "speaker_id": "p_ff66aa77",
+          "content": "omg Tomasz you've been slowly corrupting me with actual strategy games 😂 been playing Cascadia solo to practice, loving it",
+          "ts": "2026-03-23T19:02:00",
+          "reply_to": "grp_a1b2c3d4_s04_t001"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s04_t003",
+          "speaker": "Tomasz",
+          "speaker_id": "p_cc33dd44",
+          "content": "Cascadia is a good bridge game. In my experience it opens the door to spatial games without overwhelming new players.",
+          "ts": "2026-03-23T19:03:00",
+          "reply_to": "grp_a1b2c3d4_s04_t002"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s04_t004",
+          "speaker": "Kezia",
+          "speaker_id": "p_ff66aa77",
+          "content": "honestly i'd never have tried it before. you walking me through that Terra Mystica session even when i was totally lost kind of changed how i think about heavier games",
+          "ts": "2026-03-23T19:04:00",
+          "reply_to": "grp_a1b2c3d4_s04_t003"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s04_t005",
+          "speaker": "Lena",
+          "speaker_id": "p_aa77bb88",
+          "content": "so basically what Tomasz did was smart pedagogy tbh, scaffolding the experience rather than throwing you in the deep end, the evidence suggests that's actually what determines whether new players stick around",
+          "ts": "2026-03-23T19:05:00",
+          "reply_to": "grp_a1b2c3d4_s04_t004"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s04_t006",
+          "speaker": "Raj",
+          "speaker_id": "p_bb88cc99",
+          "content": "Kezia and Felix have been a good addition to be fair. Different energy than the founding crowd 😄",
+          "ts": "2026-03-23T19:07:00",
+          "reply_to": "grp_a1b2c3d4_s04_t005"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s04_t007",
+          "speaker": "Felix",
+          "speaker_id": "p_dd00ee11",
+          "content": "aww thanks Raj!! 🥹",
+          "ts": "2026-03-23T19:08:00",
+          "reply_to": "grp_a1b2c3d4_s04_t006"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s04_t008",
+          "speaker": "Felix",
+          "speaker_id": "p_dd00ee11",
+          "content": "honestly it does feel different here than the meetup nights, like you all actually care about the games as games, not just the social thing",
+          "ts": "2026-03-23T19:08:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s04_t009",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "it's both for me honestly 😊 the social part is like half the reason i come. also speaking of logistics, Raj should we talk about the hosting schedule? you've been at it a lot",
+          "ts": "2026-03-23T19:09:00",
+          "reply_to": "grp_a1b2c3d4_s04_t008"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s04_t010",
+          "speaker": "Raj",
+          "speaker_id": "p_bb88cc99",
+          "content": "Honestly yeah, I need a break from the constant setup and teardown. I love hosting the marathon once a year but ten sessions in a row at my place takes it out of you 😅",
+          "ts": "2026-03-23T19:11:00",
+          "reply_to": "grp_a1b2c3d4_s04_t009"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s04_t011",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "ok we are definitely doing a rotation then! honestly i should have organized this earlier. who's comfortable hosting? i can make a sign-up sheet 😊",
+          "ts": "2026-03-23T19:12:00",
+          "reply_to": "grp_a1b2c3d4_s04_t010"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s04_t012",
+          "speaker": "Tomasz",
+          "speaker_id": "p_cc33dd44",
+          "content": "I can host in April. My dining table fits eight comfortably.",
+          "ts": "2026-03-23T19:13:00",
+          "reply_to": "grp_a1b2c3d4_s04_t011"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s04_t013",
+          "speaker": "Nadia",
+          "speaker_id": "p_cc99dd00",
+          "content": "I am not able to host. I do not have sufficient space.",
+          "ts": "2026-03-23T19:14:00",
+          "reply_to": "grp_a1b2c3d4_s04_t012"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s04_t014",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "I can take a session. Not more than one per month.",
+          "ts": "2026-03-23T19:15:00",
+          "reply_to": "grp_a1b2c3d4_s04_t013"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s04_t015",
+          "speaker": "Lena",
+          "speaker_id": "p_aa77bb88",
+          "content": "so basically this is a collective action problem tbh, everyone benefits from having a host but no one wants to be the permanent one. rotating solves it but only if the rotation is explicit and written down",
+          "ts": "2026-03-23T19:17:00",
+          "reply_to": "grp_a1b2c3d4_s04_t014"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s04_t016",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "written down it is 😄 making the sheet now. also game time, what are we playing? Cascadia anyone?",
+          "ts": "2026-03-23T19:18:00",
+          "reply_to": "grp_a1b2c3d4_s04_t015"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s04_t017",
+          "speaker": "Kezia",
+          "speaker_id": "p_ff66aa77",
+          "content": "yes!! 🦦 i've actually been reading up on it, Tomasz you were right about the spatial scoring",
+          "ts": "2026-03-23T19:19:00",
+          "reply_to": "grp_a1b2c3d4_s04_t016"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s04_t018",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "Good. Pre-reading counts.",
+          "ts": "2026-03-23T19:20:00",
+          "reply_to": "grp_a1b2c3d4_s04_t017"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s04_t019",
+          "speaker": "Felix",
+          "speaker_id": "p_dd00ee11",
+          "content": "honestly Cascadia gives me Stardew Valley vibes, like peaceful but deep 🌿",
+          "ts": "2026-03-23T19:21:00",
+          "reply_to": "grp_a1b2c3d4_s04_t018"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s04_t020",
+          "speaker": "Raj",
+          "speaker_id": "p_bb88cc99",
+          "content": "The tile arrangement in Cascadia is genuinely elegant. Strong structural design 😄",
+          "ts": "2026-03-23T19:22:00",
+          "reply_to": "grp_a1b2c3d4_s04_t019"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_a1b2c3d4_s05",
+      "session_index": 5,
+      "topic": "Marcus and Lena debate complexity vs luck; Lena's vegetarian preference surfaces",
+      "ts": "2026-03-30",
+      "turns": [
+        {
+          "turn": "grp_a1b2c3d4_s05_t000",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "ok Lena's hosting tonight 🎉 i brought veggie samosas as snacks, hope that works for everyone? or i can grab something else if needed",
+          "ts": "2026-03-30T19:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s05_t001",
+          "speaker": "Lena",
+          "speaker_id": "p_aa77bb88",
+          "content": "veggie samosas are perfect tbh, thank you 😊",
+          "ts": "2026-03-30T19:01:00",
+          "reply_to": "grp_a1b2c3d4_s05_t000"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s05_t002",
+          "speaker": "Derek",
+          "speaker_id": "p_dd44ee55",
+          "content": "whats on the table",
+          "ts": "2026-03-30T19:02:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s05_t003",
+          "speaker": "Lena",
+          "speaker_id": "p_aa77bb88",
+          "content": "so basically I was thinking Brass Birmingham. It fits everyone's level now and the economic network mechanic is tbh the most interesting decision space in any euro I've played",
+          "ts": "2026-03-30T19:03:00",
+          "reply_to": "grp_a1b2c3d4_s05_t002"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s05_t004",
+          "speaker": "Tomasz",
+          "speaker_id": "p_cc33dd44",
+          "content": "Good choice. In my experience Brass Birmingham is where you see who has really internalized network thinking. Historically this type of economic simulation is underutilised in the genre.",
+          "ts": "2026-03-30T19:04:00",
+          "reply_to": "grp_a1b2c3d4_s05_t003"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s05_t005",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "Brass is good. Pure optimization, no dice. I appreciate that.",
+          "ts": "2026-03-30T19:05:00",
+          "reply_to": "grp_a1b2c3d4_s05_t004"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s05_t006",
+          "speaker": "Kezia",
+          "speaker_id": "p_ff66aa77",
+          "content": "gonna try to keep up 😅 this is definitely heavier than what i was playing six months ago",
+          "ts": "2026-03-30T19:06:00",
+          "reply_to": "grp_a1b2c3d4_s05_t005"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s05_t007",
+          "speaker": "Felix",
+          "speaker_id": "p_dd00ee11",
+          "content": "honestly same, but like in a good way 🎮",
+          "ts": "2026-03-30T19:07:00",
+          "reply_to": "grp_a1b2c3d4_s05_t006"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s05_t008",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "ok post-game debrief time!! Marcus you were incredible at those canal-phase canal placements, how did you know to block the Dudley connection so early?",
+          "ts": "2026-03-30T19:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s05_t009",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "Lena's merchant tile placement in round two signaled she was building toward Coventry. Blocking Dudley removes that route. It's spatial denial, not aggression.",
+          "ts": "2026-03-30T19:46:00",
+          "reply_to": "grp_a1b2c3d4_s05_t008"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s05_t010",
+          "speaker": "Lena",
+          "speaker_id": "p_aa77bb88",
+          "content": "so basically I walked right into that and tbh the evidence was in front of me the whole time. one could argue I was too focused on the iron works chain to see the network threat",
+          "ts": "2026-03-30T19:47:00",
+          "reply_to": "grp_a1b2c3d4_s05_t009"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s05_t011",
+          "speaker": "Raj",
+          "speaker_id": "p_bb88cc99",
+          "content": "To be fair, the Coventry route is the load-bearing play for the merchant engine. Your read was right, the execution needed one more canal tile 😄",
+          "ts": "2026-03-30T19:49:00",
+          "reply_to": "grp_a1b2c3d4_s05_t010"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s05_t012",
+          "speaker": "Soo-Yeon",
+          "speaker_id": "p_ee55ff66",
+          "content": "Felix you did well for a first game 🙂",
+          "ts": "2026-03-30T19:51:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s05_t013",
+          "speaker": "Felix",
+          "speaker_id": "p_dd00ee11",
+          "content": "honestly I just kept asking 'what would Marcus do' and doing the opposite for fun 😂",
+          "ts": "2026-03-30T19:52:00",
+          "reply_to": "grp_a1b2c3d4_s05_t012"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s05_t014",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "That's actually a reasonable heuristic in a four-player game. Contrarian positioning has value.",
+          "ts": "2026-03-30T19:53:00",
+          "reply_to": "grp_a1b2c3d4_s05_t013"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s05_t015",
+          "speaker": "Lena",
+          "speaker_id": "p_aa77bb88",
+          "content": "tbh Marcus I wanted to ask you something. I know you have always been pretty strict about luck in games but I've been reading some design theory lately. one could argue that variance is actually a skill-testing element because it creates novel board states you have to solve under pressure rather than just optimizing a solved path",
+          "ts": "2026-03-30T19:55:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s05_t016",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "That's... actually a fair reframe. Variance as a constraint set rather than randomness. I'd still rather have deterministic design but I can see the argument.",
+          "ts": "2026-03-30T19:56:00",
+          "reply_to": "grp_a1b2c3d4_s05_t015"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s05_t017",
+          "speaker": "Lena",
+          "speaker_id": "p_aa77bb88",
+          "content": "and honestly that actually goes for me too tbh. I've been so allergic to dice-heavy games for ages and I think it was more about feeling out of control than about the design being bad",
+          "ts": "2026-03-30T19:58:00",
+          "reply_to": "grp_a1b2c3d4_s05_t016"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s05_t018",
+          "speaker": "Tomasz",
+          "speaker_id": "p_cc33dd44",
+          "content": "In my experience, the best games create the illusion of control within constrained randomness. That is why poker has survived five hundred years.",
+          "ts": "2026-03-30T19:59:00",
+          "reply_to": "grp_a1b2c3d4_s05_t017"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s05_t019",
+          "speaker": "Derek",
+          "speaker_id": "p_dd44ee55",
+          "content": "next game? same group or do we add people",
+          "ts": "2026-03-30T20:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s05_t020",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "same group, it's already 8pm! honestly i'd love to do something lighter as a palette cleanser, anyone?",
+          "ts": "2026-03-30T20:01:00",
+          "reply_to": "grp_a1b2c3d4_s05_t019"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s05_t021",
+          "speaker": "Soo-Yeon",
+          "speaker_id": "p_ee55ff66",
+          "content": "I have Codenames. Quick and deduction-focused 🙂",
+          "ts": "2026-03-30T20:02:00",
+          "reply_to": "grp_a1b2c3d4_s05_t020"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_a1b2c3d4_s06",
+      "session_index": 6,
+      "topic": "Tomasz's house rules shift and Soo-Yeon's real-time game experiment",
+      "ts": "2026-04-06",
+      "turns": [
+        {
+          "turn": "grp_a1b2c3d4_s06_t000",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "Tomasz's tonight!! 🏰 what are we playing and please tell me you made pierogi again",
+          "ts": "2026-04-06T19:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s06_t001",
+          "speaker": "Tomasz",
+          "speaker_id": "p_cc33dd44",
+          "content": "Pierogi are on the stove. Game is Viticulture. In my experience it is a good socialiser since turns are long enough for conversation but short enough to stay engaged.",
+          "ts": "2026-04-06T19:01:00",
+          "reply_to": "grp_a1b2c3d4_s06_t000"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s06_t002",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "ok but i want to flag something first. Soo-Yeon mentioned she'd be open to trying Fuse tonight as a warmup, which honestly surprised me a little, is that still on Soo-Yeon?",
+          "ts": "2026-04-06T19:02:00",
+          "reply_to": "grp_a1b2c3d4_s06_t001"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s06_t003",
+          "speaker": "Soo-Yeon",
+          "speaker_id": "p_ee55ff66",
+          "content": "yes. I said I would try it. Cooperative real-time is less intimidating than solo speed. I want to see if the team element changes the experience.",
+          "ts": "2026-04-06T19:03:00",
+          "reply_to": "grp_a1b2c3d4_s06_t002"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s06_t004",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "honestly I am so glad you're trying it. I know real-time stuff has always felt like a lot for you, I figured the cooperative format might make it less overwhelming since we can all just yell at each other instead 😂",
+          "ts": "2026-04-06T19:04:00",
+          "reply_to": "grp_a1b2c3d4_s06_t003"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s06_t005",
+          "speaker": "Soo-Yeon",
+          "speaker_id": "p_ee55ff66",
+          "content": "that was the reasoning, yes 🙂",
+          "ts": "2026-04-06T19:05:00",
+          "reply_to": "grp_a1b2c3d4_s06_t004"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s06_t006",
+          "speaker": "Nadia",
+          "speaker_id": "p_cc99dd00",
+          "content": "I will observe the Fuse round. I do not object to others playing it.",
+          "ts": "2026-04-06T19:06:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s06_t007",
+          "speaker": "Lena",
+          "speaker_id": "p_aa77bb88",
+          "content": "so basically Fuse as a warm-up is smart design honestly. ten minutes of high-intensity cooperative play primes your threat-response circuits for the slower strategic decisions in Viticulture tbh",
+          "ts": "2026-04-06T19:07:00",
+          "reply_to": "grp_a1b2c3d4_s06_t006"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s06_t008",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "That's not how cognitive priming works. But Fuse is fine as a warm-up.",
+          "ts": "2026-04-06T19:08:00",
+          "reply_to": "grp_a1b2c3d4_s06_t007"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s06_t009",
+          "speaker": "Kezia",
+          "speaker_id": "p_ff66aa77",
+          "content": "Soo-Yeon you're going to crush it, i promise 😊 the cooperative thing makes it way less stressful",
+          "ts": "2026-04-06T19:09:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s06_t010",
+          "speaker": "Soo-Yeon",
+          "speaker_id": "p_ee55ff66",
+          "content": "that was actually fine 🙂 I will note that team communication absorbed most of the pressure. aigoo, I did not expect to enjoy that.",
+          "ts": "2026-04-06T19:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s06_t011",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "YES!! 🎉 told you!! ok now Viticulture. Tomasz can we talk house rules for first-timers since Felix isn't here tonight but we have Kezia who's still building her heavy-game confidence",
+          "ts": "2026-04-06T19:31:00",
+          "reply_to": "grp_a1b2c3d4_s06_t010"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s06_t012",
+          "speaker": "Tomasz",
+          "speaker_id": "p_cc33dd44",
+          "content": "I would normally say no to house rules on principle. But after that session two months ago where the new player left mid-game because the worker placement felt punishing, I think one quality-of-life adjustment for new members is reasonable. Agreed up front.",
+          "ts": "2026-03-06T19:32:00",
+          "reply_to": "grp_a1b2c3d4_s06_t011"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s06_t013",
+          "speaker": "Nadia",
+          "speaker_id": "p_cc99dd00",
+          "content": "Agreed up front is the correct qualifier. That is not a violation of the rulebook. It is a pre-session variant declaration.",
+          "ts": "2026-04-06T19:33:00",
+          "reply_to": "grp_a1b2c3d4_s06_t012"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s06_t014",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "Fine. One adjustment. What are you proposing.",
+          "ts": "2026-04-06T19:34:00",
+          "reply_to": "grp_a1b2c3d4_s06_t013"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s06_t015",
+          "speaker": "Tomasz",
+          "speaker_id": "p_cc33dd44",
+          "content": "One free worker placement in round one for players on their first game. Removes the first-round paralysis without breaking the economic tension.",
+          "ts": "2026-04-06T19:35:00",
+          "reply_to": "grp_a1b2c3d4_s06_t014"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s06_t016",
+          "speaker": "Kezia",
+          "speaker_id": "p_ff66aa77",
+          "content": "omg that is so helpful actually 😭 thank you Tomasz",
+          "ts": "2026-04-06T19:36:00",
+          "reply_to": "grp_a1b2c3d4_s06_t015"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s06_t017",
+          "speaker": "Raj",
+          "speaker_id": "p_bb88cc99",
+          "content": "To be fair, that is elegant scaffolding. Load-bearing choice deferred by one round 😄",
+          "ts": "2026-04-06T19:37:00",
+          "reply_to": "grp_a1b2c3d4_s06_t016"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s06_t018",
+          "speaker": "Lena",
+          "speaker_id": "p_aa77bb88",
+          "content": "so basically scaffolded autonomy tbh, the evidence in learning science supports exactly this approach. good call Tomasz",
+          "ts": "2026-04-06T19:38:00",
+          "reply_to": "grp_a1b2c3d4_s06_t017"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s06_t019",
+          "speaker": "Soo-Yeon",
+          "speaker_id": "p_ee55ff66",
+          "content": "noted 🙂",
+          "ts": "2026-04-06T19:39:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s06_t020",
+          "speaker": "Tomasz",
+          "speaker_id": "p_cc33dd44",
+          "content": "Pierogi are ready. Let us begin.",
+          "ts": "2026-04-06T19:40:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_a1b2c3d4_s07",
+      "session_index": 7,
+      "topic": "Derek's rematch pattern acknowledged; Tomasz and Nadia wargame bond surfaces",
+      "ts": "2026-04-13",
+      "turns": [
+        {
+          "turn": "grp_a1b2c3d4_s07_t000",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "ok Soo-Yeon hosting again tonight 🎲 what's on the menu game-wise?",
+          "ts": "2026-04-13T19:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s07_t001",
+          "speaker": "Soo-Yeon",
+          "speaker_id": "p_ee55ff66",
+          "content": "Mysterium. Seven players, deduction, cooperative 🙂",
+          "ts": "2026-04-13T19:01:00",
+          "reply_to": "grp_a1b2c3d4_s07_t000"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s07_t002",
+          "speaker": "Derek",
+          "speaker_id": "p_dd44ee55",
+          "content": "cooperative again",
+          "ts": "2026-04-13T19:02:00",
+          "reply_to": "grp_a1b2c3d4_s07_t001"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s07_t003",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "Rotation, Derek.",
+          "ts": "2026-04-13T19:03:00",
+          "reply_to": "grp_a1b2c3d4_s07_t002"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s07_t004",
+          "speaker": "Tomasz",
+          "speaker_id": "p_cc33dd44",
+          "content": "Mysterium is actually quite good for reading people. In my experience it rewards the same social inference that makes wargames interesting. Nadia you should try this one.",
+          "ts": "2026-04-13T19:04:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s07_t005",
+          "speaker": "Nadia",
+          "speaker_id": "p_cc99dd00",
+          "content": "I will play. I have not tried Mysterium. You played the wargame campaign with me last spring, so I trust your read on social deduction overlap.",
+          "ts": "2026-04-13T19:05:00",
+          "reply_to": "grp_a1b2c3d4_s07_t004"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s07_t006",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "wait you two did a full wargame campaign together?? when was this, i didn't know that 👀",
+          "ts": "2026-04-13T19:06:00",
+          "reply_to": "grp_a1b2c3d4_s07_t005"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s07_t007",
+          "speaker": "Tomasz",
+          "speaker_id": "p_cc33dd44",
+          "content": "Last April. Nadia found that I was one of the few people in the group who owned the base game for that particular series. We played four sessions over six weeks.",
+          "ts": "2026-04-13T19:07:00",
+          "reply_to": "grp_a1b2c3d4_s07_t006"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s07_t008",
+          "speaker": "Nadia",
+          "speaker_id": "p_cc99dd00",
+          "content": "It was the most precise rules environment I have played in. He cites historical precedent for every ambiguous ruling.",
+          "ts": "2026-04-13T19:08:00",
+          "reply_to": "grp_a1b2c3d4_s07_t007"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s07_t009",
+          "speaker": "Raj",
+          "speaker_id": "p_bb88cc99",
+          "content": "That tracks. Those two are the most rules-precise people in the group, to be fair 😄",
+          "ts": "2026-04-13T19:09:00",
+          "reply_to": "grp_a1b2c3d4_s07_t008"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s07_t010",
+          "speaker": "Lena",
+          "speaker_id": "p_aa77bb88",
+          "content": "so basically that explains why Nadia didn't push back on Tomasz's Dune ruling even though everyone else was complaining tbh",
+          "ts": "2026-04-13T19:10:00",
+          "reply_to": "grp_a1b2c3d4_s07_t009"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s07_t011",
+          "speaker": "Derek",
+          "speaker_id": "p_dd44ee55",
+          "content": "close game. rematch?",
+          "ts": "2026-04-13T19:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s07_t012",
+          "speaker": "Tomasz",
+          "speaker_id": "p_cc33dd44",
+          "content": "It is 9:30. I have school tomorrow.",
+          "ts": "2026-04-13T19:31:00",
+          "reply_to": "grp_a1b2c3d4_s07_t011"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s07_t013",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "This is the fourth time you've asked for a rematch after losing this month. People are tired, Derek.",
+          "ts": "2026-04-13T19:32:00",
+          "reply_to": "grp_a1b2c3d4_s07_t012"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s07_t014",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "i mean honestly we've run long a few times recently and it's been because of extra rounds. not pointing fingers but 😅",
+          "ts": "2026-04-13T19:33:00",
+          "reply_to": "grp_a1b2c3d4_s07_t013"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s07_t015",
+          "speaker": "Derek",
+          "speaker_id": "p_dd44ee55",
+          "content": "fine. noted",
+          "ts": "2026-04-13T19:34:00",
+          "reply_to": "grp_a1b2c3d4_s07_t014"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s07_t016",
+          "speaker": "Soo-Yeon",
+          "speaker_id": "p_ee55ff66",
+          "content": "I also want to flag, can we keep food off the card table area. The Mysterium cards got a bit close to the chip bowl 😅",
+          "ts": "2026-04-13T19:35:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s07_t017",
+          "speaker": "Nadia",
+          "speaker_id": "p_cc99dd00",
+          "content": "Thank you. I did not say anything but I noticed that as well.",
+          "ts": "2026-04-13T19:36:00",
+          "reply_to": "grp_a1b2c3d4_s07_t016"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s07_t018",
+          "speaker": "Raj",
+          "speaker_id": "p_bb88cc99",
+          "content": "My bad, I'll move the bowl 😄 Nadia you should have said something earlier",
+          "ts": "2026-04-13T19:37:00",
+          "reply_to": "grp_a1b2c3d4_s07_t017"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s07_t019",
+          "speaker": "Nadia",
+          "speaker_id": "p_cc99dd00",
+          "content": "I did not want to interrupt the game.",
+          "ts": "2026-04-13T19:38:00",
+          "reply_to": "grp_a1b2c3d4_s07_t018"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s07_t020",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "Good session. Same time next week, Priya has the schedule.",
+          "ts": "2026-04-13T19:39:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_a1b2c3d4_s08",
+      "session_index": 8,
+      "topic": "Marathon planning and Felix's abstract game conversion",
+      "ts": "2026-04-20",
+      "turns": [
+        {
+          "turn": "grp_a1b2c3d4_s08_t000",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "ok marathon planning time!! 🎲🎲 Raj you always run this, what's the format looking like this year? and yes i'm already bringing themed snacks don't even try to stop me",
+          "ts": "2026-04-20T19:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s08_t001",
+          "speaker": "Raj",
+          "speaker_id": "p_bb88cc99",
+          "content": "June 14th, my place, noon to midnight. I'll do the inserts and tables, everyone brings a game to pitch. We vote on five games to play through the day 😄",
+          "ts": "2026-04-20T19:01:00",
+          "reply_to": "grp_a1b2c3d4_s08_t000"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s08_t002",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "love that. also we need to talk about the bring-something rule. last year two people showed up empty-handed, no snacks no game nothing 😅",
+          "ts": "2026-04-20T19:02:00",
+          "reply_to": "grp_a1b2c3d4_s08_t001"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s08_t003",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "The rule is bring a game or bring food. Both is ideal. Enforcement is just social pressure.",
+          "ts": "2026-04-20T19:03:00",
+          "reply_to": "grp_a1b2c3d4_s08_t002"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s08_t004",
+          "speaker": "Tomasz",
+          "speaker_id": "p_cc33dd44",
+          "content": "In my experience the marathon only works when everyone contributes. It is the social contract of a shared day.",
+          "ts": "2026-04-20T19:04:00",
+          "reply_to": "grp_a1b2c3d4_s08_t003"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s08_t005",
+          "speaker": "Lena",
+          "speaker_id": "p_aa77bb88",
+          "content": "so basically the norm here is bring something, game or food, agreed tbh. one could argue that even the people who brought nothing last year understood this expectation, they just didn't follow through",
+          "ts": "2026-04-20T19:05:00",
+          "reply_to": "grp_a1b2c3d4_s08_t004"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s08_t006",
+          "speaker": "Nadia",
+          "speaker_id": "p_cc99dd00",
+          "content": "I will bring a game. I do not participate in the food arrangement.",
+          "ts": "2026-04-20T19:06:00",
+          "reply_to": "grp_a1b2c3d4_s08_t005"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s08_t007",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "that totally counts Nadia! honestly a good game pitch is worth more than another bag of chips 😊",
+          "ts": "2026-04-20T19:07:00",
+          "reply_to": "grp_a1b2c3d4_s08_t006"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s08_t008",
+          "speaker": "Felix",
+          "speaker_id": "p_dd00ee11",
+          "content": "ok so I want to pitch something for the marathon that I would NEVER have said two months ago 👀",
+          "ts": "2026-04-20T19:08:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s08_t009",
+          "speaker": "Felix",
+          "speaker_id": "p_dd00ee11",
+          "content": "Azul. hear me out",
+          "ts": "2026-04-20T19:09:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_a1b2c3d4_s08_t010",
+          "speaker": "Kezia",
+          "speaker_id": "p_ff66aa77",
+          "content": "wait Felix pitching an abstract game?? who are you 😂",
+          "ts": "2026-04-20T19:10:00",
+          "reply_to": "grp_a1b2c3d4_s08_t009"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s08_t011",
+          "speaker": "Felix",
+          "speaker_id": "p_dd00ee11",
+          "content": "honestly Soo-Yeon basically told me to just look at the tiles and think about it as a visual design problem and like, it actually clicked 🎨",
+          "ts": "2026-04-20T19:11:00",
+          "reply_to": "grp_a1b2c3d4_s08_t010"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s08_t012",
+          "speaker": "Soo-Yeon",
+          "speaker_id": "p_ee55ff66",
+          "content": "I knew the design angle would land. He was always going to like it once the framing matched his background 🙂",
+          "ts": "2026-04-20T19:12:00",
+          "reply_to": "grp_a1b2c3d4_s08_t011"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s08_t013",
+          "speaker": "Lena",
+          "speaker_id": "p_aa77bb88",
+          "content": "so basically Soo-Yeon ran a successful theory of mind intervention tbh. she identified the barrier and reframed the proposition. elegant",
+          "ts": "2026-04-20T19:13:00",
+          "reply_to": "grp_a1b2c3d4_s08_t012"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s08_t014",
+          "speaker": "Felix",
+          "speaker_id": "p_dd00ee11",
+          "content": "honestly you could just say she's a good friend 😂",
+          "ts": "2026-04-20T19:14:00",
+          "reply_to": "grp_a1b2c3d4_s08_t013"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s08_t015",
+          "speaker": "Raj",
+          "speaker_id": "p_bb88cc99",
+          "content": "Azul is in the marathon pitch pile. To be fair it plays fast, so it works well as a palate cleanser between heavier games 😄",
+          "ts": "2026-04-20T19:15:00",
+          "reply_to": "grp_a1b2c3d4_s08_t014"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s08_t016",
+          "speaker": "Tomasz",
+          "speaker_id": "p_cc33dd44",
+          "content": "Structurally sound. Good arc for the day: open with something medium-weight, Azul as mid-day cleanser, close with something heavy. In my experience marathon sessions tire people cognitively so the arc matters.",
+          "ts": "2026-04-20T19:16:00",
+          "reply_to": "grp_a1b2c3d4_s08_t015"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s08_t017",
+          "speaker": "Kezia",
+          "speaker_id": "p_ff66aa77",
+          "content": "can i pitch something too? there's a social deduction game i want to try with a big group 👀",
+          "ts": "2026-04-20T19:17:00",
+          "reply_to": "grp_a1b2c3d4_s08_t016"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s08_t018",
+          "speaker": "Marcus",
+          "speaker_id": "p_aa11bb22",
+          "content": "Everyone pitches on the day. Priya has the format.",
+          "ts": "2026-04-20T19:18:00",
+          "reply_to": "grp_a1b2c3d4_s08_t017"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s08_t019",
+          "speaker": "Priya",
+          "speaker_id": "p_bb22cc33",
+          "content": "yes!! bring your pitches and your snacks and let's make this year's marathon the best one yet 🎉 who's in?",
+          "ts": "2026-04-20T19:19:00",
+          "reply_to": "grp_a1b2c3d4_s08_t018"
+        },
+        {
+          "turn": "grp_a1b2c3d4_s08_t020",
+          "speaker": "Soo-Yeon",
+          "speaker_id": "p_ee55ff66",
+          "content": "Confirmed 🙂",
+          "ts": "2026-04-20T19:20:00",
+          "reply_to": "grp_a1b2c3d4_s08_t019"
+        }
+      ]
+    }
+  ],
+  "qa_pairs": [
+    {
+      "id": "Q1_a1b2c301",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Derek's behavior around game outcomes suggest about how he relates to winning and losing within the group?",
+      "answer": "Derek is intensely competitive and tracks his performance closely. In Session 1, when another member asks how long he has been in the group, his immediate question — framed around personal history rather than the group — sets up Marcus's dry response citing his exact win-loss rate (47%), which Derek disputes rather than dismisses. This reveals Derek monitors his standing closely enough to care that the number feels wrong. His terse insistence ('nah that cant be right') signals the statistic stings precisely because it matters to him. In Session 7, after losing at Mysterium, his immediate request for a rematch ('close game. rematch?') — the fourth such request in a month according to Marcus — confirms that his discomfort with losses is a persistent pattern, not an isolated moment.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_a1b2c3d4_s01_t026",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "Three years. You've lost 47% of games played in that time, for the record.",
+          "relevance": "Marcus's precise statistic implies Derek's record is being tracked, and Derek's protest reveals he cares about the number"
+        },
+        {
+          "session_index": 7,
+          "turn_id": "grp_a1b2c3d4_s07_t011",
+          "speaker_display_name": "Derek",
+          "message_excerpt": "close game. rematch?",
+          "relevance": "Immediate post-loss rematch request, described by Marcus as a repeated pattern across a month"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_a1b2c302",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What pattern does Soo-Yeon show in how she approaches the food situation at game nights, and what does it suggest about her preferences?",
+      "answer": "Soo-Yeon consistently steers away from heavy food at game sessions without making it a direct request. In Session 2, when pizza is mentioned, she asks if the group can 'do something lighter' citing a heavy lunch — a plausible excuse that avoids confrontation but reveals an underlying preference. In Session 3, when the group settles on pizza by majority, she simply says 'I'll just have Raj's flatbread' and opts out silently rather than objecting. The pattern across both sessions shows she dislikes heavy food at game nights but manages this preference through quiet substitution rather than raising it as a group issue.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_a1b2c3d4_s02_t021",
+          "speaker_display_name": "Soo-Yeon",
+          "message_excerpt": "Can we do something lighter? I had a heavy lunch",
+          "relevance": "Soo-Yeon deflects toward lighter food using an excuse rather than stating a preference directly"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_a1b2c3d4_s03_t018",
+          "speaker_display_name": "Soo-Yeon",
+          "message_excerpt": "I'll just have Raj's flatbread.",
+          "relevance": "Quietly opts out of group pizza decision without objecting, confirming the pattern"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_a1b2c303",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Nadia's behavior around game components and food during sessions reveal about how she prefers the play environment to be managed?",
+      "answer": "Nadia maintains a strict separation between eating and playing. In Session 3, before the game even starts, she instructs the group: 'Everyone keep their food away from the card area please.' In Session 7, when Soo-Yeon raises the same concern about chips near the Mysterium cards, Nadia adds: 'Thank you. I did not say anything but I noticed that as well.' This second instance is particularly telling — she had registered the problem during the game but chose not to raise it herself, revealing a preference she enforces by instruction (S3) but tolerates silently when others are already managing it (S7). The cumulative picture is someone who treats food near components as a genuine concern, not an offhand comment.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_a1b2c3d4_s03_t005",
+          "speaker_display_name": "Nadia",
+          "message_excerpt": "Everyone keep their food away from the card area please.",
+          "relevance": "Nadia proactively sets the boundary before the game, framed as a group instruction"
+        },
+        {
+          "session_index": 7,
+          "turn_id": "grp_a1b2c3d4_s07_t017",
+          "speaker_display_name": "Nadia",
+          "message_excerpt": "Thank you. I did not say anything but I noticed that as well.",
+          "relevance": "Nadia endorses Soo-Yeon's concern and reveals she had noticed the issue but stayed silent, confirming the depth of the preference"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_a1b2c304",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Raj's comment about the hosting schedule reveal about how he actually feels about being the group's regular host?",
+      "answer": "Raj enjoys hosting the group's annual marathon event but finds the role of regular session host draining. In Session 4, when Priya raises the hosting schedule, Raj says: 'I need a break from the constant setup and teardown. I love hosting the marathon once a year but ten sessions in a row at my place takes it out of you.' This is the clearest self-disclosure in the corpus — he distinguishes between voluntary high-effort annual hosting and the cumulative grind of routine session hosting. The fact that it takes Priya raising the topic for Raj to surface this preference suggests he had been absorbing the burden without flagging it.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_a1b2c3d4_s04_t010",
+          "speaker_display_name": "Raj",
+          "message_excerpt": "I need a break from the constant setup and teardown. I love hosting the marathon once a year but ten sessions in a row at my place takes it out of you",
+          "relevance": "Raj explicitly distinguishes annual marathon hosting (acceptable) from routine session hosting (draining)"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_a1b2c3d4_s01_t019",
+          "speaker_display_name": "Raj",
+          "message_excerpt": "20 mins is enough if I do the insert sorting beforehand",
+          "relevance": "Earlier session shows Raj absorbing setup burden without complaint, establishing the pattern Priya's prompt later reveals was unsustainable"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_a1b2c305",
+      "category": "Q1",
+      "difficulty": "hard",
+      "question": "What does Lena's reaction to the snack choice suggest about a dietary consideration she has never stated directly to the group?",
+      "answer": "Lena's response when Priya announces she has brought veggie samosas is a two-word endorsement: 'veggie samosas are perfect tbh, thank you.' The warmth of the response — 'perfect' rather than 'great' or 'fine' — and the immediate 'thank you' signal that this was not just convenient but specifically appreciated. Across the corpus, Lena never orders meat, never comments on meat options, and never mentions dietary restrictions. The absence of any meat-related turn combined with her distinctly pleased reaction to vegetarian food implies she is vegetarian but keeps this preference quiet in the group rather than making it a logistical item for others to manage.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_a1b2c3d4_s05_t001",
+          "speaker_display_name": "Lena",
+          "message_excerpt": "veggie samosas are perfect tbh, thank you",
+          "relevance": "Lena's warm and specific reaction to a vegetarian snack choice — 'perfect' signals genuine relief rather than mere acceptance"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_a1b2c3d4_s03_t019",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "lol ok pizza it is i guess 😅 majority wins. Nadia you want in on the order?",
+          "relevance": "Lena is present in Session 3 when pizza is agreed but makes no comment, consistent with quietly managing around group food choices",
+          "turn_index": 20
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q3_a1b2c301",
+      "category": "Q3",
+      "difficulty": "hard",
+      "question": "Based on the conversations, what do the group's interactions around food at game nights reveal about each member's individual approach to eating during sessions?",
+      "answer": "The conversations surface distinct food preferences for several members, with others unmentioned. Soo-Yeon: avoids heavy food at game nights — in Session 2 she steers toward lighter options and in Session 3 quietly takes flatbread when pizza is decided, rather than joining the group order. Nadia: does not eat during sessions at all — she twice declines food and in Session 3 instructs the group to keep food away from card areas. In Session 7 she admits she had noticed the chip-bowl problem but said nothing. Marcus: tolerates food but prefers plates to avoid greasy fingers on cards — his Session 3 comment 'hands stay clean if we use plates' reveals a card-protection concern. Raj: regularly facilitates food logistics (brings snacks, offers to pick up food) but his personal preferences beyond disliking overly sweet things are not foregrounded. Priya: enthusiastic about themed snacks and participates in food planning across sessions. Derek: prefers delivery efficiency, consistently pushes for pizza. Lena: responds warmly to vegetarian food in Session 5 in a way that implies a dietary preference she does not state. Felix: snacks constantly, always brings shareable food. Kezia: brings specialty drinks. Tomasz: brings homemade pierogi to Collective sessions.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_a1b2c3d4_s02_t021",
+          "speaker_display_name": "Soo-Yeon",
+          "message_excerpt": "Can we do something lighter? I had a heavy lunch",
+          "relevance": "Soo-Yeon signals food preference through deflection"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_a1b2c3d4_s03_t018",
+          "speaker_display_name": "Soo-Yeon",
+          "message_excerpt": "I'll just have Raj's flatbread.",
+          "relevance": "Soo-Yeon opts out of group pizza decision silently"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_a1b2c3d4_s03_t005",
+          "speaker_display_name": "Nadia",
+          "message_excerpt": "Everyone keep their food away from the card area please.",
+          "relevance": "Nadia sets a no-food-at-table rule before the game begins"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_a1b2c3d4_s03_t020",
+          "speaker_display_name": "Nadia",
+          "message_excerpt": "No. I do not eat during sessions. Order what you want.",
+          "relevance": "Nadia explicitly declines food, framing no-eating as her personal rule"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q4_a1b2c301",
+      "category": "Q4",
+      "difficulty": "medium",
+      "question": "Two members expressed the view that participants should read the game rules before arriving at a session. Which member made the more specific, procedural version of this argument — specifying how and when it should happen?",
+      "answer": "Marcus made the specific procedural argument. In Session 1, he said: 'If we're playing something new, whoever owns it should send the rulebook link by Wednesday. Cuts setup time by at least 30 minutes.' This version names a concrete mechanism (sending the link), a deadline (Wednesday), and a quantified benefit (30 minutes). Derek's version — 'agree. read the rules people' — preceded Marcus's message and expressed the same sentiment in terse, imperative form with no procedural detail. The specific procedural framing belongs to Marcus.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Tomasz",
+        "B": "Derek",
+        "C": "Marcus",
+        "D": "Raj"
+      },
+      "correct_option": "C",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_a1b2c3d4_s01_t004",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "whoever owns it should send the rulebook link by Wednesday. Cuts setup time by at least 30 minutes.",
+          "relevance": "Marcus's version adds mechanism, deadline, and quantified outcome — the defining features of the procedural argument"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_a1b2c301",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "What is Marcus's attitude toward luck mechanics in board games, and what in the conversation shows that Lena already knew this before it became a topic of discussion?",
+      "answer": "Marcus dislikes luck mechanics and prefers games with minimal randomness, favoring deterministic strategy. Lena revealed she already knew this in Session 2 when she asked — while discussing Wingspan's bird feeder die — 'doesn't the bird feeder die add variance Marcus would usually object to?' The phrase 'would usually object to' is the observable indicator: it is not a genuine question about Marcus's preference but an assumption stated as prior knowledge. Lena frames his aversion to variance as a known, stable personality trait ('usually'), not something she is discovering in the moment. This implies she has internalized his preference through their ongoing analytical friendship and post-game discussions, not from anything stated in the session itself.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_a1b2c3d4_s02_t019",
+          "speaker_display_name": "Lena",
+          "message_excerpt": "doesn't the bird feeder die add variance Marcus would usually object to?",
+          "relevance": "Lena treats Marcus's aversion to luck as a known stable trait, using 'would usually' rather than asking whether he objects"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_a1b2c302",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "What is Soo-Yeon's relationship to real-time or speed-based games, and what in Priya's behavior shows she understood this about Soo-Yeon before it came up in conversation?",
+      "answer": "Soo-Yeon finds real-time games overwhelming — the pressure of simultaneous action without turn structure causes her discomfort. Priya revealed she already knew this in Session 6 when she said: 'I know real-time stuff has always felt like a lot for you, I figured the cooperative format might make it less overwhelming.' The key phrase is 'I know... has always felt like a lot for you' — this is not a new observation Priya is forming in the moment but a statement of pre-existing knowledge about Soo-Yeon's experience. Priya also reveals she had already designed around this: she suggested the cooperative format specifically to buffer the real-time pressure. This implies Priya had either observed or discussed Soo-Yeon's real-time discomfort previously and was quietly engineering a gentler entry point.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 6,
+          "turn_id": "grp_a1b2c3d4_s06_t004",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "I know real-time stuff has always felt like a lot for you, I figured the cooperative format might make it less overwhelming since we can all just yell at each other instead",
+          "relevance": "Priya states prior knowledge of Soo-Yeon's discomfort as fact ('I know... has always felt like a lot') and reveals she chose the cooperative format as a deliberate accommodation"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_a1b2c303",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "What is Felix's relationship to abstract board games, and how does Soo-Yeon's comment reveal that she understood what it would take to change his mind — before the conversation reached that point?",
+      "answer": "Felix previously dismissed abstract games, finding them uninteresting without a thematic layer. Soo-Yeon understood that his background as a visual game designer meant the barrier was framing, not mechanics. In Session 8, after Felix pitches Azul and explains that Soo-Yeon told him to 'look at the tiles and think about it as a visual design problem,' Soo-Yeon responds: 'I knew the design angle would land. He was always going to like it once the framing matched his background.' The phrase 'I knew' and 'was always going to' reveal she had already reasoned through Felix's specific psychological pathway before making the recommendation — she did not suggest Azul and hope for the best, she predicted the outcome. This implies prior knowledge of Felix's design background and his specific reason for rejecting abstract games.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 8,
+          "turn_id": "grp_a1b2c3d4_s08_t012",
+          "speaker_display_name": "Soo-Yeon",
+          "message_excerpt": "I knew the design angle would land. He was always going to like it once the framing matched his background",
+          "relevance": "Soo-Yeon's use of 'I knew' and 'was always going to' reveals she had already predicted the outcome, implying prior analysis of Felix's specific barrier to abstract games"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_a1b2c301",
+      "category": "Q2",
+      "difficulty": "hard",
+      "question": "The group decided to order pizza. What did Soo-Yeon's response to that decision reveal about her actual position, and what specifically in how she responded signals this — given that she did not object?",
+      "answer": "The group settled on pizza after Tomasz, Marcus, and Kezia all expressed support. Soo-Yeon did not object or vote against it. Instead, she simply said: 'I'll just have Raj's flatbread.' This single sentence is the dissent signal: rather than saying she was fine with pizza or joining the order, she announced a private alternative she had already identified, opting out of the group decision entirely without drawing attention to it. The signal is non-verbal in the sense that it contains no expressed preference or complaint — it is a substitution move. Combined with Session 2, where she asked for lighter food rather than stating she dislikes pizza, the pattern suggests she quietly routes around heavy group food choices rather than contesting them.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Soo-Yeon",
+        "B": "Nadia",
+        "C": "Lena",
+        "D": "Kezia"
+      },
+      "correct_option": "A",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_a1b2c3d4_s03_t018",
+          "speaker_display_name": "Soo-Yeon",
+          "message_excerpt": "I'll just have Raj's flatbread.",
+          "relevance": "Soo-Yeon opts out of the group pizza order without commenting on the decision — the substitution move is the implicit dissent"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_a1b2c302",
+      "category": "Q2",
+      "difficulty": "medium",
+      "question": "The group discussed the expectation that everyone should bring either a game or food to the annual marathon. What did Nadia's response signal about her actual relationship to this group norm, and how would you know from what she said?",
+      "answer": "The group converged on the expectation that everyone brings something — game or food. Nadia responded: 'I will bring a game. I do not participate in the food arrangement.' This is an explicit opt-out of the food side of the norm, declared matter-of-factly. Unlike Soo-Yeon's quiet flatbread substitution, Nadia's dissent is stated directly — she simply announces she does not do food. This aligns with her consistent pattern across the corpus of neither eating during sessions nor participating in food logistics. The phrase 'I do not participate in the food arrangement' treats the food norm as optional for her, suggesting she has a personal rule that pre-dates this conversation.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Nadia",
+        "B": "Tomasz",
+        "C": "Marcus",
+        "D": "Lena"
+      },
+      "correct_option": "A",
+      "evidence_anchors": [
+        {
+          "session_index": 8,
+          "turn_id": "grp_a1b2c3d4_s08_t006",
+          "speaker_display_name": "Nadia",
+          "message_excerpt": "I will bring a game. I do not participate in the food arrangement.",
+          "relevance": "Nadia explicitly opts out of the food side of the norm without objecting to the norm itself"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q6_a1b2c301",
+      "category": "Q6",
+      "difficulty": "medium",
+      "question": "The group operates with an expectation that everyone contributes something — food or a game — to shared sessions and events. Based on the conversations, does this expectation apply to every member? If not, who approaches it differently and what does the conversation show about their actual practice?",
+      "answer": "No — Nadia approaches this norm differently. While the group collectively endorses the bring-something expectation, Nadia's responses across the corpus show she has a standing personal rule that excludes food from her contributions. In Session 3, she declines the pizza order outright: 'I do not eat during sessions. Order what you want.' In Session 8, when the marathon bring-something norm is discussed, she says: 'I will bring a game. I do not participate in the food arrangement.' Priya accepts this immediately, suggesting it is an established understanding rather than a new position. Nadia's contribution is game-based, not food-based — she treats the norm as having two separate tracks and only observes one.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Nadia",
+        "B": "Soo-Yeon",
+        "C": "Raj",
+        "D": "Marcus"
+      },
+      "correct_option": "A",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_a1b2c3d4_s03_t020",
+          "speaker_display_name": "Nadia",
+          "message_excerpt": "No. I do not eat during sessions. Order what you want.",
+          "relevance": "Nadia declines the group food order, establishing a standing personal rule"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_a1b2c3d4_s08_t006",
+          "speaker_display_name": "Nadia",
+          "message_excerpt": "I will bring a game. I do not participate in the food arrangement.",
+          "relevance": "Nadia explicitly separates herself from the food side of the bring-something norm"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_a1b2c301",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What do the conversations reveal about the nature of the relationship between Lena and Priya within the Collective?",
+      "answer": "The conversations show Priya and Lena have a closer-than-average relationship within the group. In Session 2, Felix mentions that Priya got him into the group through a mutual connection — establishing Priya as Lena's social bridge into the Collective. In Session 3, Lena raises a sensitive interpersonal observation about Derek and Priya's dynamic ('you and Derek seem to have different vibes') — a comment that implies sufficient intimacy for Lena to flag a tension she has observed. Priya responds with candor rather than deflection. Additionally, in Session 5, Priya specifically brings veggie samosas to Lena's session, and Lena's warm response ('perfect tbh, thank you') implies Priya knows Lena's dietary preferences without needing to ask. The pattern across sessions is consistent with two people who share background context and pay attention to each other's preferences.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "close friends, social connector relationship",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_a1b2c3d4_s03_t021",
+          "speaker_display_name": "Lena",
+          "message_excerpt": "you and Derek seem to have different vibes about the session energy. like i've noticed he tends to go quiet when cooperative options are even mentioned",
+          "relevance": "Lena raises a sensitive interpersonal observation to Priya directly, signaling a level of closeness that makes this comfortable"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_a1b2c3d4_s05_t001",
+          "speaker_display_name": "Lena",
+          "message_excerpt": "veggie samosas are perfect tbh, thank you",
+          "relevance": "Lena's warm and specific reaction implies Priya knew to bring vegetarian food without being asked"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_a1b2c302",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What do the conversations reveal about how Kezia and Felix are positioned relative to the rest of the Collective — and what connects them to each other outside the group?",
+      "answer": "Kezia and Felix are positioned as a newer-member sub-clique within the Collective. In Session 2, Felix explains that Kezia was the person who brought him into the group: 'Kezia got me into this group, we know each other from the design community online.' In Session 4, Raj explicitly names their shared identity: 'Kezia and Felix have been a good addition to be fair. Different energy than the founding crowd.' This framing — 'different energy than the founding crowd' — signals that even group elders perceive them as a cohesive unit distinct from longer-standing members. Their shared origin in an online design community and Kezia's role as Felix's referral establishes the basis of their bond.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "referred by Kezia from online design community, newer-member sub-clique",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_a1b2c3d4_s02_t011",
+          "speaker_display_name": "Felix",
+          "message_excerpt": "Kezia got me into this group, we know each other from the design community online, she basically said you all are the real deal",
+          "relevance": "Felix identifies the origin of his connection to Kezia and the mechanism of his entry into the group"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_a1b2c3d4_s04_t006",
+          "speaker_display_name": "Raj",
+          "message_excerpt": "Kezia and Felix have been a good addition to be fair. Different energy than the founding crowd",
+          "relevance": "Raj names them as a paired unit with a distinct identity from the founding members"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_a1b2c303",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What do the conversations reveal about the history between Tomasz and Nadia, and what does it explain about how they interact within the Collective?",
+      "answer": "The conversations reveal that Tomasz and Nadia played a dedicated wargame campaign together outside of regular Collective sessions. In Session 7, Nadia says to Tomasz: 'You played the wargame campaign with me last spring, so I trust your read on social deduction overlap.' This single statement does three things: it establishes a shared gaming history outside the group, explains the basis for Nadia's trust in Tomasz's judgment, and implies that the campaign involved enough sessions to build familiarity. Tomasz confirms: 'Last April. Nadia found that I was one of the few people in the group who owned the base game for that particular series. We played four sessions over six weeks.' This also explains Nadia's unusually quick agreement with Tomasz's Dune ruling in Session 3, noted by Lena — she trusts his rules judgment because she has seen him operate in a demanding rules environment.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "wargame campaign partners, mutual rules-precision respect",
+      "evidence_anchors": [
+        {
+          "session_index": 7,
+          "turn_id": "grp_a1b2c3d4_s07_t005",
+          "speaker_display_name": "Nadia",
+          "message_excerpt": "You played the wargame campaign with me last spring, so I trust your read on social deduction overlap.",
+          "relevance": "Nadia explicitly names the shared wargame history as the basis for her trust in Tomasz's judgment"
+        },
+        {
+          "session_index": 7,
+          "turn_id": "grp_a1b2c3d4_s07_t007",
+          "speaker_display_name": "Tomasz",
+          "message_excerpt": "Last April. Nadia found that I was one of the few people in the group who owned the base game for that particular series. We played four sessions over six weeks.",
+          "relevance": "Tomasz confirms the details of the campaign, establishing the depth and duration of their shared gaming history"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_a1b2c304",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What do the conversations reveal about how Tomasz and Raj relate to each other within the Collective, and what is the basis of their shared standing in the group?",
+      "answer": "The conversations establish that Tomasz and Raj co-founded the Collective together. In Session 1, Tomasz says: 'Raj brought his first printed insert to the very first session we ran together, five years ago. That is how I knew he was serious about this.' This positions them as the group's institutional memory — both having been present from the beginning. Their shared authority is visible throughout the corpus: when Felix proposes a complex game in Session 1, Raj explicitly aligns with Tomasz's objection ('Tomasz is right, to be fair') rather than offering an independent view. Raj describes game mechanics using architectural vocabulary while Tomasz provides historical framing — they function as the group's complementary senior voices.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "co-founders of the Collective, five years shared history",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_a1b2c3d4_s01_t022",
+          "speaker_display_name": "Tomasz",
+          "message_excerpt": "Raj brought his first printed insert to the very first session we ran together, five years ago. That is how I knew he was serious about this.",
+          "relevance": "Tomasz names the co-founding event and the detail that confirmed Raj's commitment to him"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_a1b2c3d4_s01_t011",
+          "speaker_display_name": "Raj",
+          "message_excerpt": "Tomasz is right, to be fair. Oath's structural design is beautiful but the load-bearing mechanic is the oath itself",
+          "relevance": "Raj defers to and extends Tomasz's argument, signaling their complementary senior-voice dynamic"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q8_a1b2c301",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What in the conversation signals that Priya's relationship to competitive board games shifted during the corpus, and what appears to have caused it?",
+      "answer": "Early state: Prior to Session 3, Priya's game preferences are framed entirely around cooperative and narrative games. In Sessions 1-2, she organizes game night, suggests Wingspan for its artwork and story-appeal, and shows no investment in competitive outcomes. Shift signal: In Session 3, after playing Wingspan, Priya reports: 'I went full forest-bird engine and won! Honestly i came in expecting to just enjoy the art and ended up actually caring about winning.' The phrase 'ended up actually caring about winning' is the turning point — she distinguishes her prior expectation (aesthetic enjoyment) from what she actually experienced (competitive investment). Trigger: Winning. Priya built a coherent engine, won her first competitive game, and the outcome generated genuine competitive feeling that she had not anticipated. Evolved state: In Session 4, Priya tells Felix that 'the social part is like half the reason i come' — the competitive element is now one of two things she values, not absent as it was before.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_a1b2c3d4_s01_t014",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "poll sent! 🗳️ also can we talk about snacks? i was thinking si",
+          "relevance": "Session 1 shows Priya's engagement focused on social logistics and theming, not competitive strategy"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_a1b2c3d4_s03_t008",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "I went full forest-bird engine and won! Honestly i came in expecting to just enjoy the art and ended up actually caring about winning.",
+          "relevance": "Priya explicitly marks the shift — naming her prior expectation and the surprise of competitive investment"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "focused on cooperative and social elements, no competitive investment"
+        },
+        {
+          "session_index": 3,
+          "value": "surprised by genuine competitive investment after winning Wingspan with an engine build"
+        }
+      ]
+    },
+    {
+      "id": "Q8_a1b2c302",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What drove Kezia's shift toward heavier board games, and what in the conversation shows what the earlier state looked like compared to where she is by then?",
+      "answer": "Early state: Kezia's earlier game preference was limited to social deduction and light games. This is visible in Session 2 where she attends but does not engage in strategy discussion, and in the group's general framing of her as a newer player needing accessibility. Shift signal: In Session 4, Kezia reveals the mechanism: 'You walking me through that Terra Mystica session even when i was totally lost kind of changed how i think about heavier games.' The key detail is that Tomasz's patience during a session where she was 'totally lost' reframed the experience from overwhelming to navigable. The shift was not about the game becoming easier but about having a scaffolded entry point. Evolved state: By Session 4, Kezia is playing Cascadia solo to practice and asking Tomasz for his read on spatial scoring — she has become a self-directed learner of medium-weight games.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_a1b2c3d4_s04_t004",
+          "speaker_display_name": "Kezia",
+          "message_excerpt": "you walking me through that Terra Mystica session even when i was totally lost kind of changed how i think about heavier games",
+          "relevance": "Kezia identifies the specific experience that caused her preference shift — Tomasz's patient guidance through a difficult session"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_a1b2c3d4_s04_t002",
+          "speaker_display_name": "Kezia",
+          "message_excerpt": "been playing Cascadia solo to practice, loving it",
+          "relevance": "Shows the evolved state: Kezia is now self-directed in learning medium-weight games"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "limited to social deduction and light games, avoids heavier strategy"
+        },
+        {
+          "session_index": 4,
+          "value": "practicing medium-weight games solo, open to heavier titles with scaffolding"
+        }
+      ]
+    },
+    {
+      "id": "Q8_a1b2c303",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What in the earlier conversation explains why Marcus appeared to soften his long-standing preference for pure-strategy games, and what specifically signals the change?",
+      "answer": "Early state: Marcus's preference for deterministic, low-luck games is established throughout Sessions 1-4 — he approves games that have 'minimal luck' (Wingspan review), praises Brass as 'pure optimization, no dice,' and is cited by Lena as someone who 'would usually object to' variance mechanics. Shift signal: In Session 5, Lena reframes luck as 'a skill-testing element because it creates novel board states you have to solve under pressure rather than just optimizing a solved path.' Marcus responds: 'That's... actually a fair reframe. Variance as a constraint set rather than randomness. I'd still rather have deterministic design but I can see the argument.' The ellipsis before 'actually' and the qualifier 'I'd still rather' both signal a genuine reconsideration — he is not fully converted but has admitted the opposing argument has merit. Trigger: Lena's academic reframing of variance as a design choice rather than a quality failure. Evolved state: Marcus does not thereafter object to dice-based games on principle — his standard shifts from rejection to qualified preference.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_a1b2c3d4_s02_t020",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "The die is mitigated by rerolls. It's not pure luck.",
+          "relevance": "Earlier session shows Marcus defending Wingspan's variance only by minimizing it — still holding the anti-luck position"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_a1b2c3d4_s05_t016",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "That's... actually a fair reframe. Variance as a constraint set rather than randomness. I'd still rather have deterministic design but I can see the argument.",
+          "relevance": "Marcus explicitly acknowledges the reframe and admits the argument has merit, while qualifying his continued preference for determinism"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 2,
+          "value": "defends anti-luck position, frames variance as something to be minimized"
+        },
+        {
+          "session_index": 5,
+          "value": "concedes Lena's reframe has merit, softens from rejection to qualified preference"
+        }
+      ]
+    },
+    {
+      "id": "Q8_a1b2c304",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What appears to have driven Lena's shift in how she thinks about luck-heavy board games, and what in the conversation shows both the earlier state and the moment of change?",
+      "answer": "Early state: Lena's aversion to luck-heavy games is referenced indirectly in Sessions 1-2 — she favors strategic depth, praises Dune's political mechanics, and notes that Brass has 'no dice' without complaint. In Session 2, she frames herself as interested in 'the interesting decision space,' implying randomness conflicts with her values. Shift signal: In Session 5, during the same exchange where she challenges Marcus on variance, Lena turns the argument on herself: 'I've been so allergic to dice-heavy games for ages and I think it was more about feeling out of control than about the design being bad.' The word 'allergic' describes the earlier state; 'I think it was more about feeling out of control' is the reanalysis. Trigger: The same intellectual exercise that led her to reframe variance for Marcus — working through the design-theory argument prompted her to apply it to her own aversion. Evolved state: Lena frames her previous position as a psychological response misread as aesthetic preference, signaling openness to reconsidering dice-heavy games on their design merits.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_a1b2c3d4_s02_t014",
+          "speaker_display_name": "Lena",
+          "message_excerpt": "the intrigue cards are your secret advantage",
+          "relevance": "Lena's S2 focus on strategic political mechanics reflects her earlier preference for decision-depth over chance",
+          "turn_index": 15,
+          "additional_excerpts": [
+            {
+              "excerpt": "tbh that's where I want to focus"
+            }
+          ]
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_a1b2c3d4_s05_t017",
+          "speaker_display_name": "Lena",
+          "message_excerpt": "I've been so allergic to dice-heavy games for ages and I think it was more about feeling out of control than about the design being bad",
+          "relevance": "Lena explicitly names and reanalyzes her earlier aversion, distinguishing the psychological cause from the aesthetic position"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 2,
+          "value": "avoids dice-heavy games, frames preference around strategic decision spaces"
+        },
+        {
+          "session_index": 5,
+          "value": "reanalyzes aversion as psychological rather than aesthetic, opens to reconsidering luck-based designs"
+        }
+      ]
+    },
+    {
+      "id": "Q8_a1b2c305",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What in the conversation explains why Soo-Yeon agreed to try a real-time game, and what does her response afterward reveal about whether her position has genuinely shifted?",
+      "answer": "Early state: Soo-Yeon's avoidance of real-time games is implied through Priya's comment in Session 6: 'I know real-time stuff has always felt like a lot for you' — treating it as a longstanding known trait. No prior sessions show Soo-Yeon engaging with real-time formats. Shift signal: In Session 6, Soo-Yeon agrees to try Fuse, specifying her reasoning: 'Cooperative real-time is less intimidating than solo speed. I want to see if the team element changes the experience.' This is not a reversal — it is a hypothesis. She has identified a structural modification (cooperative rather than solo) that might address her specific discomfort (pressure without support). Trigger: Priya's suggestion of the cooperative format as a gentler entry point, combined with Soo-Yeon's own intellectual curiosity about whether the team structure changes her experience. Evolved state: After playing, Soo-Yeon reports: 'that was actually fine. I will note that team communication absorbed most of the pressure. aigoo, I did not expect to enjoy that.' Her surprise is the signal — she has updated her model of real-time games to include the cooperative variant as tolerable.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 6,
+          "turn_id": "grp_a1b2c3d4_s06_t003",
+          "speaker_display_name": "Soo-Yeon",
+          "message_excerpt": "Cooperative real-time is less intimidating than solo speed. I want to see if the team element changes the experience.",
+          "relevance": "Soo-Yeon frames her agreement as a hypothesis test, naming the specific structural element she expects might help"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_a1b2c3d4_s06_t010",
+          "speaker_display_name": "Soo-Yeon",
+          "message_excerpt": "that was actually fine 🙂 I will note that team communication ",
+          "relevance": "Post-game update confirms the hypothesis was correct and registers genuine surprise at enjoying the experience"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 2,
+          "value": "avoids real-time games, described by Priya as something that 'has always felt like a lot'"
+        },
+        {
+          "session_index": 6,
+          "value": "tried cooperative real-time format and found it manageable, updated view to include this variant as tolerable"
+        }
+      ]
+    },
+    {
+      "id": "Q8_a1b2c306",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What in the conversation signals that Tomasz's approach to house rules changed by then, and what explains why?",
+      "answer": "Early state: Tomasz's strict no-house-rules position is established in Session 1 and 3 — he cites page numbers to justify Dune plays and Nadia validates his precision, establishing him as a strict rules observer. In Session 5, he names the rulebook and prior examples of house rules disrupting game integrity. Shift signal: In Session 6, when Priya raises the question of house rules for newer members before Viticulture, Tomasz says: 'I would normally say no to house rules on principle. But after that session two months ago where the new player left mid-game because the worker placement felt punishing, I think one quality-of-life adjustment for new members is reasonable. Agreed up front.' The phrase 'I would normally' explicitly names his prior position; 'but after' names the trigger. Trigger: A specific session where a first-timer quit mid-game due to punishing complexity — Tomasz observed the consequence of rigid rules application on player retention. Evolved state: Tomasz now distinguishes between house rules that distort the game and minimal adjustments that remove first-round paralysis, accepting the latter.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_a1b2c3d4_s03_t001",
+          "speaker_display_name": "Tomasz",
+          "message_excerpt": "It was not a betrayal. It was a historically accurate diplomatic pivot. Atreides are not above opportunism. Page 14 of the rulebook permits it explicitly.",
+          "relevance": "Shows Tomasz's earlier position: precision about rules is non-negotiable, rules are cited by page number"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_a1b2c3d4_s06_t012",
+          "speaker_display_name": "Tomasz",
+          "message_excerpt": "I would normally say no to house rules on principle. But after that session two months ago where the new player left mid-game because the worker placement felt punishing, I think one quality-of-life adjustment for new members is reasonable.",
+          "relevance": "Tomasz explicitly marks his prior position and the event that shifted it"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "strict no-house-rules position, cites rulebook for any disputed play"
+        },
+        {
+          "session_index": 6,
+          "value": "accepts one quality-of-life adjustment for new members when agreed up front, after observing a player quit due to punishing rules"
+        }
+      ]
+    },
+    {
+      "id": "Q8_a1b2c307",
+      "category": "Q8",
+      "difficulty": "hard",
+      "question": "What in Derek's behavior across multiple conversations shows that something changed about how he handles post-game pressure, and what specifically signals awareness of the pattern rather than continuation of it?",
+      "answer": "Early state: Derek's rematch-seeking behavior is established implicitly across Sessions 1-7. In Session 1, Marcus tracks his win-loss record to the decimal, implying competitive outcomes matter intensely to him. In Sessions 2-6, Derek is consistently the voice pushing for immediate next games or competitive titles. The pattern is named explicitly in Session 7 by Marcus: 'This is the fourth time you've asked for a rematch after losing this month.' Shift signal: Derek's response is two words: 'fine. noted.' This terse acknowledgment is qualitatively different from his prior behavior — he does not contest the count, does not push back, and does not repeat the request. For a persona whose characteristic voice is terse disputation ('nah that cant be right'), choosing not to dispute Marcus's framing is itself a signal. Trigger: The group's direct naming of the pattern — both Marcus and Priya flag it in the same exchange ('not pointing fingers but'). Derek's usual mode is to contest; his silence here implies he recognized the accuracy of the characterization. Evolved state: Session 7 is the last session in the corpus and no further rematch requests appear — whether this is a durable change or a one-session response cannot be determined from the corpus alone.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_a1b2c3d4_s01_t027",
+          "speaker_display_name": "Derek",
+          "message_excerpt": "nah that cant be right",
+          "relevance": "Derek's characteristic response to a challenge is dispute — establishing baseline behavior for comparison"
+        },
+        {
+          "session_index": 7,
+          "turn_id": "grp_a1b2c3d4_s07_t013",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "This is the fourth time you've asked for a rematch after losing this month. People are tired, Derek.",
+          "relevance": "Marcus names the pattern explicitly, providing the trigger for Derek's response"
+        },
+        {
+          "session_index": 7,
+          "turn_id": "grp_a1b2c3d4_s07_t015",
+          "speaker_display_name": "Derek",
+          "message_excerpt": "fine. noted",
+          "relevance": "Derek's terse, non-disputing acknowledgment — the absence of his usual challenge is the signal of changed behavior"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "tracks win-loss records closely, disputes competitive characterizations"
+        },
+        {
+          "session_index": 7,
+          "value": "accepts group feedback on rematch pattern without disputing it, using terse acknowledgment rather than challenge"
+        }
+      ]
+    },
+    {
+      "id": "Q8_a1b2c308",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What in the earlier conversation explains what caused Felix to change his view of abstract board games, and what does his pitch for Azul signal about where his position has landed?",
+      "answer": "Early state: Felix's dismissal of abstract games is implied by his consistent framing of games through theme and narrative — in Sessions 1-5 he favors Oath (narrative RPG), Dune (thematic political), and discusses game design in terms of how mechanics serve story. His video-game comparisons are always to thematic titles. Abstract games — defined by form rather than fiction — would not compute in this framework. Shift signal: In Session 8, Felix pitches Azul to the group and explains: 'Soo-Yeon basically told me to just look at the tiles and think about it as a visual design problem.' The framing switch — from 'abstract game' to 'visual design problem' — is the mechanism of change. Felix did not update his aesthetic values; he found a frame that made an abstract game legible within them. Trigger: Soo-Yeon's deliberate reframing of Azul as a design object rather than a game genre. Evolved state: Felix is now pitching an abstract game to the group as a marathon selection — a reversal of his prior dismissal, achieved by reframing rather than reconverting.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_a1b2c3d4_s01_t007",
+          "speaker_display_name": "Felix",
+          "message_excerpt": "it's like if a 4X strategy game and a narrative RPG had a baby and the baby was also a legacy game",
+          "relevance": "Felix's S1 enthusiasm for a complex narrative-thematic game shows his prior frame: games need story and theme to excite him"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_a1b2c3d4_s08_t011",
+          "speaker_display_name": "Felix",
+          "message_excerpt": "Soo-Yeon basically told me to just look at the tiles and think about it as a visual design problem and like, it actually clicked",
+          "relevance": "Felix identifies both the mechanism (Soo-Yeon's reframe) and the effect (it clicked) — marking the shift"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "favors thematic narrative games, implicitly dismissive of abstract formats"
+        },
+        {
+          "session_index": 8,
+          "value": "pitches Azul as a marathon game after Soo-Yeon reframed it as a visual design problem — abstract games now legible within his design framework"
+        }
+      ]
+    },
+    {
+      "id": "Q7_a1b2c3d4_01",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does Raj's message about the game choice reveal about his relationship with Tomasz within the group, and what in the specific structure of how he responds makes it more than one member agreeing with another?",
+      "answer": "Raj's message is not a simple agreement — it is a parallel authority move. He opens 'Tomasz is right, to be fair.' — a concession framed with 'to be fair,' as though Raj is offering an independent assessment rather than deferring. He then adds his own expert analysis: 'Oath's structural design is beautiful but the load-bearing mechanic is the oath itself and that needs a full session to click.' This structure — validate, then extend with equal expertise — reveals that Raj treats Tomasz's judgment as worth publicly backing, and speaks about game design with equivalent authority. In a group of enthusiasts, choosing to align publicly with one specific person signals more than agreement; it signals intellectual alliance. Neither defers to the other — Raj validates Tomasz and then contributes his own independent analysis as a peer, not a follower. The pattern is consistent with a relationship where both hold institutional standing in the group.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "institutional co-founders / co-authorities of the Collective",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_a1b2c3d4_s01_t011",
+          "speaker_display_name": "Raj",
+          "message_excerpt": "Tomasz is right, to be fair. Oath's structural design is beautiful but the load-bearing mechanic is the oath itself and that needs a full session to click.",
+          "relevance": "Raj publicly validates Tomasz with a peer-level endorsement, then adds independent expert analysis — the structure reveals institutional co-authority rather than simple agreement"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_a1b2c3d4_02",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does Felix's message reveal about his path into the Collective and his connection to one other member, and what in Soo-Yeon's response suggests this wasn't entirely new information to the rest of the group?",
+      "answer": "Felix reveals that Kezia referred him — 'Kezia got me into this group, we know each other from the design community online, she basically said you all are the real deal.' This establishes that his entry was referral-based rather than organic, and that he and Kezia share a pre-existing relationship outside the group through an online design community. Soo-Yeon's immediate response — 'she has good taste in groups' — is notable for what it doesn't do: it doesn't ask who Kezia is or how Felix knows her. The casual register and group-noun compliment ('taste in groups') implies Soo-Yeon already has context about Kezia and accepts Felix's referral route as unremarkable. Felix's disclosure fills in a specific gap about his own entry path, but the referral mechanism itself doesn't surprise anyone.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "referred to the Collective by Kezia; pre-existing online design community connection",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_a1b2c3d4_s02_t011",
+          "speaker_display_name": "Felix",
+          "message_excerpt": "honestly Kezia got me into this group, we know each other from the design community online, she basically said you all are the real deal 👾",
+          "relevance": "Felix explicitly names Kezia as his referral source and identifies their pre-existing connection as an online design community"
+        },
+        {
+          "session_index": 2,
+          "turn_id": "grp_a1b2c3d4_s02_t012",
+          "speaker_display_name": "Soo-Yeon",
+          "message_excerpt": "she has good taste in groups 🙂",
+          "relevance": "Soo-Yeon's casual acceptance — no questions, no surprise — implies Kezia is already known to the group and the referral mechanism is unremarkable"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_a1b2c3d4_01",
+      "category": "Q1",
+      "difficulty": "hard",
+      "question": "What does Nadia's response to a concern someone else raised about the table setup reveal about the standards she holds for how the gaming area should be managed, and what is the key signal that she had held this view before anyone else named it?",
+      "answer": "When Soo-Yeon flags in Session 7 that food was getting close to the card table area — 'can we keep food off the card table area. The Mysterium cards got a bit close to the chip bowl' — Nadia responds: 'Thank you. I did not say anything but I noticed that as well.' This response reveals that Nadia had already registered the same concern and was watching the same situation, but chose not to raise it herself. The phrase 'I did not say anything but I noticed' is the key signal: it discloses a pre-existing observation held in silence. The 'Thank you' at the start is relief that someone else articulated a view she was carrying but withholding. Raj's follow-up ('Nadia you should have said something earlier') confirms the group reads this as a held preference she didn't voice. The pattern is consistent with Nadia's broader communication style — she tends to endorse others' articulations rather than stake out positions first, but her endorsements reveal active, pre-existing standards that were already in place.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 7,
+          "turn_id": "grp_a1b2c3d4_s07_t016",
+          "speaker_display_name": "Soo-Yeon",
+          "message_excerpt": "I also want to flag, can we keep food off the card table area. The Mysterium cards got a bit close to the chip bowl 😅",
+          "relevance": "Soo-Yeon raises the concern that Nadia had already noticed — the parallel observation confirms Nadia's standard was active before anyone named it"
+        },
+        {
+          "session_index": 7,
+          "turn_id": "grp_a1b2c3d4_s07_t017",
+          "speaker_display_name": "Nadia",
+          "message_excerpt": "Thank you. I did not say anything but I noticed that as well.",
+          "relevance": "Key signal: Nadia's 'I did not say anything but I noticed' discloses a pre-existing held view — the thank you is relief at having the concern articulated by someone else"
+        },
+        {
+          "session_index": 7,
+          "turn_id": "grp_a1b2c3d4_s07_t018",
+          "speaker_display_name": "Raj",
+          "message_excerpt": "My bad, I'll move the bowl 😄 Nadia you should have said something earlier",
+          "relevance": "Raj's comment confirms the group reads this as a held preference Nadia withheld — not new information but a pattern the group recognises"
+        }
+      ],
+      "temporal_anchors": []
+    }
+  ],
+  "meta": {
+    "source": "SocialMemBench",
+    "source_kind": "real_benchmark",
+    "network_id": "grp_a1b2c3d4",
+    "n_sessions": 8,
+    "n_turns": 188,
+    "v4_correct": 24,
+    "v4_total": 28,
+    "v4_errors": 4,
+    "v4_accuracy": 0.8571428571428571
+  }
+}

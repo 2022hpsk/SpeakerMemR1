@@ -1,0 +1,137 @@
+{
+  "schema": "speakermem-v4-trajectories/1",
+  "prompt_version": "13fae86a84be0b22",
+  "teacher": {
+    "model": "human-authored-v4",
+    "temperature": 0.0,
+    "thinking": false,
+    "max_tokens": 4096
+  },
+  "window_size": 5,
+  "network_id": "manual_noop_greeting",
+  "source": {
+    "path": "manual_v4_networks",
+    "meta": {
+      "source_kind": "human_authored"
+    }
+  },
+  "transitions": [
+    {
+      "turn": 0,
+      "session_id": "manual_noop_greeting_s01",
+      "ts": "2026-08-10T10:00:00Z",
+      "messages": [
+        {
+          "speaker": "Rae",
+          "content": "Good morning everyone.",
+          "session": "manual_noop_greeting_s01",
+          "ts": "2026-08-10T10:00:00Z",
+          "msg_id": "0",
+          "meta": {}
+        },
+        {
+          "speaker": "Sam",
+          "content": "Good morning.",
+          "session": "manual_noop_greeting_s01",
+          "ts": "2026-08-10T10:01:00Z",
+          "msg_id": "1",
+          "meta": {}
+        }
+      ],
+      "prompt": [
+        {
+          "role": "system",
+          "content": "You are an ONLINE memory manager for a MULTI-PARTY group chat, maintaining a speaker-indexed layered memory.\n\nPREMISE: every raw message of this segment is ALREADY stored VERBATIM (raw track). Your job is NOT to restate the raw text, but to add STRUCTURED derived memory on top of it, so that retrieval by person / relationship / time becomes possible.\n\nFOUR DERIVED LAYERS YOU MAY WRITE\n(raw messages are already written to per_speaker_episodic by the system - never produce that layer)\n- per_speaker_core     a person's STABLE fact / identity / hardened stance / RECURRING BEHAVIOUR\n- per_speaker_profile  how the group sees a person, or one person's OBSERVATION about another\n                       (\"A says B is X\" -> owner=B, source=A)\n- group_interaction    cross-speaker event / relationship / group DECISION   (owner=GROUP)\n                       *** WHO SAID IT IS NOT WHO IT BELONGS TO ***\n                       A decision announced by ONE person on behalf of the group is STILL a\n                       group decision: owner=GROUP, source=<the speaker>.\n                       Triggers: \"then it is settled\", \"so we agreed\", \"that is decided\",\n                       \"we will go with X\" -> owner=GROUP, layer=group_interaction,\n                       utype=decision. Do NOT file it as that speaker's personal preference.\n                       (A personal preference is \"I would rather X\"; a decision is \"X is settled\".)\n- group_insight        group NORM / consensus / meta-observation             (owner=GROUP)\n                       ONLY when the conversation gives evidence, note which member conspicuously\n                       relates to a norm differently. NEVER guess a member's compliance.\n\nACTIONS - exactly three, output nothing else\n  {\"action\":\"ADD\",\"owner\":\"<who it is ABOUT>\",\"source\":\"<who SAID/observed it>\",\"layer\":\"<one of the four above>\",\"utype\":\"fact|stance|observation|decision|relation\",\"content\":\"<the memory>\"}\n  {\"action\":\"UPDATE\",\"entry_id\":\"<existing entry being updated>\",\"content\":\"<the NEW, current state>\"}\n  {\"action\":\"NOOP\"}\n\nUPDATE BOUNDARIES (important)\n- *** BEFORE EVERY ADD, SEARCH CURRENT MEMORY FIRST *** Is there already an entry about this\n  same matter / same work item / same person-and-topic? If yes -> UPDATE that entry.\n  ADD is only for matters that NOTHING in CURRENT MEMORY covers yet.\n- Use UPDATE whenever an existing entry about the SAME MATTER has MOVED ON. Read this broadly:\n    * a number / percentage / progress advanced   e.g. 38% complete -> 97% complete\n    * a date or deadline shifted                  e.g. freeze 2025-06-20 -> 2025-06-27\n    * a status moved                              e.g. blocked -> resolved, planned -> shipped\n    * a stance / belief / plan changed\n    * a later, more specific statement supersedes an earlier vaguer one about the same item\n  It does NOT have to contradict the old entry. Any progression on the same item is an UPDATE.\n  A recurring behaviour observed AGAIN is also an UPDATE (record that it happened again).\n- *** THE NEW CONTENT MUST DIFFER SUBSTANTIVELY FROM THE ENTRY BEING UPDATED. *** If what you\n  would write is the same as the existing entry (same value, same status, same wording),\n  output NOOP - not UPDATE. An UPDATE that changes nothing is worse than no action: it buries\n  the real history under identical links.\n- entry_id MUST come from the CURRENT MEMORY list below.\n- Give ONLY the new state. How the old entry is preserved and chained is handled by the system.\n- Do NOT restate the old content (never write \"was X, now Y\" - write only Y).\n- Do NOT repeat owner / source / layer - the system reuses them from the updated entry.\n- DISAGREEMENT BETWEEN DIFFERENT PEOPLE is always separate ADDs. Never merge them via UPDATE.\n- ONE MATTER = ONE ENTRY. If a matter is ALREADY in CURRENT MEMORY - or you already wrote an\n  ADD for it EARLIER IN THIS SAME OUTPUT - never ADD a second entry for it: UPDATE it if its\n  state changed, otherwise output nothing. This holds for every kind of memory (not just\n  stances), for the GROUP row no matter who voices it this time, and however differently the\n  matter is worded. Merely re-stating / confirming / agreeing with something already listed is\n  not new state -> neither ADD nor UPDATE.\n\nGRANULARITY - PREFER FINE OVER COARSE (important)\n- One derived memory = ONE atomic fact / ONE stance / ONE observation.\n- If a person said N distinct things in this segment -> produce N entries, never one summary.\n  BAD : \"Mum's overall view on the 40th: wants a party, worried about budget, March is awkward\"\n  GOOD: three separate entries (celebration format / budget / timing)\n- But do NOT copy raw messages verbatim into derived memory (raw is already stored).\n\nCAPTURE BEHAVIOUR, NOT ONLY STATED FACTS\nExplicit facts (\"closed a Series A\", \"the code is 4-8-1-9\") are easy - you will not miss them.\nEqually important and far more often missed are IMPLICIT traits: a habit, an avoidance, a role\nsomeone keeps taking on, a subject someone never engages with, a way of replying that repeats,\nwho they defer to, what they joke about instead of answering.\n  e.g. \"deflects questions about his own career with a joke, then redirects to someone else\"\n       \"is always the one who handles logistics\" / \"never comments on anyone's promotion\"\nFile them as per_speaker_core (the person's own pattern) or per_speaker_profile (how others\nread them). Base them on what actually happened - describe the behaviour, never guess a motive.\nA pattern occurring AGAIN is NOT a duplicate, it is EVIDENCE: UPDATE that entry to record that\nit happened again (and when), instead of NOOP.\nSomeone who talks a lot but states few hard facts should still end up with entries - if a person\nspoke repeatedly this segment and you wrote nothing about them, you have missed their behaviour.\n\nOTHER CONSTRAINTS\n- owner = who the memory is ABOUT; source = who said/observed it.\n- If A claims something about B -> owner=B, source=A. Never file B's matter under A.\n- Invent nothing unsupported. Prefer faithful wording over paraphrase.\n- Write memory content in the SAME LANGUAGE as the conversation (so that retrieval embeddings\n  of memory and of raw text live in the same space).\n\nOutput JSON only, no explanation: {\"actions\":[ ... ]}"
+        },
+        {
+          "role": "user",
+          "content": "Speakers present: Rae, Sam\nSession: manual_noop_greeting_s01    Time: 2026-08-10T10:00:00Z\n\nCURRENT MEMORY (ALL derived memory of this group; each slot shows its LATEST state only)\nformat: <entry_id> [layer|owner(by source)@date] content\n(no derived memory yet)\n\nNEW MESSAGES IN THIS SEGMENT\n[Rae @ 2026-08-10T10:00:00Z] Good morning everyone.\n[Sam @ 2026-08-10T10:01:00Z] Good morning.\n\nHARD OUTPUT LIMIT: return at most 8 actions. Stop after the last NOVEL action, close the JSON immediately, and NEVER repeat an action already emitted in this output.\n\nOutput {\"actions\":[ ... ]}"
+        }
+      ],
+      "pre_state_text": "(no derived memory yet)",
+      "actions": [
+        {
+          "action": "NOOP"
+        }
+      ],
+      "target_text": "{\"actions\":[{\"action\":\"NOOP\"}]}",
+      "report": {
+        "json_valid": true,
+        "attempted": 1,
+        "applied": 0,
+        "noop": 1,
+        "errors": [],
+        "created_ids": [],
+        "updated_from": [],
+        "schema_valid_actions": 1,
+        "valid": true
+      },
+      "pre_state": {
+        "entries": [],
+        "heads": [],
+        "update_edges": [],
+        "roster": []
+      },
+      "post_state": {
+        "entries": [],
+        "heads": [],
+        "update_edges": [],
+        "roster": [
+          "Rae",
+          "Sam"
+        ]
+      },
+      "segment_index": 0,
+      "source_session_index": 0,
+      "metadata": {
+        "source_topic": "manual_topic_manual_noop_greeting_1"
+      }
+    }
+  ],
+  "final_state": {
+    "entries": [],
+    "heads": [],
+    "update_edges": [],
+    "roster": [
+      "Rae",
+      "Sam"
+    ]
+  },
+  "qa_pairs": [
+    {
+      "id": "q1",
+      "category": "noop",
+      "question": "Did the group record a durable decision?",
+      "answer": "No, the exchange was only a greeting.",
+      "difficulty": "medium",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "manual_noop_greeting_s01_t000",
+          "speaker_display_name": "Rae",
+          "message_excerpt": "Good morning everyone.",
+          "relevance": "Greeting-only exchange with no durable decision."
+        },
+        {
+          "session_index": 1,
+          "turn_id": "manual_noop_greeting_s01_t001",
+          "speaker_display_name": "Sam",
+          "message_excerpt": "Good morning.",
+          "relevance": "Second greeting confirms the exchange is non-substantive."
+        }
+      ],
+      "temporal_anchors": []
+    }
+  ],
+  "stats": {
+    "transitions": 1,
+    "actions": {
+      "NOOP": 1
+    },
+    "derived_entries": 0,
+    "update_edges": 0
+  }
+}

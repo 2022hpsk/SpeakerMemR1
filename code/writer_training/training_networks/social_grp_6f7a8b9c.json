@@ -1,0 +1,686 @@
+{
+  "schema": "socialmembench-real-v4-source/1",
+  "scenario": "[socialmembench:grp_6f7a8b9c] real benchmark conversation",
+  "speakers": [
+    "Abi",
+    "Dev",
+    "Kwame",
+    "Sasha"
+  ],
+  "sessions": [
+    {
+      "session_id": "grp_6f7a8b9c_s01",
+      "session_index": 1,
+      "topic": "Abi pushes Amsterdam; Sasha steers local",
+      "ts": "2025-06-02",
+      "turns": [
+        {
+          "turn": "grp_6f7a8b9c_s01_t000",
+          "speaker": "Abi",
+          "speaker_id": "p_cf6a1b2c3",
+          "content": "Okay we HAVE to do Amsterdam this year. I'm serious. Long weekend in October, flights are cheap right now, I've been looking 👀 who's in?",
+          "ts": "2025-06-02T11:22:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_6f7a8b9c_s01_t001",
+          "speaker": "Kwame",
+          "speaker_id": "p_cf6b2c3d4",
+          "content": "I'll book it now if you all say yes. I'm serious, give me a date and I'll sort it.",
+          "ts": "2025-06-02T11:35:00",
+          "reply_to": "grp_6f7a8b9c_s01_t000"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s01_t002",
+          "speaker": "Sasha",
+          "speaker_id": "p_cf6c3d4e5",
+          "content": "Amsterdam is lovely but honestly flights and hotels in October are a lot. Could we do something closer to home this year? A weekend somewhere in the UK, maybe stay at someone's? I feel like that's more my vibe right now anyway",
+          "ts": "2025-06-02T11:41:00",
+          "reply_to": "grp_6f7a8b9c_s01_t000"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s01_t003",
+          "speaker": "Dev",
+          "speaker_id": "p_cf6d4e5f6",
+          "content": "sorry, head down in the archive all morning 🙈 Amsterdam sounds incredible and I genuinely want to come. October is tricky but I don't want to say no yet. can we talk dates?",
+          "ts": "2025-06-02T16:17:00",
+          "reply_to": "grp_6f7a8b9c_s01_t000"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s01_t004",
+          "speaker": "Abi",
+          "speaker_id": "p_cf6a1b2c3",
+          "content": "Sasha I get it! We could do Peak District maybe? This year it has to actually happen though, we keep saying it 😭",
+          "ts": "2025-06-02T16:31:00",
+          "reply_to": "grp_6f7a8b9c_s01_t002"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s01_t005",
+          "speaker": "Kwame",
+          "speaker_id": "p_cf6b2c3d4",
+          "content": "Peak District is fine. I will book if you confirm. Dev, let us know once you know October.",
+          "ts": "2025-06-02T16:39:00",
+          "reply_to": "grp_6f7a8b9c_s01_t004"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s01_t006",
+          "speaker": "Sasha",
+          "speaker_id": "p_cf6c3d4e5",
+          "content": "Also hotel breakfast is never the part anyone remembers 😂 I'd rather save the money and actually talk to you all.",
+          "ts": "2025-06-02T16:43:00",
+          "reply_to": "grp_6f7a8b9c_s01_t005"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s01_t007",
+          "speaker": "Abi",
+          "speaker_id": "p_cf6a1b2c3",
+          "content": "okay wow dragged by Sasha and honestly fair 😭",
+          "ts": "2025-06-02T16:48:00",
+          "reply_to": "grp_6f7a8b9c_s01_t006"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s01_t008",
+          "speaker": "Dev",
+          "speaker_id": "p_cf6d4e5f6",
+          "content": "train to London is much less terrifying than flights tbh. local is easier for me too",
+          "ts": "2025-06-02T16:52:00",
+          "reply_to": "grp_6f7a8b9c_s01_t007"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s01_t009",
+          "speaker": "Kwame",
+          "speaker_id": "p_cf6b2c3d4",
+          "content": "Good. Local plan, less fantasy, more actual human contact.",
+          "ts": "2025-06-02T16:57:00",
+          "reply_to": "grp_6f7a8b9c_s01_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_6f7a8b9c_s02",
+      "session_index": 2,
+      "topic": "Abi cancels again; the group shifts to a hosted hang",
+      "ts": "2025-06-09",
+      "turns": [
+        {
+          "turn": "grp_6f7a8b9c_s02_t000",
+          "speaker": "Abi",
+          "speaker_id": "p_cf6a1b2c3",
+          "content": "I'm so sorry everyone, October isn't going to work for me. Work thing came up. Can we look at November? This year, I promise 💔",
+          "ts": "2025-06-09T19:43:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_6f7a8b9c_s02_t001",
+          "speaker": "Kwame",
+          "speaker_id": "p_cf6b2c3d4",
+          "content": "noted. November works for me.",
+          "ts": "2025-06-09T19:51:00",
+          "reply_to": "grp_6f7a8b9c_s02_t000"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s02_t002",
+          "speaker": "Sasha",
+          "speaker_id": "p_cf6c3d4e5",
+          "content": "Ah no! Okay November. Maybe we do the hosted option, someone's flat, homemade food, low-key? I'd love that actually more than a hotel",
+          "ts": "2025-06-09T19:58:00",
+          "reply_to": "grp_6f7a8b9c_s02_t000"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s02_t003",
+          "speaker": "Kwame",
+          "speaker_id": "p_cf6b2c3d4",
+          "content": "I can host in London. Sasha's idea is the right one. We've been trying to book hotels and trips for two years. Let's just be in the same room. Dev, you have to actually come.",
+          "ts": "2025-06-09T20:04:00",
+          "reply_to": "grp_6f7a8b9c_s02_t002"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s02_t004",
+          "speaker": "Dev",
+          "speaker_id": "p_cf6d4e5f6",
+          "content": "sorry, only just seeing this, head down in the archive. November I genuinely want to come. When the PhD is done things will be different. I promise I'll try to make November work",
+          "ts": "2025-06-09T23:22:00",
+          "reply_to": "grp_6f7a8b9c_s02_t003"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s02_t005",
+          "speaker": "Sasha",
+          "speaker_id": "p_cf6c3d4e5",
+          "content": "Abi are you ok though? you sounded absolutely fried earlier. no pressure if this month is cursed 😊",
+          "ts": "2025-06-09T23:24:00",
+          "reply_to": "grp_6f7a8b9c_s02_t000"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s02_t006",
+          "speaker": "Abi",
+          "speaker_id": "p_cf6a1b2c3",
+          "content": "just one of those weeks honestly 😅 I'm ok. slightly feral but ok",
+          "ts": "2025-06-09T23:27:00",
+          "reply_to": "grp_6f7a8b9c_s02_t005"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s02_t007",
+          "speaker": "Abi",
+          "speaker_id": "p_cf6a1b2c3",
+          "content": "nursery bug plus work, lethal combination. I hate being this person honestly",
+          "ts": "2025-06-09T23:31:00",
+          "reply_to": "grp_6f7a8b9c_s02_t006"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s02_t008",
+          "speaker": "Kwame",
+          "speaker_id": "p_cf6b2c3d4",
+          "content": "You're not 'this person'. You're tired. November, London, no drama.",
+          "ts": "2025-06-09T23:36:00",
+          "reply_to": "grp_6f7a8b9c_s02_t007"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s02_t009",
+          "speaker": "Sasha",
+          "speaker_id": "p_cf6c3d4e5",
+          "content": "Exactly. We want you there, not impressive logistics.",
+          "ts": "2025-06-09T23:40:00",
+          "reply_to": "grp_6f7a8b9c_s02_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_6f7a8b9c_s03",
+      "session_index": 3,
+      "topic": "November collapses; Kwame gives up on big plans and checks on Dev",
+      "ts": "2025-06-16",
+      "turns": [
+        {
+          "turn": "grp_6f7a8b9c_s03_t000",
+          "speaker": "Abi",
+          "speaker_id": "p_cf6a1b2c3",
+          "content": "Kwame I'm so sorry. This year has just been relentless. November is looking impossible now too. Can we do something in the new year? I miss you all so much 😭",
+          "ts": "2025-06-16T18:14:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_6f7a8b9c_s03_t001",
+          "speaker": "Kwame",
+          "speaker_id": "p_cf6b2c3d4",
+          "content": "Abi. I love you. But this is the third time. I'm not going to plan another ambitious trip. Let's do something local and actually doable. You come to London one weekend, I'll have nothing else on. We don't need to all be free at once.",
+          "ts": "2025-06-16T18:22:00",
+          "reply_to": "grp_6f7a8b9c_s03_t000"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s03_t002",
+          "speaker": "Sasha",
+          "speaker_id": "p_cf6c3d4e5",
+          "content": "Kwame is right honestly. London Saturday, nothing booked, just show up. That's actually what I want. Abi can you do that?",
+          "ts": "2025-06-16T18:29:00",
+          "reply_to": "grp_6f7a8b9c_s03_t001"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s03_t003",
+          "speaker": "Abi",
+          "speaker_id": "p_cf6a1b2c3",
+          "content": "Yes. Yes I can do that. Give me a date.",
+          "ts": "2025-06-16T18:35:00",
+          "reply_to": "grp_6f7a8b9c_s03_t002"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s03_t004",
+          "speaker": "Kwame",
+          "speaker_id": "p_cf6b2c3d4",
+          "content": "First Saturday of next month. I'll be at mine. Dev, I'm coming to Edinburgh next week actually. Separate thing. He's heads-down at the moment but I wanted to see him.",
+          "ts": "2025-06-16T18:37:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_6f7a8b9c_s03_t005",
+          "speaker": "Sasha",
+          "speaker_id": "p_cf6c3d4e5",
+          "content": "first Saturday, no booking, no itinerary, no pressure. That's the whole charm.",
+          "ts": "2025-06-16T18:41:00",
+          "reply_to": "grp_6f7a8b9c_s03_t004"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s03_t006",
+          "speaker": "Dev",
+          "speaker_id": "p_cf6d4e5f6",
+          "content": "Edinburgh next week works if you're serious Kwame. coffee and a walk maybe",
+          "ts": "2025-06-16T18:46:00",
+          "reply_to": "grp_6f7a8b9c_s03_t005"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s03_t007",
+          "speaker": "Abi",
+          "speaker_id": "p_cf6a1b2c3",
+          "content": "send the date now before any of us develop a personality change",
+          "ts": "2025-06-16T18:50:00",
+          "reply_to": "grp_6f7a8b9c_s03_t006"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s03_t008",
+          "speaker": "Kwame",
+          "speaker_id": "p_cf6b2c3d4",
+          "content": "Pinned. First Saturday. Noon onwards.",
+          "ts": "2025-06-16T18:55:00",
+          "reply_to": "grp_6f7a8b9c_s03_t007"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s03_t009",
+          "speaker": "Sasha",
+          "speaker_id": "p_cf6c3d4e5",
+          "content": "I'll bring pudding if Abi brings the chaos.",
+          "ts": "2025-06-16T18:59:00",
+          "reply_to": "grp_6f7a8b9c_s03_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_6f7a8b9c_s04",
+      "session_index": 4,
+      "topic": "Saturday at Kwame's and Dev's silence gets called out",
+      "ts": "2025-06-23",
+      "turns": [
+        {
+          "turn": "grp_6f7a8b9c_s04_t000",
+          "speaker": "Abi",
+          "speaker_id": "p_cf6a1b2c3",
+          "content": "Okay! Kwame's Saturday is confirmed 🙌 Sasha, should we go to that new place in Hackney? I was reading about it, tasting menu, cocktail bar, looks incredible",
+          "ts": "2025-06-23T20:55:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_6f7a8b9c_s04_t001",
+          "speaker": "Sasha",
+          "speaker_id": "p_cf6c3d4e5",
+          "content": "oh that sounds beautiful but tasting menus are a bit much for me honestly, not really my scene 😊 could we do a pub or Kwame cooks? I'd honestly rather have a proper catch-up than a restaurant situation",
+          "ts": "2025-06-23T21:02:00",
+          "reply_to": "grp_6f7a8b9c_s04_t000"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s04_t002",
+          "speaker": "Kwame",
+          "speaker_id": "p_cf6b2c3d4",
+          "content": "I'll cook. Sasha's right, pub or my place is better. We're not here for the food.",
+          "ts": "2025-06-23T21:08:00",
+          "reply_to": "grp_6f7a8b9c_s04_t001"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s04_t003",
+          "speaker": "Abi",
+          "speaker_id": "p_cf6a1b2c3",
+          "content": "Kwame's cooking!! Yes perfect 🥰 Dev, can you make it? We miss you!",
+          "ts": "2025-06-23T21:12:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_6f7a8b9c_s04_t004",
+          "speaker": "Kwame",
+          "speaker_id": "p_cf6b2c3d4",
+          "content": "Also, quick admin. Dev, you've been MIA for like six weeks. The whole point of this chat is monthly minimum. I know you're in the archive. Send a voice note, a meme, anything.",
+          "ts": "2025-06-23T21:14:00",
+          "reply_to": "grp_6f7a8b9c_s04_t003"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s04_t005",
+          "speaker": "Dev",
+          "speaker_id": "p_cf6d4e5f6",
+          "content": "sorry, I know, I know. head down in the archive. I'm trying to come for the Saturday. I genuinely want to be there. when the PhD is done this all gets easier, I promise 💙",
+          "ts": "2025-06-23T23:58:00",
+          "reply_to": "grp_6f7a8b9c_s04_t004"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s04_t006",
+          "speaker": "Sasha",
+          "speaker_id": "p_cf6c3d4e5",
+          "content": "no guilt spiral pls, just send us something chaotic once in a while and we're happy 😊",
+          "ts": "2025-06-24T00:01:00",
+          "reply_to": "grp_6f7a8b9c_s04_t005"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s04_t007",
+          "speaker": "Abi",
+          "speaker_id": "p_cf6a1b2c3",
+          "content": "yes literally a blurry archive corridor pic would sustain us for a month 😂",
+          "ts": "2025-06-24T00:02:00",
+          "reply_to": "grp_6f7a8b9c_s04_t006"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s04_t008",
+          "speaker": "Abi",
+          "speaker_id": "p_cf6a1b2c3",
+          "content": "I'll bring wine and absolutely no itinerary 🙋‍♀️",
+          "ts": "2025-06-24T00:06:00",
+          "reply_to": "grp_6f7a8b9c_s04_t007"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s04_t009",
+          "speaker": "Sasha",
+          "speaker_id": "p_cf6c3d4e5",
+          "content": "crisps, olives, something chocolate, done",
+          "ts": "2025-06-24T00:11:00",
+          "reply_to": "grp_6f7a8b9c_s04_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_6f7a8b9c_s05",
+      "session_index": 5,
+      "topic": "Post-Saturday debrief; home-hang format wins",
+      "ts": "2025-06-30",
+      "turns": [
+        {
+          "turn": "grp_6f7a8b9c_s05_t000",
+          "speaker": "Abi",
+          "speaker_id": "p_cf6a1b2c3",
+          "content": "Yesterday was everything I needed 😭 Kwame your flat is basically a restaurant now though? Sasha I feel like we talked properly for the first time in years",
+          "ts": "2025-06-30T14:48:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_6f7a8b9c_s05_t001",
+          "speaker": "Sasha",
+          "speaker_id": "p_cf6c3d4e5",
+          "content": "that was perfect. THAT is my idea of a good time. home, food, no pretension, just us. can we do this every couple of months?",
+          "ts": "2025-06-30T14:54:00",
+          "reply_to": "grp_6f7a8b9c_s05_t000"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s05_t002",
+          "speaker": "Kwame",
+          "speaker_id": "p_cf6b2c3d4",
+          "content": "yes. Sasha's format from now on. Dev, you missed a good one. I'll tell you about it when we speak. You were there in spirit.",
+          "ts": "2025-06-30T14:59:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_6f7a8b9c_s05_t003",
+          "speaker": "Dev",
+          "speaker_id": "p_cf6d4e5f6",
+          "content": "gutted I couldn't make it. Next one, I'll be there. When the PhD is done this changes, I mean it. Kwame thank you for Edinburgh last week 💙",
+          "ts": "2025-06-30T18:11:00",
+          "reply_to": "grp_6f7a8b9c_s05_t002"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s05_t004",
+          "speaker": "Sasha",
+          "speaker_id": "p_cf6c3d4e5",
+          "content": "home-hang supremacy honestly. no trains, no hotel check-in chat, no weird bill split",
+          "ts": "2025-06-30T18:15:00",
+          "reply_to": "grp_6f7a8b9c_s05_t003"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s05_t005",
+          "speaker": "Abi",
+          "speaker_id": "p_cf6a1b2c3",
+          "content": "and I didn't spend three days panicking about childcare for a massive weekend away, which helped",
+          "ts": "2025-06-30T18:20:00",
+          "reply_to": "grp_6f7a8b9c_s05_t004"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s05_t006",
+          "speaker": "Dev",
+          "speaker_id": "p_cf6d4e5f6",
+          "content": "What did Kwame cook. I need details if I'm going to feel maximum regret",
+          "ts": "2025-06-30T18:24:00",
+          "reply_to": "grp_6f7a8b9c_s05_t005"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s05_t007",
+          "speaker": "Kwame",
+          "speaker_id": "p_cf6b2c3d4",
+          "content": "lamb stew, too much rice, ridiculous brownies from Sasha",
+          "ts": "2025-06-30T18:29:00",
+          "reply_to": "grp_6f7a8b9c_s05_t006"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s05_t008",
+          "speaker": "Sasha",
+          "speaker_id": "p_cf6c3d4e5",
+          "content": "not ridiculous, perfect 😌 next one I'll do soup and a giant salad",
+          "ts": "2025-06-30T18:33:00",
+          "reply_to": "grp_6f7a8b9c_s05_t007"
+        },
+        {
+          "turn": "grp_6f7a8b9c_s05_t009",
+          "speaker": "Abi",
+          "speaker_id": "p_cf6a1b2c3",
+          "content": "Can we put January in now before life starts freewheeling again",
+          "ts": "2025-06-30T18:38:00",
+          "reply_to": "grp_6f7a8b9c_s05_t008"
+        }
+      ]
+    }
+  ],
+  "qa_pairs": [
+    {
+      "id": "Q1_cf6s1c1",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Sasha's behavior across sessions suggest about her preferences for group plans?",
+      "answer": "Sasha consistently steers away from expensive plans — flights, hotels, tasting menu restaurants — and toward cheap, low-key alternatives: staying at someone's flat, homemade food, a local pub. In Session 1 she redirected the Amsterdam proposal to something 'closer to home.' In Session 2 she proposed 'hosted option — someone's flat, homemade food, low-key.' In Session 4 she declined the Hackney tasting menu in favour of a pub or Kwame cooking. She never names cost as the reason, framing it instead as a preference: 'not really my vibe,' 'not really my scene.' The pattern is consistent and the reframings all point in the same direction.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_6f7a8b9c_s01_t002",
+          "speaker_display_name": "Sasha",
+          "message_excerpt": "flights and hotels in October are a lot. Could we do something closer to home this year?",
+          "relevance": "First deflection of an expensive plan — reframed as personal preference, not cost"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_6f7a8b9c_s04_t001",
+          "speaker_display_name": "Sasha",
+          "message_excerpt": "tasting menus are a bit much for me honestly, not really my scene 😊 could we do a pub or Kwame cooks?",
+          "relevance": "Deflects expensive restaurant toward free alternative — same pattern, different plan"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q4_cf6s2c1",
+      "category": "Q4",
+      "difficulty": "hard",
+      "question": "Both Abi and Sasha declined or downscaled ambitious group plans across multiple sessions. Whose declining was driven by childcare and exhaustion, and whose by financial constraints?",
+      "answer": "Abi's declining is driven by childcare and exhaustion — she has a 2-year-old and a demanding job. She cites 'work things' as the reason, but she never mentions the child or fatigue. In Session 2, her cancellation was framed as 'a work thing.' In Session 3, 'November is looking impossible now too — this year has just been relentless.' The vagueness is consistent and the underlying constraint is parental depletion. Sasha's declining is financial — she steers away from flights, hotels, and expensive restaurants on cost grounds, but reframes it as personal preference ('not really my vibe,' 'not really my scene'). Both are concealing something, but the things they conceal are entirely different.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Abi",
+        "B": "Dev",
+        "C": "Kwame",
+        "D": "Sasha"
+      },
+      "correct_option": "A",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_6f7a8b9c_s02_t000",
+          "speaker_display_name": "Abi",
+          "message_excerpt": "October isn't going to work for me. Work thing came up.",
+          "relevance": "Abi cites 'work' — the actual constraint (childcare/exhaustion) is concealed"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_6f7a8b9c_s01_t002",
+          "speaker_display_name": "Sasha",
+          "message_excerpt": "flights and hotels in October are a lot. Could we do something closer to home this year?",
+          "relevance": "Sasha redirects away from cost — the constraint is financial, reframed as preference"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q8_cf6s2c2",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What does Dev's pattern of participation across the sessions reveal about what was pulling him away from the group, and where does the conversation first signal the shift?",
+      "answer": "Dev began as the most invested planner in the group at university but has become the least responsive member. In Session 1, he replied the same day but hours late ('sorry, head down in the archive') and gave a vague but engaged reply. By Session 2, his response came at 11:22pm after a full day of silence. By Session 4, Kwame flagged that Dev had been MIA for six weeks — a direct breach of the monthly check-in norm. Dev acknowledges the pattern himself ('I know, I know') and repeatedly defers to a future when 'the PhD is done' as when things will improve. He is emotionally present in his replies but operationally absent from the group.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_6f7a8b9c_s02_t004",
+          "speaker_display_name": "Dev",
+          "message_excerpt": "sorry, only just seeing this, head down in the archive. November I genuinely want to come. When the PhD is done things will be different. I promise I'll try to make November work",
+          "relevance": "Dev's pattern crystallises here — late reply, genuine feeling, deferred future"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_6f7a8b9c_s04_t004",
+          "speaker_display_name": "Kwame",
+          "message_excerpt": "Dev, you've been MIA for like six weeks. The whole point of this chat is monthly minimum.",
+          "relevance": "Kwame names the breach — six weeks without posting, against the norm"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "replies same day but late; vague on commitment to plans"
+        },
+        {
+          "session_index": 2,
+          "value": "11pm reply after full day of silence; 'I promise I'll try'"
+        },
+        {
+          "session_index": 4,
+          "value": "six weeks MIA; norm breach flagged by Kwame; 'I know, I know'"
+        },
+        {
+          "session_index": 5,
+          "value": "didn't attend the London Saturday; deferred again to 'when the PhD is done'"
+        }
+      ]
+    },
+    {
+      "id": "Q8_cf6s3c1",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What drove Kwame's move from eager commitment to cautious restraint on group plans, and which session marks the turning point?",
+      "answer": "Kwame started as a willing enabler of ambitious plans — in Session 1, he said 'I'll book it now if you all say yes,' prepared to commit immediately to Amsterdam or the Peak District. By Session 3, after Abi cancelled for the third time, his position shifted entirely: 'I'm not going to plan another ambitious trip. Let's do something local and actually doable.' By Session 4 he had codified this as a new standard: 'Sasha's format from now on.' He moved from enthusiasm for group trips to insisting on small, confirmed, local events — and from waiting for consensus to proposing specific dates with booking commitments.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_6f7a8b9c_s01_t001",
+          "speaker_display_name": "Kwame",
+          "message_excerpt": "I'll book it now if you all say yes. I'm serious, give me a date and I'll sort it.",
+          "relevance": "Session 1 baseline: Kwame fully willing to commit to an ambitious trip"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_6f7a8b9c_s03_t001",
+          "speaker_display_name": "Kwame",
+          "message_excerpt": "I'm not going to plan another ambitious trip. Let's do something local and actually doable.",
+          "relevance": "Shift point — third cancellation triggers Kwame's position change"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "ready to book Amsterdam or Peak District immediately"
+        },
+        {
+          "session_index": 2,
+          "value": "agrees to downscale to London but still hosting"
+        },
+        {
+          "session_index": 3,
+          "value": "refuses to plan ambitious trips after third cancellation — local only"
+        },
+        {
+          "session_index": 4,
+          "value": "cooks at home; 'Sasha's format from now on'"
+        }
+      ]
+    },
+    {
+      "id": "Q5_cf6s3c2",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "What was Dev's situation, and how does the conversation show that Kwame already knew it?",
+      "answer": "In Session 3, Kwame mentioned he was going to Edinburgh the following week — separately from the group plan — specifically to see Dev: 'He's heads-down at the moment but I wanted to see him.' This reveals that Kwame knows Dev's situation is serious enough to warrant a personal visit rather than waiting for a group meetup. He is not just covering for Dev's absences in the chat; he is actively maintaining the relationship outside the group. In Session 5, he tells Dev he'll 'tell him about it when we speak' — confirming there is a private bilateral channel. The knowledge is first-hand and recent.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_6f7a8b9c_s03_t004",
+          "speaker_display_name": "Kwame",
+          "message_excerpt": "I'm coming to Edinburgh next week actually. Separate thing. He's heads-down at the moment but I wanted to see him.",
+          "relevance": "Kwame reveals a private visit to Dev — demonstrating he knows Dev's state well enough to initiate a solo check-in"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q6_cf6s4c1",
+      "category": "Q6",
+      "difficulty": "easy",
+      "question": "The group has a norm of a monthly minimum check-in in the chat. Does everyone follow it?",
+      "answer": "No — Dev repeatedly breaches it. In Session 4, Kwame explicitly called out that Dev had been 'MIA for like six weeks' — more than double the monthly minimum. Dev acknowledged the breach ('I know, I know') but did not dispute it. This is not a one-off: his delays appear in every session (hours-late replies in Session 1, an 11pm reply in Session 2). The norm exists and the rest of the group roughly follows it; Dev is the consistent exception, and the group is aware of it.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Abi",
+        "B": "Dev",
+        "C": "Kwame",
+        "D": "Sasha"
+      },
+      "correct_option": "B",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_6f7a8b9c_s04_t004",
+          "speaker_display_name": "Kwame",
+          "message_excerpt": "Dev, you've been MIA for like six weeks. The whole point of this chat is monthly minimum.",
+          "relevance": "Kwame names the norm and flags Dev's breach directly — six weeks without posting"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_cf6s5c1",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does the conversation reveal about the relationship between Kwame and Dev within the group?",
+      "answer": "Kwame and Dev have a deeper bond than the other group pairings, observable in how they treat each other in the chat. Kwame consistently covers for Dev's absences ('he's heads-down at the moment') rather than calling him out in the group. In Session 3 he planned a separate solo trip to Edinburgh just to see Dev — not waiting for a group meetup — signalling the relationship operates on a bilateral channel the group doesn't see. In Session 4 he holds Dev accountable for the norm breach but with directional care ('I know you're in the archive. Send a voice note, a meme, anything') rather than frustration. In Session 5 he tells Dev he'll 'tell you about it when we speak' — confirming ongoing private contact. Dev thanks Kwame specifically for Edinburgh. Their relationship is the most protective and private pair in the group.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "Kwame and Dev have a deeper",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_6f7a8b9c_s03_t004",
+          "speaker_display_name": "Kwame",
+          "message_excerpt": "I'm coming to Edinburgh next week actually. Separate thing. He's heads-down at the moment but I wanted to see him.",
+          "relevance": "Kwame initiates a solo visit to Dev — demonstrates the depth of a relationship that operates independently of the group"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_6f7a8b9c_s05_t002",
+          "speaker_display_name": "Kwame",
+          "message_excerpt": "Dev, you missed a good one. I'll tell you about it when we speak. You were there in spirit.",
+          "relevance": "Kwame maintains the private channel — 'when we speak' implies regular bilateral contact outside the group chat"
+        }
+      ],
+      "temporal_anchors": []
+    }
+  ],
+  "meta": {
+    "source": "SocialMemBench",
+    "source_kind": "real_benchmark",
+    "network_id": "grp_6f7a8b9c",
+    "n_sessions": 5,
+    "n_turns": 50,
+    "n_qa": 7,
+    "v4_correct": 6,
+    "v4_total": 7,
+    "v4_errors": 1,
+    "v4_accuracy": 0.8571428571428571,
+    "heldout_heldout_excluded": true
+  }
+}

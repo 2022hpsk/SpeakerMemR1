@@ -1,0 +1,14 @@
+# GroupMemBench evaluation dependencies.
+# --- BM25 and LLM evaluation ---
+rank-bm25>=0.2.2
+numpy>=1.24
+tqdm>=4.66
+openai>=1.30.0        # OpenAI-compatible clients, including local vLLM services
+anthropic>=0.40       # Anthropic Messages API for QA and judging
+datasets>=2.0         # Optional dataset download helpers
+
+# --- Mem0 baseline ---
+mem0ai>=2.0
+sentence-transformers>=2.7 # Local CPU embedding; no embedding API key required
+chromadb>=0.5              # Local vector store used by Mem0
+# sentence-transformers installs torch; a CPU build is sufficient for this check.

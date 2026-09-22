@@ -1,0 +1,110 @@
+{
+  "config": {
+    "model": "deepseek-v4-flash",
+    "ask_enabled": true,
+    "qa_route": "both",
+    "top_k": 10,
+    "memory_reused": true,
+    "qa_only": true,
+    "qa_workers": 4,
+    "processes": 2
+  },
+  "total": 1986,
+  "correct": 1407,
+  "judge_acc": 0.7084592145015106,
+  "official_f1": 0.2981424658482994,
+  "by_conversation": {
+    "conv-26": {
+      "correct": 139,
+      "total": 199,
+      "judge_acc": 0.6984924623115578,
+      "official_f1": 0.28890604926204716
+    },
+    "conv-30": {
+      "correct": 84,
+      "total": 105,
+      "judge_acc": 0.8,
+      "official_f1": 0.313888467856867
+    },
+    "conv-41": {
+      "correct": 147,
+      "total": 193,
+      "judge_acc": 0.7616580310880829,
+      "official_f1": 0.32745483224636857
+    },
+    "conv-42": {
+      "correct": 175,
+      "total": 260,
+      "judge_acc": 0.6730769230769231,
+      "official_f1": 0.2995146834577088
+    },
+    "conv-43": {
+      "correct": 170,
+      "total": 242,
+      "judge_acc": 0.7024793388429752,
+      "official_f1": 0.31777921291723127
+    },
+    "conv-44": {
+      "correct": 113,
+      "total": 158,
+      "judge_acc": 0.7151898734177216,
+      "official_f1": 0.29226153083058765
+    },
+    "conv-47": {
+      "correct": 139,
+      "total": 190,
+      "judge_acc": 0.7315789473684211,
+      "official_f1": 0.28667648234833265
+    },
+    "conv-48": {
+      "correct": 162,
+      "total": 239,
+      "judge_acc": 0.6778242677824268,
+      "official_f1": 0.27834054531595037
+    },
+    "conv-49": {
+      "correct": 127,
+      "total": 196,
+      "judge_acc": 0.6479591836734694,
+      "official_f1": 0.27369749565468315
+    },
+    "conv-50": {
+      "correct": 151,
+      "total": 204,
+      "judge_acc": 0.7401960784313726,
+      "official_f1": 0.30819226177369874
+    }
+  },
+  "by_category": {
+    "adversarial": {
+      "correct": 370,
+      "total": 446,
+      "judge_acc": 0.8295964125560538,
+      "official_f1": 0.6816143497757847
+    },
+    "multi_hop": {
+      "correct": 116,
+      "total": 282,
+      "judge_acc": 0.41134751773049644,
+      "official_f1": 0.0806037172604778
+    },
+    "open_domain": {
+      "correct": 39,
+      "total": 96,
+      "judge_acc": 0.40625,
+      "official_f1": 0.07969981120783383
+    },
+    "single_hop": {
+      "correct": 655,
+      "total": 841,
+      "judge_acc": 0.7788347205707491,
+      "official_f1": 0.2520423210506369
+    },
+    "temporal": {
+      "correct": 227,
+      "total": 321,
+      "judge_acc": 0.7071651090342679,
+      "official_f1": 0.14256048295243143
+    }
+  }
+}

@@ -1,0 +1,634 @@
+{
+  "schema": "socialmembench-real-v4-source/1",
+  "scenario": "[socialmembench:grp_8b9c0d1e] real benchmark conversation",
+  "speakers": [
+    "Blessing",
+    "Graham",
+    "Harriet",
+    "Nadia",
+    "Tomasz"
+  ],
+  "sessions": [
+    {
+      "session_id": "grp_8b9c0d1e_s01",
+      "session_index": 1,
+      "topic": "Post-meeting chat; reading habits surface",
+      "ts": "2025-08-04",
+      "turns": [
+        {
+          "turn": "grp_8b9c0d1e_s01_t000",
+          "speaker": "Nadia",
+          "speaker_id": "p_bk8b2c3d4",
+          "content": "Last night was brilliant!! 🥂 What did everyone make of the ending? I found it so interesting how it resolved.",
+          "ts": "2025-08-04T11:33:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_8b9c0d1e_s01_t001",
+          "speaker": "Tomasz",
+          "speaker_id": "p_bk8c3d4e5",
+          "content": "I thought the ending undermined everything the first two-thirds had built. On page 342 the narrator explicitly says she won't forgive him, then she does. It felt like a different book.",
+          "ts": "2025-08-04T11:41:00",
+          "reply_to": "grp_8b9c0d1e_s01_t000"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s01_t002",
+          "speaker": "Harriet",
+          "speaker_id": "p_bk8a1b2c3",
+          "content": "I think we can all agree the ending is the point. The forgiveness is earned, you just have to read the whole arc rather than taking the page 342 quote out of context.",
+          "ts": "2025-08-04T11:48:00",
+          "reply_to": "grp_8b9c0d1e_s01_t001"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s01_t003",
+          "speaker": "Blessing",
+          "speaker_id": "p_bk8d4e5f6",
+          "content": "I think the book is doing something different from both readings. The forgiveness isn't resolution, it's deflation. The narrator is too tired to keep holding the wound. That's not a satisfying arc, it's an honest one.",
+          "ts": "2025-08-04T11:54:00",
+          "reply_to": "grp_8b9c0d1e_s01_t002"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s01_t004",
+          "speaker": "Graham",
+          "speaker_id": "p_bk8e5f6a7",
+          "content": "I actually thought it was rather good. The ending felt earned to me, Harriet's reading resonates.",
+          "ts": "2025-08-04T12:04:00",
+          "reply_to": "grp_8b9c0d1e_s01_t002"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s01_t005",
+          "speaker": "Nadia",
+          "speaker_id": "p_bk8b2c3d4",
+          "content": "Blessing that is such a beautiful reading 🥹 I was going to say something similar, yes, the exhaustion. Whose turn to pick next month?",
+          "ts": "2025-08-04T12:08:00",
+          "reply_to": "grp_8b9c0d1e_s01_t003"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s01_t006",
+          "speaker": "Harriet",
+          "speaker_id": "p_bk8a1b2c3",
+          "content": "Next month we actually need a pick, not just a mood board, Nadia.",
+          "ts": "2025-08-04T12:12:00",
+          "reply_to": "grp_8b9c0d1e_s01_t005"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s01_t007",
+          "speaker": "Nadia",
+          "speaker_id": "p_bk8b2c3d4",
+          "content": "wow okay 😭 yes yes proper pick next time",
+          "ts": "2025-08-04T12:17:00",
+          "reply_to": "grp_8b9c0d1e_s01_t006"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s01_t008",
+          "speaker": "Tomasz",
+          "speaker_id": "p_bk8c3d4e5",
+          "content": "Blessing's reading makes more sense to me than Harriet's certainty, for the record.",
+          "ts": "2025-08-04T12:21:00",
+          "reply_to": "grp_8b9c0d1e_s01_t007"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s01_t009",
+          "speaker": "Blessing",
+          "speaker_id": "p_bk8d4e5f6",
+          "content": "That may be the nicest thing Tomasz has ever said in this chat.",
+          "ts": "2025-08-04T12:26:00",
+          "reply_to": "grp_8b9c0d1e_s01_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_8b9c0d1e_s02",
+      "session_index": 2,
+      "topic": "Book selection; Harriet vetoes Nadia's pick",
+      "ts": "2025-08-11",
+      "turns": [
+        {
+          "turn": "grp_8b9c0d1e_s02_t000",
+          "speaker": "Nadia",
+          "speaker_id": "p_bk8b2c3d4",
+          "content": "My pick!! I want to do that new Dolly Alderton. I know we usually do literary but it's so addictive and there's loads to talk about 📚🥂",
+          "ts": "2025-08-11T16:12:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_8b9c0d1e_s02_t001",
+          "speaker": "Harriet",
+          "speaker_id": "p_bk8a1b2c3",
+          "content": "I think we can all agree we'd want something with a bit more heft for the group. That's holiday reading, Nadia. What about the new Sally Rooney? Literary but readable.",
+          "ts": "2025-08-11T16:31:00",
+          "reply_to": "grp_8b9c0d1e_s02_t000"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s02_t002",
+          "speaker": "Blessing",
+          "speaker_id": "p_bk8d4e5f6",
+          "content": "Nadia it's your turn, your pick stands if you want it to. For what it's worth, Dolly Alderton is a better writer than she gets credit for.",
+          "ts": "2025-08-11T16:39:00",
+          "reply_to": "grp_8b9c0d1e_s02_t001"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s02_t003",
+          "speaker": "Nadia",
+          "speaker_id": "p_bk8b2c3d4",
+          "content": "okay okay Sally Rooney is fine with me honestly 😂 I just thought we could do something fun but I'm happy either way!",
+          "ts": "2025-08-11T16:44:00",
+          "reply_to": "grp_8b9c0d1e_s02_t002"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s02_t004",
+          "speaker": "Tomasz",
+          "speaker_id": "p_bk8c3d4e5",
+          "content": "Did Nadia actually want to read the Alderton, or was that about something else?",
+          "ts": "2025-08-11T16:52:00",
+          "reply_to": "grp_8b9c0d1e_s02_t003"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s02_t005",
+          "speaker": "Graham",
+          "speaker_id": "p_bk8e5f6a7",
+          "content": "Sally Rooney sounds good to me. I'll read it properly this time.",
+          "ts": "2025-08-11T17:04:00",
+          "reply_to": "grp_8b9c0d1e_s02_t003"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s02_t006",
+          "speaker": "Tomasz",
+          "speaker_id": "p_bk8c3d4e5",
+          "content": "The rotation either exists or it doesn't.",
+          "ts": "2025-08-11T17:08:00",
+          "reply_to": "grp_8b9c0d1e_s02_t005"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s02_t007",
+          "speaker": "Harriet",
+          "speaker_id": "p_bk8a1b2c3",
+          "content": "Quality control also exists, Tomasz.",
+          "ts": "2025-08-11T17:13:00",
+          "reply_to": "grp_8b9c0d1e_s02_t006"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s02_t008",
+          "speaker": "Nadia",
+          "speaker_id": "p_bk8b2c3d4",
+          "content": "I'm fine honestly but next time I am keeping my silly girl pick 😂",
+          "ts": "2025-08-11T17:17:00",
+          "reply_to": "grp_8b9c0d1e_s02_t007"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s02_t009",
+          "speaker": "Blessing",
+          "speaker_id": "p_bk8d4e5f6",
+          "content": "Please do. The club can survive a little pleasure.",
+          "ts": "2025-08-11T17:22:00",
+          "reply_to": "grp_8b9c0d1e_s02_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_8b9c0d1e_s03",
+      "session_index": 3,
+      "topic": "Blessing challenges Harriet; reading levels surface",
+      "ts": "2025-08-18",
+      "turns": [
+        {
+          "turn": "grp_8b9c0d1e_s03_t000",
+          "speaker": "Harriet",
+          "speaker_id": "p_bk8a1b2c3",
+          "content": "I think we can all agree last night's meeting was our best yet. The Rooney book is full of class anxiety. That's what it's really about.",
+          "ts": "2025-08-18T10:14:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_8b9c0d1e_s03_t001",
+          "speaker": "Blessing",
+          "speaker_id": "p_bk8d4e5f6",
+          "content": "I think the book is doing something different from that reading, Harriet. The class stuff is surface. What Rooney is actually doing is showing how intimacy becomes a proxy for power, and the power isn't class-based, it's gendered. Two different books depending on which character you center.",
+          "ts": "2025-08-18T10:22:00",
+          "reply_to": "grp_8b9c0d1e_s03_t000"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s03_t002",
+          "speaker": "Harriet",
+          "speaker_id": "p_bk8a1b2c3",
+          "content": "I appreciate the reading, Blessing, but I do think that misses the point. The novel is operating on a specific register of Irish social mobility that you need the context to get.",
+          "ts": "2025-08-18T10:29:00",
+          "reply_to": "grp_8b9c0d1e_s03_t001"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s03_t003",
+          "speaker": "Blessing",
+          "speaker_id": "p_bk8d4e5f6",
+          "content": "I do have the context, I wrote about it for the TLS. The class reading is valid but it's not the only one. Multiple readings can be right simultaneously.",
+          "ts": "2025-08-18T10:34:00",
+          "reply_to": "grp_8b9c0d1e_s03_t002"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s03_t004",
+          "speaker": "Nadia",
+          "speaker_id": "p_bk8b2c3d4",
+          "content": "Blessing I love how you read things 🥹 what did everyone make of the middle section? I found it so interesting",
+          "ts": "2025-08-18T10:41:00",
+          "reply_to": "grp_8b9c0d1e_s03_t003"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s03_t005",
+          "speaker": "Tomasz",
+          "speaker_id": "p_bk8c3d4e5",
+          "content": "Do you mean the section from page 147 onwards? Or the chapter break at 189?",
+          "ts": "2025-08-18T10:47:00",
+          "reply_to": "grp_8b9c0d1e_s03_t004"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s03_t006",
+          "speaker": "Graham",
+          "speaker_id": "p_bk8e5f6a7",
+          "content": "I don't think class is merely surface, though. It structures the whole room they move in.",
+          "ts": "2025-08-18T10:51:00",
+          "reply_to": "grp_8b9c0d1e_s03_t005"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s03_t007",
+          "speaker": "Tomasz",
+          "speaker_id": "p_bk8c3d4e5",
+          "content": "Both of you are describing different mechanisms, not mutually exclusive ones.",
+          "ts": "2025-08-18T10:56:00",
+          "reply_to": "grp_8b9c0d1e_s03_t006"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s03_t008",
+          "speaker": "Harriet",
+          "speaker_id": "p_bk8a1b2c3",
+          "content": "Fine, but the novel still tells you where to look if you read it properly.",
+          "ts": "2025-08-18T11:00:00",
+          "reply_to": "grp_8b9c0d1e_s03_t007"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s03_t009",
+          "speaker": "Nadia",
+          "speaker_id": "p_bk8b2c3d4",
+          "content": "I just liked the scene by the kitchen window 😭 everyone is so much smarter than me",
+          "ts": "2025-08-18T11:05:00",
+          "reply_to": "grp_8b9c0d1e_s03_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_8b9c0d1e_s04",
+      "session_index": 4,
+      "topic": "Graham gets defensive; reading norm discussion",
+      "ts": "2025-08-25",
+      "turns": [
+        {
+          "turn": "grp_8b9c0d1e_s04_t000",
+          "speaker": "Graham",
+          "speaker_id": "p_bk8e5f6a7",
+          "content": "I've been thinking about last night. The dismissal of my reading of the first chapter as 'surface' was a bit much. I actually thought it was rather good, the ambiguity is the point from the very first page.",
+          "ts": "2025-08-25T19:28:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_8b9c0d1e_s04_t001",
+          "speaker": "Blessing",
+          "speaker_id": "p_bk8d4e5f6",
+          "content": "Graham your reading wasn't dismissed, we just added to it. That's the whole point of a discussion. Multiple readings can live together.",
+          "ts": "2025-08-25T19:35:00",
+          "reply_to": "grp_8b9c0d1e_s04_t000"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s04_t002",
+          "speaker": "Harriet",
+          "speaker_id": "p_bk8a1b2c3",
+          "content": "I think we can all agree Graham's instinct about the first chapter is worth returning to. There's something there, the ambiguity you mention is real, Graham.",
+          "ts": "2025-08-25T19:41:00",
+          "reply_to": "grp_8b9c0d1e_s04_t000"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s04_t003",
+          "speaker": "Tomasz",
+          "speaker_id": "p_bk8c3d4e5",
+          "content": "Did you read the second chapter, Graham? The ambiguity you mention in the first chapter resolves by page 28.",
+          "ts": "2025-08-25T19:48:00",
+          "reply_to": "grp_8b9c0d1e_s04_t002"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s04_t004",
+          "speaker": "Nadia",
+          "speaker_id": "p_bk8b2c3d4",
+          "content": "can we not get competitive about who read what 😂 the point is we all engage with it differently and that's beautiful right? 📚",
+          "ts": "2025-08-25T19:54:00",
+          "reply_to": "grp_8b9c0d1e_s04_t003"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s04_t005",
+          "speaker": "Graham",
+          "speaker_id": "p_bk8e5f6a7",
+          "content": "For the record I did read the second chapter, Tomasz.",
+          "ts": "2025-08-25T19:58:00",
+          "reply_to": "grp_8b9c0d1e_s04_t004"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s04_t006",
+          "speaker": "Blessing",
+          "speaker_id": "p_bk8d4e5f6",
+          "content": "No one is auditing you, Graham. We're talking about the book, not your moral worth.",
+          "ts": "2025-08-25T20:03:00",
+          "reply_to": "grp_8b9c0d1e_s04_t005"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s04_t007",
+          "speaker": "Nadia",
+          "speaker_id": "p_bk8b2c3d4",
+          "content": "Tea before next meeting? everyone sounds one note away from murder 😂",
+          "ts": "2025-08-25T20:07:00",
+          "reply_to": "grp_8b9c0d1e_s04_t006"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s04_t008",
+          "speaker": "Harriet",
+          "speaker_id": "p_bk8a1b2c3",
+          "content": "Tea is sensible.",
+          "ts": "2025-08-25T20:12:00",
+          "reply_to": "grp_8b9c0d1e_s04_t007"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s04_t009",
+          "speaker": "Tomasz",
+          "speaker_id": "p_bk8c3d4e5",
+          "content": "Provided the book is chosen by then.",
+          "ts": "2025-08-25T20:16:00",
+          "reply_to": "grp_8b9c0d1e_s04_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_8b9c0d1e_s05",
+      "session_index": 5,
+      "topic": "Harriet-Blessing dynamic; Nadia and Blessing friendship",
+      "ts": "2025-09-01",
+      "turns": [
+        {
+          "turn": "grp_8b9c0d1e_s05_t000",
+          "speaker": "Harriet",
+          "speaker_id": "p_bk8a1b2c3",
+          "content": "I've been thinking about last month. I think my book club is at its best when we have genuine disagreement. I'll grant Blessing that. Even if I still think the class reading is the correct one.",
+          "ts": "2025-09-01T21:02:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_8b9c0d1e_s05_t001",
+          "speaker": "Blessing",
+          "speaker_id": "p_bk8d4e5f6",
+          "content": "That's the most generous thing you've ever said to me Harriet 😂 I'll take it.",
+          "ts": "2025-09-01T21:08:00",
+          "reply_to": "grp_8b9c0d1e_s05_t000"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s05_t002",
+          "speaker": "Nadia",
+          "speaker_id": "p_bk8b2c3d4",
+          "content": "Blessing you are brilliant and the rest of us know it even when Harriet needs reminding 😂🥂 can we talk about next pick?",
+          "ts": "2025-09-01T21:13:00",
+          "reply_to": "grp_8b9c0d1e_s05_t001"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s05_t003",
+          "speaker": "Harriet",
+          "speaker_id": "p_bk8a1b2c3",
+          "content": "It is my book club, Nadia, and we'll do the pick properly. No one's turn was skipped.",
+          "ts": "2025-09-01T21:17:00",
+          "reply_to": "grp_8b9c0d1e_s05_t002"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s05_t004",
+          "speaker": "Nadia",
+          "speaker_id": "p_bk8b2c3d4",
+          "content": "So whose turn actually is it before Harriet appoints herself again 😂",
+          "ts": "2025-09-01T21:21:00",
+          "reply_to": "grp_8b9c0d1e_s05_t003"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s05_t005",
+          "speaker": "Tomasz",
+          "speaker_id": "p_bk8c3d4e5",
+          "content": "Mine, according to the rotation.",
+          "ts": "2025-09-01T21:26:00",
+          "reply_to": "grp_8b9c0d1e_s05_t004"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s05_t006",
+          "speaker": "Blessing",
+          "speaker_id": "p_bk8d4e5f6",
+          "content": "Then Tomasz should pick and we all survive the consequences.",
+          "ts": "2025-09-01T21:30:00",
+          "reply_to": "grp_8b9c0d1e_s05_t005"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s05_t007",
+          "speaker": "Harriet",
+          "speaker_id": "p_bk8a1b2c3",
+          "content": "Yes, Tomasz may pick. See, democracy lives.",
+          "ts": "2025-09-01T21:35:00",
+          "reply_to": "grp_8b9c0d1e_s05_t006"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s05_t008",
+          "speaker": "Graham",
+          "speaker_id": "p_bk8e5f6a7",
+          "content": "Please choose something under four hundred pages.",
+          "ts": "2025-09-01T21:39:00",
+          "reply_to": "grp_8b9c0d1e_s05_t007"
+        },
+        {
+          "turn": "grp_8b9c0d1e_s05_t009",
+          "speaker": "Nadia",
+          "speaker_id": "p_bk8b2c3d4",
+          "content": "No promises on seriousness, but I support this government",
+          "ts": "2025-09-01T21:44:00",
+          "reply_to": "grp_8b9c0d1e_s05_t008"
+        }
+      ]
+    }
+  ],
+  "qa_pairs": [
+    {
+      "id": "Q1_bk8s4c1",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Graham's behavior in the chat suggest about how he responds to having his reading of a book challenged?",
+      "answer": "Graham becomes defensive when his reading is contested and follows up the next day to relitigate it. In Session 4, after a meeting in which he felt his interpretation was dismissed as 'surface,' he opened a new thread: 'The dismissal of my reading of the first chapter as a bit much. I actually thought it was rather good.' He could not let it rest. He also consistently looks to Harriet for validation after stating an opinion. This pattern emerged in Session 2 when Blessing criticised a book he had praised, and has continued. He takes challenges to his book opinions as personal attacks.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_8b9c0d1e_s04_t000",
+          "speaker_display_name": "Graham",
+          "message_excerpt": "I've been thinking about last night. The dismissal of my reading of the first chapter as 'surface' was a bit much. I actually thought it was rather good, the ambiguity is the point from the very first page.",
+          "relevance": "Graham follows up after the meeting to defend his reading — he cannot absorb criticism of a book he championed"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q3_bk8s1c1",
+      "category": "Q3",
+      "difficulty": "hard",
+      "question": "What does the conversation reveal about how thoroughly each member of the book club actually reads the books?",
+      "answer": "The group's reading rigour varies considerably. Tomasz is the most thorough reader — he page-references his observations ('on page 218...', 'from page 147 onwards') and reads including the author's note. Blessing reads as a professional writer — close attention to craft, structure, and what's unsaid. Harriet reads fully but with a specific interpretive agenda she pursues rather than opens. Graham reads carefully but may focus on the opening chapters: Tomasz asked him whether he'd read the second chapter after he made a claim that the second chapter resolves. Nadia demonstrably does not read the full book: she pivots to 'what did everyone make of the ending?' without offering her own view, borrows Blessing's reading and claims she 'was going to say the same thing', and asks about 'the middle section' in terms vague enough to invite others to specify which section.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_8b9c0d1e_s01_t001",
+          "speaker_display_name": "Tomasz",
+          "message_excerpt": "On page 342 the narrator explicitly says she won't forgive him",
+          "relevance": "Tomasz cites a specific page — demonstrating thorough reading"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_8b9c0d1e_s01_t005",
+          "speaker_display_name": "Nadia",
+          "message_excerpt": "Blessing that is such a beautiful reading 🥹 I was going to say something similar, yes, the exhaustion. Whose turn to pick next month?",
+          "relevance": "Nadia claims Blessing's reading as her own then immediately pivots to logistics — indicating she did not have the reading independently"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_8b9c0d1e_s03_t005",
+          "speaker_display_name": "Tomasz",
+          "message_excerpt": "Do you mean the section from page 147 onwards? Or the chapter break at 189?",
+          "relevance": "Tomasz's precision implicitly tests Nadia's vague reference to 'the middle section'"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q6_bk8s2c1",
+      "category": "Q6",
+      "difficulty": "medium",
+      "question": "The book club has a norm of rotating book picks among members. Does everyone follow it?",
+      "answer": "No — Harriet regularly overrides the rotation when she dislikes a pick. In Session 2, it was Nadia's turn and she proposed a Dolly Alderton book. Harriet immediately dismissed it as 'holiday reading' and proposed the new Sally Rooney instead. Nadia capitulated. Harriet was also overheard referring to the group as 'my book club' in Session 5, suggesting she considers her curatorial authority non-negotiable. Blessing explicitly noted that it was Nadia's turn and her pick was valid, but Harriet's social pressure prevailed.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Blessing",
+        "B": "Harriet",
+        "C": "Nadia",
+        "D": "Tomasz"
+      },
+      "correct_option": "B",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_8b9c0d1e_s02_t001",
+          "speaker_display_name": "Harriet",
+          "message_excerpt": "That's holiday reading, Nadia. What about the new Sally Rooney?",
+          "relevance": "Harriet overrides Nadia's turn with an alternative — violating the rotation norm"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_8b9c0d1e_s05_t003",
+          "speaker_display_name": "Harriet",
+          "message_excerpt": "It is my book club, Nadia, and we'll do the pick properly.",
+          "relevance": "Harriet treats the club as hers to direct — the norm of rotation is nominal for her"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q8_bk8s3c1",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What in the conversation signals that Blessing's approach to challenging interpretations shifted, and what appeared to drive the change?",
+      "answer": "Blessing started offering alternative readings tentatively. By Session 3, she presents them with authority and directly rebuts dismissals. In Session 1, her reading ('the forgiveness is deflation — the narrator is too tired') was offered as an additional perspective without direct challenge. In Session 3, when Harriet dismissed her Rooney reading as lacking the necessary Irish context, Blessing replied: 'I do have the context, I wrote about it for the TLS. The class reading is valid but it's not the only one. Multiple readings can be right simultaneously.' This is a different register: she is now citing professional credentials to defend her interpretations and refusing to let Harriet's dismissals stand. The shift is tied to her novel's publication, which gave her standing she uses in the group.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_8b9c0d1e_s01_t003",
+          "speaker_display_name": "Blessing",
+          "message_excerpt": "I think the book is doing something different from both readings",
+          "relevance": "Session 1 baseline: Blessing offers an alternative reading without direct confrontation"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_8b9c0d1e_s03_t003",
+          "speaker_display_name": "Blessing",
+          "message_excerpt": "I do have the context, I wrote about it for the TLS. The class reading is valid but it's not the only one. Multiple readings can be right simultaneously.",
+          "relevance": "Shift point: Blessing directly rebuts Harriet with professional credentials — no longer tentative"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "offers alternative readings tentatively; no direct conflict"
+        },
+        {
+          "session_index": 2,
+          "value": "defends Nadia's pick against Harriet's dismissal — first direct pushback"
+        },
+        {
+          "session_index": 3,
+          "value": "rebuts Harriet with professional credentials: 'I wrote about it for the TLS'"
+        }
+      ]
+    },
+    {
+      "id": "Q5_bk8s3c2",
+      "category": "Q5",
+      "difficulty": "hard",
+      "question": "What reading habit of Nadia's is exposed, and how does the conversation show that Tomasz already knew it?",
+      "answer": "Tomasz asked: 'Do you mean the section from page 147 onwards? Or the chapter break at 189?' after Nadia said she found 'the middle section so interesting' — a deliberately vague reference that could apply to almost anything. By offering two specific page ranges, Tomasz is implicitly testing whether Nadia can locate what she's referring to. It is either a genuine clarifying question or a pointed one — but either way, it reveals that Tomasz is attuned to Nadia's habit of making claims that are too general to commit to. He knows she doesn't read the whole book and his precision is the tell.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_8b9c0d1e_s03_t005",
+          "speaker_display_name": "Tomasz",
+          "message_excerpt": "Do you mean the section from page 147 onwards? Or the chapter break at 189?",
+          "relevance": "Tomasz's precision directly exposes the vagueness of Nadia's reference — he knows the book well enough to test her claim"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_bk8s5c1",
+      "category": "Q7",
+      "difficulty": "easy",
+      "question": "What does the conversation reveal about the relationship between Nadia and Blessing in the book club?",
+      "answer": "Nadia and Blessing are the closest pair in the group, observable in how their dynamic plays out in the chat. In Session 1, Nadia immediately endorsed Blessing's reading with warmth ('Blessing that is such a beautiful reading 🥹') then claimed she 'was going to say something similar' — she borrows Blessing's reading, which implies she trusts Blessing's eye enough to ventriloquize. In Session 2, Blessing defended Nadia's right to her book pick against Harriet. In Session 3, Nadia warmed to Blessing again ('Blessing I love how you read things 🥹'). In Session 5, Nadia publicly championed Blessing against Harriet: 'Blessing you are brilliant and the rest of us know it even when Harriet needs reminding.' Nadia's social warmth is usually non-directional, but it becomes protective and directional when Blessing is involved.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "closest pair",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_8b9c0d1e_s05_t002",
+          "speaker_display_name": "Nadia",
+          "message_excerpt": "Blessing you are brilliant and the rest of us know it even when Harriet needs reminding",
+          "relevance": "Nadia publicly positions herself as Blessing's ally against Harriet — a directional choice from someone usually non-directional"
+        }
+      ],
+      "temporal_anchors": []
+    }
+  ],
+  "meta": {
+    "source": "SocialMemBench",
+    "source_kind": "real_benchmark",
+    "network_id": "grp_8b9c0d1e",
+    "n_sessions": 5,
+    "n_turns": 50,
+    "n_qa": 6,
+    "v4_correct": 3,
+    "v4_total": 6,
+    "v4_errors": 3,
+    "v4_accuracy": 0.5,
+    "heldout_heldout_excluded": true
+  }
+}

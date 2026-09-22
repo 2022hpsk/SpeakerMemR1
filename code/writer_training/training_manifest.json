@@ -1,0 +1,114 @@
+{
+  "schema": "socialmembench-short-selection/1",
+  "selection": {
+    "metric": "raw conversation message count ascending",
+    "top_k": 10,
+    "tie_break": [
+      "network_id ascending"
+    ],
+    "excluded_heldout_network_ids": [
+      "grp_a1b2c3d4",
+      "grp_b0c1d2e3",
+      "grp_b8c9dae0",
+      "grp_c1d2e3f4",
+      "grp_c1d2e3f7",
+      "grp_c2d3e4f5",
+      "grp_d2e3f4a5",
+      "grp_dba9214c",
+      "grp_e3f4a5b6",
+      "grp_e8f9a0b1"
+    ]
+  },
+  "sources": {
+    "conversations": "../SocialMemBench/conversations.jsonl",
+    "conversations_sha256": "2a1e606d52dea9c5fae86f1c414d0f4b0768855e6c4d0f108cc6b71dd806b3cc",
+    "qa": "../SocialMemBench/qa.jsonl",
+    "qa_sha256": "7f2ad7e981b714570b8bf4154cc766208c2758ef4d9e788bf369b32eacada4a9",
+    "summary": "../../results/main/without_ask/summary_speakermem_socialmem.json",
+    "summary_sha256": "0fb8afebe4de7ec527b46210f56bd18d01abc5673efa2cc927d923ce3a1c156c",
+    "heldout_manifest": "heldout_manifest.json",
+    "heldout_manifest_sha256": "665881b64dc4722ddfcba277180e05236eeb7981bf03b41f2972482e0d61ca9a"
+  },
+  "selected": [
+    {
+      "network_id": "grp_0d1e2f3a",
+      "messages": 50,
+      "sessions": 5,
+      "qa": 6,
+      "correct": 4,
+      "total": 6
+    },
+    {
+      "network_id": "grp_5e6f7a8b",
+      "messages": 50,
+      "sessions": 5,
+      "qa": 8,
+      "correct": 4,
+      "total": 8
+    },
+    {
+      "network_id": "grp_6f7a8b9c",
+      "messages": 50,
+      "sessions": 5,
+      "qa": 7,
+      "correct": 6,
+      "total": 7
+    },
+    {
+      "network_id": "grp_7a8b9c0d",
+      "messages": 50,
+      "sessions": 5,
+      "qa": 5,
+      "correct": 4,
+      "total": 5
+    },
+    {
+      "network_id": "grp_8b9c0d1e",
+      "messages": 50,
+      "sessions": 5,
+      "qa": 6,
+      "correct": 3,
+      "total": 6
+    },
+    {
+      "network_id": "grp_9c0d1e2f",
+      "messages": 50,
+      "sessions": 5,
+      "qa": 6,
+      "correct": 4,
+      "total": 6
+    },
+    {
+      "network_id": "grp_4d5e6f7a",
+      "messages": 53,
+      "sessions": 5,
+      "qa": 9,
+      "correct": 6,
+      "total": 9
+    },
+    {
+      "network_id": "grp_3c4d5e6f",
+      "messages": 61,
+      "sessions": 5,
+      "qa": 8,
+      "correct": 6,
+      "total": 8
+    },
+    {
+      "network_id": "grp_2b3c4d5e",
+      "messages": 67,
+      "sessions": 5,
+      "qa": 10,
+      "correct": 7,
+      "total": 10
+    },
+    {
+      "network_id": "grp_1a2b3c4d",
+      "messages": 101,
+      "sessions": 5,
+      "qa": 12,
+      "correct": 6,
+      "total": 12
+    }
+  ]
+}

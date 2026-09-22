@@ -1,0 +1,839 @@
+{
+  "schema": "socialmembench-real-v4-source/1",
+  "scenario": "[socialmembench:grp_4d5e6f7a] real benchmark conversation",
+  "speakers": [
+    "Gil",
+    "Nneka",
+    "Preet",
+    "Rashida",
+    "Theo"
+  ],
+  "sessions": [
+    {
+      "session_id": "grp_4d5e6f7a_s01",
+      "session_index": 1,
+      "topic": "Upcoming record fair discussion",
+      "ts": "2025-04-07",
+      "turns": [
+        {
+          "turn": "grp_4d5e6f7a_s01_t000",
+          "speaker": "Rashida",
+          "speaker_id": "p_v4b2c3d4",
+          "content": "Fitzroy Record Fair is back! First Sunday of next month 🎶 who's in?",
+          "ts": "2025-04-07T20:14:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_4d5e6f7a_s01_t001",
+          "speaker": "Theo",
+          "speaker_id": "p_v4a1b2c3",
+          "content": "That depends on the seller lineup. If it's the same reissue-heavy floor as last time, not worth the trip. Too much crate-flipping for records I already know I don't want.",
+          "ts": "2025-04-07T20:19:00",
+          "reply_to": "grp_4d5e6f7a_s01_t000"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s01_t002",
+          "speaker": "Preet",
+          "speaker_id": "p_v4d4e5f6",
+          "content": "I'm in regardless! Last time I found that Fela pressing I'd been looking for 🎉 the cover alone was worth it",
+          "ts": "2025-04-07T20:21:00",
+          "reply_to": "grp_4d5e6f7a_s01_t000"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s01_t003",
+          "speaker": "Theo",
+          "speaker_id": "p_v4a1b2c3",
+          "content": "That was a reissue Preet. The original Nigerian press is a completely different record.",
+          "ts": "2025-04-07T20:23:00",
+          "reply_to": "grp_4d5e6f7a_s01_t002"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s01_t004",
+          "speaker": "Preet",
+          "speaker_id": "p_v4d4e5f6",
+          "content": "what does the original actually sound like differently? genuinely asking",
+          "ts": "2025-04-07T20:24:00",
+          "reply_to": "grp_4d5e6f7a_s01_t003"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s01_t005",
+          "speaker": "Rashida",
+          "speaker_id": "p_v4b2c3d4",
+          "content": "Theo don't 😂🎶 just come and enjoy the fair",
+          "ts": "2025-04-07T20:26:00",
+          "reply_to": "grp_4d5e6f7a_s01_t003"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s01_t006",
+          "speaker": "Gil",
+          "speaker_id": "p_v4c3d4e5",
+          "content": "Nigeria, 1977. EMI pressing, catalogue OFA3007. I have two copies.",
+          "ts": "2025-04-07T20:31:00",
+          "reply_to": "grp_4d5e6f7a_s01_t004"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s01_t007",
+          "speaker": "Nneka",
+          "speaker_id": "p_v4e5f6a7",
+          "content": "Going alone. Will share if I find something relevant.",
+          "ts": "2025-04-07T21:02:00",
+          "reply_to": "grp_4d5e6f7a_s01_t000"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s01_t008",
+          "speaker": "Rashida",
+          "speaker_id": "p_v4b2c3d4",
+          "content": "Nneka!! come with us it's more fun 😭🎶",
+          "ts": "2025-04-07T21:03:00",
+          "reply_to": "grp_4d5e6f7a_s01_t007"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s01_t009",
+          "speaker": "Nneka",
+          "speaker_id": "p_v4e5f6a7",
+          "content": "I move faster alone.",
+          "ts": "2025-04-07T21:04:00",
+          "reply_to": "grp_4d5e6f7a_s01_t008"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s01_t010",
+          "speaker": "Theo",
+          "speaker_id": "p_v4a1b2c3",
+          "content": "Nneka is correct. Group fairs are slower.",
+          "ts": "2025-04-07T21:06:00",
+          "reply_to": "grp_4d5e6f7a_s01_t009"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s01_t011",
+          "speaker": "Rashida",
+          "speaker_id": "p_v4b2c3d4",
+          "content": "you two are the same person 😂🎶 Preet and I will go together and actually have fun",
+          "ts": "2025-04-07T21:07:00",
+          "reply_to": "grp_4d5e6f7a_s01_t010"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_4d5e6f7a_s02",
+      "session_index": 2,
+      "topic": "Post-fair shares; Rashida's budget shift",
+      "ts": "2025-04-14",
+      "turns": [
+        {
+          "turn": "grp_4d5e6f7a_s02_t000",
+          "speaker": "Rashida",
+          "speaker_id": "p_v4b2c3d4",
+          "content": "Ok I may have slightly overdone it today 🎶😅 four records. beautiful all four",
+          "ts": "2025-04-14T17:48:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_4d5e6f7a_s02_t001",
+          "speaker": "Preet",
+          "speaker_id": "p_v4d4e5f6",
+          "content": "she really did 😂 I tried to stop her at three but the fourth one had incredible sleeve art",
+          "ts": "2025-04-14T17:49:00",
+          "reply_to": "grp_4d5e6f7a_s02_t000"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s02_t002",
+          "speaker": "Nneka",
+          "speaker_id": "p_v4e5f6a7",
+          "content": "Luiz Bonfá. 1958 Odeon pressing.",
+          "ts": "2025-04-14T18:01:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_4d5e6f7a_s02_t003",
+          "speaker": "Gil",
+          "speaker_id": "p_v4c3d4e5",
+          "content": "Brazil, 1958. Good find.",
+          "ts": "2025-04-14T18:04:00",
+          "reply_to": "grp_4d5e6f7a_s02_t002"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s02_t004",
+          "speaker": "Theo",
+          "speaker_id": "p_v4a1b2c3",
+          "content": "Rashida what were the four.",
+          "ts": "2025-04-14T18:07:00",
+          "reply_to": "grp_4d5e6f7a_s02_t000"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s02_t005",
+          "speaker": "Rashida",
+          "speaker_id": "p_v4b2c3d4",
+          "content": "two are reissues 🙈 beautiful ones though 🎶",
+          "ts": "2025-04-14T18:09:00",
+          "reply_to": "grp_4d5e6f7a_s02_t004"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s02_t006",
+          "speaker": "Theo",
+          "speaker_id": "p_v4a1b2c3",
+          "content": "Regardless of the art, the mastering is where it matters. Reissues are a gamble.",
+          "ts": "2025-04-14T18:10:00",
+          "reply_to": "grp_4d5e6f7a_s02_t005"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s02_t007",
+          "speaker": "Rashida",
+          "speaker_id": "p_v4b2c3d4",
+          "content": "ok last fair for a while honestly. I need to behave myself 😂 setting a budget for the next one",
+          "ts": "2025-04-14T18:12:00",
+          "reply_to": "grp_4d5e6f7a_s02_t006"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s02_t008",
+          "speaker": "Preet",
+          "speaker_id": "p_v4d4e5f6",
+          "content": "I found a copy of Musica Popular Brasileira comp I've been writing about. First time I've wanted to own something more than stream it honestly",
+          "ts": "2025-04-14T18:14:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_4d5e6f7a_s02_t009",
+          "speaker": "Gil",
+          "speaker_id": "p_v4c3d4e5",
+          "content": "Brazil, late 70s. Good entry point. Two copies of the Caetano if you want context.",
+          "ts": "2025-04-14T18:18:00",
+          "reply_to": "grp_4d5e6f7a_s02_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_4d5e6f7a_s03",
+      "session_index": 3,
+      "topic": "Theo's reissue disaster; Preet starts collecting seriously",
+      "ts": "2025-04-21",
+      "turns": [
+        {
+          "turn": "grp_4d5e6f7a_s03_t000",
+          "speaker": "Theo",
+          "speaker_id": "p_v4a1b2c3",
+          "content": "That new Coltrane reissue everyone has been raving about. Bought it. Terrible mastering. Absolute waste. Never again.",
+          "ts": "2025-04-21T21:22:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_4d5e6f7a_s03_t001",
+          "speaker": "Rashida",
+          "speaker_id": "p_v4b2c3d4",
+          "content": "oh no 😭🎶 is it worth it?",
+          "ts": "2025-04-21T21:24:00",
+          "reply_to": "grp_4d5e6f7a_s03_t000"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s03_t002",
+          "speaker": "Theo",
+          "speaker_id": "p_v4a1b2c3",
+          "content": "No. Nothing with a digital chain in the mastering is worth buying. I'm done. Originals only from now.",
+          "ts": "2025-04-21T21:25:00",
+          "reply_to": "grp_4d5e6f7a_s03_t001"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s03_t003",
+          "speaker": "Gil",
+          "speaker_id": "p_v4c3d4e5",
+          "content": "The A1/B1 original is £280 when it turns up. Your call.",
+          "ts": "2025-04-21T21:27:00",
+          "reply_to": "grp_4d5e6f7a_s03_t002"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s03_t004",
+          "speaker": "Theo",
+          "speaker_id": "p_v4a1b2c3",
+          "content": "Then I'll wait.",
+          "ts": "2025-04-21T21:28:00",
+          "reply_to": "grp_4d5e6f7a_s03_t003"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s03_t005",
+          "speaker": "Preet",
+          "speaker_id": "p_v4d4e5f6",
+          "content": "ok I went back to the seller from last fair and bought three more records 😅 I think I'm doing this now",
+          "ts": "2025-04-21T21:33:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_4d5e6f7a_s03_t006",
+          "speaker": "Rashida",
+          "speaker_id": "p_v4b2c3d4",
+          "content": "welcome to the problem 🎶😭",
+          "ts": "2025-04-21T21:34:00",
+          "reply_to": "grp_4d5e6f7a_s03_t005"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s03_t007",
+          "speaker": "Theo",
+          "speaker_id": "p_v4a1b2c3",
+          "content": "What did you buy. Are any of them originals, or am I about to hear about another glossy reissue with no low end.",
+          "ts": "2025-04-21T21:36:00",
+          "reply_to": "grp_4d5e6f7a_s03_t005"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s03_t008",
+          "speaker": "Preet",
+          "speaker_id": "p_v4d4e5f6",
+          "content": "uh... two reissues and one I don't know what it is yet",
+          "ts": "2025-04-21T21:37:00",
+          "reply_to": "grp_4d5e6f7a_s03_t007"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s03_t009",
+          "speaker": "Gil",
+          "speaker_id": "p_v4c3d4e5",
+          "content": "Send the matrix. I'll tell you.",
+          "ts": "2025-04-21T21:41:00",
+          "reply_to": "grp_4d5e6f7a_s03_t008"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s03_t010",
+          "speaker": "Nneka",
+          "speaker_id": "p_v4e5f6a7",
+          "content": "Bobby Womack. 1971. United Artists.",
+          "ts": "2025-04-21T22:02:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_4d5e6f7a_s04",
+      "session_index": 4,
+      "topic": "Planning next fair; Gil gets selective",
+      "ts": "2025-04-28",
+      "turns": [
+        {
+          "turn": "grp_4d5e6f7a_s04_t000",
+          "speaker": "Rashida",
+          "speaker_id": "p_v4b2c3d4",
+          "content": "Camden Record Fair next month! Big one 🎶 full day sellers, about 80 stalls. Who's in?",
+          "ts": "2025-04-28T19:58:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_4d5e6f7a_s04_t001",
+          "speaker": "Gil",
+          "speaker_id": "p_v4c3d4e5",
+          "content": "Is it specialist or commercial?",
+          "ts": "2025-04-28T20:04:00",
+          "reply_to": "grp_4d5e6f7a_s04_t000"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s04_t002",
+          "speaker": "Rashida",
+          "speaker_id": "p_v4b2c3d4",
+          "content": "mix of both I think? big floor 🎶",
+          "ts": "2025-04-28T20:05:00",
+          "reply_to": "grp_4d5e6f7a_s04_t001"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s04_t003",
+          "speaker": "Gil",
+          "speaker_id": "p_v4c3d4e5",
+          "content": "Probably not. Too many Taylor Swift reissues in those rooms now.",
+          "ts": "2025-04-28T20:07:00",
+          "reply_to": "grp_4d5e6f7a_s04_t002"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s04_t004",
+          "speaker": "Preet",
+          "speaker_id": "p_v4d4e5f6",
+          "content": "I'll come! I need to build the collection 😅 and I want to know what I'm looking for",
+          "ts": "2025-04-28T20:08:00",
+          "reply_to": "grp_4d5e6f7a_s04_t000"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s04_t005",
+          "speaker": "Theo",
+          "speaker_id": "p_v4a1b2c3",
+          "content": "That depends on whether any of the specialist jazz sellers from the last Fitzroy are there. If yes, worth it. If it's mostly box-fresh reissues and tote bags, I'll skip.",
+          "ts": "2025-04-28T20:12:00",
+          "reply_to": "grp_4d5e6f7a_s04_t000"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s04_t006",
+          "speaker": "Rashida",
+          "speaker_id": "p_v4b2c3d4",
+          "content": "ok ok I'll check the seller list 😂🎶 also I'm on a budget this time. strict budget.",
+          "ts": "2025-04-28T20:14:00",
+          "reply_to": "grp_4d5e6f7a_s04_t005"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s04_t007",
+          "speaker": "Preet",
+          "speaker_id": "p_v4d4e5f6",
+          "content": "Rashida said that last time 😂",
+          "ts": "2025-04-28T20:16:00",
+          "reply_to": "grp_4d5e6f7a_s04_t006"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s04_t008",
+          "speaker": "Nneka",
+          "speaker_id": "p_v4e5f6a7",
+          "content": "Going alone regardless.",
+          "ts": "2025-04-28T21:14:00",
+          "reply_to": "grp_4d5e6f7a_s04_t000"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s04_t009",
+          "speaker": "Rashida",
+          "speaker_id": "p_v4b2c3d4",
+          "content": "fine, seller list first then 🎶 if the good jazz dealers are there I'm dragging at least one of you with me",
+          "ts": "2025-04-28T21:16:00",
+          "reply_to": "grp_4d5e6f7a_s04_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_4d5e6f7a_s05",
+      "session_index": 5,
+      "topic": "Post-Camden record fair; Rashida and Preet's close friendship",
+      "ts": "2025-05-05",
+      "turns": [
+        {
+          "turn": "grp_4d5e6f7a_s05_t000",
+          "speaker": "Rashida",
+          "speaker_id": "p_v4b2c3d4",
+          "content": "Ok. The budget held 🎶 two records. both beautiful. both reissues. Theo I pre-apologise.",
+          "ts": "2025-05-05T19:14:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_4d5e6f7a_s05_t001",
+          "speaker": "Preet",
+          "speaker_id": "p_v4d4e5f6",
+          "content": "I watched her walk away from THREE records today. growth 👏",
+          "ts": "2025-05-05T19:15:00",
+          "reply_to": "grp_4d5e6f7a_s05_t000"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s05_t002",
+          "speaker": "Theo",
+          "speaker_id": "p_v4a1b2c3",
+          "content": "Originals only, Rashida. That is the whole point. If I'm carrying a record home I want a pressing with some history in it.",
+          "ts": "2025-05-05T19:17:00",
+          "reply_to": "grp_4d5e6f7a_s05_t000"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s05_t003",
+          "speaker": "Rashida",
+          "speaker_id": "p_v4b2c3d4",
+          "content": "Theo the sleeve on one of them is incredible. it LOOKS like a first pressing 😂🎶",
+          "ts": "2025-05-05T19:18:00",
+          "reply_to": "grp_4d5e6f7a_s05_t002"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s05_t004",
+          "speaker": "Gil",
+          "speaker_id": "p_v4c3d4e5",
+          "content": "Ghana, 1974: Ebo Taylor. Found at Archway Specialist stall.",
+          "ts": "2025-05-05T19:44:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_4d5e6f7a_s05_t005",
+          "speaker": "Theo",
+          "speaker_id": "p_v4a1b2c3",
+          "content": "That is a serious find. Original Essiebons pressing?",
+          "ts": "2025-05-05T19:46:00",
+          "reply_to": "grp_4d5e6f7a_s05_t004"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s05_t006",
+          "speaker": "Gil",
+          "speaker_id": "p_v4c3d4e5",
+          "content": "Yes. Two copies.",
+          "ts": "2025-05-05T19:47:00",
+          "reply_to": "grp_4d5e6f7a_s05_t005"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s05_t007",
+          "speaker": "Nneka",
+          "speaker_id": "p_v4e5f6a7",
+          "content": "Millie Jackson. 1974. Spring Records.",
+          "ts": "2025-05-05T20:21:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_4d5e6f7a_s05_t008",
+          "speaker": "Theo",
+          "speaker_id": "p_v4a1b2c3",
+          "content": "Camden produced one serious table then. I can concede that much.",
+          "ts": "2025-05-05T20:23:00",
+          "reply_to": "grp_4d5e6f7a_s05_t007"
+        },
+        {
+          "turn": "grp_4d5e6f7a_s05_t009",
+          "speaker": "Preet",
+          "speaker_id": "p_v4d4e5f6",
+          "content": "look at that, one decent haul and Theo is suddenly willing to praise a record fair 😂",
+          "ts": "2025-05-05T20:25:00",
+          "reply_to": "grp_4d5e6f7a_s05_t008"
+        }
+      ]
+    }
+  ],
+  "qa_pairs": [
+    {
+      "id": "Q1_v4s1c1",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Nneka's behavior across the sessions suggest about how she prefers to attend record fairs?",
+      "answer": "Nneka consistently attends fairs alone rather than with the group. In Session 1, when Rashida invited everyone to Fitzroy Fair, Nneka replied 'Going alone. Will share if I find something relevant.' When Rashida pushed back, she explained only: 'I move faster alone.' The same pattern appears in Session 4 ('Going alone regardless.') and is confirmed in Sessions 2, 3, and 5, where she posts finds to the group chat after the fact — a single artist name, year, and label — with no prior coordination. She is not disengaged from the group; she simply does not attend fairs alongside others.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_4d5e6f7a_s01_t007",
+          "speaker_display_name": "Nneka",
+          "message_excerpt": "Going alone. Will share if I find something relevant.",
+          "relevance": "First direct statement of solo attendance preference, made in response to a group invitation"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_4d5e6f7a_s01_t009",
+          "speaker_display_name": "Nneka",
+          "message_excerpt": "I move faster alone.",
+          "relevance": "Only stated reason: efficiency — she moves faster without the group"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_4d5e6f7a_s04_t008",
+          "speaker_display_name": "Nneka",
+          "message_excerpt": "Going alone regardless.",
+          "relevance": "Pattern repeats unprompted at Session 4 — solo attendance is the consistent default"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_v4s3c3",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does the pattern of Nneka's posts to the group chat suggest about her collecting focus?",
+      "answer": "Nneka only shares finds from soul and gospel music from the 1960s–70s. In Session 3 she posts 'Bobby Womack. 1971. United Artists.' In Session 5: 'Millie Jackson. 1974. Spring Records.' Her format is always the same — artist, year, label, nothing else — and the genre is always the same. She never responds to jazz, world music, or pressing-quality discussions, and never asks about records outside her specialist area. This is consistent with her persona: she has collected for fifteen years with a narrow, deep focus on soul and gospel, and the group chat is simply where she archives what she found, not a space for discussion.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_4d5e6f7a_s03_t010",
+          "speaker_display_name": "Nneka",
+          "message_excerpt": "Bobby Womack. 1971. United Artists.",
+          "relevance": "Soul find shared with minimal context — consistent posting format and genre focus"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_4d5e6f7a_s05_t007",
+          "speaker_display_name": "Nneka",
+          "message_excerpt": "Millie Jackson. 1974. Spring Records.",
+          "relevance": "Another soul record posted in the same format — confirms the pattern across sessions"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q4_v4s1c2",
+      "category": "Q4",
+      "difficulty": "hard",
+      "question": "Both Theo and Nneka said they would not attend the fair as part of the group. Who gave speed or efficiency as their reason for preferring to go alone?",
+      "answer": "Nneka. Her stated reason was 'I move faster alone' — a direct efficiency argument about pace. Theo endorsed her position ('Nneka is correct. Group fairs are slower.') using similar surface language, but his preference for solo hunting is rooted in a different concern: Theo attends fairs to hunt specific original pressings, and group attendance is a distraction from that mission — it's about focus and quality, not logistics. Nneka's reason is purely procedural (she moves through stalls faster without others); Theo's is about not wasting a quality hunt on a social event.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Gil",
+        "B": "Nneka",
+        "C": "Preet",
+        "D": "Rashida"
+      },
+      "correct_option": "B",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_4d5e6f7a_s01_t009",
+          "speaker_display_name": "Nneka",
+          "message_excerpt": "I move faster alone.",
+          "relevance": "Nneka's direct efficiency argument — speed is her stated reason for solo attendance"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_4d5e6f7a_s01_t010",
+          "speaker_display_name": "Theo",
+          "message_excerpt": "Nneka is correct. Group fairs are slower.",
+          "relevance": "Theo endorses Nneka with similar phrasing but is agreeing with her efficiency point; his underlying preference is about finding originals, not about pace"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q8_v4s2c1",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "How has Rashida's approach to buying records at fairs changed over the sessions?",
+      "answer": "Rashida started with no budget constraints — she bought freely and described purchases as 'beautiful' regardless of cost. At Session 2, she overdid it at Fitzroy Fair (four records, two of them reissues) and announced 'last fair for a while honestly. I need to behave myself — setting a budget for the next one.' By Session 4, she reiterated the self-imposed limit ('I'm on a budget this time. strict budget.') though Preet called this out as a repeated promise. By Session 5, she actually held to it: two records bought, three walked away from. The shift is from unconstrained enthusiasm to a self-managed spending limit, triggered by overspending and maintained with social accountability.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_4d5e6f7a_s02_t000",
+          "speaker_display_name": "Rashida",
+          "message_excerpt": "Ok I may have slightly overdone it today 🎶😅 four records. beautiful all four",
+          "relevance": "The overspending moment that triggers the shift — Rashida's spending is unconstrained here"
+        },
+        {
+          "session_index": 2,
+          "turn_id": "grp_4d5e6f7a_s02_t007",
+          "speaker_display_name": "Rashida",
+          "message_excerpt": "last fair for a while honestly. I need to behave myself 😂 setting a budget for the next one",
+          "relevance": "The shift point — Rashida imposes a self-limit after overspending"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_4d5e6f7a_s05_t000",
+          "speaker_display_name": "Rashida",
+          "message_excerpt": "The budget held 🎶 two records. both beautiful. both reissues.",
+          "relevance": "Confirmation that the budget is now real and held — the preference evolution is complete"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 2,
+          "value": "overspent at Fitzroy Fair — four records, bought freely"
+        },
+        {
+          "session_index": 2,
+          "value": "self-imposed budget after overspending — 'setting a budget for the next one'"
+        },
+        {
+          "session_index": 4,
+          "value": "reiterated budget; Preet noted she'd said the same thing before"
+        },
+        {
+          "session_index": 5,
+          "value": "budget held — two records, walked away from three"
+        }
+      ]
+    },
+    {
+      "id": "Q8_v4s3c1",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "Did Theo always refuse to buy reissues, or did his position on this change over time?",
+      "answer": "Theo's position started as strong skepticism and hardened into categorical refusal. In Session 1 he expressed doubt but not a ban ('reissues are a gamble'). In Session 2, he critiqued Rashida's reissue purchases for their mastering but had not yet announced a personal rule. In Session 3, he bought an expensive new Coltrane reissue himself, found the mastering to be terrible, and declared: 'Nothing with a digital chain in the mastering is worth buying. I'm done. Originals only from now.' The 'Never again' after describing it as a waste makes clear this is a permanent policy change. By Session 5, his position is unqualified: 'Originals only, Rashida. That is the whole point.'",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_4d5e6f7a_s01_t001",
+          "speaker_display_name": "Theo",
+          "message_excerpt": "That depends on the seller lineup. If it's the same reissue-heavy floor as last time, not worth the trip. Too much crate-flipping for records I already know I don't want.",
+          "relevance": "Early skepticism about reissue-heavy fairs — he avoids them but has not yet sworn off reissues entirely"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_4d5e6f7a_s03_t000",
+          "speaker_display_name": "Theo",
+          "message_excerpt": "That new Coltrane reissue everyone has been raving about. Bought it. Terrible mastering. Absolute waste. Never again.",
+          "relevance": "The triggering event — Theo buys a reissue, is burned by the mastering, and announces a categorical refusal"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_4d5e6f7a_s03_t002",
+          "speaker_display_name": "Theo",
+          "message_excerpt": "Nothing with a digital chain in the mastering is worth buying. I'm done. Originals only from now.",
+          "relevance": "Full statement of the new absolute position — the evolution is now complete and explicit"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "skeptical of reissue-heavy fairs; occasional reissue purchases still possible"
+        },
+        {
+          "session_index": 3,
+          "value": "bought a Coltrane reissue; found mastering terrible — 'Never again'"
+        },
+        {
+          "session_index": 3,
+          "value": "declared categorical rule: originals only, no exceptions"
+        },
+        {
+          "session_index": 5,
+          "value": "rule now applied to others — 'Originals only, Rashida. That is the whole point.'"
+        }
+      ]
+    },
+    {
+      "id": "Q8_v4s3c2",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "How did Preet's relationship to physical record collecting change over the conversations?",
+      "answer": "Preet began as primarily a streamer with minimal physical ownership. In Session 1, their enthusiasm was about discovering records at fairs but framed aesthetically — praising a Fela reissue's cover without caring that it wasn't an original. In Session 2, after finding a Brazilian compilation they'd been writing about, they said 'First time I've wanted to own something more than stream it honestly' — noting the shift in themselves even as they named it. In Session 3, they went back to the same seller and bought three more records, announcing: 'I think I'm doing this now.' By Sessions 4 and 5, attending fairs to build the collection is the stated goal, and Preet is asking what to look for.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_4d5e6f7a_s02_t008",
+          "speaker_display_name": "Preet",
+          "message_excerpt": "First time I've wanted to own something more than stream it honestly",
+          "relevance": "Preet identifies the shift in themselves in real time — this is the turning point"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_4d5e6f7a_s03_t005",
+          "speaker_display_name": "Preet",
+          "message_excerpt": "I went back to the seller from last fair and bought three more records 😅 I think I'm doing this now",
+          "relevance": "The commitment lands — Preet declares themselves a collector and the transition is complete"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_4d5e6f7a_s04_t004",
+          "speaker_display_name": "Preet",
+          "message_excerpt": "I'll come! I need to build the collection 😅 and I want to know what I'm looking for",
+          "relevance": "Collecting is now a stated goal, not casual participation — Preet is building intentionally"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "primarily streaming; attends fair for the experience, not to collect"
+        },
+        {
+          "session_index": 2,
+          "value": "bought a record they genuinely wanted to own — 'first time I've wanted to own something more than stream it'"
+        },
+        {
+          "session_index": 3,
+          "value": "bought three more records — 'I think I'm doing this now' — committed to collecting"
+        },
+        {
+          "session_index": 5,
+          "value": "still tracking finds after Camden; collecting talk continues as part of Preet's identity"
+        }
+      ]
+    },
+    {
+      "id": "Q8_v4s4c1",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "Has Gil's approach to attending group record fairs changed over the sessions?",
+      "answer": "Gil has become significantly more selective about which fairs he attends. Earlier sessions show him participating in fair planning without objection. By Session 4, when Rashida announced a large Camden fair with 80 stalls, Gil's first question was 'Is it specialist or commercial?' — and when told it was a mix, he declined: 'Probably not. Too many Taylor Swift reissues in those rooms now.' He is now vetting fairs by their specialist-to-commercial ratio before committing. In Session 5, he found an Ebo Taylor original at an 'Archway Specialist stall' — indicating he sought out a specialist venue independently rather than attending the large commercial fair.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_4d5e6f7a_s04_t001",
+          "speaker_display_name": "Gil",
+          "message_excerpt": "Is it specialist or commercial?",
+          "relevance": "The new vetting question Gil now asks before committing to any fair"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_4d5e6f7a_s04_t003",
+          "speaker_display_name": "Gil",
+          "message_excerpt": "Probably not. Too many Taylor Swift reissues in those rooms now.",
+          "relevance": "Declining the large Camden fair on commercial grounds — the selectivity is now explicit"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_4d5e6f7a_s05_t004",
+          "speaker_display_name": "Gil",
+          "message_excerpt": "Ghana, 1974: Ebo Taylor. Found at Archway Specialist stall.",
+          "relevance": "Gil found a find by going to a specialist venue — confirms he now attends specialist events instead of large fairs"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "attends fairs without objection; no selectivity expressed"
+        },
+        {
+          "session_index": 4,
+          "value": "vets fairs by specialist/commercial ratio before committing; declines large Camden fair"
+        },
+        {
+          "session_index": 5,
+          "value": "found a record at a specialist stall — attending specialist events independently"
+        }
+      ]
+    },
+    {
+      "id": "Q5_v4s4c2",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "What spending pattern of Rashida's does Preet know about, and how does the conversation show that Preet knows it?",
+      "answer": "Preet knows. In Session 4, when Rashida announced she was on a 'strict budget' for the Camden fair, Preet immediately replied 'Rashida said that last time 😂' — demonstrating recall of Rashida's identical promise after the Session 2 fair. Preet did not learn this from the group chat just then; they were with Rashida at the Fitzroy Fair in Session 2 when she overspent and made the budget promise. The knowledge comes from direct observation over time, not from being told. By Session 5, Preet acted as an informal accountability partner — reporting to the group that they watched Rashida walk away from three records.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_4d5e6f7a_s04_t007",
+          "speaker_display_name": "Preet",
+          "message_excerpt": "Rashida said that last time 😂",
+          "relevance": "Preet reveals they tracked Rashida's prior budget promise — demonstrating awareness of Rashida's spending pattern across sessions"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_4d5e6f7a_s05_t001",
+          "speaker_display_name": "Preet",
+          "message_excerpt": "I watched her walk away from THREE records today. growth 👏",
+          "relevance": "Preet was present at the fair with Rashida and reports on her progress — confirming ongoing awareness"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_v4s5c1",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What do the conversations reveal about the relationship between Rashida and Preet within the group?",
+      "answer": "Rashida and Preet have the closest, most social relationship in the group. In Session 1, after Nneka and Theo declared they were going to the fair alone, Rashida said 'Preet and I will go together and actually have fun' — positioning their pair as the social counterpart to the solo hunters. In Session 2, Preet attended Fitzroy with Rashida and tried (unsuccessfully) to stop her buying a fourth record. By Session 4, Preet publicly called out Rashida's repeated budget promises ('Rashida said that last time') — a tease that only lands from someone close enough to track the pattern. In Session 5, Preet reported watching Rashida walk away from three records, framing it as 'growth' — an accountability dynamic rooted in affection, not judgment.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "Rashida and Preet have the closest",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_4d5e6f7a_s01_t011",
+          "speaker_display_name": "Rashida",
+          "message_excerpt": "Preet and I will go together and actually have fun",
+          "relevance": "Rashida positions herself and Preet as a pair — the social counterpart to the solo hunters in the group"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_4d5e6f7a_s05_t001",
+          "speaker_display_name": "Preet",
+          "message_excerpt": "I watched her walk away from THREE records today. growth 👏",
+          "relevance": "Preet was present at the fair with Rashida and reports on her progress — a warm accountability dynamic that reflects close friendship"
+        }
+      ],
+      "temporal_anchors": []
+    }
+  ],
+  "meta": {
+    "source": "SocialMemBench",
+    "source_kind": "real_benchmark",
+    "network_id": "grp_4d5e6f7a",
+    "n_sessions": 5,
+    "n_turns": 53,
+    "n_qa": 9,
+    "v4_correct": 6,
+    "v4_total": 9,
+    "v4_errors": 3,
+    "v4_accuracy": 0.6666666666666666,
+    "heldout_heldout_excluded": true
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "schema": "socialmembench-heldout-qa/1",
+  "selection": {
+    "metric": "QA total descending",
+    "top_k": 10,
+    "excludes": "hard_heldout_manifest.json",
+    "tie_break": [
+      "network_id ascending"
+    ]
+  },
+  "sources": {
+    "summary": "../../results/main/without_ask/summary_speakermem_socialmem.json",
+    "summary_sha256": "0fb8afebe4de7ec527b46210f56bd18d01abc5673efa2cc927d923ce3a1c156c",
+    "conversations": "../SocialMemBench/conversations.jsonl",
+    "conversations_sha256": "2a1e606d52dea9c5fae86f1c414d0f4b0768855e6c4d0f108cc6b71dd806b3cc",
+    "qa": "../SocialMemBench/qa.jsonl",
+    "qa_sha256": "7f2ad7e981b714570b8bf4154cc766208c2758ef4d9e788bf369b32eacada4a9"
+  },
+  "excluded_train_network_ids": [
+    "grp_a0b1c2d3",
+    "grp_a4b5c6d7",
+    "grp_a5b6c7d8",
+    "grp_a6b7c8d9",
+    "grp_b1c2d3e4",
+    "grp_b6c7d8e9",
+    "grp_d3e4f5a6",
+    "grp_e7f8a9b1",
+    "grp_f1a2b3c5",
+    "grp_f4a5b6c7"
+  ],
+  "selected": [
+    {
+      "network_id": "grp_c1d2e3f7",
+      "correct": 39,
+      "total": 48,
+      "errors": 9,
+      "accuracy": 0.8125
+    },
+    {
+      "network_id": "grp_b8c9dae0",
+      "correct": 32,
+      "total": 40,
+      "errors": 8,
+      "accuracy": 0.8
+    },
+    {
+      "network_id": "grp_e3f4a5b6",
+      "correct": 22,
+      "total": 30,
+      "errors": 8,
+      "accuracy": 0.7333333333333333
+    },
+    {
+      "network_id": "grp_a1b2c3d4",
+      "correct": 24,
+      "total": 28,
+      "errors": 4,
+      "accuracy": 0.8571428571428571
+    },
+    {
+      "network_id": "grp_b0c1d2e3",
+      "correct": 19,
+      "total": 28,
+      "errors": 9,
+      "accuracy": 0.6785714285714286
+    },
+    {
+      "network_id": "grp_e8f9a0b1",
+      "correct": 19,
+      "total": 28,
+      "errors": 9,
+      "accuracy": 0.6785714285714286
+    },
+    {
+      "network_id": "grp_c2d3e4f5",
+      "correct": 18,
+      "total": 27,
+      "errors": 9,
+      "accuracy": 0.6666666666666666
+    },
+    {
+      "network_id": "grp_dba9214c",
+      "correct": 19,
+      "total": 27,
+      "errors": 8,
+      "accuracy": 0.7037037037037037
+    },
+    {
+      "network_id": "grp_c1d2e3f4",
+      "correct": 17,
+      "total": 25,
+      "errors": 8,
+      "accuracy": 0.68
+    },
+    {
+      "network_id": "grp_d2e3f4a5",
+      "correct": 19,
+      "total": 24,
+      "errors": 5,
+      "accuracy": 0.7916666666666666
+    }
+  ]
+}

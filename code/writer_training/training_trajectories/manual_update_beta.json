@@ -1,0 +1,3274 @@
+{
+  "schema": "speakermem-v4-trajectories/1",
+  "prompt_version": "13fae86a84be0b22",
+  "teacher": {
+    "model": "human-authored-v4",
+    "temperature": 0.0,
+    "thinking": false,
+    "max_tokens": 4096
+  },
+  "window_size": 5,
+  "network_id": "manual_update_beta",
+  "source": {
+    "path": "manual_v4_networks",
+    "meta": {
+      "source_kind": "human_authored"
+    }
+  },
+  "transitions": [
+    {
+      "turn": 0,
+      "session_id": "manual_update_beta_s01",
+      "ts": "2026-08-10T10:00:00Z",
+      "messages": [
+        {
+          "speaker": "Nina",
+          "content": "Budget checkpoint 1 is discussed.",
+          "session": "manual_update_beta_s01",
+          "ts": "2026-08-10T10:00:00Z",
+          "msg_id": "0",
+          "meta": {}
+        },
+        {
+          "speaker": "Omar",
+          "content": "Omar owns the cost sheet.",
+          "session": "manual_update_beta_s01",
+          "ts": "2026-08-10T10:01:00Z",
+          "msg_id": "1",
+          "meta": {}
+        },
+        {
+          "speaker": "Nina",
+          "content": "The supplier quote is under review.",
+          "session": "manual_update_beta_s01",
+          "ts": "2026-08-10T10:02:00Z",
+          "msg_id": "2",
+          "meta": {}
+        },
+        {
+          "speaker": "Omar",
+          "content": "I will verify the tax line.",
+          "session": "manual_update_beta_s01",
+          "ts": "2026-08-10T10:03:00Z",
+          "msg_id": "3",
+          "meta": {}
+        },
+        {
+          "speaker": "Nina",
+          "content": "The team needs a signed quote.",
+          "session": "manual_update_beta_s01",
+          "ts": "2026-08-10T10:04:00Z",
+          "msg_id": "4",
+          "meta": {}
+        }
+      ],
+      "prompt": [
+        {
+          "role": "system",
+          "content": "You are an ONLINE memory manager for a MULTI-PARTY group chat, maintaining a speaker-indexed layered memory.\n\nPREMISE: every raw message of this segment is ALREADY stored VERBATIM (raw track). Your job is NOT to restate the raw text, but to add STRUCTURED derived memory on top of it, so that retrieval by person / relationship / time becomes possible.\n\nFOUR DERIVED LAYERS YOU MAY WRITE\n(raw messages are already written to per_speaker_episodic by the system - never produce that layer)\n- per_speaker_core     a person's STABLE fact / identity / hardened stance / RECURRING BEHAVIOUR\n- per_speaker_profile  how the group sees a person, or one person's OBSERVATION about another\n                       (\"A says B is X\" -> owner=B, source=A)\n- group_interaction    cross-speaker event / relationship / group DECISION   (owner=GROUP)\n                       *** WHO SAID IT IS NOT WHO IT BELONGS TO ***\n                       A decision announced by ONE person on behalf of the group is STILL a\n                       group decision: owner=GROUP, source=<the speaker>.\n                       Triggers: \"then it is settled\", \"so we agreed\", \"that is decided\",\n                       \"we will go with X\" -> owner=GROUP, layer=group_interaction,\n                       utype=decision. Do NOT file it as that speaker's personal preference.\n                       (A personal preference is \"I would rather X\"; a decision is \"X is settled\".)\n- group_insight        group NORM / consensus / meta-observation             (owner=GROUP)\n                       ONLY when the conversation gives evidence, note which member conspicuously\n                       relates to a norm differently. NEVER guess a member's compliance.\n\nACTIONS - exactly three, output nothing else\n  {\"action\":\"ADD\",\"owner\":\"<who it is ABOUT>\",\"source\":\"<who SAID/observed it>\",\"layer\":\"<one of the four above>\",\"utype\":\"fact|stance|observation|decision|relation\",\"content\":\"<the memory>\"}\n  {\"action\":\"UPDATE\",\"entry_id\":\"<existing entry being updated>\",\"content\":\"<the NEW, current state>\"}\n  {\"action\":\"NOOP\"}\n\nUPDATE BOUNDARIES (important)\n- *** BEFORE EVERY ADD, SEARCH CURRENT MEMORY FIRST *** Is there already an entry about this\n  same matter / same work item / same person-and-topic? If yes -> UPDATE that entry.\n  ADD is only for matters that NOTHING in CURRENT MEMORY covers yet.\n- Use UPDATE whenever an existing entry about the SAME MATTER has MOVED ON. Read this broadly:\n    * a number / percentage / progress advanced   e.g. 38% complete -> 97% complete\n    * a date or deadline shifted                  e.g. freeze 2025-06-20 -> 2025-06-27\n    * a status moved                              e.g. blocked -> resolved, planned -> shipped\n    * a stance / belief / plan changed\n    * a later, more specific statement supersedes an earlier vaguer one about the same item\n  It does NOT have to contradict the old entry. Any progression on the same item is an UPDATE.\n  A recurring behaviour observed AGAIN is also an UPDATE (record that it happened again).\n- *** THE NEW CONTENT MUST DIFFER SUBSTANTIVELY FROM THE ENTRY BEING UPDATED. *** If what you\n  would write is the same as the existing entry (same value, same status, same wording),\n  output NOOP - not UPDATE. An UPDATE that changes nothing is worse than no action: it buries\n  the real history under identical links.\n- entry_id MUST come from the CURRENT MEMORY list below.\n- Give ONLY the new state. How the old entry is preserved and chained is handled by the system.\n- Do NOT restate the old content (never write \"was X, now Y\" - write only Y).\n- Do NOT repeat owner / source / layer - the system reuses them from the updated entry.\n- DISAGREEMENT BETWEEN DIFFERENT PEOPLE is always separate ADDs. Never merge them via UPDATE.\n- ONE MATTER = ONE ENTRY. If a matter is ALREADY in CURRENT MEMORY - or you already wrote an\n  ADD for it EARLIER IN THIS SAME OUTPUT - never ADD a second entry for it: UPDATE it if its\n  state changed, otherwise output nothing. This holds for every kind of memory (not just\n  stances), for the GROUP row no matter who voices it this time, and however differently the\n  matter is worded. Merely re-stating / confirming / agreeing with something already listed is\n  not new state -> neither ADD nor UPDATE.\n\nGRANULARITY - PREFER FINE OVER COARSE (important)\n- One derived memory = ONE atomic fact / ONE stance / ONE observation.\n- If a person said N distinct things in this segment -> produce N entries, never one summary.\n  BAD : \"Mum's overall view on the 40th: wants a party, worried about budget, March is awkward\"\n  GOOD: three separate entries (celebration format / budget / timing)\n- But do NOT copy raw messages verbatim into derived memory (raw is already stored).\n\nCAPTURE BEHAVIOUR, NOT ONLY STATED FACTS\nExplicit facts (\"closed a Series A\", \"the code is 4-8-1-9\") are easy - you will not miss them.\nEqually important and far more often missed are IMPLICIT traits: a habit, an avoidance, a role\nsomeone keeps taking on, a subject someone never engages with, a way of replying that repeats,\nwho they defer to, what they joke about instead of answering.\n  e.g. \"deflects questions about his own career with a joke, then redirects to someone else\"\n       \"is always the one who handles logistics\" / \"never comments on anyone's promotion\"\nFile them as per_speaker_core (the person's own pattern) or per_speaker_profile (how others\nread them). Base them on what actually happened - describe the behaviour, never guess a motive.\nA pattern occurring AGAIN is NOT a duplicate, it is EVIDENCE: UPDATE that entry to record that\nit happened again (and when), instead of NOOP.\nSomeone who talks a lot but states few hard facts should still end up with entries - if a person\nspoke repeatedly this segment and you wrote nothing about them, you have missed their behaviour.\n\nOTHER CONSTRAINTS\n- owner = who the memory is ABOUT; source = who said/observed it.\n- If A claims something about B -> owner=B, source=A. Never file B's matter under A.\n- Invent nothing unsupported. Prefer faithful wording over paraphrase.\n- Write memory content in the SAME LANGUAGE as the conversation (so that retrieval embeddings\n  of memory and of raw text live in the same space).\n\nOutput JSON only, no explanation: {\"actions\":[ ... ]}"
+        },
+        {
+          "role": "user",
+          "content": "Speakers present: Nina, Omar\nSession: manual_update_beta_s01    Time: 2026-08-10T10:00:00Z\n\nCURRENT MEMORY (ALL derived memory of this group; each slot shows its LATEST state only)\nformat: <entry_id> [layer|owner(by source)@date] content\n(no derived memory yet)\n\nNEW MESSAGES IN THIS SEGMENT\n[Nina @ 2026-08-10T10:00:00Z] Budget checkpoint 1 is discussed.\n[Omar @ 2026-08-10T10:01:00Z] Omar owns the cost sheet.\n[Nina @ 2026-08-10T10:02:00Z] The supplier quote is under review.\n[Omar @ 2026-08-10T10:03:00Z] I will verify the tax line.\n[Nina @ 2026-08-10T10:04:00Z] The team needs a signed quote.\n\nHARD OUTPUT LIMIT: return at most 10 actions. Stop after the last NOVEL action, close the JSON immediately, and NEVER repeat an action already emitted in this output.\n\nOutput {\"actions\":[ ... ]}"
+        }
+      ],
+      "pre_state_text": "(no derived memory yet)",
+      "actions": [
+        {
+          "action": "ADD",
+          "owner": "Nina",
+          "source": "Nina",
+          "layer": "per_speaker_core",
+          "utype": "decision",
+          "content": "Nina tracks the budget"
+        },
+        {
+          "action": "ADD",
+          "owner": "Omar",
+          "source": "Omar",
+          "layer": "per_speaker_core",
+          "utype": "fact",
+          "content": "Omar owns the cost sheet"
+        }
+      ],
+      "target_text": "{\"actions\":[{\"action\":\"ADD\",\"owner\":\"Nina\",\"source\":\"Nina\",\"layer\":\"per_speaker_core\",\"utype\":\"decision\",\"content\":\"Nina tracks the budget\"},{\"action\":\"ADD\",\"owner\":\"Omar\",\"source\":\"Omar\",\"layer\":\"per_speaker_core\",\"utype\":\"fact\",\"content\":\"Omar owns the cost sheet\"}]}",
+      "report": {
+        "json_valid": true,
+        "attempted": 2,
+        "applied": 2,
+        "noop": 0,
+        "errors": [],
+        "created_ids": [
+          "d2ec4974",
+          "c46324d8"
+        ],
+        "updated_from": [],
+        "schema_valid_actions": 2,
+        "valid": true
+      },
+      "pre_state": {
+        "entries": [],
+        "heads": [],
+        "update_edges": [],
+        "roster": []
+      },
+      "post_state": {
+        "entries": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "Nina tracks the budget",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "9cb0fd76",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d2ec4974"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "Nina tracks the budget",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "9cb0fd76",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d2ec4974"
+          }
+        ],
+        "update_edges": [],
+        "roster": [
+          "Nina",
+          "Omar"
+        ]
+      },
+      "segment_index": 0,
+      "source_session_index": 0,
+      "metadata": {
+        "source_topic": "manual_topic_manual_update_beta_1"
+      }
+    },
+    {
+      "turn": 1,
+      "session_id": "manual_update_beta_s02",
+      "ts": "2026-08-11T10:00:00Z",
+      "messages": [
+        {
+          "speaker": "Nina",
+          "content": "Budget checkpoint 2 is discussed.",
+          "session": "manual_update_beta_s02",
+          "ts": "2026-08-11T10:00:00Z",
+          "msg_id": "0",
+          "meta": {}
+        },
+        {
+          "speaker": "Omar",
+          "content": "Omar owns the cost sheet.",
+          "session": "manual_update_beta_s02",
+          "ts": "2026-08-11T10:01:00Z",
+          "msg_id": "1",
+          "meta": {}
+        },
+        {
+          "speaker": "Nina",
+          "content": "The supplier quote is under review.",
+          "session": "manual_update_beta_s02",
+          "ts": "2026-08-11T10:02:00Z",
+          "msg_id": "2",
+          "meta": {}
+        },
+        {
+          "speaker": "Omar",
+          "content": "I will verify the tax line.",
+          "session": "manual_update_beta_s02",
+          "ts": "2026-08-11T10:03:00Z",
+          "msg_id": "3",
+          "meta": {}
+        },
+        {
+          "speaker": "Nina",
+          "content": "The team needs a signed quote.",
+          "session": "manual_update_beta_s02",
+          "ts": "2026-08-11T10:04:00Z",
+          "msg_id": "4",
+          "meta": {}
+        }
+      ],
+      "prompt": [
+        {
+          "role": "system",
+          "content": "You are an ONLINE memory manager for a MULTI-PARTY group chat, maintaining a speaker-indexed layered memory.\n\nPREMISE: every raw message of this segment is ALREADY stored VERBATIM (raw track). Your job is NOT to restate the raw text, but to add STRUCTURED derived memory on top of it, so that retrieval by person / relationship / time becomes possible.\n\nFOUR DERIVED LAYERS YOU MAY WRITE\n(raw messages are already written to per_speaker_episodic by the system - never produce that layer)\n- per_speaker_core     a person's STABLE fact / identity / hardened stance / RECURRING BEHAVIOUR\n- per_speaker_profile  how the group sees a person, or one person's OBSERVATION about another\n                       (\"A says B is X\" -> owner=B, source=A)\n- group_interaction    cross-speaker event / relationship / group DECISION   (owner=GROUP)\n                       *** WHO SAID IT IS NOT WHO IT BELONGS TO ***\n                       A decision announced by ONE person on behalf of the group is STILL a\n                       group decision: owner=GROUP, source=<the speaker>.\n                       Triggers: \"then it is settled\", \"so we agreed\", \"that is decided\",\n                       \"we will go with X\" -> owner=GROUP, layer=group_interaction,\n                       utype=decision. Do NOT file it as that speaker's personal preference.\n                       (A personal preference is \"I would rather X\"; a decision is \"X is settled\".)\n- group_insight        group NORM / consensus / meta-observation             (owner=GROUP)\n                       ONLY when the conversation gives evidence, note which member conspicuously\n                       relates to a norm differently. NEVER guess a member's compliance.\n\nACTIONS - exactly three, output nothing else\n  {\"action\":\"ADD\",\"owner\":\"<who it is ABOUT>\",\"source\":\"<who SAID/observed it>\",\"layer\":\"<one of the four above>\",\"utype\":\"fact|stance|observation|decision|relation\",\"content\":\"<the memory>\"}\n  {\"action\":\"UPDATE\",\"entry_id\":\"<existing entry being updated>\",\"content\":\"<the NEW, current state>\"}\n  {\"action\":\"NOOP\"}\n\nUPDATE BOUNDARIES (important)\n- *** BEFORE EVERY ADD, SEARCH CURRENT MEMORY FIRST *** Is there already an entry about this\n  same matter / same work item / same person-and-topic? If yes -> UPDATE that entry.\n  ADD is only for matters that NOTHING in CURRENT MEMORY covers yet.\n- Use UPDATE whenever an existing entry about the SAME MATTER has MOVED ON. Read this broadly:\n    * a number / percentage / progress advanced   e.g. 38% complete -> 97% complete\n    * a date or deadline shifted                  e.g. freeze 2025-06-20 -> 2025-06-27\n    * a status moved                              e.g. blocked -> resolved, planned -> shipped\n    * a stance / belief / plan changed\n    * a later, more specific statement supersedes an earlier vaguer one about the same item\n  It does NOT have to contradict the old entry. Any progression on the same item is an UPDATE.\n  A recurring behaviour observed AGAIN is also an UPDATE (record that it happened again).\n- *** THE NEW CONTENT MUST DIFFER SUBSTANTIVELY FROM THE ENTRY BEING UPDATED. *** If what you\n  would write is the same as the existing entry (same value, same status, same wording),\n  output NOOP - not UPDATE. An UPDATE that changes nothing is worse than no action: it buries\n  the real history under identical links.\n- entry_id MUST come from the CURRENT MEMORY list below.\n- Give ONLY the new state. How the old entry is preserved and chained is handled by the system.\n- Do NOT restate the old content (never write \"was X, now Y\" - write only Y).\n- Do NOT repeat owner / source / layer - the system reuses them from the updated entry.\n- DISAGREEMENT BETWEEN DIFFERENT PEOPLE is always separate ADDs. Never merge them via UPDATE.\n- ONE MATTER = ONE ENTRY. If a matter is ALREADY in CURRENT MEMORY - or you already wrote an\n  ADD for it EARLIER IN THIS SAME OUTPUT - never ADD a second entry for it: UPDATE it if its\n  state changed, otherwise output nothing. This holds for every kind of memory (not just\n  stances), for the GROUP row no matter who voices it this time, and however differently the\n  matter is worded. Merely re-stating / confirming / agreeing with something already listed is\n  not new state -> neither ADD nor UPDATE.\n\nGRANULARITY - PREFER FINE OVER COARSE (important)\n- One derived memory = ONE atomic fact / ONE stance / ONE observation.\n- If a person said N distinct things in this segment -> produce N entries, never one summary.\n  BAD : \"Mum's overall view on the 40th: wants a party, worried about budget, March is awkward\"\n  GOOD: three separate entries (celebration format / budget / timing)\n- But do NOT copy raw messages verbatim into derived memory (raw is already stored).\n\nCAPTURE BEHAVIOUR, NOT ONLY STATED FACTS\nExplicit facts (\"closed a Series A\", \"the code is 4-8-1-9\") are easy - you will not miss them.\nEqually important and far more often missed are IMPLICIT traits: a habit, an avoidance, a role\nsomeone keeps taking on, a subject someone never engages with, a way of replying that repeats,\nwho they defer to, what they joke about instead of answering.\n  e.g. \"deflects questions about his own career with a joke, then redirects to someone else\"\n       \"is always the one who handles logistics\" / \"never comments on anyone's promotion\"\nFile them as per_speaker_core (the person's own pattern) or per_speaker_profile (how others\nread them). Base them on what actually happened - describe the behaviour, never guess a motive.\nA pattern occurring AGAIN is NOT a duplicate, it is EVIDENCE: UPDATE that entry to record that\nit happened again (and when), instead of NOOP.\nSomeone who talks a lot but states few hard facts should still end up with entries - if a person\nspoke repeatedly this segment and you wrote nothing about them, you have missed their behaviour.\n\nOTHER CONSTRAINTS\n- owner = who the memory is ABOUT; source = who said/observed it.\n- If A claims something about B -> owner=B, source=A. Never file B's matter under A.\n- Invent nothing unsupported. Prefer faithful wording over paraphrase.\n- Write memory content in the SAME LANGUAGE as the conversation (so that retrieval embeddings\n  of memory and of raw text live in the same space).\n\nOutput JSON only, no explanation: {\"actions\":[ ... ]}"
+        },
+        {
+          "role": "user",
+          "content": "Speakers present: Nina, Omar\nSession: manual_update_beta_s02    Time: 2026-08-11T10:00:00Z\n\nCURRENT MEMORY (ALL derived memory of this group; each slot shows its LATEST state only)\nformat: <entry_id> [layer|owner(by source)@date] content\n  [Nina]\n    d2ec4974 [core|Nina@2026-08-10] Nina tracks the budget\n  [Omar]\n    c46324d8 [core|Omar@2026-08-10] Omar owns the cost sheet\n\nNEW MESSAGES IN THIS SEGMENT\n[Nina @ 2026-08-11T10:00:00Z] Budget checkpoint 2 is discussed.\n[Omar @ 2026-08-11T10:01:00Z] Omar owns the cost sheet.\n[Nina @ 2026-08-11T10:02:00Z] The supplier quote is under review.\n[Omar @ 2026-08-11T10:03:00Z] I will verify the tax line.\n[Nina @ 2026-08-11T10:04:00Z] The team needs a signed quote.\n\nHARD OUTPUT LIMIT: return at most 10 actions. Stop after the last NOVEL action, close the JSON immediately, and NEVER repeat an action already emitted in this output.\n\nOutput {\"actions\":[ ... ]}"
+        }
+      ],
+      "pre_state_text": "  [Nina]\n    d2ec4974 [core|Nina@2026-08-10] Nina tracks the budget\n  [Omar]\n    c46324d8 [core|Omar@2026-08-10] Omar owns the cost sheet",
+      "actions": [
+        {
+          "action": "ADD",
+          "owner": "GROUP",
+          "source": "Nina",
+          "layer": "group_interaction",
+          "utype": "decision",
+          "content": "The team requires a signed supplier quote"
+        }
+      ],
+      "target_text": "{\"actions\":[{\"action\":\"ADD\",\"owner\":\"GROUP\",\"source\":\"Nina\",\"layer\":\"group_interaction\",\"utype\":\"decision\",\"content\":\"The team requires a signed supplier quote\"}]}",
+      "report": {
+        "json_valid": true,
+        "attempted": 1,
+        "applied": 1,
+        "noop": 0,
+        "errors": [],
+        "created_ids": [
+          "d9fdebe9"
+        ],
+        "updated_from": [],
+        "schema_valid_actions": 1,
+        "valid": true
+      },
+      "pre_state": {
+        "entries": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "Nina tracks the budget",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "9cb0fd76",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d2ec4974"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "Nina tracks the budget",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "9cb0fd76",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d2ec4974"
+          }
+        ],
+        "update_edges": [],
+        "roster": [
+          "Nina",
+          "Omar"
+        ]
+      },
+      "post_state": {
+        "entries": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "Nina tracks the budget",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "9cb0fd76",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d2ec4974"
+          },
+          {
+            "content": "The team requires a signed supplier quote",
+            "owner": "GROUP",
+            "source": "Nina",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "2d60e831",
+              "f45bdca7",
+              "e9371312"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d9fdebe9"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "Nina tracks the budget",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "9cb0fd76",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d2ec4974"
+          },
+          {
+            "content": "The team requires a signed supplier quote",
+            "owner": "GROUP",
+            "source": "Nina",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "2d60e831",
+              "f45bdca7",
+              "e9371312"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d9fdebe9"
+          }
+        ],
+        "update_edges": [],
+        "roster": [
+          "Nina",
+          "Omar"
+        ]
+      },
+      "segment_index": 0,
+      "source_session_index": 1,
+      "metadata": {
+        "source_topic": "manual_topic_manual_update_beta_2"
+      }
+    },
+    {
+      "turn": 2,
+      "session_id": "manual_update_beta_s03",
+      "ts": "2026-08-12T10:00:00Z",
+      "messages": [
+        {
+          "speaker": "Nina",
+          "content": "Budget checkpoint 3 is discussed.",
+          "session": "manual_update_beta_s03",
+          "ts": "2026-08-12T10:00:00Z",
+          "msg_id": "0",
+          "meta": {}
+        },
+        {
+          "speaker": "Omar",
+          "content": "Omar owns the cost sheet.",
+          "session": "manual_update_beta_s03",
+          "ts": "2026-08-12T10:01:00Z",
+          "msg_id": "1",
+          "meta": {}
+        },
+        {
+          "speaker": "Nina",
+          "content": "The supplier quote is under review.",
+          "session": "manual_update_beta_s03",
+          "ts": "2026-08-12T10:02:00Z",
+          "msg_id": "2",
+          "meta": {}
+        },
+        {
+          "speaker": "Omar",
+          "content": "I will verify the tax line.",
+          "session": "manual_update_beta_s03",
+          "ts": "2026-08-12T10:03:00Z",
+          "msg_id": "3",
+          "meta": {}
+        },
+        {
+          "speaker": "Nina",
+          "content": "The team needs a signed quote.",
+          "session": "manual_update_beta_s03",
+          "ts": "2026-08-12T10:04:00Z",
+          "msg_id": "4",
+          "meta": {}
+        }
+      ],
+      "prompt": [
+        {
+          "role": "system",
+          "content": "You are an ONLINE memory manager for a MULTI-PARTY group chat, maintaining a speaker-indexed layered memory.\n\nPREMISE: every raw message of this segment is ALREADY stored VERBATIM (raw track). Your job is NOT to restate the raw text, but to add STRUCTURED derived memory on top of it, so that retrieval by person / relationship / time becomes possible.\n\nFOUR DERIVED LAYERS YOU MAY WRITE\n(raw messages are already written to per_speaker_episodic by the system - never produce that layer)\n- per_speaker_core     a person's STABLE fact / identity / hardened stance / RECURRING BEHAVIOUR\n- per_speaker_profile  how the group sees a person, or one person's OBSERVATION about another\n                       (\"A says B is X\" -> owner=B, source=A)\n- group_interaction    cross-speaker event / relationship / group DECISION   (owner=GROUP)\n                       *** WHO SAID IT IS NOT WHO IT BELONGS TO ***\n                       A decision announced by ONE person on behalf of the group is STILL a\n                       group decision: owner=GROUP, source=<the speaker>.\n                       Triggers: \"then it is settled\", \"so we agreed\", \"that is decided\",\n                       \"we will go with X\" -> owner=GROUP, layer=group_interaction,\n                       utype=decision. Do NOT file it as that speaker's personal preference.\n                       (A personal preference is \"I would rather X\"; a decision is \"X is settled\".)\n- group_insight        group NORM / consensus / meta-observation             (owner=GROUP)\n                       ONLY when the conversation gives evidence, note which member conspicuously\n                       relates to a norm differently. NEVER guess a member's compliance.\n\nACTIONS - exactly three, output nothing else\n  {\"action\":\"ADD\",\"owner\":\"<who it is ABOUT>\",\"source\":\"<who SAID/observed it>\",\"layer\":\"<one of the four above>\",\"utype\":\"fact|stance|observation|decision|relation\",\"content\":\"<the memory>\"}\n  {\"action\":\"UPDATE\",\"entry_id\":\"<existing entry being updated>\",\"content\":\"<the NEW, current state>\"}\n  {\"action\":\"NOOP\"}\n\nUPDATE BOUNDARIES (important)\n- *** BEFORE EVERY ADD, SEARCH CURRENT MEMORY FIRST *** Is there already an entry about this\n  same matter / same work item / same person-and-topic? If yes -> UPDATE that entry.\n  ADD is only for matters that NOTHING in CURRENT MEMORY covers yet.\n- Use UPDATE whenever an existing entry about the SAME MATTER has MOVED ON. Read this broadly:\n    * a number / percentage / progress advanced   e.g. 38% complete -> 97% complete\n    * a date or deadline shifted                  e.g. freeze 2025-06-20 -> 2025-06-27\n    * a status moved                              e.g. blocked -> resolved, planned -> shipped\n    * a stance / belief / plan changed\n    * a later, more specific statement supersedes an earlier vaguer one about the same item\n  It does NOT have to contradict the old entry. Any progression on the same item is an UPDATE.\n  A recurring behaviour observed AGAIN is also an UPDATE (record that it happened again).\n- *** THE NEW CONTENT MUST DIFFER SUBSTANTIVELY FROM THE ENTRY BEING UPDATED. *** If what you\n  would write is the same as the existing entry (same value, same status, same wording),\n  output NOOP - not UPDATE. An UPDATE that changes nothing is worse than no action: it buries\n  the real history under identical links.\n- entry_id MUST come from the CURRENT MEMORY list below.\n- Give ONLY the new state. How the old entry is preserved and chained is handled by the system.\n- Do NOT restate the old content (never write \"was X, now Y\" - write only Y).\n- Do NOT repeat owner / source / layer - the system reuses them from the updated entry.\n- DISAGREEMENT BETWEEN DIFFERENT PEOPLE is always separate ADDs. Never merge them via UPDATE.\n- ONE MATTER = ONE ENTRY. If a matter is ALREADY in CURRENT MEMORY - or you already wrote an\n  ADD for it EARLIER IN THIS SAME OUTPUT - never ADD a second entry for it: UPDATE it if its\n  state changed, otherwise output nothing. This holds for every kind of memory (not just\n  stances), for the GROUP row no matter who voices it this time, and however differently the\n  matter is worded. Merely re-stating / confirming / agreeing with something already listed is\n  not new state -> neither ADD nor UPDATE.\n\nGRANULARITY - PREFER FINE OVER COARSE (important)\n- One derived memory = ONE atomic fact / ONE stance / ONE observation.\n- If a person said N distinct things in this segment -> produce N entries, never one summary.\n  BAD : \"Mum's overall view on the 40th: wants a party, worried about budget, March is awkward\"\n  GOOD: three separate entries (celebration format / budget / timing)\n- But do NOT copy raw messages verbatim into derived memory (raw is already stored).\n\nCAPTURE BEHAVIOUR, NOT ONLY STATED FACTS\nExplicit facts (\"closed a Series A\", \"the code is 4-8-1-9\") are easy - you will not miss them.\nEqually important and far more often missed are IMPLICIT traits: a habit, an avoidance, a role\nsomeone keeps taking on, a subject someone never engages with, a way of replying that repeats,\nwho they defer to, what they joke about instead of answering.\n  e.g. \"deflects questions about his own career with a joke, then redirects to someone else\"\n       \"is always the one who handles logistics\" / \"never comments on anyone's promotion\"\nFile them as per_speaker_core (the person's own pattern) or per_speaker_profile (how others\nread them). Base them on what actually happened - describe the behaviour, never guess a motive.\nA pattern occurring AGAIN is NOT a duplicate, it is EVIDENCE: UPDATE that entry to record that\nit happened again (and when), instead of NOOP.\nSomeone who talks a lot but states few hard facts should still end up with entries - if a person\nspoke repeatedly this segment and you wrote nothing about them, you have missed their behaviour.\n\nOTHER CONSTRAINTS\n- owner = who the memory is ABOUT; source = who said/observed it.\n- If A claims something about B -> owner=B, source=A. Never file B's matter under A.\n- Invent nothing unsupported. Prefer faithful wording over paraphrase.\n- Write memory content in the SAME LANGUAGE as the conversation (so that retrieval embeddings\n  of memory and of raw text live in the same space).\n\nOutput JSON only, no explanation: {\"actions\":[ ... ]}"
+        },
+        {
+          "role": "user",
+          "content": "Speakers present: Nina, Omar\nSession: manual_update_beta_s03    Time: 2026-08-12T10:00:00Z\n\nCURRENT MEMORY (ALL derived memory of this group; each slot shows its LATEST state only)\nformat: <entry_id> [layer|owner(by source)@date] content\n  [Nina]\n    d2ec4974 [core|Nina@2026-08-10] Nina tracks the budget\n  [Omar]\n    c46324d8 [core|Omar@2026-08-10] Omar owns the cost sheet\n  [GROUP]\n    d9fdebe9 [g-interaction|GROUP(by Nina)@2026-08-11] The team requires a signed supplier quote\n\nNEW MESSAGES IN THIS SEGMENT\n[Nina @ 2026-08-12T10:00:00Z] Budget checkpoint 3 is discussed.\n[Omar @ 2026-08-12T10:01:00Z] Omar owns the cost sheet.\n[Nina @ 2026-08-12T10:02:00Z] The supplier quote is under review.\n[Omar @ 2026-08-12T10:03:00Z] I will verify the tax line.\n[Nina @ 2026-08-12T10:04:00Z] The team needs a signed quote.\n\nHARD OUTPUT LIMIT: return at most 10 actions. Stop after the last NOVEL action, close the JSON immediately, and NEVER repeat an action already emitted in this output.\n\nOutput {\"actions\":[ ... ]}"
+        }
+      ],
+      "pre_state_text": "  [Nina]\n    d2ec4974 [core|Nina@2026-08-10] Nina tracks the budget\n  [Omar]\n    c46324d8 [core|Omar@2026-08-10] Omar owns the cost sheet\n  [GROUP]\n    d9fdebe9 [g-interaction|GROUP(by Nina)@2026-08-11] The team requires a signed supplier quote",
+      "actions": [
+        {
+          "action": "UPDATE",
+          "entry_id": "d2ec4974",
+          "content": "Nina tracks budget checkpoint 3"
+        }
+      ],
+      "target_text": "{\"actions\":[{\"action\":\"UPDATE\",\"entry_id\":\"d2ec4974\",\"content\":\"Nina tracks budget checkpoint 3\"}]}",
+      "report": {
+        "json_valid": true,
+        "attempted": 1,
+        "applied": 1,
+        "noop": 0,
+        "errors": [],
+        "created_ids": [
+          "98333ad8"
+        ],
+        "updated_from": [
+          "d2ec4974"
+        ],
+        "schema_valid_actions": 1,
+        "valid": true
+      },
+      "pre_state": {
+        "entries": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "Nina tracks the budget",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "9cb0fd76",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d2ec4974"
+          },
+          {
+            "content": "The team requires a signed supplier quote",
+            "owner": "GROUP",
+            "source": "Nina",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "2d60e831",
+              "f45bdca7",
+              "e9371312"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d9fdebe9"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "Nina tracks the budget",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "9cb0fd76",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d2ec4974"
+          },
+          {
+            "content": "The team requires a signed supplier quote",
+            "owner": "GROUP",
+            "source": "Nina",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "2d60e831",
+              "f45bdca7",
+              "e9371312"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d9fdebe9"
+          }
+        ],
+        "update_edges": [],
+        "roster": [
+          "Nina",
+          "Omar"
+        ]
+      },
+      "post_state": {
+        "entries": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "Nina tracks the budget",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "9cb0fd76",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "98333ad8",
+            "entry_id": "d2ec4974"
+          },
+          {
+            "content": "The team requires a signed supplier quote",
+            "owner": "GROUP",
+            "source": "Nina",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "2d60e831",
+              "f45bdca7",
+              "e9371312"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d9fdebe9"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 3",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "ee64fc93",
+              "955dca7f",
+              "73be328e"
+            ],
+            "links": [
+              "d2ec4974"
+            ],
+            "superseded_by": "",
+            "entry_id": "98333ad8"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "The team requires a signed supplier quote",
+            "owner": "GROUP",
+            "source": "Nina",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "2d60e831",
+              "f45bdca7",
+              "e9371312"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d9fdebe9"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 3",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "ee64fc93",
+              "955dca7f",
+              "73be328e"
+            ],
+            "links": [
+              "d2ec4974"
+            ],
+            "superseded_by": "",
+            "entry_id": "98333ad8"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "d2ec4974",
+            "new": "98333ad8"
+          }
+        ],
+        "roster": [
+          "Nina",
+          "Omar"
+        ]
+      },
+      "segment_index": 0,
+      "source_session_index": 2,
+      "metadata": {
+        "source_topic": "manual_topic_manual_update_beta_3"
+      }
+    },
+    {
+      "turn": 3,
+      "session_id": "manual_update_beta_s04",
+      "ts": "2026-08-13T10:00:00Z",
+      "messages": [
+        {
+          "speaker": "Nina",
+          "content": "Budget checkpoint 4 is discussed.",
+          "session": "manual_update_beta_s04",
+          "ts": "2026-08-13T10:00:00Z",
+          "msg_id": "0",
+          "meta": {}
+        },
+        {
+          "speaker": "Omar",
+          "content": "Omar owns the cost sheet.",
+          "session": "manual_update_beta_s04",
+          "ts": "2026-08-13T10:01:00Z",
+          "msg_id": "1",
+          "meta": {}
+        },
+        {
+          "speaker": "Nina",
+          "content": "The supplier quote is under review.",
+          "session": "manual_update_beta_s04",
+          "ts": "2026-08-13T10:02:00Z",
+          "msg_id": "2",
+          "meta": {}
+        },
+        {
+          "speaker": "Omar",
+          "content": "I will verify the tax line.",
+          "session": "manual_update_beta_s04",
+          "ts": "2026-08-13T10:03:00Z",
+          "msg_id": "3",
+          "meta": {}
+        },
+        {
+          "speaker": "Nina",
+          "content": "The team needs a signed quote.",
+          "session": "manual_update_beta_s04",
+          "ts": "2026-08-13T10:04:00Z",
+          "msg_id": "4",
+          "meta": {}
+        }
+      ],
+      "prompt": [
+        {
+          "role": "system",
+          "content": "You are an ONLINE memory manager for a MULTI-PARTY group chat, maintaining a speaker-indexed layered memory.\n\nPREMISE: every raw message of this segment is ALREADY stored VERBATIM (raw track). Your job is NOT to restate the raw text, but to add STRUCTURED derived memory on top of it, so that retrieval by person / relationship / time becomes possible.\n\nFOUR DERIVED LAYERS YOU MAY WRITE\n(raw messages are already written to per_speaker_episodic by the system - never produce that layer)\n- per_speaker_core     a person's STABLE fact / identity / hardened stance / RECURRING BEHAVIOUR\n- per_speaker_profile  how the group sees a person, or one person's OBSERVATION about another\n                       (\"A says B is X\" -> owner=B, source=A)\n- group_interaction    cross-speaker event / relationship / group DECISION   (owner=GROUP)\n                       *** WHO SAID IT IS NOT WHO IT BELONGS TO ***\n                       A decision announced by ONE person on behalf of the group is STILL a\n                       group decision: owner=GROUP, source=<the speaker>.\n                       Triggers: \"then it is settled\", \"so we agreed\", \"that is decided\",\n                       \"we will go with X\" -> owner=GROUP, layer=group_interaction,\n                       utype=decision. Do NOT file it as that speaker's personal preference.\n                       (A personal preference is \"I would rather X\"; a decision is \"X is settled\".)\n- group_insight        group NORM / consensus / meta-observation             (owner=GROUP)\n                       ONLY when the conversation gives evidence, note which member conspicuously\n                       relates to a norm differently. NEVER guess a member's compliance.\n\nACTIONS - exactly three, output nothing else\n  {\"action\":\"ADD\",\"owner\":\"<who it is ABOUT>\",\"source\":\"<who SAID/observed it>\",\"layer\":\"<one of the four above>\",\"utype\":\"fact|stance|observation|decision|relation\",\"content\":\"<the memory>\"}\n  {\"action\":\"UPDATE\",\"entry_id\":\"<existing entry being updated>\",\"content\":\"<the NEW, current state>\"}\n  {\"action\":\"NOOP\"}\n\nUPDATE BOUNDARIES (important)\n- *** BEFORE EVERY ADD, SEARCH CURRENT MEMORY FIRST *** Is there already an entry about this\n  same matter / same work item / same person-and-topic? If yes -> UPDATE that entry.\n  ADD is only for matters that NOTHING in CURRENT MEMORY covers yet.\n- Use UPDATE whenever an existing entry about the SAME MATTER has MOVED ON. Read this broadly:\n    * a number / percentage / progress advanced   e.g. 38% complete -> 97% complete\n    * a date or deadline shifted                  e.g. freeze 2025-06-20 -> 2025-06-27\n    * a status moved                              e.g. blocked -> resolved, planned -> shipped\n    * a stance / belief / plan changed\n    * a later, more specific statement supersedes an earlier vaguer one about the same item\n  It does NOT have to contradict the old entry. Any progression on the same item is an UPDATE.\n  A recurring behaviour observed AGAIN is also an UPDATE (record that it happened again).\n- *** THE NEW CONTENT MUST DIFFER SUBSTANTIVELY FROM THE ENTRY BEING UPDATED. *** If what you\n  would write is the same as the existing entry (same value, same status, same wording),\n  output NOOP - not UPDATE. An UPDATE that changes nothing is worse than no action: it buries\n  the real history under identical links.\n- entry_id MUST come from the CURRENT MEMORY list below.\n- Give ONLY the new state. How the old entry is preserved and chained is handled by the system.\n- Do NOT restate the old content (never write \"was X, now Y\" - write only Y).\n- Do NOT repeat owner / source / layer - the system reuses them from the updated entry.\n- DISAGREEMENT BETWEEN DIFFERENT PEOPLE is always separate ADDs. Never merge them via UPDATE.\n- ONE MATTER = ONE ENTRY. If a matter is ALREADY in CURRENT MEMORY - or you already wrote an\n  ADD for it EARLIER IN THIS SAME OUTPUT - never ADD a second entry for it: UPDATE it if its\n  state changed, otherwise output nothing. This holds for every kind of memory (not just\n  stances), for the GROUP row no matter who voices it this time, and however differently the\n  matter is worded. Merely re-stating / confirming / agreeing with something already listed is\n  not new state -> neither ADD nor UPDATE.\n\nGRANULARITY - PREFER FINE OVER COARSE (important)\n- One derived memory = ONE atomic fact / ONE stance / ONE observation.\n- If a person said N distinct things in this segment -> produce N entries, never one summary.\n  BAD : \"Mum's overall view on the 40th: wants a party, worried about budget, March is awkward\"\n  GOOD: three separate entries (celebration format / budget / timing)\n- But do NOT copy raw messages verbatim into derived memory (raw is already stored).\n\nCAPTURE BEHAVIOUR, NOT ONLY STATED FACTS\nExplicit facts (\"closed a Series A\", \"the code is 4-8-1-9\") are easy - you will not miss them.\nEqually important and far more often missed are IMPLICIT traits: a habit, an avoidance, a role\nsomeone keeps taking on, a subject someone never engages with, a way of replying that repeats,\nwho they defer to, what they joke about instead of answering.\n  e.g. \"deflects questions about his own career with a joke, then redirects to someone else\"\n       \"is always the one who handles logistics\" / \"never comments on anyone's promotion\"\nFile them as per_speaker_core (the person's own pattern) or per_speaker_profile (how others\nread them). Base them on what actually happened - describe the behaviour, never guess a motive.\nA pattern occurring AGAIN is NOT a duplicate, it is EVIDENCE: UPDATE that entry to record that\nit happened again (and when), instead of NOOP.\nSomeone who talks a lot but states few hard facts should still end up with entries - if a person\nspoke repeatedly this segment and you wrote nothing about them, you have missed their behaviour.\n\nOTHER CONSTRAINTS\n- owner = who the memory is ABOUT; source = who said/observed it.\n- If A claims something about B -> owner=B, source=A. Never file B's matter under A.\n- Invent nothing unsupported. Prefer faithful wording over paraphrase.\n- Write memory content in the SAME LANGUAGE as the conversation (so that retrieval embeddings\n  of memory and of raw text live in the same space).\n\nOutput JSON only, no explanation: {\"actions\":[ ... ]}"
+        },
+        {
+          "role": "user",
+          "content": "Speakers present: Nina, Omar\nSession: manual_update_beta_s04    Time: 2026-08-13T10:00:00Z\n\nCURRENT MEMORY (ALL derived memory of this group; each slot shows its LATEST state only)\nformat: <entry_id> [layer|owner(by source)@date] content\n  [Nina]\n    98333ad8 [core|Nina@2026-08-12] Nina tracks budget checkpoint 3\n  [Omar]\n    c46324d8 [core|Omar@2026-08-10] Omar owns the cost sheet\n  [GROUP]\n    d9fdebe9 [g-interaction|GROUP(by Nina)@2026-08-11] The team requires a signed supplier quote\n\nNEW MESSAGES IN THIS SEGMENT\n[Nina @ 2026-08-13T10:00:00Z] Budget checkpoint 4 is discussed.\n[Omar @ 2026-08-13T10:01:00Z] Omar owns the cost sheet.\n[Nina @ 2026-08-13T10:02:00Z] The supplier quote is under review.\n[Omar @ 2026-08-13T10:03:00Z] I will verify the tax line.\n[Nina @ 2026-08-13T10:04:00Z] The team needs a signed quote.\n\nHARD OUTPUT LIMIT: return at most 10 actions. Stop after the last NOVEL action, close the JSON immediately, and NEVER repeat an action already emitted in this output.\n\nOutput {\"actions\":[ ... ]}"
+        }
+      ],
+      "pre_state_text": "  [Nina]\n    98333ad8 [core|Nina@2026-08-12] Nina tracks budget checkpoint 3\n  [Omar]\n    c46324d8 [core|Omar@2026-08-10] Omar owns the cost sheet\n  [GROUP]\n    d9fdebe9 [g-interaction|GROUP(by Nina)@2026-08-11] The team requires a signed supplier quote",
+      "actions": [
+        {
+          "action": "UPDATE",
+          "entry_id": "98333ad8",
+          "content": "Nina tracks budget checkpoint 4"
+        }
+      ],
+      "target_text": "{\"actions\":[{\"action\":\"UPDATE\",\"entry_id\":\"98333ad8\",\"content\":\"Nina tracks budget checkpoint 4\"}]}",
+      "report": {
+        "json_valid": true,
+        "attempted": 1,
+        "applied": 1,
+        "noop": 0,
+        "errors": [],
+        "created_ids": [
+          "f4d36369"
+        ],
+        "updated_from": [
+          "98333ad8"
+        ],
+        "schema_valid_actions": 1,
+        "valid": true
+      },
+      "pre_state": {
+        "entries": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "Nina tracks the budget",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "9cb0fd76",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "98333ad8",
+            "entry_id": "d2ec4974"
+          },
+          {
+            "content": "The team requires a signed supplier quote",
+            "owner": "GROUP",
+            "source": "Nina",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "2d60e831",
+              "f45bdca7",
+              "e9371312"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d9fdebe9"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 3",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "ee64fc93",
+              "955dca7f",
+              "73be328e"
+            ],
+            "links": [
+              "d2ec4974"
+            ],
+            "superseded_by": "",
+            "entry_id": "98333ad8"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "The team requires a signed supplier quote",
+            "owner": "GROUP",
+            "source": "Nina",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "2d60e831",
+              "f45bdca7",
+              "e9371312"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d9fdebe9"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 3",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "ee64fc93",
+              "955dca7f",
+              "73be328e"
+            ],
+            "links": [
+              "d2ec4974"
+            ],
+            "superseded_by": "",
+            "entry_id": "98333ad8"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "d2ec4974",
+            "new": "98333ad8"
+          }
+        ],
+        "roster": [
+          "Nina",
+          "Omar"
+        ]
+      },
+      "post_state": {
+        "entries": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "Nina tracks the budget",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "9cb0fd76",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "98333ad8",
+            "entry_id": "d2ec4974"
+          },
+          {
+            "content": "The team requires a signed supplier quote",
+            "owner": "GROUP",
+            "source": "Nina",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "2d60e831",
+              "f45bdca7",
+              "e9371312"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d9fdebe9"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 3",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "ee64fc93",
+              "955dca7f",
+              "73be328e"
+            ],
+            "links": [
+              "d2ec4974"
+            ],
+            "superseded_by": "f4d36369",
+            "entry_id": "98333ad8"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 4",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "1484bc1c",
+              "6fa78f41",
+              "07c3049e"
+            ],
+            "links": [
+              "98333ad8"
+            ],
+            "superseded_by": "",
+            "entry_id": "f4d36369"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "The team requires a signed supplier quote",
+            "owner": "GROUP",
+            "source": "Nina",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "2d60e831",
+              "f45bdca7",
+              "e9371312"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d9fdebe9"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 4",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "1484bc1c",
+              "6fa78f41",
+              "07c3049e"
+            ],
+            "links": [
+              "98333ad8"
+            ],
+            "superseded_by": "",
+            "entry_id": "f4d36369"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "d2ec4974",
+            "new": "98333ad8"
+          },
+          {
+            "old": "98333ad8",
+            "new": "f4d36369"
+          }
+        ],
+        "roster": [
+          "Nina",
+          "Omar"
+        ]
+      },
+      "segment_index": 0,
+      "source_session_index": 3,
+      "metadata": {
+        "source_topic": "manual_topic_manual_update_beta_4"
+      }
+    },
+    {
+      "turn": 4,
+      "session_id": "manual_update_beta_s05",
+      "ts": "2026-08-14T10:00:00Z",
+      "messages": [
+        {
+          "speaker": "Nina",
+          "content": "Budget checkpoint 5 is discussed.",
+          "session": "manual_update_beta_s05",
+          "ts": "2026-08-14T10:00:00Z",
+          "msg_id": "0",
+          "meta": {}
+        },
+        {
+          "speaker": "Omar",
+          "content": "Omar owns the cost sheet.",
+          "session": "manual_update_beta_s05",
+          "ts": "2026-08-14T10:01:00Z",
+          "msg_id": "1",
+          "meta": {}
+        },
+        {
+          "speaker": "Nina",
+          "content": "The supplier quote is under review.",
+          "session": "manual_update_beta_s05",
+          "ts": "2026-08-14T10:02:00Z",
+          "msg_id": "2",
+          "meta": {}
+        },
+        {
+          "speaker": "Omar",
+          "content": "I will verify the tax line.",
+          "session": "manual_update_beta_s05",
+          "ts": "2026-08-14T10:03:00Z",
+          "msg_id": "3",
+          "meta": {}
+        },
+        {
+          "speaker": "Nina",
+          "content": "The team needs a signed quote.",
+          "session": "manual_update_beta_s05",
+          "ts": "2026-08-14T10:04:00Z",
+          "msg_id": "4",
+          "meta": {}
+        }
+      ],
+      "prompt": [
+        {
+          "role": "system",
+          "content": "You are an ONLINE memory manager for a MULTI-PARTY group chat, maintaining a speaker-indexed layered memory.\n\nPREMISE: every raw message of this segment is ALREADY stored VERBATIM (raw track). Your job is NOT to restate the raw text, but to add STRUCTURED derived memory on top of it, so that retrieval by person / relationship / time becomes possible.\n\nFOUR DERIVED LAYERS YOU MAY WRITE\n(raw messages are already written to per_speaker_episodic by the system - never produce that layer)\n- per_speaker_core     a person's STABLE fact / identity / hardened stance / RECURRING BEHAVIOUR\n- per_speaker_profile  how the group sees a person, or one person's OBSERVATION about another\n                       (\"A says B is X\" -> owner=B, source=A)\n- group_interaction    cross-speaker event / relationship / group DECISION   (owner=GROUP)\n                       *** WHO SAID IT IS NOT WHO IT BELONGS TO ***\n                       A decision announced by ONE person on behalf of the group is STILL a\n                       group decision: owner=GROUP, source=<the speaker>.\n                       Triggers: \"then it is settled\", \"so we agreed\", \"that is decided\",\n                       \"we will go with X\" -> owner=GROUP, layer=group_interaction,\n                       utype=decision. Do NOT file it as that speaker's personal preference.\n                       (A personal preference is \"I would rather X\"; a decision is \"X is settled\".)\n- group_insight        group NORM / consensus / meta-observation             (owner=GROUP)\n                       ONLY when the conversation gives evidence, note which member conspicuously\n                       relates to a norm differently. NEVER guess a member's compliance.\n\nACTIONS - exactly three, output nothing else\n  {\"action\":\"ADD\",\"owner\":\"<who it is ABOUT>\",\"source\":\"<who SAID/observed it>\",\"layer\":\"<one of the four above>\",\"utype\":\"fact|stance|observation|decision|relation\",\"content\":\"<the memory>\"}\n  {\"action\":\"UPDATE\",\"entry_id\":\"<existing entry being updated>\",\"content\":\"<the NEW, current state>\"}\n  {\"action\":\"NOOP\"}\n\nUPDATE BOUNDARIES (important)\n- *** BEFORE EVERY ADD, SEARCH CURRENT MEMORY FIRST *** Is there already an entry about this\n  same matter / same work item / same person-and-topic? If yes -> UPDATE that entry.\n  ADD is only for matters that NOTHING in CURRENT MEMORY covers yet.\n- Use UPDATE whenever an existing entry about the SAME MATTER has MOVED ON. Read this broadly:\n    * a number / percentage / progress advanced   e.g. 38% complete -> 97% complete\n    * a date or deadline shifted                  e.g. freeze 2025-06-20 -> 2025-06-27\n    * a status moved                              e.g. blocked -> resolved, planned -> shipped\n    * a stance / belief / plan changed\n    * a later, more specific statement supersedes an earlier vaguer one about the same item\n  It does NOT have to contradict the old entry. Any progression on the same item is an UPDATE.\n  A recurring behaviour observed AGAIN is also an UPDATE (record that it happened again).\n- *** THE NEW CONTENT MUST DIFFER SUBSTANTIVELY FROM THE ENTRY BEING UPDATED. *** If what you\n  would write is the same as the existing entry (same value, same status, same wording),\n  output NOOP - not UPDATE. An UPDATE that changes nothing is worse than no action: it buries\n  the real history under identical links.\n- entry_id MUST come from the CURRENT MEMORY list below.\n- Give ONLY the new state. How the old entry is preserved and chained is handled by the system.\n- Do NOT restate the old content (never write \"was X, now Y\" - write only Y).\n- Do NOT repeat owner / source / layer - the system reuses them from the updated entry.\n- DISAGREEMENT BETWEEN DIFFERENT PEOPLE is always separate ADDs. Never merge them via UPDATE.\n- ONE MATTER = ONE ENTRY. If a matter is ALREADY in CURRENT MEMORY - or you already wrote an\n  ADD for it EARLIER IN THIS SAME OUTPUT - never ADD a second entry for it: UPDATE it if its\n  state changed, otherwise output nothing. This holds for every kind of memory (not just\n  stances), for the GROUP row no matter who voices it this time, and however differently the\n  matter is worded. Merely re-stating / confirming / agreeing with something already listed is\n  not new state -> neither ADD nor UPDATE.\n\nGRANULARITY - PREFER FINE OVER COARSE (important)\n- One derived memory = ONE atomic fact / ONE stance / ONE observation.\n- If a person said N distinct things in this segment -> produce N entries, never one summary.\n  BAD : \"Mum's overall view on the 40th: wants a party, worried about budget, March is awkward\"\n  GOOD: three separate entries (celebration format / budget / timing)\n- But do NOT copy raw messages verbatim into derived memory (raw is already stored).\n\nCAPTURE BEHAVIOUR, NOT ONLY STATED FACTS\nExplicit facts (\"closed a Series A\", \"the code is 4-8-1-9\") are easy - you will not miss them.\nEqually important and far more often missed are IMPLICIT traits: a habit, an avoidance, a role\nsomeone keeps taking on, a subject someone never engages with, a way of replying that repeats,\nwho they defer to, what they joke about instead of answering.\n  e.g. \"deflects questions about his own career with a joke, then redirects to someone else\"\n       \"is always the one who handles logistics\" / \"never comments on anyone's promotion\"\nFile them as per_speaker_core (the person's own pattern) or per_speaker_profile (how others\nread them). Base them on what actually happened - describe the behaviour, never guess a motive.\nA pattern occurring AGAIN is NOT a duplicate, it is EVIDENCE: UPDATE that entry to record that\nit happened again (and when), instead of NOOP.\nSomeone who talks a lot but states few hard facts should still end up with entries - if a person\nspoke repeatedly this segment and you wrote nothing about them, you have missed their behaviour.\n\nOTHER CONSTRAINTS\n- owner = who the memory is ABOUT; source = who said/observed it.\n- If A claims something about B -> owner=B, source=A. Never file B's matter under A.\n- Invent nothing unsupported. Prefer faithful wording over paraphrase.\n- Write memory content in the SAME LANGUAGE as the conversation (so that retrieval embeddings\n  of memory and of raw text live in the same space).\n\nOutput JSON only, no explanation: {\"actions\":[ ... ]}"
+        },
+        {
+          "role": "user",
+          "content": "Speakers present: Nina, Omar\nSession: manual_update_beta_s05    Time: 2026-08-14T10:00:00Z\n\nCURRENT MEMORY (ALL derived memory of this group; each slot shows its LATEST state only)\nformat: <entry_id> [layer|owner(by source)@date] content\n  [Nina]\n    f4d36369 [core|Nina@2026-08-13] Nina tracks budget checkpoint 4\n  [Omar]\n    c46324d8 [core|Omar@2026-08-10] Omar owns the cost sheet\n  [GROUP]\n    d9fdebe9 [g-interaction|GROUP(by Nina)@2026-08-11] The team requires a signed supplier quote\n\nNEW MESSAGES IN THIS SEGMENT\n[Nina @ 2026-08-14T10:00:00Z] Budget checkpoint 5 is discussed.\n[Omar @ 2026-08-14T10:01:00Z] Omar owns the cost sheet.\n[Nina @ 2026-08-14T10:02:00Z] The supplier quote is under review.\n[Omar @ 2026-08-14T10:03:00Z] I will verify the tax line.\n[Nina @ 2026-08-14T10:04:00Z] The team needs a signed quote.\n\nHARD OUTPUT LIMIT: return at most 10 actions. Stop after the last NOVEL action, close the JSON immediately, and NEVER repeat an action already emitted in this output.\n\nOutput {\"actions\":[ ... ]}"
+        }
+      ],
+      "pre_state_text": "  [Nina]\n    f4d36369 [core|Nina@2026-08-13] Nina tracks budget checkpoint 4\n  [Omar]\n    c46324d8 [core|Omar@2026-08-10] Omar owns the cost sheet\n  [GROUP]\n    d9fdebe9 [g-interaction|GROUP(by Nina)@2026-08-11] The team requires a signed supplier quote",
+      "actions": [
+        {
+          "action": "UPDATE",
+          "entry_id": "f4d36369",
+          "content": "Nina tracks budget checkpoint 5"
+        }
+      ],
+      "target_text": "{\"actions\":[{\"action\":\"UPDATE\",\"entry_id\":\"f4d36369\",\"content\":\"Nina tracks budget checkpoint 5\"}]}",
+      "report": {
+        "json_valid": true,
+        "attempted": 1,
+        "applied": 1,
+        "noop": 0,
+        "errors": [],
+        "created_ids": [
+          "210dc46c"
+        ],
+        "updated_from": [
+          "f4d36369"
+        ],
+        "schema_valid_actions": 1,
+        "valid": true
+      },
+      "pre_state": {
+        "entries": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "Nina tracks the budget",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "9cb0fd76",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "98333ad8",
+            "entry_id": "d2ec4974"
+          },
+          {
+            "content": "The team requires a signed supplier quote",
+            "owner": "GROUP",
+            "source": "Nina",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "2d60e831",
+              "f45bdca7",
+              "e9371312"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d9fdebe9"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 3",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "ee64fc93",
+              "955dca7f",
+              "73be328e"
+            ],
+            "links": [
+              "d2ec4974"
+            ],
+            "superseded_by": "f4d36369",
+            "entry_id": "98333ad8"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 4",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "1484bc1c",
+              "6fa78f41",
+              "07c3049e"
+            ],
+            "links": [
+              "98333ad8"
+            ],
+            "superseded_by": "",
+            "entry_id": "f4d36369"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "The team requires a signed supplier quote",
+            "owner": "GROUP",
+            "source": "Nina",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "2d60e831",
+              "f45bdca7",
+              "e9371312"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d9fdebe9"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 4",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "1484bc1c",
+              "6fa78f41",
+              "07c3049e"
+            ],
+            "links": [
+              "98333ad8"
+            ],
+            "superseded_by": "",
+            "entry_id": "f4d36369"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "d2ec4974",
+            "new": "98333ad8"
+          },
+          {
+            "old": "98333ad8",
+            "new": "f4d36369"
+          }
+        ],
+        "roster": [
+          "Nina",
+          "Omar"
+        ]
+      },
+      "post_state": {
+        "entries": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "Nina tracks the budget",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "9cb0fd76",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "98333ad8",
+            "entry_id": "d2ec4974"
+          },
+          {
+            "content": "The team requires a signed supplier quote",
+            "owner": "GROUP",
+            "source": "Nina",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "2d60e831",
+              "f45bdca7",
+              "e9371312"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d9fdebe9"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 3",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "ee64fc93",
+              "955dca7f",
+              "73be328e"
+            ],
+            "links": [
+              "d2ec4974"
+            ],
+            "superseded_by": "f4d36369",
+            "entry_id": "98333ad8"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 4",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "1484bc1c",
+              "6fa78f41",
+              "07c3049e"
+            ],
+            "links": [
+              "98333ad8"
+            ],
+            "superseded_by": "210dc46c",
+            "entry_id": "f4d36369"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 5",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 4,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-14T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.9999999999999999,
+            "from_ids": [
+              "97fb15d8",
+              "d14d3b1c",
+              "10bee581"
+            ],
+            "links": [
+              "f4d36369"
+            ],
+            "superseded_by": "",
+            "entry_id": "210dc46c"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "The team requires a signed supplier quote",
+            "owner": "GROUP",
+            "source": "Nina",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "2d60e831",
+              "f45bdca7",
+              "e9371312"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d9fdebe9"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 5",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 4,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-14T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.9999999999999999,
+            "from_ids": [
+              "97fb15d8",
+              "d14d3b1c",
+              "10bee581"
+            ],
+            "links": [
+              "f4d36369"
+            ],
+            "superseded_by": "",
+            "entry_id": "210dc46c"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "d2ec4974",
+            "new": "98333ad8"
+          },
+          {
+            "old": "98333ad8",
+            "new": "f4d36369"
+          },
+          {
+            "old": "f4d36369",
+            "new": "210dc46c"
+          }
+        ],
+        "roster": [
+          "Nina",
+          "Omar"
+        ]
+      },
+      "segment_index": 0,
+      "source_session_index": 4,
+      "metadata": {
+        "source_topic": "manual_topic_manual_update_beta_5"
+      }
+    },
+    {
+      "turn": 5,
+      "session_id": "manual_update_beta_s06",
+      "ts": "2026-08-15T10:00:00Z",
+      "messages": [
+        {
+          "speaker": "Nina",
+          "content": "Budget checkpoint 6 is discussed.",
+          "session": "manual_update_beta_s06",
+          "ts": "2026-08-15T10:00:00Z",
+          "msg_id": "0",
+          "meta": {}
+        },
+        {
+          "speaker": "Omar",
+          "content": "Omar owns the cost sheet.",
+          "session": "manual_update_beta_s06",
+          "ts": "2026-08-15T10:01:00Z",
+          "msg_id": "1",
+          "meta": {}
+        },
+        {
+          "speaker": "Nina",
+          "content": "The supplier quote is under review.",
+          "session": "manual_update_beta_s06",
+          "ts": "2026-08-15T10:02:00Z",
+          "msg_id": "2",
+          "meta": {}
+        },
+        {
+          "speaker": "Omar",
+          "content": "I will verify the tax line.",
+          "session": "manual_update_beta_s06",
+          "ts": "2026-08-15T10:03:00Z",
+          "msg_id": "3",
+          "meta": {}
+        },
+        {
+          "speaker": "Nina",
+          "content": "The team needs a signed quote.",
+          "session": "manual_update_beta_s06",
+          "ts": "2026-08-15T10:04:00Z",
+          "msg_id": "4",
+          "meta": {}
+        }
+      ],
+      "prompt": [
+        {
+          "role": "system",
+          "content": "You are an ONLINE memory manager for a MULTI-PARTY group chat, maintaining a speaker-indexed layered memory.\n\nPREMISE: every raw message of this segment is ALREADY stored VERBATIM (raw track). Your job is NOT to restate the raw text, but to add STRUCTURED derived memory on top of it, so that retrieval by person / relationship / time becomes possible.\n\nFOUR DERIVED LAYERS YOU MAY WRITE\n(raw messages are already written to per_speaker_episodic by the system - never produce that layer)\n- per_speaker_core     a person's STABLE fact / identity / hardened stance / RECURRING BEHAVIOUR\n- per_speaker_profile  how the group sees a person, or one person's OBSERVATION about another\n                       (\"A says B is X\" -> owner=B, source=A)\n- group_interaction    cross-speaker event / relationship / group DECISION   (owner=GROUP)\n                       *** WHO SAID IT IS NOT WHO IT BELONGS TO ***\n                       A decision announced by ONE person on behalf of the group is STILL a\n                       group decision: owner=GROUP, source=<the speaker>.\n                       Triggers: \"then it is settled\", \"so we agreed\", \"that is decided\",\n                       \"we will go with X\" -> owner=GROUP, layer=group_interaction,\n                       utype=decision. Do NOT file it as that speaker's personal preference.\n                       (A personal preference is \"I would rather X\"; a decision is \"X is settled\".)\n- group_insight        group NORM / consensus / meta-observation             (owner=GROUP)\n                       ONLY when the conversation gives evidence, note which member conspicuously\n                       relates to a norm differently. NEVER guess a member's compliance.\n\nACTIONS - exactly three, output nothing else\n  {\"action\":\"ADD\",\"owner\":\"<who it is ABOUT>\",\"source\":\"<who SAID/observed it>\",\"layer\":\"<one of the four above>\",\"utype\":\"fact|stance|observation|decision|relation\",\"content\":\"<the memory>\"}\n  {\"action\":\"UPDATE\",\"entry_id\":\"<existing entry being updated>\",\"content\":\"<the NEW, current state>\"}\n  {\"action\":\"NOOP\"}\n\nUPDATE BOUNDARIES (important)\n- *** BEFORE EVERY ADD, SEARCH CURRENT MEMORY FIRST *** Is there already an entry about this\n  same matter / same work item / same person-and-topic? If yes -> UPDATE that entry.\n  ADD is only for matters that NOTHING in CURRENT MEMORY covers yet.\n- Use UPDATE whenever an existing entry about the SAME MATTER has MOVED ON. Read this broadly:\n    * a number / percentage / progress advanced   e.g. 38% complete -> 97% complete\n    * a date or deadline shifted                  e.g. freeze 2025-06-20 -> 2025-06-27\n    * a status moved                              e.g. blocked -> resolved, planned -> shipped\n    * a stance / belief / plan changed\n    * a later, more specific statement supersedes an earlier vaguer one about the same item\n  It does NOT have to contradict the old entry. Any progression on the same item is an UPDATE.\n  A recurring behaviour observed AGAIN is also an UPDATE (record that it happened again).\n- *** THE NEW CONTENT MUST DIFFER SUBSTANTIVELY FROM THE ENTRY BEING UPDATED. *** If what you\n  would write is the same as the existing entry (same value, same status, same wording),\n  output NOOP - not UPDATE. An UPDATE that changes nothing is worse than no action: it buries\n  the real history under identical links.\n- entry_id MUST come from the CURRENT MEMORY list below.\n- Give ONLY the new state. How the old entry is preserved and chained is handled by the system.\n- Do NOT restate the old content (never write \"was X, now Y\" - write only Y).\n- Do NOT repeat owner / source / layer - the system reuses them from the updated entry.\n- DISAGREEMENT BETWEEN DIFFERENT PEOPLE is always separate ADDs. Never merge them via UPDATE.\n- ONE MATTER = ONE ENTRY. If a matter is ALREADY in CURRENT MEMORY - or you already wrote an\n  ADD for it EARLIER IN THIS SAME OUTPUT - never ADD a second entry for it: UPDATE it if its\n  state changed, otherwise output nothing. This holds for every kind of memory (not just\n  stances), for the GROUP row no matter who voices it this time, and however differently the\n  matter is worded. Merely re-stating / confirming / agreeing with something already listed is\n  not new state -> neither ADD nor UPDATE.\n\nGRANULARITY - PREFER FINE OVER COARSE (important)\n- One derived memory = ONE atomic fact / ONE stance / ONE observation.\n- If a person said N distinct things in this segment -> produce N entries, never one summary.\n  BAD : \"Mum's overall view on the 40th: wants a party, worried about budget, March is awkward\"\n  GOOD: three separate entries (celebration format / budget / timing)\n- But do NOT copy raw messages verbatim into derived memory (raw is already stored).\n\nCAPTURE BEHAVIOUR, NOT ONLY STATED FACTS\nExplicit facts (\"closed a Series A\", \"the code is 4-8-1-9\") are easy - you will not miss them.\nEqually important and far more often missed are IMPLICIT traits: a habit, an avoidance, a role\nsomeone keeps taking on, a subject someone never engages with, a way of replying that repeats,\nwho they defer to, what they joke about instead of answering.\n  e.g. \"deflects questions about his own career with a joke, then redirects to someone else\"\n       \"is always the one who handles logistics\" / \"never comments on anyone's promotion\"\nFile them as per_speaker_core (the person's own pattern) or per_speaker_profile (how others\nread them). Base them on what actually happened - describe the behaviour, never guess a motive.\nA pattern occurring AGAIN is NOT a duplicate, it is EVIDENCE: UPDATE that entry to record that\nit happened again (and when), instead of NOOP.\nSomeone who talks a lot but states few hard facts should still end up with entries - if a person\nspoke repeatedly this segment and you wrote nothing about them, you have missed their behaviour.\n\nOTHER CONSTRAINTS\n- owner = who the memory is ABOUT; source = who said/observed it.\n- If A claims something about B -> owner=B, source=A. Never file B's matter under A.\n- Invent nothing unsupported. Prefer faithful wording over paraphrase.\n- Write memory content in the SAME LANGUAGE as the conversation (so that retrieval embeddings\n  of memory and of raw text live in the same space).\n\nOutput JSON only, no explanation: {\"actions\":[ ... ]}"
+        },
+        {
+          "role": "user",
+          "content": "Speakers present: Nina, Omar\nSession: manual_update_beta_s06    Time: 2026-08-15T10:00:00Z\n\nCURRENT MEMORY (ALL derived memory of this group; each slot shows its LATEST state only)\nformat: <entry_id> [layer|owner(by source)@date] content\n  [Nina]\n    210dc46c [core|Nina@2026-08-14] Nina tracks budget checkpoint 5\n  [Omar]\n    c46324d8 [core|Omar@2026-08-10] Omar owns the cost sheet\n  [GROUP]\n    d9fdebe9 [g-interaction|GROUP(by Nina)@2026-08-11] The team requires a signed supplier quote\n\nNEW MESSAGES IN THIS SEGMENT\n[Nina @ 2026-08-15T10:00:00Z] Budget checkpoint 6 is discussed.\n[Omar @ 2026-08-15T10:01:00Z] Omar owns the cost sheet.\n[Nina @ 2026-08-15T10:02:00Z] The supplier quote is under review.\n[Omar @ 2026-08-15T10:03:00Z] I will verify the tax line.\n[Nina @ 2026-08-15T10:04:00Z] The team needs a signed quote.\n\nHARD OUTPUT LIMIT: return at most 10 actions. Stop after the last NOVEL action, close the JSON immediately, and NEVER repeat an action already emitted in this output.\n\nOutput {\"actions\":[ ... ]}"
+        }
+      ],
+      "pre_state_text": "  [Nina]\n    210dc46c [core|Nina@2026-08-14] Nina tracks budget checkpoint 5\n  [Omar]\n    c46324d8 [core|Omar@2026-08-10] Omar owns the cost sheet\n  [GROUP]\n    d9fdebe9 [g-interaction|GROUP(by Nina)@2026-08-11] The team requires a signed supplier quote",
+      "actions": [
+        {
+          "action": "UPDATE",
+          "entry_id": "210dc46c",
+          "content": "Nina tracks budget checkpoint 6"
+        }
+      ],
+      "target_text": "{\"actions\":[{\"action\":\"UPDATE\",\"entry_id\":\"210dc46c\",\"content\":\"Nina tracks budget checkpoint 6\"}]}",
+      "report": {
+        "json_valid": true,
+        "attempted": 1,
+        "applied": 1,
+        "noop": 0,
+        "errors": [],
+        "created_ids": [
+          "b99e8103"
+        ],
+        "updated_from": [
+          "210dc46c"
+        ],
+        "schema_valid_actions": 1,
+        "valid": true
+      },
+      "pre_state": {
+        "entries": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "Nina tracks the budget",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "9cb0fd76",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "98333ad8",
+            "entry_id": "d2ec4974"
+          },
+          {
+            "content": "The team requires a signed supplier quote",
+            "owner": "GROUP",
+            "source": "Nina",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "2d60e831",
+              "f45bdca7",
+              "e9371312"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d9fdebe9"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 3",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "ee64fc93",
+              "955dca7f",
+              "73be328e"
+            ],
+            "links": [
+              "d2ec4974"
+            ],
+            "superseded_by": "f4d36369",
+            "entry_id": "98333ad8"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 4",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "1484bc1c",
+              "6fa78f41",
+              "07c3049e"
+            ],
+            "links": [
+              "98333ad8"
+            ],
+            "superseded_by": "210dc46c",
+            "entry_id": "f4d36369"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 5",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 4,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-14T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.9999999999999999,
+            "from_ids": [
+              "97fb15d8",
+              "d14d3b1c",
+              "10bee581"
+            ],
+            "links": [
+              "f4d36369"
+            ],
+            "superseded_by": "",
+            "entry_id": "210dc46c"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "The team requires a signed supplier quote",
+            "owner": "GROUP",
+            "source": "Nina",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "2d60e831",
+              "f45bdca7",
+              "e9371312"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d9fdebe9"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 5",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 4,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-14T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.9999999999999999,
+            "from_ids": [
+              "97fb15d8",
+              "d14d3b1c",
+              "10bee581"
+            ],
+            "links": [
+              "f4d36369"
+            ],
+            "superseded_by": "",
+            "entry_id": "210dc46c"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "d2ec4974",
+            "new": "98333ad8"
+          },
+          {
+            "old": "98333ad8",
+            "new": "f4d36369"
+          },
+          {
+            "old": "f4d36369",
+            "new": "210dc46c"
+          }
+        ],
+        "roster": [
+          "Nina",
+          "Omar"
+        ]
+      },
+      "post_state": {
+        "entries": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "Nina tracks the budget",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "9cb0fd76",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "98333ad8",
+            "entry_id": "d2ec4974"
+          },
+          {
+            "content": "The team requires a signed supplier quote",
+            "owner": "GROUP",
+            "source": "Nina",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "2d60e831",
+              "f45bdca7",
+              "e9371312"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d9fdebe9"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 3",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "ee64fc93",
+              "955dca7f",
+              "73be328e"
+            ],
+            "links": [
+              "d2ec4974"
+            ],
+            "superseded_by": "f4d36369",
+            "entry_id": "98333ad8"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 4",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "1484bc1c",
+              "6fa78f41",
+              "07c3049e"
+            ],
+            "links": [
+              "98333ad8"
+            ],
+            "superseded_by": "210dc46c",
+            "entry_id": "f4d36369"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 5",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 4,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-14T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.9999999999999999,
+            "from_ids": [
+              "97fb15d8",
+              "d14d3b1c",
+              "10bee581"
+            ],
+            "links": [
+              "f4d36369"
+            ],
+            "superseded_by": "b99e8103",
+            "entry_id": "210dc46c"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 6",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 5,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-15T10:00:00Z",
+            "utype": "decision",
+            "confidence": 1.0,
+            "from_ids": [
+              "2114330d",
+              "e773d21a",
+              "e5d87275"
+            ],
+            "links": [
+              "210dc46c"
+            ],
+            "superseded_by": "",
+            "entry_id": "b99e8103"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "The team requires a signed supplier quote",
+            "owner": "GROUP",
+            "source": "Nina",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "2d60e831",
+              "f45bdca7",
+              "e9371312"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d9fdebe9"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 6",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 5,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-15T10:00:00Z",
+            "utype": "decision",
+            "confidence": 1.0,
+            "from_ids": [
+              "2114330d",
+              "e773d21a",
+              "e5d87275"
+            ],
+            "links": [
+              "210dc46c"
+            ],
+            "superseded_by": "",
+            "entry_id": "b99e8103"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "d2ec4974",
+            "new": "98333ad8"
+          },
+          {
+            "old": "98333ad8",
+            "new": "f4d36369"
+          },
+          {
+            "old": "f4d36369",
+            "new": "210dc46c"
+          },
+          {
+            "old": "210dc46c",
+            "new": "b99e8103"
+          }
+        ],
+        "roster": [
+          "Nina",
+          "Omar"
+        ]
+      },
+      "segment_index": 0,
+      "source_session_index": 5,
+      "metadata": {
+        "source_topic": "manual_topic_manual_update_beta_6"
+      }
+    },
+    {
+      "turn": 6,
+      "session_id": "manual_update_beta_s07",
+      "ts": "2026-08-16T10:00:00Z",
+      "messages": [
+        {
+          "speaker": "Nina",
+          "content": "Budget checkpoint 7 is discussed.",
+          "session": "manual_update_beta_s07",
+          "ts": "2026-08-16T10:00:00Z",
+          "msg_id": "0",
+          "meta": {}
+        },
+        {
+          "speaker": "Omar",
+          "content": "Omar owns the cost sheet.",
+          "session": "manual_update_beta_s07",
+          "ts": "2026-08-16T10:01:00Z",
+          "msg_id": "1",
+          "meta": {}
+        },
+        {
+          "speaker": "Nina",
+          "content": "The supplier quote is under review.",
+          "session": "manual_update_beta_s07",
+          "ts": "2026-08-16T10:02:00Z",
+          "msg_id": "2",
+          "meta": {}
+        },
+        {
+          "speaker": "Omar",
+          "content": "I will verify the tax line.",
+          "session": "manual_update_beta_s07",
+          "ts": "2026-08-16T10:03:00Z",
+          "msg_id": "3",
+          "meta": {}
+        },
+        {
+          "speaker": "Nina",
+          "content": "The team needs a signed quote.",
+          "session": "manual_update_beta_s07",
+          "ts": "2026-08-16T10:04:00Z",
+          "msg_id": "4",
+          "meta": {}
+        }
+      ],
+      "prompt": [
+        {
+          "role": "system",
+          "content": "You are an ONLINE memory manager for a MULTI-PARTY group chat, maintaining a speaker-indexed layered memory.\n\nPREMISE: every raw message of this segment is ALREADY stored VERBATIM (raw track). Your job is NOT to restate the raw text, but to add STRUCTURED derived memory on top of it, so that retrieval by person / relationship / time becomes possible.\n\nFOUR DERIVED LAYERS YOU MAY WRITE\n(raw messages are already written to per_speaker_episodic by the system - never produce that layer)\n- per_speaker_core     a person's STABLE fact / identity / hardened stance / RECURRING BEHAVIOUR\n- per_speaker_profile  how the group sees a person, or one person's OBSERVATION about another\n                       (\"A says B is X\" -> owner=B, source=A)\n- group_interaction    cross-speaker event / relationship / group DECISION   (owner=GROUP)\n                       *** WHO SAID IT IS NOT WHO IT BELONGS TO ***\n                       A decision announced by ONE person on behalf of the group is STILL a\n                       group decision: owner=GROUP, source=<the speaker>.\n                       Triggers: \"then it is settled\", \"so we agreed\", \"that is decided\",\n                       \"we will go with X\" -> owner=GROUP, layer=group_interaction,\n                       utype=decision. Do NOT file it as that speaker's personal preference.\n                       (A personal preference is \"I would rather X\"; a decision is \"X is settled\".)\n- group_insight        group NORM / consensus / meta-observation             (owner=GROUP)\n                       ONLY when the conversation gives evidence, note which member conspicuously\n                       relates to a norm differently. NEVER guess a member's compliance.\n\nACTIONS - exactly three, output nothing else\n  {\"action\":\"ADD\",\"owner\":\"<who it is ABOUT>\",\"source\":\"<who SAID/observed it>\",\"layer\":\"<one of the four above>\",\"utype\":\"fact|stance|observation|decision|relation\",\"content\":\"<the memory>\"}\n  {\"action\":\"UPDATE\",\"entry_id\":\"<existing entry being updated>\",\"content\":\"<the NEW, current state>\"}\n  {\"action\":\"NOOP\"}\n\nUPDATE BOUNDARIES (important)\n- *** BEFORE EVERY ADD, SEARCH CURRENT MEMORY FIRST *** Is there already an entry about this\n  same matter / same work item / same person-and-topic? If yes -> UPDATE that entry.\n  ADD is only for matters that NOTHING in CURRENT MEMORY covers yet.\n- Use UPDATE whenever an existing entry about the SAME MATTER has MOVED ON. Read this broadly:\n    * a number / percentage / progress advanced   e.g. 38% complete -> 97% complete\n    * a date or deadline shifted                  e.g. freeze 2025-06-20 -> 2025-06-27\n    * a status moved                              e.g. blocked -> resolved, planned -> shipped\n    * a stance / belief / plan changed\n    * a later, more specific statement supersedes an earlier vaguer one about the same item\n  It does NOT have to contradict the old entry. Any progression on the same item is an UPDATE.\n  A recurring behaviour observed AGAIN is also an UPDATE (record that it happened again).\n- *** THE NEW CONTENT MUST DIFFER SUBSTANTIVELY FROM THE ENTRY BEING UPDATED. *** If what you\n  would write is the same as the existing entry (same value, same status, same wording),\n  output NOOP - not UPDATE. An UPDATE that changes nothing is worse than no action: it buries\n  the real history under identical links.\n- entry_id MUST come from the CURRENT MEMORY list below.\n- Give ONLY the new state. How the old entry is preserved and chained is handled by the system.\n- Do NOT restate the old content (never write \"was X, now Y\" - write only Y).\n- Do NOT repeat owner / source / layer - the system reuses them from the updated entry.\n- DISAGREEMENT BETWEEN DIFFERENT PEOPLE is always separate ADDs. Never merge them via UPDATE.\n- ONE MATTER = ONE ENTRY. If a matter is ALREADY in CURRENT MEMORY - or you already wrote an\n  ADD for it EARLIER IN THIS SAME OUTPUT - never ADD a second entry for it: UPDATE it if its\n  state changed, otherwise output nothing. This holds for every kind of memory (not just\n  stances), for the GROUP row no matter who voices it this time, and however differently the\n  matter is worded. Merely re-stating / confirming / agreeing with something already listed is\n  not new state -> neither ADD nor UPDATE.\n\nGRANULARITY - PREFER FINE OVER COARSE (important)\n- One derived memory = ONE atomic fact / ONE stance / ONE observation.\n- If a person said N distinct things in this segment -> produce N entries, never one summary.\n  BAD : \"Mum's overall view on the 40th: wants a party, worried about budget, March is awkward\"\n  GOOD: three separate entries (celebration format / budget / timing)\n- But do NOT copy raw messages verbatim into derived memory (raw is already stored).\n\nCAPTURE BEHAVIOUR, NOT ONLY STATED FACTS\nExplicit facts (\"closed a Series A\", \"the code is 4-8-1-9\") are easy - you will not miss them.\nEqually important and far more often missed are IMPLICIT traits: a habit, an avoidance, a role\nsomeone keeps taking on, a subject someone never engages with, a way of replying that repeats,\nwho they defer to, what they joke about instead of answering.\n  e.g. \"deflects questions about his own career with a joke, then redirects to someone else\"\n       \"is always the one who handles logistics\" / \"never comments on anyone's promotion\"\nFile them as per_speaker_core (the person's own pattern) or per_speaker_profile (how others\nread them). Base them on what actually happened - describe the behaviour, never guess a motive.\nA pattern occurring AGAIN is NOT a duplicate, it is EVIDENCE: UPDATE that entry to record that\nit happened again (and when), instead of NOOP.\nSomeone who talks a lot but states few hard facts should still end up with entries - if a person\nspoke repeatedly this segment and you wrote nothing about them, you have missed their behaviour.\n\nOTHER CONSTRAINTS\n- owner = who the memory is ABOUT; source = who said/observed it.\n- If A claims something about B -> owner=B, source=A. Never file B's matter under A.\n- Invent nothing unsupported. Prefer faithful wording over paraphrase.\n- Write memory content in the SAME LANGUAGE as the conversation (so that retrieval embeddings\n  of memory and of raw text live in the same space).\n\nOutput JSON only, no explanation: {\"actions\":[ ... ]}"
+        },
+        {
+          "role": "user",
+          "content": "Speakers present: Nina, Omar\nSession: manual_update_beta_s07    Time: 2026-08-16T10:00:00Z\n\nCURRENT MEMORY (ALL derived memory of this group; each slot shows its LATEST state only)\nformat: <entry_id> [layer|owner(by source)@date] content\n  [Nina]\n    b99e8103 [core|Nina@2026-08-15] Nina tracks budget checkpoint 6\n  [Omar]\n    c46324d8 [core|Omar@2026-08-10] Omar owns the cost sheet\n  [GROUP]\n    d9fdebe9 [g-interaction|GROUP(by Nina)@2026-08-11] The team requires a signed supplier quote\n\nNEW MESSAGES IN THIS SEGMENT\n[Nina @ 2026-08-16T10:00:00Z] Budget checkpoint 7 is discussed.\n[Omar @ 2026-08-16T10:01:00Z] Omar owns the cost sheet.\n[Nina @ 2026-08-16T10:02:00Z] The supplier quote is under review.\n[Omar @ 2026-08-16T10:03:00Z] I will verify the tax line.\n[Nina @ 2026-08-16T10:04:00Z] The team needs a signed quote.\n\nHARD OUTPUT LIMIT: return at most 10 actions. Stop after the last NOVEL action, close the JSON immediately, and NEVER repeat an action already emitted in this output.\n\nOutput {\"actions\":[ ... ]}"
+        }
+      ],
+      "pre_state_text": "  [Nina]\n    b99e8103 [core|Nina@2026-08-15] Nina tracks budget checkpoint 6\n  [Omar]\n    c46324d8 [core|Omar@2026-08-10] Omar owns the cost sheet\n  [GROUP]\n    d9fdebe9 [g-interaction|GROUP(by Nina)@2026-08-11] The team requires a signed supplier quote",
+      "actions": [
+        {
+          "action": "UPDATE",
+          "entry_id": "b99e8103",
+          "content": "Nina tracks budget checkpoint 7"
+        }
+      ],
+      "target_text": "{\"actions\":[{\"action\":\"UPDATE\",\"entry_id\":\"b99e8103\",\"content\":\"Nina tracks budget checkpoint 7\"}]}",
+      "report": {
+        "json_valid": true,
+        "attempted": 1,
+        "applied": 1,
+        "noop": 0,
+        "errors": [],
+        "created_ids": [
+          "e03660c7"
+        ],
+        "updated_from": [
+          "b99e8103"
+        ],
+        "schema_valid_actions": 1,
+        "valid": true
+      },
+      "pre_state": {
+        "entries": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "Nina tracks the budget",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "9cb0fd76",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "98333ad8",
+            "entry_id": "d2ec4974"
+          },
+          {
+            "content": "The team requires a signed supplier quote",
+            "owner": "GROUP",
+            "source": "Nina",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "2d60e831",
+              "f45bdca7",
+              "e9371312"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d9fdebe9"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 3",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "ee64fc93",
+              "955dca7f",
+              "73be328e"
+            ],
+            "links": [
+              "d2ec4974"
+            ],
+            "superseded_by": "f4d36369",
+            "entry_id": "98333ad8"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 4",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "1484bc1c",
+              "6fa78f41",
+              "07c3049e"
+            ],
+            "links": [
+              "98333ad8"
+            ],
+            "superseded_by": "210dc46c",
+            "entry_id": "f4d36369"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 5",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 4,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-14T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.9999999999999999,
+            "from_ids": [
+              "97fb15d8",
+              "d14d3b1c",
+              "10bee581"
+            ],
+            "links": [
+              "f4d36369"
+            ],
+            "superseded_by": "b99e8103",
+            "entry_id": "210dc46c"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 6",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 5,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-15T10:00:00Z",
+            "utype": "decision",
+            "confidence": 1.0,
+            "from_ids": [
+              "2114330d",
+              "e773d21a",
+              "e5d87275"
+            ],
+            "links": [
+              "210dc46c"
+            ],
+            "superseded_by": "",
+            "entry_id": "b99e8103"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "The team requires a signed supplier quote",
+            "owner": "GROUP",
+            "source": "Nina",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "2d60e831",
+              "f45bdca7",
+              "e9371312"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d9fdebe9"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 6",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 5,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-15T10:00:00Z",
+            "utype": "decision",
+            "confidence": 1.0,
+            "from_ids": [
+              "2114330d",
+              "e773d21a",
+              "e5d87275"
+            ],
+            "links": [
+              "210dc46c"
+            ],
+            "superseded_by": "",
+            "entry_id": "b99e8103"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "d2ec4974",
+            "new": "98333ad8"
+          },
+          {
+            "old": "98333ad8",
+            "new": "f4d36369"
+          },
+          {
+            "old": "f4d36369",
+            "new": "210dc46c"
+          },
+          {
+            "old": "210dc46c",
+            "new": "b99e8103"
+          }
+        ],
+        "roster": [
+          "Nina",
+          "Omar"
+        ]
+      },
+      "post_state": {
+        "entries": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "Nina tracks the budget",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "9cb0fd76",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "98333ad8",
+            "entry_id": "d2ec4974"
+          },
+          {
+            "content": "The team requires a signed supplier quote",
+            "owner": "GROUP",
+            "source": "Nina",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "2d60e831",
+              "f45bdca7",
+              "e9371312"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d9fdebe9"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 3",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "ee64fc93",
+              "955dca7f",
+              "73be328e"
+            ],
+            "links": [
+              "d2ec4974"
+            ],
+            "superseded_by": "f4d36369",
+            "entry_id": "98333ad8"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 4",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "1484bc1c",
+              "6fa78f41",
+              "07c3049e"
+            ],
+            "links": [
+              "98333ad8"
+            ],
+            "superseded_by": "210dc46c",
+            "entry_id": "f4d36369"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 5",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 4,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-14T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.9999999999999999,
+            "from_ids": [
+              "97fb15d8",
+              "d14d3b1c",
+              "10bee581"
+            ],
+            "links": [
+              "f4d36369"
+            ],
+            "superseded_by": "b99e8103",
+            "entry_id": "210dc46c"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 6",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 5,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-15T10:00:00Z",
+            "utype": "decision",
+            "confidence": 1.0,
+            "from_ids": [
+              "2114330d",
+              "e773d21a",
+              "e5d87275"
+            ],
+            "links": [
+              "210dc46c"
+            ],
+            "superseded_by": "e03660c7",
+            "entry_id": "b99e8103"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 7",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 6,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-16T10:00:00Z",
+            "utype": "decision",
+            "confidence": 1.0,
+            "from_ids": [
+              "4aee44ea",
+              "707024df",
+              "9f5ad246"
+            ],
+            "links": [
+              "b99e8103"
+            ],
+            "superseded_by": "",
+            "entry_id": "e03660c7"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Omar owns the cost sheet",
+            "owner": "Omar",
+            "source": "Omar",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "230861ed",
+              "5351afb5",
+              "d55a5e4d"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "c46324d8"
+          },
+          {
+            "content": "The team requires a signed supplier quote",
+            "owner": "GROUP",
+            "source": "Nina",
+            "layer": "group_interaction",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "2d60e831",
+              "f45bdca7",
+              "e9371312"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "d9fdebe9"
+          },
+          {
+            "content": "Nina tracks budget checkpoint 7",
+            "owner": "Nina",
+            "source": "Nina",
+            "layer": "per_speaker_core",
+            "turn_created": 6,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-16T10:00:00Z",
+            "utype": "decision",
+            "confidence": 1.0,
+            "from_ids": [
+              "4aee44ea",
+              "707024df",
+              "9f5ad246"
+            ],
+            "links": [
+              "b99e8103"
+            ],
+            "superseded_by": "",
+            "entry_id": "e03660c7"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "d2ec4974",
+            "new": "98333ad8"
+          },
+          {
+            "old": "98333ad8",
+            "new": "f4d36369"
+          },
+          {
+            "old": "f4d36369",
+            "new": "210dc46c"
+          },
+          {
+            "old": "210dc46c",
+            "new": "b99e8103"
+          },
+          {
+            "old": "b99e8103",
+            "new": "e03660c7"
+          }
+        ],
+        "roster": [
+          "Nina",
+          "Omar"
+        ]
+      },
+      "segment_index": 0,
+      "source_session_index": 6,
+      "metadata": {
+        "source_topic": "manual_topic_manual_update_beta_7"
+      }
+    }
+  ],
+  "final_state": {
+    "entries": [
+      {
+        "content": "Omar owns the cost sheet",
+        "owner": "Omar",
+        "source": "Omar",
+        "layer": "per_speaker_core",
+        "turn_created": 0,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-10T10:00:00Z",
+        "utype": "fact",
+        "confidence": 0.7,
+        "from_ids": [
+          "230861ed",
+          "5351afb5",
+          "d55a5e4d"
+        ],
+        "links": [],
+        "superseded_by": "",
+        "entry_id": "c46324d8"
+      },
+      {
+        "content": "Nina tracks the budget",
+        "owner": "Nina",
+        "source": "Nina",
+        "layer": "per_speaker_core",
+        "turn_created": 0,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-10T10:00:00Z",
+        "utype": "decision",
+        "confidence": 0.7,
+        "from_ids": [
+          "9cb0fd76",
+          "5351afb5",
+          "d55a5e4d"
+        ],
+        "links": [],
+        "superseded_by": "98333ad8",
+        "entry_id": "d2ec4974"
+      },
+      {
+        "content": "The team requires a signed supplier quote",
+        "owner": "GROUP",
+        "source": "Nina",
+        "layer": "group_interaction",
+        "turn_created": 1,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-11T10:00:00Z",
+        "utype": "decision",
+        "confidence": 0.7,
+        "from_ids": [
+          "2d60e831",
+          "f45bdca7",
+          "e9371312"
+        ],
+        "links": [],
+        "superseded_by": "",
+        "entry_id": "d9fdebe9"
+      },
+      {
+        "content": "Nina tracks budget checkpoint 3",
+        "owner": "Nina",
+        "source": "Nina",
+        "layer": "per_speaker_core",
+        "turn_created": 2,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-12T10:00:00Z",
+        "utype": "decision",
+        "confidence": 0.7999999999999999,
+        "from_ids": [
+          "ee64fc93",
+          "955dca7f",
+          "73be328e"
+        ],
+        "links": [
+          "d2ec4974"
+        ],
+        "superseded_by": "f4d36369",
+        "entry_id": "98333ad8"
+      },
+      {
+        "content": "Nina tracks budget checkpoint 4",
+        "owner": "Nina",
+        "source": "Nina",
+        "layer": "per_speaker_core",
+        "turn_created": 3,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-13T10:00:00Z",
+        "utype": "decision",
+        "confidence": 0.8999999999999999,
+        "from_ids": [
+          "1484bc1c",
+          "6fa78f41",
+          "07c3049e"
+        ],
+        "links": [
+          "98333ad8"
+        ],
+        "superseded_by": "210dc46c",
+        "entry_id": "f4d36369"
+      },
+      {
+        "content": "Nina tracks budget checkpoint 5",
+        "owner": "Nina",
+        "source": "Nina",
+        "layer": "per_speaker_core",
+        "turn_created": 4,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-14T10:00:00Z",
+        "utype": "decision",
+        "confidence": 0.9999999999999999,
+        "from_ids": [
+          "97fb15d8",
+          "d14d3b1c",
+          "10bee581"
+        ],
+        "links": [
+          "f4d36369"
+        ],
+        "superseded_by": "b99e8103",
+        "entry_id": "210dc46c"
+      },
+      {
+        "content": "Nina tracks budget checkpoint 6",
+        "owner": "Nina",
+        "source": "Nina",
+        "layer": "per_speaker_core",
+        "turn_created": 5,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-15T10:00:00Z",
+        "utype": "decision",
+        "confidence": 1.0,
+        "from_ids": [
+          "2114330d",
+          "e773d21a",
+          "e5d87275"
+        ],
+        "links": [
+          "210dc46c"
+        ],
+        "superseded_by": "e03660c7",
+        "entry_id": "b99e8103"
+      },
+      {
+        "content": "Nina tracks budget checkpoint 7",
+        "owner": "Nina",
+        "source": "Nina",
+        "layer": "per_speaker_core",
+        "turn_created": 6,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-16T10:00:00Z",
+        "utype": "decision",
+        "confidence": 1.0,
+        "from_ids": [
+          "4aee44ea",
+          "707024df",
+          "9f5ad246"
+        ],
+        "links": [
+          "b99e8103"
+        ],
+        "superseded_by": "",
+        "entry_id": "e03660c7"
+      }
+    ],
+    "heads": [
+      {
+        "content": "Omar owns the cost sheet",
+        "owner": "Omar",
+        "source": "Omar",
+        "layer": "per_speaker_core",
+        "turn_created": 0,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-10T10:00:00Z",
+        "utype": "fact",
+        "confidence": 0.7,
+        "from_ids": [
+          "230861ed",
+          "5351afb5",
+          "d55a5e4d"
+        ],
+        "links": [],
+        "superseded_by": "",
+        "entry_id": "c46324d8"
+      },
+      {
+        "content": "The team requires a signed supplier quote",
+        "owner": "GROUP",
+        "source": "Nina",
+        "layer": "group_interaction",
+        "turn_created": 1,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-11T10:00:00Z",
+        "utype": "decision",
+        "confidence": 0.7,
+        "from_ids": [
+          "2d60e831",
+          "f45bdca7",
+          "e9371312"
+        ],
+        "links": [],
+        "superseded_by": "",
+        "entry_id": "d9fdebe9"
+      },
+      {
+        "content": "Nina tracks budget checkpoint 7",
+        "owner": "Nina",
+        "source": "Nina",
+        "layer": "per_speaker_core",
+        "turn_created": 6,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-16T10:00:00Z",
+        "utype": "decision",
+        "confidence": 1.0,
+        "from_ids": [
+          "4aee44ea",
+          "707024df",
+          "9f5ad246"
+        ],
+        "links": [
+          "b99e8103"
+        ],
+        "superseded_by": "",
+        "entry_id": "e03660c7"
+      }
+    ],
+    "update_edges": [
+      {
+        "old": "d2ec4974",
+        "new": "98333ad8"
+      },
+      {
+        "old": "98333ad8",
+        "new": "f4d36369"
+      },
+      {
+        "old": "f4d36369",
+        "new": "210dc46c"
+      },
+      {
+        "old": "210dc46c",
+        "new": "b99e8103"
+      },
+      {
+        "old": "b99e8103",
+        "new": "e03660c7"
+      }
+    ],
+    "roster": [
+      "Nina",
+      "Omar"
+    ]
+  },
+  "qa_pairs": [
+    {
+      "id": "q1",
+      "category": "update",
+      "question": "Who owns the cost sheet?",
+      "answer": "Omar owns the cost sheet.",
+      "difficulty": "medium",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "manual_update_beta_s01_t001",
+          "speaker_display_name": "Omar",
+          "message_excerpt": "Omar owns the cost sheet.",
+          "relevance": "Direct ownership statement."
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "q2",
+      "category": "update",
+      "question": "Which budget checkpoint is the latest one recorded?",
+      "answer": "The latest recorded checkpoint is checkpoint 7.",
+      "difficulty": "medium",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 7,
+          "turn_id": "manual_update_beta_s07_t000",
+          "speaker_display_name": "Nina",
+          "message_excerpt": "Budget checkpoint 7 is discussed.",
+          "relevance": "Direct evidence for the latest checkpoint number."
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "q3",
+      "category": "group",
+      "question": "What did the team require from the supplier?",
+      "answer": "A signed supplier quote.",
+      "difficulty": "medium",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "manual_update_beta_s01_t004",
+          "speaker_display_name": "Nina",
+          "message_excerpt": "The team needs a signed quote.",
+          "relevance": "Direct supplier-quote requirement."
+        }
+      ],
+      "temporal_anchors": []
+    }
+  ],
+  "stats": {
+    "transitions": 7,
+    "actions": {
+      "ADD": 3,
+      "UPDATE": 5
+    },
+    "derived_entries": 8,
+    "update_edges": 5
+  }
+}

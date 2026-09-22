@@ -1,0 +1,47 @@
+{
+  "hf_repo": "EverMind-AI/EverMemBench-Dynamic",
+  "configs": {
+    "dialogues": {
+      "行数": 1263,
+      "字段": [
+        "topic_id",
+        "date",
+        "dialogues"
+      ],
+      "文件": "dialogues.jsonl"
+    },
+    "qars": {
+      "行数": 2400,
+      "字段": [
+        "topic_id",
+        "id",
+        "Q",
+        "A",
+        "R",
+        "options"
+      ],
+      "文件": "qars.jsonl"
+    },
+    "profiles": {
+      "行数": 170,
+      "字段": [
+        "Name",
+        "ID",
+        "Gender",
+        "Age",
+        "Education",
+        "Major",
+        "Dept",
+        "Title",
+        "Rank",
+        "Tenure",
+        "Skills_List",
+        "Communication_Profile",
+        "Big_Five_Profile",
+        "Interests",
+        "Marital_Status"
+      ],
+      "文件": "profiles.jsonl"
+    }
+  }
+}

@@ -1,0 +1,879 @@
+{
+  "schema": "socialmembench-real-v4-source/1",
+  "scenario": "[socialmembench:grp_2b3c4d5e] real benchmark conversation",
+  "speakers": [
+    "Adaora",
+    "Chidi",
+    "Emeka",
+    "Ngozi",
+    "Tobenna"
+  ],
+  "sessions": [
+    {
+      "session_id": "grp_2b3c4d5e_s01",
+      "session_index": 1,
+      "topic": "Early Christmas planning and travel pressure",
+      "ts": "2025-02-03",
+      "turns": [
+        {
+          "turn": "grp_2b3c4d5e_s01_t000",
+          "speaker": "Ngozi",
+          "speaker_id": "p_b3c4d5e6",
+          "content": "My darlings 🙌 we need to start planning for Christmas. Your father and I are expecting everyone home this year",
+          "ts": "2025-02-03T14:11:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_2b3c4d5e_s01_t001",
+          "speaker": "Tobenna",
+          "speaker_id": "p_e6f7a8b9",
+          "content": "YES 🎄🎄🎄 I'm there!!",
+          "ts": "2025-02-03T14:13:00",
+          "reply_to": "grp_2b3c4d5e_s01_t000"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s01_t002",
+          "speaker": "Emeka",
+          "speaker_id": "p_c4d5e6f7",
+          "content": "We'll see what Adaeze's schedule looks like 😊 should know more in a few weeks",
+          "ts": "2025-02-03T14:18:00",
+          "reply_to": "grp_2b3c4d5e_s01_t000"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s01_t003",
+          "speaker": "Adaora",
+          "speaker_id": "p_d5e6f7a8",
+          "content": "I mean I can try to come. Depends on thesis deadlines",
+          "ts": "2025-02-03T14:21:00",
+          "reply_to": "grp_2b3c4d5e_s01_t000"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s01_t004",
+          "speaker": "Ngozi",
+          "speaker_id": "p_b3c4d5e6",
+          "content": "Adaora I will be making egusi, jollof, the full thing. You know I cook for three days before Christmas 😂❤️",
+          "ts": "2025-02-03T14:22:00",
+          "reply_to": "grp_2b3c4d5e_s01_t003"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s01_t005",
+          "speaker": "Adaora",
+          "speaker_id": "p_d5e6f7a8",
+          "content": "Mum that's so much food. Do you have to do all of that?",
+          "ts": "2025-02-03T14:25:00",
+          "reply_to": "grp_2b3c4d5e_s01_t004"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s01_t006",
+          "speaker": "Ngozi",
+          "speaker_id": "p_b3c4d5e6",
+          "content": "Of course! My family must eat well 😂 Tobenna you're eating for three when you come",
+          "ts": "2025-02-03T14:26:00",
+          "reply_to": "grp_2b3c4d5e_s01_t005"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s01_t007",
+          "speaker": "Tobenna",
+          "speaker_id": "p_e6f7a8b9",
+          "content": "Already am 😂😂",
+          "ts": "2025-02-03T14:27:00",
+          "reply_to": "grp_2b3c4d5e_s01_t006"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s01_t008",
+          "speaker": "Chidi",
+          "speaker_id": "p_a2b3c4d5",
+          "content": "Emeka. Confirm your dates.",
+          "ts": "2025-02-03T15:44:00",
+          "reply_to": "grp_2b3c4d5e_s01_t002"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s01_t009",
+          "speaker": "Emeka",
+          "speaker_id": "p_c4d5e6f7",
+          "content": "Will do Dad 😊 Give me a couple of weeks to check with Adaeze",
+          "ts": "2025-02-03T15:51:00",
+          "reply_to": "grp_2b3c4d5e_s01_t008"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s01_t010",
+          "speaker": "Adaora",
+          "speaker_id": "p_d5e6f7a8",
+          "content": "I mean thesis doesn't really pause for Christmas so I genuinely don't know yet",
+          "ts": "2025-02-03T15:55:00",
+          "reply_to": "grp_2b3c4d5e_s01_t008"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s01_t011",
+          "speaker": "Ngozi",
+          "speaker_id": "p_b3c4d5e6",
+          "content": "Adaora your thesis can wait two days my love. Christmas cannot wait 😂❤️",
+          "ts": "2025-02-03T15:57:00",
+          "reply_to": "grp_2b3c4d5e_s01_t010"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s01_t012",
+          "speaker": "Tobenna",
+          "speaker_id": "p_e6f7a8b9",
+          "content": "Ada COME ON 🙏🙏",
+          "ts": "2025-02-03T15:59:00",
+          "reply_to": "grp_2b3c4d5e_s01_t010"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s01_t013",
+          "speaker": "Adaora",
+          "speaker_id": "p_d5e6f7a8",
+          "content": "Fine. I'll try. No promises on exact days yet",
+          "ts": "2025-02-03T16:01:00",
+          "reply_to": "grp_2b3c4d5e_s01_t012"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_2b3c4d5e_s02",
+      "session_index": 2,
+      "topic": "Ngozi shares cooking update; family reacts",
+      "ts": "2025-02-10",
+      "turns": [
+        {
+          "turn": "grp_2b3c4d5e_s02_t000",
+          "speaker": "Ngozi",
+          "speaker_id": "p_b3c4d5e6",
+          "content": "My people 🥰 I made the pepper soup today. Tobenna your uncle said it didn't taste the same but I don't know what he is talking about",
+          "ts": "2025-02-10T19:38:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_2b3c4d5e_s02_t001",
+          "speaker": "Tobenna",
+          "speaker_id": "p_e6f7a8b9",
+          "content": "Uncle Emmanuel is WRONG 😂 your pepper soup is perfect mum",
+          "ts": "2025-02-10T19:39:00",
+          "reply_to": "grp_2b3c4d5e_s02_t000"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s02_t002",
+          "speaker": "Emeka",
+          "speaker_id": "p_c4d5e6f7",
+          "content": "Mum has it changed at all lately? I noticed last time it was slightly lighter than usual",
+          "ts": "2025-02-10T19:41:00",
+          "reply_to": "grp_2b3c4d5e_s02_t000"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s02_t003",
+          "speaker": "Ngozi",
+          "speaker_id": "p_b3c4d5e6",
+          "content": "I don't know what yu mean. Same recipee as always 😂😂 maybe ur taste buds are changing",
+          "ts": "2025-02-10T19:43:00",
+          "reply_to": "grp_2b3c4d5e_s02_t002"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s02_t004",
+          "speaker": "Adaora",
+          "speaker_id": "p_d5e6f7a8",
+          "content": "Emeka noticed it too? I thought it was just me from last time, like maybe Mum quietly changed the recipe and didn't want any of us saying it out loud",
+          "ts": "2025-02-10T19:45:00",
+          "reply_to": "grp_2b3c4d5e_s02_t003"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s02_t005",
+          "speaker": "Emeka",
+          "speaker_id": "p_c4d5e6f7",
+          "content": "Yeah. Less seasoning I think. Mum might have been told to ease off the salt 😊",
+          "ts": "2025-02-10T19:47:00",
+          "reply_to": "grp_2b3c4d5e_s02_t004"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s02_t006",
+          "speaker": "Ngozi",
+          "speaker_id": "p_b3c4d5e6",
+          "content": "Emeka what are you saying 😂😂 the soup is fine!!",
+          "ts": "2025-02-10T19:48:00",
+          "reply_to": "grp_2b3c4d5e_s02_t005"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s02_t007",
+          "speaker": "Tobenna",
+          "speaker_id": "p_e6f7a8b9",
+          "content": "I would eat it regardless 😂 unconditional support for the soup",
+          "ts": "2025-02-10T19:49:00",
+          "reply_to": "grp_2b3c4d5e_s02_t006"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s02_t008",
+          "speaker": "Adaora",
+          "speaker_id": "p_d5e6f7a8",
+          "content": "Tobenna would eat concrete if Mum made it",
+          "ts": "2025-02-10T19:51:00",
+          "reply_to": "grp_2b3c4d5e_s02_t007"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s02_t009",
+          "speaker": "Chidi",
+          "speaker_id": "p_a2b3c4d5",
+          "content": "The soup was fine.",
+          "ts": "2025-02-10T20:22:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_2b3c4d5e_s02_t010",
+          "speaker": "Ngozi",
+          "speaker_id": "p_b3c4d5e6",
+          "content": "Thank you my husband 😂❤️",
+          "ts": "2025-02-10T20:23:00",
+          "reply_to": "grp_2b3c4d5e_s02_t009"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s02_t011",
+          "speaker": "Emeka",
+          "speaker_id": "p_c4d5e6f7",
+          "content": "Dad always has the final word 😊",
+          "ts": "2025-02-10T20:25:00",
+          "reply_to": "grp_2b3c4d5e_s02_t010"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s02_t012",
+          "speaker": "Tobenna",
+          "speaker_id": "p_e6f7a8b9",
+          "content": "court is in session 👨‍⚖️",
+          "ts": "2025-02-10T20:26:00",
+          "reply_to": "grp_2b3c4d5e_s02_t011"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_2b3c4d5e_s03",
+      "session_index": 3,
+      "topic": "Chidi's surprise London visit and Tobenna's job dodge",
+      "ts": "2025-02-17",
+      "turns": [
+        {
+          "turn": "grp_2b3c4d5e_s03_t000",
+          "speaker": "Ngozi",
+          "speaker_id": "p_b3c4d5e6",
+          "content": "My darlings 🥰 your father says maybe he will come to London in March. I nearly fell off my chair",
+          "ts": "2025-02-17T11:04:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_2b3c4d5e_s03_t001",
+          "speaker": "Tobenna",
+          "speaker_id": "p_e6f7a8b9",
+          "content": "WAIT WHAT 😱😱",
+          "ts": "2025-02-17T11:05:00",
+          "reply_to": "grp_2b3c4d5e_s03_t000"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s03_t002",
+          "speaker": "Emeka",
+          "speaker_id": "p_c4d5e6f7",
+          "content": "Dad coming to London?? 😊 That would be great, we'd love to host",
+          "ts": "2025-02-17T11:07:00",
+          "reply_to": "grp_2b3c4d5e_s03_t000"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s03_t003",
+          "speaker": "Adaora",
+          "speaker_id": "p_d5e6f7a8",
+          "content": "I mean this is basically a miracle. Is he ok?",
+          "ts": "2025-02-17T11:09:00",
+          "reply_to": "grp_2b3c4d5e_s03_t000"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s03_t004",
+          "speaker": "Ngozi",
+          "speaker_id": "p_b3c4d5e6",
+          "content": "He is fine my love, just felt like a visit 😊 He had a small checkup last week and I think it reminded him life is short you know",
+          "ts": "2025-02-17T11:11:00",
+          "reply_to": "grp_2b3c4d5e_s03_t003"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s03_t005",
+          "speaker": "Chidi",
+          "speaker_id": "p_a2b3c4d5",
+          "content": "I will come in March. Ngozi should not have announced it like a news broadcast.",
+          "ts": "2025-02-17T11:28:00",
+          "reply_to": "grp_2b3c4d5e_s03_t004"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s03_t006",
+          "speaker": "Tobenna",
+          "speaker_id": "p_e6f7a8b9",
+          "content": "😂😂😂 Dad we are HAPPY about it",
+          "ts": "2025-02-17T11:29:00",
+          "reply_to": "grp_2b3c4d5e_s03_t005"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s03_t007",
+          "speaker": "Ngozi",
+          "speaker_id": "p_b3c4d5e6",
+          "content": "Chidi I can announce what I like in my own chat 😂😂 Tobenna how is the job search going my love?",
+          "ts": "2025-02-17T11:30:00",
+          "reply_to": "grp_2b3c4d5e_s03_t006"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s03_t008",
+          "speaker": "Tobenna",
+          "speaker_id": "p_e6f7a8b9",
+          "content": "🙈🙈 Did anyone watch the Arsenal game?",
+          "ts": "2025-02-17T11:31:00",
+          "reply_to": "grp_2b3c4d5e_s03_t007"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s03_t009",
+          "speaker": "Adaora",
+          "speaker_id": "p_d5e6f7a8",
+          "content": "Tobenna. Come on.",
+          "ts": "2025-02-17T11:33:00",
+          "reply_to": "grp_2b3c4d5e_s03_t008"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s03_t010",
+          "speaker": "Tobenna",
+          "speaker_id": "p_e6f7a8b9",
+          "content": "Ada 🙏 I'll update when there's something to update ok?",
+          "ts": "2025-02-17T11:34:00",
+          "reply_to": "grp_2b3c4d5e_s03_t009"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s03_t011",
+          "speaker": "Ngozi",
+          "speaker_id": "p_b3c4d5e6",
+          "content": "Ok my love. We are here whenever you are ready ❤️",
+          "ts": "2025-02-17T11:35:00",
+          "reply_to": "grp_2b3c4d5e_s03_t010"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_2b3c4d5e_s04",
+      "session_index": 4,
+      "topic": "Adaora's thesis stress and Christmas menu friction",
+      "ts": "2025-02-24",
+      "turns": [
+        {
+          "turn": "grp_2b3c4d5e_s04_t000",
+          "speaker": "Ngozi",
+          "speaker_id": "p_b3c4d5e6",
+          "content": "My darlings 🥰 Adaora how is the thesis going? You have been so quiet this week and I know that means stress. Also before I forget, tell me what you want me to cook for Christmas. Emeka I know you want the goat 😂",
+          "ts": "2025-02-24T18:55:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_2b3c4d5e_s04_t001",
+          "speaker": "Adaora",
+          "speaker_id": "p_d5e6f7a8",
+          "content": "Thesis is... a lot right now honestly. My supervisor wants a full chapter draft by end of March and I'm not even close. I mean it's fine, I'll figure it out. Just not sleeping much.",
+          "ts": "2025-02-24T18:58:00",
+          "reply_to": "grp_2b3c4d5e_s04_t000"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s04_t002",
+          "speaker": "Emeka",
+          "speaker_id": "p_c4d5e6f7",
+          "content": "End of March is tight. Are you getting any proper breaks in? 😊 And yes Mum, goat and jollof obviously",
+          "ts": "2025-02-24T19:01:00",
+          "reply_to": "grp_2b3c4d5e_s04_t000"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s04_t003",
+          "speaker": "Adaora",
+          "speaker_id": "p_d5e6f7a8",
+          "content": "Mum could you maybe do something with beans this year? Like moi moi? Or akara?",
+          "ts": "2025-02-24T19:08:00",
+          "reply_to": "grp_2b3c4d5e_s04_t000"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s04_t004",
+          "speaker": "Ngozi",
+          "speaker_id": "p_b3c4d5e6",
+          "content": "Of course I will make moi moi! I always do. You will also eat the goat Adaora 😂 Tobenna what do you want?",
+          "ts": "2025-02-24T19:09:00",
+          "reply_to": "grp_2b3c4d5e_s04_t003"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s04_t005",
+          "speaker": "Tobenna",
+          "speaker_id": "p_e6f7a8b9",
+          "content": "suya and fried plantain always 😍😍 also Ada are you ok?",
+          "ts": "2025-02-24T19:10:00",
+          "reply_to": "grp_2b3c4d5e_s04_t004"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s04_t006",
+          "speaker": "Adaora",
+          "speaker_id": "p_d5e6f7a8",
+          "content": "I mean I'll have whatever there is, just suggesting the beans side would be nice",
+          "ts": "2025-02-24T19:11:00",
+          "reply_to": "grp_2b3c4d5e_s04_t005"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s04_t007",
+          "speaker": "Tobenna",
+          "speaker_id": "p_e6f7a8b9",
+          "content": "Ada you ok 😂 you love goat",
+          "ts": "2025-02-24T19:12:00",
+          "reply_to": "grp_2b3c4d5e_s04_t006"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s04_t008",
+          "speaker": "Adaora",
+          "speaker_id": "p_d5e6f7a8",
+          "content": "Tobe. Just let me have the beans ok 😂 and Mum don't start monitoring my sleep from the group chat, it's under control",
+          "ts": "2025-02-24T19:14:00",
+          "reply_to": "grp_2b3c4d5e_s04_t007"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s04_t009",
+          "speaker": "Emeka",
+          "speaker_id": "p_c4d5e6f7",
+          "content": "Mum Adaeze has a work thing on the 24th, we might arrive the 25th morning, is that ok? 😊",
+          "ts": "2025-02-24T19:16:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_2b3c4d5e_s04_t009b",
+          "speaker": "Ngozi",
+          "speaker_id": "p_b3c4d5e6",
+          "content": "Emeka!! Christmas morning you must be here before we open gifts!! Please 🙏🙏",
+          "ts": "2025-02-24T19:17:00",
+          "reply_to": "grp_2b3c4d5e_s04_t009"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s04_t010",
+          "speaker": "Chidi",
+          "speaker_id": "p_a2b3c4d5",
+          "content": "Emeka. You are coming on Christmas Eve.",
+          "ts": "2025-02-24T19:45:00",
+          "reply_to": "grp_2b3c4d5e_s04_t009"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s04_t011",
+          "speaker": "Emeka",
+          "speaker_id": "p_c4d5e6f7",
+          "content": "Yes Dad 😊 we'll make it work",
+          "ts": "2025-02-24T19:49:00",
+          "reply_to": "grp_2b3c4d5e_s04_t010"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s04_t012",
+          "speaker": "Tobenna",
+          "speaker_id": "p_e6f7a8b9",
+          "content": "see you all there 🎄🎄",
+          "ts": "2025-02-24T19:50:00",
+          "reply_to": "grp_2b3c4d5e_s04_t011"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_2b3c4d5e_s05",
+      "session_index": 5,
+      "topic": "Adaora tries to manage Christmas food while Tobenna dodges job talk",
+      "ts": "2025-03-03",
+      "turns": [
+        {
+          "turn": "grp_2b3c4d5e_s05_t000",
+          "speaker": "Ngozi",
+          "speaker_id": "p_b3c4d5e6",
+          "content": "My people ❤️ Tobenna my love did you get that job update you were waiting for? I keep thinking about you. And Adaora are you sleeping at all? 🙏",
+          "ts": "2025-03-03T20:22:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_2b3c4d5e_s05_t001",
+          "speaker": "Tobenna",
+          "speaker_id": "p_e6f7a8b9",
+          "content": "Not yet Mum 🙏 soon though I think. Ada is definitely not sleeping though look at the hours she messages me",
+          "ts": "2025-03-03T20:23:00",
+          "reply_to": "grp_2b3c4d5e_s05_t000"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s05_t002",
+          "speaker": "Adaora",
+          "speaker_id": "p_d5e6f7a8",
+          "content": "Mum I wanted to mention something. For Christmas I was thinking of bringing a dish actually. A lentil thing I've been making",
+          "ts": "2025-03-03T20:25:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_2b3c4d5e_s05_t003",
+          "speaker": "Ngozi",
+          "speaker_id": "p_b3c4d5e6",
+          "content": "Adaora I am cooking! You don't need to bring anything 😂❤️",
+          "ts": "2025-03-03T20:26:00",
+          "reply_to": "grp_2b3c4d5e_s05_t002"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s05_t004",
+          "speaker": "Adaora",
+          "speaker_id": "p_d5e6f7a8",
+          "content": "I know but I've been eating a bit differently lately and I just want to make sure there's something I can...",
+          "ts": "2025-03-03T20:28:00",
+          "reply_to": "grp_2b3c4d5e_s05_t003"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s05_t005",
+          "speaker": "Ngozi",
+          "speaker_id": "p_b3c4d5e6",
+          "content": "Eating differently how?? 👀 Adaora what is going on",
+          "ts": "2025-03-03T20:29:00",
+          "reply_to": "grp_2b3c4d5e_s05_t004"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s05_t006",
+          "speaker": "Adaora",
+          "speaker_id": "p_d5e6f7a8",
+          "content": "Nothing dramatic Mum. Just being more mindful. I'll tell you properly when I'm home ok?",
+          "ts": "2025-03-03T20:31:00",
+          "reply_to": "grp_2b3c4d5e_s05_t005"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s05_t007",
+          "speaker": "Tobenna",
+          "speaker_id": "p_e6f7a8b9",
+          "content": "Ada 😂 just say it",
+          "ts": "2025-03-03T20:32:00",
+          "reply_to": "grp_2b3c4d5e_s05_t006"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s05_t008",
+          "speaker": "Adaora",
+          "speaker_id": "p_d5e6f7a8",
+          "content": "Tobe I SWEAR to you",
+          "ts": "2025-03-03T20:33:00",
+          "reply_to": "grp_2b3c4d5e_s05_t007"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s05_t009",
+          "speaker": "Emeka",
+          "speaker_id": "p_c4d5e6f7",
+          "content": "We'll figure it out when we're all together 😊 Mum there will be enough food for everyone regardless",
+          "ts": "2025-03-03T20:35:00",
+          "reply_to": "grp_2b3c4d5e_s05_t007"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s05_t010",
+          "speaker": "Ngozi",
+          "speaker_id": "p_b3c4d5e6",
+          "content": "Ok. When you come home Adaora you will tell me everything ❤️ I am your mother",
+          "ts": "2025-03-03T20:36:00",
+          "reply_to": "grp_2b3c4d5e_s05_t009"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s05_t011",
+          "speaker": "Chidi",
+          "speaker_id": "p_a2b3c4d5",
+          "content": "Is Adaora ill.",
+          "ts": "2025-03-03T21:14:00",
+          "reply_to": "grp_2b3c4d5e_s05_t010"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s05_t012",
+          "speaker": "Adaora",
+          "speaker_id": "p_d5e6f7a8",
+          "content": "Dad I am not ill 😂 I promise",
+          "ts": "2025-03-03T21:15:00",
+          "reply_to": "grp_2b3c4d5e_s05_t011"
+        },
+        {
+          "turn": "grp_2b3c4d5e_s05_t013",
+          "speaker": "Tobenna",
+          "speaker_id": "p_e6f7a8b9",
+          "content": "she's fine Dad 🙏🙏 see everyone at Christmas 🎄",
+          "ts": "2025-03-03T21:16:00",
+          "reply_to": "grp_2b3c4d5e_s05_t012"
+        }
+      ]
+    }
+  ],
+  "qa_pairs": [
+    {
+      "id": "Q1_n2a1b2c3",
+      "category": "Q1",
+      "difficulty": "hard",
+      "question": "Based on the family conversations, does Adaora have any particular food preferences or restrictions that come through?",
+      "answer": "Adaora appears to be avoiding meat and animal products, though she never states this directly. She deflected from Ngozi's Christmas feast announcement by questioning the need for so much food (Session 1), then steered the Christmas menu toward plant-based dishes like moi moi and akara without explaining why (Session 4), and finally told her mother she'd been 'eating a bit differently lately' and had been 'more mindful' — cutting herself off before saying more (Session 5). The pattern across three sessions strongly suggests a dietary restriction she's been concealing from her parents.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_2b3c4d5e_s01_t005",
+          "speaker_display_name": "Adaora",
+          "message_excerpt": "Mum that's so much food. Do you have to do all of that?",
+          "relevance": "Adaora's first deflection when Ngozi announces a meat-heavy feast — mild but out of character for someone who supposedly loves the food"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_2b3c4d5e_s05_t004",
+          "speaker_display_name": "Adaora",
+          "message_excerpt": "I've been eating a bit differently lately and I just want to make sure there's something I can...",
+          "relevance": "Adaora nearly reveals her restriction directly before stopping herself — the incomplete sentence is the strongest signal"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_n2b2c3d4",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "Has anything about Ngozi's cooking changed recently, based on what the family says?",
+      "answer": "Yes — Ngozi appears to have reduced the salt in her cooking, though she won't admit it. In Session 2, when Emeka noted the pepper soup tasted 'slightly lighter than usual,' Ngozi deflected: 'Same recipe as always, maybe ur taste buds are changing.' But Adaora then confirmed she'd noticed the same thing in a previous visit. Ngozi's denial and the pattern of multiple family members noticing the change suggests it was deliberate — likely on doctor's advice.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_2b3c4d5e_s02_t003",
+          "speaker_display_name": "Ngozi",
+          "message_excerpt": "I don't know what yu mean. Same recipee as always 😂😂 maybe ur taste buds are changing",
+          "relevance": "Ngozi denies the change but her defense is deflection rather than explanation, which is the implicit signal"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_n2c3d4e5",
+      "category": "Q1",
+      "difficulty": "hard",
+      "question": "What do the conversations reveal about how Tobenna feels about discussing his job search with the family?",
+      "answer": "Tobenna consistently avoids the topic. In Session 3, when Ngozi asked about the job search, Tobenna responded with monkey-covering-eyes emoji followed by 'Did anyone watch the Arsenal game?' — a complete subject change. In Session 5 he gave a vague 'Not yet Mum, soon though' before Adaora's situation took over. He never provides any substance on the job front, always deflecting with humor, emoji, or a redirect. The pattern suggests the search isn't going well and he doesn't want to discuss it.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_2b3c4d5e_s03_t008",
+          "speaker_display_name": "Tobenna",
+          "message_excerpt": "🙈🙈 Did anyone watch the Arsenal game?",
+          "relevance": "Classic Tobenna deflection — emoji to soften, then complete topic change in response to a direct question about his job search"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_n2d4e5f6",
+      "category": "Q2",
+      "difficulty": "medium",
+      "question": "What was decided about the Christmas dinner menu, and did all family members seem equally happy with that plan?",
+      "answer": "Ngozi planned to cook the full traditional spread — goat, jollof, suya, fried plantain. Emeka and Tobenna were enthusiastic. Adaora, however, asked specifically if Ngozi could include beans dishes (moi moi, akara) and deflected from the meat options with 'I'll have whatever there is' — suggesting she has a preference for the plant-based side dishes. When Tobenna noted 'Ada you love goat,' she said only 'let me have the beans' without explaining. The rest of the family proceeded as if the standard menu was settled.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Adaora",
+        "B": "Chidi",
+        "C": "Emeka",
+        "D": "Ngozi"
+      },
+      "correct_option": "A",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_2b3c4d5e_s04_t003",
+          "speaker_display_name": "Adaora",
+          "message_excerpt": "could you maybe do something with beans this year? Like moi moi? Or akara?",
+          "relevance": "Adaora's specific request for plant-based dishes alongside the traditional menu signals a preference she's not explaining directly"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_2b3c4d5e_s04_t007",
+          "speaker_display_name": "Tobenna",
+          "message_excerpt": "Ada you ok 😂 you love goat",
+          "relevance": "Tobenna's surprised reaction establishes a baseline — this is not how Adaora has behaved before — and she doesn't correct him directly"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q4_n2e5f6a7",
+      "category": "Q4",
+      "difficulty": "hard",
+      "question": "Who first pushed back on committing to specific Christmas dates — citing outside obligations as the reason?",
+      "answer": "Emeka. When Ngozi announced Christmas plans, Emeka immediately said 'We'll see what Adaeze's schedule looks like — should know more in a few weeks.' This was the first hesitation, and it cited his wife's work schedule as the constraint. Adaora also expressed uncertainty, but she framed it around thesis deadlines and came after Emeka's message. The first person to invoke an external reason for not committing was Emeka.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Adaora",
+        "B": "Chidi",
+        "C": "Emeka",
+        "D": "Ngozi"
+      },
+      "correct_option": "C",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_2b3c4d5e_s01_t002",
+          "speaker_display_name": "Emeka",
+          "message_excerpt": "We'll see what Adaeze's schedule looks like 😊 should know more in a few weeks",
+          "relevance": "Emeka's is the first hedging response, citing Adaeze's schedule as the obstacle"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_n2f6a7b8",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "Has Ngozi's cooking changed in any way recently, and who in the family figured this out without being told?",
+      "answer": "Ngozi's cooking has become less salty, apparently on doctor's advice. This was figured out by Emeka. In Session 2, after multiple family members noted the pepper soup tasted different, Emeka said 'Less seasoning I think. Mum might have been told to ease off the salt' — reasoning through the change without being told directly. Ngozi denied it, but Emeka's inference was drawn from pattern recognition, not from Ngozi disclosing anything.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_2b3c4d5e_s02_t005",
+          "speaker_display_name": "Emeka",
+          "message_excerpt": "Less seasoning I think. Mum might have been told to ease off the salt",
+          "relevance": "Emeka voices the inference publicly — he has worked out Ngozi's dietary change without being told, demonstrating he knows something about her situation she hasn't stated"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q6_n2a7b8c9",
+      "category": "Q6",
+      "difficulty": "medium",
+      "question": "The family seems to assume that when Ngozi cooks for Christmas, everyone eats what she makes. Is that assumption accurate for all members?",
+      "answer": "Not for Adaora. While Emeka and Tobenna enthusiastically requested specific dishes from Ngozi's traditional spread, Adaora quietly tried to steer toward plant-based options and said she'd been 'eating a bit differently lately.' In Session 5, she tried to bring her own dish — a lentil preparation — and told her mother she'd explain properly when she was home. The family norm assumes everyone eats the full traditional Christmas menu, but Adaora has a significant dietary restriction she has not yet disclosed.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Adaora",
+        "B": "Chidi",
+        "C": "Emeka",
+        "D": "Ngozi"
+      },
+      "correct_option": "A",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_2b3c4d5e_s04_t003",
+          "speaker_display_name": "Adaora",
+          "message_excerpt": "could you maybe do something with beans this year? Like moi moi? Or akara?",
+          "relevance": "Adaora's request for plant-based sides is a quiet workaround for the traditional meat-heavy menu she can no longer eat"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_2b3c4d5e_s05_t006",
+          "speaker_display_name": "Adaora",
+          "message_excerpt": "Just being more mindful. I'll tell you properly when I'm home ok?",
+          "relevance": "Adaora explicitly defers the disclosure but confirms something has changed about her diet — the norm doesn't hold for her"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_n2b8c9d0",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does the family chat reveal about Chidi's role in family discussions?",
+      "answer": "Chidi participates infrequently and briefly, but his messages carry decisive weight. He typically arrives late to a conversation that has already been debated at length, then issues a short statement that ends the discussion. In Session 2, when the family had been going back and forth about Ngozi's cooking, Chidi arrived late with simply 'The soup was fine.' — which closed the subject. Emeka acknowledged this dynamic directly: 'Dad always has the final word.' In Session 4, a single line from Chidi ('Emeka. You are coming on Christmas Eve.') ended Emeka's weeks of stalling.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "Chidi participates infrequently and briefly",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_2b3c4d5e_s02_t011",
+          "speaker_display_name": "Emeka",
+          "message_excerpt": "Dad always has the final word",
+          "relevance": "Emeka names the dynamic explicitly after Chidi's brief arrival ends the soup debate"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_2b3c4d5e_s04_t010",
+          "speaker_display_name": "Chidi",
+          "message_excerpt": "Emeka. You are coming on Christmas Eve.",
+          "relevance": "Chidi's terse instruction ends weeks of Emeka's hedging in one message — the pattern plays out concretely"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q8_n2c9d0e1",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "How did Chidi's attitude toward visiting his children in the UK change over the course of the conversations?",
+      "answer": "Chidi shifted from his established position of resisting travel to proactively suggesting a visit. In Sessions 1 and 2, there was no mention of him visiting — the expectation was clearly that children come to him. By Session 3, Ngozi announced that Chidi had suggested coming to London in March, something she described as so unexpected she 'nearly fell off her chair.' Ngozi attributed the change to a health checkup that 'reminded him life is short.' Chidi himself confirmed: 'I will come in March' — a clear behavioral shift from his prior pattern.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_2b3c4d5e_s01_t000",
+          "speaker_display_name": "Ngozi",
+          "message_excerpt": "Your father and I are expecting everyone home this year",
+          "relevance": "Session 1 baseline: the travel expectation runs one direction — children come to parents, not the other way"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_2b3c4d5e_s03_t004",
+          "speaker_display_name": "Ngozi",
+          "message_excerpt": "He had a small checkup last week and I think it reminded him life is short you know",
+          "relevance": "Ngozi attributes the shift to the health checkup — the trigger for Chidi's new willingness to travel"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "expects children to visit him; no mention of travelling to UK"
+        },
+        {
+          "session_index": 3,
+          "value": "proactively suggests coming to London in March; Ngozi attributes it to a health checkup"
+        }
+      ]
+    },
+    {
+      "id": "Q8_n2d0e1f2",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "How did Emeka's stance on coming home for Christmas change from the beginning to the end of the conversations?",
+      "answer": "Emeka moved from open-ended stalling to a firm commitment under parental pressure. In Session 1, he said he'd 'see what Adaeze's schedule looks like' and would know 'in a few weeks.' In Session 4, he tried again — citing Adaeze's work event on the 24th as a reason they might arrive Christmas morning instead of Christmas Eve. Chidi's single-line response ('Emeka. You are coming on Christmas Eve.') ended it immediately; Emeka replied 'Yes Dad, we'll make it work.' The shift was from strategic delay to compliance.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_2b3c4d5e_s01_t002",
+          "speaker_display_name": "Emeka",
+          "message_excerpt": "We'll see what Adaeze's schedule looks like 😊 should know more in a few weeks",
+          "relevance": "Session 1 baseline: Emeka's first response is a non-commitment with a built-in delay"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_2b3c4d5e_s04_t011",
+          "speaker_display_name": "Emeka",
+          "message_excerpt": "Yes Dad 😊 we'll make it work",
+          "relevance": "After Chidi's direct instruction, Emeka commits — the stalling arc ends here"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "open-ended delay — 'we'll see' / 'a few weeks'"
+        },
+        {
+          "session_index": 4,
+          "value": "commits to Christmas Eve arrival after Chidi's direct instruction"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "source": "SocialMemBench",
+    "source_kind": "real_benchmark",
+    "network_id": "grp_2b3c4d5e",
+    "n_sessions": 5,
+    "n_turns": 67,
+    "n_qa": 10,
+    "v4_correct": 7,
+    "v4_total": 10,
+    "v4_errors": 3,
+    "v4_accuracy": 0.7,
+    "heldout_heldout_excluded": true
+  }
+}

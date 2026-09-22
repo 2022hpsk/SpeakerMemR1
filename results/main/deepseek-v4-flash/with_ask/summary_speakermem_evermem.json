@@ -1,0 +1,42 @@
+{
+  "01/open_ended": {
+    "correct": 62,
+    "total": 153
+  },
+  "01/multiple_choice": {
+    "correct": 249,
+    "total": 335
+  },
+  "02/open_ended": {
+    "correct": 60,
+    "total": 154
+  },
+  "02/multiple_choice": {
+    "correct": 225,
+    "total": 317
+  },
+  "03/open_ended": {
+    "correct": 57,
+    "total": 152
+  },
+  "03/multiple_choice": {
+    "correct": 234,
+    "total": 315
+  },
+  "04/open_ended": {
+    "correct": 67,
+    "total": 152
+  },
+  "04/multiple_choice": {
+    "correct": 227,
+    "total": 329
+  },
+  "05/open_ended": {
+    "correct": 59,
+    "total": 151
+  },
+  "05/multiple_choice": {
+    "correct": 245,
+    "total": 342
+  }
+}

@@ -1,0 +1,2525 @@
+{
+  "schema": "socialmembench-real-v4-source/1",
+  "scenario": "[socialmembench:grp_e8f9a0b1] real benchmark conversation",
+  "speakers": [
+    "Callum",
+    "Dev",
+    "Jade",
+    "Lena",
+    "Marcus",
+    "Omar",
+    "Rachel",
+    "Sana",
+    "Temi"
+  ],
+  "sessions": [
+    {
+      "session_id": "grp_e8f9a0b1_s01",
+      "session_index": 1,
+      "topic": "New year check-in and early reunion planning",
+      "ts": "2026-01-05",
+      "turns": [
+        {
+          "turn": "grp_e8f9a0b1_s01_t000",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "alright everyone happy new year 🎉 hope the first week back isn't killing anyone yet",
+          "ts": "2026-01-05T19:02:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s01_t001",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "👍",
+          "ts": "2026-01-05T19:03:00",
+          "reply_to": "grp_e8f9a0b1_s01_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s01_t002",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "happy new year!! already dreading term starting Thursday but that's fine, that's fine 😭 how is everyone actually doing",
+          "ts": "2026-01-05T19:04:00",
+          "reply_to": "grp_e8f9a0b1_s01_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s01_t003",
+          "speaker": "Dev",
+          "speaker_id": "p_c3a4b5d6",
+          "content": "checks notes, still alive. barely",
+          "ts": "2026-01-05T19:05:00",
+          "reply_to": "grp_e8f9a0b1_s01_t002"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s01_t004",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "jade it'll be fine, you love it once you're back in the room. anyway I wanted to get the reunion convo started early this year. thinking spring, maybe late March or April",
+          "ts": "2026-01-05T19:06:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s01_t005",
+          "speaker": "Callum",
+          "speaker_id": "p_f6d7e8a9",
+          "content": "March works, April gets complicated with school holidays. what venue are we thinking",
+          "ts": "2026-01-05T19:07:00",
+          "reply_to": "grp_e8f9a0b1_s01_t004"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s01_t006",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "was going to look at The Crown again, they did us well last time. or somewhere similar with a private room and a proper food spread. none of that small plates business 😅",
+          "ts": "2026-01-05T19:08:00",
+          "reply_to": "grp_e8f9a0b1_s01_t005"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s01_t007",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "I actually liked that place Temi mentioned last time, the one near the market? had a really good menu. before we lock in The Crown can we at least look at a couple of alternatives!! I feel like we always end up defaulting to the same options",
+          "ts": "2026-01-05T19:09:00",
+          "reply_to": "grp_e8f9a0b1_s01_t006"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s01_t008",
+          "speaker": "Temi",
+          "speaker_id": "p_a7e8f9b0",
+          "content": "Jade yes, Parlour & Co on the high street. they do a proper set menu for groups and the room at the back is exactly what we need. I can send the link. what's your read on whether people want a sit-down dinner or something more loose this year",
+          "ts": "2026-01-05T19:10:00",
+          "reply_to": "grp_e8f9a0b1_s01_t007"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s01_t009",
+          "speaker": "Callum",
+          "speaker_id": "p_f6d7e8a9",
+          "content": "sit-down works for me. The Crown or somewhere similar. new venues take longer to sort and then something always goes wrong, but that's just me",
+          "ts": "2026-01-05T19:11:00",
+          "reply_to": "grp_e8f9a0b1_s01_t008"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s01_t010",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "can we do somthing actually fun this year though? not just siting in a pub for four hours. even if its just a kick around before the food or somthing",
+          "ts": "2026-01-05T19:12:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s01_t011",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "haha omar still wants to drag us all onto a pitch. we did trivia last year and that went down well, could do that again. lmk if there's an issue with March dates people",
+          "ts": "2026-01-05T19:13:00",
+          "reply_to": "grp_e8f9a0b1_s01_t010"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s01_t012",
+          "speaker": "Lena",
+          "speaker_id": "p_e5c6d7f8",
+          "content": "what if we just did a late afternoon thing, something that isn't pure sitting. trivia is fine but even a gallery or something after would break it up",
+          "ts": "2026-01-05T19:14:00",
+          "reply_to": "grp_e8f9a0b1_s01_t011"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s01_t013",
+          "speaker": "Dev",
+          "speaker_id": "p_c3a4b5d6",
+          "content": "gallery then pub. truly a team building experience. love that for us",
+          "ts": "2026-01-05T19:15:00",
+          "reply_to": "grp_e8f9a0b1_s01_t012"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s01_t014",
+          "speaker": "Lena",
+          "speaker_id": "p_e5c6d7f8",
+          "content": "nope",
+          "ts": "2026-01-05T19:15:00",
+          "reply_to": "grp_e8f9a0b1_s01_t013"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s01_t015",
+          "speaker": "Sana",
+          "speaker_id": "p_d4b5c6e7",
+          "content": "what date is this again, March or April? March weekends are complicated for me with on-call but I want to make it work if I can",
+          "ts": "2026-01-05T19:17:00",
+          "reply_to": "grp_e8f9a0b1_s01_t004"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s01_t016",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "haven't locked it yet Sana, will put a date poll out this week. aiming for last two weekends of March",
+          "ts": "2026-01-05T19:18:00",
+          "reply_to": "grp_e8f9a0b1_s01_t015"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s01_t017",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "also can someone think about what the night actually looks like beyond just 'we go to a pub'. like what's the story we want from the evening. we're 35 now, we can make it interesting!! 😄",
+          "ts": "2026-01-05T19:20:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s01_t018",
+          "speaker": "Rachel",
+          "speaker_id": "p_c9a0b1d2",
+          "content": "Parlour & Co on the high street has a private dining room that holds 14. I walked past it last week. might be worth a look.",
+          "ts": "2026-01-05T19:21:00",
+          "reply_to": "grp_e8f9a0b1_s01_t008"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s01_t019",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "good shout. Temi can you send the link and I'll get us a contact there. sorted on the venue options then, poll goes out Thursday",
+          "ts": "2026-01-05T19:22:00",
+          "reply_to": "grp_e8f9a0b1_s01_t018"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_e8f9a0b1_s02",
+      "session_index": 2,
+      "topic": "Dev announces he's moved back locally; pub night planning for late January",
+      "ts": "2026-01-12",
+      "turns": [
+        {
+          "turn": "grp_e8f9a0b1_s02_t000",
+          "speaker": "Dev",
+          "speaker_id": "p_c3a4b5d6",
+          "content": "right so. officially a local again as of saturday. spare room full of boxes. send help",
+          "ts": "2026-01-12T18:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s02_t001",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "YOOO 🙌🙌 bruv finally",
+          "ts": "2026-01-12T18:46:00",
+          "reply_to": "grp_e8f9a0b1_s02_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s02_t002",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "Dev!! proper welcome back. five-a-side Thursdays, sort yourself out 😄 lmk if you need a hand with anything",
+          "ts": "2026-01-12T18:47:00",
+          "reply_to": "grp_e8f9a0b1_s02_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s02_t003",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "Dev this is genuinely exciting!! okay now you have no excuse not to come to things, the 'London clash' card is revoked as of now 😂 are you around this month for something casual",
+          "ts": "2026-01-12T18:48:00",
+          "reply_to": "grp_e8f9a0b1_s02_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s02_t004",
+          "speaker": "Dev",
+          "speaker_id": "p_c3a4b5d6",
+          "content": "jade has receipts apparently. yeah I'm around. what's 'casual' for this group",
+          "ts": "2026-01-12T18:49:00",
+          "reply_to": "grp_e8f9a0b1_s02_t003"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s02_t005",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "alright everyone quick sideline. pub night last week of Jan? just a low-key one before we get into the full reunion planning mode. reckon The Griffin or The Crown would work",
+          "ts": "2026-01-12T18:50:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s02_t006",
+          "speaker": "Callum",
+          "speaker_id": "p_f6d7e8a9",
+          "content": "The Griffin is fine. at least we know the layout and parking isn't a nightmare",
+          "ts": "2026-01-12T18:51:00",
+          "reply_to": "grp_e8f9a0b1_s02_t005"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s02_t007",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "parking is fine there yeah 👍",
+          "ts": "2026-01-12T18:51:00",
+          "reply_to": "grp_e8f9a0b1_s02_t006"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s02_t008",
+          "speaker": "Lena",
+          "speaker_id": "p_e5c6d7f8",
+          "content": "what if we just did something a bit different, the new wine bar on Castle Street actually has a room. but pub is fine too I guess",
+          "ts": "2026-01-12T18:53:00",
+          "reply_to": "grp_e8f9a0b1_s02_t005"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s02_t009",
+          "speaker": "Dev",
+          "speaker_id": "p_c3a4b5d6",
+          "content": "pub. i'm not doing a wine bar for a first week back thing",
+          "ts": "2026-01-12T18:54:00",
+          "reply_to": "grp_e8f9a0b1_s02_t008"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s02_t010",
+          "speaker": "Lena",
+          "speaker_id": "p_e5c6d7f8",
+          "content": "sure whatever",
+          "ts": "2026-01-12T18:54:00",
+          "reply_to": "grp_e8f9a0b1_s02_t009"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s02_t011",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "sorted, The Griffin it is. Saturday 24th, from 7? I'll confirm when I've booked. lmk if there's an issue",
+          "ts": "2026-01-12T18:56:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s02_t012",
+          "speaker": "Sana",
+          "speaker_id": "p_d4b5c6e7",
+          "content": "what date is this again, 24th? I'll try. on-call rota not out yet for end of January",
+          "ts": "2026-01-12T18:58:00",
+          "reply_to": "grp_e8f9a0b1_s02_t011"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s02_t013",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "Sana I really hope you can come, it's been ages. last time we were in the same room was Jade's birthday back in November!! we miss you in these things",
+          "ts": "2026-01-12T19:00:00",
+          "reply_to": "grp_e8f9a0b1_s02_t012"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s02_t014",
+          "speaker": "Sana",
+          "speaker_id": "p_d4b5c6e7",
+          "content": "I know. hectic last few months. I'll do my best for the 24th.",
+          "ts": "2026-01-12T19:01:00",
+          "reply_to": "grp_e8f9a0b1_s02_t013"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s02_t015",
+          "speaker": "Dev",
+          "speaker_id": "p_c3a4b5d6",
+          "content": "callum you're coming right. i will personally be on time to make it weird for you",
+          "ts": "2026-01-12T19:03:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s02_t016",
+          "speaker": "Callum",
+          "speaker_id": "p_f6d7e8a9",
+          "content": "you being on time would be genuinely unprecedented mate. yes I'm coming",
+          "ts": "2026-01-12T19:04:00",
+          "reply_to": "grp_e8f9a0b1_s02_t015"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s02_t017",
+          "speaker": "Temi",
+          "speaker_id": "p_a7e8f9b0",
+          "content": "okay so I've been thinking about this, what if the Jan meetup is actually a soft planning session. not formal, just have the reunion conversation in person rather than on here. it always goes faster face to face",
+          "ts": "2026-01-12T19:05:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s02_t018",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "Temi that's actually smart. keep it casual but have a chat about format. we'll get more done in an hour together than two weeks on here",
+          "ts": "2026-01-12T19:06:00",
+          "reply_to": "grp_e8f9a0b1_s02_t017"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s02_t019",
+          "speaker": "Rachel",
+          "speaker_id": "p_c9a0b1d2",
+          "content": "24th works. The Griffin on the high street, not the one near the station.",
+          "ts": "2026-01-12T19:08:00",
+          "reply_to": "grp_e8f9a0b1_s02_t011"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_e8f9a0b1_s03",
+      "session_index": 3,
+      "topic": "Post-pub-night debrief and reunion date narrowing",
+      "ts": "2026-01-19",
+      "turns": [
+        {
+          "turn": "grp_e8f9a0b1_s03_t000",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "okay so Saturday was genuinely so good!! so nice to be in the same room again. Dev you're even more chaotic in person, I'd forgotten 😂",
+          "ts": "2026-01-19T20:12:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s03_t001",
+          "speaker": "Dev",
+          "speaker_id": "p_c3a4b5d6",
+          "content": "it's called being present",
+          "ts": "2026-01-19T20:13:00",
+          "reply_to": "grp_e8f9a0b1_s03_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s03_t002",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "great nite bruv 🔥 callum left at like 9:30 as usual haha",
+          "ts": "2026-01-19T20:13:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s03_t003",
+          "speaker": "Callum",
+          "speaker_id": "p_f6d7e8a9",
+          "content": "kids. already an excuse, but that's just me",
+          "ts": "2026-01-19T20:14:00",
+          "reply_to": "grp_e8f9a0b1_s03_t002"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s03_t004",
+          "speaker": "Lena",
+          "speaker_id": "p_e5c6d7f8",
+          "content": "it was actually a good night. hadn't expected that from a Monday-after pub 😄 (the Griffin's new signage is doing a lot of work though)",
+          "ts": "2026-01-19T20:15:00",
+          "reply_to": "grp_e8f9a0b1_s03_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s03_t005",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "Lena!! I noticed you actually seemed to enjoy yourself, not just tolerate it 😄 you and Sana were in a whole separate conversation the whole second half",
+          "ts": "2026-01-19T20:16:00",
+          "reply_to": "grp_e8f9a0b1_s03_t004"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s03_t006",
+          "speaker": "Lena",
+          "speaker_id": "p_e5c6d7f8",
+          "content": "yep",
+          "ts": "2026-01-19T20:16:00",
+          "reply_to": "grp_e8f9a0b1_s03_t005"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s03_t007",
+          "speaker": "Sana",
+          "speaker_id": "p_d4b5c6e7",
+          "content": "all well with everyone? glad I made it. it's hard to carve out evenings right now but that one was worth it.",
+          "ts": "2026-01-19T20:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s03_t008",
+          "speaker": "Dev",
+          "speaker_id": "p_c3a4b5d6",
+          "content": "sana said three words all night but somehow still the most useful person at the table. checks notes, this is a compliment",
+          "ts": "2026-01-19T20:19:00",
+          "reply_to": "grp_e8f9a0b1_s03_t007"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s03_t009",
+          "speaker": "Sana",
+          "speaker_id": "p_d4b5c6e7",
+          "content": "not my area but I enjoyed it.",
+          "ts": "2026-01-19T20:20:00",
+          "reply_to": "grp_e8f9a0b1_s03_t008"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s03_t010",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "alright everyone glad Saturday landed well. we did actually talk about the reunion a bit, so summary: people want something that feels like more of an event this year. sat 21st March looking like the frontrunner for date. lmk if there's an issue",
+          "ts": "2026-01-19T20:21:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s03_t011",
+          "speaker": "Temi",
+          "speaker_id": "p_a7e8f9b0",
+          "content": "okay so I've been thinking about this since Saturday. what if we paired the dinner with something beforehand. there's a documentary night at the arts centre on March 20th, the day before, or we could find something the same day. what's your read on whether people would want a double-header",
+          "ts": "2026-01-19T20:22:00",
+          "reply_to": "grp_e8f9a0b1_s03_t010"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s03_t012",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "👍",
+          "ts": "2026-01-19T20:23:00",
+          "reply_to": "grp_e8f9a0b1_s03_t011"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s03_t013",
+          "speaker": "Callum",
+          "speaker_id": "p_f6d7e8a9",
+          "content": "double-header runs long. documentary then dinner means nobody's done by nine. but that's just me",
+          "ts": "2026-01-19T20:23:00",
+          "reply_to": "grp_e8f9a0b1_s03_t011"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s03_t014",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "Callum I love you but nobody is worried about the nine o'clock cutoff except you 😂 Temi the documentary idea is actually good. what's it about",
+          "ts": "2026-01-19T20:25:00",
+          "reply_to": "grp_e8f9a0b1_s03_t013"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s03_t015",
+          "speaker": "Temi",
+          "speaker_id": "p_a7e8f9b0",
+          "content": "it's about a town that got demolished for a bypass in the 70s, oral history project, really beautiful. the kind of thing you'd want to talk about over dinner. but if the double-header is too much, just the dinner works. I'll defer to what the group actually wants",
+          "ts": "2026-01-19T20:26:00",
+          "reply_to": "grp_e8f9a0b1_s03_t014"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s03_t016",
+          "speaker": "Dev",
+          "speaker_id": "p_c3a4b5d6",
+          "content": "a documentary about a demolished town. fun evening guaranteed",
+          "ts": "2026-01-19T20:27:00",
+          "reply_to": "grp_e8f9a0b1_s03_t015"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s03_t017",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "Dev honestly just dinner might be easier for everyone. we can pick something together. are we going to actually talk about what we want from the night or just let Marcus book the same pub again",
+          "ts": "2026-01-19T20:28:00",
+          "reply_to": "grp_e8f9a0b1_s03_t016"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s03_t018",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "I can hear you Jade 😄 fine, proper conversation about format next week. I'll start a thread",
+          "ts": "2026-01-19T20:29:00",
+          "reply_to": "grp_e8f9a0b1_s03_t017"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s03_t019",
+          "speaker": "Rachel",
+          "speaker_id": "p_c9a0b1d2",
+          "content": "March 21st works. Good venue matters more than format.",
+          "ts": "2026-01-19T20:31:00",
+          "reply_to": "grp_e8f9a0b1_s03_t018"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_e8f9a0b1_s04",
+      "session_index": 4,
+      "topic": "Reunion format debate; Temi pitches event + dinner; relational history surfaces",
+      "ts": "2026-01-26",
+      "turns": [
+        {
+          "turn": "grp_e8f9a0b1_s04_t000",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "alright everyone format thread as promised. two options on the table: 1) dinner only, Parlour & Co private room, 7pm. 2) something earlier in the day then dinner. thoughts",
+          "ts": "2026-01-26T19:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s04_t001",
+          "speaker": "Temi",
+          "speaker_id": "p_a7e8f9b0",
+          "content": "I'd vote option 2 but with the afternoon thing being genuinely interesting, not filler. there's still the arts centre screening on the 20th, night before. or the gallery on Caldwell Street is doing a local photography exhibition that week. something with a bit of texture to it",
+          "ts": "2026-01-26T19:32:00",
+          "reply_to": "grp_e8f9a0b1_s04_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s04_t002",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "whats the photogrphy one about bruv",
+          "ts": "2026-01-26T19:33:00",
+          "reply_to": "grp_e8f9a0b1_s04_t001"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s04_t003",
+          "speaker": "Temi",
+          "speaker_id": "p_a7e8f9b0",
+          "content": "portraits of people who've lived in the area for 30+ years. honestly right up our street given what we're doing. what's your read on it Omar, would you go",
+          "ts": "2026-01-26T19:34:00",
+          "reply_to": "grp_e8f9a0b1_s04_t002"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s04_t004",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "yeah i'd go. is ther parking at the gallery",
+          "ts": "2026-01-26T19:35:00",
+          "reply_to": "grp_e8f9a0b1_s04_t003"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s04_t005",
+          "speaker": "Lena",
+          "speaker_id": "p_e5c6d7f8",
+          "content": "Caldwell Street gallery has the multi-storey two doors down. and the photography exhibition sounds genuinely good. (I've seen the flyer, the typeface choices are very 2019 but the content looks strong)",
+          "ts": "2026-01-26T19:36:00",
+          "reply_to": "grp_e8f9a0b1_s04_t004"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s04_t006",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "I love this idea!! okay but real talk, are we actually going to get everyone to come to a gallery beforehand. some of us, naming no names, will find reasons not to",
+          "ts": "2026-01-26T19:38:00",
+          "reply_to": "grp_e8f9a0b1_s04_t005"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s04_t007",
+          "speaker": "Dev",
+          "speaker_id": "p_c3a4b5d6",
+          "content": "she's not wrong. gallery is optional, dinner is the thing. make the gallery the bonus for people who want it",
+          "ts": "2026-01-26T19:39:00",
+          "reply_to": "grp_e8f9a0b1_s04_t006"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s04_t008",
+          "speaker": "Callum",
+          "speaker_id": "p_f6d7e8a9",
+          "content": "optional works. means those of us with tighter schedules don't feel like we're missing the main event by skipping the first bit",
+          "ts": "2026-01-26T19:40:00",
+          "reply_to": "grp_e8f9a0b1_s04_t007"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s04_t009",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "sorted. optional gallery 4pm, dinner at Parlour & Co 7pm. I'll reach out to the venue this week. lmk if there's an issue",
+          "ts": "2026-01-26T19:41:00",
+          "reply_to": "grp_e8f9a0b1_s04_t008"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s04_t010",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "Marcus can I just say you and Temi writing the group invite is the correct move. remember when we did the school magazine last issue and you two ended up editing each other's edits for a week. do not let that happen again 😂",
+          "ts": "2026-01-26T19:43:00",
+          "reply_to": "grp_e8f9a0b1_s04_t009"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s04_t011",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "Jade that was Temi's fault and she knows it 😄",
+          "ts": "2026-01-26T19:44:00",
+          "reply_to": "grp_e8f9a0b1_s04_t010"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s04_t012",
+          "speaker": "Temi",
+          "speaker_id": "p_a7e8f9b0",
+          "content": "it absolutely was not. you rewrote the intro four times and then asked me what I thought. different situation",
+          "ts": "2026-01-26T19:45:00",
+          "reply_to": "grp_e8f9a0b1_s04_t011"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s04_t013",
+          "speaker": "Dev",
+          "speaker_id": "p_c3a4b5d6",
+          "content": "19 years later and still litigating the school magazine. healthy",
+          "ts": "2026-01-26T19:46:00",
+          "reply_to": "grp_e8f9a0b1_s04_t012"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s04_t014",
+          "speaker": "Sana",
+          "speaker_id": "p_d4b5c6e7",
+          "content": "what date is this again, March 21st? Putting it in my calendar now so I can protect it from on-call.",
+          "ts": "2026-01-26T19:48:00",
+          "reply_to": "grp_e8f9a0b1_s04_t009"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s04_t015",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "yes March 21st, Saturday. gallery optional 4pm, dinner 7pm at Parlour & Co, Temi is sending me the link",
+          "ts": "2026-01-26T19:49:00",
+          "reply_to": "grp_e8f9a0b1_s04_t014"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s04_t016",
+          "speaker": "Lena",
+          "speaker_id": "p_e5c6d7f8",
+          "content": "what if we just had someone confirm the gallery reservation too. they book out for private openings and it'd be a shame to show up and it be rammed",
+          "ts": "2026-01-26T19:50:00",
+          "reply_to": "grp_e8f9a0b1_s04_t015"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s04_t017",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "good call Lena. I'll ring them. sorted",
+          "ts": "2026-01-26T19:51:00",
+          "reply_to": "grp_e8f9a0b1_s04_t016"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s04_t018",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "we doing wings or decent food at parlour bruv",
+          "ts": "2026-01-26T19:52:00",
+          "reply_to": "grp_e8f9a0b1_s04_t017"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s04_t019",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "their set menu is proper food Omar, not tapas nonsense. I already checked 😅",
+          "ts": "2026-01-26T19:52:00",
+          "reply_to": "grp_e8f9a0b1_s04_t018"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_e8f9a0b1_s05",
+      "session_index": 5,
+      "topic": "Logistics finalisation, wine list query, Marcus format preferences surface",
+      "ts": "2026-02-02",
+      "turns": [
+        {
+          "turn": "grp_e8f9a0b1_s05_t000",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "alright everyone quick update, Parlour & Co confirmed the private room for 21 March, 7pm. deposit paid. they want a rough headcount by the 28th Feb. who's in",
+          "ts": "2026-02-02T19:55:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s05_t001",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "in!! 🙋",
+          "ts": "2026-02-02T19:56:00",
+          "reply_to": "grp_e8f9a0b1_s05_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s05_t002",
+          "speaker": "Callum",
+          "speaker_id": "p_f6d7e8a9",
+          "content": "in. what's the food arrangement, set menu or individual",
+          "ts": "2026-02-02T19:56:00",
+          "reply_to": "grp_e8f9a0b1_s05_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s05_t003",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "set menu for the group, three courses. I checked, it's good solid food, proper mains not sharing plates. lmk if there's an issue",
+          "ts": "2026-02-02T19:57:00",
+          "reply_to": "grp_e8f9a0b1_s05_t002"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s05_t004",
+          "speaker": "Rachel",
+          "speaker_id": "p_c9a0b1d2",
+          "content": "Does Parlour & Co have a wine list or is it a house white situation. asking for practical reasons.",
+          "ts": "2026-02-02T19:58:00",
+          "reply_to": "grp_e8f9a0b1_s05_t003"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s05_t005",
+          "speaker": "Dev",
+          "speaker_id": "p_c3a4b5d6",
+          "content": "rachel bringing the real priorities",
+          "ts": "2026-02-02T19:59:00",
+          "reply_to": "grp_e8f9a0b1_s05_t004"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s05_t006",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "I'll ask when I call to confirm headcount. decent list I think, Temi flagged it when she suggested the venue",
+          "ts": "2026-02-02T20:00:00",
+          "reply_to": "grp_e8f9a0b1_s05_t004"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s05_t007",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "in bruv 👍 is ther parking near parlour",
+          "ts": "2026-02-02T20:01:00",
+          "reply_to": "grp_e8f9a0b1_s05_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s05_t008",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "side street behind the market, free after 6pm Omar. sorted",
+          "ts": "2026-02-02T20:02:00",
+          "reply_to": "grp_e8f9a0b1_s05_t007"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s05_t009",
+          "speaker": "Lena",
+          "speaker_id": "p_e5c6d7f8",
+          "content": "in. also confirmed the Caldwell Street gallery is free entry on the day and they're fine with a group arriving between 4 and 6",
+          "ts": "2026-02-02T20:03:00",
+          "reply_to": "grp_e8f9a0b1_s05_t008"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s05_t010",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "Lena you actually sorted that out!! okay this version of you is great 😂 appreciate it",
+          "ts": "2026-02-02T20:04:00",
+          "reply_to": "grp_e8f9a0b1_s05_t009"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s05_t011",
+          "speaker": "Lena",
+          "speaker_id": "p_e5c6d7f8",
+          "content": "don't make it weird",
+          "ts": "2026-02-02T20:05:00",
+          "reply_to": "grp_e8f9a0b1_s05_t010"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s05_t012",
+          "speaker": "Temi",
+          "speaker_id": "p_a7e8f9b0",
+          "content": "I'm in. and I'll draft the group invite text so it doesn't go out as a logistics spreadsheet. we went to school together, we can make it sound like it",
+          "ts": "2026-02-02T20:06:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s05_t013",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "Temi please do that, yes. I'll do the logistics, you do the words. just don't let Jade edit it into a novel 😄",
+          "ts": "2026-02-02T20:07:00",
+          "reply_to": "grp_e8f9a0b1_s05_t012"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s05_t014",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "excuse me I improve things.",
+          "ts": "2026-02-02T20:07:00",
+          "reply_to": "grp_e8f9a0b1_s05_t013"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s05_t015",
+          "speaker": "Sana",
+          "speaker_id": "p_d4b5c6e7",
+          "content": "I've blocked the date. will confirm properly closer to the time once my rota is out. all well with everyone on the headcount side",
+          "ts": "2026-02-02T20:09:00",
+          "reply_to": "grp_e8f9a0b1_s05_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s05_t016",
+          "speaker": "Dev",
+          "speaker_id": "p_c3a4b5d6",
+          "content": "in. and i'm going to the gallery. someone has to represent the non-cultural-philistines in this group",
+          "ts": "2026-02-02T20:10:00",
+          "reply_to": "grp_e8f9a0b1_s05_t015"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s05_t017",
+          "speaker": "Callum",
+          "speaker_id": "p_f6d7e8a9",
+          "content": "gallery is optional Dev, you don't have to justify it. I'll skip the gallery, arrive for dinner. that's just how it works with the kids on a Saturday",
+          "ts": "2026-02-02T20:11:00",
+          "reply_to": "grp_e8f9a0b1_s05_t016"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s05_t018",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "alright everyone, current headcount is 7 confirmed, 2 pending (Sana, Rachel). I'll chase closer to the 28th. should be a good one 🎉",
+          "ts": "2026-02-02T20:12:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s05_t019",
+          "speaker": "Rachel",
+          "speaker_id": "p_c9a0b1d2",
+          "content": "Confirmed. And Parlour & Co does have a proper list, I checked their menu page. Noted.",
+          "ts": "2026-02-02T20:14:00",
+          "reply_to": "grp_e8f9a0b1_s05_t018"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_e8f9a0b1_s06",
+      "session_index": 6,
+      "topic": "Post-reunion debrief; Marcus recalibrates on format; Temi prominent; Jade+Lena+Sana sub-clique surfaces",
+      "ts": "2026-03-23",
+      "turns": [
+        {
+          "turn": "grp_e8f9a0b1_s06_t000",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "alright everyone that was a good one Saturday. really good actually. 🎉 lmk if there's an issue with how it all ran",
+          "ts": "2026-03-23T20:10:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s06_t001",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "best one yet bruv 🔥🔥",
+          "ts": "2026-03-23T20:11:00",
+          "reply_to": "grp_e8f9a0b1_s06_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s06_t002",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "okay so I had the best time!! the dinner especially. table of nine feels so much more connected than trying to do it across 30 people in a function room. this is the format we should keep!! 🙌",
+          "ts": "2026-03-23T20:12:00",
+          "reply_to": "grp_e8f9a0b1_s06_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s06_t003",
+          "speaker": "Temi",
+          "speaker_id": "p_a7e8f9b0",
+          "content": "okay so I've been thinking about this since Saturday. the dinner worked because the room was right. we were actually talking, not shouting. the gallery beforehand set a tone that a pub never would have. I think what we proved is that the format matters as much as who shows up.",
+          "ts": "2026-03-23T20:13:00",
+          "reply_to": "grp_e8f9a0b1_s06_t002"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s06_t004",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "honestly Jade I hear you. the full-class thing last year had 22 people out of 87 and it felt thin. this actually felt full even with nine. I think the sweet spot is a table of ten or twelve. not the whole year, the right people in a proper room.",
+          "ts": "2026-03-23T20:15:00",
+          "reply_to": "grp_e8f9a0b1_s06_t003"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s06_t005",
+          "speaker": "Dev",
+          "speaker_id": "p_c3a4b5d6",
+          "content": "checks notes, marcus voluntarily suggesting fewer people. historic",
+          "ts": "2026-03-23T20:16:00",
+          "reply_to": "grp_e8f9a0b1_s06_t004"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s06_t006",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "I can update my priors Dev, thank you 😄",
+          "ts": "2026-03-23T20:17:00",
+          "reply_to": "grp_e8f9a0b1_s06_t005"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s06_t007",
+          "speaker": "Lena",
+          "speaker_id": "p_e5c6d7f8",
+          "content": "the gallery was genuinely the best bit for me. what if we just made that the anchor next time too, not the optional part",
+          "ts": "2026-03-23T20:18:00",
+          "reply_to": "grp_e8f9a0b1_s06_t004"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s06_t008",
+          "speaker": "Temi",
+          "speaker_id": "p_a7e8f9b0",
+          "content": "Lena yes. and I noticed you and Jade and Sana basically had a whole separate thread going between the gallery and the restaurant. the three of you seemed like you'd been talking for years.",
+          "ts": "2026-03-23T20:20:00",
+          "reply_to": "grp_e8f9a0b1_s06_t007"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s06_t009",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "okay but real talk, that conversation was one of the best I've had all year. Sana and Lena are both back and I've somehow barely seen either of them one-on-one. that needs to change!! 😄",
+          "ts": "2026-03-23T20:21:00",
+          "reply_to": "grp_e8f9a0b1_s06_t008"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s06_t010",
+          "speaker": "Sana",
+          "speaker_id": "p_d4b5c6e7",
+          "content": "all well. good evening. I'd forgotten what it felt like to just sit and talk without it being about logistics.",
+          "ts": "2026-03-23T20:22:00",
+          "reply_to": "grp_e8f9a0b1_s06_t009"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s06_t011",
+          "speaker": "Callum",
+          "speaker_id": "p_f6d7e8a9",
+          "content": "was a good night. had to leave at nine but the first part was the best part anyway, if I'm honest",
+          "ts": "2026-03-23T20:23:00",
+          "reply_to": "grp_e8f9a0b1_s06_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s06_t012",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "temi was on fire Saturday bro. she had everyone at the table just telling their school stories for like an hour. I forgot half that stuff happened 😂",
+          "ts": "2026-03-23T20:24:00",
+          "reply_to": "grp_e8f9a0b1_s06_t008"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s06_t013",
+          "speaker": "Temi",
+          "speaker_id": "p_a7e8f9b0",
+          "content": "that's just what happens when you ask people questions, Omar. what's your read on whether we should do the same format next time or try something slightly different",
+          "ts": "2026-03-23T20:25:00",
+          "reply_to": "grp_e8f9a0b1_s06_t012"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s06_t014",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "same. maybe a kick around first instead of gallery tho 😂",
+          "ts": "2026-03-23T20:26:00",
+          "reply_to": "grp_e8f9a0b1_s06_t013"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s06_t015",
+          "speaker": "Rachel",
+          "speaker_id": "p_c9a0b1d2",
+          "content": "The wine list was exactly right. Good call on the venue.",
+          "ts": "2026-03-23T20:28:00",
+          "reply_to": "grp_e8f9a0b1_s06_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s06_t016",
+          "speaker": "Lena",
+          "speaker_id": "p_e5c6d7f8",
+          "content": "what if we just started planning the next one now while we still remember what worked",
+          "ts": "2026-03-23T20:29:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s06_t017",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "Lena give us a month at least 😄 but yes. smaller format, curated room, something cultural before. I'll start a thread in April. sorted",
+          "ts": "2026-03-23T20:31:00",
+          "reply_to": "grp_e8f9a0b1_s06_t016"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s06_t018",
+          "speaker": "Dev",
+          "speaker_id": "p_c3a4b5d6",
+          "content": "can we do something active before dinner next time. gallery is fine but omar's pitch idea is not the worst thing I've ever heard",
+          "ts": "2026-03-23T20:32:00",
+          "reply_to": "grp_e8f9a0b1_s06_t017"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s06_t019",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "Dev just admitted Omar had a good idea. put it in the archives Temi!! 😂 also yes, same group more or less, please. this size was right.",
+          "ts": "2026-03-23T20:33:00",
+          "reply_to": "grp_e8f9a0b1_s06_t018"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_e8f9a0b1_s07",
+      "session_index": 7,
+      "topic": "Jade announces lighter chat presence; Temi reveals Callum's stress; Omar+Temi false attribution seed",
+      "ts": "2026-04-14",
+      "turns": [
+        {
+          "turn": "grp_e8f9a0b1_s07_t000",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "alright everyone April thread as promised. thinking September for the next one. ideas welcome. lmk if there's an issue",
+          "ts": "2026-04-14T19:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s07_t001",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "September sounds good!! heads up though, brain's full rn. took on an extra class this term and I am genuinely running on fumes. I'll check in when I can but might be a bit quieter on here for a while 🙏",
+          "ts": "2026-04-14T19:47:00",
+          "reply_to": "grp_e8f9a0b1_s07_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s07_t002",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "jade ur a legend bruv 💪 rest up",
+          "ts": "2026-04-14T19:48:00",
+          "reply_to": "grp_e8f9a0b1_s07_t001"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s07_t003",
+          "speaker": "Temi",
+          "speaker_id": "p_a7e8f9b0",
+          "content": "Jade we'll be here when you surface. for September I'd vote something that gets us outside if the weather cooperates. there's an open-air cinema series that usually runs September weekends. or the harbour market does a Saturday evening thing. what's your read Marcus",
+          "ts": "2026-04-14T19:49:00",
+          "reply_to": "grp_e8f9a0b1_s07_t001"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s07_t004",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "open-air cinema with dinner after sounds exactly right. I'll look at dates. Omar, escape room is also on the table if people want something different, Jade suggested it last year",
+          "ts": "2026-04-14T19:51:00",
+          "reply_to": "grp_e8f9a0b1_s07_t003"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s07_t005",
+          "speaker": "Callum",
+          "speaker_id": "p_f6d7e8a9",
+          "content": "escape room is fine in principle. I've never done one but that's not a reason not to. what's the capacity",
+          "ts": "2026-04-14T19:52:00",
+          "reply_to": "grp_e8f9a0b1_s07_t004"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s07_t006",
+          "speaker": "Dev",
+          "speaker_id": "p_c3a4b5d6",
+          "content": "callum just voluntarily considered something new. checks notes, this is growth",
+          "ts": "2026-04-14T19:53:00",
+          "reply_to": "grp_e8f9a0b1_s07_t005"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s07_t007",
+          "speaker": "Callum",
+          "speaker_id": "p_f6d7e8a9",
+          "content": "mate. I'm not a fossil.",
+          "ts": "2026-04-14T19:54:00",
+          "reply_to": "grp_e8f9a0b1_s07_t006"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s07_t008",
+          "speaker": "Temi",
+          "speaker_id": "p_a7e8f9b0",
+          "content": "for what it's worth Callum's been carrying more than usual lately. work's been tough on him. I don't think he'd say that here but it was obvious at the reunion dinner when he relaxed around nine and actually seemed to enjoy it. he needed that evening.",
+          "ts": "2026-04-14T19:56:00",
+          "reply_to": "grp_e8f9a0b1_s07_t007"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s07_t009",
+          "speaker": "Lena",
+          "speaker_id": "p_e5c6d7f8",
+          "content": "noted. I didn't know that. good to know.",
+          "ts": "2026-04-14T19:58:00",
+          "reply_to": "grp_e8f9a0b1_s07_t008"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s07_t010",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "yeah temi's rite bruv callum doesnt say much but you can tell. glad he came",
+          "ts": "2026-04-14T19:59:00",
+          "reply_to": "grp_e8f9a0b1_s07_t009"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s07_t011",
+          "speaker": "Sana",
+          "speaker_id": "p_d4b5c6e7",
+          "content": "what date is this again, September which weekend. I need to flag it now before the rota fills.",
+          "ts": "2026-04-14T19:01:00",
+          "reply_to": "grp_e8f9a0b1_s07_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s07_t012",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "not locked yet Sana, second or third weekend of September most likely. I'll do a poll next month. lmk if there's an issue",
+          "ts": "2026-04-14T20:02:00",
+          "reply_to": "grp_e8f9a0b1_s07_t011"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s07_t013",
+          "speaker": "Rachel",
+          "speaker_id": "p_c9a0b1d2",
+          "content": "Second weekend of September works. Escape room followed by dinner is a reasonable structure.",
+          "ts": "2026-04-14T20:03:00",
+          "reply_to": "grp_e8f9a0b1_s07_t004"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s07_t014",
+          "speaker": "Temi",
+          "speaker_id": "p_a7e8f9b0",
+          "content": "escape room can work. the one on Station Road does a group booking for ten. I went with a work lot last autumn and it was actually decent. not a team-building vibe, more like a proper puzzle night.",
+          "ts": "2026-04-14T20:05:00",
+          "reply_to": "grp_e8f9a0b1_s07_t013"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s07_t015",
+          "speaker": "Dev",
+          "speaker_id": "p_c3a4b5d6",
+          "content": "temi just called it a puzzle night to stop me objecting. transparent but effective",
+          "ts": "2026-04-14T20:06:00",
+          "reply_to": "grp_e8f9a0b1_s07_t014"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s07_t016",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "im in 👍",
+          "ts": "2026-04-14T20:07:00",
+          "reply_to": "grp_e8f9a0b1_s07_t014"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s07_t017",
+          "speaker": "Lena",
+          "speaker_id": "p_e5c6d7f8",
+          "content": "yep",
+          "ts": "2026-04-14T20:08:00",
+          "reply_to": "grp_e8f9a0b1_s07_t015"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s07_t018",
+          "speaker": "Callum",
+          "speaker_id": "p_f6d7e8a9",
+          "content": "I'll pencil it in. September 12th or 13th if those are the options, but that's just me",
+          "ts": "2026-04-14T20:10:00",
+          "reply_to": "grp_e8f9a0b1_s07_t013"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s07_t019",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "alright everyone escape room + dinner is the direction. September 12th provisionally. poll coming in May. sorted 🎉",
+          "ts": "2026-04-14T20:12:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_e8f9a0b1_s08",
+      "session_index": 8,
+      "topic": "Post-escape-room debrief; Callum opens up; Omar co-organises five-a-side tournament; temporal shifts for Callum and Omar",
+      "ts": "2026-09-14",
+      "turns": [
+        {
+          "turn": "grp_e8f9a0b1_s08_t000",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "RIGHT so. five a side tournament. next month. I've booked the astro at the rec centre, Saturday 10th October, 10am. sorted it myself. who's in 🔥🔥🔥",
+          "ts": "2026-09-14T20:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s08_t001",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "Omar actually sorted the logistics himself. I'm genuinely impressed 😄 in, obviously. lmk if there's an issue with the pitch booking",
+          "ts": "2026-09-14T20:31:00",
+          "reply_to": "grp_e8f9a0b1_s08_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s08_t002",
+          "speaker": "Dev",
+          "speaker_id": "p_c3a4b5d6",
+          "content": "checks notes, omar planned something. we're all going to die on that pitch but yes",
+          "ts": "2026-09-14T20:32:00",
+          "reply_to": "grp_e8f9a0b1_s08_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s08_t003",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "Omar this is amazing!! I mean I will be useless but I will be enthusiastically useless 😂 also Saturday was one of the best group nights. the escape room was genuinely fun, who knew",
+          "ts": "2026-09-14T20:33:00",
+          "reply_to": "grp_e8f9a0b1_s08_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s08_t004",
+          "speaker": "Callum",
+          "speaker_id": "p_f6d7e8a9",
+          "content": "Saturday was the best-attended event in two years and we did an escape room. I'll admit I would not have predicted that. good shout Jade.",
+          "ts": "2026-09-14T20:35:00",
+          "reply_to": "grp_e8f9a0b1_s08_t003"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s08_t005",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "callum I am using that quote forever bro 😂",
+          "ts": "2026-09-14T20:36:00",
+          "reply_to": "grp_e8f9a0b1_s08_t004"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s08_t006",
+          "speaker": "Callum",
+          "speaker_id": "p_f6d7e8a9",
+          "content": "also since we're debriefing. I almost didn't come Saturday. things have been difficult at work and I nearly texted Marcus to bail at 5pm. glad I didn't.",
+          "ts": "2026-09-14T20:37:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s08_t007",
+          "speaker": "Temi",
+          "speaker_id": "p_a7e8f9b0",
+          "content": "Callum. I'm really glad you came. and I'm glad you said that here.",
+          "ts": "2026-09-14T20:38:00",
+          "reply_to": "grp_e8f9a0b1_s08_t006"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s08_t008",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "okay but real talk, Callum thank you for saying that. genuinely. this is what the group is for!! 💙",
+          "ts": "2026-09-14T20:39:00",
+          "reply_to": "grp_e8f9a0b1_s08_t006"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s08_t009",
+          "speaker": "Callum",
+          "speaker_id": "p_f6d7e8a9",
+          "content": "right, moving on before this becomes a therapy session. Omar, what's the tournament format",
+          "ts": "2026-09-14T20:40:00",
+          "reply_to": "grp_e8f9a0b1_s08_t008"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s08_t010",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "three teams of three. round robin. final. I'm bringing two lads from the youth club to make up numbers if we're short. parking at the rec centre is free all day",
+          "ts": "2026-09-14T20:41:00",
+          "reply_to": "grp_e8f9a0b1_s08_t009"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s08_t011",
+          "speaker": "Sana",
+          "speaker_id": "p_d4b5c6e7",
+          "content": "what date is this again, October 10th? I'll try. on-call permitting.",
+          "ts": "2026-09-14T20:42:00",
+          "reply_to": "grp_e8f9a0b1_s08_t010"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s08_t012",
+          "speaker": "Lena",
+          "speaker_id": "p_e5c6d7f8",
+          "content": "I will watch. I will design the unofficial bracket poster. I will not play football.",
+          "ts": "2026-09-14T20:43:00",
+          "reply_to": "grp_e8f9a0b1_s08_t010"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s08_t013",
+          "speaker": "Dev",
+          "speaker_id": "p_c3a4b5d6",
+          "content": "lena designing the bracket is the best news today",
+          "ts": "2026-09-14T20:44:00",
+          "reply_to": "grp_e8f9a0b1_s08_t012"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s08_t014",
+          "speaker": "Rachel",
+          "speaker_id": "p_c9a0b1d2",
+          "content": "I will attend to observe. October 10th is clear.",
+          "ts": "2026-09-14T20:46:00",
+          "reply_to": "grp_e8f9a0b1_s08_t010"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s08_t015",
+          "speaker": "Temi",
+          "speaker_id": "p_a7e8f9b0",
+          "content": "okay so I've been thinking about this, the escape room night gave me an idea for a piece. not naming anyone specifically, but the whole dynamic of adults who went to school together trying to solve problems again in a room. there's something there. what's your read Marcus",
+          "ts": "2026-09-14T20:47:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s08_t016",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "Temi write it. obviously. as long as I'm not the one who panicked in the third room 😄",
+          "ts": "2026-09-14T20:48:00",
+          "reply_to": "grp_e8f9a0b1_s08_t015"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s08_t017",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "marcus it was defo you lol 😂😂",
+          "ts": "2026-09-14T20:49:00",
+          "reply_to": "grp_e8f9a0b1_s08_t016"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s08_t018",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "alright everyone October 10th five-a-side is on. Omar is running it, I'll help with the logistics side. lmk if there's an issue 🎉",
+          "ts": "2026-09-14T20:50:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s08_t019",
+          "speaker": "Callum",
+          "speaker_id": "p_f6d7e8a9",
+          "content": "playing. and I'm on Dev's team so I don't have to pass to him. Noted.",
+          "ts": "2026-09-14T20:52:00",
+          "reply_to": "grp_e8f9a0b1_s08_t018"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_e8f9a0b1_s09",
+      "session_index": 9,
+      "topic": "Temi's essay published; shifts to naming group dynamics; Rachel consensus trap; Jade prefers in-person",
+      "ts": "2026-10-19",
+      "turns": [
+        {
+          "turn": "grp_e8f9a0b1_s09_t000",
+          "speaker": "Temi",
+          "speaker_id": "p_a7e8f9b0",
+          "content": "okay so I've been thinking about this and I need to share something. the piece went up today. my features editor loved it and has asked me to develop it into a longer series on alumni communities. she said it might be the best thing I've written this year. I'm actually quite proud of it.",
+          "ts": "2026-10-19T20:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s09_t001",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "TEMI!! this is such good news!! I want to read it, send the link!! are we in it?? 😂 seriously so proud of you 🎉🎉",
+          "ts": "2026-10-19T20:01:00",
+          "reply_to": "grp_e8f9a0b1_s09_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s09_t002",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "send it bruv!! 🔥🔥",
+          "ts": "2026-10-19T20:02:00",
+          "reply_to": "grp_e8f9a0b1_s09_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s09_t003",
+          "speaker": "Temi",
+          "speaker_id": "p_a7e8f9b0",
+          "content": "nobody is named. you're all composites. but yes the football tournament is in there. [link shared]",
+          "ts": "2026-10-19T20:03:00",
+          "reply_to": "grp_e8f9a0b1_s09_t001"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s09_t004",
+          "speaker": "Dev",
+          "speaker_id": "p_c3a4b5d6",
+          "content": "read it. it's genuinely good temi. uncomfortably accurate in places",
+          "ts": "2026-10-19T20:05:00",
+          "reply_to": "grp_e8f9a0b1_s09_t003"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s09_t005",
+          "speaker": "Temi",
+          "speaker_id": "p_a7e8f9b0",
+          "content": "since we're here, I want to actually write about what makes this group work. not in a saccharine way. I mean the tensions, the sub-cliques, the person who almost never shows up until they do. what's your read on whether people would be okay with that",
+          "ts": "2026-10-19T20:07:00",
+          "reply_to": "grp_e8f9a0b1_s09_t004"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s09_t006",
+          "speaker": "Rachel",
+          "speaker_id": "p_c9a0b1d2",
+          "content": "Fine by me. We are all adults.",
+          "ts": "2026-10-19T20:08:00",
+          "reply_to": "grp_e8f9a0b1_s09_t005"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s09_t007",
+          "speaker": "Lena",
+          "speaker_id": "p_e5c6d7f8",
+          "content": "yep. write it.",
+          "ts": "2026-10-19T20:09:00",
+          "reply_to": "grp_e8f9a0b1_s09_t005"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s09_t008",
+          "speaker": "Callum",
+          "speaker_id": "p_f6d7e8a9",
+          "content": "I'm the one who almost never shows up until I do, aren't I.",
+          "ts": "2026-10-19T20:10:00",
+          "reply_to": "grp_e8f9a0b1_s09_t005"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s09_t009",
+          "speaker": "Temi",
+          "speaker_id": "p_a7e8f9b0",
+          "content": "no comment. what's your read on yourself Callum",
+          "ts": "2026-10-19T20:11:00",
+          "reply_to": "grp_e8f9a0b1_s09_t008"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s09_t010",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "can I just say. this chat has been incredible this year but the group nights have been even better. I said it in March and I mean it more now. there is something about being in the same room that this just cannot replicate 💙",
+          "ts": "2026-10-19T20:13:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s09_t011",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "facts 👍",
+          "ts": "2026-10-19T20:14:00",
+          "reply_to": "grp_e8f9a0b1_s09_t010"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s09_t012",
+          "speaker": "Sana",
+          "speaker_id": "p_d4b5c6e7",
+          "content": "sorry, hectic week. agree with Jade. I'm glad I came to both events this year. all well.",
+          "ts": "2026-10-19T20:16:00",
+          "reply_to": "grp_e8f9a0b1_s09_t010"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s09_t013",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "alright everyone. Temi, brilliant piece, proud of you. we should do something before Christmas, keep the momentum. low-key, whoever can make it. lmk if there's an issue 🎉",
+          "ts": "2026-10-19T20:17:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s09_t014",
+          "speaker": "Lena",
+          "speaker_id": "p_e5c6d7f8",
+          "content": "what if we just did dinner again, same place. why fix what worked",
+          "ts": "2026-10-19T20:18:00",
+          "reply_to": "grp_e8f9a0b1_s09_t013"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s09_t015",
+          "speaker": "Dev",
+          "speaker_id": "p_c3a4b5d6",
+          "content": "lena suggesting we repeat something. 2026 is wild",
+          "ts": "2026-10-19T20:19:00",
+          "reply_to": "grp_e8f9a0b1_s09_t014"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s09_t016",
+          "speaker": "Lena",
+          "speaker_id": "p_e5c6d7f8",
+          "content": "nope.",
+          "ts": "2026-10-19T20:20:00",
+          "reply_to": "grp_e8f9a0b1_s09_t015"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s09_t017",
+          "speaker": "Callum",
+          "speaker_id": "p_f6d7e8a9",
+          "content": "Parlour & Co again works for me. I'll actually stay past nine this time. probably.",
+          "ts": "2026-10-19T20:21:00",
+          "reply_to": "grp_e8f9a0b1_s09_t014"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s09_t018",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "are we going to actually talk about this or just let Marcus book and I show up 😄 either works honestly",
+          "ts": "2026-10-19T20:22:00",
+          "reply_to": "grp_e8f9a0b1_s09_t017"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s09_t019",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "sorted. December dinner, Parlour & Co, I'll book. more details to follow. 🎉",
+          "ts": "2026-10-19T20:23:00",
+          "reply_to": "grp_e8f9a0b1_s09_t018"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_e8f9a0b1_s10",
+      "session_index": 10,
+      "topic": "Year-end debrief; group origin story revealed; Omar+Marcus falling-out disclosed; Sana preference confirmed",
+      "ts": "2026-12-07",
+      "turns": [
+        {
+          "turn": "grp_e8f9a0b1_s10_t000",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "alright everyone, end of year thread. December dinner is Saturday 19th, Parlour & Co, 7pm. same private room. table of ten. lmk if there's an issue 🎉",
+          "ts": "2026-12-07T20:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s10_t001",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "in!! also I've been properly thinking about this group this year. like how did we end up actually close when for years this chat was basically just 'anyone fancy a pub in January'. what's the story of how this actually became a real thing",
+          "ts": "2026-12-07T20:46:00",
+          "reply_to": "grp_e8f9a0b1_s10_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s10_t002",
+          "speaker": "Temi",
+          "speaker_id": "p_a7e8f9b0",
+          "content": "Jade. this is exactly what my series is about. okay so I've been thinking about this for months. the chat existed for three years as a logistics thread. it became something else when Lena came back and showed up to that pub night properly for the first time. that was the turning point.",
+          "ts": "2026-12-07T20:47:00",
+          "reply_to": "grp_e8f9a0b1_s10_t001"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s10_t003",
+          "speaker": "Lena",
+          "speaker_id": "p_e5c6d7f8",
+          "content": "that's generous. what if it was just that I finally ran out of excuses",
+          "ts": "2026-12-07T20:48:00",
+          "reply_to": "grp_e8f9a0b1_s10_t002"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s10_t004",
+          "speaker": "Dev",
+          "speaker_id": "p_c3a4b5d6",
+          "content": "checks notes, actually I think the thing that made it real was marcus and omar having that falling-out in 2023 and then sorting it. that was when people realised we were actually invested enough to fall out",
+          "ts": "2026-12-07T20:49:00",
+          "reply_to": "grp_e8f9a0b1_s10_t002"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s10_t005",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "dev why are you bringin that up lol 😂 yeah. marcus said something out of turn, I blanked him for a month, then he showed up at five-a-side and said his piece. we dont need to get into it",
+          "ts": "2026-12-07T20:50:00",
+          "reply_to": "grp_e8f9a0b1_s10_t004"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s10_t006",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "Omar. I'm still sorry. and Dev thanks for nothing 😄",
+          "ts": "2026-12-07T20:51:00",
+          "reply_to": "grp_e8f9a0b1_s10_t005"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s10_t007",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "sorted bro 👍 thats old news",
+          "ts": "2026-12-07T20:52:00",
+          "reply_to": "grp_e8f9a0b1_s10_t006"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s10_t008",
+          "speaker": "Temi",
+          "speaker_id": "p_a7e8f9b0",
+          "content": "Dev has a point actually. the group that can fall out and come back is not the same as one that just never tests the relationship. what's your read on whether that applies to other pairs in here",
+          "ts": "2026-12-07T20:53:00",
+          "reply_to": "grp_e8f9a0b1_s10_t006"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s10_t009",
+          "speaker": "Callum",
+          "speaker_id": "p_f6d7e8a9",
+          "content": "not touching that one. but yes. Noted.",
+          "ts": "2026-12-07T20:54:00",
+          "reply_to": "grp_e8f9a0b1_s10_t008"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s10_t010",
+          "speaker": "Sana",
+          "speaker_id": "p_d4b5c6e7",
+          "content": "what date is this again, December 19th? Confirming. and for what it's worth I found this year easier with fewer big events. two or three evenings where I could actually be present was better than five I partly missed.",
+          "ts": "2026-12-07T20:55:00",
+          "reply_to": "grp_e8f9a0b1_s10_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s10_t011",
+          "speaker": "Jade",
+          "speaker_id": "p_b2f3a4c5",
+          "content": "Sana this. I feel like you've said something important there. quality not quantity. also December 19th, in!! 🎉",
+          "ts": "2026-12-07T20:56:00",
+          "reply_to": "grp_e8f9a0b1_s10_t010"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s10_t012",
+          "speaker": "Lena",
+          "speaker_id": "p_e5c6d7f8",
+          "content": "in. (and the bracket design from October was genuinely one of my better pieces of work this year, just saying)",
+          "ts": "2026-12-07T20:57:00",
+          "reply_to": "grp_e8f9a0b1_s10_t011"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s10_t013",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "lena that bracket slapped bruv 😂👍",
+          "ts": "2026-12-07T20:58:00",
+          "reply_to": "grp_e8f9a0b1_s10_t012"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s10_t014",
+          "speaker": "Dev",
+          "speaker_id": "p_c3a4b5d6",
+          "content": "year-end verdict from me: this group went from 'people I used to know' to 'people I actually want to see'. did not see that coming when I moved back",
+          "ts": "2026-12-07T21:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e8f9a0b1_s10_t015",
+          "speaker": "Temi",
+          "speaker_id": "p_a7e8f9b0",
+          "content": "Dev that is going in the article verbatim. anonymised obviously.",
+          "ts": "2026-12-07T21:01:00",
+          "reply_to": "grp_e8f9a0b1_s10_t014"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s10_t016",
+          "speaker": "Rachel",
+          "speaker_id": "p_c9a0b1d2",
+          "content": "19th confirmed. Same venue, good wine list. Understood.",
+          "ts": "2026-12-07T21:02:00",
+          "reply_to": "grp_e8f9a0b1_s10_t000"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s10_t017",
+          "speaker": "Callum",
+          "speaker_id": "p_f6d7e8a9",
+          "content": "in for the 19th. setting an alarm for midnight for the first time in four years. that's just me being optimistic.",
+          "ts": "2026-12-07T21:03:00",
+          "reply_to": "grp_e8f9a0b1_s10_t016"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s10_t018",
+          "speaker": "Omar",
+          "speaker_id": "p_b8f9a0c1",
+          "content": "callum staying past 9 is officially the comeback story of 2026 😂😂",
+          "ts": "2026-12-07T21:04:00",
+          "reply_to": "grp_e8f9a0b1_s10_t017"
+        },
+        {
+          "turn": "grp_e8f9a0b1_s10_t019",
+          "speaker": "Marcus",
+          "speaker_id": "p_a1e2f3b4",
+          "content": "alright everyone, what a year. December 19th confirmed, table of ten, 7pm. Temi write it all down. sorted 🎉",
+          "ts": "2026-12-07T21:05:00",
+          "reply_to": ""
+        }
+      ]
+    }
+  ],
+  "qa_pairs": [
+    {
+      "id": "Q1_e8f9a0b101",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Marcus's behavior around venue selection for group dinners reveal about his actual priorities when it comes to where the group eats?",
+      "answer": "Marcus consistently steers the group toward substantial, hearty food and away from anything he perceives as fussy or overly refined. In Session 1, when proposing The Crown as a reunion venue, he explicitly dismisses the alternative with 'none of that small plates business' — framing sharing plates not as a personal preference but as something beneath the group's expectations. By Session 4, after the venue switches to Parlour & Co, he pre-empts Omar's question in Session 4 by confirming 'their set menu is proper food Omar, not tapas nonsense. I already checked' — again reaching for derogatory language ('tapas nonsense') to signal the same distaste. The pattern across two sessions shows Marcus routinely positions himself as the person who has already checked that food will be substantial, and his advocacy is always routed through what the food is not (small plates, tapas, sharing portions) rather than what it is.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_e8f9a0b1_s01_t006",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "proper food spread. none of that small plates business",
+          "relevance": "Marcus dismisses small plates as a category when proposing The Crown, establishing the preference as a baseline standard"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_e8f9a0b1_s04_t019",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "their set menu is proper food Omar, not tapas nonsense. I already checked",
+          "relevance": "Marcus proactively reassures the group about food substance using the same derogatory framing ('tapas nonsense'), confirming the preference is stable across sessions"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q4_e8f9a0b101",
+      "category": "Q4",
+      "difficulty": "hard",
+      "question": "Which member made the original argument that the group should stick to known reliable pubs for the reunion, arguing specifically that unfamiliar venues create problems and things always go wrong?",
+      "answer": "Callum made the Session 1 argument. In Session 1 he said: 'sit-down works for me. The Crown or somewhere similar. new venues take longer to sort and then something always goes wrong, but that's just me.' His framing explicitly names the problem as operational — 'new venues take longer to sort' and 'something always goes wrong' — and he hedges with his characteristic 'but that's just me.' In Session 2, when Marcus proposed The Griffin or The Crown, Callum endorsed The Griffin by saying 'at least we know the layout and parking isn't a nightmare' — the same 'known venue = fewer problems' logic, but in Session 2's context and with a practical parking gloss rather than the 'something always goes wrong' framing from Session 1.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Marcus",
+        "B": "Callum",
+        "C": "Omar",
+        "D": "Dev"
+      },
+      "correct_option": "B",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_e8f9a0b1_s01_t009",
+          "speaker_display_name": "Callum",
+          "message_excerpt": "The Crown or somewhere similar. new venues take longer to sort and then something always goes wrong, but that's just me",
+          "relevance": "Callum's Session 1 statement — anchored by operational failure risk and his 'but that's just me' hedge — is the target attribution"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q4_e8f9a0b102",
+      "category": "Q4",
+      "difficulty": "hard",
+      "question": "One member first observed aloud that Callum was carrying more stress than usual and that his work had been difficult — framing it as something they had noticed but that Callum himself would not say in the chat. A different member in the same session agreed with this reading. Which member made the original observation about Callum's stress?",
+      "answer": "Temi made the original observation. In Session 7, she said: 'for what it's worth Callum's been carrying more than usual lately. work's been tough on him. I don't think he'd say that here but it was obvious at the reunion dinner when he relaxed around nine and actually seemed to enjoy it. he needed that evening.' Her framing is specific — she anchors the insight to a behavioural observation at the reunion ('relaxed around nine') and includes the meta-comment that she is sharing something she knows Callum would not disclose himself. Omar then replied in the next turn: 'yeah temi's rite bruv callum doesnt say much but you can tell' — explicitly attributing the observation to Temi ('temi's rite') and echoing rather than independently offering it.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Omar",
+        "B": "Jade",
+        "C": "Temi",
+        "D": "Lena"
+      },
+      "correct_option": "C",
+      "evidence_anchors": [
+        {
+          "session_index": 7,
+          "turn_id": "grp_e8f9a0b1_s07_t008",
+          "speaker_display_name": "Temi",
+          "message_excerpt": "Callum's been carrying more than usual lately. work's been tough on him. I don't think he'd say that here",
+          "relevance": "Temi is the one who names Callum's stress first, with a specific behavioural anchor from the reunion dinner and the meta-comment about Callum's privacy preference"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_e8f9a0b101",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "What is Sana's attendance pattern in group events, and what in Jade's message shows she had already been tracking this about Sana — before Sana had said anything about her schedule that evening?",
+      "answer": "Sana's pattern is one of reduced group presence — she attends infrequently and her gaps between events are long. Jade revealed she had already been tracking this in Session 2 when, responding to Sana's tentative confirmation about the January pub night, she wrote: 'Sana I really hope you can come, it's been ages. last time we were in the same room was Jade's birthday back in November!!' The observable indicator is the specific reference to November: Jade does not say 'it's been a while' in general terms — she names the precise last occasion, which means she has a mental record of when she and Sana were last physically together. Jade had not asked Sana when she was last available; she supplied the timestamp unprompted. This implies Jade had been noticing and storing Sana's absence as a data point rather than experiencing it passively.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_e8f9a0b1_s02_t013",
+          "speaker_display_name": "Jade",
+          "message_excerpt": "it's been ages. last time we were in the same room was Jade's birthday back in November",
+          "relevance": "Jade names the specific last occasion she and Sana were together, without being asked — revealing she has been tracking Sana's absence as a conscious datum"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_e8f9a0b102",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "What is Sana's social style at group events, and what in Dev's message reveals he had already formed a clear read on this about her — without Sana having invited the observation?",
+      "answer": "Sana's social style at group events is to say little but make her contributions count — she participates selectively rather than continuously. Dev revealed he had a clear read on this in Session 3 when he responded to Sana's brief 'all well' check-in with: 'sana said three words all night but somehow still the most useful person at the table. checks notes, this is a compliment.' The observable indicator is the turn-count framing: Dev does not say 'Sana was quiet' — he makes a precise observation about volume ('three words all night') and then balances it against impact ('most useful person at the table'). This is not a spontaneous remark prompted by something Sana said; Sana had simply posted a brief check-in. Dev is volunteering an assessment of her behaviour at the pub night that he has clearly been sitting with — and the compliment framing implies this is a considered position, not a throwaway.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_e8f9a0b1_s03_t008",
+          "speaker_display_name": "Dev",
+          "message_excerpt": "sana said three words all night but somehow still the most useful person at the table",
+          "relevance": "Dev volunteers a precise volume-to-impact assessment of Sana's style at the event without being asked, revealing he had consciously registered and formed a view on her contribution pattern"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_e8f9a0b103",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "What is Callum's relationship to stress and disclosure in the group, and what in Temi's message shows she had already understood this about him — before Callum had said anything himself that session?",
+      "answer": "Callum's pattern is to absorb pressure privately without surfacing it in the group chat; he does not use the group as a place to process difficulty. Temi revealed she had understood this in Session 7 when she said unprompted: 'Callum's been carrying more than usual lately. work's been tough on him. I don't think he'd say that here but it was obvious at the reunion dinner when he relaxed around nine.' The key observable is 'I don't think he'd say that here' — this is Temi explicitly naming Callum's relationship to disclosure in the group, implying she has a prior working model of how he manages what he shares. She did not form this view in Session 7; she arrived at the session already holding it, and chose to say it on his behalf precisely because she knew he would not. The reunion dinner behavioural anchor ('relaxed around nine') confirms she has been watching him closely across events, not just in the chat.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 7,
+          "turn_id": "grp_e8f9a0b1_s07_t008",
+          "speaker_display_name": "Temi",
+          "message_excerpt": "I don't think he'd say that here but it was obvious at the reunion dinner when he relaxed around nine",
+          "relevance": "Temi names Callum's privacy boundary explicitly ('I don't think he'd say that here') before Callum has said anything — revealing a prior model of his disclosure preferences she is acting on"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_e8f9a0b101",
+      "category": "Q2",
+      "difficulty": "hard",
+      "question": "The group settled on The Griffin pub for the January meetup. What did Lena's response to that decision reveal about her actual position, and what specifically in how she replied signals that she did not endorse it?",
+      "answer": "The group decided on The Griffin for the January meetup after Marcus proposed it and Callum and Omar endorsed it. Lena had offered an alternative — the wine bar on Castle Street with a private room — before Dev flatly said 'pub. i'm not doing a wine bar for a first week back thing.' Lena's entire response to Dev's veto was: 'sure whatever.' The dissent signal is the minimal resignation of that reply: she does not say the pub is fine, she does not say she agrees — she produces the barest possible social acquiescence. 'Sure whatever' in this context reads as concession under pressure, not endorsement. There is no follow-up positive engagement from Lena about The Griffin in any subsequent turn that session. The signal is easy to miss precisely because 'sure whatever' closes the thread rather than reopening it — a reader who skims for agreement might register it as acceptance rather than silent surrender.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Sana",
+        "B": "Rachel",
+        "C": "Lena",
+        "D": "Temi"
+      },
+      "correct_option": "C",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_e8f9a0b1_s02_t010",
+          "speaker_display_name": "Lena",
+          "message_excerpt": "sure whatever",
+          "relevance": "Lena's two-word response to Dev's veto of her wine bar suggestion is the sole signal of her non-endorsement — minimal capitulation rather than genuine agreement"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_e8f9a0b102",
+      "category": "Q2",
+      "difficulty": "hard",
+      "question": "After agreeing to March 21st as the reunion date, Rachel weighed in on what the group should prioritise. What did her comment signal about a preference she had never stated directly — and what in how she phrased it reveals this?",
+      "answer": "Rachel's contribution at the end of Session 3 was: 'March 21st works. Good venue matters more than format.' The group had been debating format (documentary-then-dinner vs. dinner-only); Rachel's comment technically resolved that debate by sidelining it, but her actual message was about something else entirely. The phrase 'good venue' functions as a code: throughout the corpus, Rachel is the only member who ever specifically asks about wine lists — she does so in Session 5 ('Does Parlour & Co have a wine list or is it a house white situation') and then confirms satisfaction with it in Session 10 ('Same venue, good wine list'). In Session 3, by staking 'good venue matters more than format' she is quietly signalling that her criterion for a 'good venue' is its wine selection — a preference that she never names directly but reveals through her subsequent behaviour. The signal is easy to miss because 'good venue matters' sounds like generic quality advocacy, not a specific wine-list preference.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Rachel",
+        "B": "Dev",
+        "C": "Omar",
+        "D": "Jade"
+      },
+      "correct_option": "A",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_e8f9a0b1_s03_t019",
+          "speaker_display_name": "Rachel",
+          "message_excerpt": "Good venue matters more than format.",
+          "relevance": "Rachel's terse sign-off reframes the format debate as a venue question — a preference encoding her unspoken wine-list criterion, only made legible by her subsequent wine enquiries in Sessions 5 and 10"
+        },
+        {
+          "turn_id": "grp_e8f9a0b1_s05_t019",
+          "session_index": 5,
+          "turn_index": 20,
+          "speaker_display_name": "Rachel",
+          "message_excerpt": "Confirmed. And Parlour & Co does have a proper list, I checked their menu page. Noted.",
+          "relevance": "Rachel verifies the wine list before committing — confirms wine quality as her gating criterion"
+        },
+        {
+          "turn_id": "grp_e8f9a0b1_s06_t015",
+          "session_index": 6,
+          "turn_index": 16,
+          "speaker_display_name": "Rachel",
+          "message_excerpt": "The wine list was exactly right. Good call on the venue.",
+          "relevance": "Rachel evaluates the venue post-event explicitly through the wine list — confirms the priority"
+        },
+        {
+          "turn_id": "grp_e8f9a0b1_s10_t016",
+          "session_index": 10,
+          "turn_index": 17,
+          "speaker_display_name": "Rachel",
+          "message_excerpt": "19th confirmed. Same venue, good wine list. Understood.",
+          "relevance": "Rachel re-affirms the wine list as the venue's defining feature when committing to a return event"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_e8f9a0b103",
+      "category": "Q2",
+      "difficulty": "hard",
+      "question": "Marcus announced a headcount update and framed the reunion as an event to maximise attendance. What did his framing in that moment reveal about a position he had not yet adjusted — and what changed his view later?",
+      "answer": "The group had already settled on a smaller, curated format for the reunion dinner at Parlour & Co. But in Session 5, Marcus posted: 'current headcount is 7 confirmed, 2 pending (Sana, Rachel). I'll chase closer to the 28th.' His framing treats a higher headcount as the goal — he plans to 'chase' the two uncommitted members and frames the event's success in terms of attendance numbers. This is consistent with his prior-stated preference (visible in sessions 1–4) to maximise how many alumni come, and it sits in tension with the smaller intimate format the group had been gravitating toward. The shift only becomes explicit in Session 6, when — in the post-reunion debrief — Marcus says: 'the full-class thing last year had 22 people out of 87 and it felt thin. this actually felt full even with nine. I think the sweet spot is a table of ten or twelve.' His Session 5 headcount push was the last expression of his older preference; the event itself functioned as the counter-evidence that changed his position.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Marcus",
+        "B": "Temi",
+        "C": "Callum",
+        "D": "Dev"
+      },
+      "correct_option": "A",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_e8f9a0b1_s05_t018",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "current headcount is 7 confirmed, 2 pending (Sana, Rachel). I'll chase closer to the 28th",
+          "relevance": "Marcus's chase-the-headcount framing in Session 5 is the last expression of his older large-event preference, which the reunion dinner then disproves in Session 6"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_e8f9a0b1_s06_t004",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "this actually felt full even with nine. I think the sweet spot is a table of ten or twelve",
+          "relevance": "Marcus's post-reunion statement marks the shift: the event served as the counter-evidence that updated his position on scale"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_e8f9a0b104",
+      "category": "Q2",
+      "difficulty": "hard",
+      "question": "Temi asked the group whether people would be okay with her writing about the group's internal dynamics and tensions. Rachel responded and the thread moved on as though everyone had agreed. What did Rachel's specific phrasing signal about whether her consent was straightforward — and what in the conversation makes this legible?",
+      "answer": "Temi asked the group directly: 'I want to actually write about what makes this group work. not in a saccharine way. I mean the tensions, the sub-cliques, the person who almost never shows up until they do.' Rachel replied: 'Fine by me. We are all adults.' The phrase 'Fine by me' is terse even by Rachel's standards — she typically confirms in practical terms but here she uses the minimalist acquiescence form without any elaboration. The phrase 'We are all adults' reads as a deflection: it closes the thread with a general rationality appeal rather than engaging with what Temi actually described (tensions, sub-cliques). The conversation has established earlier that Rachel finds the subject of returning to one's hometown personally charged — Temi has written about communities of returnees, and the network data shows Rachel has never engaged with this subject in the group despite it being directly relevant to her. Her non-engagement here, dressed as consent, follows the same pattern: she signs off rather than engaging.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Jade",
+        "B": "Rachel",
+        "C": "Omar",
+        "D": "Dev"
+      },
+      "correct_option": "B",
+      "evidence_anchors": [
+        {
+          "session_index": 9,
+          "turn_id": "grp_e8f9a0b1_s09_t006",
+          "speaker_display_name": "Rachel",
+          "message_excerpt": "Fine by me. We are all adults.",
+          "relevance": "Rachel's minimal, deflecting consent — 'We are all adults' — closes the thread without engaging with the specifically charged topic (tensions, sub-cliques), consistent with her established pattern of avoiding personal engagement on the returnee subject"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q6_e8f9a0b101",
+      "category": "Q6",
+      "difficulty": "medium",
+      "question": "The group has an unspoken norm of keeping the chat focused on reunion planning and alumni news, with personal life updates handled in smaller threads or DMs. Does this genuinely apply to all members? If not, who treats this differently and what does their behaviour show?",
+      "answer": "No — Jade and Temi both treat the chat as a space for more personal or reflective content and do not consistently confine themselves to logistics and alumni news. Jade's pattern is visible across multiple sessions: in Session 1 she asks 'how is everyone actually doing' as a genuine emotional check-in; in Session 9 she posts a reflective observation about the group's quality of connection ('this chat has been incredible this year') that has no logistical content at all; and she uses the chat to process her own feelings about the group's development. Temi similarly uses the chat as a space to share professional news (the essay commission in Session 9), propose reflective threads about group dynamics, and pursue narrative questions ('what's the story of how this actually became a real thing'). Neither is following the logistics-only convention that other members like Rachel and Callum embody.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Jade and Temi",
+        "B": "Omar and Dev",
+        "C": "Sana and Rachel",
+        "D": "Callum and Lena"
+      },
+      "correct_option": "A",
+      "evidence_anchors": [
+        {
+          "session_index": 9,
+          "turn_id": "grp_e8f9a0b1_s09_t010",
+          "speaker_display_name": "Jade",
+          "message_excerpt": "there is something about being in the same room that this just cannot replicate",
+          "relevance": "Jade's reflective observation has no logistical content — it is personal and emotional, not reunion-planning or alumni news"
+        },
+        {
+          "session_index": 9,
+          "turn_id": "grp_e8f9a0b1_s09_t000",
+          "speaker_display_name": "Temi",
+          "message_excerpt": "the piece went up today. my features editor loved it and has asked me to develop it into a longer series",
+          "relevance": "Temi shares personal professional news in the group chat, treating it as a place for non-logistics personal updates"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q6_e8f9a0b102",
+      "category": "Q6",
+      "difficulty": "medium",
+      "question": "The group seems to operate with an expectation that events should be planned at least three weeks in advance, so that people with families or work shifts can arrange cover. Does this expectation reflect how all members actually behave? If not, who does not follow it and what signals this?",
+      "answer": "No — Dev and Omar do not follow this norm in practice. Dev's approach to planning is consistently reactive rather than advance-committed: he confirms attendance only once logistics are settled, often adds a sardonic comment rather than engaging with the planning itself, and in Session 2 simply asks 'what's casual for this group' rather than offering any advance planning input. Omar's behaviour is even more explicitly opposed to advance planning — in Session 8 he announces the five-a-side tournament with: 'I've booked the astro at the rec centre, Saturday 10th October, 10am. sorted it myself.' This is an announcement of a decision already made, not a consultation with the group three-plus weeks in advance. Both Dev and Omar consistently respond to plans rather than shaping them ahead of time.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Dev and Omar",
+        "B": "Callum and Sana",
+        "C": "Temi and Rachel",
+        "D": "Jade and Lena"
+      },
+      "correct_option": "A",
+      "evidence_anchors": [
+        {
+          "session_index": 8,
+          "turn_id": "grp_e8f9a0b1_s08_t000",
+          "speaker_display_name": "Omar",
+          "message_excerpt": "I've booked the astro at the rec centre, Saturday 10th October, 10am. sorted it myself",
+          "relevance": "Omar announces a booking already made — a fait accompli rather than a 3-week-advance consultation — showing he does not operate within the group's advance-planning norm"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_e8f9a0b101",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What do the conversations reveal about the relationship between Marcus and Jade — specifically, what shared history connects them and how does it shape their dynamic in the chat?",
+      "answer": "The conversations reveal that Marcus and Jade have a long creative collaboration rooted in school, specifically the school newspaper and magazine. In Session 4, when Marcus and Temi are proposed as co-writers for the reunion invite, Jade intervenes: 'Marcus can I just say you and Temi writing the group invite is the correct move. remember when we did the school magazine last issue and you two ended up editing each other's edits for a week. do not let that happen again.' Jade's reference is precise — 'the last issue,' a specific editorial episode — and she treats it as shared memory requiring no explanation. Marcus then deflects responsibility directly back to Temi, and Temi disputes his version in real-time, which Dev observes is still being litigated '19 years later.' The pattern in the chat shows Marcus and Jade have an easy, long-standing rapport — she holds him to account with warmth ('I can hear you Jade'), and she tracks his tendencies (defaulting to the same pub, over-managing logistics) with the attentiveness of someone who knows him well.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "school newspaper collaborators, ongoing close friends with mutual accountability",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_e8f9a0b1_s04_t010",
+          "speaker_display_name": "Jade",
+          "message_excerpt": "remember when we did the school magazine last issue and you two ended up editing each other's edits for a week",
+          "relevance": "Jade's reference to the school magazine last issue — naming a specific collaborative episode — reveals shared working history and the easy mutual knowledge it produced"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_e8f9a0b102",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What do the conversations reveal about what actually happened between Marcus and Omar in 2023, and what does it suggest about the nature of their friendship?",
+      "answer": "In Session 10, Dev surfaced a falling-out between Marcus and Omar in 2023: 'marcus and omar having that falling-out in 2023 and then sorting it. that was when people realised we were actually invested enough to fall out.' Omar then confirmed the details: 'marcus said something out of turn, I blanked him for a month, then he showed up at five-a-side and said his piece. we dont need to get into it.' Marcus replied: 'Omar. I'm still sorry.' The sequence reveals several things: the incident was initiated by something Marcus said (unspecified); Omar's response was cold withdrawal for a month rather than confrontation; and Marcus resolved it by showing up in person at five-a-side and making a direct apology. The resolution mechanism is revealing — Marcus did not send a message, he showed up physically and spoke. That the group is described as having 'realised we were actually invested enough to fall out' positions this episode as a turning-point proof of genuine closeness rather than mere acquaintance.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "2023 falling-out resolved by in-person apology at five-a-side; proof of genuine investment in the friendship",
+      "evidence_anchors": [
+        {
+          "session_index": 10,
+          "turn_id": "grp_e8f9a0b1_s10_t005",
+          "speaker_display_name": "Omar",
+          "message_excerpt": "marcus said something out of turn, I blanked him for a month, then he showed up at five-a-side and said his piece",
+          "relevance": "Omar's account of the falling-out — the incident, the withdrawal, the in-person resolution — reveals the texture of the friendship: resilient and close enough to sustain a serious rupture"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_e8f9a0b103",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What do the conversations reveal about what Callum disclosed about his attendance at the September escape room event — and what does it suggest about his relationship to the group at that point?",
+      "answer": "In Session 8, Callum said unprompted: 'I almost didn't come Saturday. things have been difficult at work and I nearly texted Marcus to bail at 5pm. glad I didn't.' This is notable on multiple levels. First, Callum is not a person who volunteers emotional disclosure in the group chat — across earlier sessions, he communicates in practical terms ('in', 'what's the capacity', 'that's just me') and his difficulty at work had only been surfaced by Temi as an external observation in Session 7. By Session 8, having attended and found the event restorative, he chose to share the near-miss in the open thread. The choice to post this — after the event and in a positive context — suggests the group has become a place he trusts with candour, and that the escape room night specifically lowered something for him. Marcus is the person he nearly texted, which also indicates Marcus is his individual point of contact for event attendance rather than the group as a whole.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "nearly withdrew from September event due to work stress; attended and disclosed it — marking growing trust in the group",
+      "evidence_anchors": [
+        {
+          "session_index": 8,
+          "turn_id": "grp_e8f9a0b1_s08_t006",
+          "speaker_display_name": "Callum",
+          "message_excerpt": "I almost didn't come Saturday. things have been difficult at work and I nearly texted Marcus to bail at 5pm. glad I didn't.",
+          "relevance": "Callum's disclosure of a near-miss — told after the fact in an open thread — reveals both the extent of his private difficulty and the trust the group has earned for him to share it"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q8_e8f9a0b101",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What in the conversations signals that Dev's relationship to showing up for group events shifted, and what triggered the change — given that his prior pattern had been established across multiple years?",
+      "answer": "Early state (Sessions before/at Session 1): Dev's pattern was enthusiastic non-attendance — he engaged with group planning, had opinions, but always had a London conflict that prevented him from actually coming. This is confirmed by Jade in Session 2 when she revokes his 'London clash card' — 'the London clash card is revoked as of now' — treating it as an established excuse rather than a one-off. His Session 1 participation was sardonic from a distance. Shift signal (Session 2): Dev opened the session: 'right so. officially a local again as of saturday. spare room full of boxes. send help.' Moving back is the mechanism — his non-attendance was structural (London-based), not preferential. By removing the distance constraint, the pattern could no longer hold. Trigger: relocation from London back to the local area. Evolved state (Sessions 2–10): Dev attends the January pub night (Session 2 confirms this — Jade notes he is 'even more chaotic in person' in Session 3), attends the March reunion, the escape room, and the five-a-side planning. His non-attendance was a logistics constraint, not a preference, and removing it made his enthusiasm reliable.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_e8f9a0b1_s02_t000",
+          "speaker_display_name": "Dev",
+          "message_excerpt": "officially a local again as of saturday. spare room full of boxes. send help",
+          "relevance": "Dev announces his relocation — the structural trigger that removes the London conflict and makes consistent attendance possible for the first time"
+        },
+        {
+          "session_index": 2,
+          "turn_id": "grp_e8f9a0b1_s02_t003",
+          "speaker_display_name": "Jade",
+          "message_excerpt": "the 'London clash' card is revoked as of now",
+          "relevance": "Jade's reference to the 'London clash card' confirms this was a long-standing excuse pattern — contextualising the move as a change in a years-established dynamic"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "enthusiastic in chat but always has a London conflict; the 'London clash card' is a known established excuse for non-attendance"
+        },
+        {
+          "session_index": 2,
+          "value": "moves back locally; structural barrier to attendance removed; joins the pub night and becomes a consistent attendee from session 2 onward"
+        }
+      ]
+    },
+    {
+      "id": "Q8_e8f9a0b102",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What explains why Lena's investment in the group shifted so markedly around Sessions 3–5, and what drove that change — given that her prior relationship to the group was described as peripheral?",
+      "answer": "Early state (Sessions 1–2): Lena's relationship to the group was minimal and obligatory. In Session 2, when the venue debate moved to The Griffin, she floated an alternative (the wine bar) and when vetoed simply said 'sure whatever' — not someone fighting for her preferences or emotionally invested in the outcome. The prior state is made explicit in Session 10, where Temi says the chat 'existed for three years as a logistics thread' until Lena attended the January pub night 'properly for the first time.' Shift signal (Session 3): In the post-pub debrief, Lena posted: 'it was actually a good night. hadn't expected that from a Monday-after pub.' The phrase 'hadn't expected that' is the tell: she went in with low expectations and came away surprised. The same session, Jade confirms: 'Lena!! I noticed you actually seemed to enjoy yourself, not just tolerate it' — the group registers the shift too. Trigger: the January pub night itself. Lena connected with Sana and Marcus at the event in a way she had not before. The turning point is confirmed in Session 10 by Temi's retrospective ('that was the turning point'). Evolved state (Sessions 3–10): Lena books the Caldwell Street gallery independently for the March reunion (Session 5), initiates social threads, and is named by Temi as the person who made the group real.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_e8f9a0b1_s03_t004",
+          "speaker_display_name": "Lena",
+          "message_excerpt": "it was actually a good night. hadn't expected that from a Monday-after pub",
+          "relevance": "Lena's surprised enjoyment — 'hadn't expected that' — marks the inflection point from minimal obligation to genuine investment"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_e8f9a0b1_s05_t009",
+          "speaker_display_name": "Lena",
+          "message_excerpt": "also confirmed the Caldwell Street gallery is free entry on the day and they're fine with a group arriving between 4 and 6",
+          "relevance": "By Session 5, Lena is proactively handling group logistics independently — the evolved state, three sessions after the pub night shift"
+        },
+        {
+          "session_index": 10,
+          "turn_id": "grp_e8f9a0b1_s10_t002",
+          "speaker_display_name": "Temi",
+          "message_excerpt": "the chat existed for three years as a logistics thread. it became something else when Lena came back and showed up to that pub night properly for the first time",
+          "relevance": "Temi's retrospective names the January pub night as the group's turning point and identifies Lena's genuine engagement as the catalyst — confirming the trigger"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 2,
+          "value": "attends as a peripheral obligation — concedes on venue with 'sure whatever', no investment in outcomes, described as attending one event per year out of duty"
+        },
+        {
+          "session_index": 3,
+          "value": "genuinely surprised by enjoyment at the pub night ('hadn't expected that'), begins initiating and contributing; Temi later identifies this as the group's turning point"
+        }
+      ]
+    },
+    {
+      "id": "Q8_e8f9a0b103",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What drove Marcus's change in thinking about reunion scale — specifically, what in the conversations explains why he shifted from insisting on large full-class events toward preferring a smaller curated format, and what session marks the turning point?",
+      "answer": "Early state (Sessions 1–5): Marcus's framing around the reunion consistently centres on maximising who comes. He refers to 'The Crown' being able to hold a large group, frames the headcount update in Session 5 as a chase exercise ('I'll chase closer to the 28th'), and has not articulated any preference for intimacy over scale. His prior preference for full-class events is confirmed in Session 6 when he explains: 'the full-class thing last year had 22 of 87 alumni' — a year-prior event run on his previous logic. Shift signal (Session 6): After the March 21st dinner, Marcus said in the post-reunion debrief: 'the full-class thing last year had 22 people out of 87 and it felt thin. this actually felt full even with nine. I think the sweet spot is a table of ten or twelve. not the whole year, the right people in a proper room.' Dev immediately marks this as unprecedented: 'checks notes, marcus voluntarily suggesting fewer people. historic.' Trigger: the experience of the March dinner itself — nine people in a private room at Parlour & Co — served as the counter-evidence. The event demonstrated that intimacy produces a better quality of connection than scale. Evolved state (Sessions 6–10): Marcus begins framing events as 'table of ten or twelve,' plans the December dinner for 'table of ten,' and never again advocates for a full-class format.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_e8f9a0b1_s05_t018",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "current headcount is 7 confirmed, 2 pending (Sana, Rachel). I'll chase closer to the 28th",
+          "relevance": "Marcus treating attendance-chasing as a goal in Session 5 is the final expression of his old large-event preference"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_e8f9a0b1_s06_t004",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "the full-class thing last year had 22 people out of 87 and it felt thin. this actually felt full even with nine. I think the sweet spot is a table of ten or twelve",
+          "relevance": "Marcus names the comparison explicitly — the low-turnout full-class event vs. the nine-person dinner — and draws the conclusion himself, making the trigger visible"
+        },
+        {
+          "session_index": 10,
+          "turn_id": "grp_e8f9a0b1_s10_t000",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "December dinner is Saturday 19th, Parlour & Co, 7pm. same private room. table of ten.",
+          "relevance": "By Session 10, Marcus books 'table of ten' as the format without discussion — the evolved state fully embedded"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 5,
+          "value": "frames reunion success through headcount; plans to chase uncommitted members; prior preference for full-class events still active"
+        },
+        {
+          "session_index": 6,
+          "value": "after experiencing nine-person dinner, concludes table of 10-12 is the sweet spot; references low-turnout full-class event as the contrast; never advocates for scale again"
+        }
+      ]
+    },
+    {
+      "id": "Q8_e8f9a0b104",
+      "category": "Q8",
+      "difficulty": "hard",
+      "question": "What in the conversations explains why Jade's presence in the group chat became lighter later on, and what triggered the change — given how active she had been earlier?",
+      "answer": "Early state (Sessions 1–6): Jade is one of the most active contributors in the chat. She leads emotional check-ins, pushes back on logistics, opens conversations about what the group means, and notices and names dynamics in others (Lena's re-engagement, Sana's absence). In Sessions 1–6 she asks questions, posts reactions, and drives narrative threads. Shift signal (Session 7): Jade announced: 'heads up though, brain's full rn. took on an extra class this term and I am genuinely running on fumes. I'll check in when I can but might be a bit quieter on here for a while.' This is an explicit self-declaration, using her characteristic 'brain's full rn' phrasing as a low-key exit notice. Trigger: taking on an extra GCSE class in the autumn term — an increased teaching workload that she frames as consuming her available bandwidth for real-time chat engagement. She does not disengage from the group; she signals a shift from daily active participation to periodic check-ins. Evolved state (Sessions 7–10): Jade's turns in Sessions 7–10 are episodic rather than continuous — she posts in bursts rather than maintaining a thread presence, and when she does post (Sessions 8 and 9) the messages are enthusiastic but they are contributions to moments rather than sustained conversation-driving.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_e8f9a0b1_s01_t007",
+          "speaker_display_name": "Jade",
+          "message_excerpt": "I actually liked that place Temi mentioned last time, the one near the market? had a really good menu. before we lock in The Crown can we at least look at a couple of alternatives!!",
+          "relevance": "Session 1 shows Jade's active early state — pushing back, asking for alternatives, driving the discussion"
+        },
+        {
+          "session_index": 7,
+          "turn_id": "grp_e8f9a0b1_s07_t001",
+          "speaker_display_name": "Jade",
+          "message_excerpt": "brain's full rn. took on an extra class this term and I am genuinely running on fumes. I'll check in when I can but might be a bit quieter on here for a while",
+          "relevance": "Jade's explicit announcement in Session 7 names the trigger (extra class, autumn term workload) and signals the shift from continuous to periodic presence"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "daily active contributor — drives discussions, asks questions, challenges logistics, notices group dynamics in real time"
+        },
+        {
+          "session_index": 7,
+          "value": "announces reduced chat presence due to extra GCSE class; shifts to periodic check-ins; still engaged but no longer sustaining threads"
+        }
+      ]
+    },
+    {
+      "id": "Q8_e8f9a0b105",
+      "category": "Q8",
+      "difficulty": "hard",
+      "question": "What in the conversations signals that Omar's involvement in organising group events changed significantly, and what drove that shift — given the pattern that had been consistent earlier?",
+      "answer": "Early state (Sessions 1–7): Omar's participation in event planning is reactive and minimal. He responds with thumbs-up emojis, asks about parking, and endorses whatever is proposed. He does not contribute logistical suggestions or take any ownership of planning. In Session 1 he asks for 'something fun' but adds no actionable alternative. His default stance is 'just tell me where to be.' Shift signal (Session 8): Omar opened the session with: 'RIGHT so. five a side tournament. next month. I've booked the astro at the rec centre, Saturday 10th October, 10am. sorted it myself.' The phrase 'sorted it myself' is the tell — he is signalling awareness that this is new behaviour for him. Marcus immediately registered it: 'Omar actually sorted the logistics himself. I'm genuinely impressed.' Trigger: Jade challenged the group in an earlier session to suggest something active after three consecutive sit-down events. The session 6 discussion had Dev support Omar's five-a-side idea ('omar's pitch idea is not the worst thing I've ever heard'), and by Session 7 planning was pointing toward active formats. Omar took this as a direct challenge to step up rather than just advocate. He has the skills and venue connections (youth club, rec centre) and used them. Evolved state (Sessions 8–10): Omar is now an active planner alongside Marcus — Session 8 closes with Marcus saying 'Omar is running it, I'll help with the logistics side.'",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_e8f9a0b1_s01_t010",
+          "speaker_display_name": "Omar",
+          "message_excerpt": "can we do somthing actually fun this year though? not just siting in a pub for four hours. even if its just a kick around before the food or somthing",
+          "relevance": "Session 1 shows Omar's early pattern: advocating for active formats but not taking any ownership — he asks for something fun but does nothing to organise it"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_e8f9a0b1_s08_t000",
+          "speaker_display_name": "Omar",
+          "message_excerpt": "I've booked the astro at the rec centre, Saturday 10th October, 10am. sorted it myself",
+          "relevance": "Omar's announcement uses 'sorted it myself' to signal self-awareness of the shift — he has independently handled venue and logistics, marking the transition from passive advocate to active organiser"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "advocates for active formats but takes no planning ownership — asks for 'something fun' without following through; default mode is reactive attendance"
+        },
+        {
+          "session_index": 8,
+          "value": "independently books the five-a-side venue and announces it as a fait accompli; explicitly notes 'sorted it myself'; acknowledged by Marcus as genuinely new behaviour"
+        }
+      ]
+    },
+    {
+      "id": "Q8_e8f9a0b106",
+      "category": "Q8",
+      "difficulty": "hard",
+      "question": "What explains why Callum's openness to novel group activities changed by then — and what in the conversations shows how resistant he had been before, and what specifically triggered the shift?",
+      "answer": "Early state (Sessions 1–7): Callum is the group's most consistent voice against unfamiliar formats. In Session 1, he says 'The Crown or somewhere similar. new venues take longer to sort and then something always goes wrong.' In Session 3, when Temi proposes a documentary-then-dinner double-header, Callum objects: 'double-header runs long. documentary then dinner means nobody's done by nine.' In Session 5 he explicitly skips the gallery option: 'I'll skip the gallery, arrive for dinner. that's just how it works with the kids on a Saturday.' In Session 7, when Jade's escape room suggestion comes up, his response is lukewarm but notable: 'escape room is fine in principle. I've never done one but that's not a reason not to' — Dev immediately marks this as 'growth.' Shift signal (Session 8): After attending the escape room, Callum said: 'Saturday was the best-attended event in two years and we did an escape room. I'll admit I would not have predicted that. good shout Jade.' The admission 'I would not have predicted that' is his own acknowledgement that the experience disproved his prior resistance. Trigger: attending the escape room and finding it worked. His resistance was always predictive — 'something always goes wrong' — and the escape room falsified the prediction. Evolved state (Sessions 8–10): Callum engages positively with Omar's five-a-side tournament ('playing') and in Session 10 sets a midnight alarm — an ironic comment on the scale of the social recalibration.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_e8f9a0b1_s01_t009",
+          "speaker_display_name": "Callum",
+          "message_excerpt": "The Crown or somewhere similar. new venues take longer to sort and then something always goes wrong, but that's just me",
+          "relevance": "Session 1 establishes the baseline — Callum's operational risk logic for resisting novelty is stated explicitly and hedged with his characteristic 'but that's just me'"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_e8f9a0b1_s08_t004",
+          "speaker_display_name": "Callum",
+          "message_excerpt": "Saturday was the best-attended event in two years and we did an escape room. I'll admit I would not have predicted that. good shout Jade.",
+          "relevance": "Callum explicitly acknowledges the prediction failure — 'I would not have predicted that' — making the trigger visible: the experience itself falsified his operational risk assumption"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "resists unfamiliar venues and formats on operational risk grounds ('something always goes wrong'); defaults to known pubs and skips optional novel add-ons"
+        },
+        {
+          "session_index": 8,
+          "value": "credits the escape room as the best-attended event in two years; admits he would not have predicted it; begins endorsing novel formats and engaging with five-a-side planning"
+        }
+      ]
+    },
+    {
+      "id": "Q8_e8f9a0b107",
+      "category": "Q8",
+      "difficulty": "hard",
+      "question": "What drove Temi's shift from avoiding the role of group archivist to actively documenting and writing about the group — and what in the conversation shows how clearly opposed her earlier stance was before the change?",
+      "answer": "Early state (Sessions 1–8): Temi is established as the group's best writer and the person who gets drafted to write communal text. But her relationship to being the group's de-facto archivist is one of quiet resistance — she defers, she asks what others want, she frames her ideas as suggestions rather than declarations. In Session 5, she says 'I'll draft the group invite text so it doesn't go out as a logistics spreadsheet' but frames even this as a service she provides for others. When she floats a features piece idea in Session 8 ('not naming anyone specifically'), she is still pitching it as a journalistic project at arm's length from the group's own history. Shift signal (Session 9): Temi opened the session: 'the piece went up today. my features editor loved it and has asked me to develop it into a longer series on alumni communities. she said it might be the best thing I've written this year. I'm actually quite proud of it.' The pride is visible and the commission is the structural change: this is no longer Temi helping the group write things, it is Temi being recognised externally for writing about the group. She then proposes actively documenting the group's tensions and dynamics. Trigger: the external validation from her features editor — professional recognition that the group is worth serious documentary attention, not just occasional copy. By the end of Session 9 she is actively archiving the year. Evolved state (Session 10): Temi is explicitly charged by Marcus ('Temi write it all down') and accepts the role without resistance.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_e8f9a0b1_s05_t012",
+          "speaker_display_name": "Temi",
+          "message_excerpt": "I'll draft the group invite text so it doesn't go out as a logistics spreadsheet. we went to school together, we can make it sound like it",
+          "relevance": "Session 5 shows Temi's earlier stance: she provides writing as a service to the group, framed as a practical contribution rather than an authorial act"
+        },
+        {
+          "session_index": 9,
+          "turn_id": "grp_e8f9a0b1_s09_t000",
+          "speaker_display_name": "Temi",
+          "message_excerpt": "the piece went up today. my features editor loved it and has asked me to develop it into a longer series on alumni communities. she said it might be the best thing I",
+          "relevance": "The editor's commission and Temi's explicit pride mark the turning point — external professional validation transforms her relationship to documenting the group from service into authorial investment"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 5,
+          "value": "drafts group communications as a service; approaches writing about the group at arm's length; pitches the essay idea in Session 8 as a journalistic project rather than archival commitment"
+        },
+        {
+          "session_index": 9,
+          "value": "essay published and commissioned for a series; pride made visible; begins actively naming and documenting group dynamics; accepts archival role Marcus assigns in Session 10"
+        }
+      ]
+    },
+    {
+      "id": "Q1_e8f9a0b102",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Rachel's behaviour around venue selection across the planning sessions suggest about the criterion she is actually using when she weighs in on where the group eats?",
+      "answer": "Rachel's contributions to venue discussions are consistently sparse, but when she does contribute, her emphasis falls on wine rather than food or format. In Session 5, while others debated headcount and menu logistics, Rachel asked: 'Does Parlour & Co have a wine list or is it a house white situation. asking for practical reasons.' The phrase 'asking for practical reasons' is Rachel's version of understatement — she is framing a wine-list enquiry as merely practical, when it is actually her primary selection criterion. She checked the venue's menu independently before Marcus even answered, confirming in Session 5: 'Parlour & Co does have a proper list, I checked their menu page. Noted.' By Session 10, her confirmation is: 'Same venue, good wine list. Understood.' Her contributions to venue discussions across the corpus follow a consistent pattern: she does not comment on food, ambience, or accessibility — only on whether the wine provision meets her standard.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_e8f9a0b1_s05_t004",
+          "speaker_display_name": "Rachel",
+          "message_excerpt": "Does Parlour & Co have a wine list or is it a house white situation. asking for practical reasons.",
+          "relevance": "Rachel's wine-list enquiry, framed as merely practical, is the clearest statement of her actual venue criterion — she is not asking about food or format"
+        },
+        {
+          "session_index": 10,
+          "turn_id": "grp_e8f9a0b1_s10_t016",
+          "speaker_display_name": "Rachel",
+          "message_excerpt": "Same venue, good wine list. Understood.",
+          "relevance": "Rachel's year-end confirmation again mentions the wine list as the first positive attribute — consistent with her established criterion across sessions"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_e8f9a0b103",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Temi's approach to the reunion format across multiple sessions suggest about what she values most in how the group spends time together?",
+      "answer": "Temi consistently steers the group toward formats that combine cultural or intellectually substantive pre-activity with the dinner — and her advocacy is always grounded in a belief that the format shapes the quality of connection, not just the evening's enjoyment. In Session 4, she proposed the photography exhibition at the Caldwell Street gallery or the arts centre screening, framing her preference explicitly: 'I'd vote option 2 but with the afternoon thing being genuinely interesting, not filler... something with a bit of texture to it.' The phrase 'something with a bit of texture' is her shorthand for the preference — she wants content that generates conversation, not just a backdrop. In Session 6, after the reunion, she articulated the underlying principle: 'the dinner worked because the room was right. we were actually talking, not shouting. the gallery beforehand set a tone that a pub never would have. I think what we proved is that the format matters as much as who shows up.' Her post-reunion analysis is a thesis statement, not just a debrief — she treats the format decision as a meaningful design choice with causal effects on the group's quality of engagement.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_e8f9a0b1_s04_t001",
+          "speaker_display_name": "Temi",
+          "message_excerpt": "something with a bit of texture to it",
+          "relevance": "Temi's shorthand for her preference — 'texture' — frames the cultural activity as a conversation generator rather than optional entertainment"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_e8f9a0b1_s06_t003",
+          "speaker_display_name": "Temi",
+          "message_excerpt": "the gallery beforehand set a tone that a pub never would have. I think what we proved is that the format matters as much as who shows up.",
+          "relevance": "Temi's post-reunion thesis explicitly links the format choice to the quality of connection — confirming the preference is principled, not just aesthetic"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_e8f9a0b104",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Jade's reflection on the group across Sessions 9 and 10 suggest about how she rates the value of the group chat itself compared to seeing people in person?",
+      "answer": "Jade is explicit that in-person time is categorically more valuable to her than the group chat, regardless of how active the chat has been. In Session 9, she posted: 'this chat has been incredible this year but the group nights have been even better. I said it in March and I mean it more now. there is something about being in the same room that this just cannot replicate.' The structure of that sentence — acknowledging the chat's value before immediately subordinating it — shows she is not dismissing the chat but is clear-eyed about its limits. In Session 10, Jade opens with: 'how did we end up actually close when for years this chat was basically just anyone fancy a pub in January' — framing the chat's prior life as proximity-without-connection, and implying the in-person events are what made the closeness real. Her preference is not anti-digital; it is a hierarchy in which the physical encounter is the irreplaceable element.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 9,
+          "turn_id": "grp_e8f9a0b1_s09_t010",
+          "speaker_display_name": "Jade",
+          "message_excerpt": "there is something about being in the same room that this just cannot replicate",
+          "relevance": "Jade explicitly names the irreplaceable quality of in-person connection — 'this just cannot replicate' — setting up the hierarchy between chat and physical presence"
+        },
+        {
+          "session_index": 10,
+          "turn_id": "grp_e8f9a0b1_s10_t001",
+          "speaker_display_name": "Jade",
+          "message_excerpt": "how did we end up actually close when for years this chat was basically just 'anyone fancy a pub in January'. wh",
+          "relevance": "Jade's year-end reflection frames the chat's prior role as minimal; actual closeness is attributed to the in-person events"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_e8f9a0b105",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Sana's end-of-year reflection reveal about how she actually prefers to engage with the group's social calendar?",
+      "answer": "Sana prefers fewer, more intentional events that she can attend completely over a more frequent schedule she would partially miss. In Session 10, she said: 'I found this year easier with fewer big events. two or three evenings where I could actually be present was better than five I partly missed.' The phrase 'where I could actually be present' is the key signal — she is distinguishing between attending fully and attending in the partial, distracted way she experiences when her on-call schedule or workload intrudes. This is consistent with her earlier chat behaviour: she always checks dates carefully before committing ('what date is this again?'), she explicitly protects calendar slots from her on-call rota, and she posts a 'sorry, hectic week' re-entry message when she resurfaces after silence. The Session 10 statement makes explicit what had been an implicit pattern — she is not avoidant, she is deliberate about which events she can genuinely show up for.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 10,
+          "turn_id": "grp_e8f9a0b1_s10_t010",
+          "speaker_display_name": "Sana",
+          "message_excerpt": "I found this year easier with fewer big events. two or three evenings where I could actually be present was better than five I partly missed.",
+          "relevance": "Sana explicitly names her preference for completeness over frequency — 'where I could actually be present' — making the implicit pattern legible"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_e8f9a0b106",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Callum's pattern around leaving group events suggest about a constraint he manages across the corpus but only acknowledges obliquely?",
+      "answer": "Callum consistently leaves group events around 9pm and frames this as a practical necessity tied to his children, but he never announces it as a preference or advocates for earlier end times. In Session 3, Omar notes during the pub-night debrief: 'callum left at like 9:30 as usual haha' — using 'as usual' to mark this as a long-standing known pattern. Callum's only response is: 'Kids. already an excuse, but that's just me' — framing parenthood as an excuse while distancing himself from any preference claim ('but that's just me'). In Session 6, after the March reunion, he says 'had to leave at nine but the first part was the best part anyway, if I'm honest' — reframing early departure as intentional selection of the better experience rather than constraint. By Session 10, the arc closes with him announcing he is 'setting an alarm for midnight for the first time in four years' — a self-aware joke that confirms the 9pm exit has been the norm across years, not just this group.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_e8f9a0b1_s03_t002",
+          "speaker_display_name": "Omar",
+          "message_excerpt": "callum left at like 9:30 as usual haha",
+          "relevance": "Omar's 'as usual' establishes the 9:30 departure as an entrenched pattern known to the group, not a one-off"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_e8f9a0b1_s06_t011",
+          "speaker_display_name": "Callum",
+          "message_excerpt": "had to leave at nine but the first part was the best part anyway, if I'm honest",
+          "relevance": "Callum reframes his early departure as preference — 'the first part was the best part' — a move that preserves his dignity while confirming the constraint is real"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q8_e8f9a0b108",
+      "category": "Q8",
+      "difficulty": "hard",
+      "question": "What drove Temi's shift from avoiding the role of group archivist to actively documenting and writing about the group — and what in the earlier sessions shows how differently she had positioned herself before?",
+      "answer": "Early state (Sessions 1–8): Temi is the group's sharpest observer but operates from the position of a questioner rather than an analyst. Her characteristic move is to turn observations back to others ('what's your read on that?'), let others name dynamics, and position herself as a facilitator rather than a commentator on the group itself. In Session 3, she brings up the documentary idea but defers: 'I'll defer to what the group actually wants.' In Session 8, she pitches the escape room piece cautiously — 'not naming anyone specifically.' She holds her cards. Shift signal (Session 9): After the essay's reception, Temi moved into open diagnostic mode: 'I want to actually write about what makes this group work. not in a saccharine way. I mean the tensions, the sub-cliques, the person who almost never shows up until they do.' She is naming categories of group dysfunction to the group's face — not a feature-writer's abstraction but a direct identification of known patterns. In Session 10, she contextualises the group's turning point ('when Lena came back and showed up to that pub night properly for the first time') and says Dev's year-end verdict is 'going in the article verbatim.' Trigger: the features editor's commission — external recognition that her analytical perspective on this group is valuable — freed her from the restraint of positioning herself as a neutral observer. Professional validation unlocked a more active public role.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_e8f9a0b1_s03_t015",
+          "speaker_display_name": "Temi",
+          "message_excerpt": "I'll defer to what the group actually wants",
+          "relevance": "Temi's deferral stance in Session 3 — consistently turning decisions back to others — establishes the earlier pattern of strategic observer restraint"
+        },
+        {
+          "session_index": 9,
+          "turn_id": "grp_e8f9a0b1_s09_t005",
+          "speaker_display_name": "Temi",
+          "message_excerpt": "I want to actually write about what makes this group work. not in a saccharine way. I mean the tensions, the sub-cliques, the person who almost never shows up until they do",
+          "relevance": "Temi directly names group dysfunction categories to the group — no longer deferring or deflecting — marking the shift from strategic observer to active analyst"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 3,
+          "value": "defers to group preference, holds analytical observations to herself, pitches ideas as suggestions rather than arguments"
+        },
+        {
+          "session_index": 9,
+          "value": "names tensions and sub-cliques directly to the group after essay commission; accepts role of active group chronicler and analyst"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "source": "SocialMemBench",
+    "source_kind": "real_benchmark",
+    "network_id": "grp_e8f9a0b1",
+    "n_sessions": 10,
+    "n_turns": 200,
+    "v4_correct": 19,
+    "v4_total": 28,
+    "v4_errors": 9,
+    "v4_accuracy": 0.6785714285714286
+  }
+}

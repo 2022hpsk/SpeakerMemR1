@@ -1,0 +1,105 @@
+{
+  "benchmark": "evermem",
+  "baseline": "speakermem",
+  "computed_at": "2026-09-01 19:08:07",
+  "overall": {
+    "accuracy": 0.6004,
+    "correct": 1441,
+    "incorrect": 959,
+    "unclear": 0,
+    "total": 2400,
+    "unclear_rate": 0.0,
+    "em": 0.0083,
+    "f1": 0.2955,
+    "attribution_acc": 0.6038,
+    "attribution_n": 1073
+  },
+  "per_category": {
+    "multiple_choice": {
+      "accuracy": 0.7131,
+      "correct": 1168,
+      "incorrect": 470,
+      "unclear": 0,
+      "total": 1638,
+      "unclear_rate": 0.0,
+      "em": 0.0092,
+      "f1": 0.3565,
+      "attribution_acc": 0.5872,
+      "attribution_n": 1013
+    },
+    "open_ended": {
+      "accuracy": 0.3583,
+      "correct": 273,
+      "incorrect": 489,
+      "unclear": 0,
+      "total": 762,
+      "unclear_rate": 0.0,
+      "em": 0.0066,
+      "f1": 0.1642,
+      "attribution_acc": 0.8833,
+      "attribution_n": 60
+    }
+  },
+  "per_unit": {
+    "01": {
+      "accuracy": 0.5984,
+      "correct": 292,
+      "incorrect": 196,
+      "unclear": 0,
+      "total": 488,
+      "unclear_rate": 0.0,
+      "em": 0.0102,
+      "f1": 0.2975,
+      "attribution_acc": 0.5723,
+      "attribution_n": 212
+    },
+    "02": {
+      "accuracy": 0.5987,
+      "correct": 282,
+      "incorrect": 189,
+      "unclear": 0,
+      "total": 471,
+      "unclear_rate": 0.0,
+      "em": 0.0021,
+      "f1": 0.2873,
+      "attribution_acc": 0.6376,
+      "attribution_n": 218
+    },
+    "03": {
+      "accuracy": 0.6103,
+      "correct": 285,
+      "incorrect": 182,
+      "unclear": 0,
+      "total": 467,
+      "unclear_rate": 0.0,
+      "em": 0.0128,
+      "f1": 0.2993,
+      "attribution_acc": 0.6628,
+      "attribution_n": 213
+    },
+    "04": {
+      "accuracy": 0.5988,
+      "correct": 288,
+      "incorrect": 193,
+      "unclear": 0,
+      "total": 481,
+      "unclear_rate": 0.0,
+      "em": 0.0083,
+      "f1": 0.303,
+      "attribution_acc": 0.5817,
+      "attribution_n": 210
+    },
+    "05": {
+      "accuracy": 0.5963,
+      "correct": 294,
+      "incorrect": 199,
+      "unclear": 0,
+      "total": 493,
+      "unclear_rate": 0.0,
+      "em": 0.0081,
+      "f1": 0.2903,
+      "attribution_acc": 0.5644,
+      "attribution_n": 220
+    }
+  }
+}

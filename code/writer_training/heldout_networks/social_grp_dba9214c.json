@@ -1,0 +1,2185 @@
+{
+  "schema": "socialmembench-real-v4-source/1",
+  "scenario": "[socialmembench:grp_dba9214c] real benchmark conversation",
+  "speakers": [
+    "Adaeze",
+    "Auntie Grace",
+    "Bisi",
+    "Emeka",
+    "Funke",
+    "Kayode",
+    "Nkem",
+    "Seun",
+    "Tolu",
+    "Uncle Dele"
+  ],
+  "sessions": [
+    {
+      "session_id": "grp_dba9214c_s01",
+      "session_index": 1,
+      "topic": "New Year greetings and resolutions",
+      "ts": "2025-01-06",
+      "turns": [
+        {
+          "turn": "grp_dba9214c_s01_t001",
+          "speaker": "Adaeze",
+          "speaker_id": "p_db01aa01",
+          "content": "Good evening my children! Happy New Year to all of you. God willing this year will bring health and peace to every one of you. 🙏",
+          "ts": "2025-01-06T19:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s01_t002",
+          "speaker": "Funke",
+          "speaker_id": "p_db04dd04",
+          "content": "Happy New Year family!! Literally cannot believe it is 2025 already 🎉🥂✨🙏 hope everyone had an amazing time!!",
+          "ts": "2025-01-06T19:02:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s01_t003",
+          "speaker": "Bisi",
+          "speaker_id": "p_db08hh08",
+          "content": "HAPPY NEW YEARRR omg hope everyone had fun lmaoo",
+          "ts": "2025-01-06T19:05:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s01_t004",
+          "speaker": "Seun",
+          "speaker_id": "p_db05ee05",
+          "content": "honestly happy new year everyone I mean this year is going to be different I can already feel it I had the most peaceful Christmas break I have done in years",
+          "ts": "2025-01-06T19:09:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s01_t005",
+          "speaker": "Kayode",
+          "speaker_id": "p_db06ff06",
+          "content": "Happy new year all. Good break? Should be a good year?",
+          "ts": "2025-01-06T19:11:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s01_t006",
+          "speaker": "Tolu",
+          "speaker_id": "p_db03cc03",
+          "content": "Happy New Year. Hope everyone rested well. Any injuries to report? 😂",
+          "ts": "2025-01-06T19:14:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s01_t007",
+          "speaker": "Nkem",
+          "speaker_id": "p_db07gg07",
+          "content": "Happy New Year to everyone. I think this is my first proper New Year message in the group chat and I may be wrong but it feels like a good tradition to start. How did everyone spend the 31st?",
+          "ts": "2025-01-06T19:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s01_t008",
+          "speaker": "Uncle Dele",
+          "speaker_id": "p_db09ii09",
+          "content": "ADAEZE, EMEKA, TOLU, FUNKE, SEUN, KAYODE, BISI, NKEM - Happy New Year to each of you. I trust the year ahead will be characterised by industry and good health. Best regards, Dele",
+          "ts": "2025-01-06T19:20:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s01_t009",
+          "speaker": "Emeka",
+          "speaker_id": "p_db02bb02",
+          "content": "Happy new year. Quiet here. E.",
+          "ts": "2025-01-06T19:23:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s01_t010",
+          "speaker": "Auntie Grace",
+          "speaker_id": "p_db10jj10",
+          "content": "My dears, wishing you all a blessed new year 🙏 make sure you are starting the year with enough sleep and not rushing back to old habits too fast",
+          "ts": "2025-01-06T19:27:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s01_t011",
+          "speaker": "Seun",
+          "speaker_id": "p_db05ee05",
+          "content": "Tolu 😂 no injuries but I did eat more fish than I wanted over Christmas honestly I am back on strictly plant-based now I mean I only slipped because of mum's pepper soup",
+          "ts": "2025-01-06T19:29:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s01_t012",
+          "speaker": "Adaeze",
+          "speaker_id": "p_db01aa01",
+          "content": "Seun I made the pepper soup with dried fish. If you are going to eat fish let it be good fish at least.",
+          "ts": "2025-01-06T19:32:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s01_t013",
+          "speaker": "Funke",
+          "speaker_id": "p_db04dd04",
+          "content": "Nkem you lot have to tell her she has been lurking in this chat for months! Welcome properly 😂🎉",
+          "ts": "2025-01-06T19:36:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s01_t014",
+          "speaker": "Kayode",
+          "speaker_id": "p_db06ff06",
+          "content": "She has been in the chat since September lol. Nkem say hello properly?",
+          "ts": "2025-01-06T19:38:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s01_t015",
+          "speaker": "Nkem",
+          "speaker_id": "p_db07gg07",
+          "content": "I think I have said hello before, Funke. That was the Sunday in mid-October, just after Kayode's sprint review. But yes - hello, properly, everyone. I am glad to be here.",
+          "ts": "2025-01-06T19:41:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s01_t016",
+          "speaker": "Bisi",
+          "speaker_id": "p_db08hh08",
+          "content": "omg Nkem we love u 😭😭 welcome to the chaos lmaoo",
+          "ts": "2025-01-06T19:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s01_t017",
+          "speaker": "Emeka",
+          "speaker_id": "p_db02bb02",
+          "content": "Good. The fish was from Nigeria last trip. Worth it.",
+          "ts": "2025-01-06T19:47:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s01_t018",
+          "speaker": "Uncle Dele",
+          "speaker_id": "p_db09ii09",
+          "content": "EMEKA is correct. Imported ingredients are not a substitute for the real thing. I will say no more on that. Best regards, Dele",
+          "ts": "2025-01-06T19:50:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s01_t019",
+          "speaker": "Tolu",
+          "speaker_id": "p_db03cc03",
+          "content": "Noted, Uncle Dele. Though just to note, provenance does not affect nutritional content.",
+          "ts": "2025-01-06T19:54:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s01_t020",
+          "speaker": "Adaeze",
+          "speaker_id": "p_db01aa01",
+          "content": "My children please no arguments in the new year. We are all grateful. God willing this year brings only blessings. 🙏",
+          "ts": "2025-01-06T19:56:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_dba9214c_s02",
+      "session_index": 2,
+      "topic": "Planning the January family gathering",
+      "ts": "2025-01-13",
+      "turns": [
+        {
+          "turn": "grp_dba9214c_s02_t001",
+          "speaker": "Adaeze",
+          "speaker_id": "p_db01aa01",
+          "content": "Good evening my children. I want to have everyone here on Saturday 25th January. Tolu and Funke, your house is bigger. Can we use yours? God willing.",
+          "ts": "2025-01-13T18:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s02_t002",
+          "speaker": "Tolu",
+          "speaker_id": "p_db03cc03",
+          "content": "Should work. Funke confirm timings?",
+          "ts": "2025-01-13T18:32:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s02_t003",
+          "speaker": "Funke",
+          "speaker_id": "p_db04dd04",
+          "content": "Yes!! So excited you lot, literally been waiting for an excuse to use the new dining chairs 🪑🍽✨😍 say 3pm? That gives everyone time to travel",
+          "ts": "2025-01-13T18:35:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s02_t004",
+          "speaker": "Seun",
+          "speaker_id": "p_db05ee05",
+          "content": "3pm works honestly, I will bring a vegan jollof so no one feels obligated to accommodate me I mean I will do a big pot",
+          "ts": "2025-01-13T18:39:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s02_t005",
+          "speaker": "Bisi",
+          "speaker_id": "p_db08hh08",
+          "content": "omg yes SEUN's jollof 🙌🙌🙌 what do I bring",
+          "ts": "2025-01-13T18:41:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s02_t006",
+          "speaker": "Kayode",
+          "speaker_id": "p_db06ff06",
+          "content": "Can do drinks? Easier for me to sort drinks than food?",
+          "ts": "2025-01-13T18:44:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s02_t007",
+          "speaker": "Adaeze",
+          "speaker_id": "p_db01aa01",
+          "content": "Kayode everyone brings something to eat. Drinks is not enough. What will you cook?",
+          "ts": "2025-01-13T18:48:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s02_t008",
+          "speaker": "Funke",
+          "speaker_id": "p_db04dd04",
+          "content": "Adaeze I know you feel strongly about everyone contributing a dish - and you are absolutely right - but maybe Kayode can bring drinks AND the puff puff? That way we are covered 😂",
+          "ts": "2025-01-13T18:50:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s02_t009",
+          "speaker": "Kayode",
+          "speaker_id": "p_db06ff06",
+          "content": "Yeah sure, puff puff from the place in Peckham. Will sort that?",
+          "ts": "2025-01-13T18:53:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s02_t010",
+          "speaker": "Uncle Dele",
+          "speaker_id": "p_db09ii09",
+          "content": "ADAEZE I will bring ofe akwu as I did last time. KAYODE, puff puff is not a dish. Best regards, Dele",
+          "ts": "2025-01-13T18:57:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s02_t011",
+          "speaker": "Auntie Grace",
+          "speaker_id": "p_db10jj10",
+          "content": "My dear I will make moin moin on the day. And Kayode please make sure you eat something proper before you arrive 🙏",
+          "ts": "2025-01-13T18:59:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s02_t012",
+          "speaker": "Emeka",
+          "speaker_id": "p_db02bb02",
+          "content": "Oxtail. I will sort it.",
+          "ts": "2025-01-13T19:02:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s02_t013",
+          "speaker": "Nkem",
+          "speaker_id": "p_db07gg07",
+          "content": "I think I can bring something small - I may be wrong but I recall Adaeze mentioning she liked the mosa I made before. Would that be welcome, I wonder?",
+          "ts": "2025-01-13T19:06:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s02_t014",
+          "speaker": "Adaeze",
+          "speaker_id": "p_db01aa01",
+          "content": "Nkem that is perfect. Bring the mosa. My children this gathering will be wonderful. God willing.",
+          "ts": "2025-01-13T19:08:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s02_t015",
+          "speaker": "Tolu",
+          "speaker_id": "p_db03cc03",
+          "content": "Good. I will do the yam. Clinically speaking it is the foundation of any proper Nigerian gathering.",
+          "ts": "2025-01-13T19:11:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s02_t016",
+          "speaker": "Funke",
+          "speaker_id": "p_db04dd04",
+          "content": "LITERALLY 😂 Tolu you are so proud of that yam 🙏🙌😂",
+          "ts": "2025-01-13T19:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s02_t017",
+          "speaker": "Seun",
+          "speaker_id": "p_db05ee05",
+          "content": "honestly I do not care what anyone says Tolu's pounded yam is the reason to come I mean coming from someone who does not eat meat the yam alone carries the whole meal",
+          "ts": "2025-01-13T19:17:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s02_t018",
+          "speaker": "Bisi",
+          "speaker_id": "p_db08hh08",
+          "content": "co-signed lmaoo",
+          "ts": "2025-01-13T19:20:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s02_t019",
+          "speaker": "Uncle Dele",
+          "speaker_id": "p_db09ii09",
+          "content": "TOLU I agree. The yam is the correct foundation. Regards, D.A.O.",
+          "ts": "2025-01-13T19:24:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s02_t020",
+          "speaker": "Adaeze",
+          "speaker_id": "p_db01aa01",
+          "content": "God willing it will be a good day. Tolu and Funke, thank you. My children, see you on the 25th.",
+          "ts": "2025-01-13T19:26:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_dba9214c_s03",
+      "session_index": 3,
+      "topic": "Seun's health results and full vegan commitment",
+      "ts": "2025-01-20",
+      "turns": [
+        {
+          "turn": "grp_dba9214c_s03_t001",
+          "speaker": "Seun",
+          "speaker_id": "p_db05ee05",
+          "content": "honestly family I have news and I need to share it here because you lot are going to be affected - I got my annual bloods back last week and the results were genuinely incredible I mean my inflammatory markers are the lowest they have ever been and my GP said whatever I am doing keep doing it so I am going all in, fully vegan, no more exceptions, I am done being apologetic about it",
+          "ts": "2025-01-20T20:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s03_t002",
+          "speaker": "Bisi",
+          "speaker_id": "p_db08hh08",
+          "content": "omg SEUN 🙌🙌 okay queen",
+          "ts": "2025-01-20T20:02:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s03_t003",
+          "speaker": "Funke",
+          "speaker_id": "p_db04dd04",
+          "content": "Seun this is incredible you lot!! She literally glows every time I see her 🌟✨😍💚",
+          "ts": "2025-01-20T20:05:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s03_t004",
+          "speaker": "Tolu",
+          "speaker_id": "p_db03cc03",
+          "content": "Good results. Just to note - vegan diets require B12 supplementation. Are you supplementing?",
+          "ts": "2025-01-20T20:09:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s03_t005",
+          "speaker": "Seun",
+          "speaker_id": "p_db05ee05",
+          "content": "yes Tolu I know, been on B12 for months, honestly I mean I have done my research",
+          "ts": "2025-01-20T20:11:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s03_t006",
+          "speaker": "Kayode",
+          "speaker_id": "p_db06ff06",
+          "content": "Knew this was coming lol. Still making jollof for the family though right?",
+          "ts": "2025-01-20T20:14:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s03_t007",
+          "speaker": "Seun",
+          "speaker_id": "p_db05ee05",
+          "content": "obviously I mean I would not deprive you lot of the only thing you actually need",
+          "ts": "2025-01-20T20:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s03_t008",
+          "speaker": "Nkem",
+          "speaker_id": "p_db07gg07",
+          "content": "I think this is wonderful, Seun. I may be wrong but the research on plant-forward diets and inflammation is quite compelling. Did your GP mention the specific markers?",
+          "ts": "2025-01-20T20:20:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s03_t009",
+          "speaker": "Adaeze",
+          "speaker_id": "p_db01aa01",
+          "content": "Seun my daughter I am very glad your health is good. God willing this decision brings you only good things. I will learn to adapt my cooking.",
+          "ts": "2025-01-20T20:23:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s03_t010",
+          "speaker": "Emeka",
+          "speaker_id": "p_db02bb02",
+          "content": "Noted.",
+          "ts": "2025-01-20T20:27:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s03_t011",
+          "speaker": "Bisi",
+          "speaker_id": "p_db08hh08",
+          "content": "dad 😭😭",
+          "ts": "2025-01-20T20:29:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s03_t012",
+          "speaker": "Funke",
+          "speaker_id": "p_db04dd04",
+          "content": "EMEKA 💀 said what he said 😂",
+          "ts": "2025-01-20T20:32:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s03_t013",
+          "speaker": "Uncle Dele",
+          "speaker_id": "p_db09ii09",
+          "content": "SEUN I respect your decision. A healthy body is a productive body. I will say I find vegetarianism difficult to understand personally but I will not interfere. Best regards, Dele",
+          "ts": "2025-01-20T20:36:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s03_t014",
+          "speaker": "Tolu",
+          "speaker_id": "p_db03cc03",
+          "content": "Mum, the B12 is in yeast extract. Clinically speaking Seun will be fine. The bigger challenge is family dinners where the protein is not separated.",
+          "ts": "2025-01-20T20:38:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s03_t015",
+          "speaker": "Adaeze",
+          "speaker_id": "p_db01aa01",
+          "content": "Tolu thank you. I will separate it. Seun, you will still eat my jollof rice yes? I will make it with vegetable stock. God willing it will taste the same.",
+          "ts": "2025-01-20T20:41:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s03_t016",
+          "speaker": "Seun",
+          "speaker_id": "p_db05ee05",
+          "content": "mum I will eat double portions honestly thank you I mean this is all I needed to hear",
+          "ts": "2025-01-20T20:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s03_t017",
+          "speaker": "Kayode",
+          "speaker_id": "p_db06ff06",
+          "content": "She has been building up to this for two years by the way. Just so everyone is up to speed?",
+          "ts": "2025-01-20T20:47:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s03_t018",
+          "speaker": "Auntie Grace",
+          "speaker_id": "p_db10jj10",
+          "content": "My dear Seun, your body will thank you. I have seen what poor diet does over the years 🙏 make sure you are still eating enough iron-rich foods",
+          "ts": "2025-01-20T20:50:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s03_t019",
+          "speaker": "Emeka",
+          "speaker_id": "p_db02bb02",
+          "content": "She knows. She has always known. E.",
+          "ts": "2025-01-20T20:54:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s03_t020",
+          "speaker": "Tolu",
+          "speaker_id": "p_db03cc03",
+          "content": "Right. Just to note, lentils, tofu, chickpeas. The iron thing is solvable.",
+          "ts": "2025-01-20T20:56:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_dba9214c_s04",
+      "session_index": 4,
+      "topic": "Post-gathering debrief and Emeka's missed Sunday church",
+      "ts": "2025-01-27",
+      "turns": [
+        {
+          "turn": "grp_dba9214c_s04_t001",
+          "speaker": "Funke",
+          "speaker_id": "p_db04dd04",
+          "content": "Yesterday was honestly so beautiful you lot 😭🍽💛 thank you all for coming - and Seun your jollof was literally unmatched, zero meat and I could not tell the difference",
+          "ts": "2025-01-27T17:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s04_t002",
+          "speaker": "Bisi",
+          "speaker_id": "p_db08hh08",
+          "content": "best saturday in ages omg 😭😭 also mum your moin moin was different?? better than usual??",
+          "ts": "2025-01-27T17:02:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s04_t003",
+          "speaker": "Adaeze",
+          "speaker_id": "p_db01aa01",
+          "content": "Good morning my children. Thank you for coming. It was good to see everyone together. God willing we will do it again soon.",
+          "ts": "2025-01-27T17:05:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s04_t004",
+          "speaker": "Seun",
+          "speaker_id": "p_db05ee05",
+          "content": "honestly Funke your house is beautiful I mean the new dining chairs elevated my entire experience and also the fact that no one complained about the jollof being vegan was genuinely touching",
+          "ts": "2025-01-27T17:09:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s04_t005",
+          "speaker": "Tolu",
+          "speaker_id": "p_db03cc03",
+          "content": "No complaints about the food. Just to note though - did anyone else notice Dad missed church this morning?",
+          "ts": "2025-01-27T17:11:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s04_t006",
+          "speaker": "Kayode",
+          "speaker_id": "p_db06ff06",
+          "content": "Thought he was tired from yesterday?",
+          "ts": "2025-01-27T17:14:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s04_t007",
+          "speaker": "Emeka",
+          "speaker_id": "p_db02bb02",
+          "content": "Tired. E.",
+          "ts": "2025-01-27T17:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s04_t008",
+          "speaker": "Uncle Dele",
+          "speaker_id": "p_db09ii09",
+          "content": "EMEKA I trust you are well. Rest is important at our age. I note the same. Best regards, Dele",
+          "ts": "2025-01-27T17:20:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s04_t009",
+          "speaker": "Nkem",
+          "speaker_id": "p_db07gg07",
+          "content": "I think it is quite natural after a full day like yesterday - I may be wrong but the drive back alone must have been tiring. Did the Sunday call happen this afternoon?",
+          "ts": "2025-01-27T17:23:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s04_t010",
+          "speaker": "Adaeze",
+          "speaker_id": "p_db01aa01",
+          "content": "The call happened. Your father was on for a little while. He said he needed to rest. God willing he is fine.",
+          "ts": "2025-01-27T17:27:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s04_t011",
+          "speaker": "Seun",
+          "speaker_id": "p_db05ee05",
+          "content": "honestly Dad you should rest though I mean you were on your feet most of yesterday",
+          "ts": "2025-01-27T17:29:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s04_t012",
+          "speaker": "Emeka",
+          "speaker_id": "p_db02bb02",
+          "content": "Noted.",
+          "ts": "2025-01-27T17:32:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s04_t013",
+          "speaker": "Tolu",
+          "speaker_id": "p_db03cc03",
+          "content": "Clinically speaking, rest after exertion is appropriate. Just to note, Dad - if this is a pattern we should talk.",
+          "ts": "2025-01-27T17:36:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s04_t014",
+          "speaker": "Emeka",
+          "speaker_id": "p_db02bb02",
+          "content": "It is not a pattern. E.",
+          "ts": "2025-01-27T17:38:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s04_t015",
+          "speaker": "Auntie Grace",
+          "speaker_id": "p_db10jj10",
+          "content": "My dear Emeka, please listen to Tolu. I see too many patients who push through when they should be resting 🙏 a missed Sunday is fine, just rest",
+          "ts": "2025-01-27T17:41:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s04_t016",
+          "speaker": "Uncle Dele",
+          "speaker_id": "p_db09ii09",
+          "content": "TOLU is correct that rest is appropriate. EMEKA has always been disciplined about his health. I am sure there is nothing to concern us. Regards, D.A.O.",
+          "ts": "2025-01-27T17:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s04_t017",
+          "speaker": "Funke",
+          "speaker_id": "p_db04dd04",
+          "content": "Okay can we talk about the good things though?? Uncle Dele you laughed three times yesterday and I counted! That is a record literally 😂🎉",
+          "ts": "2025-01-27T17:47:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s04_t018",
+          "speaker": "Bisi",
+          "speaker_id": "p_db08hh08",
+          "content": "LMAOO uncle dele was in his element honestly",
+          "ts": "2025-01-27T17:50:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s04_t019",
+          "speaker": "Uncle Dele",
+          "speaker_id": "p_db09ii09",
+          "content": "FUNKE I do not know what you are referring to. Best regards, Dele",
+          "ts": "2025-01-27T17:54:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s04_t020",
+          "speaker": "Adaeze",
+          "speaker_id": "p_db01aa01",
+          "content": "Your father is fine. He is just resting. Thank you all for a lovely gathering. God willing next time will be even better. 🙏",
+          "ts": "2025-01-27T17:56:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_dba9214c_s05",
+      "session_index": 5,
+      "topic": "Kayode's improved family engagement and Valentine's plans",
+      "ts": "2025-02-03",
+      "turns": [
+        {
+          "turn": "grp_dba9214c_s05_t001",
+          "speaker": "Adaeze",
+          "speaker_id": "p_db01aa01",
+          "content": "Good evening my children. Kayode, you have been on every call this month. I notice these things. God willing this continues.",
+          "ts": "2025-02-03T19:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s05_t002",
+          "speaker": "Kayode",
+          "speaker_id": "p_db06ff06",
+          "content": "Haha yeah. Was always planning to? Should be consistent from now?",
+          "ts": "2025-02-03T19:32:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s05_t003",
+          "speaker": "Seun",
+          "speaker_id": "p_db05ee05",
+          "content": "honestly mum I noticed too I mean this is a new era, the Kayode era of actually showing up lol",
+          "ts": "2025-02-03T19:35:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s05_t004",
+          "speaker": "Bisi",
+          "speaker_id": "p_db08hh08",
+          "content": "omg YES lmaoo about time!!",
+          "ts": "2025-02-03T19:39:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s05_t005",
+          "speaker": "Tolu",
+          "speaker_id": "p_db03cc03",
+          "content": "Good. Just to note, consistency is the only thing the family chat actually requires.",
+          "ts": "2025-02-03T19:41:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s05_t006",
+          "speaker": "Funke",
+          "speaker_id": "p_db04dd04",
+          "content": "Kayode!! you lot honestly this is so wholesome 😭💛🙌🎉",
+          "ts": "2025-02-03T19:44:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s05_t007",
+          "speaker": "Nkem",
+          "speaker_id": "p_db07gg07",
+          "content": "I think Kayode has been making a real effort recently - I may be wrong but I notice the same. Also I had a lovely time at the January gathering. I perhaps found it a little full-on at first but once the mosa was gone it got much easier.",
+          "ts": "2025-02-03T19:48:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s05_t008",
+          "speaker": "Kayode",
+          "speaker_id": "p_db06ff06",
+          "content": "What she said lol. Also Nkem found the whole thing a bit overwhelming but she will never admit it?",
+          "ts": "2025-02-03T19:50:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s05_t009",
+          "speaker": "Nkem",
+          "speaker_id": "p_db07gg07",
+          "content": "That is not - I mean, I will admit it is not my natural environment. A smaller table would suit me better in an ideal world. But it was genuinely lovely.",
+          "ts": "2025-02-03T19:53:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s05_t010",
+          "speaker": "Seun",
+          "speaker_id": "p_db05ee05",
+          "content": "Nkem I love that you said that honestly I mean you are allowed to find it a lot, no one expects you to perform being fine with ten people in one room",
+          "ts": "2025-02-03T19:57:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s05_t011",
+          "speaker": "Auntie Grace",
+          "speaker_id": "p_db10jj10",
+          "content": "My dear Nkem that is completely natural. The Oyelaran gatherings are a lot even for people who have been coming for thirty years 🙏",
+          "ts": "2025-02-03T19:59:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s05_t012",
+          "speaker": "Uncle Dele",
+          "speaker_id": "p_db09ii09",
+          "content": "NKEM I appreciate honesty. A gathering of this size requires adjustment. You are welcome regardless. Best regards, Dele",
+          "ts": "2025-02-03T20:02:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s05_t013",
+          "speaker": "Emeka",
+          "speaker_id": "p_db02bb02",
+          "content": "She came. That is what matters. E.",
+          "ts": "2025-02-03T20:06:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s05_t014",
+          "speaker": "Adaeze",
+          "speaker_id": "p_db01aa01",
+          "content": "Nkem you are family. Anyone who loves each other enough to come despite finding it difficult - that is what counts. God willing you will feel more at home each time.",
+          "ts": "2025-02-03T20:08:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s05_t015",
+          "speaker": "Funke",
+          "speaker_id": "p_db04dd04",
+          "content": "Okay Valentine's plans who is doing what 👀👀 Tolu is taking me to that place in Shoreditch obviously 🥂✨",
+          "ts": "2025-02-03T20:11:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s05_t016",
+          "speaker": "Tolu",
+          "speaker_id": "p_db03cc03",
+          "content": "Clinically speaking, restaurant reservations made in October for February the 14th are the only responsible choice.",
+          "ts": "2025-02-03T20:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s05_t017",
+          "speaker": "Seun",
+          "speaker_id": "p_db05ee05",
+          "content": "honestly Tolu 😂 yes he is the most organised person I know I mean it is impressive and slightly frightening",
+          "ts": "2025-02-03T20:17:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s05_t018",
+          "speaker": "Kayode",
+          "speaker_id": "p_db06ff06",
+          "content": "Got something sorted. Plans confirmed?",
+          "ts": "2025-02-03T20:20:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s05_t019",
+          "speaker": "Bisi",
+          "speaker_id": "p_db08hh08",
+          "content": "omg Kayode 🥺🥺 Nkem you better be impressed",
+          "ts": "2025-02-03T20:24:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s05_t020",
+          "speaker": "Nkem",
+          "speaker_id": "p_db07gg07",
+          "content": "I think I may have heard a hint or two. I will wait and see. Is Valentine's Day typically a family occasion here, or is it a separate thing?",
+          "ts": "2025-02-03T20:26:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_dba9214c_s06",
+      "session_index": 6,
+      "topic": "Kayode's promotion and Funke's egusi lesson with Adaeze",
+      "ts": "2025-02-10",
+      "turns": [
+        {
+          "turn": "grp_dba9214c_s06_t001",
+          "speaker": "Kayode",
+          "speaker_id": "p_db06ff06",
+          "content": "Big news. Got the staff engineer promotion. From April?",
+          "ts": "2025-02-10T18:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s06_t002",
+          "speaker": "Funke",
+          "speaker_id": "p_db04dd04",
+          "content": "KAYODEEEEE 🎉🎉🎉🎉🎉 you lot I literally knew this was coming!! He has been working so hard 😭💛",
+          "ts": "2025-02-10T18:02:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s06_t003",
+          "speaker": "Bisi",
+          "speaker_id": "p_db08hh08",
+          "content": "YESSSSS big bro 🙌🙌🙌 omg im crying",
+          "ts": "2025-02-10T18:05:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s06_t004",
+          "speaker": "Seun",
+          "speaker_id": "p_db05ee05",
+          "content": "honestly Kayode I mean we all knew this and you absolutely deserve it I am so proud of you",
+          "ts": "2025-02-10T18:09:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s06_t005",
+          "speaker": "Tolu",
+          "speaker_id": "p_db03cc03",
+          "content": "Well done. Just to note, negotiate the salary band, not just the title.",
+          "ts": "2025-02-10T18:11:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s06_t006",
+          "speaker": "Adaeze",
+          "speaker_id": "p_db01aa01",
+          "content": "Good morning my children. Kayode my son, well done well done. God willing this is only the beginning.",
+          "ts": "2025-02-10T18:14:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s06_t007",
+          "speaker": "Uncle Dele",
+          "speaker_id": "p_db09ii09",
+          "content": "KAYODE I must say this is genuinely impressive. I will admit I have not always understood the nature of your work but this recognition is clear. I am proud of what you have built. Best regards, Dele",
+          "ts": "2025-02-10T18:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s06_t008",
+          "speaker": "Emeka",
+          "speaker_id": "p_db02bb02",
+          "content": "Good work. E.",
+          "ts": "2025-02-10T18:20:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s06_t009",
+          "speaker": "Nkem",
+          "speaker_id": "p_db07gg07",
+          "content": "Kayode, I am very glad you shared this here. I think the family should hear it. I may be wrong but I believe this is the most important professional news in the group for some time - would that be fair to say, Adaeze?",
+          "ts": "2025-02-10T18:23:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s06_t010",
+          "speaker": "Adaeze",
+          "speaker_id": "p_db01aa01",
+          "content": "Nkem you are right. My children, Kayode has worked very hard and we are all proud.",
+          "ts": "2025-02-10T18:27:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s06_t011",
+          "speaker": "Auntie Grace",
+          "speaker_id": "p_db10jj10",
+          "content": "My dear Kayode, well done. Make sure you are not working yourself into the ground with the extra responsibility 🙏",
+          "ts": "2025-02-10T18:29:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s06_t012",
+          "speaker": "Kayode",
+          "speaker_id": "p_db06ff06",
+          "content": "Thanks everyone. Uncle Dele that means a lot actually lol",
+          "ts": "2025-02-10T18:32:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s06_t013",
+          "speaker": "Uncle Dele",
+          "speaker_id": "p_db09ii09",
+          "content": "KAYODE I meant every word. Regards, D.A.O.",
+          "ts": "2025-02-10T18:36:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s06_t014",
+          "speaker": "Funke",
+          "speaker_id": "p_db04dd04",
+          "content": "Okay I also have news and it is not a promotion but it IS important - you lot Adaeze taught me to make egusi soup last week and I genuinely think it changed my life? Like I finally understand what food is supposed to feel like in a kitchen. No more apologising for not knowing the old recipes. I am learning them now. Properly. 🍲💚✨",
+          "ts": "2025-02-10T18:38:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s06_t015",
+          "speaker": "Adaeze",
+          "speaker_id": "p_db01aa01",
+          "content": "Funke my daughter. You were a very good student. I was proud. God willing you will teach your own children one day.",
+          "ts": "2025-02-10T18:41:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s06_t016",
+          "speaker": "Seun",
+          "speaker_id": "p_db05ee05",
+          "content": "honestly Funke this is the best thing I have heard all week I mean the fact that you are learning the old recipes is everything",
+          "ts": "2025-02-10T18:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s06_t017",
+          "speaker": "Tolu",
+          "speaker_id": "p_db03cc03",
+          "content": "Just to note, this is significant. Funke has been saying she wanted to learn properly for a while.",
+          "ts": "2025-02-10T18:47:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s06_t018",
+          "speaker": "Nkem",
+          "speaker_id": "p_db07gg07",
+          "content": "I think this is lovely. I have been thinking - I may be wrong but I would like to learn to make one Adaeze dish properly before Christmas. Would that be appropriate to ask?",
+          "ts": "2025-02-10T18:50:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s06_t019",
+          "speaker": "Adaeze",
+          "speaker_id": "p_db01aa01",
+          "content": "Nkem you only had to ask. Come any Sunday, God willing.",
+          "ts": "2025-02-10T18:54:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s06_t020",
+          "speaker": "Bisi",
+          "speaker_id": "p_db08hh08",
+          "content": "okay wait the Oyelaran cooking school era has begun lmaoo I WANT IN 😭🙌",
+          "ts": "2025-02-10T18:56:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_dba9214c_s07",
+      "session_index": 7,
+      "topic": "Early Christmas planning, extended family invitation, Bisi's exam decision",
+      "ts": "2025-02-17",
+      "turns": [
+        {
+          "turn": "grp_dba9214c_s07_t001",
+          "speaker": "Funke",
+          "speaker_id": "p_db04dd04",
+          "content": "Okay I know it is only February but can we talk about Christmas? I just want to start early you lot before it becomes a crisis 🎄✨🙏😂",
+          "ts": "2025-02-17T20:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s07_t002",
+          "speaker": "Adaeze",
+          "speaker_id": "p_db01aa01",
+          "content": "Good evening my children. Christmas is at our house as always. God willing everyone will be there.",
+          "ts": "2025-02-17T20:02:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s07_t003",
+          "speaker": "Uncle Dele",
+          "speaker_id": "p_db09ii09",
+          "content": "ADAEZE correct. Christmas is at the family home. No variations required. Best regards, Dele",
+          "ts": "2025-02-17T20:05:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s07_t004",
+          "speaker": "Tolu",
+          "speaker_id": "p_db03cc03",
+          "content": "Agreed on location. I also wanted to say - Funke's parents have not been to a Christmas with us before. I think it is time we invited them this year.",
+          "ts": "2025-02-17T20:09:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s07_t005",
+          "speaker": "Funke",
+          "speaker_id": "p_db04dd04",
+          "content": "Tolu... 😭😭😭 I was not going to ask you lot I genuinely was not expecting this",
+          "ts": "2025-02-17T20:11:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s07_t006",
+          "speaker": "Seun",
+          "speaker_id": "p_db05ee05",
+          "content": "honestly Tolu yes I mean welcome to the modern era, please and thank you",
+          "ts": "2025-02-17T20:14:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s07_t007",
+          "speaker": "Bisi",
+          "speaker_id": "p_db08hh08",
+          "content": "OMG YES!! 🎉🎉🎉🎉",
+          "ts": "2025-02-17T20:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s07_t008",
+          "speaker": "Adaeze",
+          "speaker_id": "p_db01aa01",
+          "content": "Tolu, your father and I are happy to have Funke's family. God willing it will be a wonderful gathering. The more the merrier, my children.",
+          "ts": "2025-02-17T20:20:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s07_t009",
+          "speaker": "Uncle Dele",
+          "speaker_id": "p_db09ii09",
+          "content": "TOLU I see the reasoning. A unified gathering has its merits. I will attend regardless. Regards, D.A.O.",
+          "ts": "2025-02-17T20:23:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s07_t010",
+          "speaker": "Emeka",
+          "speaker_id": "p_db02bb02",
+          "content": "Fine. E.",
+          "ts": "2025-02-17T20:27:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s07_t011",
+          "speaker": "Nkem",
+          "speaker_id": "p_db07gg07",
+          "content": "I think this is a very generous invitation. I may be wrong but I believe the fact that Tolu suggested it himself - rather than being asked - is the part that matters most. Is that how Funke reads it too?",
+          "ts": "2025-02-17T20:29:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s07_t012",
+          "speaker": "Funke",
+          "speaker_id": "p_db04dd04",
+          "content": "Nkem that is EXACTLY it and I am not crying you are crying 😭💛💛",
+          "ts": "2025-02-17T20:32:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s07_t013",
+          "speaker": "Tolu",
+          "speaker_id": "p_db03cc03",
+          "content": "Right. Moving on. Bisi - exams.",
+          "ts": "2025-02-17T20:36:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s07_t014",
+          "speaker": "Bisi",
+          "speaker_id": "p_db08hh08",
+          "content": "okay so. I am sitting them. May. Already registered.",
+          "ts": "2025-02-17T20:38:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s07_t015",
+          "speaker": "Kayode",
+          "speaker_id": "p_db06ff06",
+          "content": "She is. We talked. She is doing it?",
+          "ts": "2025-02-17T20:41:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s07_t016",
+          "speaker": "Bisi",
+          "speaker_id": "p_db08hh08",
+          "content": "stop making it sound like you convinced me lmaoo I made my own decision",
+          "ts": "2025-02-17T20:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s07_t017",
+          "speaker": "Seun",
+          "speaker_id": "p_db05ee05",
+          "content": "Bisi!!! honestly I mean we have been waiting for this I am so happy 🥹🥹",
+          "ts": "2025-02-17T20:47:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s07_t018",
+          "speaker": "Adaeze",
+          "speaker_id": "p_db01aa01",
+          "content": "Bisi my daughter. God willing. God willing. This is the right thing.",
+          "ts": "2025-02-17T20:50:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s07_t019",
+          "speaker": "Auntie Grace",
+          "speaker_id": "p_db10jj10",
+          "content": "My dear Bisi I am so pleased. Make sure you are sleeping and eating properly through this period 🙏",
+          "ts": "2025-02-17T20:54:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s07_t020",
+          "speaker": "Uncle Dele",
+          "speaker_id": "p_db09ii09",
+          "content": "BISI this is the correct decision. Consistency and application. I look forward to hearing of your success. Best regards, Dele",
+          "ts": "2025-02-17T20:56:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_dba9214c_s08",
+      "session_index": 8,
+      "topic": "Auntie Grace's solo trip announcement and Adaeze's adapted recipes",
+      "ts": "2025-02-24",
+      "turns": [
+        {
+          "turn": "grp_dba9214c_s08_t001",
+          "speaker": "Auntie Grace",
+          "speaker_id": "p_db10jj10",
+          "content": "My dears, I have some news. I have booked a trip. Just myself. Barbados, ten days, April. I decided after speaking with Seun last month that I have been giving advice for twenty years that I have not been following myself. 🙏",
+          "ts": "2025-02-24T19:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s08_t002",
+          "speaker": "Seun",
+          "speaker_id": "p_db05ee05",
+          "content": "AUNTIE GRACE 🙌🙌🙌🙌 honestly this is the most important announcement of the year I mean she deserves this more than anyone",
+          "ts": "2025-02-24T19:02:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s08_t003",
+          "speaker": "Funke",
+          "speaker_id": "p_db04dd04",
+          "content": "AUNTIE GRACE YOU LOT 😭🌊✈💛 this is ICONIC",
+          "ts": "2025-02-24T19:05:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s08_t004",
+          "speaker": "Bisi",
+          "speaker_id": "p_db08hh08",
+          "content": "omg auntie grace YES 🙌🙌 queen behaviour",
+          "ts": "2025-02-24T19:09:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s08_t005",
+          "speaker": "Tolu",
+          "speaker_id": "p_db03cc03",
+          "content": "Good. Clinically speaking, rest is non-negotiable at any stage of a career. Just to note, Barbados is excellent for vitamin D.",
+          "ts": "2025-02-24T19:11:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s08_t006",
+          "speaker": "Kayode",
+          "speaker_id": "p_db06ff06",
+          "content": "Very deserved. Go for it?",
+          "ts": "2025-02-24T19:14:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s08_t007",
+          "speaker": "Adaeze",
+          "speaker_id": "p_db01aa01",
+          "content": "Grace my sister. I am glad. God willing this trip brings you everything you have given to others. You have earned it.",
+          "ts": "2025-02-24T19:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s08_t008",
+          "speaker": "Uncle Dele",
+          "speaker_id": "p_db09ii09",
+          "content": "GRACE this is a reasonable and responsible decision. You have worked hard for many years. Best regards, Dele",
+          "ts": "2025-02-24T19:20:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s08_t009",
+          "speaker": "Emeka",
+          "speaker_id": "p_db02bb02",
+          "content": "Good. E.",
+          "ts": "2025-02-24T19:23:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s08_t010",
+          "speaker": "Auntie Grace",
+          "speaker_id": "p_db10jj10",
+          "content": "My dears thank you. I also want to say - Seun, those conversations we had about rest and about listening to your body, they stayed with me. I had not taken a holiday alone since 2021. It was time. 🙏",
+          "ts": "2025-02-24T19:27:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s08_t011",
+          "speaker": "Nkem",
+          "speaker_id": "p_db07gg07",
+          "content": "I think this is wonderful. I may be wrong but I notice that the people in this family who give the most advice also tend to follow it the least - I mean that as an observation, not a criticism. Would you agree, Auntie Grace?",
+          "ts": "2025-02-24T19:29:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s08_t012",
+          "speaker": "Auntie Grace",
+          "speaker_id": "p_db10jj10",
+          "content": "My dear Nkem, you may be a researcher but you have the instincts of a nurse. You are completely right. 🙏",
+          "ts": "2025-02-24T19:32:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s08_t013",
+          "speaker": "Seun",
+          "speaker_id": "p_db05ee05",
+          "content": "honestly this is what I mean when I say wellness is not about restriction it is about permission I mean Auntie Grace just gave herself permission and I am emotional about it",
+          "ts": "2025-02-24T19:36:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s08_t014",
+          "speaker": "Adaeze",
+          "speaker_id": "p_db01aa01",
+          "content": "Good morning my children. I also have something to share. I have been experimenting. Since Seun told us about her results I have been adapting some of my recipes - I made the egusi with coconut oil and mushrooms last week. Seun, God willing you would have approved.",
+          "ts": "2025-02-24T19:38:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s08_t015",
+          "speaker": "Seun",
+          "speaker_id": "p_db05ee05",
+          "content": "MUM 😭😭😭 I mean - honestly - this is the most motherly thing you have ever done I mean coming from someone who thought veganism was oyinbo food last year, this is everything",
+          "ts": "2025-02-24T19:41:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s08_t016",
+          "speaker": "Adaeze",
+          "speaker_id": "p_db01aa01",
+          "content": "It is not oyinbo food if a Nigerian makes it. My children.",
+          "ts": "2025-02-24T19:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s08_t017",
+          "speaker": "Funke",
+          "speaker_id": "p_db04dd04",
+          "content": "Adaeze you are literally the best I love her so much you lot 😭💛✨",
+          "ts": "2025-02-24T19:47:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s08_t018",
+          "speaker": "Tolu",
+          "speaker_id": "p_db03cc03",
+          "content": "Just to note, this is a significant data point for family dinner planning going forward.",
+          "ts": "2025-02-24T19:50:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s08_t019",
+          "speaker": "Bisi",
+          "speaker_id": "p_db08hh08",
+          "content": "tolu 😭😭 data point lmaoo",
+          "ts": "2025-02-24T19:54:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_dba9214c_s08_t020",
+          "speaker": "Emeka",
+          "speaker_id": "p_db02bb02",
+          "content": "Good rice is good rice. E.",
+          "ts": "2025-02-24T19:56:00",
+          "reply_to": ""
+        }
+      ]
+    }
+  ],
+  "qa_pairs": [
+    {
+      "id": "Q1_dba9214c01",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Seun's self-description of her eating habits suggest about where she stood with her dietary identity at that point — and what in how she frames a particular moment reveals it?",
+      "answer": "Seun was already holding herself to a vegan standard internally before she formally announced it. In Session 1 she describes eating fish over Christmas as a lapse she regrets ('I did eat more fish than I wanted') and immediately reasserts her plant-based identity ('I am back on strictly plant-based now'). The defensiveness — framing the fish as something that happened to her ('I only slipped') rather than a choice — signals that her self-concept had already shifted to fully plant-based, even if practice had not yet caught up. By Session 3 the health-check results gave her the external confirmation she needed to commit publicly and drop the apologetic framing.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_dba9214c_s01_t011",
+          "speaker_display_name": "Seun",
+          "message_excerpt": "Tolu 😂 no injuries but I did eat more fish than I wanted over Christmas honestly I am back on strictly plant-based now I mean I only slipped because of mum's pepper soup",
+          "relevance": "Seun frames the Christmas fish as a regretted lapse and immediately reasserts plant-based identity"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_dba9214c_s03_t001",
+          "speaker_display_name": "Seun",
+          "message_excerpt": "I am going all in, fully vegan, no more exceptions, I am done being apologetic about it",
+          "relevance": "S3 announcement confirms the identity was already in place; the shift is from private to public commitment"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_dba9214c02",
+      "category": "Q1",
+      "difficulty": "hard",
+      "question": "When Seun announces a major change to her approach to food, what does Emeka's response in the group chat reveal about his own position — and what makes his response more telling than an outright objection would have been?",
+      "answer": "Emeka's single-word response 'Noted.' to Seun's full vegan announcement signals deliberate closure rather than engagement. Unlike Tolu (who gave clinical advice), Uncle Dele (who offered qualified respect), or Adaeze (who promised to adapt her cooking), Emeka offers nothing except acknowledgment. The word 'Noted' is his established way of ending topics he does not want to discuss further. His follow-up turn in the same session — 'She knows. She has always known. E.' — confirms resignation rather than approval: he accepts that Seun is committed but will not say more. The contrast with his enthusiastic oxtail contribution in Session 2 makes the silence around her dietary identity particularly visible.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_dba9214c_s03_t010",
+          "speaker_display_name": "Emeka",
+          "message_excerpt": "Noted.",
+          "relevance": "One-word response to Seun's full vegan announcement — his standard closure for topics he does not want to discuss"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_dba9214c_s03_t019",
+          "speaker_display_name": "Emeka",
+          "message_excerpt": "She knows. She has always known. E.",
+          "relevance": "Follow-up confirms resignation; 'She has always known' signals long-held disapproval managed rather than expressed"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_dba9214c03",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Nkem's pattern of describing her own experience at family events suggest about her preference for how she engages with the family — and what in the conversation shows she is aware of this about herself?",
+      "answer": "Nkem prefers smaller, more intimate settings to large family gatherings. In Session 5 she admits the January gathering was 'a little full-on at first' and separately adds 'a smaller table would suit me better in an ideal world.' The phrase 'in an ideal world' reveals self-awareness: she knows the preference but softens it to avoid seeming ungrateful. Her recovery sentence ('it was genuinely lovely') follows immediately after each admission — a pattern of self-correction that signals the preference is real but she is managing how directly she expresses it within the group.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_dba9214c_s05_t007",
+          "speaker_display_name": "Nkem",
+          "message_excerpt": "I perhaps found it a little full-on at first but once the mosa was gone it got much easier.",
+          "relevance": "Admits the gathering was overstimulating, then immediately recovers — the recovery pattern signals she is managing the admission"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_dba9214c_s05_t009",
+          "speaker_display_name": "Nkem",
+          "message_excerpt": "A smaller table would suit me better in an ideal world. But it was genuinely lovely.",
+          "relevance": "Direct preference stated ('smaller table') then softened — confirms the preference is real and consciously managed"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_dba9214c01",
+      "category": "Q2",
+      "difficulty": "medium",
+      "question": "When the family sorted contributions for the January gathering, everyone agreed to bring something. What did one person's initial response reveal about their actual relationship to the food-bringing expectation, and what specifically in how they responded tells you that?",
+      "answer": "The family agreed that everyone would bring food for the January 25th gathering. Kayode's initial response — volunteering for 'drinks' rather than a dish — signals that he was trying to satisfy the spirit of contributing while sidestepping the food-specific requirement. His framing of drinks as 'easier for me' acknowledges the norm without engaging with it. Even after Adaeze pushed back, he found a workaround (buying puff puff from a shop rather than cooking). The deflection to drinks is his established pattern: he is aware of the expectation but consistently looks for the path of least resistance around its food component.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Nkem",
+        "B": "Emeka",
+        "C": "Bisi",
+        "D": "Kayode"
+      },
+      "correct_option": "D",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_dba9214c_s02_t006",
+          "speaker_display_name": "Kayode",
+          "message_excerpt": "Can do drinks? Easier for me to sort drinks than food?",
+          "relevance": "Kayode deflects immediately to drinks — framing it as logistics but the pattern is about avoiding the food commitment"
+        },
+        {
+          "session_index": 2,
+          "turn_id": "grp_dba9214c_s02_t009",
+          "speaker_display_name": "Kayode",
+          "message_excerpt": "Yeah sure, puff puff from the place in Peckham. Will sort that?",
+          "relevance": "Finds a workaround (bought rather than cooked) that technically satisfies the norm without requiring him to cook"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_dba9214c02",
+      "category": "Q2",
+      "difficulty": "medium",
+      "question": "The family had their regular Sunday video call. What did one family member's participation reveal about their actual relationship to the call — and what in Adaeze's account of the call makes that visible?",
+      "answer": "The Sunday call happened, and most of the family participated. Emeka's participation, however, was minimal — Adaeze reports he 'was on for a little while' before saying he needed to rest, rather than the full participation the call norm implies. His terse 'Tired. E.' earlier in the session and his defensive 'It is not a pattern. E.' when Tolu raised it suggest awareness that the reduced participation represents a departure from an established norm. Unlike Kayode (who had been improving his attendance by this point), Emeka's quasi-absence goes unremarked — a sign that the family is accommodating it without naming it.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Kayode",
+        "B": "Bisi",
+        "C": "Emeka",
+        "D": "Nkem"
+      },
+      "correct_option": "C",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_dba9214c_s04_t010",
+          "speaker_display_name": "Adaeze",
+          "message_excerpt": "The call happened. Your father was on for a little while. He said he needed to rest. God willing he is fine.",
+          "relevance": "Adaeze's account reveals Emeka's participation was brief — 'a little while' implies below-norm engagement"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_dba9214c_s04_t014",
+          "speaker_display_name": "Emeka",
+          "message_excerpt": "It is not a pattern. E.",
+          "relevance": "Defensive response to Tolu's suggestion implies awareness that a pattern may be forming"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_dba9214c01",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "What does Adaeze expect of family members when it comes to contributions to gatherings, and what in the conversation shows Funke already knew this before Adaeze restated it — specifically what observable behaviour demonstrates prior knowledge?",
+      "answer": "Adaeze expects every family member to bring a food dish to gatherings, not just drinks or non-food items. Funke revealed prior knowledge in Session 2 by framing her workaround for Kayode around Adaeze's preference before Adaeze had restated the norm: 'I know you feel strongly about everyone contributing a dish.' The phrase 'I know you feel strongly' is not a guess or hedge — it is a statement of established fact, used as the foundation for Funke's proposed compromise. Funke could only frame her suggestion this way if she already understood the norm from prior family experience. She does not ask whether Adaeze cares; she states that she does, then offers an alternative within that constraint.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_dba9214c_s02_t008",
+          "speaker_display_name": "Funke",
+          "message_excerpt": "Adaeze I know you feel strongly about everyone contributing a dish - and you are absolutely right - but maybe Kayode can bring drinks AND the puff puff?",
+          "relevance": "Funke prefaces her workaround with 'I know you feel strongly' — stating Adaeze's preference as established fact, not asking about it"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q6_dba9214c01",
+      "category": "Q6",
+      "difficulty": "medium",
+      "question": "The Oyelaran family operates with an expectation that everyone brings a food dish to gatherings. Based on the conversations, does this expectation seem to hold equally for all family members — or does someone appear to have a different relationship to it, and how would you know?",
+      "answer": "No — Kayode consistently redirects toward drinks rather than food when contributions are discussed. In Session 2 his first response to the gathering question is 'Can do drinks? Easier for me to sort drinks than food?' — framing the drinks option as easier logistics rather than a preference, which signals awareness of the norm combined with a desire to sidestep its food-specific requirement. Even after Adaeze pushes back, he finds a workaround: puff puff from a shop, bought rather than cooked. He satisfies the letter of the norm without engaging with its spirit. Nobody else navigates the expectation this way.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Tolu",
+        "B": "Nkem",
+        "C": "Kayode",
+        "D": "Seun"
+      },
+      "correct_option": "C",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_dba9214c_s02_t006",
+          "speaker_display_name": "Kayode",
+          "message_excerpt": "Can do drinks? Easier for me to sort drinks than food?",
+          "relevance": "Deflects to drinks immediately — the pattern of redirecting away from cooking is the norm-dissent signal"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q6_dba9214c02",
+      "category": "Q6",
+      "difficulty": "medium",
+      "question": "The family treats the Sunday video call as a shared routine that everyone participates in. Based on what the conversations show, does this hold equally for all members — or does someone seem to relate to it differently, and what tells you that?",
+      "answer": "No — Emeka appears to have a different relationship with the Sunday call routine. In Session 4, Adaeze mentions that he 'was on for a little while' before saying he needed to rest, falling short of the full participation the norm implies. When Tolu raised the linked observation that he had also missed church that morning, Emeka's response was 'Tired. E.' followed later by the defensive 'It is not a pattern. E.' — the denial implies awareness that the reduced engagement is noticeable. Unlike Kayode, whose improved attendance is praised in Session 5, Emeka's partial presence passes without explicit discussion: the family accommodates it quietly.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Emeka",
+        "B": "Kayode",
+        "C": "Tolu",
+        "D": "Bisi"
+      },
+      "correct_option": "A",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_dba9214c_s04_t010",
+          "speaker_display_name": "Adaeze",
+          "message_excerpt": "The call happened. Your father was on for a little while. He said he needed to rest.",
+          "relevance": "Adaeze's phrasing reveals Emeka's participation was abbreviated — 'a little while' is less than full engagement"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_dba9214c_s04_t014",
+          "speaker_display_name": "Emeka",
+          "message_excerpt": "It is not a pattern. E.",
+          "relevance": "Defensive close implies he is aware his attendance is changing"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_dba9214c01",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "Based on the conversations, what does the way Nkem refers to her own history in the group chat reveal about how long she has been part of the family's communications and how she is positioning herself within the group?",
+      "answer": "Nkem has been in the family group chat since at least mid-October — well before Session 1's New Year messages. When Funke suggests welcoming her 'properly' in Session 1, Nkem corrects her: 'I think I have said hello before, Funke. That was the Sunday in mid-October, just after Kayode's sprint review.' The precision of the date, including the specific contextual marker (Kayode's sprint review), signals that Nkem has been quietly tracking the milestones of her own integration — the kind of detail a person notes when they are navigating a new social position with care. She corrects Funke without irritation, but she does correct her.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "quietly integrated member tracking own timeline in the group",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_dba9214c_s01_t015",
+          "speaker_display_name": "Nkem",
+          "message_excerpt": "I think I have said hello before, Funke. That was the Sunday in mid-October, just after Kayode's sprint review. But yes - hello, properly, everyone.",
+          "relevance": "Precise date recall including contextual marker signals deliberate tracking of her own integration history"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_dba9214c02",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does Tolu's behaviour around family logistics in the group chat suggest about his role in the family?",
+      "answer": "Tolu functions as the family's default practical anchor — the person who fills gaps before being asked. In Session 2, when contributions for the gathering are being sorted, Tolu volunteers the yam unprompted: 'I will do the yam. Clinically speaking it is the foundation of any proper Nigerian gathering.' He does not ask whether someone else has it covered, and nobody thanks him — his contribution is treated as a given, not a favour. His use of 'Clinically speaking' as a self-aware joke in a non-medical context suggests he is comfortable with the role rather than resentful of it.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "family practical anchor and default problem-solver",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_dba9214c_s02_t015",
+          "speaker_display_name": "Tolu",
+          "message_excerpt": "Good. I will do the yam. Clinically speaking it is the foundation of any proper Nigerian gathering.",
+          "relevance": "Volunteers the key dish without being asked — the unprompted step-up is the role-signal"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_dba9214c03",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does Kayode's response to Seun's announcement reveal about the nature of his relationship with her — and what specifically distinguishes his reaction from everyone else's in the same session?",
+      "answer": "Kayode knew about Seun's full vegan decision before she announced it to the family. His response 'Knew this was coming lol' stands out because every other family member reacts to the news as new information — Funke expresses surprise, Nkem asks about the health markers, Adaeze promises to adapt her cooking. Kayode alone treats it as a confirmed expectation. His follow-up — 'She has been building up to this for two years, by the way. Just so everyone is up to speed?' — positions him as someone operating on a separate, ongoing channel with Seun that the rest of the group does not share.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "close siblings with a private communication channel outside the group chat",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_dba9214c_s03_t006",
+          "speaker_display_name": "Kayode",
+          "message_excerpt": "Knew this was coming lol. Still making jollof for the family though right?",
+          "relevance": "Treats Seun's announcement as prior knowledge — uniquely so among all family members who responded"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_dba9214c_s03_t017",
+          "speaker_display_name": "Kayode",
+          "message_excerpt": "She has been building up to this for two years by the way. Just so everyone is up to speed?",
+          "relevance": "Positions himself as separately briefed — 'by the way' and 'just so everyone is up to speed' confirm prior knowledge"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_dba9214c04",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does Seun's response to Nkem's admission reveal about the nature of their relationship — and what in the phrasing of Seun's reply suggests this is not new information to her?",
+      "answer": "Seun responds to Nkem's admission that the gathering was 'full-on' with immediate, framing-specific support: 'you are allowed to find it a lot, no one expects you to perform being fine with ten people in one room.' The phrase 'perform being fine' goes beyond what Nkem said — Nkem said she found it full-on and that a smaller table would suit her, but she did not use the word 'perform.' Seun's choice of framing implies she had already understood Nkem's experience in these terms, not just from the current conversation. The precision and protectiveness of the response signals prior observation or discussion of Nkem's experience at family events.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "protective ally with prior knowledge of Nkem's discomfort at large gatherings",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_dba9214c_s05_t010",
+          "speaker_display_name": "Seun",
+          "message_excerpt": "Nkem I love that you said that honestly I mean you are allowed to find it a lot, no one expects you to perform being fine with ten people in one room",
+          "relevance": "Seun's 'perform being fine' goes beyond what Nkem said — implies prior understanding of Nkem's experience at gatherings"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_dba9214c05",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does Funke's announcement about time spent with Adaeze reveal about how their relationship has developed — and what in how both of them respond to it signals this is a milestone rather than a routine update?",
+      "answer": "Funke announces in Session 6 that Adaeze taught her to make egusi soup — a private cooking session that had not appeared in the group chat before. The significance is in Funke's framing: 'I finally understand what food is supposed to feel like in a kitchen' and 'No more apologising for not knowing the old recipes. I am learning them now. Properly.' This is not the language of a skills session; it describes a shift in belonging within the family. Adaeze's response — 'You were a very good student. I was proud.' — confirms the interaction carried weight for her too. The session was private; bringing it into the group chat is itself an act of incorporation.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "mother-in-law and daughter-in-law with a deepening personal bond through shared cooking",
+      "evidence_anchors": [
+        {
+          "session_index": 6,
+          "turn_id": "grp_dba9214c_s06_t014",
+          "speaker_display_name": "Funke",
+          "message_excerpt": "Adaeze taught me to make egusi soup last week and I genuinely think it changed my life? Like I finally understand what food is supposed to feel like in a kitchen. No more apologising",
+          "relevance": "Surfaces a private cooking session — the language of belonging rather than skill acquisition signals the bond milestone"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_dba9214c_s06_t015",
+          "speaker_display_name": "Adaeze",
+          "message_excerpt": "Funke my daughter. You were a very good student. I was proud. God willing you will teach your own children one day.",
+          "relevance": "Adaeze's 'my daughter' and pride confirm the interaction was emotionally significant for her"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_dba9214c06",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does the exchange between Kayode and Bisi reveal about how Kayode relates to Bisi's decisions — and what about the exchange suggests there is more to it than the group chat shows?",
+      "answer": "Immediately after Bisi announces she has registered for finals, Kayode says 'She is. We talked. She is doing it?' — his prior knowledge of the decision implies a private conversation that preceded the group announcement. Bisi's immediate pushback ('stop making it sound like you convinced me lmaoo I made my own decision') confirms the conversation happened and that Kayode had some role in it, while also revealing her investment in framing the decision as self-determined. The dynamic maps a pattern: Kayode functions as the family member Bisi consults privately before she speaks to the group.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "close siblings — Kayode is Bisi's private confidant before she announces things to the group",
+      "evidence_anchors": [
+        {
+          "session_index": 7,
+          "turn_id": "grp_dba9214c_s07_t015",
+          "speaker_display_name": "Kayode",
+          "message_excerpt": "She is. We talked. She is doing it?",
+          "relevance": "Prior knowledge of the decision signals a private conversation — 'We talked' is the disclosure"
+        },
+        {
+          "session_index": 7,
+          "turn_id": "grp_dba9214c_s07_t016",
+          "speaker_display_name": "Bisi",
+          "message_excerpt": "stop making it sound like you convinced me lmaoo I made my own decision",
+          "relevance": "Bisi's pushback confirms the conversation happened and Kayode played a role in it"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_dba9214c07",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does Auntie Grace's announcement reveal about how her relationship with Seun has functioned in the period leading up to it — and what specifically links Seun to the decision Grace announces?",
+      "answer": "Auntie Grace credits her solo trip decision to conversations she had with Seun about rest and self-care: 'those conversations we had about rest and about listening to your body, they stayed with me.' This reveals that Seun and Grace have been having substantive wellness discussions outside the group chat — conversations that had a real effect on Grace's behaviour. Seun's response — 'this is what I mean when I say wellness is not about restriction it is about permission' — does not explain the framework to Grace but extends it, treating it as shared vocabulary. The lack of explanation implies ongoing understanding developed across multiple conversations not visible in the group.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "aunt-niece wellness alliance with an ongoing private dialogue that influenced Grace's behaviour",
+      "evidence_anchors": [
+        {
+          "session_index": 8,
+          "turn_id": "grp_dba9214c_s08_t010",
+          "speaker_display_name": "Auntie Grace",
+          "message_excerpt": "Seun, those conversations we had about rest and about listening to your body, they stayed with me. I had not taken a holiday alone since 2021. It was time.",
+          "relevance": "Grace explicitly credits Seun's conversations as the catalyst — reveals a private ongoing wellness dialogue"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_dba9214c_s08_t013",
+          "speaker_display_name": "Seun",
+          "message_excerpt": "honestly this is what I mean when I say wellness is not about restriction it is about permission I mean Auntie Grace just gave herself permission",
+          "relevance": "Seun extends shared vocabulary rather than explaining it — implies ongoing understanding between them"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q8_dba9214c01",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What signals the shift in Seun's relationship to her dietary identity between Sessions 1 and 3, and what appears to have driven the change from one state to the other?",
+      "answer": "Early state (Session 1): Seun describes eating fish over Christmas as a regretted lapse and immediately reasserts a plant-based identity — she says 'I am back on strictly plant-based now' and frames the fish as something she 'only' did because of her mother's pepper soup. She is self-identifying as plant-based but still hedging in practice. Shift signal (Session 3): She announces 'fully vegan, no more exceptions, I am done being apologetic about it' — both the commitment and the framing shift. Trigger: Her GP reported the lowest-ever inflammatory markers, which she cites directly as the reason: 'my GP said whatever I am doing keep doing it so I am going all in.' Evolved state: full commitment, no qualifications, and a declared end to apologising for the choice.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_dba9214c_s01_t011",
+          "speaker_display_name": "Seun",
+          "message_excerpt": "I am back on strictly plant-based now I mean I only slipped because of mum's pepper soup",
+          "relevance": "Before state: plant-based identity but still experiencing exceptions"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_dba9214c_s03_t001",
+          "speaker_display_name": "Seun",
+          "message_excerpt": "fully vegan, no more exceptions, I am done being apologetic about it",
+          "relevance": "After state: full commitment and explicit end to apologetic framing"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "plant-based identity but with occasional exceptions; apologetic framing"
+        },
+        {
+          "session_index": 3,
+          "value": "fully vegan, no exceptions, no longer apologetic"
+        }
+      ]
+    },
+    {
+      "id": "Q8_dba9214c02",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What first signals that Emeka's attendance at a longstanding personal habit may have changed — and what does his response in the conversation suggest about whether he is aware of the shift?",
+      "answer": "Early state (implicit baseline): Tolu flags the absence in Session 4 by asking 'did anyone else notice Dad missed church this morning?' — treating it as notable rather than expected, which implies regular attendance had been the norm. Shift signal (Session 4): The missed Sunday church is the first evidence of the departure. Emeka's response 'Tired. E.' gives no further explanation. Trigger: Not stated in the conversation; Emeka attributes it to post-gathering fatigue, but the family's concern (Tolu, Auntie Grace, Uncle Dele all commenting) suggests the absence is not fully explained by a single tired day. Evolved state: Emeka's defensive 'It is not a pattern. E.' when Tolu suggests talking about it indicates awareness that the change is visible and that he is choosing not to discuss it.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_dba9214c_s04_t005",
+          "speaker_display_name": "Tolu",
+          "message_excerpt": "did anyone else notice Dad missed church this morning?",
+          "relevance": "Tolu's question treats the absence as notable — establishes prior attendance as the baseline"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_dba9214c_s04_t014",
+          "speaker_display_name": "Emeka",
+          "message_excerpt": "It is not a pattern. E.",
+          "relevance": "Defensive denial implies awareness that a pattern is visible; closing the topic rather than explaining"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "church attendance treated as default — absence is treated as remarkable"
+        },
+        {
+          "session_index": 4,
+          "value": "missed church, dismisses it as tiredness, defensive when asked if it is a pattern"
+        }
+      ]
+    },
+    {
+      "id": "Q8_dba9214c03",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What signals that Kayode's relationship to family participation has shifted by then — and what in Adaeze's message at the start of the conversation suggests the change was deliberate rather than coincidental?",
+      "answer": "Early state (Sessions 1-4): Kayode participates in the group chat with characteristic brevity and deflection — in Session 2 he immediately pivots toward drinks to avoid cooking, in Session 4 he offers a quick deflection about his father's tiredness. There is no indication of active investment in participation beyond the minimum. Shift signal (Session 5): Adaeze opens with 'Kayode, you have been on every call this month. I notice these things.' The fact that she notices and names it signals that consistent presence is a change from prior behaviour — 'I notice these things' implies prior occasions of not noticing because there was nothing different to see. Trigger: Not stated explicitly in the group chat; Kayode's 'Was always planning to?' is a casual deflection of the compliment. Evolved state: Consistent attendance on every call; Adaeze tracking and naming it as a change.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_dba9214c_s02_t006",
+          "speaker_display_name": "Kayode",
+          "message_excerpt": "Can do drinks? Easier for me to sort drinks than food?",
+          "relevance": "Before state: deflective, minimum-engagement style in family logistics"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_dba9214c_s05_t001",
+          "speaker_display_name": "Adaeze",
+          "message_excerpt": "Kayode, you have been on every call this month. I notice these things. God willing this continues.",
+          "relevance": "Adaeze naming the change confirms it is a departure from prior baseline"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 2,
+          "value": "deflective participation — minimum commitment to family logistics and gatherings"
+        },
+        {
+          "session_index": 5,
+          "value": "consistent presence on every call — explicitly noticed and named by Adaeze"
+        }
+      ]
+    },
+    {
+      "id": "Q8_dba9214c04",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What signals a change in Funke's orientation toward the family's traditional practices, and what appears to have been the turning point that explains why the shift happens when it does?",
+      "answer": "Early state (Sessions 2-5): Funke engages enthusiastically with family gatherings but her energy is directed at modern elements — the new dining chairs, the timing, the aesthetics of the space. She participates in traditional food discussions but there is no indication she is learning to cook traditional dishes herself. Shift signal (Session 6): Funke announces that Adaeze taught her to make egusi soup the previous week: 'No more apologising for not knowing the old recipes. I am learning them now. Properly.' The phrase 'no more apologising' marks a conscious turning point — she is naming a prior stance (apology for not knowing) and declaring it over. Trigger: The private cooking session with Adaeze — Funke surfaces it in the group chat as the moment of change. Evolved state: Active learner of traditional recipes, framing them as her own rather than as something foreign to navigate.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_dba9214c_s02_t003",
+          "speaker_display_name": "Funke",
+          "message_excerpt": "Yes!! So excited you lot, literally been waiting for an excuse to use the new dining chairs",
+          "relevance": "Before state: enthusiasm focused on modern/aesthetic elements, not traditional practices"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_dba9214c_s06_t014",
+          "speaker_display_name": "Funke",
+          "message_excerpt": "Adaeze taught me to make egusi soup last week and I genuinely think it changed my life? Like I finally understand what food is supposed to fe",
+          "relevance": "After state: explicit declaration of changed orientation; names the prior apologetic stance and ends it"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 2,
+          "value": "enthusiastic about gatherings but focused on modern/aesthetic elements"
+        },
+        {
+          "session_index": 6,
+          "value": "actively learning traditional recipes, embracing them as her own"
+        }
+      ]
+    },
+    {
+      "id": "Q8_dba9214c05",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What does Uncle Dele's message reveal about a shift in how he views Kayode's professional choices — and what in the phrasing of his response signals this is a different register from his earlier engagement with Kayode?",
+      "answer": "Early state (Sessions 1-4): Uncle Dele interacts with Kayode around food and family logistics ('KAYODE, puff puff is not a dish') — correcting him as a younger person to be kept in line. His professional engagement with Kayode is absent; Kayode's career does not appear in Dele's messages. Shift signal (Session 6): In response to Kayode's promotion announcement, Uncle Dele writes: 'I will admit I have not always understood the nature of your work but this recognition is clear. I am proud of what you have built.' The phrase 'I will admit' introduces an explicit acknowledgment of prior misunderstanding — it is not just praise; it retroactively names the old position. The word 'proud' applied to Kayode's professional work is new. Trigger: Kayode's staff engineer promotion. Evolved state: Explicit pride, acknowledgment of prior scepticism, changed register toward Kayode's work.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_dba9214c_s02_t010",
+          "speaker_display_name": "Uncle Dele",
+          "message_excerpt": "ADAEZE I will bring ofe akwu as I did last time. KAYODE, puff puff is not a dish.",
+          "relevance": "Before state: corrects Kayode about food — treating him as a young person to be kept in line, no career engagement"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_dba9214c_s06_t007",
+          "speaker_display_name": "Uncle Dele",
+          "message_excerpt": "I will admit I have not always understood the nature of your work but this recognition is clear. I am proud of what you have built.",
+          "relevance": "After state: explicit acknowledgment of prior misunderstanding and genuine pride — new register toward Kayode's career"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 2,
+          "value": "no professional engagement with Kayode; corrects him about food and family logistics"
+        },
+        {
+          "session_index": 6,
+          "value": "explicitly proud, acknowledges prior lack of understanding of Kayode's work"
+        }
+      ]
+    },
+    {
+      "id": "Q8_dba9214c06",
+      "category": "Q8",
+      "difficulty": "hard",
+      "question": "What in the conversation across Sessions 2 through 6 shows that Nkem's confidence in the family group has changed — and what explains the shift, given that the trigger is not directly visible in the group chat?",
+      "answer": "Early state (Session 2): Nkem's contributions are tentative and hedged — she prefaces a straightforward offer with 'I think I can bring something small - I may be wrong but I recall...' The 'I may be wrong' framing treats her own memory as uncertain and positions her as peripheral. Shift signal (Session 6): Nkem directly addresses Adaeze by name, initiates a conversational direction, and invites her into a specific frame: 'I am very glad you shared this here. I think the family should hear it... would that be fair to say, Adaeze?' This is not peripheral contribution — it is directing. Trigger: Not stated in the group chat. Session 5 shows Nkem still admitting the gatherings are 'full-on', suggesting the shift occurs between Sessions 5 and 6. The raw network context indicates Seun privately told Nkem she was 'part of the furniture now', but this conversation is not in the group chat — its effect is only visible in the changed behaviour. Evolved state (Session 6 onward): Nkem initiates, addresses individuals by name, steers discussion without deferring to Kayode.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_dba9214c_s02_t013",
+          "speaker_display_name": "Nkem",
+          "message_excerpt": "I think I can bring something small - I may be wrong but I recall Adaeze mentioning she liked the mosa I made before.",
+          "relevance": "Before state: hedged, tentative — 'I may be wrong' even about her own memory; peripheral positioning"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_dba9214c_s06_t009",
+          "speaker_display_name": "Nkem",
+          "message_excerpt": "I am very glad you shared this here. I think the family should hear it. I may be wrong but I believe this is the m",
+          "relevance": "After state: directly addresses Adaeze by name, initiates and steers conversation — a marked shift from peripheral hedging"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 2,
+          "value": "tentative, hedged contributions with 'I may be wrong' framing; peripheral positioning"
+        },
+        {
+          "session_index": 6,
+          "value": "initiates conversation in group, directly addresses Adaeze, steers discussion independently"
+        }
+      ]
+    },
+    {
+      "id": "Q8_dba9214c07",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What signals a change in Tolu's approach to the boundaries of the family circle — and what earlier signals in the conversation help explain why the change happens at that point rather than earlier?",
+      "answer": "Early state (Sessions 2-6): Tolu manages family gatherings and contributes to logistics, but all events are Oyelaran-only. He and Funke host but there is no mention of inviting Funke's family — the default is the immediate family unit. Shift signal (Session 7): Tolu proactively suggests inviting Funke's parents to Christmas: 'Funke's parents have not been to a Christmas with us before. I think it is time we invited them this year.' He raises this without being asked. Trigger: The progression is visible in the chat: Funke's growing integration (her egusi lesson with Adaeze in Session 6, Adaeze's explicit pride in Funke) appears to have moved Tolu. The Christmas suggestion comes one session after Funke's declaration of embracing the family's traditions. Evolved state: Proactive expansion of the family circle, initiated by Tolu himself.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 6,
+          "turn_id": "grp_dba9214c_s06_t014",
+          "speaker_display_name": "Funke",
+          "message_excerpt": "No more apologising for not knowing the old recipes. I am learning them now. Properly.",
+          "relevance": "Funke's visible integration in S6 appears to be the trigger for Tolu's change — the invitation follows one session later"
+        },
+        {
+          "session_index": 7,
+          "turn_id": "grp_dba9214c_s07_t004",
+          "speaker_display_name": "Tolu",
+          "message_excerpt": "Funke's parents have not been to a Christmas with us before. I think it is time we invited them this year.",
+          "relevance": "After state: proactively extends the family circle, unprompted — the 'I think it is time' framing signals deliberate choice"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 2,
+          "value": "hosts family gatherings for Oyelaran family only — no mention of extending to Funke's family"
+        },
+        {
+          "session_index": 7,
+          "value": "proactively invites Funke's parents to Christmas for the first time"
+        }
+      ]
+    },
+    {
+      "id": "Q8_dba9214c08",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What in the conversations across multiple conversations signals a shift in how Bisi communicates about her academic situation?",
+      "answer": "Early state (Sessions 1-6): Bisi participates actively in the group chat but never mentions law school or exams, even in sessions where personal updates are shared. The consistent absence is itself a signal — the family's background concern about her studies is visible in other members' careful silence around the topic. In Session 3 she responds enthusiastically to Seun's health news but there is no reciprocal personal update from her. Shift signal (Session 7): Bisi announces in stripped-back, direct language: 'okay so. I am sitting them. May. Already registered.' The specificity ('May', 'already registered') and the absence of deflection or joke marks a departure from her previous pattern of avoidance by omission. Trigger: A private conversation with Kayode — he says 'She is. We talked.' immediately after her announcement, implying their exchange preceded and contributed to this moment. Evolved state: Direct statement of intent, specific date, confirmed registration — no hedging.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_dba9214c_s01_t003",
+          "speaker_display_name": "Bisi",
+          "message_excerpt": "HAPPY NEW YEARRR omg hope everyone had fun lmaoo",
+          "relevance": "Before state: Bisi participates actively but never mentions law school — avoidance by omission"
+        },
+        {
+          "session_index": 7,
+          "turn_id": "grp_dba9214c_s07_t014",
+          "speaker_display_name": "Bisi",
+          "message_excerpt": "okay so. I am sitting them. May. Already registered.",
+          "relevance": "After state: direct, specific, no deflection — complete departure from the pattern of omission"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "active in group chat but never mentions exams or law school — avoidance by omission"
+        },
+        {
+          "session_index": 7,
+          "value": "direct statement of exam date and registration — no hedging or deflection"
+        }
+      ]
+    },
+    {
+      "id": "Q8_dba9214c09",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What does Auntie Grace's announcement reveal about a shift in how she applies her own professional values to herself — and what in the conversation explains what drove the change?",
+      "answer": "Early state (Sessions 2-7): Auntie Grace consistently dispenses health and rest advice to others — 'make sure you eat something proper before you arrive' (S2), 'make sure you are sleeping' (S5), 'make sure you are sleeping and eating properly through this period' (S7). The advice is genuine but directed entirely outward; she makes no mention of her own needs or rest. Shift signal (Session 8): She announces a solo ten-day trip to Barbados — the first time she appears in the group as the recipient of her own advice. Trigger: Explicitly stated — 'I decided after speaking with Seun last month that I have been giving advice for twenty years that I have not been following myself.' Seun's wellness conversations are credited directly. Evolved state: Books a solo holiday and announces it 'unapologetically' (her framing), shifting from giver of care to also receiver of it.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_dba9214c_s02_t011",
+          "speaker_display_name": "Auntie Grace",
+          "message_excerpt": "My dear I will make moin moin on the day. And Kayode please make sure you eat something proper before you arrive 🙏",
+          "relevance": "Before state: health advice directed entirely outward — no mention of her own rest or needs"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_dba9214c_s08_t001",
+          "speaker_display_name": "Auntie Grace",
+          "message_excerpt": "I have booked a trip. Just myself. Barbados, ten days, April. I decided after speaking with Seun last month that I have been giving advice for twenty years that I have not been following myself.",
+          "relevance": "After state: books solo trip, names Seun's conversations as the explicit trigger"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 2,
+          "value": "consistently gives health and rest advice to others — no mention of her own needs"
+        },
+        {
+          "session_index": 8,
+          "value": "books solo holiday, explicitly credits Seun's wellness conversations as the catalyst"
+        }
+      ]
+    },
+    {
+      "id": "Q8_dba9214c10",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What signals that Adaeze's relationship to Seun's dietary choices has shifted since then — and what does she say that explains what drove the change?",
+      "answer": "Early state (Session 3): When Seun announces her full vegan commitment, Adaeze responds with accommodation — 'I will learn to adapt my cooking' and 'I will make it with vegetable stock.' The response is reactive: prompted by the announcement, oriented toward compliance with Seun's choice rather than personal enthusiasm. Shift signal (Session 8): Adaeze announces she has been independently experimenting with vegan adaptations of traditional recipes: 'I made the egusi with coconut oil and mushrooms last week.' This was not prompted by Seun asking — Adaeze raised it herself. Trigger: Explicitly stated — 'Since Seun told us about her results I have been adapting some of my recipes.' The health results from Session 3 are cited as the catalyst that moved her from willing accommodation to active experimentation. Evolved state: Proactive adaptation of traditional dishes, approached with pride rather than obligation.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_dba9214c_s03_t009",
+          "speaker_display_name": "Adaeze",
+          "message_excerpt": "I will learn to adapt my cooking.",
+          "relevance": "Before state: reactive accommodation — promises to adapt in response to Seun's announcement, not from personal enthusiasm"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_dba9214c_s08_t014",
+          "speaker_display_name": "Adaeze",
+          "message_excerpt": "I have been experimenting. Since Seun told us about her results I have been adapting some of my recipes - I made the egusi with coconut oil and mushrooms last week.",
+          "relevance": "After state: proactive experimentation, self-initiated, names the trigger explicitly"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 3,
+          "value": "reactive accommodation — promises to adapt cooking when asked, no personal enthusiasm"
+        },
+        {
+          "session_index": 8,
+          "value": "proactive experimentation with vegan traditional recipes — self-initiated, not prompted"
+        }
+      ]
+    },
+    {
+      "id": "Q4_db01s1c3",
+      "category": "Q4",
+      "difficulty": "medium",
+      "question": "Someone in the family expressed a preference for using ingredients sourced directly from Nigeria rather than imported substitutes. Who made this point, and what in how they expressed it tells you it was their observation rather than the family member who agreed?",
+      "answer": "Emeka made this observation in Session 1: 'Good. The fish was from Nigeria last trip. Worth it.' He expresses his traditional-food preference through specific approval — naming the Nigerian sourcing of the fish as the thing that made it worth it, rather than stating a general rule. Uncle Dele responded immediately and explicitly: 'EMEKA is correct. Imported ingredients are not a substitute for the real thing.' Dele's message begins 'EMEKA is correct' — meaning he is validating Emeka's prior observation, not making the original one. The correct attribution rests on two things: Emeka speaks first and reveals the preference through what he chose and approved (fish from Nigeria), while Dele's version is an explicit rule-statement that responds to Emeka's implicit endorsement.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Uncle Dele",
+        "B": "Adaeze",
+        "C": "Emeka",
+        "D": "Seun"
+      },
+      "correct_option": "C",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_dba9214c_s01_t017",
+          "speaker_display_name": "Emeka",
+          "message_excerpt": "Good. The fish was from Nigeria last trip. Worth it.",
+          "relevance": "True speaker — Emeka reveals the preference through specific approval of Nigerian-sourced fish; the preference is implied by what he values, not stated as a rule",
+          "turn_index": 17
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q4_db04s4c3",
+      "category": "Q4",
+      "difficulty": "medium",
+      "question": "Two family members made essentially the same observation about Emeka needing rest after a demanding day — one grounding it in shared experience, the other in clinical reasoning. Who made the shared-experience framing, and what specifically distinguishes their message from the other person's?",
+      "answer": "Uncle Dele made the shared-experience observation: 'EMEKA I trust you are well. Rest is important at our age. I note the same. Best regards, Dele.' The key phrase is 'at our age' — this positions Dele as a peer of Emeka, someone in the same life stage who speaks from parallel experience, not from clinical training. Tolu made the clinical version later in the same session: 'Clinically speaking, rest after exertion is appropriate. Just to note, Dad — if this is a pattern we should talk.' The distinction: Dele frames rest as peer-wisdom from shared ageing; Tolu frames it as a medical observation with a conditional concern attached. The framing difference is also visible in register — Dele's 'I note the same' is personal endorsement, while Tolu's 'Clinically speaking' is professional distancing.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Tolu",
+        "B": "Auntie Grace",
+        "C": "Adaeze",
+        "D": "Uncle Dele"
+      },
+      "correct_option": "D",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_dba9214c_s04_t008",
+          "speaker_display_name": "Uncle Dele",
+          "message_excerpt": "EMEKA I trust you are well. Rest is important at our age. I note the same. Best regards, Dele",
+          "relevance": "True speaker — 'at our age' positions Dele as a peer of Emeka, framing the observation as shared-experience wisdom rather than clinical advice",
+          "turn_index": 8
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_dba9214c_s04_t013",
+          "speaker_display_name": "Tolu",
+          "message_excerpt": "Clinically speaking, rest after exertion is appropriate. Just to note, Dad - if this is a pattern we should talk.",
+          "relevance": "Foil context — Tolu makes the same point with clinical framing later in the session; the 'Clinically speaking' opener and 'if this is a pattern we should talk' distinguish her version from Dele's peer-observation",
+          "turn_index": 13
+        }
+      ],
+      "temporal_anchors": []
+    }
+  ],
+  "meta": {
+    "source": "SocialMemBench",
+    "source_kind": "real_benchmark",
+    "network_id": "grp_dba9214c",
+    "n_sessions": 8,
+    "n_turns": 160,
+    "v4_correct": 19,
+    "v4_total": 27,
+    "v4_errors": 8,
+    "v4_accuracy": 0.7037037037037037
+  }
+}

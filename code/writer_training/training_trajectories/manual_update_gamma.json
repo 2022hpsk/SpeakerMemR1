@@ -1,0 +1,3940 @@
+{
+  "schema": "speakermem-v4-trajectories/1",
+  "prompt_version": "13fae86a84be0b22",
+  "teacher": {
+    "model": "human-authored-v4",
+    "temperature": 0.0,
+    "thinking": false,
+    "max_tokens": 4096
+  },
+  "window_size": 5,
+  "network_id": "manual_update_gamma",
+  "source": {
+    "path": "manual_v4_networks",
+    "meta": {
+      "source_kind": "human_authored"
+    }
+  },
+  "transitions": [
+    {
+      "turn": 0,
+      "session_id": "manual_update_gamma_s01",
+      "ts": "2026-08-10T10:00:00Z",
+      "messages": [
+        {
+          "speaker": "Pia",
+          "content": "Experiment phase 1 starts.",
+          "session": "manual_update_gamma_s01",
+          "ts": "2026-08-10T10:00:00Z",
+          "msg_id": "0",
+          "meta": {}
+        },
+        {
+          "speaker": "Quinn",
+          "content": "Quinn records the measurements.",
+          "session": "manual_update_gamma_s01",
+          "ts": "2026-08-10T10:01:00Z",
+          "msg_id": "1",
+          "meta": {}
+        },
+        {
+          "speaker": "Pia",
+          "content": "The target metric is latency.",
+          "session": "manual_update_gamma_s01",
+          "ts": "2026-08-10T10:02:00Z",
+          "msg_id": "2",
+          "meta": {}
+        },
+        {
+          "speaker": "Quinn",
+          "content": "The latest run is logged.",
+          "session": "manual_update_gamma_s01",
+          "ts": "2026-08-10T10:03:00Z",
+          "msg_id": "3",
+          "meta": {}
+        },
+        {
+          "speaker": "Pia",
+          "content": "The next run will use the same target.",
+          "session": "manual_update_gamma_s01",
+          "ts": "2026-08-10T10:04:00Z",
+          "msg_id": "4",
+          "meta": {}
+        }
+      ],
+      "prompt": [
+        {
+          "role": "system",
+          "content": "You are an ONLINE memory manager for a MULTI-PARTY group chat, maintaining a speaker-indexed layered memory.\n\nPREMISE: every raw message of this segment is ALREADY stored VERBATIM (raw track). Your job is NOT to restate the raw text, but to add STRUCTURED derived memory on top of it, so that retrieval by person / relationship / time becomes possible.\n\nFOUR DERIVED LAYERS YOU MAY WRITE\n(raw messages are already written to per_speaker_episodic by the system - never produce that layer)\n- per_speaker_core     a person's STABLE fact / identity / hardened stance / RECURRING BEHAVIOUR\n- per_speaker_profile  how the group sees a person, or one person's OBSERVATION about another\n                       (\"A says B is X\" -> owner=B, source=A)\n- group_interaction    cross-speaker event / relationship / group DECISION   (owner=GROUP)\n                       *** WHO SAID IT IS NOT WHO IT BELONGS TO ***\n                       A decision announced by ONE person on behalf of the group is STILL a\n                       group decision: owner=GROUP, source=<the speaker>.\n                       Triggers: \"then it is settled\", \"so we agreed\", \"that is decided\",\n                       \"we will go with X\" -> owner=GROUP, layer=group_interaction,\n                       utype=decision. Do NOT file it as that speaker's personal preference.\n                       (A personal preference is \"I would rather X\"; a decision is \"X is settled\".)\n- group_insight        group NORM / consensus / meta-observation             (owner=GROUP)\n                       ONLY when the conversation gives evidence, note which member conspicuously\n                       relates to a norm differently. NEVER guess a member's compliance.\n\nACTIONS - exactly three, output nothing else\n  {\"action\":\"ADD\",\"owner\":\"<who it is ABOUT>\",\"source\":\"<who SAID/observed it>\",\"layer\":\"<one of the four above>\",\"utype\":\"fact|stance|observation|decision|relation\",\"content\":\"<the memory>\"}\n  {\"action\":\"UPDATE\",\"entry_id\":\"<existing entry being updated>\",\"content\":\"<the NEW, current state>\"}\n  {\"action\":\"NOOP\"}\n\nUPDATE BOUNDARIES (important)\n- *** BEFORE EVERY ADD, SEARCH CURRENT MEMORY FIRST *** Is there already an entry about this\n  same matter / same work item / same person-and-topic? If yes -> UPDATE that entry.\n  ADD is only for matters that NOTHING in CURRENT MEMORY covers yet.\n- Use UPDATE whenever an existing entry about the SAME MATTER has MOVED ON. Read this broadly:\n    * a number / percentage / progress advanced   e.g. 38% complete -> 97% complete\n    * a date or deadline shifted                  e.g. freeze 2025-06-20 -> 2025-06-27\n    * a status moved                              e.g. blocked -> resolved, planned -> shipped\n    * a stance / belief / plan changed\n    * a later, more specific statement supersedes an earlier vaguer one about the same item\n  It does NOT have to contradict the old entry. Any progression on the same item is an UPDATE.\n  A recurring behaviour observed AGAIN is also an UPDATE (record that it happened again).\n- *** THE NEW CONTENT MUST DIFFER SUBSTANTIVELY FROM THE ENTRY BEING UPDATED. *** If what you\n  would write is the same as the existing entry (same value, same status, same wording),\n  output NOOP - not UPDATE. An UPDATE that changes nothing is worse than no action: it buries\n  the real history under identical links.\n- entry_id MUST come from the CURRENT MEMORY list below.\n- Give ONLY the new state. How the old entry is preserved and chained is handled by the system.\n- Do NOT restate the old content (never write \"was X, now Y\" - write only Y).\n- Do NOT repeat owner / source / layer - the system reuses them from the updated entry.\n- DISAGREEMENT BETWEEN DIFFERENT PEOPLE is always separate ADDs. Never merge them via UPDATE.\n- ONE MATTER = ONE ENTRY. If a matter is ALREADY in CURRENT MEMORY - or you already wrote an\n  ADD for it EARLIER IN THIS SAME OUTPUT - never ADD a second entry for it: UPDATE it if its\n  state changed, otherwise output nothing. This holds for every kind of memory (not just\n  stances), for the GROUP row no matter who voices it this time, and however differently the\n  matter is worded. Merely re-stating / confirming / agreeing with something already listed is\n  not new state -> neither ADD nor UPDATE.\n\nGRANULARITY - PREFER FINE OVER COARSE (important)\n- One derived memory = ONE atomic fact / ONE stance / ONE observation.\n- If a person said N distinct things in this segment -> produce N entries, never one summary.\n  BAD : \"Mum's overall view on the 40th: wants a party, worried about budget, March is awkward\"\n  GOOD: three separate entries (celebration format / budget / timing)\n- But do NOT copy raw messages verbatim into derived memory (raw is already stored).\n\nCAPTURE BEHAVIOUR, NOT ONLY STATED FACTS\nExplicit facts (\"closed a Series A\", \"the code is 4-8-1-9\") are easy - you will not miss them.\nEqually important and far more often missed are IMPLICIT traits: a habit, an avoidance, a role\nsomeone keeps taking on, a subject someone never engages with, a way of replying that repeats,\nwho they defer to, what they joke about instead of answering.\n  e.g. \"deflects questions about his own career with a joke, then redirects to someone else\"\n       \"is always the one who handles logistics\" / \"never comments on anyone's promotion\"\nFile them as per_speaker_core (the person's own pattern) or per_speaker_profile (how others\nread them). Base them on what actually happened - describe the behaviour, never guess a motive.\nA pattern occurring AGAIN is NOT a duplicate, it is EVIDENCE: UPDATE that entry to record that\nit happened again (and when), instead of NOOP.\nSomeone who talks a lot but states few hard facts should still end up with entries - if a person\nspoke repeatedly this segment and you wrote nothing about them, you have missed their behaviour.\n\nOTHER CONSTRAINTS\n- owner = who the memory is ABOUT; source = who said/observed it.\n- If A claims something about B -> owner=B, source=A. Never file B's matter under A.\n- Invent nothing unsupported. Prefer faithful wording over paraphrase.\n- Write memory content in the SAME LANGUAGE as the conversation (so that retrieval embeddings\n  of memory and of raw text live in the same space).\n\nOutput JSON only, no explanation: {\"actions\":[ ... ]}"
+        },
+        {
+          "role": "user",
+          "content": "Speakers present: Pia, Quinn\nSession: manual_update_gamma_s01    Time: 2026-08-10T10:00:00Z\n\nCURRENT MEMORY (ALL derived memory of this group; each slot shows its LATEST state only)\nformat: <entry_id> [layer|owner(by source)@date] content\n(no derived memory yet)\n\nNEW MESSAGES IN THIS SEGMENT\n[Pia @ 2026-08-10T10:00:00Z] Experiment phase 1 starts.\n[Quinn @ 2026-08-10T10:01:00Z] Quinn records the measurements.\n[Pia @ 2026-08-10T10:02:00Z] The target metric is latency.\n[Quinn @ 2026-08-10T10:03:00Z] The latest run is logged.\n[Pia @ 2026-08-10T10:04:00Z] The next run will use the same target.\n\nHARD OUTPUT LIMIT: return at most 10 actions. Stop after the last NOVEL action, close the JSON immediately, and NEVER repeat an action already emitted in this output.\n\nOutput {\"actions\":[ ... ]}"
+        }
+      ],
+      "pre_state_text": "(no derived memory yet)",
+      "actions": [
+        {
+          "action": "ADD",
+          "owner": "Pia",
+          "source": "Pia",
+          "layer": "per_speaker_core",
+          "utype": "decision",
+          "content": "Pia owns the experiment"
+        },
+        {
+          "action": "ADD",
+          "owner": "Quinn",
+          "source": "Quinn",
+          "layer": "per_speaker_core",
+          "utype": "fact",
+          "content": "Quinn records measurements"
+        }
+      ],
+      "target_text": "{\"actions\":[{\"action\":\"ADD\",\"owner\":\"Pia\",\"source\":\"Pia\",\"layer\":\"per_speaker_core\",\"utype\":\"decision\",\"content\":\"Pia owns the experiment\"},{\"action\":\"ADD\",\"owner\":\"Quinn\",\"source\":\"Quinn\",\"layer\":\"per_speaker_core\",\"utype\":\"fact\",\"content\":\"Quinn records measurements\"}]}",
+      "report": {
+        "json_valid": true,
+        "attempted": 2,
+        "applied": 2,
+        "noop": 0,
+        "errors": [],
+        "created_ids": [
+          "5e68f57a",
+          "efccb8ca"
+        ],
+        "updated_from": [],
+        "schema_valid_actions": 2,
+        "valid": true
+      },
+      "pre_state": {
+        "entries": [],
+        "heads": [],
+        "update_edges": [],
+        "roster": []
+      },
+      "post_state": {
+        "entries": [
+          {
+            "content": "Pia owns the experiment",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "f0ce8fee",
+              "7e602a75",
+              "95b8aa03"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "5e68f57a"
+          },
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Pia owns the experiment",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "f0ce8fee",
+              "7e602a75",
+              "95b8aa03"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "5e68f57a"
+          },
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          }
+        ],
+        "update_edges": [],
+        "roster": [
+          "Pia",
+          "Quinn"
+        ]
+      },
+      "segment_index": 0,
+      "source_session_index": 0,
+      "metadata": {
+        "source_topic": "manual_topic_manual_update_gamma_1"
+      }
+    },
+    {
+      "turn": 1,
+      "session_id": "manual_update_gamma_s02",
+      "ts": "2026-08-11T10:00:00Z",
+      "messages": [
+        {
+          "speaker": "Pia",
+          "content": "Experiment phase 2 starts.",
+          "session": "manual_update_gamma_s02",
+          "ts": "2026-08-11T10:00:00Z",
+          "msg_id": "0",
+          "meta": {}
+        },
+        {
+          "speaker": "Quinn",
+          "content": "Quinn records the measurements.",
+          "session": "manual_update_gamma_s02",
+          "ts": "2026-08-11T10:01:00Z",
+          "msg_id": "1",
+          "meta": {}
+        },
+        {
+          "speaker": "Pia",
+          "content": "The target metric is latency.",
+          "session": "manual_update_gamma_s02",
+          "ts": "2026-08-11T10:02:00Z",
+          "msg_id": "2",
+          "meta": {}
+        },
+        {
+          "speaker": "Quinn",
+          "content": "The latest run is logged.",
+          "session": "manual_update_gamma_s02",
+          "ts": "2026-08-11T10:03:00Z",
+          "msg_id": "3",
+          "meta": {}
+        },
+        {
+          "speaker": "Pia",
+          "content": "The next run will use the same target.",
+          "session": "manual_update_gamma_s02",
+          "ts": "2026-08-11T10:04:00Z",
+          "msg_id": "4",
+          "meta": {}
+        }
+      ],
+      "prompt": [
+        {
+          "role": "system",
+          "content": "You are an ONLINE memory manager for a MULTI-PARTY group chat, maintaining a speaker-indexed layered memory.\n\nPREMISE: every raw message of this segment is ALREADY stored VERBATIM (raw track). Your job is NOT to restate the raw text, but to add STRUCTURED derived memory on top of it, so that retrieval by person / relationship / time becomes possible.\n\nFOUR DERIVED LAYERS YOU MAY WRITE\n(raw messages are already written to per_speaker_episodic by the system - never produce that layer)\n- per_speaker_core     a person's STABLE fact / identity / hardened stance / RECURRING BEHAVIOUR\n- per_speaker_profile  how the group sees a person, or one person's OBSERVATION about another\n                       (\"A says B is X\" -> owner=B, source=A)\n- group_interaction    cross-speaker event / relationship / group DECISION   (owner=GROUP)\n                       *** WHO SAID IT IS NOT WHO IT BELONGS TO ***\n                       A decision announced by ONE person on behalf of the group is STILL a\n                       group decision: owner=GROUP, source=<the speaker>.\n                       Triggers: \"then it is settled\", \"so we agreed\", \"that is decided\",\n                       \"we will go with X\" -> owner=GROUP, layer=group_interaction,\n                       utype=decision. Do NOT file it as that speaker's personal preference.\n                       (A personal preference is \"I would rather X\"; a decision is \"X is settled\".)\n- group_insight        group NORM / consensus / meta-observation             (owner=GROUP)\n                       ONLY when the conversation gives evidence, note which member conspicuously\n                       relates to a norm differently. NEVER guess a member's compliance.\n\nACTIONS - exactly three, output nothing else\n  {\"action\":\"ADD\",\"owner\":\"<who it is ABOUT>\",\"source\":\"<who SAID/observed it>\",\"layer\":\"<one of the four above>\",\"utype\":\"fact|stance|observation|decision|relation\",\"content\":\"<the memory>\"}\n  {\"action\":\"UPDATE\",\"entry_id\":\"<existing entry being updated>\",\"content\":\"<the NEW, current state>\"}\n  {\"action\":\"NOOP\"}\n\nUPDATE BOUNDARIES (important)\n- *** BEFORE EVERY ADD, SEARCH CURRENT MEMORY FIRST *** Is there already an entry about this\n  same matter / same work item / same person-and-topic? If yes -> UPDATE that entry.\n  ADD is only for matters that NOTHING in CURRENT MEMORY covers yet.\n- Use UPDATE whenever an existing entry about the SAME MATTER has MOVED ON. Read this broadly:\n    * a number / percentage / progress advanced   e.g. 38% complete -> 97% complete\n    * a date or deadline shifted                  e.g. freeze 2025-06-20 -> 2025-06-27\n    * a status moved                              e.g. blocked -> resolved, planned -> shipped\n    * a stance / belief / plan changed\n    * a later, more specific statement supersedes an earlier vaguer one about the same item\n  It does NOT have to contradict the old entry. Any progression on the same item is an UPDATE.\n  A recurring behaviour observed AGAIN is also an UPDATE (record that it happened again).\n- *** THE NEW CONTENT MUST DIFFER SUBSTANTIVELY FROM THE ENTRY BEING UPDATED. *** If what you\n  would write is the same as the existing entry (same value, same status, same wording),\n  output NOOP - not UPDATE. An UPDATE that changes nothing is worse than no action: it buries\n  the real history under identical links.\n- entry_id MUST come from the CURRENT MEMORY list below.\n- Give ONLY the new state. How the old entry is preserved and chained is handled by the system.\n- Do NOT restate the old content (never write \"was X, now Y\" - write only Y).\n- Do NOT repeat owner / source / layer - the system reuses them from the updated entry.\n- DISAGREEMENT BETWEEN DIFFERENT PEOPLE is always separate ADDs. Never merge them via UPDATE.\n- ONE MATTER = ONE ENTRY. If a matter is ALREADY in CURRENT MEMORY - or you already wrote an\n  ADD for it EARLIER IN THIS SAME OUTPUT - never ADD a second entry for it: UPDATE it if its\n  state changed, otherwise output nothing. This holds for every kind of memory (not just\n  stances), for the GROUP row no matter who voices it this time, and however differently the\n  matter is worded. Merely re-stating / confirming / agreeing with something already listed is\n  not new state -> neither ADD nor UPDATE.\n\nGRANULARITY - PREFER FINE OVER COARSE (important)\n- One derived memory = ONE atomic fact / ONE stance / ONE observation.\n- If a person said N distinct things in this segment -> produce N entries, never one summary.\n  BAD : \"Mum's overall view on the 40th: wants a party, worried about budget, March is awkward\"\n  GOOD: three separate entries (celebration format / budget / timing)\n- But do NOT copy raw messages verbatim into derived memory (raw is already stored).\n\nCAPTURE BEHAVIOUR, NOT ONLY STATED FACTS\nExplicit facts (\"closed a Series A\", \"the code is 4-8-1-9\") are easy - you will not miss them.\nEqually important and far more often missed are IMPLICIT traits: a habit, an avoidance, a role\nsomeone keeps taking on, a subject someone never engages with, a way of replying that repeats,\nwho they defer to, what they joke about instead of answering.\n  e.g. \"deflects questions about his own career with a joke, then redirects to someone else\"\n       \"is always the one who handles logistics\" / \"never comments on anyone's promotion\"\nFile them as per_speaker_core (the person's own pattern) or per_speaker_profile (how others\nread them). Base them on what actually happened - describe the behaviour, never guess a motive.\nA pattern occurring AGAIN is NOT a duplicate, it is EVIDENCE: UPDATE that entry to record that\nit happened again (and when), instead of NOOP.\nSomeone who talks a lot but states few hard facts should still end up with entries - if a person\nspoke repeatedly this segment and you wrote nothing about them, you have missed their behaviour.\n\nOTHER CONSTRAINTS\n- owner = who the memory is ABOUT; source = who said/observed it.\n- If A claims something about B -> owner=B, source=A. Never file B's matter under A.\n- Invent nothing unsupported. Prefer faithful wording over paraphrase.\n- Write memory content in the SAME LANGUAGE as the conversation (so that retrieval embeddings\n  of memory and of raw text live in the same space).\n\nOutput JSON only, no explanation: {\"actions\":[ ... ]}"
+        },
+        {
+          "role": "user",
+          "content": "Speakers present: Pia, Quinn\nSession: manual_update_gamma_s02    Time: 2026-08-11T10:00:00Z\n\nCURRENT MEMORY (ALL derived memory of this group; each slot shows its LATEST state only)\nformat: <entry_id> [layer|owner(by source)@date] content\n  [Pia]\n    5e68f57a [core|Pia@2026-08-10] Pia owns the experiment\n  [Quinn]\n    efccb8ca [core|Quinn@2026-08-10] Quinn records measurements\n\nNEW MESSAGES IN THIS SEGMENT\n[Pia @ 2026-08-11T10:00:00Z] Experiment phase 2 starts.\n[Quinn @ 2026-08-11T10:01:00Z] Quinn records the measurements.\n[Pia @ 2026-08-11T10:02:00Z] The target metric is latency.\n[Quinn @ 2026-08-11T10:03:00Z] The latest run is logged.\n[Pia @ 2026-08-11T10:04:00Z] The next run will use the same target.\n\nHARD OUTPUT LIMIT: return at most 10 actions. Stop after the last NOVEL action, close the JSON immediately, and NEVER repeat an action already emitted in this output.\n\nOutput {\"actions\":[ ... ]}"
+        }
+      ],
+      "pre_state_text": "  [Pia]\n    5e68f57a [core|Pia@2026-08-10] Pia owns the experiment\n  [Quinn]\n    efccb8ca [core|Quinn@2026-08-10] Quinn records measurements",
+      "actions": [
+        {
+          "action": "ADD",
+          "owner": "GROUP",
+          "source": "Pia",
+          "layer": "group_insight",
+          "utype": "observation",
+          "content": "The group evaluates latency across phases"
+        }
+      ],
+      "target_text": "{\"actions\":[{\"action\":\"ADD\",\"owner\":\"GROUP\",\"source\":\"Pia\",\"layer\":\"group_insight\",\"utype\":\"observation\",\"content\":\"The group evaluates latency across phases\"}]}",
+      "report": {
+        "json_valid": true,
+        "attempted": 1,
+        "applied": 1,
+        "noop": 0,
+        "errors": [],
+        "created_ids": [
+          "ff0f1ad3"
+        ],
+        "updated_from": [],
+        "schema_valid_actions": 1,
+        "valid": true
+      },
+      "pre_state": {
+        "entries": [
+          {
+            "content": "Pia owns the experiment",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "f0ce8fee",
+              "7e602a75",
+              "95b8aa03"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "5e68f57a"
+          },
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Pia owns the experiment",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "f0ce8fee",
+              "7e602a75",
+              "95b8aa03"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "5e68f57a"
+          },
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          }
+        ],
+        "update_edges": [],
+        "roster": [
+          "Pia",
+          "Quinn"
+        ]
+      },
+      "post_state": {
+        "entries": [
+          {
+            "content": "Pia owns the experiment",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "f0ce8fee",
+              "7e602a75",
+              "95b8aa03"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "5e68f57a"
+          },
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Pia owns the experiment",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "f0ce8fee",
+              "7e602a75",
+              "95b8aa03"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "5e68f57a"
+          },
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          }
+        ],
+        "update_edges": [],
+        "roster": [
+          "Pia",
+          "Quinn"
+        ]
+      },
+      "segment_index": 0,
+      "source_session_index": 1,
+      "metadata": {
+        "source_topic": "manual_topic_manual_update_gamma_2"
+      }
+    },
+    {
+      "turn": 2,
+      "session_id": "manual_update_gamma_s03",
+      "ts": "2026-08-12T10:00:00Z",
+      "messages": [
+        {
+          "speaker": "Pia",
+          "content": "Experiment phase 3 starts.",
+          "session": "manual_update_gamma_s03",
+          "ts": "2026-08-12T10:00:00Z",
+          "msg_id": "0",
+          "meta": {}
+        },
+        {
+          "speaker": "Quinn",
+          "content": "Quinn records the measurements.",
+          "session": "manual_update_gamma_s03",
+          "ts": "2026-08-12T10:01:00Z",
+          "msg_id": "1",
+          "meta": {}
+        },
+        {
+          "speaker": "Pia",
+          "content": "The target metric is latency.",
+          "session": "manual_update_gamma_s03",
+          "ts": "2026-08-12T10:02:00Z",
+          "msg_id": "2",
+          "meta": {}
+        },
+        {
+          "speaker": "Quinn",
+          "content": "The latest run is logged.",
+          "session": "manual_update_gamma_s03",
+          "ts": "2026-08-12T10:03:00Z",
+          "msg_id": "3",
+          "meta": {}
+        },
+        {
+          "speaker": "Pia",
+          "content": "The next run will use the same target.",
+          "session": "manual_update_gamma_s03",
+          "ts": "2026-08-12T10:04:00Z",
+          "msg_id": "4",
+          "meta": {}
+        }
+      ],
+      "prompt": [
+        {
+          "role": "system",
+          "content": "You are an ONLINE memory manager for a MULTI-PARTY group chat, maintaining a speaker-indexed layered memory.\n\nPREMISE: every raw message of this segment is ALREADY stored VERBATIM (raw track). Your job is NOT to restate the raw text, but to add STRUCTURED derived memory on top of it, so that retrieval by person / relationship / time becomes possible.\n\nFOUR DERIVED LAYERS YOU MAY WRITE\n(raw messages are already written to per_speaker_episodic by the system - never produce that layer)\n- per_speaker_core     a person's STABLE fact / identity / hardened stance / RECURRING BEHAVIOUR\n- per_speaker_profile  how the group sees a person, or one person's OBSERVATION about another\n                       (\"A says B is X\" -> owner=B, source=A)\n- group_interaction    cross-speaker event / relationship / group DECISION   (owner=GROUP)\n                       *** WHO SAID IT IS NOT WHO IT BELONGS TO ***\n                       A decision announced by ONE person on behalf of the group is STILL a\n                       group decision: owner=GROUP, source=<the speaker>.\n                       Triggers: \"then it is settled\", \"so we agreed\", \"that is decided\",\n                       \"we will go with X\" -> owner=GROUP, layer=group_interaction,\n                       utype=decision. Do NOT file it as that speaker's personal preference.\n                       (A personal preference is \"I would rather X\"; a decision is \"X is settled\".)\n- group_insight        group NORM / consensus / meta-observation             (owner=GROUP)\n                       ONLY when the conversation gives evidence, note which member conspicuously\n                       relates to a norm differently. NEVER guess a member's compliance.\n\nACTIONS - exactly three, output nothing else\n  {\"action\":\"ADD\",\"owner\":\"<who it is ABOUT>\",\"source\":\"<who SAID/observed it>\",\"layer\":\"<one of the four above>\",\"utype\":\"fact|stance|observation|decision|relation\",\"content\":\"<the memory>\"}\n  {\"action\":\"UPDATE\",\"entry_id\":\"<existing entry being updated>\",\"content\":\"<the NEW, current state>\"}\n  {\"action\":\"NOOP\"}\n\nUPDATE BOUNDARIES (important)\n- *** BEFORE EVERY ADD, SEARCH CURRENT MEMORY FIRST *** Is there already an entry about this\n  same matter / same work item / same person-and-topic? If yes -> UPDATE that entry.\n  ADD is only for matters that NOTHING in CURRENT MEMORY covers yet.\n- Use UPDATE whenever an existing entry about the SAME MATTER has MOVED ON. Read this broadly:\n    * a number / percentage / progress advanced   e.g. 38% complete -> 97% complete\n    * a date or deadline shifted                  e.g. freeze 2025-06-20 -> 2025-06-27\n    * a status moved                              e.g. blocked -> resolved, planned -> shipped\n    * a stance / belief / plan changed\n    * a later, more specific statement supersedes an earlier vaguer one about the same item\n  It does NOT have to contradict the old entry. Any progression on the same item is an UPDATE.\n  A recurring behaviour observed AGAIN is also an UPDATE (record that it happened again).\n- *** THE NEW CONTENT MUST DIFFER SUBSTANTIVELY FROM THE ENTRY BEING UPDATED. *** If what you\n  would write is the same as the existing entry (same value, same status, same wording),\n  output NOOP - not UPDATE. An UPDATE that changes nothing is worse than no action: it buries\n  the real history under identical links.\n- entry_id MUST come from the CURRENT MEMORY list below.\n- Give ONLY the new state. How the old entry is preserved and chained is handled by the system.\n- Do NOT restate the old content (never write \"was X, now Y\" - write only Y).\n- Do NOT repeat owner / source / layer - the system reuses them from the updated entry.\n- DISAGREEMENT BETWEEN DIFFERENT PEOPLE is always separate ADDs. Never merge them via UPDATE.\n- ONE MATTER = ONE ENTRY. If a matter is ALREADY in CURRENT MEMORY - or you already wrote an\n  ADD for it EARLIER IN THIS SAME OUTPUT - never ADD a second entry for it: UPDATE it if its\n  state changed, otherwise output nothing. This holds for every kind of memory (not just\n  stances), for the GROUP row no matter who voices it this time, and however differently the\n  matter is worded. Merely re-stating / confirming / agreeing with something already listed is\n  not new state -> neither ADD nor UPDATE.\n\nGRANULARITY - PREFER FINE OVER COARSE (important)\n- One derived memory = ONE atomic fact / ONE stance / ONE observation.\n- If a person said N distinct things in this segment -> produce N entries, never one summary.\n  BAD : \"Mum's overall view on the 40th: wants a party, worried about budget, March is awkward\"\n  GOOD: three separate entries (celebration format / budget / timing)\n- But do NOT copy raw messages verbatim into derived memory (raw is already stored).\n\nCAPTURE BEHAVIOUR, NOT ONLY STATED FACTS\nExplicit facts (\"closed a Series A\", \"the code is 4-8-1-9\") are easy - you will not miss them.\nEqually important and far more often missed are IMPLICIT traits: a habit, an avoidance, a role\nsomeone keeps taking on, a subject someone never engages with, a way of replying that repeats,\nwho they defer to, what they joke about instead of answering.\n  e.g. \"deflects questions about his own career with a joke, then redirects to someone else\"\n       \"is always the one who handles logistics\" / \"never comments on anyone's promotion\"\nFile them as per_speaker_core (the person's own pattern) or per_speaker_profile (how others\nread them). Base them on what actually happened - describe the behaviour, never guess a motive.\nA pattern occurring AGAIN is NOT a duplicate, it is EVIDENCE: UPDATE that entry to record that\nit happened again (and when), instead of NOOP.\nSomeone who talks a lot but states few hard facts should still end up with entries - if a person\nspoke repeatedly this segment and you wrote nothing about them, you have missed their behaviour.\n\nOTHER CONSTRAINTS\n- owner = who the memory is ABOUT; source = who said/observed it.\n- If A claims something about B -> owner=B, source=A. Never file B's matter under A.\n- Invent nothing unsupported. Prefer faithful wording over paraphrase.\n- Write memory content in the SAME LANGUAGE as the conversation (so that retrieval embeddings\n  of memory and of raw text live in the same space).\n\nOutput JSON only, no explanation: {\"actions\":[ ... ]}"
+        },
+        {
+          "role": "user",
+          "content": "Speakers present: Pia, Quinn\nSession: manual_update_gamma_s03    Time: 2026-08-12T10:00:00Z\n\nCURRENT MEMORY (ALL derived memory of this group; each slot shows its LATEST state only)\nformat: <entry_id> [layer|owner(by source)@date] content\n  [Pia]\n    5e68f57a [core|Pia@2026-08-10] Pia owns the experiment\n  [Quinn]\n    efccb8ca [core|Quinn@2026-08-10] Quinn records measurements\n  [GROUP]\n    ff0f1ad3 [g-insight|GROUP(by Pia)@2026-08-11] The group evaluates latency across phases\n\nNEW MESSAGES IN THIS SEGMENT\n[Pia @ 2026-08-12T10:00:00Z] Experiment phase 3 starts.\n[Quinn @ 2026-08-12T10:01:00Z] Quinn records the measurements.\n[Pia @ 2026-08-12T10:02:00Z] The target metric is latency.\n[Quinn @ 2026-08-12T10:03:00Z] The latest run is logged.\n[Pia @ 2026-08-12T10:04:00Z] The next run will use the same target.\n\nHARD OUTPUT LIMIT: return at most 10 actions. Stop after the last NOVEL action, close the JSON immediately, and NEVER repeat an action already emitted in this output.\n\nOutput {\"actions\":[ ... ]}"
+        }
+      ],
+      "pre_state_text": "  [Pia]\n    5e68f57a [core|Pia@2026-08-10] Pia owns the experiment\n  [Quinn]\n    efccb8ca [core|Quinn@2026-08-10] Quinn records measurements\n  [GROUP]\n    ff0f1ad3 [g-insight|GROUP(by Pia)@2026-08-11] The group evaluates latency across phases",
+      "actions": [
+        {
+          "action": "UPDATE",
+          "entry_id": "5e68f57a",
+          "content": "Pia owns experiment phase 3"
+        }
+      ],
+      "target_text": "{\"actions\":[{\"action\":\"UPDATE\",\"entry_id\":\"5e68f57a\",\"content\":\"Pia owns experiment phase 3\"}]}",
+      "report": {
+        "json_valid": true,
+        "attempted": 1,
+        "applied": 1,
+        "noop": 0,
+        "errors": [],
+        "created_ids": [
+          "bc4caae5"
+        ],
+        "updated_from": [
+          "5e68f57a"
+        ],
+        "schema_valid_actions": 1,
+        "valid": true
+      },
+      "pre_state": {
+        "entries": [
+          {
+            "content": "Pia owns the experiment",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "f0ce8fee",
+              "7e602a75",
+              "95b8aa03"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "5e68f57a"
+          },
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Pia owns the experiment",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "f0ce8fee",
+              "7e602a75",
+              "95b8aa03"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "5e68f57a"
+          },
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          }
+        ],
+        "update_edges": [],
+        "roster": [
+          "Pia",
+          "Quinn"
+        ]
+      },
+      "post_state": {
+        "entries": [
+          {
+            "content": "Pia owns the experiment",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "f0ce8fee",
+              "7e602a75",
+              "95b8aa03"
+            ],
+            "links": [],
+            "superseded_by": "bc4caae5",
+            "entry_id": "5e68f57a"
+          },
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          },
+          {
+            "content": "Pia owns experiment phase 3",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "6a1b22f7",
+              "86561422",
+              "5d0debde"
+            ],
+            "links": [
+              "5e68f57a"
+            ],
+            "superseded_by": "",
+            "entry_id": "bc4caae5"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          },
+          {
+            "content": "Pia owns experiment phase 3",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "6a1b22f7",
+              "86561422",
+              "5d0debde"
+            ],
+            "links": [
+              "5e68f57a"
+            ],
+            "superseded_by": "",
+            "entry_id": "bc4caae5"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "5e68f57a",
+            "new": "bc4caae5"
+          }
+        ],
+        "roster": [
+          "Pia",
+          "Quinn"
+        ]
+      },
+      "segment_index": 0,
+      "source_session_index": 2,
+      "metadata": {
+        "source_topic": "manual_topic_manual_update_gamma_3"
+      }
+    },
+    {
+      "turn": 3,
+      "session_id": "manual_update_gamma_s04",
+      "ts": "2026-08-13T10:00:00Z",
+      "messages": [
+        {
+          "speaker": "Pia",
+          "content": "Experiment phase 4 starts.",
+          "session": "manual_update_gamma_s04",
+          "ts": "2026-08-13T10:00:00Z",
+          "msg_id": "0",
+          "meta": {}
+        },
+        {
+          "speaker": "Quinn",
+          "content": "Quinn records the measurements.",
+          "session": "manual_update_gamma_s04",
+          "ts": "2026-08-13T10:01:00Z",
+          "msg_id": "1",
+          "meta": {}
+        },
+        {
+          "speaker": "Pia",
+          "content": "The target metric is latency.",
+          "session": "manual_update_gamma_s04",
+          "ts": "2026-08-13T10:02:00Z",
+          "msg_id": "2",
+          "meta": {}
+        },
+        {
+          "speaker": "Quinn",
+          "content": "The latest run is logged.",
+          "session": "manual_update_gamma_s04",
+          "ts": "2026-08-13T10:03:00Z",
+          "msg_id": "3",
+          "meta": {}
+        },
+        {
+          "speaker": "Pia",
+          "content": "The next run will use the same target.",
+          "session": "manual_update_gamma_s04",
+          "ts": "2026-08-13T10:04:00Z",
+          "msg_id": "4",
+          "meta": {}
+        }
+      ],
+      "prompt": [
+        {
+          "role": "system",
+          "content": "You are an ONLINE memory manager for a MULTI-PARTY group chat, maintaining a speaker-indexed layered memory.\n\nPREMISE: every raw message of this segment is ALREADY stored VERBATIM (raw track). Your job is NOT to restate the raw text, but to add STRUCTURED derived memory on top of it, so that retrieval by person / relationship / time becomes possible.\n\nFOUR DERIVED LAYERS YOU MAY WRITE\n(raw messages are already written to per_speaker_episodic by the system - never produce that layer)\n- per_speaker_core     a person's STABLE fact / identity / hardened stance / RECURRING BEHAVIOUR\n- per_speaker_profile  how the group sees a person, or one person's OBSERVATION about another\n                       (\"A says B is X\" -> owner=B, source=A)\n- group_interaction    cross-speaker event / relationship / group DECISION   (owner=GROUP)\n                       *** WHO SAID IT IS NOT WHO IT BELONGS TO ***\n                       A decision announced by ONE person on behalf of the group is STILL a\n                       group decision: owner=GROUP, source=<the speaker>.\n                       Triggers: \"then it is settled\", \"so we agreed\", \"that is decided\",\n                       \"we will go with X\" -> owner=GROUP, layer=group_interaction,\n                       utype=decision. Do NOT file it as that speaker's personal preference.\n                       (A personal preference is \"I would rather X\"; a decision is \"X is settled\".)\n- group_insight        group NORM / consensus / meta-observation             (owner=GROUP)\n                       ONLY when the conversation gives evidence, note which member conspicuously\n                       relates to a norm differently. NEVER guess a member's compliance.\n\nACTIONS - exactly three, output nothing else\n  {\"action\":\"ADD\",\"owner\":\"<who it is ABOUT>\",\"source\":\"<who SAID/observed it>\",\"layer\":\"<one of the four above>\",\"utype\":\"fact|stance|observation|decision|relation\",\"content\":\"<the memory>\"}\n  {\"action\":\"UPDATE\",\"entry_id\":\"<existing entry being updated>\",\"content\":\"<the NEW, current state>\"}\n  {\"action\":\"NOOP\"}\n\nUPDATE BOUNDARIES (important)\n- *** BEFORE EVERY ADD, SEARCH CURRENT MEMORY FIRST *** Is there already an entry about this\n  same matter / same work item / same person-and-topic? If yes -> UPDATE that entry.\n  ADD is only for matters that NOTHING in CURRENT MEMORY covers yet.\n- Use UPDATE whenever an existing entry about the SAME MATTER has MOVED ON. Read this broadly:\n    * a number / percentage / progress advanced   e.g. 38% complete -> 97% complete\n    * a date or deadline shifted                  e.g. freeze 2025-06-20 -> 2025-06-27\n    * a status moved                              e.g. blocked -> resolved, planned -> shipped\n    * a stance / belief / plan changed\n    * a later, more specific statement supersedes an earlier vaguer one about the same item\n  It does NOT have to contradict the old entry. Any progression on the same item is an UPDATE.\n  A recurring behaviour observed AGAIN is also an UPDATE (record that it happened again).\n- *** THE NEW CONTENT MUST DIFFER SUBSTANTIVELY FROM THE ENTRY BEING UPDATED. *** If what you\n  would write is the same as the existing entry (same value, same status, same wording),\n  output NOOP - not UPDATE. An UPDATE that changes nothing is worse than no action: it buries\n  the real history under identical links.\n- entry_id MUST come from the CURRENT MEMORY list below.\n- Give ONLY the new state. How the old entry is preserved and chained is handled by the system.\n- Do NOT restate the old content (never write \"was X, now Y\" - write only Y).\n- Do NOT repeat owner / source / layer - the system reuses them from the updated entry.\n- DISAGREEMENT BETWEEN DIFFERENT PEOPLE is always separate ADDs. Never merge them via UPDATE.\n- ONE MATTER = ONE ENTRY. If a matter is ALREADY in CURRENT MEMORY - or you already wrote an\n  ADD for it EARLIER IN THIS SAME OUTPUT - never ADD a second entry for it: UPDATE it if its\n  state changed, otherwise output nothing. This holds for every kind of memory (not just\n  stances), for the GROUP row no matter who voices it this time, and however differently the\n  matter is worded. Merely re-stating / confirming / agreeing with something already listed is\n  not new state -> neither ADD nor UPDATE.\n\nGRANULARITY - PREFER FINE OVER COARSE (important)\n- One derived memory = ONE atomic fact / ONE stance / ONE observation.\n- If a person said N distinct things in this segment -> produce N entries, never one summary.\n  BAD : \"Mum's overall view on the 40th: wants a party, worried about budget, March is awkward\"\n  GOOD: three separate entries (celebration format / budget / timing)\n- But do NOT copy raw messages verbatim into derived memory (raw is already stored).\n\nCAPTURE BEHAVIOUR, NOT ONLY STATED FACTS\nExplicit facts (\"closed a Series A\", \"the code is 4-8-1-9\") are easy - you will not miss them.\nEqually important and far more often missed are IMPLICIT traits: a habit, an avoidance, a role\nsomeone keeps taking on, a subject someone never engages with, a way of replying that repeats,\nwho they defer to, what they joke about instead of answering.\n  e.g. \"deflects questions about his own career with a joke, then redirects to someone else\"\n       \"is always the one who handles logistics\" / \"never comments on anyone's promotion\"\nFile them as per_speaker_core (the person's own pattern) or per_speaker_profile (how others\nread them). Base them on what actually happened - describe the behaviour, never guess a motive.\nA pattern occurring AGAIN is NOT a duplicate, it is EVIDENCE: UPDATE that entry to record that\nit happened again (and when), instead of NOOP.\nSomeone who talks a lot but states few hard facts should still end up with entries - if a person\nspoke repeatedly this segment and you wrote nothing about them, you have missed their behaviour.\n\nOTHER CONSTRAINTS\n- owner = who the memory is ABOUT; source = who said/observed it.\n- If A claims something about B -> owner=B, source=A. Never file B's matter under A.\n- Invent nothing unsupported. Prefer faithful wording over paraphrase.\n- Write memory content in the SAME LANGUAGE as the conversation (so that retrieval embeddings\n  of memory and of raw text live in the same space).\n\nOutput JSON only, no explanation: {\"actions\":[ ... ]}"
+        },
+        {
+          "role": "user",
+          "content": "Speakers present: Pia, Quinn\nSession: manual_update_gamma_s04    Time: 2026-08-13T10:00:00Z\n\nCURRENT MEMORY (ALL derived memory of this group; each slot shows its LATEST state only)\nformat: <entry_id> [layer|owner(by source)@date] content\n  [Pia]\n    bc4caae5 [core|Pia@2026-08-12] Pia owns experiment phase 3\n  [Quinn]\n    efccb8ca [core|Quinn@2026-08-10] Quinn records measurements\n  [GROUP]\n    ff0f1ad3 [g-insight|GROUP(by Pia)@2026-08-11] The group evaluates latency across phases\n\nNEW MESSAGES IN THIS SEGMENT\n[Pia @ 2026-08-13T10:00:00Z] Experiment phase 4 starts.\n[Quinn @ 2026-08-13T10:01:00Z] Quinn records the measurements.\n[Pia @ 2026-08-13T10:02:00Z] The target metric is latency.\n[Quinn @ 2026-08-13T10:03:00Z] The latest run is logged.\n[Pia @ 2026-08-13T10:04:00Z] The next run will use the same target.\n\nHARD OUTPUT LIMIT: return at most 10 actions. Stop after the last NOVEL action, close the JSON immediately, and NEVER repeat an action already emitted in this output.\n\nOutput {\"actions\":[ ... ]}"
+        }
+      ],
+      "pre_state_text": "  [Pia]\n    bc4caae5 [core|Pia@2026-08-12] Pia owns experiment phase 3\n  [Quinn]\n    efccb8ca [core|Quinn@2026-08-10] Quinn records measurements\n  [GROUP]\n    ff0f1ad3 [g-insight|GROUP(by Pia)@2026-08-11] The group evaluates latency across phases",
+      "actions": [
+        {
+          "action": "UPDATE",
+          "entry_id": "bc4caae5",
+          "content": "Pia owns experiment phase 4"
+        }
+      ],
+      "target_text": "{\"actions\":[{\"action\":\"UPDATE\",\"entry_id\":\"bc4caae5\",\"content\":\"Pia owns experiment phase 4\"}]}",
+      "report": {
+        "json_valid": true,
+        "attempted": 1,
+        "applied": 1,
+        "noop": 0,
+        "errors": [],
+        "created_ids": [
+          "36940204"
+        ],
+        "updated_from": [
+          "bc4caae5"
+        ],
+        "schema_valid_actions": 1,
+        "valid": true
+      },
+      "pre_state": {
+        "entries": [
+          {
+            "content": "Pia owns the experiment",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "f0ce8fee",
+              "7e602a75",
+              "95b8aa03"
+            ],
+            "links": [],
+            "superseded_by": "bc4caae5",
+            "entry_id": "5e68f57a"
+          },
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          },
+          {
+            "content": "Pia owns experiment phase 3",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "6a1b22f7",
+              "86561422",
+              "5d0debde"
+            ],
+            "links": [
+              "5e68f57a"
+            ],
+            "superseded_by": "",
+            "entry_id": "bc4caae5"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          },
+          {
+            "content": "Pia owns experiment phase 3",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "6a1b22f7",
+              "86561422",
+              "5d0debde"
+            ],
+            "links": [
+              "5e68f57a"
+            ],
+            "superseded_by": "",
+            "entry_id": "bc4caae5"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "5e68f57a",
+            "new": "bc4caae5"
+          }
+        ],
+        "roster": [
+          "Pia",
+          "Quinn"
+        ]
+      },
+      "post_state": {
+        "entries": [
+          {
+            "content": "Pia owns the experiment",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "f0ce8fee",
+              "7e602a75",
+              "95b8aa03"
+            ],
+            "links": [],
+            "superseded_by": "bc4caae5",
+            "entry_id": "5e68f57a"
+          },
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          },
+          {
+            "content": "Pia owns experiment phase 3",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "6a1b22f7",
+              "86561422",
+              "5d0debde"
+            ],
+            "links": [
+              "5e68f57a"
+            ],
+            "superseded_by": "36940204",
+            "entry_id": "bc4caae5"
+          },
+          {
+            "content": "Pia owns experiment phase 4",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "9477440f",
+              "e25d0221",
+              "efc37bc7"
+            ],
+            "links": [
+              "bc4caae5"
+            ],
+            "superseded_by": "",
+            "entry_id": "36940204"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          },
+          {
+            "content": "Pia owns experiment phase 4",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "9477440f",
+              "e25d0221",
+              "efc37bc7"
+            ],
+            "links": [
+              "bc4caae5"
+            ],
+            "superseded_by": "",
+            "entry_id": "36940204"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "5e68f57a",
+            "new": "bc4caae5"
+          },
+          {
+            "old": "bc4caae5",
+            "new": "36940204"
+          }
+        ],
+        "roster": [
+          "Pia",
+          "Quinn"
+        ]
+      },
+      "segment_index": 0,
+      "source_session_index": 3,
+      "metadata": {
+        "source_topic": "manual_topic_manual_update_gamma_4"
+      }
+    },
+    {
+      "turn": 4,
+      "session_id": "manual_update_gamma_s05",
+      "ts": "2026-08-14T10:00:00Z",
+      "messages": [
+        {
+          "speaker": "Pia",
+          "content": "Experiment phase 5 starts.",
+          "session": "manual_update_gamma_s05",
+          "ts": "2026-08-14T10:00:00Z",
+          "msg_id": "0",
+          "meta": {}
+        },
+        {
+          "speaker": "Quinn",
+          "content": "Quinn records the measurements.",
+          "session": "manual_update_gamma_s05",
+          "ts": "2026-08-14T10:01:00Z",
+          "msg_id": "1",
+          "meta": {}
+        },
+        {
+          "speaker": "Pia",
+          "content": "The target metric is latency.",
+          "session": "manual_update_gamma_s05",
+          "ts": "2026-08-14T10:02:00Z",
+          "msg_id": "2",
+          "meta": {}
+        },
+        {
+          "speaker": "Quinn",
+          "content": "The latest run is logged.",
+          "session": "manual_update_gamma_s05",
+          "ts": "2026-08-14T10:03:00Z",
+          "msg_id": "3",
+          "meta": {}
+        },
+        {
+          "speaker": "Pia",
+          "content": "The next run will use the same target.",
+          "session": "manual_update_gamma_s05",
+          "ts": "2026-08-14T10:04:00Z",
+          "msg_id": "4",
+          "meta": {}
+        }
+      ],
+      "prompt": [
+        {
+          "role": "system",
+          "content": "You are an ONLINE memory manager for a MULTI-PARTY group chat, maintaining a speaker-indexed layered memory.\n\nPREMISE: every raw message of this segment is ALREADY stored VERBATIM (raw track). Your job is NOT to restate the raw text, but to add STRUCTURED derived memory on top of it, so that retrieval by person / relationship / time becomes possible.\n\nFOUR DERIVED LAYERS YOU MAY WRITE\n(raw messages are already written to per_speaker_episodic by the system - never produce that layer)\n- per_speaker_core     a person's STABLE fact / identity / hardened stance / RECURRING BEHAVIOUR\n- per_speaker_profile  how the group sees a person, or one person's OBSERVATION about another\n                       (\"A says B is X\" -> owner=B, source=A)\n- group_interaction    cross-speaker event / relationship / group DECISION   (owner=GROUP)\n                       *** WHO SAID IT IS NOT WHO IT BELONGS TO ***\n                       A decision announced by ONE person on behalf of the group is STILL a\n                       group decision: owner=GROUP, source=<the speaker>.\n                       Triggers: \"then it is settled\", \"so we agreed\", \"that is decided\",\n                       \"we will go with X\" -> owner=GROUP, layer=group_interaction,\n                       utype=decision. Do NOT file it as that speaker's personal preference.\n                       (A personal preference is \"I would rather X\"; a decision is \"X is settled\".)\n- group_insight        group NORM / consensus / meta-observation             (owner=GROUP)\n                       ONLY when the conversation gives evidence, note which member conspicuously\n                       relates to a norm differently. NEVER guess a member's compliance.\n\nACTIONS - exactly three, output nothing else\n  {\"action\":\"ADD\",\"owner\":\"<who it is ABOUT>\",\"source\":\"<who SAID/observed it>\",\"layer\":\"<one of the four above>\",\"utype\":\"fact|stance|observation|decision|relation\",\"content\":\"<the memory>\"}\n  {\"action\":\"UPDATE\",\"entry_id\":\"<existing entry being updated>\",\"content\":\"<the NEW, current state>\"}\n  {\"action\":\"NOOP\"}\n\nUPDATE BOUNDARIES (important)\n- *** BEFORE EVERY ADD, SEARCH CURRENT MEMORY FIRST *** Is there already an entry about this\n  same matter / same work item / same person-and-topic? If yes -> UPDATE that entry.\n  ADD is only for matters that NOTHING in CURRENT MEMORY covers yet.\n- Use UPDATE whenever an existing entry about the SAME MATTER has MOVED ON. Read this broadly:\n    * a number / percentage / progress advanced   e.g. 38% complete -> 97% complete\n    * a date or deadline shifted                  e.g. freeze 2025-06-20 -> 2025-06-27\n    * a status moved                              e.g. blocked -> resolved, planned -> shipped\n    * a stance / belief / plan changed\n    * a later, more specific statement supersedes an earlier vaguer one about the same item\n  It does NOT have to contradict the old entry. Any progression on the same item is an UPDATE.\n  A recurring behaviour observed AGAIN is also an UPDATE (record that it happened again).\n- *** THE NEW CONTENT MUST DIFFER SUBSTANTIVELY FROM THE ENTRY BEING UPDATED. *** If what you\n  would write is the same as the existing entry (same value, same status, same wording),\n  output NOOP - not UPDATE. An UPDATE that changes nothing is worse than no action: it buries\n  the real history under identical links.\n- entry_id MUST come from the CURRENT MEMORY list below.\n- Give ONLY the new state. How the old entry is preserved and chained is handled by the system.\n- Do NOT restate the old content (never write \"was X, now Y\" - write only Y).\n- Do NOT repeat owner / source / layer - the system reuses them from the updated entry.\n- DISAGREEMENT BETWEEN DIFFERENT PEOPLE is always separate ADDs. Never merge them via UPDATE.\n- ONE MATTER = ONE ENTRY. If a matter is ALREADY in CURRENT MEMORY - or you already wrote an\n  ADD for it EARLIER IN THIS SAME OUTPUT - never ADD a second entry for it: UPDATE it if its\n  state changed, otherwise output nothing. This holds for every kind of memory (not just\n  stances), for the GROUP row no matter who voices it this time, and however differently the\n  matter is worded. Merely re-stating / confirming / agreeing with something already listed is\n  not new state -> neither ADD nor UPDATE.\n\nGRANULARITY - PREFER FINE OVER COARSE (important)\n- One derived memory = ONE atomic fact / ONE stance / ONE observation.\n- If a person said N distinct things in this segment -> produce N entries, never one summary.\n  BAD : \"Mum's overall view on the 40th: wants a party, worried about budget, March is awkward\"\n  GOOD: three separate entries (celebration format / budget / timing)\n- But do NOT copy raw messages verbatim into derived memory (raw is already stored).\n\nCAPTURE BEHAVIOUR, NOT ONLY STATED FACTS\nExplicit facts (\"closed a Series A\", \"the code is 4-8-1-9\") are easy - you will not miss them.\nEqually important and far more often missed are IMPLICIT traits: a habit, an avoidance, a role\nsomeone keeps taking on, a subject someone never engages with, a way of replying that repeats,\nwho they defer to, what they joke about instead of answering.\n  e.g. \"deflects questions about his own career with a joke, then redirects to someone else\"\n       \"is always the one who handles logistics\" / \"never comments on anyone's promotion\"\nFile them as per_speaker_core (the person's own pattern) or per_speaker_profile (how others\nread them). Base them on what actually happened - describe the behaviour, never guess a motive.\nA pattern occurring AGAIN is NOT a duplicate, it is EVIDENCE: UPDATE that entry to record that\nit happened again (and when), instead of NOOP.\nSomeone who talks a lot but states few hard facts should still end up with entries - if a person\nspoke repeatedly this segment and you wrote nothing about them, you have missed their behaviour.\n\nOTHER CONSTRAINTS\n- owner = who the memory is ABOUT; source = who said/observed it.\n- If A claims something about B -> owner=B, source=A. Never file B's matter under A.\n- Invent nothing unsupported. Prefer faithful wording over paraphrase.\n- Write memory content in the SAME LANGUAGE as the conversation (so that retrieval embeddings\n  of memory and of raw text live in the same space).\n\nOutput JSON only, no explanation: {\"actions\":[ ... ]}"
+        },
+        {
+          "role": "user",
+          "content": "Speakers present: Pia, Quinn\nSession: manual_update_gamma_s05    Time: 2026-08-14T10:00:00Z\n\nCURRENT MEMORY (ALL derived memory of this group; each slot shows its LATEST state only)\nformat: <entry_id> [layer|owner(by source)@date] content\n  [Pia]\n    36940204 [core|Pia@2026-08-13] Pia owns experiment phase 4\n  [Quinn]\n    efccb8ca [core|Quinn@2026-08-10] Quinn records measurements\n  [GROUP]\n    ff0f1ad3 [g-insight|GROUP(by Pia)@2026-08-11] The group evaluates latency across phases\n\nNEW MESSAGES IN THIS SEGMENT\n[Pia @ 2026-08-14T10:00:00Z] Experiment phase 5 starts.\n[Quinn @ 2026-08-14T10:01:00Z] Quinn records the measurements.\n[Pia @ 2026-08-14T10:02:00Z] The target metric is latency.\n[Quinn @ 2026-08-14T10:03:00Z] The latest run is logged.\n[Pia @ 2026-08-14T10:04:00Z] The next run will use the same target.\n\nHARD OUTPUT LIMIT: return at most 10 actions. Stop after the last NOVEL action, close the JSON immediately, and NEVER repeat an action already emitted in this output.\n\nOutput {\"actions\":[ ... ]}"
+        }
+      ],
+      "pre_state_text": "  [Pia]\n    36940204 [core|Pia@2026-08-13] Pia owns experiment phase 4\n  [Quinn]\n    efccb8ca [core|Quinn@2026-08-10] Quinn records measurements\n  [GROUP]\n    ff0f1ad3 [g-insight|GROUP(by Pia)@2026-08-11] The group evaluates latency across phases",
+      "actions": [
+        {
+          "action": "UPDATE",
+          "entry_id": "36940204",
+          "content": "Pia owns experiment phase 5"
+        }
+      ],
+      "target_text": "{\"actions\":[{\"action\":\"UPDATE\",\"entry_id\":\"36940204\",\"content\":\"Pia owns experiment phase 5\"}]}",
+      "report": {
+        "json_valid": true,
+        "attempted": 1,
+        "applied": 1,
+        "noop": 0,
+        "errors": [],
+        "created_ids": [
+          "908ff0ee"
+        ],
+        "updated_from": [
+          "36940204"
+        ],
+        "schema_valid_actions": 1,
+        "valid": true
+      },
+      "pre_state": {
+        "entries": [
+          {
+            "content": "Pia owns the experiment",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "f0ce8fee",
+              "7e602a75",
+              "95b8aa03"
+            ],
+            "links": [],
+            "superseded_by": "bc4caae5",
+            "entry_id": "5e68f57a"
+          },
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          },
+          {
+            "content": "Pia owns experiment phase 3",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "6a1b22f7",
+              "86561422",
+              "5d0debde"
+            ],
+            "links": [
+              "5e68f57a"
+            ],
+            "superseded_by": "36940204",
+            "entry_id": "bc4caae5"
+          },
+          {
+            "content": "Pia owns experiment phase 4",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "9477440f",
+              "e25d0221",
+              "efc37bc7"
+            ],
+            "links": [
+              "bc4caae5"
+            ],
+            "superseded_by": "",
+            "entry_id": "36940204"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          },
+          {
+            "content": "Pia owns experiment phase 4",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "9477440f",
+              "e25d0221",
+              "efc37bc7"
+            ],
+            "links": [
+              "bc4caae5"
+            ],
+            "superseded_by": "",
+            "entry_id": "36940204"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "5e68f57a",
+            "new": "bc4caae5"
+          },
+          {
+            "old": "bc4caae5",
+            "new": "36940204"
+          }
+        ],
+        "roster": [
+          "Pia",
+          "Quinn"
+        ]
+      },
+      "post_state": {
+        "entries": [
+          {
+            "content": "Pia owns the experiment",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "f0ce8fee",
+              "7e602a75",
+              "95b8aa03"
+            ],
+            "links": [],
+            "superseded_by": "bc4caae5",
+            "entry_id": "5e68f57a"
+          },
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          },
+          {
+            "content": "Pia owns experiment phase 3",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "6a1b22f7",
+              "86561422",
+              "5d0debde"
+            ],
+            "links": [
+              "5e68f57a"
+            ],
+            "superseded_by": "36940204",
+            "entry_id": "bc4caae5"
+          },
+          {
+            "content": "Pia owns experiment phase 4",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "9477440f",
+              "e25d0221",
+              "efc37bc7"
+            ],
+            "links": [
+              "bc4caae5"
+            ],
+            "superseded_by": "908ff0ee",
+            "entry_id": "36940204"
+          },
+          {
+            "content": "Pia owns experiment phase 5",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 4,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-14T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.9999999999999999,
+            "from_ids": [
+              "4a9786d1",
+              "7d14605e",
+              "1a1010e8"
+            ],
+            "links": [
+              "36940204"
+            ],
+            "superseded_by": "",
+            "entry_id": "908ff0ee"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          },
+          {
+            "content": "Pia owns experiment phase 5",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 4,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-14T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.9999999999999999,
+            "from_ids": [
+              "4a9786d1",
+              "7d14605e",
+              "1a1010e8"
+            ],
+            "links": [
+              "36940204"
+            ],
+            "superseded_by": "",
+            "entry_id": "908ff0ee"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "5e68f57a",
+            "new": "bc4caae5"
+          },
+          {
+            "old": "bc4caae5",
+            "new": "36940204"
+          },
+          {
+            "old": "36940204",
+            "new": "908ff0ee"
+          }
+        ],
+        "roster": [
+          "Pia",
+          "Quinn"
+        ]
+      },
+      "segment_index": 0,
+      "source_session_index": 4,
+      "metadata": {
+        "source_topic": "manual_topic_manual_update_gamma_5"
+      }
+    },
+    {
+      "turn": 5,
+      "session_id": "manual_update_gamma_s06",
+      "ts": "2026-08-15T10:00:00Z",
+      "messages": [
+        {
+          "speaker": "Pia",
+          "content": "Experiment phase 6 starts.",
+          "session": "manual_update_gamma_s06",
+          "ts": "2026-08-15T10:00:00Z",
+          "msg_id": "0",
+          "meta": {}
+        },
+        {
+          "speaker": "Quinn",
+          "content": "Quinn records the measurements.",
+          "session": "manual_update_gamma_s06",
+          "ts": "2026-08-15T10:01:00Z",
+          "msg_id": "1",
+          "meta": {}
+        },
+        {
+          "speaker": "Pia",
+          "content": "The target metric is latency.",
+          "session": "manual_update_gamma_s06",
+          "ts": "2026-08-15T10:02:00Z",
+          "msg_id": "2",
+          "meta": {}
+        },
+        {
+          "speaker": "Quinn",
+          "content": "The latest run is logged.",
+          "session": "manual_update_gamma_s06",
+          "ts": "2026-08-15T10:03:00Z",
+          "msg_id": "3",
+          "meta": {}
+        },
+        {
+          "speaker": "Pia",
+          "content": "The next run will use the same target.",
+          "session": "manual_update_gamma_s06",
+          "ts": "2026-08-15T10:04:00Z",
+          "msg_id": "4",
+          "meta": {}
+        }
+      ],
+      "prompt": [
+        {
+          "role": "system",
+          "content": "You are an ONLINE memory manager for a MULTI-PARTY group chat, maintaining a speaker-indexed layered memory.\n\nPREMISE: every raw message of this segment is ALREADY stored VERBATIM (raw track). Your job is NOT to restate the raw text, but to add STRUCTURED derived memory on top of it, so that retrieval by person / relationship / time becomes possible.\n\nFOUR DERIVED LAYERS YOU MAY WRITE\n(raw messages are already written to per_speaker_episodic by the system - never produce that layer)\n- per_speaker_core     a person's STABLE fact / identity / hardened stance / RECURRING BEHAVIOUR\n- per_speaker_profile  how the group sees a person, or one person's OBSERVATION about another\n                       (\"A says B is X\" -> owner=B, source=A)\n- group_interaction    cross-speaker event / relationship / group DECISION   (owner=GROUP)\n                       *** WHO SAID IT IS NOT WHO IT BELONGS TO ***\n                       A decision announced by ONE person on behalf of the group is STILL a\n                       group decision: owner=GROUP, source=<the speaker>.\n                       Triggers: \"then it is settled\", \"so we agreed\", \"that is decided\",\n                       \"we will go with X\" -> owner=GROUP, layer=group_interaction,\n                       utype=decision. Do NOT file it as that speaker's personal preference.\n                       (A personal preference is \"I would rather X\"; a decision is \"X is settled\".)\n- group_insight        group NORM / consensus / meta-observation             (owner=GROUP)\n                       ONLY when the conversation gives evidence, note which member conspicuously\n                       relates to a norm differently. NEVER guess a member's compliance.\n\nACTIONS - exactly three, output nothing else\n  {\"action\":\"ADD\",\"owner\":\"<who it is ABOUT>\",\"source\":\"<who SAID/observed it>\",\"layer\":\"<one of the four above>\",\"utype\":\"fact|stance|observation|decision|relation\",\"content\":\"<the memory>\"}\n  {\"action\":\"UPDATE\",\"entry_id\":\"<existing entry being updated>\",\"content\":\"<the NEW, current state>\"}\n  {\"action\":\"NOOP\"}\n\nUPDATE BOUNDARIES (important)\n- *** BEFORE EVERY ADD, SEARCH CURRENT MEMORY FIRST *** Is there already an entry about this\n  same matter / same work item / same person-and-topic? If yes -> UPDATE that entry.\n  ADD is only for matters that NOTHING in CURRENT MEMORY covers yet.\n- Use UPDATE whenever an existing entry about the SAME MATTER has MOVED ON. Read this broadly:\n    * a number / percentage / progress advanced   e.g. 38% complete -> 97% complete\n    * a date or deadline shifted                  e.g. freeze 2025-06-20 -> 2025-06-27\n    * a status moved                              e.g. blocked -> resolved, planned -> shipped\n    * a stance / belief / plan changed\n    * a later, more specific statement supersedes an earlier vaguer one about the same item\n  It does NOT have to contradict the old entry. Any progression on the same item is an UPDATE.\n  A recurring behaviour observed AGAIN is also an UPDATE (record that it happened again).\n- *** THE NEW CONTENT MUST DIFFER SUBSTANTIVELY FROM THE ENTRY BEING UPDATED. *** If what you\n  would write is the same as the existing entry (same value, same status, same wording),\n  output NOOP - not UPDATE. An UPDATE that changes nothing is worse than no action: it buries\n  the real history under identical links.\n- entry_id MUST come from the CURRENT MEMORY list below.\n- Give ONLY the new state. How the old entry is preserved and chained is handled by the system.\n- Do NOT restate the old content (never write \"was X, now Y\" - write only Y).\n- Do NOT repeat owner / source / layer - the system reuses them from the updated entry.\n- DISAGREEMENT BETWEEN DIFFERENT PEOPLE is always separate ADDs. Never merge them via UPDATE.\n- ONE MATTER = ONE ENTRY. If a matter is ALREADY in CURRENT MEMORY - or you already wrote an\n  ADD for it EARLIER IN THIS SAME OUTPUT - never ADD a second entry for it: UPDATE it if its\n  state changed, otherwise output nothing. This holds for every kind of memory (not just\n  stances), for the GROUP row no matter who voices it this time, and however differently the\n  matter is worded. Merely re-stating / confirming / agreeing with something already listed is\n  not new state -> neither ADD nor UPDATE.\n\nGRANULARITY - PREFER FINE OVER COARSE (important)\n- One derived memory = ONE atomic fact / ONE stance / ONE observation.\n- If a person said N distinct things in this segment -> produce N entries, never one summary.\n  BAD : \"Mum's overall view on the 40th: wants a party, worried about budget, March is awkward\"\n  GOOD: three separate entries (celebration format / budget / timing)\n- But do NOT copy raw messages verbatim into derived memory (raw is already stored).\n\nCAPTURE BEHAVIOUR, NOT ONLY STATED FACTS\nExplicit facts (\"closed a Series A\", \"the code is 4-8-1-9\") are easy - you will not miss them.\nEqually important and far more often missed are IMPLICIT traits: a habit, an avoidance, a role\nsomeone keeps taking on, a subject someone never engages with, a way of replying that repeats,\nwho they defer to, what they joke about instead of answering.\n  e.g. \"deflects questions about his own career with a joke, then redirects to someone else\"\n       \"is always the one who handles logistics\" / \"never comments on anyone's promotion\"\nFile them as per_speaker_core (the person's own pattern) or per_speaker_profile (how others\nread them). Base them on what actually happened - describe the behaviour, never guess a motive.\nA pattern occurring AGAIN is NOT a duplicate, it is EVIDENCE: UPDATE that entry to record that\nit happened again (and when), instead of NOOP.\nSomeone who talks a lot but states few hard facts should still end up with entries - if a person\nspoke repeatedly this segment and you wrote nothing about them, you have missed their behaviour.\n\nOTHER CONSTRAINTS\n- owner = who the memory is ABOUT; source = who said/observed it.\n- If A claims something about B -> owner=B, source=A. Never file B's matter under A.\n- Invent nothing unsupported. Prefer faithful wording over paraphrase.\n- Write memory content in the SAME LANGUAGE as the conversation (so that retrieval embeddings\n  of memory and of raw text live in the same space).\n\nOutput JSON only, no explanation: {\"actions\":[ ... ]}"
+        },
+        {
+          "role": "user",
+          "content": "Speakers present: Pia, Quinn\nSession: manual_update_gamma_s06    Time: 2026-08-15T10:00:00Z\n\nCURRENT MEMORY (ALL derived memory of this group; each slot shows its LATEST state only)\nformat: <entry_id> [layer|owner(by source)@date] content\n  [Pia]\n    908ff0ee [core|Pia@2026-08-14] Pia owns experiment phase 5\n  [Quinn]\n    efccb8ca [core|Quinn@2026-08-10] Quinn records measurements\n  [GROUP]\n    ff0f1ad3 [g-insight|GROUP(by Pia)@2026-08-11] The group evaluates latency across phases\n\nNEW MESSAGES IN THIS SEGMENT\n[Pia @ 2026-08-15T10:00:00Z] Experiment phase 6 starts.\n[Quinn @ 2026-08-15T10:01:00Z] Quinn records the measurements.\n[Pia @ 2026-08-15T10:02:00Z] The target metric is latency.\n[Quinn @ 2026-08-15T10:03:00Z] The latest run is logged.\n[Pia @ 2026-08-15T10:04:00Z] The next run will use the same target.\n\nHARD OUTPUT LIMIT: return at most 10 actions. Stop after the last NOVEL action, close the JSON immediately, and NEVER repeat an action already emitted in this output.\n\nOutput {\"actions\":[ ... ]}"
+        }
+      ],
+      "pre_state_text": "  [Pia]\n    908ff0ee [core|Pia@2026-08-14] Pia owns experiment phase 5\n  [Quinn]\n    efccb8ca [core|Quinn@2026-08-10] Quinn records measurements\n  [GROUP]\n    ff0f1ad3 [g-insight|GROUP(by Pia)@2026-08-11] The group evaluates latency across phases",
+      "actions": [
+        {
+          "action": "UPDATE",
+          "entry_id": "908ff0ee",
+          "content": "Pia owns experiment phase 6"
+        }
+      ],
+      "target_text": "{\"actions\":[{\"action\":\"UPDATE\",\"entry_id\":\"908ff0ee\",\"content\":\"Pia owns experiment phase 6\"}]}",
+      "report": {
+        "json_valid": true,
+        "attempted": 1,
+        "applied": 1,
+        "noop": 0,
+        "errors": [],
+        "created_ids": [
+          "4307ec4e"
+        ],
+        "updated_from": [
+          "908ff0ee"
+        ],
+        "schema_valid_actions": 1,
+        "valid": true
+      },
+      "pre_state": {
+        "entries": [
+          {
+            "content": "Pia owns the experiment",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "f0ce8fee",
+              "7e602a75",
+              "95b8aa03"
+            ],
+            "links": [],
+            "superseded_by": "bc4caae5",
+            "entry_id": "5e68f57a"
+          },
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          },
+          {
+            "content": "Pia owns experiment phase 3",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "6a1b22f7",
+              "86561422",
+              "5d0debde"
+            ],
+            "links": [
+              "5e68f57a"
+            ],
+            "superseded_by": "36940204",
+            "entry_id": "bc4caae5"
+          },
+          {
+            "content": "Pia owns experiment phase 4",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "9477440f",
+              "e25d0221",
+              "efc37bc7"
+            ],
+            "links": [
+              "bc4caae5"
+            ],
+            "superseded_by": "908ff0ee",
+            "entry_id": "36940204"
+          },
+          {
+            "content": "Pia owns experiment phase 5",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 4,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-14T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.9999999999999999,
+            "from_ids": [
+              "4a9786d1",
+              "7d14605e",
+              "1a1010e8"
+            ],
+            "links": [
+              "36940204"
+            ],
+            "superseded_by": "",
+            "entry_id": "908ff0ee"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          },
+          {
+            "content": "Pia owns experiment phase 5",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 4,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-14T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.9999999999999999,
+            "from_ids": [
+              "4a9786d1",
+              "7d14605e",
+              "1a1010e8"
+            ],
+            "links": [
+              "36940204"
+            ],
+            "superseded_by": "",
+            "entry_id": "908ff0ee"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "5e68f57a",
+            "new": "bc4caae5"
+          },
+          {
+            "old": "bc4caae5",
+            "new": "36940204"
+          },
+          {
+            "old": "36940204",
+            "new": "908ff0ee"
+          }
+        ],
+        "roster": [
+          "Pia",
+          "Quinn"
+        ]
+      },
+      "post_state": {
+        "entries": [
+          {
+            "content": "Pia owns the experiment",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "f0ce8fee",
+              "7e602a75",
+              "95b8aa03"
+            ],
+            "links": [],
+            "superseded_by": "bc4caae5",
+            "entry_id": "5e68f57a"
+          },
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          },
+          {
+            "content": "Pia owns experiment phase 3",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "6a1b22f7",
+              "86561422",
+              "5d0debde"
+            ],
+            "links": [
+              "5e68f57a"
+            ],
+            "superseded_by": "36940204",
+            "entry_id": "bc4caae5"
+          },
+          {
+            "content": "Pia owns experiment phase 4",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "9477440f",
+              "e25d0221",
+              "efc37bc7"
+            ],
+            "links": [
+              "bc4caae5"
+            ],
+            "superseded_by": "908ff0ee",
+            "entry_id": "36940204"
+          },
+          {
+            "content": "Pia owns experiment phase 5",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 4,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-14T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.9999999999999999,
+            "from_ids": [
+              "4a9786d1",
+              "7d14605e",
+              "1a1010e8"
+            ],
+            "links": [
+              "36940204"
+            ],
+            "superseded_by": "4307ec4e",
+            "entry_id": "908ff0ee"
+          },
+          {
+            "content": "Pia owns experiment phase 6",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 5,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-15T10:00:00Z",
+            "utype": "decision",
+            "confidence": 1.0,
+            "from_ids": [
+              "5ad09e44",
+              "f9ebad30",
+              "d54f2dfa"
+            ],
+            "links": [
+              "908ff0ee"
+            ],
+            "superseded_by": "",
+            "entry_id": "4307ec4e"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          },
+          {
+            "content": "Pia owns experiment phase 6",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 5,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-15T10:00:00Z",
+            "utype": "decision",
+            "confidence": 1.0,
+            "from_ids": [
+              "5ad09e44",
+              "f9ebad30",
+              "d54f2dfa"
+            ],
+            "links": [
+              "908ff0ee"
+            ],
+            "superseded_by": "",
+            "entry_id": "4307ec4e"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "5e68f57a",
+            "new": "bc4caae5"
+          },
+          {
+            "old": "bc4caae5",
+            "new": "36940204"
+          },
+          {
+            "old": "36940204",
+            "new": "908ff0ee"
+          },
+          {
+            "old": "908ff0ee",
+            "new": "4307ec4e"
+          }
+        ],
+        "roster": [
+          "Pia",
+          "Quinn"
+        ]
+      },
+      "segment_index": 0,
+      "source_session_index": 5,
+      "metadata": {
+        "source_topic": "manual_topic_manual_update_gamma_6"
+      }
+    },
+    {
+      "turn": 6,
+      "session_id": "manual_update_gamma_s07",
+      "ts": "2026-08-16T10:00:00Z",
+      "messages": [
+        {
+          "speaker": "Pia",
+          "content": "Experiment phase 7 starts.",
+          "session": "manual_update_gamma_s07",
+          "ts": "2026-08-16T10:00:00Z",
+          "msg_id": "0",
+          "meta": {}
+        },
+        {
+          "speaker": "Quinn",
+          "content": "Quinn records the measurements.",
+          "session": "manual_update_gamma_s07",
+          "ts": "2026-08-16T10:01:00Z",
+          "msg_id": "1",
+          "meta": {}
+        },
+        {
+          "speaker": "Pia",
+          "content": "The target metric is latency.",
+          "session": "manual_update_gamma_s07",
+          "ts": "2026-08-16T10:02:00Z",
+          "msg_id": "2",
+          "meta": {}
+        },
+        {
+          "speaker": "Quinn",
+          "content": "The latest run is logged.",
+          "session": "manual_update_gamma_s07",
+          "ts": "2026-08-16T10:03:00Z",
+          "msg_id": "3",
+          "meta": {}
+        },
+        {
+          "speaker": "Pia",
+          "content": "The next run will use the same target.",
+          "session": "manual_update_gamma_s07",
+          "ts": "2026-08-16T10:04:00Z",
+          "msg_id": "4",
+          "meta": {}
+        }
+      ],
+      "prompt": [
+        {
+          "role": "system",
+          "content": "You are an ONLINE memory manager for a MULTI-PARTY group chat, maintaining a speaker-indexed layered memory.\n\nPREMISE: every raw message of this segment is ALREADY stored VERBATIM (raw track). Your job is NOT to restate the raw text, but to add STRUCTURED derived memory on top of it, so that retrieval by person / relationship / time becomes possible.\n\nFOUR DERIVED LAYERS YOU MAY WRITE\n(raw messages are already written to per_speaker_episodic by the system - never produce that layer)\n- per_speaker_core     a person's STABLE fact / identity / hardened stance / RECURRING BEHAVIOUR\n- per_speaker_profile  how the group sees a person, or one person's OBSERVATION about another\n                       (\"A says B is X\" -> owner=B, source=A)\n- group_interaction    cross-speaker event / relationship / group DECISION   (owner=GROUP)\n                       *** WHO SAID IT IS NOT WHO IT BELONGS TO ***\n                       A decision announced by ONE person on behalf of the group is STILL a\n                       group decision: owner=GROUP, source=<the speaker>.\n                       Triggers: \"then it is settled\", \"so we agreed\", \"that is decided\",\n                       \"we will go with X\" -> owner=GROUP, layer=group_interaction,\n                       utype=decision. Do NOT file it as that speaker's personal preference.\n                       (A personal preference is \"I would rather X\"; a decision is \"X is settled\".)\n- group_insight        group NORM / consensus / meta-observation             (owner=GROUP)\n                       ONLY when the conversation gives evidence, note which member conspicuously\n                       relates to a norm differently. NEVER guess a member's compliance.\n\nACTIONS - exactly three, output nothing else\n  {\"action\":\"ADD\",\"owner\":\"<who it is ABOUT>\",\"source\":\"<who SAID/observed it>\",\"layer\":\"<one of the four above>\",\"utype\":\"fact|stance|observation|decision|relation\",\"content\":\"<the memory>\"}\n  {\"action\":\"UPDATE\",\"entry_id\":\"<existing entry being updated>\",\"content\":\"<the NEW, current state>\"}\n  {\"action\":\"NOOP\"}\n\nUPDATE BOUNDARIES (important)\n- *** BEFORE EVERY ADD, SEARCH CURRENT MEMORY FIRST *** Is there already an entry about this\n  same matter / same work item / same person-and-topic? If yes -> UPDATE that entry.\n  ADD is only for matters that NOTHING in CURRENT MEMORY covers yet.\n- Use UPDATE whenever an existing entry about the SAME MATTER has MOVED ON. Read this broadly:\n    * a number / percentage / progress advanced   e.g. 38% complete -> 97% complete\n    * a date or deadline shifted                  e.g. freeze 2025-06-20 -> 2025-06-27\n    * a status moved                              e.g. blocked -> resolved, planned -> shipped\n    * a stance / belief / plan changed\n    * a later, more specific statement supersedes an earlier vaguer one about the same item\n  It does NOT have to contradict the old entry. Any progression on the same item is an UPDATE.\n  A recurring behaviour observed AGAIN is also an UPDATE (record that it happened again).\n- *** THE NEW CONTENT MUST DIFFER SUBSTANTIVELY FROM THE ENTRY BEING UPDATED. *** If what you\n  would write is the same as the existing entry (same value, same status, same wording),\n  output NOOP - not UPDATE. An UPDATE that changes nothing is worse than no action: it buries\n  the real history under identical links.\n- entry_id MUST come from the CURRENT MEMORY list below.\n- Give ONLY the new state. How the old entry is preserved and chained is handled by the system.\n- Do NOT restate the old content (never write \"was X, now Y\" - write only Y).\n- Do NOT repeat owner / source / layer - the system reuses them from the updated entry.\n- DISAGREEMENT BETWEEN DIFFERENT PEOPLE is always separate ADDs. Never merge them via UPDATE.\n- ONE MATTER = ONE ENTRY. If a matter is ALREADY in CURRENT MEMORY - or you already wrote an\n  ADD for it EARLIER IN THIS SAME OUTPUT - never ADD a second entry for it: UPDATE it if its\n  state changed, otherwise output nothing. This holds for every kind of memory (not just\n  stances), for the GROUP row no matter who voices it this time, and however differently the\n  matter is worded. Merely re-stating / confirming / agreeing with something already listed is\n  not new state -> neither ADD nor UPDATE.\n\nGRANULARITY - PREFER FINE OVER COARSE (important)\n- One derived memory = ONE atomic fact / ONE stance / ONE observation.\n- If a person said N distinct things in this segment -> produce N entries, never one summary.\n  BAD : \"Mum's overall view on the 40th: wants a party, worried about budget, March is awkward\"\n  GOOD: three separate entries (celebration format / budget / timing)\n- But do NOT copy raw messages verbatim into derived memory (raw is already stored).\n\nCAPTURE BEHAVIOUR, NOT ONLY STATED FACTS\nExplicit facts (\"closed a Series A\", \"the code is 4-8-1-9\") are easy - you will not miss them.\nEqually important and far more often missed are IMPLICIT traits: a habit, an avoidance, a role\nsomeone keeps taking on, a subject someone never engages with, a way of replying that repeats,\nwho they defer to, what they joke about instead of answering.\n  e.g. \"deflects questions about his own career with a joke, then redirects to someone else\"\n       \"is always the one who handles logistics\" / \"never comments on anyone's promotion\"\nFile them as per_speaker_core (the person's own pattern) or per_speaker_profile (how others\nread them). Base them on what actually happened - describe the behaviour, never guess a motive.\nA pattern occurring AGAIN is NOT a duplicate, it is EVIDENCE: UPDATE that entry to record that\nit happened again (and when), instead of NOOP.\nSomeone who talks a lot but states few hard facts should still end up with entries - if a person\nspoke repeatedly this segment and you wrote nothing about them, you have missed their behaviour.\n\nOTHER CONSTRAINTS\n- owner = who the memory is ABOUT; source = who said/observed it.\n- If A claims something about B -> owner=B, source=A. Never file B's matter under A.\n- Invent nothing unsupported. Prefer faithful wording over paraphrase.\n- Write memory content in the SAME LANGUAGE as the conversation (so that retrieval embeddings\n  of memory and of raw text live in the same space).\n\nOutput JSON only, no explanation: {\"actions\":[ ... ]}"
+        },
+        {
+          "role": "user",
+          "content": "Speakers present: Pia, Quinn\nSession: manual_update_gamma_s07    Time: 2026-08-16T10:00:00Z\n\nCURRENT MEMORY (ALL derived memory of this group; each slot shows its LATEST state only)\nformat: <entry_id> [layer|owner(by source)@date] content\n  [Pia]\n    4307ec4e [core|Pia@2026-08-15] Pia owns experiment phase 6\n  [Quinn]\n    efccb8ca [core|Quinn@2026-08-10] Quinn records measurements\n  [GROUP]\n    ff0f1ad3 [g-insight|GROUP(by Pia)@2026-08-11] The group evaluates latency across phases\n\nNEW MESSAGES IN THIS SEGMENT\n[Pia @ 2026-08-16T10:00:00Z] Experiment phase 7 starts.\n[Quinn @ 2026-08-16T10:01:00Z] Quinn records the measurements.\n[Pia @ 2026-08-16T10:02:00Z] The target metric is latency.\n[Quinn @ 2026-08-16T10:03:00Z] The latest run is logged.\n[Pia @ 2026-08-16T10:04:00Z] The next run will use the same target.\n\nHARD OUTPUT LIMIT: return at most 10 actions. Stop after the last NOVEL action, close the JSON immediately, and NEVER repeat an action already emitted in this output.\n\nOutput {\"actions\":[ ... ]}"
+        }
+      ],
+      "pre_state_text": "  [Pia]\n    4307ec4e [core|Pia@2026-08-15] Pia owns experiment phase 6\n  [Quinn]\n    efccb8ca [core|Quinn@2026-08-10] Quinn records measurements\n  [GROUP]\n    ff0f1ad3 [g-insight|GROUP(by Pia)@2026-08-11] The group evaluates latency across phases",
+      "actions": [
+        {
+          "action": "UPDATE",
+          "entry_id": "4307ec4e",
+          "content": "Pia owns experiment phase 7"
+        }
+      ],
+      "target_text": "{\"actions\":[{\"action\":\"UPDATE\",\"entry_id\":\"4307ec4e\",\"content\":\"Pia owns experiment phase 7\"}]}",
+      "report": {
+        "json_valid": true,
+        "attempted": 1,
+        "applied": 1,
+        "noop": 0,
+        "errors": [],
+        "created_ids": [
+          "82308d70"
+        ],
+        "updated_from": [
+          "4307ec4e"
+        ],
+        "schema_valid_actions": 1,
+        "valid": true
+      },
+      "pre_state": {
+        "entries": [
+          {
+            "content": "Pia owns the experiment",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "f0ce8fee",
+              "7e602a75",
+              "95b8aa03"
+            ],
+            "links": [],
+            "superseded_by": "bc4caae5",
+            "entry_id": "5e68f57a"
+          },
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          },
+          {
+            "content": "Pia owns experiment phase 3",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "6a1b22f7",
+              "86561422",
+              "5d0debde"
+            ],
+            "links": [
+              "5e68f57a"
+            ],
+            "superseded_by": "36940204",
+            "entry_id": "bc4caae5"
+          },
+          {
+            "content": "Pia owns experiment phase 4",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "9477440f",
+              "e25d0221",
+              "efc37bc7"
+            ],
+            "links": [
+              "bc4caae5"
+            ],
+            "superseded_by": "908ff0ee",
+            "entry_id": "36940204"
+          },
+          {
+            "content": "Pia owns experiment phase 5",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 4,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-14T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.9999999999999999,
+            "from_ids": [
+              "4a9786d1",
+              "7d14605e",
+              "1a1010e8"
+            ],
+            "links": [
+              "36940204"
+            ],
+            "superseded_by": "4307ec4e",
+            "entry_id": "908ff0ee"
+          },
+          {
+            "content": "Pia owns experiment phase 6",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 5,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-15T10:00:00Z",
+            "utype": "decision",
+            "confidence": 1.0,
+            "from_ids": [
+              "5ad09e44",
+              "f9ebad30",
+              "d54f2dfa"
+            ],
+            "links": [
+              "908ff0ee"
+            ],
+            "superseded_by": "",
+            "entry_id": "4307ec4e"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          },
+          {
+            "content": "Pia owns experiment phase 6",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 5,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-15T10:00:00Z",
+            "utype": "decision",
+            "confidence": 1.0,
+            "from_ids": [
+              "5ad09e44",
+              "f9ebad30",
+              "d54f2dfa"
+            ],
+            "links": [
+              "908ff0ee"
+            ],
+            "superseded_by": "",
+            "entry_id": "4307ec4e"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "5e68f57a",
+            "new": "bc4caae5"
+          },
+          {
+            "old": "bc4caae5",
+            "new": "36940204"
+          },
+          {
+            "old": "36940204",
+            "new": "908ff0ee"
+          },
+          {
+            "old": "908ff0ee",
+            "new": "4307ec4e"
+          }
+        ],
+        "roster": [
+          "Pia",
+          "Quinn"
+        ]
+      },
+      "post_state": {
+        "entries": [
+          {
+            "content": "Pia owns the experiment",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "f0ce8fee",
+              "7e602a75",
+              "95b8aa03"
+            ],
+            "links": [],
+            "superseded_by": "bc4caae5",
+            "entry_id": "5e68f57a"
+          },
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          },
+          {
+            "content": "Pia owns experiment phase 3",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "6a1b22f7",
+              "86561422",
+              "5d0debde"
+            ],
+            "links": [
+              "5e68f57a"
+            ],
+            "superseded_by": "36940204",
+            "entry_id": "bc4caae5"
+          },
+          {
+            "content": "Pia owns experiment phase 4",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "9477440f",
+              "e25d0221",
+              "efc37bc7"
+            ],
+            "links": [
+              "bc4caae5"
+            ],
+            "superseded_by": "908ff0ee",
+            "entry_id": "36940204"
+          },
+          {
+            "content": "Pia owns experiment phase 5",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 4,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-14T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.9999999999999999,
+            "from_ids": [
+              "4a9786d1",
+              "7d14605e",
+              "1a1010e8"
+            ],
+            "links": [
+              "36940204"
+            ],
+            "superseded_by": "4307ec4e",
+            "entry_id": "908ff0ee"
+          },
+          {
+            "content": "Pia owns experiment phase 6",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 5,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-15T10:00:00Z",
+            "utype": "decision",
+            "confidence": 1.0,
+            "from_ids": [
+              "5ad09e44",
+              "f9ebad30",
+              "d54f2dfa"
+            ],
+            "links": [
+              "908ff0ee"
+            ],
+            "superseded_by": "82308d70",
+            "entry_id": "4307ec4e"
+          },
+          {
+            "content": "Pia owns experiment phase 7",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 6,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-16T10:00:00Z",
+            "utype": "decision",
+            "confidence": 1.0,
+            "from_ids": [
+              "38653a64",
+              "2ad5e8b3",
+              "b53994a2"
+            ],
+            "links": [
+              "4307ec4e"
+            ],
+            "superseded_by": "",
+            "entry_id": "82308d70"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          },
+          {
+            "content": "Pia owns experiment phase 7",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 6,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-16T10:00:00Z",
+            "utype": "decision",
+            "confidence": 1.0,
+            "from_ids": [
+              "38653a64",
+              "2ad5e8b3",
+              "b53994a2"
+            ],
+            "links": [
+              "4307ec4e"
+            ],
+            "superseded_by": "",
+            "entry_id": "82308d70"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "5e68f57a",
+            "new": "bc4caae5"
+          },
+          {
+            "old": "bc4caae5",
+            "new": "36940204"
+          },
+          {
+            "old": "36940204",
+            "new": "908ff0ee"
+          },
+          {
+            "old": "908ff0ee",
+            "new": "4307ec4e"
+          },
+          {
+            "old": "4307ec4e",
+            "new": "82308d70"
+          }
+        ],
+        "roster": [
+          "Pia",
+          "Quinn"
+        ]
+      },
+      "segment_index": 0,
+      "source_session_index": 6,
+      "metadata": {
+        "source_topic": "manual_topic_manual_update_gamma_7"
+      }
+    },
+    {
+      "turn": 7,
+      "session_id": "manual_update_gamma_s08",
+      "ts": "2026-08-17T10:00:00Z",
+      "messages": [
+        {
+          "speaker": "Pia",
+          "content": "Experiment phase 8 starts.",
+          "session": "manual_update_gamma_s08",
+          "ts": "2026-08-17T10:00:00Z",
+          "msg_id": "0",
+          "meta": {}
+        },
+        {
+          "speaker": "Quinn",
+          "content": "Quinn records the measurements.",
+          "session": "manual_update_gamma_s08",
+          "ts": "2026-08-17T10:01:00Z",
+          "msg_id": "1",
+          "meta": {}
+        },
+        {
+          "speaker": "Pia",
+          "content": "The target metric is latency.",
+          "session": "manual_update_gamma_s08",
+          "ts": "2026-08-17T10:02:00Z",
+          "msg_id": "2",
+          "meta": {}
+        },
+        {
+          "speaker": "Quinn",
+          "content": "The latest run is logged.",
+          "session": "manual_update_gamma_s08",
+          "ts": "2026-08-17T10:03:00Z",
+          "msg_id": "3",
+          "meta": {}
+        },
+        {
+          "speaker": "Pia",
+          "content": "The next run will use the same target.",
+          "session": "manual_update_gamma_s08",
+          "ts": "2026-08-17T10:04:00Z",
+          "msg_id": "4",
+          "meta": {}
+        }
+      ],
+      "prompt": [
+        {
+          "role": "system",
+          "content": "You are an ONLINE memory manager for a MULTI-PARTY group chat, maintaining a speaker-indexed layered memory.\n\nPREMISE: every raw message of this segment is ALREADY stored VERBATIM (raw track). Your job is NOT to restate the raw text, but to add STRUCTURED derived memory on top of it, so that retrieval by person / relationship / time becomes possible.\n\nFOUR DERIVED LAYERS YOU MAY WRITE\n(raw messages are already written to per_speaker_episodic by the system - never produce that layer)\n- per_speaker_core     a person's STABLE fact / identity / hardened stance / RECURRING BEHAVIOUR\n- per_speaker_profile  how the group sees a person, or one person's OBSERVATION about another\n                       (\"A says B is X\" -> owner=B, source=A)\n- group_interaction    cross-speaker event / relationship / group DECISION   (owner=GROUP)\n                       *** WHO SAID IT IS NOT WHO IT BELONGS TO ***\n                       A decision announced by ONE person on behalf of the group is STILL a\n                       group decision: owner=GROUP, source=<the speaker>.\n                       Triggers: \"then it is settled\", \"so we agreed\", \"that is decided\",\n                       \"we will go with X\" -> owner=GROUP, layer=group_interaction,\n                       utype=decision. Do NOT file it as that speaker's personal preference.\n                       (A personal preference is \"I would rather X\"; a decision is \"X is settled\".)\n- group_insight        group NORM / consensus / meta-observation             (owner=GROUP)\n                       ONLY when the conversation gives evidence, note which member conspicuously\n                       relates to a norm differently. NEVER guess a member's compliance.\n\nACTIONS - exactly three, output nothing else\n  {\"action\":\"ADD\",\"owner\":\"<who it is ABOUT>\",\"source\":\"<who SAID/observed it>\",\"layer\":\"<one of the four above>\",\"utype\":\"fact|stance|observation|decision|relation\",\"content\":\"<the memory>\"}\n  {\"action\":\"UPDATE\",\"entry_id\":\"<existing entry being updated>\",\"content\":\"<the NEW, current state>\"}\n  {\"action\":\"NOOP\"}\n\nUPDATE BOUNDARIES (important)\n- *** BEFORE EVERY ADD, SEARCH CURRENT MEMORY FIRST *** Is there already an entry about this\n  same matter / same work item / same person-and-topic? If yes -> UPDATE that entry.\n  ADD is only for matters that NOTHING in CURRENT MEMORY covers yet.\n- Use UPDATE whenever an existing entry about the SAME MATTER has MOVED ON. Read this broadly:\n    * a number / percentage / progress advanced   e.g. 38% complete -> 97% complete\n    * a date or deadline shifted                  e.g. freeze 2025-06-20 -> 2025-06-27\n    * a status moved                              e.g. blocked -> resolved, planned -> shipped\n    * a stance / belief / plan changed\n    * a later, more specific statement supersedes an earlier vaguer one about the same item\n  It does NOT have to contradict the old entry. Any progression on the same item is an UPDATE.\n  A recurring behaviour observed AGAIN is also an UPDATE (record that it happened again).\n- *** THE NEW CONTENT MUST DIFFER SUBSTANTIVELY FROM THE ENTRY BEING UPDATED. *** If what you\n  would write is the same as the existing entry (same value, same status, same wording),\n  output NOOP - not UPDATE. An UPDATE that changes nothing is worse than no action: it buries\n  the real history under identical links.\n- entry_id MUST come from the CURRENT MEMORY list below.\n- Give ONLY the new state. How the old entry is preserved and chained is handled by the system.\n- Do NOT restate the old content (never write \"was X, now Y\" - write only Y).\n- Do NOT repeat owner / source / layer - the system reuses them from the updated entry.\n- DISAGREEMENT BETWEEN DIFFERENT PEOPLE is always separate ADDs. Never merge them via UPDATE.\n- ONE MATTER = ONE ENTRY. If a matter is ALREADY in CURRENT MEMORY - or you already wrote an\n  ADD for it EARLIER IN THIS SAME OUTPUT - never ADD a second entry for it: UPDATE it if its\n  state changed, otherwise output nothing. This holds for every kind of memory (not just\n  stances), for the GROUP row no matter who voices it this time, and however differently the\n  matter is worded. Merely re-stating / confirming / agreeing with something already listed is\n  not new state -> neither ADD nor UPDATE.\n\nGRANULARITY - PREFER FINE OVER COARSE (important)\n- One derived memory = ONE atomic fact / ONE stance / ONE observation.\n- If a person said N distinct things in this segment -> produce N entries, never one summary.\n  BAD : \"Mum's overall view on the 40th: wants a party, worried about budget, March is awkward\"\n  GOOD: three separate entries (celebration format / budget / timing)\n- But do NOT copy raw messages verbatim into derived memory (raw is already stored).\n\nCAPTURE BEHAVIOUR, NOT ONLY STATED FACTS\nExplicit facts (\"closed a Series A\", \"the code is 4-8-1-9\") are easy - you will not miss them.\nEqually important and far more often missed are IMPLICIT traits: a habit, an avoidance, a role\nsomeone keeps taking on, a subject someone never engages with, a way of replying that repeats,\nwho they defer to, what they joke about instead of answering.\n  e.g. \"deflects questions about his own career with a joke, then redirects to someone else\"\n       \"is always the one who handles logistics\" / \"never comments on anyone's promotion\"\nFile them as per_speaker_core (the person's own pattern) or per_speaker_profile (how others\nread them). Base them on what actually happened - describe the behaviour, never guess a motive.\nA pattern occurring AGAIN is NOT a duplicate, it is EVIDENCE: UPDATE that entry to record that\nit happened again (and when), instead of NOOP.\nSomeone who talks a lot but states few hard facts should still end up with entries - if a person\nspoke repeatedly this segment and you wrote nothing about them, you have missed their behaviour.\n\nOTHER CONSTRAINTS\n- owner = who the memory is ABOUT; source = who said/observed it.\n- If A claims something about B -> owner=B, source=A. Never file B's matter under A.\n- Invent nothing unsupported. Prefer faithful wording over paraphrase.\n- Write memory content in the SAME LANGUAGE as the conversation (so that retrieval embeddings\n  of memory and of raw text live in the same space).\n\nOutput JSON only, no explanation: {\"actions\":[ ... ]}"
+        },
+        {
+          "role": "user",
+          "content": "Speakers present: Pia, Quinn\nSession: manual_update_gamma_s08    Time: 2026-08-17T10:00:00Z\n\nCURRENT MEMORY (ALL derived memory of this group; each slot shows its LATEST state only)\nformat: <entry_id> [layer|owner(by source)@date] content\n  [Pia]\n    82308d70 [core|Pia@2026-08-16] Pia owns experiment phase 7\n  [Quinn]\n    efccb8ca [core|Quinn@2026-08-10] Quinn records measurements\n  [GROUP]\n    ff0f1ad3 [g-insight|GROUP(by Pia)@2026-08-11] The group evaluates latency across phases\n\nNEW MESSAGES IN THIS SEGMENT\n[Pia @ 2026-08-17T10:00:00Z] Experiment phase 8 starts.\n[Quinn @ 2026-08-17T10:01:00Z] Quinn records the measurements.\n[Pia @ 2026-08-17T10:02:00Z] The target metric is latency.\n[Quinn @ 2026-08-17T10:03:00Z] The latest run is logged.\n[Pia @ 2026-08-17T10:04:00Z] The next run will use the same target.\n\nHARD OUTPUT LIMIT: return at most 10 actions. Stop after the last NOVEL action, close the JSON immediately, and NEVER repeat an action already emitted in this output.\n\nOutput {\"actions\":[ ... ]}"
+        }
+      ],
+      "pre_state_text": "  [Pia]\n    82308d70 [core|Pia@2026-08-16] Pia owns experiment phase 7\n  [Quinn]\n    efccb8ca [core|Quinn@2026-08-10] Quinn records measurements\n  [GROUP]\n    ff0f1ad3 [g-insight|GROUP(by Pia)@2026-08-11] The group evaluates latency across phases",
+      "actions": [
+        {
+          "action": "UPDATE",
+          "entry_id": "82308d70",
+          "content": "Pia owns experiment phase 8"
+        }
+      ],
+      "target_text": "{\"actions\":[{\"action\":\"UPDATE\",\"entry_id\":\"82308d70\",\"content\":\"Pia owns experiment phase 8\"}]}",
+      "report": {
+        "json_valid": true,
+        "attempted": 1,
+        "applied": 1,
+        "noop": 0,
+        "errors": [],
+        "created_ids": [
+          "95048fb9"
+        ],
+        "updated_from": [
+          "82308d70"
+        ],
+        "schema_valid_actions": 1,
+        "valid": true
+      },
+      "pre_state": {
+        "entries": [
+          {
+            "content": "Pia owns the experiment",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "f0ce8fee",
+              "7e602a75",
+              "95b8aa03"
+            ],
+            "links": [],
+            "superseded_by": "bc4caae5",
+            "entry_id": "5e68f57a"
+          },
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          },
+          {
+            "content": "Pia owns experiment phase 3",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "6a1b22f7",
+              "86561422",
+              "5d0debde"
+            ],
+            "links": [
+              "5e68f57a"
+            ],
+            "superseded_by": "36940204",
+            "entry_id": "bc4caae5"
+          },
+          {
+            "content": "Pia owns experiment phase 4",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "9477440f",
+              "e25d0221",
+              "efc37bc7"
+            ],
+            "links": [
+              "bc4caae5"
+            ],
+            "superseded_by": "908ff0ee",
+            "entry_id": "36940204"
+          },
+          {
+            "content": "Pia owns experiment phase 5",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 4,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-14T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.9999999999999999,
+            "from_ids": [
+              "4a9786d1",
+              "7d14605e",
+              "1a1010e8"
+            ],
+            "links": [
+              "36940204"
+            ],
+            "superseded_by": "4307ec4e",
+            "entry_id": "908ff0ee"
+          },
+          {
+            "content": "Pia owns experiment phase 6",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 5,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-15T10:00:00Z",
+            "utype": "decision",
+            "confidence": 1.0,
+            "from_ids": [
+              "5ad09e44",
+              "f9ebad30",
+              "d54f2dfa"
+            ],
+            "links": [
+              "908ff0ee"
+            ],
+            "superseded_by": "82308d70",
+            "entry_id": "4307ec4e"
+          },
+          {
+            "content": "Pia owns experiment phase 7",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 6,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-16T10:00:00Z",
+            "utype": "decision",
+            "confidence": 1.0,
+            "from_ids": [
+              "38653a64",
+              "2ad5e8b3",
+              "b53994a2"
+            ],
+            "links": [
+              "4307ec4e"
+            ],
+            "superseded_by": "",
+            "entry_id": "82308d70"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          },
+          {
+            "content": "Pia owns experiment phase 7",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 6,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-16T10:00:00Z",
+            "utype": "decision",
+            "confidence": 1.0,
+            "from_ids": [
+              "38653a64",
+              "2ad5e8b3",
+              "b53994a2"
+            ],
+            "links": [
+              "4307ec4e"
+            ],
+            "superseded_by": "",
+            "entry_id": "82308d70"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "5e68f57a",
+            "new": "bc4caae5"
+          },
+          {
+            "old": "bc4caae5",
+            "new": "36940204"
+          },
+          {
+            "old": "36940204",
+            "new": "908ff0ee"
+          },
+          {
+            "old": "908ff0ee",
+            "new": "4307ec4e"
+          },
+          {
+            "old": "4307ec4e",
+            "new": "82308d70"
+          }
+        ],
+        "roster": [
+          "Pia",
+          "Quinn"
+        ]
+      },
+      "post_state": {
+        "entries": [
+          {
+            "content": "Pia owns the experiment",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7,
+            "from_ids": [
+              "f0ce8fee",
+              "7e602a75",
+              "95b8aa03"
+            ],
+            "links": [],
+            "superseded_by": "bc4caae5",
+            "entry_id": "5e68f57a"
+          },
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          },
+          {
+            "content": "Pia owns experiment phase 3",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 2,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-12T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.7999999999999999,
+            "from_ids": [
+              "6a1b22f7",
+              "86561422",
+              "5d0debde"
+            ],
+            "links": [
+              "5e68f57a"
+            ],
+            "superseded_by": "36940204",
+            "entry_id": "bc4caae5"
+          },
+          {
+            "content": "Pia owns experiment phase 4",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 3,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-13T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.8999999999999999,
+            "from_ids": [
+              "9477440f",
+              "e25d0221",
+              "efc37bc7"
+            ],
+            "links": [
+              "bc4caae5"
+            ],
+            "superseded_by": "908ff0ee",
+            "entry_id": "36940204"
+          },
+          {
+            "content": "Pia owns experiment phase 5",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 4,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-14T10:00:00Z",
+            "utype": "decision",
+            "confidence": 0.9999999999999999,
+            "from_ids": [
+              "4a9786d1",
+              "7d14605e",
+              "1a1010e8"
+            ],
+            "links": [
+              "36940204"
+            ],
+            "superseded_by": "4307ec4e",
+            "entry_id": "908ff0ee"
+          },
+          {
+            "content": "Pia owns experiment phase 6",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 5,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-15T10:00:00Z",
+            "utype": "decision",
+            "confidence": 1.0,
+            "from_ids": [
+              "5ad09e44",
+              "f9ebad30",
+              "d54f2dfa"
+            ],
+            "links": [
+              "908ff0ee"
+            ],
+            "superseded_by": "82308d70",
+            "entry_id": "4307ec4e"
+          },
+          {
+            "content": "Pia owns experiment phase 7",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 6,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-16T10:00:00Z",
+            "utype": "decision",
+            "confidence": 1.0,
+            "from_ids": [
+              "38653a64",
+              "2ad5e8b3",
+              "b53994a2"
+            ],
+            "links": [
+              "4307ec4e"
+            ],
+            "superseded_by": "95048fb9",
+            "entry_id": "82308d70"
+          },
+          {
+            "content": "Pia owns experiment phase 8",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 7,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-17T10:00:00Z",
+            "utype": "decision",
+            "confidence": 1.0,
+            "from_ids": [
+              "46f35216",
+              "a025afd9",
+              "26259aea"
+            ],
+            "links": [
+              "82308d70"
+            ],
+            "superseded_by": "",
+            "entry_id": "95048fb9"
+          }
+        ],
+        "heads": [
+          {
+            "content": "Quinn records measurements",
+            "owner": "Quinn",
+            "source": "Quinn",
+            "layer": "per_speaker_core",
+            "turn_created": 0,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-10T10:00:00Z",
+            "utype": "fact",
+            "confidence": 0.7,
+            "from_ids": [
+              "e658d167",
+              "c527f898",
+              "f0ce8fee"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "efccb8ca"
+          },
+          {
+            "content": "The group evaluates latency across phases",
+            "owner": "GROUP",
+            "source": "Pia",
+            "layer": "group_insight",
+            "turn_created": 1,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-11T10:00:00Z",
+            "utype": "observation",
+            "confidence": 0.7,
+            "from_ids": [
+              "2bf35aa8",
+              "63b418eb",
+              "319d4f12"
+            ],
+            "links": [],
+            "superseded_by": "",
+            "entry_id": "ff0f1ad3"
+          },
+          {
+            "content": "Pia owns experiment phase 8",
+            "owner": "Pia",
+            "source": "Pia",
+            "layer": "per_speaker_core",
+            "turn_created": 7,
+            "session": "",
+            "turn": 0,
+            "ts": "2026-08-17T10:00:00Z",
+            "utype": "decision",
+            "confidence": 1.0,
+            "from_ids": [
+              "46f35216",
+              "a025afd9",
+              "26259aea"
+            ],
+            "links": [
+              "82308d70"
+            ],
+            "superseded_by": "",
+            "entry_id": "95048fb9"
+          }
+        ],
+        "update_edges": [
+          {
+            "old": "5e68f57a",
+            "new": "bc4caae5"
+          },
+          {
+            "old": "bc4caae5",
+            "new": "36940204"
+          },
+          {
+            "old": "36940204",
+            "new": "908ff0ee"
+          },
+          {
+            "old": "908ff0ee",
+            "new": "4307ec4e"
+          },
+          {
+            "old": "4307ec4e",
+            "new": "82308d70"
+          },
+          {
+            "old": "82308d70",
+            "new": "95048fb9"
+          }
+        ],
+        "roster": [
+          "Pia",
+          "Quinn"
+        ]
+      },
+      "segment_index": 0,
+      "source_session_index": 7,
+      "metadata": {
+        "source_topic": "manual_topic_manual_update_gamma_8"
+      }
+    }
+  ],
+  "final_state": {
+    "entries": [
+      {
+        "content": "Pia owns the experiment",
+        "owner": "Pia",
+        "source": "Pia",
+        "layer": "per_speaker_core",
+        "turn_created": 0,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-10T10:00:00Z",
+        "utype": "decision",
+        "confidence": 0.7,
+        "from_ids": [
+          "f0ce8fee",
+          "7e602a75",
+          "95b8aa03"
+        ],
+        "links": [],
+        "superseded_by": "bc4caae5",
+        "entry_id": "5e68f57a"
+      },
+      {
+        "content": "Quinn records measurements",
+        "owner": "Quinn",
+        "source": "Quinn",
+        "layer": "per_speaker_core",
+        "turn_created": 0,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-10T10:00:00Z",
+        "utype": "fact",
+        "confidence": 0.7,
+        "from_ids": [
+          "e658d167",
+          "c527f898",
+          "f0ce8fee"
+        ],
+        "links": [],
+        "superseded_by": "",
+        "entry_id": "efccb8ca"
+      },
+      {
+        "content": "The group evaluates latency across phases",
+        "owner": "GROUP",
+        "source": "Pia",
+        "layer": "group_insight",
+        "turn_created": 1,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-11T10:00:00Z",
+        "utype": "observation",
+        "confidence": 0.7,
+        "from_ids": [
+          "2bf35aa8",
+          "63b418eb",
+          "319d4f12"
+        ],
+        "links": [],
+        "superseded_by": "",
+        "entry_id": "ff0f1ad3"
+      },
+      {
+        "content": "Pia owns experiment phase 3",
+        "owner": "Pia",
+        "source": "Pia",
+        "layer": "per_speaker_core",
+        "turn_created": 2,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-12T10:00:00Z",
+        "utype": "decision",
+        "confidence": 0.7999999999999999,
+        "from_ids": [
+          "6a1b22f7",
+          "86561422",
+          "5d0debde"
+        ],
+        "links": [
+          "5e68f57a"
+        ],
+        "superseded_by": "36940204",
+        "entry_id": "bc4caae5"
+      },
+      {
+        "content": "Pia owns experiment phase 4",
+        "owner": "Pia",
+        "source": "Pia",
+        "layer": "per_speaker_core",
+        "turn_created": 3,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-13T10:00:00Z",
+        "utype": "decision",
+        "confidence": 0.8999999999999999,
+        "from_ids": [
+          "9477440f",
+          "e25d0221",
+          "efc37bc7"
+        ],
+        "links": [
+          "bc4caae5"
+        ],
+        "superseded_by": "908ff0ee",
+        "entry_id": "36940204"
+      },
+      {
+        "content": "Pia owns experiment phase 5",
+        "owner": "Pia",
+        "source": "Pia",
+        "layer": "per_speaker_core",
+        "turn_created": 4,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-14T10:00:00Z",
+        "utype": "decision",
+        "confidence": 0.9999999999999999,
+        "from_ids": [
+          "4a9786d1",
+          "7d14605e",
+          "1a1010e8"
+        ],
+        "links": [
+          "36940204"
+        ],
+        "superseded_by": "4307ec4e",
+        "entry_id": "908ff0ee"
+      },
+      {
+        "content": "Pia owns experiment phase 6",
+        "owner": "Pia",
+        "source": "Pia",
+        "layer": "per_speaker_core",
+        "turn_created": 5,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-15T10:00:00Z",
+        "utype": "decision",
+        "confidence": 1.0,
+        "from_ids": [
+          "5ad09e44",
+          "f9ebad30",
+          "d54f2dfa"
+        ],
+        "links": [
+          "908ff0ee"
+        ],
+        "superseded_by": "82308d70",
+        "entry_id": "4307ec4e"
+      },
+      {
+        "content": "Pia owns experiment phase 7",
+        "owner": "Pia",
+        "source": "Pia",
+        "layer": "per_speaker_core",
+        "turn_created": 6,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-16T10:00:00Z",
+        "utype": "decision",
+        "confidence": 1.0,
+        "from_ids": [
+          "38653a64",
+          "2ad5e8b3",
+          "b53994a2"
+        ],
+        "links": [
+          "4307ec4e"
+        ],
+        "superseded_by": "95048fb9",
+        "entry_id": "82308d70"
+      },
+      {
+        "content": "Pia owns experiment phase 8",
+        "owner": "Pia",
+        "source": "Pia",
+        "layer": "per_speaker_core",
+        "turn_created": 7,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-17T10:00:00Z",
+        "utype": "decision",
+        "confidence": 1.0,
+        "from_ids": [
+          "46f35216",
+          "a025afd9",
+          "26259aea"
+        ],
+        "links": [
+          "82308d70"
+        ],
+        "superseded_by": "",
+        "entry_id": "95048fb9"
+      }
+    ],
+    "heads": [
+      {
+        "content": "Quinn records measurements",
+        "owner": "Quinn",
+        "source": "Quinn",
+        "layer": "per_speaker_core",
+        "turn_created": 0,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-10T10:00:00Z",
+        "utype": "fact",
+        "confidence": 0.7,
+        "from_ids": [
+          "e658d167",
+          "c527f898",
+          "f0ce8fee"
+        ],
+        "links": [],
+        "superseded_by": "",
+        "entry_id": "efccb8ca"
+      },
+      {
+        "content": "The group evaluates latency across phases",
+        "owner": "GROUP",
+        "source": "Pia",
+        "layer": "group_insight",
+        "turn_created": 1,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-11T10:00:00Z",
+        "utype": "observation",
+        "confidence": 0.7,
+        "from_ids": [
+          "2bf35aa8",
+          "63b418eb",
+          "319d4f12"
+        ],
+        "links": [],
+        "superseded_by": "",
+        "entry_id": "ff0f1ad3"
+      },
+      {
+        "content": "Pia owns experiment phase 8",
+        "owner": "Pia",
+        "source": "Pia",
+        "layer": "per_speaker_core",
+        "turn_created": 7,
+        "session": "",
+        "turn": 0,
+        "ts": "2026-08-17T10:00:00Z",
+        "utype": "decision",
+        "confidence": 1.0,
+        "from_ids": [
+          "46f35216",
+          "a025afd9",
+          "26259aea"
+        ],
+        "links": [
+          "82308d70"
+        ],
+        "superseded_by": "",
+        "entry_id": "95048fb9"
+      }
+    ],
+    "update_edges": [
+      {
+        "old": "5e68f57a",
+        "new": "bc4caae5"
+      },
+      {
+        "old": "bc4caae5",
+        "new": "36940204"
+      },
+      {
+        "old": "36940204",
+        "new": "908ff0ee"
+      },
+      {
+        "old": "908ff0ee",
+        "new": "4307ec4e"
+      },
+      {
+        "old": "4307ec4e",
+        "new": "82308d70"
+      },
+      {
+        "old": "82308d70",
+        "new": "95048fb9"
+      }
+    ],
+    "roster": [
+      "Pia",
+      "Quinn"
+    ]
+  },
+  "qa_pairs": [
+    {
+      "id": "q1",
+      "category": "update",
+      "question": "Who owns the experiment?",
+      "answer": "Pia owns the experiment.",
+      "difficulty": "medium",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "source": "manual_final_state",
+          "owner": "Pia",
+          "layer": "per_speaker_core",
+          "content": "Pia owns the experiment",
+          "relevance": "Final active head records Pia as the experiment owner."
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "q2",
+      "category": "update",
+      "question": "Which phase is the latest update about?",
+      "answer": "The latest update is about experiment phase 8.",
+      "difficulty": "medium",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 8,
+          "turn_id": "manual_update_gamma_s08_t000",
+          "speaker_display_name": "Pia",
+          "message_excerpt": "Experiment phase 8 starts.",
+          "relevance": "Direct evidence for the latest phase."
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "q3",
+      "category": "group",
+      "question": "What metric does the group evaluate?",
+      "answer": "The group evaluates latency across phases.",
+      "difficulty": "medium",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "manual_update_gamma_s01_t002",
+          "speaker_display_name": "Pia",
+          "message_excerpt": "The target metric is latency.",
+          "relevance": "The target metric underlying the group latency insight."
+        }
+      ],
+      "temporal_anchors": []
+    }
+  ],
+  "stats": {
+    "transitions": 8,
+    "actions": {
+      "ADD": 3,
+      "UPDATE": 6
+    },
+    "derived_entries": 9,
+    "update_edges": 6
+  }
+}

@@ -1,0 +1,2417 @@
+{
+  "schema": "socialmembench-real-v4-source/1",
+  "scenario": "[socialmembench:grp_e3f4a5b6] real benchmark conversation",
+  "speakers": [
+    "Dev",
+    "Jonah",
+    "Marcus",
+    "Priya",
+    "Simone"
+  ],
+  "sessions": [
+    {
+      "session_id": "grp_e3f4a5b6_s01",
+      "session_index": 1,
+      "topic": "Work stress and weekend plans",
+      "ts": "2025-10-05",
+      "turns": [
+        {
+          "turn": "grp_e3f4a5b6_s01_t000",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "Right, everyone survived the week. Barely, in my case. Year 10 got thirty-two essays in on Thursday and I've marked exactly four of them.",
+          "ts": "2025-10-05T18:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e3f4a5b6_s01_t001",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "thirty-two essays on the same topic or thsi is like thirty-two different topics lmao",
+          "ts": "2025-10-05T18:31:00",
+          "reply_to": "grp_e3f4a5b6_s01_t000"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s01_t002",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "lmaooo four out of thirty two, Marcus that is literally the most chaotic thing ive heard all week and its been a week",
+          "ts": "2025-10-05T18:31:00",
+          "reply_to": "grp_e3f4a5b6_s01_t000"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s01_t003",
+          "speaker": "Simone",
+          "speaker_id": "p_cf33d4e5f6",
+          "content": "Twenty-eight essays outstanding. That is not ideal for a Sunday evening.",
+          "ts": "2025-10-05T18:32:00",
+          "reply_to": "grp_e3f4a5b6_s01_t000"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s01_t004",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "The topic is 'causes of World War One'. Thirty-two interpretations of the same four events. By essay twelve I start seeing Gavrilo Princip in my dreams. Simone, how's your week been? You've been quiet all day.",
+          "ts": "2025-10-05T18:33:00",
+          "reply_to": "grp_e3f4a5b6_s01_t003"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s01_t005",
+          "speaker": "Simone",
+          "speaker_id": "p_cf33d4e5f6",
+          "content": "Billing week. I drafted three contracts yesterday that I thought were done and then a partner came back with forty-three comments. So, broadly fine.",
+          "ts": "2025-10-05T18:34:00",
+          "reply_to": "grp_e3f4a5b6_s01_t004"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s01_t006",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "forty three comments tho 😭😭 thats not feedback thats a hostile takeover",
+          "ts": "2025-10-05T18:34:00",
+          "reply_to": "grp_e3f4a5b6_s01_t005"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s01_t007",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "Code review with forty-three comments is just a rewrite.",
+          "ts": "2025-10-05T18:35:00",
+          "reply_to": "grp_e3f4a5b6_s01_t005"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s01_t008",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "ok Dev coming in with the crossover commentary 😂 also same energy at the startup rn, product lead sent me a 'just a few tweaks' at 11pm Friday. twelve screens of tweaks.",
+          "ts": "2025-10-05T18:36:00",
+          "reply_to": "grp_e3f4a5b6_s01_t007"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s01_t009",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "I'll be honest with you, this week felt a bit like the Somme. Everyone moving but nothing actually advancing. Anyway. Are we doing dinner this week or waiting until the weekend? I was thinking the new Italian place on Renfield Street. Opens at six, closes at eleven, 4.3 on Yelp, 'the pasta is made fresh daily and the portions are embarrassingly generous'.",
+          "ts": "2025-10-05T18:37:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e3f4a5b6_s01_t010",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "or hear me out, the Crown on Byres Road has proper chips and doesn't require a reservation tbf. also the pint situation is much better",
+          "ts": "2025-10-05T18:38:00",
+          "reply_to": "grp_e3f4a5b6_s01_t009"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s01_t011",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "The Crown is fine but you can't actually talk in there. Saturday night it's ninety decibels before eight o'clock. I'd rather find somewhere you can hear yourself think.",
+          "ts": "2025-10-05T18:39:00",
+          "reply_to": "grp_e3f4a5b6_s01_t010"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s01_t012",
+          "speaker": "Simone",
+          "speaker_id": "p_cf33d4e5f6",
+          "content": "The Italian sounds good to me. Just to flag, I'd need to know by Wednesday if it's Friday, so I can sort the evening.",
+          "ts": "2025-10-05T18:40:00",
+          "reply_to": "grp_e3f4a5b6_s01_t011"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s01_t013",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "I'm in if it doesn't clash with the thing. Friday should be ok but I'll confirm Weds 👍",
+          "ts": "2025-10-05T18:41:00",
+          "reply_to": "grp_e3f4a5b6_s01_t012"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s01_t014",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "yeah fine, italian it is. Dev u coming or are u gonna do ur classic 'reads message, shows up in person' thing",
+          "ts": "2025-10-05T18:42:00",
+          "reply_to": "grp_e3f4a5b6_s01_t013"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s01_t015",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "Yes.",
+          "ts": "2025-10-05T18:43:00",
+          "reply_to": "grp_e3f4a5b6_s01_t014"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s01_t016",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "iconic 😂 also Jonah have you spoken to Marcus about the trivia night yet or are you still pretending you don't care that he beat you last time",
+          "ts": "2025-10-05T18:44:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e3f4a5b6_s01_t017",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "i absolutely care. the Churchill round was rigged and everyone here knows it. Marcus ur handwriting on those question cards is legally suspect",
+          "ts": "2025-10-05T18:44:00",
+          "reply_to": "grp_e3f4a5b6_s01_t016"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s01_t018",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "I'll be honest with you, the handwriting was fine and you just didn't know the answer. Classic Jonah, blames the medium, not the message. This is very much a Nuremberg defence situation.",
+          "ts": "2025-10-05T18:45:00",
+          "reply_to": "grp_e3f4a5b6_s01_t017"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s01_t019",
+          "speaker": "Simone",
+          "speaker_id": "p_cf33d4e5f6",
+          "content": "So: Italian on Friday, confirm by Wednesday. I'll take that as agreed unless I hear otherwise.",
+          "ts": "2025-10-05T18:46:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e3f4a5b6_s01_t020",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "confirmed 👍 and Marcus I want written documentation that the Churchill round had clear and unambiguous answer criteria",
+          "ts": "2025-10-05T18:47:00",
+          "reply_to": "grp_e3f4a5b6_s01_t019"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_e3f4a5b6_s02",
+      "session_index": 2,
+      "topic": "Peak District trip planning and hiking debate",
+      "ts": "2025-10-12",
+      "turns": [
+        {
+          "turn": "grp_e3f4a5b6_s02_t000",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "ok so I've been looking at the Peak District for November and theres a route from Edale thats absolutely class, does the ridge above Kinder Scout, about 14km, not too steep, views are incredible tbf. who's in",
+          "ts": "2025-10-12T17:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e3f4a5b6_s02_t001",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "Kinder Scout is genuinely beautiful. November's risky for weather though. I'll be honest with you, I've been on that ridge in October and it was fine, but I've also been on it in November and it was a small weather-based Waterloo. What's the accommodation situation?",
+          "ts": "2025-10-12T17:46:00",
+          "reply_to": "grp_e3f4a5b6_s02_t000"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s02_t002",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "Which weekend.",
+          "ts": "2025-10-12T17:47:00",
+          "reply_to": "grp_e3f4a5b6_s02_t000"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s02_t003",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "thinking 8th-9th November, there's a bunkhouse in Hope village that sleeps six, £18 a head per night. Jonah checked it already, it has a proper kitchen and everything",
+          "ts": "2025-10-12T17:48:00",
+          "reply_to": "grp_e3f4a5b6_s02_t002"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s02_t004",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "hm. so the bunkhouse thing could be fun but like. November Peak District. I'm already thinking about the mud situation 😬",
+          "ts": "2025-10-12T17:49:00",
+          "reply_to": "grp_e3f4a5b6_s02_t003"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s02_t005",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "Priya didn't you say you'd try a proper walk again? like a real one, not a flat park loop 😂 this is the one. the views justify the boots",
+          "ts": "2025-10-12T17:50:00",
+          "reply_to": "grp_e3f4a5b6_s02_t004"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s02_t006",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "I said I'd consider it 😑 there's a difference. also 14km in November mud is not 'a walk', that's a survival exercise",
+          "ts": "2025-10-12T17:51:00",
+          "reply_to": "grp_e3f4a5b6_s02_t005"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s02_t007",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "Let's put it to a vote. Kinder Scout November 8th. Hands up. I'm in.",
+          "ts": "2025-10-12T17:52:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e3f4a5b6_s02_t008",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "obviously in 🙌",
+          "ts": "2025-10-12T17:52:00",
+          "reply_to": "grp_e3f4a5b6_s02_t007"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s02_t009",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "In.",
+          "ts": "2025-10-12T17:53:00",
+          "reply_to": "grp_e3f4a5b6_s02_t007"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s02_t010",
+          "speaker": "Simone",
+          "speaker_id": "p_cf33d4e5f6",
+          "content": "In, assuming I can confirm by end of week. Just to flag, I'd need the exact dates locked down so I can check my calendar properly. Can we confirm Friday at the latest?",
+          "ts": "2025-10-12T17:54:00",
+          "reply_to": "grp_e3f4a5b6_s02_t007"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s02_t011",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "yeah ok fine 🙄 I'm in if it doesn't clash with the thing. but someone is buying me proper waterproof trousers if my jeans end up destroyed",
+          "ts": "2025-10-12T17:55:00",
+          "reply_to": "grp_e3f4a5b6_s02_t007"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s02_t012",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "Priya jeans are not hiking gear that is genuinely alarming. you need to own at least one piece of outdoor clothing",
+          "ts": "2025-10-12T17:56:00",
+          "reply_to": "grp_e3f4a5b6_s02_t011"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s02_t013",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "I have a good coat!! that counts",
+          "ts": "2025-10-12T17:57:00",
+          "reply_to": "grp_e3f4a5b6_s02_t012"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s02_t014",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "A coat absolutely does not count. Right. I'll book the bunkhouse Monday morning. Simone, I'll ping you the booking confirmation so you have it in writing before Friday.",
+          "ts": "2025-10-12T17:58:00",
+          "reply_to": "grp_e3f4a5b6_s02_t013"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s02_t015",
+          "speaker": "Simone",
+          "speaker_id": "p_cf33d4e5f6",
+          "content": "That works. Thank you, Marcus.",
+          "ts": "2025-10-12T17:59:00",
+          "reply_to": "grp_e3f4a5b6_s02_t014"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s02_t016",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "wait did Priya and I introduce you two properly btw Simone, Marcus and I literally grew up two houses apart, he's basically my annoying older brother who takes the seating plan at dinner too seriously 😂",
+          "ts": "2025-10-12T18:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e3f4a5b6_s02_t017",
+          "speaker": "Simone",
+          "speaker_id": "p_cf33d4e5f6",
+          "content": "You mentioned it when we were still in the flat. I'm aware of the seating plan reputation.",
+          "ts": "2025-10-12T18:01:00",
+          "reply_to": "grp_e3f4a5b6_s02_t016"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s02_t018",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "the seating plan thing is real. Marcus assigned seats at his own birthday dinner. by preference and conversation compatibility. i am not joking",
+          "ts": "2025-10-12T18:02:00",
+          "reply_to": "grp_e3f4a5b6_s02_t017"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s02_t019",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "It worked. Best table arrangements anyone has experienced at a birthday dinner. Dev cried. I have witnesses.",
+          "ts": "2025-10-12T18:03:00",
+          "reply_to": "grp_e3f4a5b6_s02_t018"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s02_t020",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "I didn't cry.",
+          "ts": "2025-10-12T18:04:00",
+          "reply_to": "grp_e3f4a5b6_s02_t019"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s02_t021",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "he literally did 😭 it was the speech not the seating tbf but still",
+          "ts": "2025-10-12T18:04:00",
+          "reply_to": "grp_e3f4a5b6_s02_t020"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_e3f4a5b6_s03",
+      "session_index": 3,
+      "topic": "Dating and relationship chat",
+      "ts": "2025-10-19",
+      "turns": [
+        {
+          "turn": "grp_e3f4a5b6_s03_t000",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "ok so I went on that second date and I have feelings about it 😬",
+          "ts": "2025-10-19T19:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e3f4a5b6_s03_t001",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "good feelings or the kind that require us to destroy someone",
+          "ts": "2025-10-19T19:15:00",
+          "reply_to": "grp_e3f4a5b6_s03_t000"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s03_t002",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "neither?? it was fine. like, fine fine. he suggested this fusion place near the canal which looked nice but the food was literally chaos, like what even was that. and then he talked about his flatmate for most of the second hour",
+          "ts": "2025-10-19T19:16:00",
+          "reply_to": "grp_e3f4a5b6_s03_t001"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s03_t003",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "Fusion is a red flag.",
+          "ts": "2025-10-19T19:17:00",
+          "reply_to": "grp_e3f4a5b6_s03_t002"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s03_t004",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "Dev's not wrong. 'Fusion' as a restaurant descriptor usually means 'we couldn't commit to a cuisine'. I'll be honest with you, if someone picks a restaurant where you can't tell what country the food is from, that tells you something about their decision-making.",
+          "ts": "2025-10-19T19:18:00",
+          "reply_to": "grp_e3f4a5b6_s03_t003"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s03_t005",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "ok to be fair it LOOKED good on Instagram. but yeah the miso chicken tacos were not a thing I needed to experience",
+          "ts": "2025-10-19T19:18:00",
+          "reply_to": "grp_e3f4a5b6_s03_t004"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s03_t006",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "right but forget the food, the flatmate monologue is the issue. was it a 'we're close' thing or a 'I might still have feelings for my flatmate' thing because those are very different",
+          "ts": "2025-10-19T19:19:00",
+          "reply_to": "grp_e3f4a5b6_s03_t005"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s03_t007",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "Jonah I cannot tell. that's kind of the problem. like he's clearly lovely but I don't know if there's actually anything there or I'm just being optimistic because I've been on four terrible dates this year",
+          "ts": "2025-10-19T19:20:00",
+          "reply_to": "grp_e3f4a5b6_s03_t006"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s03_t008",
+          "speaker": "Simone",
+          "speaker_id": "p_cf33d4e5f6",
+          "content": "Would you go on a third date if he asked?",
+          "ts": "2025-10-19T19:21:00",
+          "reply_to": "grp_e3f4a5b6_s03_t007"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s03_t009",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "...probably yeah 😭 which tells me something I guess",
+          "ts": "2025-10-19T19:22:00",
+          "reply_to": "grp_e3f4a5b6_s03_t008"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s03_t010",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "Third date it is then. Also I'm choosing the restaurant. If anyone is going to a second venue on this man's behalf it will be somewhere you can actually hear the conversation.",
+          "ts": "2025-10-19T19:23:00",
+          "reply_to": "grp_e3f4a5b6_s03_t009"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s03_t011",
+          "speaker": "Simone",
+          "speaker_id": "p_cf33d4e5f6",
+          "content": "I'd second that. Priya, didn't you say that place near the canal last month was so loud you had to lean in to hear each other? That's not ideal for a third date.",
+          "ts": "2025-10-19T19:24:00",
+          "reply_to": "grp_e3f4a5b6_s03_t010"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s03_t012",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "yes! literally couldn't hear a single word, had to do that thing where you just nod and hope 😂 ok Marcus yes please pick somewhere with actual acoustics",
+          "ts": "2025-10-19T19:25:00",
+          "reply_to": "grp_e3f4a5b6_s03_t011"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s03_t013",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "ok hold on, slight tangent, what is everyone's worst date story because I'm realising I've been sitting on a very good one from Berlin and you all deserve to hear it",
+          "ts": "2025-10-19T19:26:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e3f4a5b6_s03_t014",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "Jonah, and I say this with genuine affection, Berlin comes up every single time. You've been back for three years. This is a very Weimar Republic situation: keep referencing a golden era to avoid engaging with the present.",
+          "ts": "2025-10-19T19:27:00",
+          "reply_to": "grp_e3f4a5b6_s03_t013"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s03_t015",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "tbf that is the most Marcus burn I've ever received. ok fine, ignoring the Berlin location of this story. there was a person. a roof terrace. and a fire alarm at exactly the wrong moment",
+          "ts": "2025-10-19T19:27:00",
+          "reply_to": "grp_e3f4a5b6_s03_t014"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s03_t016",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "WHAT exactly the wrong moment means what 😭😭",
+          "ts": "2025-10-19T19:28:00",
+          "reply_to": "grp_e3f4a5b6_s03_t015"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s03_t017",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "I need more context before I decide if this is funny.",
+          "ts": "2025-10-19T19:29:00",
+          "reply_to": "grp_e3f4a5b6_s03_t015"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s03_t018",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "it was funny. eventually. we had to stand on the pavement for 40 minutes and the fire brigade were incredibly judgemental about the situation. anyway Dev have you been on any dates recently or are you still claiming 'not a priority'",
+          "ts": "2025-10-19T19:30:00",
+          "reply_to": "grp_e3f4a5b6_s03_t017"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s03_t019",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "Not a priority.",
+          "ts": "2025-10-19T19:31:00",
+          "reply_to": "grp_e3f4a5b6_s03_t018"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s03_t020",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "Dev and I literally had this exact conversation at uni 😂 he's been saying 'not a priority' since second year. it's a lifestyle choice at this point",
+          "ts": "2025-10-19T19:31:00",
+          "reply_to": "grp_e3f4a5b6_s03_t019"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s03_t021",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "Also, before we move on, nobody's picking a restaurant next weekend for the Peak District debrief. We need to commit. Saturday the 25th, dinner after. I'm thinking Italian again but a different place. Somewhere actually quiet.",
+          "ts": "2025-10-19T19:32:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e3f4a5b6_s03_t022",
+          "speaker": "Simone",
+          "speaker_id": "p_cf33d4e5f6",
+          "content": "Saturday the 25th works. Just to flag, somewhere quiet would be ideal. I'd rather be able to debrief properly than sit in a place where everyone is shouting.",
+          "ts": "2025-10-19T19:33:00",
+          "reply_to": "grp_e3f4a5b6_s03_t021"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s03_t023",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "this is fine, I'll still be recovering from the walk. someone tell me now what pub is near the bunkhouse in Hope because post-hike priorities need to be settled in advance",
+          "ts": "2025-10-19T19:34:00",
+          "reply_to": "grp_e3f4a5b6_s03_t022"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s03_t024",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "consensus_trap incoming: yes fine I'll do the pub, as long as nobody forces me back up a hill on Sunday morning 👀",
+          "ts": "2025-10-19T19:34:00",
+          "reply_to": "grp_e3f4a5b6_s03_t023"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_e3f4a5b6_s04",
+      "session_index": 4,
+      "topic": "Money stress and pre-trip logistics",
+      "ts": "2025-10-26",
+      "turns": [
+        {
+          "turn": "grp_e3f4a5b6_s04_t000",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "right so good news and bad news. good news: I sorted my invoice situation and money is real again. bad news: my client is asking for another cut of that commercial by Thursday and I'm going to be glued to premiere for three days straight",
+          "ts": "2025-10-26T18:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e3f4a5b6_s04_t001",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "oh no the invoice situation, I was wondering about that. also three days in Premiere sounds like my version of hell but I know you're weird about it 😂",
+          "ts": "2025-10-26T18:01:00",
+          "reply_to": "grp_e3f4a5b6_s04_t000"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s04_t002",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "Glad the invoice came through. Freelance cashflow is historically the world's most reliable source of low-grade anxiety. Right behind dental appointments and TfL delays.",
+          "ts": "2025-10-26T18:02:00",
+          "reply_to": "grp_e3f4a5b6_s04_t000"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s04_t003",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "genuinely yes. anyway I've also been working on something else on the side, like a personal project, and I kind of mentioned it last week but I don't know. it's a short doc, sort of. I dunno if it's ready to show anyone yet",
+          "ts": "2025-10-26T18:03:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e3f4a5b6_s04_t004",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "I'd like to see it. Genuinely. Not being polite. You mentioned it back in, what, August? And then said nothing. What's it about?",
+          "ts": "2025-10-26T18:04:00",
+          "reply_to": "grp_e3f4a5b6_s04_t003"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s04_t005",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "it's about that estate on the edge of town, like the community that got displaced when the development went in. been filming on and off for about eight months. it's rough but there's something there I think",
+          "ts": "2025-10-26T18:05:00",
+          "reply_to": "grp_e3f4a5b6_s04_t004"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s04_t006",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "ok that sounds actually really interesting? eight months of filming is not nothing Jonah",
+          "ts": "2025-10-26T18:06:00",
+          "reply_to": "grp_e3f4a5b6_s04_t005"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s04_t007",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "Send it.",
+          "ts": "2025-10-26T18:07:00",
+          "reply_to": "grp_e3f4a5b6_s04_t005"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s04_t008",
+          "speaker": "Simone",
+          "speaker_id": "p_cf33d4e5f6",
+          "content": "I'd watch it. The displacement angle is interesting. There's a planning law dimension there if you ever wanted a footnote on the legal side.",
+          "ts": "2025-10-26T18:08:00",
+          "reply_to": "grp_e3f4a5b6_s04_t005"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s04_t009",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "ok ok fair enough. I'll send a rough cut this week. Marcus you're getting it first because you actually asked 👍",
+          "ts": "2025-10-26T18:09:00",
+          "reply_to": "grp_e3f4a5b6_s04_t008"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s04_t010",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "I'll be honest with you, I've been curious about it since you first mentioned it. You're good at this stuff. You've always been good at it. Send when ready.",
+          "ts": "2025-10-26T18:10:00",
+          "reply_to": "grp_e3f4a5b6_s04_t009"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s04_t011",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "ok right trip logistics because I genuinely need to sort the train. Marcus did you book the bunkhouse? like actually book it or 'I'll do it Monday' book it",
+          "ts": "2025-10-26T18:11:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e3f4a5b6_s04_t012",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "Actually booked. Confirmation email sent to everyone including Simone. I also checked there's a pub within 400 metres of the bunkhouse for Jonah's post-hike requirements. The pub is called the Cheshire Cheese and has a 4.1 on Google.",
+          "ts": "2025-10-26T18:12:00",
+          "reply_to": "grp_e3f4a5b6_s04_t011"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s04_t013",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "4.1 is acceptable. does it have a log fire because that's the real metric here",
+          "ts": "2025-10-26T18:12:00",
+          "reply_to": "grp_e3f4a5b6_s04_t012"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s04_t014",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "Google says yes.",
+          "ts": "2025-10-26T18:13:00",
+          "reply_to": "grp_e3f4a5b6_s04_t013"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s04_t015",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "Dev with the google research absolutely unprecedented thank u",
+          "ts": "2025-10-26T18:14:00",
+          "reply_to": "grp_e3f4a5b6_s04_t014"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s04_t016",
+          "speaker": "Simone",
+          "speaker_id": "p_cf33d4e5f6",
+          "content": "I got the confirmation, thank you. Just to flag, are we splitting the bunkhouse cost equally or by room size? I want to be clear before we get there.",
+          "ts": "2025-10-26T18:15:00",
+          "reply_to": "grp_e3f4a5b6_s04_t012"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s04_t017",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "Equal split. We always do equal split. This is not a new rule, Simone, this is the one rule we actually maintain consistently.",
+          "ts": "2025-10-26T18:16:00",
+          "reply_to": "grp_e3f4a5b6_s04_t016"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s04_t018",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "confirmed equal split always, the one law of the group 😂 also Simone we're getting the 8:40 from Manchester Piccadilly on Saturday, do you want to meet at the station",
+          "ts": "2025-10-26T18:17:00",
+          "reply_to": "grp_e3f4a5b6_s04_t016"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s04_t019",
+          "speaker": "Simone",
+          "speaker_id": "p_cf33d4e5f6",
+          "content": "Yes, I'll meet you at Piccadilly. Confirmed.",
+          "ts": "2025-10-26T18:18:00",
+          "reply_to": "grp_e3f4a5b6_s04_t018"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s04_t020",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "I'll get the same train.",
+          "ts": "2025-10-26T18:19:00",
+          "reply_to": "grp_e3f4a5b6_s04_t018"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_e3f4a5b6_s05",
+      "session_index": 5,
+      "topic": "Pre-trip nerves, sourdough reveal, Dev's trail running habit surfaces",
+      "ts": "2025-11-02",
+      "turns": [
+        {
+          "turn": "grp_e3f4a5b6_s05_t000",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "ok one week until the Peak District and I am trying to be positive about this but my waterproofs arrived and they are enormous. like I look like I'm about to do an offshore oil rig rotation not a walk",
+          "ts": "2025-11-02T18:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e3f4a5b6_s05_t001",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "tbf waterproofs are supposed to be a bit big, that is literally how they work. also offshore oil rig priya is an incredible visual, please wear them exactly like that",
+          "ts": "2025-11-02T18:46:00",
+          "reply_to": "grp_e3f4a5b6_s05_t000"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s05_t002",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "Priya, they're supposed to fit over your other layers. This is not a fashion context. Function over form, this Saturday at least.",
+          "ts": "2025-11-02T18:47:00",
+          "reply_to": "grp_e3f4a5b6_s05_t000"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s05_t003",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "function over form is genuinely the worst phrase anyone has ever said to me. ok different topic. Dev brought bread to Marcus's on Friday and it was actually unreal, what even was that",
+          "ts": "2025-11-02T18:48:00",
+          "reply_to": "grp_e3f4a5b6_s05_t002"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s05_t004",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "wait Dev brought bread?? what kind of bread?? am I the only one not invited to this Friday thing",
+          "ts": "2025-11-02T18:48:00",
+          "reply_to": "grp_e3f4a5b6_s05_t003"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s05_t005",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "Sourdough.",
+          "ts": "2025-11-02T18:49:00",
+          "reply_to": "grp_e3f4a5b6_s05_t004"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s05_t006",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "he made it himself!! like from scratch with the starter and everything 😱 Dev when did you become a baker",
+          "ts": "2025-11-02T18:49:00",
+          "reply_to": "grp_e3f4a5b6_s05_t005"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s05_t007",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "Lockdown.",
+          "ts": "2025-11-02T18:50:00",
+          "reply_to": "grp_e3f4a5b6_s05_t006"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s05_t008",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "He's been at it for a while. The crust was genuinely exceptional. I'll be honest with you, I've had sourdough at overpriced bakeries for seven quid a loaf and this was better. Dev has been quietly holding out on us.",
+          "ts": "2025-11-02T18:51:00",
+          "reply_to": "grp_e3f4a5b6_s05_t007"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s05_t009",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "this is genuinely the most Dev thing I've ever heard. no announcement. just shows up with artisan bread. no explanation. I love this man",
+          "ts": "2025-11-02T18:52:00",
+          "reply_to": "grp_e3f4a5b6_s05_t008"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s05_t010",
+          "speaker": "Simone",
+          "speaker_id": "p_cf33d4e5f6",
+          "content": "I've been meaning to ask. Dev, I saw you running near the canal last Tuesday morning. That looked more like a proper distance run than a jog. Is that a regular thing?",
+          "ts": "2025-11-02T18:53:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e3f4a5b6_s05_t011",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "Three times a week. Trail running mostly. The canal is just a warmup.",
+          "ts": "2025-11-02T18:54:00",
+          "reply_to": "grp_e3f4a5b6_s05_t010"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s05_t012",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "THREE TIMES. Dev I have been trying to get people to do trail runs with me for literally two years. the canal is just a warmup?? what does that even mean for next Saturday",
+          "ts": "2025-11-02T18:54:00",
+          "reply_to": "grp_e3f4a5b6_s05_t011"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s05_t013",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "It means Kinder Scout will be fine.",
+          "ts": "2025-11-02T18:55:00",
+          "reply_to": "grp_e3f4a5b6_s05_t012"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s05_t014",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "I hate all of you 😭 also Marcus are you actually still not drinking? you've been sipping sparkling water at every dinner for like three weeks now",
+          "ts": "2025-11-02T18:56:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e3f4a5b6_s05_t015",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "I mentioned this. The half-marathon training. Cutting alcohol for the duration. I told you all in October and nobody listened because Dev was doing something amusing with the bread rolls.",
+          "ts": "2025-11-02T18:57:00",
+          "reply_to": "grp_e3f4a5b6_s05_t014"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s05_t016",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "ok in fairness I did not absorb any of that. Marcus is doing a half marathon, that is actually news. when's the race",
+          "ts": "2025-11-02T18:58:00",
+          "reply_to": "grp_e3f4a5b6_s05_t015"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s05_t017",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "February. Which means this is also now a fitness trip for me, not just a walk. The Kinder Scout route is genuinely good training mileage. Dev, I wouldn't mind running part of the descent if you're up for it.",
+          "ts": "2025-11-02T18:59:00",
+          "reply_to": "grp_e3f4a5b6_s05_t016"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s05_t018",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "Yes.",
+          "ts": "2025-11-02T19:00:00",
+          "reply_to": "grp_e3f4a5b6_s05_t017"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s05_t019",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "so the plan is Priya stands at the bottom in enormous waterproofs while Dev and Marcus sprint past her like it's a race 😑 amazing. Simone you're the only reasonable person coming on this trip",
+          "ts": "2025-11-02T19:01:00",
+          "reply_to": "grp_e3f4a5b6_s05_t018"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s05_t020",
+          "speaker": "Simone",
+          "speaker_id": "p_cf33d4e5f6",
+          "content": "I'll be walking at a sensible pace and not running anywhere. We can be at the back together.",
+          "ts": "2025-11-02T19:02:00",
+          "reply_to": "grp_e3f4a5b6_s05_t019"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s05_t021",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "ok this is actually perfect, Dev and Marcus doing the fast bit up front, me and Jonah in the middle being correct about hiking, Priya and Simone forming an orderly rear guard. we will all meet at the pub and it will be beautiful",
+          "ts": "2025-11-02T19:03:00",
+          "reply_to": "grp_e3f4a5b6_s05_t020"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s05_t022",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "Good logistics. I'll look up the Cheshire Cheese menu in advance so Priya can check the vegetarian options before she decides the pub was a mistake too. Closes at eleven, two pages on Google, 'warm atmosphere and generous portions'.",
+          "ts": "2025-11-02T19:04:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_e3f4a5b6_s06",
+      "session_index": 6,
+      "topic": "Peak District debrief and Simone's Singapore announcement",
+      "ts": "2025-11-09",
+      "turns": [
+        {
+          "turn": "grp_e3f4a5b6_s06_t000",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "right so thsi weekend was absolutely class and I will not hear otherwise. fourteen kilometres. ridge views. log fire. perfect pints. objectively the best saturday we've had this year",
+          "ts": "2025-11-09T19:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e3f4a5b6_s06_t001",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "I am never doing that again 🙂 my ankles hurt, I had mud in a location I will not specify, and the pub was the only good part. the view was nice for about four minutes before the cloud came in",
+          "ts": "2025-11-09T19:31:00",
+          "reply_to": "grp_e3f4a5b6_s06_t000"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s06_t002",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "The descent was good.",
+          "ts": "2025-11-09T19:31:00",
+          "reply_to": "grp_e3f4a5b6_s06_t000"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s06_t003",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "It was a good training run. I'll be honest with you, that descent was the best I've felt on a run in months. Also the bunkhouse kitchen was better than advertised. The scrambled eggs situation at 7am was a genuine triumph.",
+          "ts": "2025-11-09T19:32:00",
+          "reply_to": "grp_e3f4a5b6_s06_t002"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s06_t004",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "the eggs! ok yes that was a group high point. Priya you ate three portions of scrambled eggs, you cannot tell me that morning was a disaster",
+          "ts": "2025-11-09T19:33:00",
+          "reply_to": "grp_e3f4a5b6_s06_t003"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s06_t005",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "the eggs were good. the hike was not. those are two separate facts that can both be true 😤",
+          "ts": "2025-11-09T19:34:00",
+          "reply_to": "grp_e3f4a5b6_s06_t004"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s06_t006",
+          "speaker": "Simone",
+          "speaker_id": "p_cf33d4e5f6",
+          "content": "The Cheshire Cheese had a very good fire. I enjoyed the afternoon. Also I found the walk manageable, for what it's worth. Though I accept Priya's assessment of the mud.",
+          "ts": "2025-11-09T19:35:00",
+          "reply_to": "grp_e3f4a5b6_s06_t005"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s06_t007",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "see even Simone is reasonable about it. Priya you just need better boots and a different attitude tbf",
+          "ts": "2025-11-09T19:36:00",
+          "reply_to": "grp_e3f4a5b6_s06_t006"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s06_t008",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "I don't need better boots Jonah I need a different activity. I literally said this before we went and I am now saying it with evidence. next trip is a city. I will find somewhere with good design and food you can actually identify 😌",
+          "ts": "2025-11-09T19:37:00",
+          "reply_to": "grp_e3f4a5b6_s06_t007"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s06_t009",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "A city trip is a reasonable counterproposal. We can vote in January. For now the Kinder Scout faction wins on points. Anyway. Simone, I wanted to check in. You were a bit quiet on the train back. You alright?",
+          "ts": "2025-11-09T19:38:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e3f4a5b6_s06_t010",
+          "speaker": "Simone",
+          "speaker_id": "p_cf33d4e5f6",
+          "content": "Actually, yes. There's something I've been putting off telling you all and I think Marcus already knows something is up, so I should just say it. I've accepted a secondment offer. Singapore. Twelve months, starting January. I handed my notice to the firm on Friday.",
+          "ts": "2025-11-09T19:40:00",
+          "reply_to": "grp_e3f4a5b6_s06_t009"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s06_t011",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "Simone!! you actually went and did it 😭😭 I knew about the application obviously but I didn't know you'd accepted. how long have you known",
+          "ts": "2025-11-09T19:41:00",
+          "reply_to": "grp_e3f4a5b6_s06_t010"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s06_t012",
+          "speaker": "Simone",
+          "speaker_id": "p_cf33d4e5f6",
+          "content": "Three weeks. I told Priya the same day I signed but I wanted to get the notice sorted before I said anything here. It felt wrong to tell the group before I'd made it official.",
+          "ts": "2025-11-09T19:42:00",
+          "reply_to": "grp_e3f4a5b6_s06_t011"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s06_t013",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "ok. Singapore. SINGAPORE. Simone that is. ok that's massive. I did not see that coming. wait, Marcus did you know",
+          "ts": "2025-11-09T19:43:00",
+          "reply_to": "grp_e3f4a5b6_s06_t012"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s06_t014",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "I messaged Simone separately last week because she'd gone quiet. She told me there was something big coming but didn't give me the details. I'm glad you've said it now. Singapore is genuinely a great opportunity and you've been building towards something like this for a while.",
+          "ts": "2025-11-09T19:44:00",
+          "reply_to": "grp_e3f4a5b6_s06_t013"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s06_t015",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "Good move.",
+          "ts": "2025-11-09T19:45:00",
+          "reply_to": "grp_e3f4a5b6_s06_t010"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s06_t016",
+          "speaker": "Simone",
+          "speaker_id": "p_cf33d4e5f6",
+          "content": "Thank you, Dev. That actually means something coming from someone who doesn't say things just to be kind.",
+          "ts": "2025-11-09T19:46:00",
+          "reply_to": "grp_e3f4a5b6_s06_t015"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s06_t017",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "ok I'm going to be sad about this but also very proud of you. January is literally so soon though. when's your last day at the firm",
+          "ts": "2025-11-09T19:47:00",
+          "reply_to": "grp_e3f4a5b6_s06_t012"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s06_t018",
+          "speaker": "Simone",
+          "speaker_id": "p_cf33d4e5f6",
+          "content": "December 19th. I fly January 6th. So there's time to do something properly before I go. I'd like that, if everyone's up for it. Something quiet. Not a party, just us.",
+          "ts": "2025-11-09T19:48:00",
+          "reply_to": "grp_e3f4a5b6_s06_t017"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s06_t019",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "We'll do dinner. Somewhere decent, somewhere you can actually hear yourself. I'll find a reservation for mid-December. I'll be honest with you, I'm going to miss having someone in this group who notices the practical details everyone else walks past.",
+          "ts": "2025-11-09T19:49:00",
+          "reply_to": "grp_e3f4a5b6_s06_t018"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s06_t020",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "100%. also Simone I'm going to send you the doc cut because you're literally the only person who gave me useful feedback and I want you to have the final version before you go",
+          "ts": "2025-11-09T19:50:00",
+          "reply_to": "grp_e3f4a5b6_s06_t019"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s06_t021",
+          "speaker": "Simone",
+          "speaker_id": "p_cf33d4e5f6",
+          "content": "Please do. I'd genuinely like that. And Marcus, I'll be back. It's twelve months, not forever. Though I appreciate the speech.",
+          "ts": "2025-11-09T19:51:00",
+          "reply_to": "grp_e3f4a5b6_s06_t019"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s06_t022",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "ok Marcus pick the restaurant and make sure it's somewhere she can actually hear the toast. Simone you deserve good acoustics at minimum 😭",
+          "ts": "2025-11-09T19:52:00",
+          "reply_to": "grp_e3f4a5b6_s06_t021"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_e3f4a5b6_s07",
+      "session_index": 7,
+      "topic": "Career doubt and life decisions (first Sunday without Simone)",
+      "ts": "2025-11-16",
+      "turns": [
+        {
+          "turn": "grp_e3f4a5b6_s07_t000",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "Evening. Slightly quieter in here than usual.",
+          "ts": "2025-11-16T20:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e3f4a5b6_s07_t001",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "yeah it's weird 😕 I texted Simone earlier and she's fine but it's just. idk. weird",
+          "ts": "2025-11-16T20:01:00",
+          "reply_to": "grp_e3f4a5b6_s07_t000"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s07_t002",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "she hasn't gone yet tbf it's not til January. also she sent me three notes on the rough cut yesterday which were genuinely useful. she's still very much here",
+          "ts": "2025-11-16T20:02:00",
+          "reply_to": "grp_e3f4a5b6_s07_t001"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s07_t003",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "We'll adjust.",
+          "ts": "2025-11-16T20:02:00",
+          "reply_to": "grp_e3f4a5b6_s07_t001"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s07_t004",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "Dev honestly 😂 ok different topic. I've been having a bit of a moment about work and I need to just say it out loud. the startup is fine. like, fine-fine. but I've been there two years and I keep thinking about whether fine is enough",
+          "ts": "2025-11-16T20:03:00",
+          "reply_to": "grp_e3f4a5b6_s07_t003"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s07_t005",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "I'll be honest with you, 'fine' in a job is a much worse feeling than actively bad. At least bad gives you clarity. Fine just means you keep showing up and slowly wonder when you made the decision to stop deciding things.",
+          "ts": "2025-11-16T20:04:00",
+          "reply_to": "grp_e3f4a5b6_s07_t004"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s07_t006",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "THAT. exactly that. like when did I agree to fine. there's a senior role at a much bigger agency that a recruiter sent me last week and I literally closed the email because I was scared which is embarrassing to say out loud but there it is",
+          "ts": "2025-11-16T20:05:00",
+          "reply_to": "grp_e3f4a5b6_s07_t005"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s07_t007",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "ok why is closing the email your first instinct and not 'I'll find out more and see'. being scared of something good is a very Priya move tbf, you do this",
+          "ts": "2025-11-16T20:06:00",
+          "reply_to": "grp_e3f4a5b6_s07_t006"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s07_t008",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "Jonah that is unhelpfully accurate 😭 do you have to be right",
+          "ts": "2025-11-16T20:07:00",
+          "reply_to": "grp_e3f4a5b6_s07_t007"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s07_t009",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "Open the email.",
+          "ts": "2025-11-16T20:08:00",
+          "reply_to": "grp_e3f4a5b6_s07_t007"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s07_t010",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "Dev has given you the complete answer in three words. Open the email. Find out what the role actually is. You don't have to take it. But closing it on instinct is a very Waterloo move, retreating before the battle's started.",
+          "ts": "2025-11-16T20:09:00",
+          "reply_to": "grp_e3f4a5b6_s07_t009"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s07_t011",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "ok fine, I'll open the email. tomorrow. after coffee. also what are you all reading right now because I need to think about something else",
+          "ts": "2025-11-16T20:10:00",
+          "reply_to": "grp_e3f4a5b6_s07_t010"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s07_t012",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "Midway through 'The Warmth of Other Suns', it's the third time I've read it. Also halfway through something on the Ottoman collapse which I've had bookmarked since August. I keep a notebook of everything I read. Current tally this year is thirty-one. February was a strong month.",
+          "ts": "2025-11-16T20:11:00",
+          "reply_to": "grp_e3f4a5b6_s07_t011"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s07_t013",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "Marcus has a literal notebook. not an app. a notebook. this is not surprising at all. I've been watching a lot of Wiseman docs for research, which is work so doesn't count. for fun I've been mainly doomscrolling if I'm honest",
+          "ts": "2025-11-16T20:12:00",
+          "reply_to": "grp_e3f4a5b6_s07_t012"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s07_t014",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "same tbh. ok someone give me an actual recommendation. something I can finish in under two weeks because I have the attention span of a moth right now",
+          "ts": "2025-11-16T20:13:00",
+          "reply_to": "grp_e3f4a5b6_s07_t013"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s07_t015",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "Checkout.",
+          "ts": "2025-11-16T20:14:00",
+          "reply_to": "grp_e3f4a5b6_s07_t014"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s07_t016",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "is that the name of a book or are you telling me to go to bed 😂",
+          "ts": "2025-11-16T20:14:00",
+          "reply_to": "grp_e3f4a5b6_s07_t015"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s07_t017",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "Both, but also a book. Anna Bernasek. Short.",
+          "ts": "2025-11-16T20:15:00",
+          "reply_to": "grp_e3f4a5b6_s07_t016"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s07_t018",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "I'll be honest with you, Dev reading a book about economics and leisure choices is either deeply in character or deeply alarming and I can't tell which.",
+          "ts": "2025-11-16T20:16:00",
+          "reply_to": "grp_e3f4a5b6_s07_t017"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s07_t019",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "ok unrelated but I've been thinking about Simone's thing and I keep landing on the same place. like, she just did it. no half measures, no checking if it felt right. just decided and went. that takes something",
+          "ts": "2025-11-16T20:17:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e3f4a5b6_s07_t020",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "it really does. she's been thinking about it quietly for ages, she told me when we were still flatmates she wanted to work internationally at some point. I just didn't think it would happen this fast",
+          "ts": "2025-11-16T20:18:00",
+          "reply_to": "grp_e3f4a5b6_s07_t019"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s07_t021",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "I noticed she'd been distracted for a while. She went quiet in a particular way. Not a bad-week quiet. More like a decision quiet. I recognise it.",
+          "ts": "2025-11-16T20:19:00",
+          "reply_to": "grp_e3f4a5b6_s07_t020"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s07_t022",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "She'll come back different.",
+          "ts": "2025-11-16T20:20:00",
+          "reply_to": "grp_e3f4a5b6_s07_t021"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s07_t023",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "ok I'm going to open that email now actually. before I talk myself out of it again",
+          "ts": "2025-11-16T20:21:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_e3f4a5b6_s08",
+      "session_index": 8,
+      "topic": "December and year-end planning, trivia night revival",
+      "ts": "2025-11-23",
+      "turns": [
+        {
+          "turn": "grp_e3f4a5b6_s08_t000",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "right so Marcus it's nearly December and you have not mentioned the trivia night and I need to know if we're doing this or if 2025 is the year the institution dies",
+          "ts": "2025-11-23T19:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e3f4a5b6_s08_t001",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "I've been writing the question cards. I have a full round on post-war European history and a wildcard round I'm calling 'did this actually happen or did Jonah make it up'. The institution will not die.",
+          "ts": "2025-11-23T19:16:00",
+          "reply_to": "grp_e3f4a5b6_s08_t000"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s08_t002",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "the wildcard round is a defamation risk but I respect the commitment. when and where",
+          "ts": "2025-11-23T19:17:00",
+          "reply_to": "grp_e3f4a5b6_s08_t001"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s08_t003",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "Proposing December 13th at mine. I'll do food. I was thinking pasta, something I can make ahead. Separate question: are we doing Simone's farewell dinner the same week or different week? Don't want to stack two big evenings in one week.",
+          "ts": "2025-11-23T19:18:00",
+          "reply_to": "grp_e3f4a5b6_s08_t002"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s08_t004",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "different week please, Simone should have her own evening. she's not a supporting act at trivia night 😂 also Marcus are you going to drink at your own trivia night or is the training still ongoing",
+          "ts": "2025-11-23T19:19:00",
+          "reply_to": "grp_e3f4a5b6_s08_t003"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s08_t005",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "The race is in February. I'll have a glass on the 13th. One glass is not a problem. My rule was no drinking at group meals, not no drinking at my own kitchen table.",
+          "ts": "2025-11-23T19:20:00",
+          "reply_to": "grp_e3f4a5b6_s08_t004"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s08_t006",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "noted, Marcus has special rules for himself. classic. ok what about the 7th for Simone, that's a Sunday, she could be there, gives her two weeks before she flies",
+          "ts": "2025-11-23T19:21:00",
+          "reply_to": "grp_e3f4a5b6_s08_t005"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s08_t007",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "I'm in for the 7th if it doesn't clash with the thing. the 13th for trivia I'll confirm this week",
+          "ts": "2025-11-23T19:22:00",
+          "reply_to": "grp_e3f4a5b6_s08_t006"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s08_t008",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "Both.",
+          "ts": "2025-11-23T19:22:00",
+          "reply_to": "grp_e3f4a5b6_s08_t006"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s08_t009",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "Good. December 7th for Simone, December 13th for trivia. I'll find a restaurant for the 7th this week. Somewhere quiet, good menu. Priya, I need you to check it has vegetarian options before we book.",
+          "ts": "2025-11-23T19:23:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e3f4a5b6_s08_t010",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "obviously yes 👍 also I opened the email. the role is senior UX lead at a mid-size agency in Shoreditch. I have an interview on Wednesday",
+          "ts": "2025-11-23T19:24:00",
+          "reply_to": "grp_e3f4a5b6_s08_t009"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s08_t011",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "PRIYA YES!! the email!! get in. you are going to be great on Wednesday. Shoreditch is literally a fifteen minute commute for you is it not",
+          "ts": "2025-11-23T19:25:00",
+          "reply_to": "grp_e3f4a5b6_s08_t010"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s08_t012",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "Good. Wednesday works better for news. You should know by the weekend and we can celebrate at trivia if it goes well, or I'll write a consolation round if not. Either way, the infrastructure is there.",
+          "ts": "2025-11-23T19:26:00",
+          "reply_to": "grp_e3f4a5b6_s08_t011"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s08_t013",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "You'll get it.",
+          "ts": "2025-11-23T19:27:00",
+          "reply_to": "grp_e3f4a5b6_s08_t010"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s08_t014",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "Dev I swear you're like an oracle who speaks entirely in short sentences. thank you 😂",
+          "ts": "2025-11-23T19:28:00",
+          "reply_to": "grp_e3f4a5b6_s08_t013"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s08_t015",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "ok can we also discuss the fact that Marcus has been doing long runs without telling anyone and now wants to rope Dev in. Dev how far did you actually run on the descent at Kinder Scout because it looked like a full race pace",
+          "ts": "2025-11-23T19:29:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e3f4a5b6_s08_t016",
+          "speaker": "Dev",
+          "speaker_id": "p_cf33e5f6a7",
+          "content": "About four kilometres. It was a good surface.",
+          "ts": "2025-11-23T19:29:00",
+          "reply_to": "grp_e3f4a5b6_s08_t015"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s08_t017",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "Dev and Marcus are now a trail running duo and no one told me. I am genuinely hurt. I have been evangelising this group for countryside stuff for YEARS and Dev just quietly became the athlete",
+          "ts": "2025-11-23T19:30:00",
+          "reply_to": "grp_e3f4a5b6_s08_t016"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s08_t018",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "You're welcome to join us, Jonah. Dev and I are doing a twelve-kilometre trail route on the 30th. No Priya, obviously. She's been formally excused on medical grounds.",
+          "ts": "2025-11-23T19:31:00",
+          "reply_to": "grp_e3f4a5b6_s08_t017"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s08_t019",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "medical grounds is a polite way to say I just don't want to 😌 you three go, I'll have a nice Sunday. maybe I'll do a bit of scouting for that city trip I'm planning",
+          "ts": "2025-11-23T19:32:00",
+          "reply_to": "grp_e3f4a5b6_s08_t018"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s08_t020",
+          "speaker": "Jonah",
+          "speaker_id": "p_cf33c3d4e5",
+          "content": "I'm in for the 30th. also Priya the 'city trip I'm planning' is very much your villain origin story for the next group argument. I respect it. tbf if it's a good city I'm not against it for the spring",
+          "ts": "2025-11-23T19:33:00",
+          "reply_to": "grp_e3f4a5b6_s08_t019"
+        },
+        {
+          "turn": "grp_e3f4a5b6_s08_t021",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf33a1b2c3",
+          "content": "City trip in spring has potential. That's a discussion for January. For now: restaurant for December 7th, trivia on the 13th, and everyone confirm they know what they're doing for New Year because I need to make a booking by Friday at the latest.",
+          "ts": "2025-11-23T19:34:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_e3f4a5b6_s08_t022",
+          "speaker": "Priya",
+          "speaker_id": "p_cf33b2c3d4",
+          "content": "there he is 😂 Marcus in full logistics mode is such a comfort honestly. I'm in if it doesn't clash with the thing",
+          "ts": "2025-11-23T19:35:00",
+          "reply_to": "grp_e3f4a5b6_s08_t021"
+        }
+      ]
+    }
+  ],
+  "qa_pairs": [
+    {
+      "id": "Q1_9dd1f77c",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Marcus's approach to suggesting group outings reveal about his preferences when it comes to choosing places to eat?",
+      "answer": "Marcus consistently prefers well-researched, sit-down dining over casual or impromptu choices. In Session 1 he proposes a new Italian restaurant on Renfield Street, including its opening hours, Yelp rating (4.3), and a one-sentence review about the pasta — a level of preparation that goes well beyond simply naming a place. In Session 5 he follows the same pattern when he pre-looks up the Cheshire Cheese pub for the post-hike stop, mentioning it closes at eleven, has two Google pages, and quoting 'warm atmosphere and generous portions'. In Session 3 he explicitly says anyone attending Priya's third date should go 'somewhere you can actually hear the conversation', reinforcing his preference for quieter sit-down settings. The pattern reveals that Marcus prepares restaurant suggestions like a planner, not an omnivore — he arrives with ratings, hours, and a verdict already formed.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_e3f4a5b6_s01_t009",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "I was thinking the new Italian place on Renfield Street. Opens at six, closes at eleven, 4.3 on Yelp, 'the pasta is made fresh daily and the portions are embarrassingly generous'.",
+          "relevance": "Marcus proposes the venue with opening times, Yelp rating, and a one-sentence review — the core pattern of his food venue preference"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_e3f4a5b6_s05_t022",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "I'll look up the Cheshire Cheese menu in advance so Priya can check the vegetarian options before she decides the pub was a mistake too. Closes at eleven, two pages on Google, 'warm atmosphere and generous portions'.",
+          "relevance": "Same pattern in Session 5: Marcus researches and presents the venue with closing time, review quote, and proactive accommodation of Priya's dietary needs"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_491c9d3b",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Dev's reaction to hearing a restaurant described in a certain way suggest about his actual food preferences?",
+      "answer": "Dev dislikes food that lacks a clear identity — what he calls 'fusion'. In Session 3, when Priya describes her date's restaurant choice as a fusion place near the canal, Dev responds with two words: 'Fusion is a red flag.' The bluntness and lack of qualification show this is a settled position, not a casual opinion. Marcus immediately validates it, noting that 'fusion' as a descriptor usually means 'we couldn't commit to a cuisine', which Priya's subsequent description of 'miso chicken tacos' confirms. Dev's preference is for food that is clearly one thing — implicitly, food with a defined identity and provenance. The minimal delivery ('Fusion is a red flag.') is consistent with his overall communication style and makes the opinion land harder rather than softer.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_e3f4a5b6_s03_t003",
+          "speaker_display_name": "Dev",
+          "message_excerpt": "Fusion is a red flag.",
+          "relevance": "Dev's unprompted, unqualified dismissal of the fusion restaurant is the clearest statement of his food preference"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_e3f4a5b6_s03_t004",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "Dev's not wrong. 'Fusion' as a restaurant descriptor usually means 'we couldn't commit to a cuisine'.",
+          "relevance": "Marcus's immediate agreement reinforces that Dev's position is recognisable and consistent, not an off-the-cuff comment"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_95d52657",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Simone's behaviour around choosing where the group meets suggest about what she values in a social setting?",
+      "answer": "Simone consistently prioritises quiet environments where conversation is possible. In Session 3 she explicitly seconds Marcus's proposal for somewhere quiet for the post-hike dinner, saying 'somewhere quiet would be ideal. I'd rather be able to debrief properly than sit in a place where everyone is shouting.' This is not prompted by any personal grievance — it is a positive preference she volunteers. Earlier in Session 1 she endorses the Italian restaurant Marcus suggests without comment, and in Sessions 2 and 4 she is reliably the person who confirms logistics (dates, costs, trains) rather than debating venue aesthetics, consistent with someone who wants the practical environment sorted. In Session 6 she says for her farewell she wants 'something quiet. Not a party, just us.', applying the same preference to the most personal group event in the corpus.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_e3f4a5b6_s03_t022",
+          "speaker_display_name": "Simone",
+          "message_excerpt": "somewhere quiet would be ideal. I'd rather be able to debrief properly than sit in a place where everyone is shouting.",
+          "relevance": "Simone's direct statement of her restaurant noise preference — she wants to be able to hear conversation"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_e3f4a5b6_s06_t018",
+          "speaker_display_name": "Simone",
+          "message_excerpt": "I'd like that, if everyone's up for it. Something quiet. Not a party, just us.",
+          "relevance": "Simone applies the same quiet-environment preference even to her farewell occasion, showing it is a stable preference not context-specific"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_ed752db0",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Dev's pattern of responding to group events reveal about his relationship to social participation?",
+      "answer": "Dev participates in group plans consistently but shows no enthusiasm for initiating or deliberating — he is driven by not wanting to miss out rather than by active desire. In Session 1, Jonah teases him about his characteristic pattern: 'Dev u coming or are u gonna do ur classic reads message, shows up in person thing' — and Dev's response is a single 'Yes.' In Session 4, when the group finalises the Peak District train logistics, Dev says 'I'll get the same train.' without being asked and without any qualification. In Session 8, he responds to both December event proposals with a single 'Both.' The consistency of one-word confirmations, the absence of conditions or objections, and the group's easy familiarity with his pattern all suggest that Dev shows up to everything the group does — he simply doesn't broadcast it in advance.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_e3f4a5b6_s01_t014",
+          "speaker_display_name": "Jonah",
+          "message_excerpt": "Dev u coming or are u gonna do ur classic 'reads message, shows up in person' thing",
+          "relevance": "Jonah names Dev's pattern explicitly — reads without responding, then simply shows up"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_e3f4a5b6_s04_t020",
+          "speaker_display_name": "Dev",
+          "message_excerpt": "I'll get the same train.",
+          "relevance": "Dev confirms participation in the trip without prompting, in a single sentence — consistent with his FOMO-driven attendance pattern"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_fe87950a",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does the way Dev's baking came to the group's attention suggest about how he tends to introduce personal interests or skills?",
+      "answer": "Dev does not announce new personal interests or skills — he simply acts on them and lets others notice. Priya reveals in Session 5 that Dev had brought sourdough bread to a gathering at Marcus's, and she reacts with surprise: 'he made it himself!! like from scratch with the starter and everything. Dev when did you become a baker'. Dev's response is a single word: 'Lockdown.' — confirming the timeline but volunteering no further detail. Marcus adds that Dev has 'been at it for a while' and 'has been quietly holding out on us', confirming that this was a sustained private practice, not a new hobby. The pattern — develop a skill privately over an extended period, bring its output to the group without explanation, let the group discover it — is consistent with Dev's broader character of doing things without announcement.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_e3f4a5b6_s05_t006",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "he made it himself!! like from scratch with the starter and everything 😱 Dev when did you become a baker",
+          "relevance": "Priya's surprise reveals this was unannounced — Dev brought the bread without advance notice or explanation"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_e3f4a5b6_s05_t007",
+          "speaker_display_name": "Dev",
+          "message_excerpt": "Lockdown.",
+          "relevance": "Dev's single-word answer confirms the skill has a long history but he reveals nothing more — consistent with the pattern of quiet private development"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_45860c4c",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Marcus's approach to tracking and discussing books suggest about how he engages with reading as a personal practice?",
+      "answer": "Marcus treats reading as a deliberate, tracked pursuit rather than passive leisure. In Session 7 he reveals that he keeps a physical notebook tracking every book he reads — not an app — and mentions his current year-to-date tally is thirty-one, noting that 'February was a strong month'. Jonah's immediate reaction ('Marcus has a literal notebook. not an app. a notebook. this is not surprising at all.') signals that this is consistent with Marcus's broader character as a meticulous planner. Earlier in Session 7 Marcus mentions he is midway through The Warmth of Other Suns on his third reading and also has a book on the Ottoman collapse 'bookmarked since August', suggesting a multi-track reading habit. The combination of a physical notebook, multi-book concurrency, and year-long tracking reveals reading as a structured personal project rather than something he does casually.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 7,
+          "turn_id": "grp_e3f4a5b6_s07_t012",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "I keep a notebook of everything I read. Current tally this year is thirty-one. February was a strong month.",
+          "relevance": "Marcus reveals he tracks all books in a physical notebook — the core evidence of his structured reading habit"
+        },
+        {
+          "session_index": 7,
+          "turn_id": "grp_e3f4a5b6_s07_t013",
+          "speaker_display_name": "Jonah",
+          "message_excerpt": "Marcus has a literal notebook. not an app. a notebook. this is not surprising at all.",
+          "relevance": "Jonah's reaction confirms the notebook habit is recognisably consistent with Marcus's character — not a new or surprising revelation"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_2f220aea",
+      "category": "Q2",
+      "difficulty": "medium",
+      "question": "The group voted to go to the Peak District on November 8th and everyone registered some form of agreement. What did one member's response to that decision signal about how they actually felt, and what specifically in how they responded tells you that?",
+      "answer": "The group decided on a Peak District hiking trip to Kinder Scout on November 8-9. Marcus, Jonah, and Dev were enthusiastically in favour. Priya agreed but her real discomfort was visible through two signals: first, she preemptively framed the trip as a survival challenge ('14km in November mud is not a walk, that's a survival exercise'); then, when she finally confirmed, she said 'yeah ok fine I'm in if it doesn't clash with the thing. but someone is buying me proper waterproof trousers if my jeans end up destroyed.' The 'yeah ok fine' is a resigned acceptance rather than genuine agreement. The jeans comment is the giveaway — she is so disengaged from the hiking logistics that she was planning to go in jeans, a detail Jonah finds 'genuinely alarming'. Simone confirmed in-principle but with a date-verification condition. The dissenter is Priya.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Jonah",
+        "B": "Priya",
+        "C": "Dev",
+        "D": "Simone"
+      },
+      "correct_option": "B",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_e3f4a5b6_s02_t011",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "yeah ok fine 🙄 I'm in if it doesn't clash with the thing. but someone is buying me proper waterproof trousers if my jeans end up destroyed",
+          "relevance": "Priya's resigned tone and jeans comment reveal she was never genuinely on board — the waterproof trousers demand signals she hadn't even prepared for the activity properly"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_839a6534",
+      "category": "Q2",
+      "difficulty": "medium",
+      "question": "After the group confirmed there would be a post-hike pub visit, one member's agreement contained a condition that revealed their real position on the trip. What did that condition signal about their actual attitude, and how would you have known from the way they phrased it?",
+      "answer": "The group confirmed they would go to a pub after the Kinder Scout hike and everyone assented. Priya agreed — 'yes fine I'll do the pub' — but attached a specific condition: 'as long as nobody forces me back up a hill on Sunday morning'. The condition matters more than the agreement. Priya is not just expressing general fatigue or a preference for rest — she is pre-emptively ruling out a Sunday morning extension of the hike, which only makes sense if she is already anticipating she will have had enough by Saturday. The phrase 'forces me back up' implies she expects there will be pressure and she is drawing the line in advance. Combined with her earlier jeans comment from Session 2, this is the second instance in two sessions of Priya signalling genuine reluctance while nominally agreeing. The dissenter is Priya.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Dev",
+        "B": "Jonah",
+        "C": "Marcus",
+        "D": "Priya"
+      },
+      "correct_option": "D",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_e3f4a5b6_s03_t024",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "yes fine I'll do the pub, as long as nobody forces me back up a hill on Sunday morning",
+          "relevance": "Priya's pre-emptive condition about Sunday morning reveals she is already mentally managing her exit from the hiking commitment — she agrees to the pub but draws a line against further hiking"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_9ce580d7",
+      "category": "Q2",
+      "difficulty": "hard",
+      "question": "When Marcus asked the group to confirm plans for New Year, one member responded in a way that had become a recognisable pattern across multiple sessions. What did that response reveal about how they actually approach group commitments, and what in how they phrased it — across the whole conversation — makes that visible?",
+      "answer": "When Marcus asked for New Year confirmation in Session 8, Priya replied 'I'm in if it doesn't clash with the thing' — the same phrasing she had used in Session 1 ('I'm in if it doesn't clash with the thing. Friday should be ok but I'll confirm Weds'), Session 2 ('I'm in if it doesn't clash with the thing'), and Session 8 for the trivia night ('I'll confirm this week'). The pattern is not just hedging — 'the thing' is never specified in any session. It is a placeholder that allows Priya to signal participation without committing. Across four instances she never identifies what 'the thing' is. The group clearly recognises this — Priya herself acknowledges in Session 8 that Marcus in 'full logistics mode is such a comfort', suggesting she finds comfort in his planning precisely because her own commitments are always provisional. Her social planning preference is: signal intent to participate, preserve maximum optionality, commit only at the last moment. Priya is the dissenter from the norm of giving advance notice.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Jonah",
+        "B": "Dev",
+        "C": "Marcus",
+        "D": "Priya"
+      },
+      "correct_option": "D",
+      "evidence_anchors": [
+        {
+          "session_index": 8,
+          "turn_id": "grp_e3f4a5b6_s08_t022",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "I'm in if it doesn't clash with the thing",
+          "relevance": "Priya's fourth use of this identical phrase across sessions — the pattern across sessions 1, 2, and 8 makes this a structural behaviour, not a one-off hedge"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_e3f4a5b6_s01_t013",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "I'm in if it doesn't clash with the thing. Friday should be ok but I'll confirm Weds",
+          "relevance": "First instance of the phrase — establishes the pattern from Session 1, with 'the thing' never defined"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_3e9956ac",
+      "category": "Q2",
+      "difficulty": "hard",
+      "question": "After the Peak District trip, the group debriefed and one member confirmed they had run on the descent. What did that confirmation signal about their actual preference for the kind of group trip this was, and what in their phrasing reveals that this was more than just neutral attendance?",
+      "answer": "The group went to the Peak District primarily as a hiking trip. Dev responded to Jonah's question about how far he ran on the descent with: 'About four kilometres. It was a good surface.' The brevity and matter-of-fact tone are characteristic of Dev, but the content reveals something specific — he assessed the surface quality, which is a trail runner's evaluation, not a hiker's. For Dev, the descent was a running opportunity, not just a walk down. This is confirmed by context: he had already disclosed in Session 5 that he trail runs three times a week and considers the canal 'just a warmup'. The Session 8 confirmation shows that countryside trips with runnable terrain are now his active preference, not just tolerated group participation. Jonah's reaction — 'I have been trying to get people to do trail runs with me for literally two years' — confirms Dev's countryside preference had been developing privately for some time. Dev is the member whose assent concealed a distinctly more enthusiastic real position than the group had assumed.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Marcus",
+        "B": "Priya",
+        "C": "Jonah",
+        "D": "Dev"
+      },
+      "correct_option": "D",
+      "evidence_anchors": [
+        {
+          "session_index": 8,
+          "turn_id": "grp_e3f4a5b6_s08_t016",
+          "speaker_display_name": "Dev",
+          "message_excerpt": "About four kilometres. It was a good surface.",
+          "relevance": "Dev's assessment of the surface quality reveals a trail runner's perspective — he was evaluating the terrain for running, not just completing the descent"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_e3f4a5b6_s05_t011",
+          "speaker_display_name": "Dev",
+          "message_excerpt": "Three times a week. Trail running mostly. The canal is just a warmup.",
+          "relevance": "Session 5 context confirms Dev is a serious trail runner — the Kinder Scout descent was an extension of a regular practice, not a novelty"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q4_509f4b31",
+      "category": "Q4",
+      "difficulty": "medium",
+      "question": "One group member made a point of requesting that the exact trip dates be confirmed before the end of the week, expressing a need to check their calendar before fully committing. Which member made this specific request?",
+      "answer": "Simone made this request. In Session 2 she said: 'In, assuming I can confirm by end of week. Just to flag, I'd need the exact dates locked down so I can check my calendar properly. Can we confirm Friday at the latest?' The phrasing is distinctly Simone's: the 'just to flag' preface, the structured sentence pattern, and the specific deadline ('by Friday') all match her semi-formal communication style. The request itself reflects her consistent need for advance certainty about plans — the same preference she expresses in Session 1 when she says she'd need to know by Wednesday if it's Friday. Marcus is the plausible wrong answer: as the group's planner he also cares about confirming logistics in advance, and he is the one who actually books the bunkhouse and sends confirmations. However Marcus's concern is about organising everyone else, not about needing personal calendar clearance — he volunteers organisation rather than requesting it. Simone's request comes from a personal need for structure, not from a planning instinct.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Priya",
+        "B": "Dev",
+        "C": "Simone",
+        "D": "Marcus"
+      },
+      "correct_option": "C",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_e3f4a5b6_s02_t010",
+          "speaker_display_name": "Simone",
+          "message_excerpt": "I'd need the exact dates locked down so I can check my calendar properly. Can we confirm Friday at the latest?",
+          "relevance": "Simone's explicit request for a Friday confirmation deadline is the true source of the advance-notice preference signal"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_f89c074a",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "What is Priya's actual position on countryside hiking, and how does Jonah demonstrate — through what he says to her — that he already has knowledge of her prior stance on it?",
+      "answer": "Priya's actual position is that she dislikes countryside hiking: she finds it muddy, physically punishing, and not worth the effort. By the time the Peak District trip is proposed in Session 2, she is already resistant. However, Jonah refers to an earlier exchange when he says: 'Priya didn't you say you'd try a proper walk again? like a real one, not a flat park loop'. This is a knowing reference — Jonah is invoking something Priya said previously (not in this session), which implies he remembers a prior concession she made, likely that she had tolerated a short countryside walk at some point. Priya's correction is immediate and precise: 'I said I'd consider it. there's a difference.' The fact that Jonah phrases his question as a memory ('didn't you say') rather than a new suggestion shows he knew her prior stated position and was using it as leverage. His prior knowledge of her earlier (reluctant) tolerance is what makes his appeal an informed one rather than an uninformed pitch.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_e3f4a5b6_s02_t005",
+          "speaker_display_name": "Jonah",
+          "message_excerpt": "Priya didn't you say you'd try a proper walk again? like a real one, not a flat park loop",
+          "relevance": "Jonah's 'didn't you say' framing reveals he is drawing on prior knowledge of Priya's stated position — not guessing, but referencing a memory"
+        },
+        {
+          "session_index": 2,
+          "turn_id": "grp_e3f4a5b6_s02_t006",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "I said I'd consider it 😑 there's a difference. also 14km in November mud is not 'a walk', that's a survival exercise",
+          "relevance": "Priya's correction ('I said I'd consider it, there's a difference') confirms Jonah's memory was real but overstated — she had been willing to consider, not commit"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_7bb66265",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "What is Priya's preference regarding noisy restaurants, and how does Simone's behaviour demonstrate that she had prior knowledge of this — not because someone told her in this session, but because of something she observed in Priya's own words?",
+      "answer": "Priya dislikes restaurants where the noise level makes conversation difficult — she wants to be able to actually hear the people she is with. In Session 3 Simone reveals this knowledge without being told. When Marcus suggests finding somewhere quiet for Priya's third date, Simone adds: 'Priya, didn't you say that place near the canal last month was so loud you had to lean in to hear each other?' Simone is not inferring this preference from general behaviour — she is recalling a specific prior complaint Priya made. This is an observable knowing reference: Simone quotes Priya's own words back to her in a way that shows she had paid attention to and retained what Priya said about a previous venue. Priya's response confirms the memory is accurate: 'yes! literally couldn't hear a single word, had to do that thing where you just nod and hope'. Simone's recall of Priya's complaint is the evidence of prior knowledge — it is an in-chat behaviour (referencing a prior statement) rather than a claimed private conversation.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_e3f4a5b6_s03_t011",
+          "speaker_display_name": "Simone",
+          "message_excerpt": "Priya, didn't you say that place near the canal last month was so loud you had to lean in to hear each other?",
+          "relevance": "Simone quotes Priya's own prior complaint back to her — an in-chat observable reference that proves she had heard and retained Priya's noise preference"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_e3f4a5b6_s03_t012",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "yes! literally couldn't hear a single word, had to do that thing where you just nod and hope",
+          "relevance": "Priya's enthusiastic confirmation verifies that Simone's recall was accurate — this is precisely what Priya had said before"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q6_673dca4e",
+      "category": "Q6",
+      "difficulty": "hard",
+      "question": "The group operates on the understanding that when someone cannot make a plan, they give as much notice as possible. Does this hold for everyone in the group? If not, who behaves differently and what in the conversation shows it?",
+      "answer": "No — Priya consistently does not give advance notice or full commitment to group plans. Across Sessions 1, 2, 3, and 8, she repeats the same phrase: 'I'm in if it doesn't clash with the thing' — and in no instance does she ever specify what 'the thing' is. The phrase functions as a provisional signal of intent that preserves her ability to withdraw without explanation. In Session 1 she says she'll confirm by Wednesday; in Session 8 she applies the same formula to New Year's and again to the trivia night. She never names 'the thing', never cancels explicitly on-screen, and never gives defined advance notice. The group norm says 'as much notice as possible' — but Priya's pattern is conditional participation, not committed confirmation. Her behaviour is recognisably distinct to the group: Jonah calls out in Session 3 that 'being scared of something good is a very Priya move', and in Session 8 Marcus's reassurance that 'the infrastructure is there' suggests the group has built contingency around Priya's unreliable commitment.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Jonah",
+        "B": "Priya",
+        "C": "Dev",
+        "D": "Marcus"
+      },
+      "correct_option": "B",
+      "evidence_anchors": [
+        {
+          "session_index": 8,
+          "turn_id": "grp_e3f4a5b6_s08_t022",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "I'm in if it doesn't clash with the thing",
+          "relevance": "Fourth instance of the phrase across sessions — by Session 8 the pattern is established as a structural behaviour, not a one-off"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_e3f4a5b6_s01_t013",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "I'm in if it doesn't clash with the thing. Friday should be ok but I'll confirm Weds",
+          "relevance": "First instance of the phrase — 'the thing' is never defined, establishing from the start that Priya's confirmations are provisional"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_c5e76e87",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does the group's behaviour toward Dev in the chat — and how he responds to it — reveal about his social pattern with them?",
+      "answer": "Dev's relationship with the group is characterised by a recognised pattern: he reads messages without responding and then simply shows up in person. In Session 1 Jonah explicitly names this pattern: 'Dev u coming or are u gonna do ur classic reads message, shows up in person thing' — and the phrasing 'ur classic' shows the group treats this as an established, even affectionate, quirk rather than a problem. Dev confirms he is coming with a single word: 'Yes.' In Session 4 he again commits to the trip in one sentence without being asked: 'I'll get the same train.' In Session 8 he responds to two event invitations with 'Both.' The group does not pressure him to engage differently — Priya calls him 'iconic' after his one-word reply in Session 1. This reveals a stable, accepted dynamic: Dev's participation is silent but reliable; his brevity is not read as coldness by the group but as his mode.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "reads messages without responding, shows up in person reliably",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_e3f4a5b6_s01_t014",
+          "speaker_display_name": "Jonah",
+          "message_excerpt": "Dev u coming or are u gonna do ur classic 'reads message, shows up in person' thing",
+          "relevance": "Jonah names Dev's pattern as a 'classic' — the group already knows and accepts this as his mode of participation"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_e3f4a5b6_s01_t015",
+          "speaker_display_name": "Dev",
+          "message_excerpt": "Yes.",
+          "relevance": "Dev's single-word reply confirms without commentary — exactly the pattern Jonah just named"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_ffee963c",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "Based on what is said in the conversation, what is the nature of the relationship between Marcus and Jonah, and what does it tell you about the history and dynamic between them?",
+      "answer": "Marcus and Jonah have a long-standing friendship marked by friendly competition and mutual affection. Priya reveals in Session 1 that they have a running rivalry at trivia nights ('are you still pretending you don't care that he beat you last time'), and Jonah disputes the Churchill round result with mock indignation. Marcus responds by invoking a Nuremberg defence analogy, which Jonah accepts as the sharpest burn he has received. The competitive dynamic is clearly a feature of the relationship rather than a source of genuine tension. In Session 4 Marcus is the person whose interest specifically moves Jonah to share his documentary project — Jonah says 'Marcus you're getting it first because you actually asked'. In Session 8 Marcus has already written trivia question cards with a wildcard round themed around Jonah ('did this actually happen or did Jonah make it up'). The pattern in the conversation shows a friendship built on years of shared history, a specific competitive tradition (trivia), and a dynamic where Marcus is the person whose attention Jonah most values.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "childhood friends with long-running friendly competition and mutual respect",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_e3f4a5b6_s01_t016",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "have you spoken to Marcus about the trivia night yet or are you still pretending you don't care that he beat you last time",
+          "relevance": "Priya names the recurring competitive dynamic between Marcus and Jonah — this is clearly a known long-standing feature of their relationship"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_e3f4a5b6_s04_t009",
+          "speaker_display_name": "Jonah",
+          "message_excerpt": "Marcus you're getting it first because you actually asked",
+          "relevance": "Jonah credits Marcus's interest specifically as the reason for sharing the documentary — Marcus's attention carries particular weight for Jonah"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_5898b876",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "Based on what is said in the conversations, what is the relationship between Marcus and Priya and what does it tell you about how long they have known each other?",
+      "answer": "Marcus and Priya grew up two houses apart and have known each other since childhood. Priya reveals this in Session 2 when she says to Simone: 'Marcus and I literally grew up two houses apart, he's basically my annoying older brother who takes the seating plan at dinner too seriously.' The 'annoying older brother' framing — affectionate but slightly exasperated — suggests a closeness built over decades, where irritating habits are familiar rather than new. In Session 1 Priya is already framing Marcus's behaviours (trivia competitiveness) to the group as well-known character traits. By Session 3 she is comfortable calling him out directly ('ok Marcus yes please pick somewhere with actual acoustics') and taking his restaurant-recommendation role for granted. The conversation shows a relationship where neither needs to explain context — they operate within a shared shorthand built over many years.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "childhood friends who grew up two houses apart",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_e3f4a5b6_s02_t016",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "Marcus and I literally grew up two houses apart, he's basically my annoying older brother who takes the seating plan at dinner too seriously",
+          "relevance": "Priya directly states the origin of her relationship with Marcus — same street, childhood, longstanding familiarity"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_9ca2ef5c",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "Based on what is said in the conversation, what is the connection between Priya and Simone, and what does it tell you about how Simone came to know the group?",
+      "answer": "Priya and Simone were former flatmates — they shared a flat before Simone joined the group. In Session 2 Simone responds to Priya's introduction of Marcus's quirks with: 'You mentioned it when we were still in the flat. I'm aware of the seating plan reputation.' This confirms Simone was told about the group's dynamics by Priya before she joined — she arrived knowing the personalities. In Session 3 Priya references their shared past with 'Dev and I literally had this exact conversation at uni' (separately), and Simone's easy comfort with Priya's teasing in Session 5 ('Simone you're the only reasonable person coming on this trip') suggests a closeness that predates the group. In Session 7 Priya confirms 'she told me when we were still flatmates she wanted to work internationally at some point', establishing Simone as having been Priya's close confidant before the group was a regular part of either of their lives.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "former flatmates; Priya brought Simone into the group",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_e3f4a5b6_s02_t017",
+          "speaker_display_name": "Simone",
+          "message_excerpt": "You mentioned it when we were still in the flat. I'm aware of the seating plan reputation.",
+          "relevance": "Simone's reference to 'when we were still in the flat' confirms she and Priya were flatmates, and that Simone knew about group dynamics from Priya before joining"
+        },
+        {
+          "session_index": 7,
+          "turn_id": "grp_e3f4a5b6_s07_t020",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "she's been thinking about it quietly for ages, she told me when we were still flatmates she wanted to work internationally at some point",
+          "relevance": "Priya's reference to the flat confirms the flatmate relationship and the depth of confidence Simone had in Priya from before the group"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_5b25e16f",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "Based on what is said in the conversations, what is the connection between Priya and Dev, and what does it tell you about how Dev came to be part of this group?",
+      "answer": "Priya and Dev met at university and have been friends for over a decade. In Session 3, when Dev gives his characteristic one-word answer about dating ('Not a priority.'), Priya laughs: 'Dev and I literally had this exact conversation at uni. he's been saying not a priority since second year. it's a lifestyle choice at this point.' This tells us Dev's terseness and interpersonal patterns are familiar to Priya from well before he joined the group — she can interpret his one-word responses as his personality rather than as coldness precisely because she has years of context. Later in Session 7 it is Priya who serves as an interpreter of Dev for the others: she calls him 'an oracle who speaks entirely in short sentences.' The conversation implies Dev entered the group through Priya, and that Priya is the member who most fluently reads his communication style.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "university friends; Priya introduced Dev to the group",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_e3f4a5b6_s03_t020",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "Dev and I literally had this exact conversation at uni 😂 he's been saying 'not a priority' since second year. it's a lifestyle choice at this point",
+          "relevance": "Priya directly references their shared history at university — she knows Dev's communication pattern from their years of friendship before the group"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_61b9a50a",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "Based on what the conversation reveals, what does Jonah's decision about who gets to see his documentary first tell you about the relationship between Jonah and Marcus?",
+      "answer": "Jonah sends Marcus the documentary rough cut first, explicitly because of Marcus's genuine interest. In Session 4 Jonah says: 'Marcus you're getting it first because you actually asked.' This is not just a thank-you — it is a statement that Marcus's willingness to ask sincerely was the thing that moved Jonah to share work he had been holding private for months. Earlier in the same session Jonah mentions the project hesitantly ('I dunno if it's ready to show anyone yet'), and it is only after Marcus presses with genuine curiosity ('I'd like to see it. Genuinely. Not being polite. You mentioned it back in, what, August?') that Jonah opens up. In Session 6 Jonah extends the same privilege to Simone before she leaves — but the original and primary recipient was Marcus. The conversation shows Marcus has a specific role in Jonah's creative life: his encouragement and interest are what turn Jonah's private practice into something shared.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "childhood friends; Marcus's encouragement directly moves Jonah to share personal work",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_e3f4a5b6_s04_t009",
+          "speaker_display_name": "Jonah",
+          "message_excerpt": "Marcus you're getting it first because you actually asked",
+          "relevance": "Jonah credits Marcus's asking as the specific reason for sharing — the relationship's dynamic is that Marcus's genuine interest is what unlocks Jonah's openness"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_e3f4a5b6_s04_t004",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "I'd like to see it. Genuinely. Not being polite. You mentioned it back in, what, August? And then said nothing. What's it about?",
+          "relevance": "Marcus's pressing enquiry — 'not being polite', referencing the August mention — is the specific catalyst that made Jonah feel seen and prompted him to share"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_a3911288",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "Based only on what the conversation reveals, what does Simone's response to Priya tell you about the dynamic between them within the group?",
+      "answer": "Simone's response to Priya in Session 5 reveals a quiet alliance between them. When Priya jokingly complains that Dev and Marcus will sprint past her on the Kinder Scout descent while she is left behind, she addresses Simone directly: 'Simone you're the only reasonable person coming on this trip.' Simone responds: 'I'll be walking at a sensible pace and not running anywhere. We can be at the back together.' Simone does not need to explain this — she simply positions herself alongside Priya without discussion. This is not just solidarity around hiking preferences; it is a social alignment. Both women place themselves in opposition to the trail-running enthusiasts (Marcus, Dev, Jonah) without any negotiation or explicit agreement. The ease of this alignment, the fact that Simone frames it as a joint plan ('We can be at the back together'), and Priya's immediate acceptance suggest an established sub-alliance within the group.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "quiet alliance; Simone aligns with Priya without needing to discuss it",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_e3f4a5b6_s05_t020",
+          "speaker_display_name": "Simone",
+          "message_excerpt": "I'll be walking at a sensible pace and not running anywhere. We can be at the back together.",
+          "relevance": "Simone positions herself alongside Priya without any prompting — the 'we' framing and the ease of the alignment reveal an established sub-group dynamic"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_4eca1710",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "Based on what Priya reveals, what does the conversation tell you about how long Simone had been considering working abroad, and what does this tell you about the nature of the relationship between Priya and Simone?",
+      "answer": "Priya reveals in Session 7 that Simone had been thinking about working internationally since before she joined the group — 'she told me when we were still flatmates she wanted to work internationally at some point.' This means Simone's Singapore secondment was not a sudden decision but the realisation of a long-held aspiration she had shared privately with Priya years earlier. The fact that Simone told Priya this during their flatmate period — before the group was a fixture of both of their lives — establishes Priya as someone Simone trusts with personal plans before they are ready to be shared more widely. In Session 6 this pattern recurs: Simone tells Priya about the acceptance 'the same day I signed but I wanted to get the notice sorted before I said anything here.' Priya knew weeks before the group did. The conversations reveal a confidant relationship: Priya is consistently the first to know when Simone makes a significant life decision.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "Priya was Simone's confidant; Simone shared international ambitions from their flatmate years",
+      "evidence_anchors": [
+        {
+          "session_index": 7,
+          "turn_id": "grp_e3f4a5b6_s07_t020",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "she's been thinking about it quietly for ages, she told me when we were still flatmates she wanted to work internationally at some point",
+          "relevance": "Priya reveals Simone disclosed the international ambition during their flatmate period — predating the group and establishing Priya as Simone's long-term confidant"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_e3f4a5b6_s06_t012",
+          "speaker_display_name": "Simone",
+          "message_excerpt": "Three weeks. I told Priya the same day I signed but I wanted to get the notice sorted before I said anything here.",
+          "relevance": "Simone confirms the pattern in-session: Priya was told first, consistent with their confidant relationship"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q8_5fd3bd95",
+      "category": "Q8",
+      "difficulty": "hard",
+      "question": "Where in the conversation did Jonah's behaviour around his personal film project first change, and what in the conversation explains why it shifted from the private pattern he had maintained before?",
+      "answer": "Jonah's shift occurs in Session 4. Before Session 4, Jonah had kept his personal documentary project entirely separate from the group chat — he had mentioned it once 'back in August' (per Marcus's reference) and then said nothing more. His earlier behaviour in group contexts is about client work and deadlines, never personal creative projects. The shift is triggered by Marcus. In Session 4 Jonah mentions the project hesitantly ('I don't know. it's a short doc, sort of. I dunno if it's ready to show anyone yet'), and Marcus responds: 'I'd like to see it. Genuinely. Not being polite.' — and then presses with a specific question about the subject matter. This is the observable trigger: Marcus's explicitly non-performative interest, combined with his memory of the August mention, creates conditions where Jonah feels safe sharing. Jonah describes the project for the first time ('it's about that estate on the edge of town...'), commits to sending a rough cut, and designates Marcus as the first recipient. After Session 4 Jonah continues sharing the project: he mentions it in Session 6 and sends Simone the final cut before she leaves. The shift from private to shared is both sudden (triggered in one exchange) and durable.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_e3f4a5b6_s04_t005",
+          "speaker_display_name": "Jonah",
+          "message_excerpt": "it's about that estate on the edge of town, like the community that got displaced when the development went in. been filming on and off for about eight months. it's rough but there's something there I think",
+          "relevance": "First full description of the project — Jonah opens up in response to Marcus's genuine question, crossing from private to shared for the first time"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_e3f4a5b6_s04_t004",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "I'd like to see it. Genuinely. Not being polite. You mentioned it back in, what, August? And then said nothing. What's it about?",
+          "relevance": "Marcus's explicit non-performative interest ('not being polite') is the observable trigger — Jonah's openness follows directly from this"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_e3f4a5b6_s04_t003",
+          "speaker_display_name": "Jonah",
+          "message_excerpt": "I've also been working on something else on the side, like a personal project, and I kind of mentioned it last week but I don't know. it's a short doc, sort of. I dunno if it's ready to show anyone yet",
+          "relevance": "Just before the shift: Jonah's hedging ('I dunno if it's ready') shows the prior state of private withholding"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "kept personal film projects private; never discussed in group"
+        },
+        {
+          "session_index": 4,
+          "value": "opened up and shared the project description after Marcus's genuine interest; sent rough cut to Marcus first"
+        }
+      ]
+    },
+    {
+      "id": "Q8_c938c74b",
+      "category": "Q8",
+      "difficulty": "hard",
+      "question": "What in the conversations signals that Dev's preference for outdoor versus urban activities shifted, and what appeared to drive that shift given what was revealed about his private behaviour?",
+      "answer": "Before Session 5, Dev had no known preference about whether group trips were urban or countryside — he simply confirmed participation for whatever the group decided. In Session 4 he commits to the Peak District trip with 'I'll get the same train.' — no more enthusiasm than he shows for anything else. The shift is revealed in Session 5 when Simone mentions she saw Dev running near the canal and asks if it is a regular thing. Dev's response is: 'Three times a week. Trail running mostly. The canal is just a warmup.' The phrase 'the canal is just a warmup' is the signal: Dev has developed a serious trail running practice and is using the flat canal-side route as warm-up mileage — implying his actual training happens on trails. Jonah's reaction confirms how surprising this is: 'I have been trying to get people to do trail runs with me for literally two years.' The trigger was not a group event but a private development during the pandemic ('Lockdown.' — the same period he started baking sourdough). By Session 8 Dev runs four kilometres on the Kinder Scout descent and assesses the surface quality like a trail runner, confirming countryside trips are now an active preference. The shift happened privately and was only revealed through Simone noticing.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_e3f4a5b6_s05_t011",
+          "speaker_display_name": "Dev",
+          "message_excerpt": "Three times a week. Trail running mostly. The canal is just a warmup.",
+          "relevance": "The shift signal — Dev reveals he is a serious trail runner; the canal route is just warm-up mileage, implying his real preference is for trail terrain"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_e3f4a5b6_s04_t020",
+          "speaker_display_name": "Dev",
+          "message_excerpt": "I'll get the same train.",
+          "relevance": "Before the shift: Dev confirms attendance to the Peak District without any expression of preference — his trip type attitude is effectively neutral at this point"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_e3f4a5b6_s08_t016",
+          "speaker_display_name": "Dev",
+          "message_excerpt": "About four kilometres. It was a good surface.",
+          "relevance": "After the shift: Dev's post-trip surface evaluation confirms his trail runner orientation — countryside trips are now actively preferred"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 4,
+          "value": "neutral about trip type; confirmed attendance to Peak District as he would any group event"
+        },
+        {
+          "session_index": 5,
+          "value": "trail running three times a week revealed; canal is just a warmup — strong countryside preference now established"
+        }
+      ]
+    },
+    {
+      "id": "Q8_f34913ea",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What explains Marcus's visible change in drinking behaviour at group dinners, and where in the conversation does the conversation confirm the trigger that caused it?",
+      "answer": "Marcus stopped drinking alcohol at group meals. Early in the corpus he engages with dinner plans without any mention of drinks preferences. The shift is confirmed in Session 5 when Priya asks: 'Marcus are you actually still not drinking? you've been sipping sparkling water at every dinner for like three weeks now.' Marcus responds: 'The half-marathon training. Cutting alcohol for the duration. I told you all in October and nobody listened.' This establishes both the trigger (starting a half-marathon training plan, which he announced in Session 3 based on his reference to 'October') and the timeline (the change has been visible for at least three weeks before Session 5, meaning it began around Sessions 3-4). The trigger is unambiguous: Marcus linked the behaviour change directly to the training plan, and he frames it as a deliberate, time-bound rule ('cutting alcohol for the duration'). In Session 8 he clarifies the rule further: 'My rule was no drinking at group meals, not no drinking at my own kitchen table', confirming the behaviour change was specifically about group social settings, not a total abstinence.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_e3f4a5b6_s05_t015",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "The half-marathon training. Cutting alcohol for the duration. I told you all in October and nobody listened because Dev was doing something amusing with the bread rolls.",
+          "relevance": "Marcus names the trigger explicitly — the half-marathon training plan started in October (Session 3), and cutting alcohol was a deliberate rule he set at that time"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_e3f4a5b6_s08_t005",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "The race is in February. I'll have a glass on the 13th. One glass is not a problem. My rule was no drinking at group meals, not no drinking at my own kitchen table.",
+          "relevance": "Marcus clarifies the scope of the rule in Session 8 — no alcohol at group meals specifically, confirming this is a structured and considered change tied to training"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 3,
+          "value": "drank wine at group dinners without comment (training not yet announced)"
+        },
+        {
+          "session_index": 5,
+          "value": "switched to non-alcoholic options at all group meals since October; confirmed triggered by half-marathon training plan"
+        }
+      ]
+    },
+    {
+      "id": "Q8_0564c52e",
+      "category": "Q8",
+      "difficulty": "hard",
+      "question": "Where in the conversation does Priya's position on hiking shift from reluctant tolerance to something harder, and what in the conversation signals the mechanism — not just the fact of the change?",
+      "answer": "Priya's hiking stance shifts decisively in Session 6. Before Session 6, she had been in a state of reluctant tolerance: in Session 2 she agreed to the Peak District trip with 'yeah ok fine I'm in if it doesn't clash with the thing', and in Session 3 she said 'yes fine I'll do the pub, as long as nobody forces me back up a hill on Sunday morning.' Both are reluctant acceptances with conditions — she is along for the ride but making her discomfort known. The shift occurs in Session 6 after the actual trip. Priya says: 'I am never doing that again. my ankles hurt, I had mud in a location I will not specify, and the pub was the only good part.' The word 'never' is the signal — she has moved from conditional tolerance to a declared refusal. The mechanism is the direct physical experience of the trip itself. She had been conceptually resistant before (muddy jeans, survival exercise) but had not experienced it; now she has the evidence: ankle pain, mud in uncomfortable places, and a four-minute window of good views before cloud obscured them. Her evidence-based language ('I literally said this before we went and I am now saying it with evidence') in Session 6 turn 9 shows she is consciously formalising the change on the basis of data rather than sentiment.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_e3f4a5b6_s02_t011",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "yeah ok fine 🙄 I'm in if it doesn't clash with the thing. but someone is buying me proper waterproof trousers if my jeans end up destroyed",
+          "relevance": "Before the shift: Priya is reluctantly tolerant — she agrees with conditions but is not yet at refusal"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_e3f4a5b6_s06_t001",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "I am never doing that again 🙂 my ankles hurt, I had mud in a location I will not specify, and the pub was the only good part. the",
+          "relevance": "The shift signal — 'I am never doing that again' is a categorical refusal, driven by specific physical evidence from the trip itself"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_e3f4a5b6_s06_t008",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "I don't need better boots Jonah I need a different activity. I literally said this before we went and I am now saying it with evidence.",
+          "relevance": "Priya makes the shift explicit: she is not open to adjustment, she is closing the conversation — the mechanism is the trip functioning as confirming evidence for a prior prediction"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 2,
+          "value": "tolerated hiking reluctantly; agreed with conditions ('someone buying me waterproofs')"
+        },
+        {
+          "session_index": 6,
+          "value": "openly refused further hikes after the Peak District trip; declared 'I am never doing that again' with physical evidence"
+        }
+      ]
+    },
+    {
+      "id": "Q8_f1c0131e",
+      "category": "Q8",
+      "difficulty": "hard",
+      "question": "What drove Simone's shift from keeping personal plans private to sharing the Singapore decision openly with the group, and what in the conversations shows the mechanism — not just the announcement itself?",
+      "answer": "Simone's shift is from private engagement (focused on logistics, dates, confirmation) to open personal disclosure. Through Sessions 1-5 she is present and helpful but consistently avoids personal revelation: she confirms logistics, asks for advance notice, flags costs, and manages her own calendar — nothing personal surfaces. The turning point is Marcus's check-in in Session 6. Marcus says: 'Simone, I wanted to check in. You were a bit quiet on the train back. You alright?' This is not a general question — Marcus has noticed a specific quality of silence ('a decision quiet. Not a bad-week quiet') that he recognises in a later session. In response, Simone says: 'There's something I've been putting off telling you all and I think Marcus already knows something is up, so I should just say it.' The phrase 'Marcus already knows something is up' is the mechanism: his perceptive check-in signalled that she had been noticed, which removed the protective value of continued silence. Simone herself names Marcus's noticing as the trigger: his awareness of her changed state was what made the disclosure feel necessary rather than optional. Marcus later confirms (Session 7) that he noticed she had gone quiet 'in a particular way — more like a decision quiet', and had messaged her separately before Session 6.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 6,
+          "turn_id": "grp_e3f4a5b6_s06_t010",
+          "speaker_display_name": "Simone",
+          "message_excerpt": "There's something I've been putting off telling you all and I think Marcus already knows something is up, so I should just say it. I've accepted a secondment offer. Singapore. Twelve months, starting January.",
+          "relevance": "Simone names the trigger mechanism: Marcus's noticing was what made continued silence untenable — 'I think Marcus already knows something is up' is the direct cause"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_e3f4a5b6_s06_t009",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "Simone, I wanted to check in. You were a bit quiet on the train back. You alright?",
+          "relevance": "Marcus's noticing is the observable trigger — his check-in creates the conditions for Simone's disclosure"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_e3f4a5b6_s05_t020",
+          "speaker_display_name": "Simone",
+          "message_excerpt": "I'll be walking at a sensible pace and not running anywhere. We can be at the back together.",
+          "relevance": "Before the shift: Simone's engagement is social and logistical — nothing personal surfaces through Session 5"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 5,
+          "value": "engaged around group logistics; personal plans (Singapore) kept private; no personal disclosure in any session 1-5"
+        },
+        {
+          "session_index": 6,
+          "value": "shared Singapore secondment openly after Marcus's perceptive check-in identified her as having 'something big coming'"
+        }
+      ]
+    },
+    {
+      "id": "Q9_323a36e5",
+      "category": "Q9",
+      "difficulty": "medium",
+      "question": "Before Simone left for Singapore, what preference had she consistently expressed about the kinds of social venues or settings she preferred for group gatherings?",
+      "answer": "Based on sessions 1-6 (the period of Simone's active participation), Simone consistently preferred quiet environments where conversation was audible. In Session 1 she endorsed the Italian restaurant Marcus suggested without qualification. In Session 3 she explicitly volunteered: 'somewhere quiet would be ideal. I'd rather be able to debrief properly than sit in a place where everyone is shouting.' This was unprompted — Marcus had said he wanted somewhere quiet, but Simone added her own endorsement as a personal preference. In Sessions 2 and 4 she confirmed logistics meticulously but raised no venue objections when restaurants were described as calm. When she announced her Singapore departure in Session 6 she said she wanted 'something quiet. Not a party, just us.' for her farewell — applying the same preference even to the most emotionally significant group event. Her preference was not just about acoustics but about the capacity to actually engage with the people she was with.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_e3f4a5b6_s03_t022",
+          "speaker_display_name": "Simone",
+          "message_excerpt": "somewhere quiet would be ideal. I'd rather be able to debrief properly than sit in a place where everyone is shouting.",
+          "relevance": "Simone's direct statement of her noise preference — unprompted endorsement of quiet venues (evidence from pre-departure sessions 1-6)"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_e3f4a5b6_s06_t018",
+          "speaker_display_name": "Simone",
+          "message_excerpt": "I'd like that, if everyone's up for it. Something quiet. Not a party, just us.",
+          "relevance": "Simone's farewell request in Session 6 applies the same quiet preference — last known expression before departure"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q9_166527b6",
+      "category": "Q9",
+      "difficulty": "medium",
+      "question": "Before Simone departed for Singapore, what pattern had she established around how she needed group plans to be communicated to her, and what in the pre-departure sessions shows this was a consistent preference rather than a one-off request?",
+      "answer": "Simone consistently needed advance notice and confirmed deadlines for group plans. In Session 1 she said: 'Just to flag, I'd need to know by Wednesday if it's Friday, so I can sort the evening.' In Session 2 she said: 'I'd need the exact dates locked down so I can check my calendar properly. Can we confirm Friday at the latest?' — and Marcus specifically acknowledged this by saying he would ping her the booking confirmation in writing before Friday. In Session 4 she asks about the cost split in advance ('I want to be clear before we get there') and confirms the train meeting point once she has the logistics in hand. In Session 2 Marcus sends her the bunkhouse confirmation email specifically to address this preference. The pattern across four sessions shows this is not anxiety about this particular trip but a structural preference: Simone processes plans by anchoring them with confirmed written information and clear deadlines before she can fully commit.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_e3f4a5b6_s02_t010",
+          "speaker_display_name": "Simone",
+          "message_excerpt": "I'd need the exact dates locked down so I can check my calendar properly. Can we confirm Friday at the latest?",
+          "relevance": "Second instance of Simone requesting a specific deadline for plan confirmation — evidence from within sessions 1-6"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_e3f4a5b6_s01_t012",
+          "speaker_display_name": "Simone",
+          "message_excerpt": "The Italian sounds good to me. Just to flag, I'd need to know by Wednesday if it's Friday, so I can sort the evening.",
+          "relevance": "First instance — Simone's Session 1 request for advance confirmation establishes the preference from the start"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q9_4e67c2ca",
+      "category": "Q9",
+      "difficulty": "medium",
+      "question": "What did the group learn about Simone's relationship with Priya through things said in the pre-departure sessions, and what does it tell you about how well-established this closeness was before Simone joined the wider group?",
+      "answer": "The conversations in Sessions 1-6 reveal that Simone and Priya had a close confidant relationship that predated Simone's membership in the group. In Session 2 Simone references something Priya told her 'when we were still in the flat' — confirming they were former flatmates and that Simone learned about the group's dynamics through Priya before she ever joined. In Session 6 Simone says she told Priya about accepting the Singapore offer 'the same day I signed' — three weeks before telling the rest of the group — confirming Priya remained her primary confidant within the group. In Session 5 Simone aligns herself with Priya immediately and naturally ('We can be at the back together') in a way that suggests an easy, established closeness rather than a developing one. The relationship is characterised by Priya as a source of introduction to the group and as the person Simone trusts with early-stage personal decisions.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_e3f4a5b6_s02_t017",
+          "speaker_display_name": "Simone",
+          "message_excerpt": "You mentioned it when we were still in the flat. I'm aware of the seating plan reputation.",
+          "relevance": "Simone's reference to 'when we were still in the flat' confirms the pre-group flatmate relationship — evidence within sessions 1-6"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_e3f4a5b6_s06_t012",
+          "speaker_display_name": "Simone",
+          "message_excerpt": "Three weeks. I told Priya the same day I signed but I wanted to get the notice sorted before I said anything here.",
+          "relevance": "Simone confirms Priya was told first, weeks before the group — the confidant pattern holds right up to the point of departure"
+        }
+      ],
+      "temporal_anchors": []
+    }
+  ],
+  "meta": {
+    "source": "SocialMemBench",
+    "source_kind": "real_benchmark",
+    "network_id": "grp_e3f4a5b6",
+    "n_sessions": 8,
+    "n_turns": 182,
+    "v4_correct": 22,
+    "v4_total": 30,
+    "v4_errors": 8,
+    "v4_accuracy": 0.7333333333333333
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "benchmark": "groupmem",
+  "baseline": "embed",
+  "computed_at": "2026-09-01 19:11:48",
+  "overall": {
+    "accuracy": 0.3906,
+    "correct": 291,
+    "incorrect": 454,
+    "unclear": 0,
+    "total": 745,
+    "unclear_rate": 0.0,
+    "em": 0.0899,
+    "f1": 0.1958,
+    "attribution_acc": 0.0,
+    "attribution_n": 1
+  },
+  "per_category": {
+    "abstention": {
+      "accuracy": 0.7554,
+      "correct": 105,
+      "incorrect": 34,
+      "unclear": 0,
+      "total": 139,
+      "unclear_rate": 0.0,
+      "em": 0.0,
+      "f1": 0.2083,
+      "attribution_acc": null,
+      "attribution_n": 0
+    },
+    "knowledge_update": {
+      "accuracy": 0.2243,
+      "correct": 24,
+      "incorrect": 83,
+      "unclear": 0,
+      "total": 107,
+      "unclear_rate": 0.0,
+      "em": 0.0,
+      "f1": 0.2463,
+      "attribution_acc": null,
+      "attribution_n": 0
+    },
+    "multi_hop": {
+      "accuracy": 0.3352,
+      "correct": 61,
+      "incorrect": 121,
+      "unclear": 0,
+      "total": 182,
+      "unclear_rate": 0.0,
+      "em": 0.1099,
+      "f1": 0.17,
+      "attribution_acc": 0.0,
+      "attribution_n": 1
+    },
+    "temporal": {
+      "accuracy": 0.2716,
+      "correct": 44,
+      "incorrect": 118,
+      "unclear": 0,
+      "total": 162,
+      "unclear_rate": 0.0,
+      "em": 0.2654,
+      "f1": 0.2701,
+      "attribution_acc": null,
+      "attribution_n": 0
+    },
+    "term_ambiguity": {
+      "accuracy": 0.3208,
+      "correct": 34,
+      "incorrect": 72,
+      "unclear": 0,
+      "total": 106,
+      "unclear_rate": 0.0,
+      "em": 0.0094,
+      "f1": 0.0408,
+      "attribution_acc": null,
+      "attribution_n": 0
+    },
+    "user_implicit": {
+      "accuracy": 0.4694,
+      "correct": 23,
+      "incorrect": 26,
+      "unclear": 0,
+      "total": 49,
+      "unclear_rate": 0.0,
+      "em": 0.0612,
+      "f1": 0.2359,
+      "attribution_acc": null,
+      "attribution_n": 0
+    }
+  },
+  "per_unit": {
+    "Finance": {
+      "accuracy": 0.4439,
+      "correct": 95,
+      "incorrect": 119,
+      "unclear": 0,
+      "total": 214,
+      "unclear_rate": 0.0,
+      "em": 0.1262,
+      "f1": 0.2196,
+      "attribution_acc": null,
+      "attribution_n": 0
+    },
+    "Healthcare": {
+      "accuracy": 0.3724,
+      "correct": 54,
+      "incorrect": 91,
+      "unclear": 0,
+      "total": 145,
+      "unclear_rate": 0.0,
+      "em": 0.0759,
+      "f1": 0.1872,
+      "attribution_acc": null,
+      "attribution_n": 0
+    },
+    "Manufacturing": {
+      "accuracy": 0.3699,
+      "correct": 64,
+      "incorrect": 109,
+      "unclear": 0,
+      "total": 173,
+      "unclear_rate": 0.0,
+      "em": 0.0809,
+      "f1": 0.1856,
+      "attribution_acc": 0.0,
+      "attribution_n": 1
+    },
+    "Technology": {
+      "accuracy": 0.3662,
+      "correct": 78,
+      "incorrect": 135,
+      "unclear": 0,
+      "total": 213,
+      "unclear_rate": 0.0,
+      "em": 0.0704,
+      "f1": 0.186,
+      "attribution_acc": null,
+      "attribution_n": 0
+    }
+  }
+}

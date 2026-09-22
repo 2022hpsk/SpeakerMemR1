@@ -1,0 +1,645 @@
+{
+  "schema": "socialmembench-real-v4-source/1",
+  "scenario": "[socialmembench:grp_0d1e2f3a] real benchmark conversation",
+  "speakers": [
+    "Josh",
+    "Leon",
+    "Mei",
+    "Priya"
+  ],
+  "sessions": [
+    {
+      "session_id": "grp_0d1e2f3a_s01",
+      "session_index": 1,
+      "topic": "Quarterly drinks planning; Leon's startup announcement",
+      "ts": "2025-10-06",
+      "turns": [
+        {
+          "turn": "grp_0d1e2f3a_s01_t000",
+          "speaker": "Josh",
+          "speaker_id": "p_c0b2c3d4",
+          "content": "Quarterly drinks! Last Thursday of the month? I've found a new place in Soho, proper booths 😁",
+          "ts": "2025-10-06T12:08:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_0d1e2f3a_s01_t001",
+          "speaker": "Mei",
+          "speaker_id": "p_c0a1b2c3",
+          "content": "I can do 7–9. My team has a big handover that week so I'll need a hard stop.",
+          "ts": "2025-10-06T12:14:00",
+          "reply_to": "grp_0d1e2f3a_s01_t000"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s01_t002",
+          "speaker": "Priya",
+          "speaker_id": "p_c0c3d4e5",
+          "content": "I'm in 🙂 need this",
+          "ts": "2025-10-06T12:19:00",
+          "reply_to": "grp_0d1e2f3a_s01_t000"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s01_t003",
+          "speaker": "Leon",
+          "speaker_id": "p_c0d4e5f6",
+          "content": "just got covered by TechCrunch 🔥 might be able to make it actually. it's been a journey but we're close to profitability. Will confirm closer to the date",
+          "ts": "2025-10-06T14:41:00",
+          "reply_to": "grp_0d1e2f3a_s01_t000"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s01_t004",
+          "speaker": "Josh",
+          "speaker_id": "p_c0b2c3d4",
+          "content": "classic Leon response 😂 we'll have your booth ready in case",
+          "ts": "2025-10-06T14:44:00",
+          "reply_to": "grp_0d1e2f3a_s01_t003"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s01_t005",
+          "speaker": "Mei",
+          "speaker_id": "p_c0a1b2c3",
+          "content": "Near Soho is good. I genuinely have a hard stop though, no heroic late one from me.",
+          "ts": "2025-10-06T14:48:00",
+          "reply_to": "grp_0d1e2f3a_s01_t004"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s01_t006",
+          "speaker": "Priya",
+          "speaker_id": "p_c0c3d4e5",
+          "content": "Same, somewhere easy and not shouty please",
+          "ts": "2025-10-06T14:53:00",
+          "reply_to": "grp_0d1e2f3a_s01_t005"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s01_t007",
+          "speaker": "Leon",
+          "speaker_id": "p_c0d4e5f6",
+          "content": "if I make it I'm ordering champagne and behaving terribly",
+          "ts": "2025-10-06T14:57:00",
+          "reply_to": "grp_0d1e2f3a_s01_t006"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s01_t008",
+          "speaker": "Josh",
+          "speaker_id": "p_c0b2c3d4",
+          "content": "You say that like it's a threat and not the brand",
+          "ts": "2025-10-06T15:02:00",
+          "reply_to": "grp_0d1e2f3a_s01_t007"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s01_t009",
+          "speaker": "Leon",
+          "speaker_id": "p_c0d4e5f6",
+          "content": "exactly. consistency matters",
+          "ts": "2025-10-06T15:06:00",
+          "reply_to": "grp_0d1e2f3a_s01_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_0d1e2f3a_s02",
+      "session_index": 2,
+      "topic": "Post-drinks debrief; Leon didn't come",
+      "ts": "2025-10-13",
+      "turns": [
+        {
+          "turn": "grp_0d1e2f3a_s02_t000",
+          "speaker": "Josh",
+          "speaker_id": "p_c0b2c3d4",
+          "content": "Good to see you both last night 🍻 Priya you look really well. Mei, your team sounds intense. Leon didn't come again.",
+          "ts": "2025-10-13T09:02:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_0d1e2f3a_s02_t001",
+          "speaker": "Mei",
+          "speaker_id": "p_c0a1b2c3",
+          "content": "My team is intense but it's a good problem to have honestly. Leon, what happened?",
+          "ts": "2025-10-13T09:11:00",
+          "reply_to": "grp_0d1e2f3a_s02_t000"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s02_t002",
+          "speaker": "Leon",
+          "speaker_id": "p_c0d4e5f6",
+          "content": "investor call ran over, can't be helped when you're at that stage 🚀 next one for sure",
+          "ts": "2025-10-13T11:33:00",
+          "reply_to": "grp_0d1e2f3a_s02_t001"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s02_t003",
+          "speaker": "Priya",
+          "speaker_id": "p_c0c3d4e5",
+          "content": "We missed you 🙂 it was a good night though",
+          "ts": "2025-10-13T12:04:00",
+          "reply_to": "grp_0d1e2f3a_s02_t002"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s02_t004",
+          "speaker": "Josh",
+          "speaker_id": "p_c0b2c3d4",
+          "content": "Was the investor at least worth missing actual humans for",
+          "ts": "2025-10-13T12:08:00",
+          "reply_to": "grp_0d1e2f3a_s02_t003"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s02_t005",
+          "speaker": "Leon",
+          "speaker_id": "p_c0d4e5f6",
+          "content": "Potentially, yes 😅 brutal timing though",
+          "ts": "2025-10-13T12:13:00",
+          "reply_to": "grp_0d1e2f3a_s02_t004"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s02_t006",
+          "speaker": "Mei",
+          "speaker_id": "p_c0a1b2c3",
+          "content": "You could have texted before 10pm to be fair",
+          "ts": "2025-10-13T12:17:00",
+          "reply_to": "grp_0d1e2f3a_s02_t005"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s02_t007",
+          "speaker": "Leon",
+          "speaker_id": "p_c0d4e5f6",
+          "content": "Fair. I thought I'd make it and then it blew up.",
+          "ts": "2025-10-13T12:22:00",
+          "reply_to": "grp_0d1e2f3a_s02_t006"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s02_t008",
+          "speaker": "Priya",
+          "speaker_id": "p_c0c3d4e5",
+          "content": "Next round is on you then 🙂",
+          "ts": "2025-10-13T12:26:00",
+          "reply_to": "grp_0d1e2f3a_s02_t007"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s02_t009",
+          "speaker": "Josh",
+          "speaker_id": "p_c0b2c3d4",
+          "content": "documented and legally binding",
+          "ts": "2025-10-13T12:31:00",
+          "reply_to": "grp_0d1e2f3a_s02_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_0d1e2f3a_s03",
+      "session_index": 3,
+      "topic": "Career comparison thread; Josh deflects",
+      "ts": "2025-10-20",
+      "turns": [
+        {
+          "turn": "grp_0d1e2f3a_s03_t000",
+          "speaker": "Leon",
+          "speaker_id": "p_c0d4e5f6",
+          "content": "another round closed! Series A confirmed. journey continues 🚀 what's everyone else up to professionally these days?",
+          "ts": "2025-10-20T18:31:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_0d1e2f3a_s03_t001",
+          "speaker": "Mei",
+          "speaker_id": "p_c0a1b2c3",
+          "content": "Congrats Leon. Still building the team, we're at eight now. Just brought in two seniors which changes the dynamic completely.",
+          "ts": "2025-10-20T18:38:00",
+          "reply_to": "grp_0d1e2f3a_s03_t000"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s03_t002",
+          "speaker": "Josh",
+          "speaker_id": "p_c0b2c3d4",
+          "content": "still in the same chair 😂😂 living the dream. Priya you're the one with the interesting job now",
+          "ts": "2025-10-20T18:42:00",
+          "reply_to": "grp_0d1e2f3a_s03_t000"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s03_t003",
+          "speaker": "Priya",
+          "speaker_id": "p_c0c3d4e5",
+          "content": "good question 😂 it's a lot. different kind of hard than expected. anyway, are we doing next quarter?",
+          "ts": "2025-10-20T18:47:00",
+          "reply_to": "grp_0d1e2f3a_s03_t002"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s03_t004",
+          "speaker": "Mei",
+          "speaker_id": "p_c0a1b2c3",
+          "content": "Josh you cannot still call six years at the same place 'same chair'",
+          "ts": "2025-10-20T18:51:00",
+          "reply_to": "grp_0d1e2f3a_s03_t003"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s03_t005",
+          "speaker": "Josh",
+          "speaker_id": "p_c0b2c3d4",
+          "content": "watch me 😂 it's either that or a LinkedIn post and nobody wants that",
+          "ts": "2025-10-20T18:56:00",
+          "reply_to": "grp_0d1e2f3a_s03_t004"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s03_t006",
+          "speaker": "Leon",
+          "speaker_id": "p_c0d4e5f6",
+          "content": "Priya are you private practice now or still split across clinics",
+          "ts": "2025-10-20T19:00:00",
+          "reply_to": "grp_0d1e2f3a_s03_t005"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s03_t007",
+          "speaker": "Priya",
+          "speaker_id": "p_c0c3d4e5",
+          "content": "bit of both. still figuring out what kind of week feels sustainable honestly",
+          "ts": "2025-10-20T19:05:00",
+          "reply_to": "grp_0d1e2f3a_s03_t006"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s03_t008",
+          "speaker": "Mei",
+          "speaker_id": "p_c0a1b2c3",
+          "content": "We should book next quarter now before everyone's calendars become fiction",
+          "ts": "2025-10-20T19:09:00",
+          "reply_to": "grp_0d1e2f3a_s03_t007"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s03_t009",
+          "speaker": "Josh",
+          "speaker_id": "p_c0b2c3d4",
+          "content": "correct. logistics, the true love language",
+          "ts": "2025-10-20T19:14:00",
+          "reply_to": "grp_0d1e2f3a_s03_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_0d1e2f3a_s04",
+      "session_index": 4,
+      "topic": "Josh knows about Priya; Mei doesn't notice",
+      "ts": "2025-10-27",
+      "turns": [
+        {
+          "turn": "grp_0d1e2f3a_s04_t000",
+          "speaker": "Mei",
+          "speaker_id": "p_c0a1b2c3",
+          "content": "Priya, how's the physio practice going? You mentioned it being harder than expected. Might be worth a proper career convo at next drinks 🙂",
+          "ts": "2025-10-27T19:14:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_0d1e2f3a_s04_t001",
+          "speaker": "Priya",
+          "speaker_id": "p_c0c3d4e5",
+          "content": "good question 🙂 it's fine, just a steep learning curve. rather talk about it in person",
+          "ts": "2025-10-27T19:19:00",
+          "reply_to": "grp_0d1e2f3a_s04_t000"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s04_t002",
+          "speaker": "Josh",
+          "speaker_id": "p_c0b2c3d4",
+          "content": "Priya and I already talked about it properly last week, she's good 🙂 not everything needs to be a group agenda item Mei 😂",
+          "ts": "2025-10-27T19:23:00",
+          "reply_to": "grp_0d1e2f3a_s04_t001"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s04_t003",
+          "speaker": "Mei",
+          "speaker_id": "p_c0a1b2c3",
+          "content": "fair enough 😂 I just find it useful to talk these things through with people who get the career transition thing",
+          "ts": "2025-10-27T19:28:00",
+          "reply_to": "grp_0d1e2f3a_s04_t002"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s04_t004",
+          "speaker": "Mei",
+          "speaker_id": "p_c0a1b2c3",
+          "content": "I wasn't trying to make it a panel discussion 😅 just offering solidarity",
+          "ts": "2025-10-27T19:32:00",
+          "reply_to": "grp_0d1e2f3a_s04_t003"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s04_t005",
+          "speaker": "Josh",
+          "speaker_id": "p_c0b2c3d4",
+          "content": "I know, I know. just saying Priya doesn't owe the whole board an update",
+          "ts": "2025-10-27T19:37:00",
+          "reply_to": "grp_0d1e2f3a_s04_t004"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s04_t006",
+          "speaker": "Priya",
+          "speaker_id": "p_c0c3d4e5",
+          "content": "thank you both. coffee with one person I can do, group unpacking no",
+          "ts": "2025-10-27T19:41:00",
+          "reply_to": "grp_0d1e2f3a_s04_t005"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s04_t007",
+          "speaker": "Mei",
+          "speaker_id": "p_c0a1b2c3",
+          "content": "That's fair. one-on-one coffee then, no agenda",
+          "ts": "2025-10-27T19:46:00",
+          "reply_to": "grp_0d1e2f3a_s04_t006"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s04_t008",
+          "speaker": "Priya",
+          "speaker_id": "p_c0c3d4e5",
+          "content": "that I'd actually like",
+          "ts": "2025-10-27T19:50:00",
+          "reply_to": "grp_0d1e2f3a_s04_t007"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s04_t009",
+          "speaker": "Josh",
+          "speaker_id": "p_c0b2c3d4",
+          "content": "Look at that, governance achieved",
+          "ts": "2025-10-27T19:55:00",
+          "reply_to": "grp_0d1e2f3a_s04_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_0d1e2f3a_s05",
+      "session_index": 5,
+      "topic": "Leon's trajectory; Josh-Mei dynamic surfaces",
+      "ts": "2025-11-03",
+      "turns": [
+        {
+          "turn": "grp_0d1e2f3a_s05_t000",
+          "speaker": "Leon",
+          "speaker_id": "p_c0d4e5f6",
+          "content": "guys, covered by Bloomberg now too 🚀 if you know anyone who'd want to invest let me know. it's still early but the trajectory is there",
+          "ts": "2025-11-03T20:44:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_0d1e2f3a_s05_t001",
+          "speaker": "Josh",
+          "speaker_id": "p_c0b2c3d4",
+          "content": "legend. I'm still in the same chair so can't help with that 😂 come to drinks next time though Leon, genuinely",
+          "ts": "2025-11-03T20:47:00",
+          "reply_to": "grp_0d1e2f3a_s05_t000"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s05_t002",
+          "speaker": "Mei",
+          "speaker_id": "p_c0a1b2c3",
+          "content": "Nice Leon. Josh, 'still in the same chair' is modesty, you've been there six years and know everything 😄",
+          "ts": "2025-11-03T20:51:00",
+          "reply_to": "grp_0d1e2f3a_s05_t001"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s05_t003",
+          "speaker": "Josh",
+          "speaker_id": "p_c0b2c3d4",
+          "content": "haha 😂 very kind",
+          "ts": "2025-11-03T20:54:00",
+          "reply_to": "grp_0d1e2f3a_s05_t002"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s05_t004",
+          "speaker": "Mei",
+          "speaker_id": "p_c0a1b2c3",
+          "content": "Anyway, next drinks. same booth strategy?",
+          "ts": "2025-11-03T20:58:00",
+          "reply_to": "grp_0d1e2f3a_s05_t003"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s05_t005",
+          "speaker": "Leon",
+          "speaker_id": "p_c0d4e5f6",
+          "content": "ironically yes. I miss the tiny booth more than another investor dinner at this point",
+          "ts": "2025-11-03T21:03:00",
+          "reply_to": "grp_0d1e2f3a_s05_t004"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s05_t006",
+          "speaker": "Josh",
+          "speaker_id": "p_c0b2c3d4",
+          "content": "that's character development from our Bloomberg correspondent",
+          "ts": "2025-11-03T21:07:00",
+          "reply_to": "grp_0d1e2f3a_s05_t005"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s05_t007",
+          "speaker": "Leon",
+          "speaker_id": "p_c0d4e5f6",
+          "content": "Don't get used to it but I'd take a booth and chips over another room full of lanyards right now",
+          "ts": "2025-11-03T21:12:00",
+          "reply_to": "grp_0d1e2f3a_s05_t006"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s05_t008",
+          "speaker": "Priya",
+          "speaker_id": "p_c0c3d4e5",
+          "content": "Now that I believe. booths and chips are undefeated",
+          "ts": "2025-11-03T21:16:00",
+          "reply_to": "grp_0d1e2f3a_s05_t007"
+        },
+        {
+          "turn": "grp_0d1e2f3a_s05_t009",
+          "speaker": "Josh",
+          "speaker_id": "p_c0b2c3d4",
+          "content": "Great, Leon returns to the people just as the people lose faith",
+          "ts": "2025-11-03T21:21:00",
+          "reply_to": "grp_0d1e2f3a_s05_t008"
+        }
+      ]
+    }
+  ],
+  "qa_pairs": [
+    {
+      "id": "Q1_c0s3c1",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Josh's behavior in the group chat suggest about how he handles questions about his own career?",
+      "answer": "Josh consistently deflects questions about his career with self-deprecating humour and then redirects to someone else. In Session 3, when Leon asked what everyone was up to professionally, Josh responded: 'still in the same chair 😂😂 living the dream' — and immediately pivoted to Priya. In Session 5, he used the same 'same chair' line again. He does not engage with follow-up, does not offer detail about what he actually does or wants, and accepts Mei's gentle reframe ('you know everything') with 'haha, very kind' — another deflection. The pattern is consistent across sessions and the self-deprecation is the tell.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_0d1e2f3a_s03_t002",
+          "speaker_display_name": "Josh",
+          "message_excerpt": "still in the same chair 😂😂 living the dream. Priya you're the one with the interesting job now",
+          "relevance": "Josh deflects with a joke and redirects immediately — the pattern is visible here"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_0d1e2f3a_s05_t001",
+          "speaker_display_name": "Josh",
+          "message_excerpt": "I'm still in the same chair so can't help with that 😂",
+          "relevance": "Same deflection phrase reused — the 'same chair' line is Josh's consistent way of closing the career conversation"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q3_c0s3c2",
+      "category": "Q3",
+      "difficulty": "medium",
+      "question": "What does the group chat reveal about each member's attitude toward discussing their career in the group?",
+      "answer": "Mei is comfortable and open — she talks about her team size, management challenges, and promotions without registering how this compares relative to the others. Leon uses the group as a broadcast channel for career news (TechCrunch, Bloomberg, Series A) — career talk is self-promotional for him. Josh deflects every career question with self-deprecating humour and immediately changes the subject; he has stopped sharing about his trajectory after watching others advance. Priya gives short, vague answers and pivots to logistics whenever career comes up ('it's a lot. Different kind of hard. Anyway — are we doing next quarter?') — she discusses it only with Josh privately.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_0d1e2f3a_s03_t001",
+          "speaker_display_name": "Mei",
+          "message_excerpt": "Still building the team, we're at eight now.",
+          "relevance": "Mei: comfortable discussing career progress in detail"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_0d1e2f3a_s03_t002",
+          "speaker_display_name": "Josh",
+          "message_excerpt": "still in the same chair 😂😂 living the dream. Priya you're the one with the interesting job now",
+          "relevance": "Josh: deflects and redirects — will not discuss his own career"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_0d1e2f3a_s03_t003",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "it's a lot. different kind of hard than expected. anyway, are we doing next quarter?",
+          "relevance": "Priya: vague answer, immediate pivot to logistics"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_0d1e2f3a_s05_t000",
+          "speaker_display_name": "Leon",
+          "message_excerpt": "covered by Bloomberg now too 🚀 if you know anyone who'd want to invest let me know",
+          "relevance": "Leon: uses the chat as a PR and networking channel"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q4_c0s2c2",
+      "category": "Q4",
+      "difficulty": "hard",
+      "question": "Both Mei and Leon present themselves confidently in the group chat when discussing career. Who is projecting success they have not fully achieved, and who is reporting genuine accomplished progress?",
+      "answer": "Mei is reporting genuine, accomplished progress — she was promoted to team lead, manages eight people, and discusses real management challenges with specificity. Leon is projecting success in terms that are impressive-sounding but incomplete: TechCrunch coverage, Bloomberg coverage, Series A funding — but also 'close to profitability' and 'it's been a journey,' which signals the destination hasn't arrived. He uses aspirational language ('trajectory is there') rather than achieved milestones. Both sound confident, but Mei's confidence is retrospective; Leon's is prospective.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Josh",
+        "B": "Leon",
+        "C": "Mei",
+        "D": "Priya"
+      },
+      "correct_option": "C",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_0d1e2f3a_s03_t001",
+          "speaker_display_name": "Mei",
+          "message_excerpt": "Still building the team, we're at eight now. Just brought in two seniors which changes the dynamic completely.",
+          "relevance": "Mei describes specific, factual management context — the progress is real and operational"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_0d1e2f3a_s01_t003",
+          "speaker_display_name": "Leon",
+          "message_excerpt": "it's been a journey but we're close to profitability",
+          "relevance": "Leon's language is aspirational and hedged — 'close to' profitability, not there"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_c0s4c1",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "What was Priya's attitude toward discussing her job, and how does the conversation show that Josh already knew it?",
+      "answer": "Josh revealed that he and Priya had already spoken privately: 'Priya and I already talked about it properly last week, she's good.' This shows Josh knows Priya's career situation well enough to act as her proxy, shielding her from a group conversation she doesn't want. The gentle rebuff of Mei ('not everything needs to be a group agenda item') confirms that Josh is protecting Priya's preference, not his own. He has a direct private channel with Priya that operates outside the group chat, and he uses it here to close down Mei's well-meaning but unwelcome offer.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_0d1e2f3a_s04_t002",
+          "speaker_display_name": "Josh",
+          "message_excerpt": "Priya and I already talked about it properly last week, she's good 🙂 not everything needs to be a group agenda item Mei",
+          "relevance": "Josh reveals pre-existing private knowledge of Priya's state and actively shields her from the group conversation"
+        },
+        {
+          "turn_id": "grp_0d1e2f3a_s04_t006",
+          "session_index": 4,
+          "turn_index": 7,
+          "speaker_display_name": "Priya",
+          "message_excerpt": "thank you both. coffee with one person I can do, group unpacking no",
+          "relevance": "observable behavior: Priya states the dyadic-vs-group preference herself in chat, grounding the ToM claim that Josh already knew it"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q6_c0s5c1",
+      "category": "Q6",
+      "difficulty": "medium",
+      "question": "The group has a norm of not recruiting each other or soliciting referrals in the chat. Does everyone follow it?",
+      "answer": "No — Leon breaks it repeatedly. In Session 5, after announcing Bloomberg coverage, he asked: 'if you know anyone who'd want to invest let me know.' This is a direct solicitation in the group chat — exactly what the norm prohibits. He had also used the chat as a broadcast channel for his startup's press mentions from Session 1 onward, framing it as news but with an implicit ask. Leon's relationship with the group norms is transactional — he follows them when convenient and bypasses them when they serve him.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Josh",
+        "B": "Leon",
+        "C": "Mei",
+        "D": "Priya"
+      },
+      "correct_option": "B",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_0d1e2f3a_s05_t000",
+          "speaker_display_name": "Leon",
+          "message_excerpt": "if you know anyone who'd want to invest let me know",
+          "relevance": "Leon directly solicits investment referrals in the group chat — breaching the norm against recruiting or soliciting"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_c0s2c1",
+      "category": "Q2",
+      "difficulty": "medium",
+      "question": "By Session 2, what pattern of attendance has the group come to anticipate from one specific member, and what in Josh's framing of the situation signals that the group has already adjusted to it?",
+      "answer": "No — Leon did not come. Josh noted it as a pattern: 'Leon didn't come again.' Leon's explanation was an investor call that ran over. This is the second consecutive event he has missed; by Session 2 the group has quietly adjusted its expectations and plans without counting on him. Mei, Josh, and Priya all attended.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Josh",
+        "B": "Leon",
+        "C": "Mei",
+        "D": "Priya"
+      },
+      "correct_option": "B",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_0d1e2f3a_s02_t000",
+          "speaker_display_name": "Josh",
+          "message_excerpt": "Leon didn't come again.",
+          "relevance": "Josh's 'again' signals this is a recurring pattern — Leon is the only person who didn't come"
+        }
+      ],
+      "temporal_anchors": []
+    }
+  ],
+  "meta": {
+    "source": "SocialMemBench",
+    "source_kind": "real_benchmark",
+    "network_id": "grp_0d1e2f3a",
+    "n_sessions": 5,
+    "n_turns": 50,
+    "n_qa": 6,
+    "v4_correct": 4,
+    "v4_total": 6,
+    "v4_errors": 2,
+    "v4_accuracy": 0.6666666666666666,
+    "heldout_heldout_excluded": true
+  }
+}

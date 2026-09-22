@@ -1,0 +1,600 @@
+{
+  "schema": "socialmembench-real-v4-source/1",
+  "scenario": "[socialmembench:grp_7a8b9c0d] real benchmark conversation",
+  "speakers": [
+    "Dad",
+    "Imogen",
+    "Kofi",
+    "Mum"
+  ],
+  "sessions": [
+    {
+      "session_id": "grp_7a8b9c0d_s01",
+      "session_index": 1,
+      "topic": "Mum's retirement; anniversary planning starts",
+      "ts": "2025-07-07",
+      "turns": [
+        {
+          "turn": "grp_7a8b9c0d_s01_t000",
+          "speaker": "Mum",
+          "speaker_id": "p_fm7a1b2c3",
+          "content": "Good morning my darlings! ☀️ Just me but I've been thinking. Your father and I are forty years married in March. Should we do something special? 🥹",
+          "ts": "2025-07-07T10:07:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_7a8b9c0d_s01_t001",
+          "speaker": "Imogen",
+          "speaker_id": "p_fm7d4e5f6",
+          "content": "Already sorted a table for four at Calabrese on the actual date 😊 thought a quiet dinner would be nicer than a big do",
+          "ts": "2025-07-07T10:14:00",
+          "reply_to": "grp_7a8b9c0d_s01_t000"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s01_t002",
+          "speaker": "Mum",
+          "speaker_id": "p_fm7a1b2c3",
+          "content": "Imogen! 😭💕 How do you always know? But I was thinking, maybe a party? Invite the family? Your father and I haven't had everyone together since Auntie Bea's 70th",
+          "ts": "2025-07-07T10:18:00",
+          "reply_to": "grp_7a8b9c0d_s01_t001"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s01_t003",
+          "speaker": "Dad",
+          "speaker_id": "p_fm7b2c3d4",
+          "content": "A dinner is fine. No need for a party. Dad.",
+          "ts": "2025-07-07T10:31:00",
+          "reply_to": "grp_7a8b9c0d_s01_t002"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s01_t004",
+          "speaker": "Kofi",
+          "speaker_id": "p_fm7c3d4e5",
+          "content": "just getting in, it's late here 🙏 Imogen you legend. A small dinner sounds perfect from my end. March might be tough for flights but let's see",
+          "ts": "2025-07-07T16:42:00",
+          "reply_to": "grp_7a8b9c0d_s01_t001"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s01_t005",
+          "speaker": "Dad",
+          "speaker_id": "p_fm7b2c3d4",
+          "content": "No fuss. Please. Dad.",
+          "ts": "2025-07-07T16:46:00",
+          "reply_to": "grp_7a8b9c0d_s01_t004"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s01_t006",
+          "speaker": "Mum",
+          "speaker_id": "p_fm7a1b2c3",
+          "content": "A little fuss is allowed on forty years surely 😭",
+          "ts": "2025-07-07T16:51:00",
+          "reply_to": "grp_7a8b9c0d_s01_t005"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s01_t007",
+          "speaker": "Kofi",
+          "speaker_id": "p_fm7c3d4e5",
+          "content": "if it's dinner I can maybe join for a toast after work my time even if flights are chaos",
+          "ts": "2025-07-07T16:55:00",
+          "reply_to": "grp_7a8b9c0d_s01_t006"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s01_t008",
+          "speaker": "Imogen",
+          "speaker_id": "p_fm7d4e5f6",
+          "content": "I'll sort cake as well, before Mum books a brass band",
+          "ts": "2025-07-07T17:00:00",
+          "reply_to": "grp_7a8b9c0d_s01_t007"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s01_t009",
+          "speaker": "Mum",
+          "speaker_id": "p_fm7a1b2c3",
+          "content": "Rude 😂 but fine, cake is non-negotiable",
+          "ts": "2025-07-07T17:04:00",
+          "reply_to": "grp_7a8b9c0d_s01_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_7a8b9c0d_s02",
+      "session_index": 2,
+      "topic": "Anniversary party debate; Kofi's travel constraint",
+      "ts": "2025-07-14",
+      "turns": [
+        {
+          "turn": "grp_7a8b9c0d_s02_t000",
+          "speaker": "Mum",
+          "speaker_id": "p_fm7a1b2c3",
+          "content": "I've been thinking more about the party. Just twenty people, close family, the village hall is free that Saturday. Imogen could you check the hall? 🥰",
+          "ts": "2025-07-14T19:22:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_7a8b9c0d_s02_t001",
+          "speaker": "Imogen",
+          "speaker_id": "p_fm7d4e5f6",
+          "content": "I'm on it 😊 but Mum honestly a big party is a lot of organising. Are you sure you wouldn't prefer to be the guest for once rather than managing everything?",
+          "ts": "2025-07-14T19:28:00",
+          "reply_to": "grp_7a8b9c0d_s02_t000"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s02_t002",
+          "speaker": "Mum",
+          "speaker_id": "p_fm7a1b2c3",
+          "content": "Oh I'm not worried about that. Just me but I do think I want to see everyone together. It's been so long. Kofi, you'll come won't you? 🙏",
+          "ts": "2025-07-14T19:31:00",
+          "reply_to": "grp_7a8b9c0d_s02_t001"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s02_t003",
+          "speaker": "Kofi",
+          "speaker_id": "p_fm7c3d4e5",
+          "content": "Mum I want to be there. March is just genuinely very hard from my end, I was home in August. Two transatlantic trips in eight months is a lot, cost aside. Can we look at what works for everyone before booking the hall?",
+          "ts": "2025-07-14T23:53:00",
+          "reply_to": "grp_7a8b9c0d_s02_t002"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s02_t004",
+          "speaker": "Dad",
+          "speaker_id": "p_fm7b2c3d4",
+          "content": "Kofi is right. Imogen's dinner is the right plan. A party is not necessary. Dad.",
+          "ts": "2025-07-14T20:44:00",
+          "reply_to": "grp_7a8b9c0d_s02_t003"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s02_t005",
+          "speaker": "Mum",
+          "speaker_id": "p_fm7a1b2c3",
+          "content": "Alright alright 😂 Imogen's dinner it is. I just didn't want it to be small. But you're probably right. Just me being silly.",
+          "ts": "2025-07-14T21:01:00",
+          "reply_to": "grp_7a8b9c0d_s02_t004"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s02_t006",
+          "speaker": "Imogen",
+          "speaker_id": "p_fm7d4e5f6",
+          "content": "The hall is free but honestly the dinner booking is miles easier and nicer.",
+          "ts": "2025-07-14T21:05:00",
+          "reply_to": "grp_7a8b9c0d_s02_t005"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s02_t007",
+          "speaker": "Dad",
+          "speaker_id": "p_fm7b2c3d4",
+          "content": "No hall. Dad.",
+          "ts": "2025-07-14T21:10:00",
+          "reply_to": "grp_7a8b9c0d_s02_t006"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s02_t008",
+          "speaker": "Mum",
+          "speaker_id": "p_fm7a1b2c3",
+          "content": "I only wanted cousins and noise for one evening 😭",
+          "ts": "2025-07-14T21:14:00",
+          "reply_to": "grp_7a8b9c0d_s02_t007"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s02_t009",
+          "speaker": "Kofi",
+          "speaker_id": "p_fm7c3d4e5",
+          "content": "I'll do a video toast if I can't get there. Not ideal but better than me derailing it.",
+          "ts": "2025-07-14T21:19:00",
+          "reply_to": "grp_7a8b9c0d_s02_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_7a8b9c0d_s03",
+      "session_index": 3,
+      "topic": "Dad's health; Imogen carrying the weight",
+      "ts": "2025-07-21",
+      "turns": [
+        {
+          "turn": "grp_7a8b9c0d_s03_t000",
+          "speaker": "Mum",
+          "speaker_id": "p_fm7a1b2c3",
+          "content": "Has anyone heard from your father today? He's being very quiet and I'm slightly worried. Just me probably! 😬",
+          "ts": "2025-07-21T15:48:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_7a8b9c0d_s03_t001",
+          "speaker": "Imogen",
+          "speaker_id": "p_fm7d4e5f6",
+          "content": "He's fine Mum, I spoke to him this morning 😊 he's just tired. I'm on it 😴",
+          "ts": "2025-07-21T15:54:00",
+          "reply_to": "grp_7a8b9c0d_s03_t000"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s03_t002",
+          "speaker": "Dad",
+          "speaker_id": "p_fm7b2c3d4",
+          "content": "All fine here. Just a quiet day. Dad.",
+          "ts": "2025-07-21T17:11:00",
+          "reply_to": "grp_7a8b9c0d_s03_t000"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s03_t003",
+          "speaker": "Kofi",
+          "speaker_id": "p_fm7c3d4e5",
+          "content": "glad he's okay. Imogen you always have it covered 🙏 we'd be lost without you",
+          "ts": "2025-07-21T20:14:00",
+          "reply_to": "grp_7a8b9c0d_s03_t001"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s03_t004",
+          "speaker": "Imogen",
+          "speaker_id": "p_fm7d4e5f6",
+          "content": "of course, no problem 😊",
+          "ts": "2025-07-21T20:22:00",
+          "reply_to": "grp_7a8b9c0d_s03_t003"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s03_t005",
+          "speaker": "Mum",
+          "speaker_id": "p_fm7a1b2c3",
+          "content": "Did he eat lunch at least? That's what I'm really asking 😅",
+          "ts": "2025-07-21T20:26:00",
+          "reply_to": "grp_7a8b9c0d_s03_t004"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s03_t006",
+          "speaker": "Dad",
+          "speaker_id": "p_fm7b2c3d4",
+          "content": "I ate lunch. I am not a Victorian invalid. Dad.",
+          "ts": "2025-07-21T20:31:00",
+          "reply_to": "grp_7a8b9c0d_s03_t005"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s03_t007",
+          "speaker": "Imogen",
+          "speaker_id": "p_fm7d4e5f6",
+          "content": "Soup is in the fridge and I've put the tablets by the kettle. All under control.",
+          "ts": "2025-07-21T20:35:00",
+          "reply_to": "grp_7a8b9c0d_s03_t006"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s03_t008",
+          "speaker": "Kofi",
+          "speaker_id": "p_fm7c3d4e5",
+          "content": "Has he got the follow-up booked? just asking so I stop imagining things",
+          "ts": "2025-07-21T20:40:00",
+          "reply_to": "grp_7a8b9c0d_s03_t007"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s03_t009",
+          "speaker": "Dad",
+          "speaker_id": "p_fm7b2c3d4",
+          "content": "Booked. Your sister has become management. Dad.",
+          "ts": "2025-07-21T20:44:00",
+          "reply_to": "grp_7a8b9c0d_s03_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_7a8b9c0d_s04",
+      "session_index": 4,
+      "topic": "Christmas plans; Kofi's availability",
+      "ts": "2025-07-28",
+      "turns": [
+        {
+          "turn": "grp_7a8b9c0d_s04_t000",
+          "speaker": "Mum",
+          "speaker_id": "p_fm7a1b2c3",
+          "content": "Right, Christmas! Everyone home, yes? I'll do the full works. Kofi, booked your flights? 🎄🙏",
+          "ts": "2025-07-28T18:02:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_7a8b9c0d_s04_t001",
+          "speaker": "Kofi",
+          "speaker_id": "p_fm7c3d4e5",
+          "content": "Mum I've been looking. The Toronto-London flights over Christmas are brutal this year. I'm trying to make it work but I can't promise yet. I didn't want to say this but it might be an even year this time",
+          "ts": "2025-07-28T22:51:00",
+          "reply_to": "grp_7a8b9c0d_s04_t000"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s04_t002",
+          "speaker": "Mum",
+          "speaker_id": "p_fm7a1b2c3",
+          "content": "Oh Kofi 😭😭😭 but we said everyone. It won't be the same without you. Are you sure?",
+          "ts": "2025-07-28T22:58:00",
+          "reply_to": "grp_7a8b9c0d_s04_t001"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s04_t003",
+          "speaker": "Imogen",
+          "speaker_id": "p_fm7d4e5f6",
+          "content": "Mum let him figure it out, flights are genuinely a lot. Kofi we'll do a video call Christmas morning either way 💙",
+          "ts": "2025-07-28T23:04:00",
+          "reply_to": "grp_7a8b9c0d_s04_t002"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s04_t004",
+          "speaker": "Dad",
+          "speaker_id": "p_fm7b2c3d4",
+          "content": "Imogen is right. Kofi, come when you can. We'll be here. Dad.",
+          "ts": "2025-07-28T23:12:00",
+          "reply_to": "grp_7a8b9c0d_s04_t001"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s04_t005",
+          "speaker": "Kofi",
+          "speaker_id": "p_fm7c3d4e5",
+          "content": "I'll know by next week. I'm watching prices like a hawk.",
+          "ts": "2025-07-28T23:16:00",
+          "reply_to": "grp_7a8b9c0d_s04_t004"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s04_t006",
+          "speaker": "Mum",
+          "speaker_id": "p_fm7a1b2c3",
+          "content": "If it helps we can move lunch or do Boxing Day, I just want your face in the house",
+          "ts": "2025-07-28T23:21:00",
+          "reply_to": "grp_7a8b9c0d_s04_t005"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s04_t007",
+          "speaker": "Dad",
+          "speaker_id": "p_fm7b2c3d4",
+          "content": "Don't build Christmas around airline pricing. We'll cope. Dad.",
+          "ts": "2025-07-28T23:25:00",
+          "reply_to": "grp_7a8b9c0d_s04_t006"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s04_t008",
+          "speaker": "Imogen",
+          "speaker_id": "p_fm7d4e5f6",
+          "content": "Your room is there either way, so decide when the numbers make sense.",
+          "ts": "2025-07-28T23:30:00",
+          "reply_to": "grp_7a8b9c0d_s04_t007"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s04_t009",
+          "speaker": "Kofi",
+          "speaker_id": "p_fm7c3d4e5",
+          "content": "thanks both. hate being the complicated one here",
+          "ts": "2025-07-28T23:34:00",
+          "reply_to": "grp_7a8b9c0d_s04_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_7a8b9c0d_s05",
+      "session_index": 5,
+      "topic": "Post-anniversary dinner; sibling check-in",
+      "ts": "2025-08-04",
+      "turns": [
+        {
+          "turn": "grp_7a8b9c0d_s05_t000",
+          "speaker": "Mum",
+          "speaker_id": "p_fm7a1b2c3",
+          "content": "The dinner was so beautiful. Imogen you chose perfectly. Your father and I are still smiling 💕🥹 Kofi we missed you though",
+          "ts": "2025-08-04T21:44:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_7a8b9c0d_s05_t001",
+          "speaker": "Imogen",
+          "speaker_id": "p_fm7d4e5f6",
+          "content": "So glad 😊 worth every booking 😴 Kofi we'll do something when you're next over",
+          "ts": "2025-08-04T21:49:00",
+          "reply_to": "grp_7a8b9c0d_s05_t000"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s05_t002",
+          "speaker": "Kofi",
+          "speaker_id": "p_fm7c3d4e5",
+          "content": "gutted I couldn't be there. Imogen, we need to talk properly soon. Sending love from Toronto 💙 And Imogen, I see you. Thank you.",
+          "ts": "2025-08-04T23:03:00",
+          "reply_to": "grp_7a8b9c0d_s05_t001"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s05_t003",
+          "speaker": "Imogen",
+          "speaker_id": "p_fm7d4e5f6",
+          "content": "💙 call me this week",
+          "ts": "2025-08-04T23:09:00",
+          "reply_to": "grp_7a8b9c0d_s05_t002"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s05_t004",
+          "speaker": "Kofi",
+          "speaker_id": "p_fm7c3d4e5",
+          "content": "Also those photos have absolutely wrecked me. I spent half the night looking at Easter flights 😅",
+          "ts": "2025-08-04T23:13:00",
+          "reply_to": "grp_7a8b9c0d_s05_t003"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s05_t005",
+          "speaker": "Imogen",
+          "speaker_id": "p_fm7d4e5f6",
+          "content": "That's a reversal from mister 'two trips is impossible'",
+          "ts": "2025-08-04T23:18:00",
+          "reply_to": "grp_7a8b9c0d_s05_t004"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s05_t006",
+          "speaker": "Kofi",
+          "speaker_id": "p_fm7c3d4e5",
+          "content": "I know. I know. Maybe not Christmas every year but I do want an extra visit if I can swing it.",
+          "ts": "2025-08-04T23:22:00",
+          "reply_to": "grp_7a8b9c0d_s05_t005"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s05_t007",
+          "speaker": "Mum",
+          "speaker_id": "p_fm7a1b2c3",
+          "content": "Now THAT I like the sound of 💙",
+          "ts": "2025-08-04T23:27:00",
+          "reply_to": "grp_7a8b9c0d_s05_t006"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s05_t008",
+          "speaker": "Dad",
+          "speaker_id": "p_fm7b2c3d4",
+          "content": "One trip at a time. Sensible first, sentimental second. Dad.",
+          "ts": "2025-08-04T23:31:00",
+          "reply_to": "grp_7a8b9c0d_s05_t007"
+        },
+        {
+          "turn": "grp_7a8b9c0d_s05_t009",
+          "speaker": "Kofi",
+          "speaker_id": "p_fm7c3d4e5",
+          "content": "Sensible-ish. But yes, I'm looking.",
+          "ts": "2025-08-04T23:36:00",
+          "reply_to": "grp_7a8b9c0d_s05_t008"
+        }
+      ]
+    }
+  ],
+  "qa_pairs": [
+    {
+      "id": "Q1_fm7s1c1",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Imogen's behavior across sessions suggest about her role in the family?",
+      "answer": "Imogen quietly handles most family logistics before anyone needs to ask. In Session 1, she had already booked the anniversary dinner before Mum even finished raising the idea. In Sessions 2 and 3, she follows up with 'I'm on it' before being asked. In Session 3, she manages Dad's health information and reassures Mum without disclosing what she actually knows. She deflects all acknowledgements with 'of course, no problem.' By Session 5, the tiredness shows slightly — she twice adds a tired emoji alongside her usual 'sorted' language. She carries the logistics load without naming it.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_7a8b9c0d_s01_t001",
+          "speaker_display_name": "Imogen",
+          "message_excerpt": "Already sorted a table for four at Calabrese on the actual date",
+          "relevance": "Imogen had booked the anniversary dinner before anyone asked — logistics handled preemptively"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_7a8b9c0d_s03_t001",
+          "speaker_display_name": "Imogen",
+          "message_excerpt": "He's fine Mum, I spoke to him this morning 😊 he's just tired. I'm on it 😴",
+          "relevance": "Imogen manages Dad's health concern quietly — 'I'm on it' is her standard, but the tired emoji shows accumulating weight"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q3_fm7s2c1",
+      "category": "Q3",
+      "difficulty": "medium",
+      "question": "What was each family member's position on whether to hold a big party for the 40th anniversary?",
+      "answer": "Mum wanted a party — she proposed 'just twenty people, close family' and would have hired the village hall. Her reason was wanting everyone together after a long gap. Dad was opposed: 'A dinner is fine. No need for a party.' His preference is always for low-key occasions without fuss. Kofi was cautious — not firmly opposed but noted that March timing was difficult from Toronto after an August visit, and pushed for everyone to align before booking. Imogen had already booked a quiet dinner for four; she also questioned whether a big party would actually give Mum a chance to enjoy herself as a guest.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_7a8b9c0d_s02_t000",
+          "speaker_display_name": "Mum",
+          "message_excerpt": "Just twenty people, close family, the village hall is free that Saturday.",
+          "relevance": "Mum: pro-party, reason is bringing the family together"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_7a8b9c0d_s01_t003",
+          "speaker_display_name": "Dad",
+          "message_excerpt": "A dinner is fine. No need for a party.",
+          "relevance": "Dad: against, prefers low-key"
+        },
+        {
+          "session_index": 2,
+          "turn_id": "grp_7a8b9c0d_s02_t003",
+          "speaker_display_name": "Kofi",
+          "message_excerpt": "March is just genuinely very hard from my end, I was home in August. Two transatlantic trips in eight months is a lot, cost aside.",
+          "relevance": "Kofi: cautious/against, travel and cost make a March party difficult"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_7a8b9c0d_s01_t001",
+          "speaker_display_name": "Imogen",
+          "message_excerpt": "thought a quiet dinner would be nicer than a big do",
+          "relevance": "Imogen: against a big party, prefers intimate dinner"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_fm7s3c1",
+      "category": "Q5",
+      "difficulty": "hard",
+      "question": "What was Dad's situation, and how does the conversation show that Imogen already knew it?",
+      "answer": "Imogen's response — 'He's fine Mum — I spoke to him this morning. He's just tired. I'm on it 😴' — reveals that she has specific, direct knowledge of Dad's situation. She spoke to him that morning and is actively managing something she chooses not to disclose. The tired emoji is the one tell. Dad's persona establishes that he had a cardiac scare and disclosed it only to Imogen; Imogen is carrying this information while reassuring Mum with a cover story ('just tired'). She neither lies nor reveals — she holds the information and manages around it.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_7a8b9c0d_s03_t001",
+          "speaker_display_name": "Imogen",
+          "message_excerpt": "He's fine Mum, I spoke to him this morning 😊 he's just tired. I'm on it 😴",
+          "relevance": "Imogen's specific knowledge ('I spoke to him this morning'), active management ('I'm on it'), and the tired emoji all signal she knows more than she is saying"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q6_fm7s4c1",
+      "category": "Q6",
+      "difficulty": "medium",
+      "question": "The family has a norm that everyone comes home for Christmas. Does this apply to all family members?",
+      "answer": "Not necessarily — Kofi may not always be able to keep it. In Session 4, he told the family that Christmas flights from Toronto this year are 'brutal' and that it might be 'an even year' — meaning he may only come home in alternate years. He framed this apologetically ('I didn't want to say this') but laid out the constraint clearly: the cost and logistics of two transatlantic trips close together makes every Christmas impossible. Dad and Imogen accepted this with understanding. Mum resisted ('we said everyone'). The norm exists but Kofi's geography means it has already become conditional.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Dad",
+        "B": "Imogen",
+        "C": "Kofi",
+        "D": "Mum"
+      },
+      "correct_option": "C",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_7a8b9c0d_s04_t001",
+          "speaker_display_name": "Kofi",
+          "message_excerpt": "it might be an even year this time",
+          "relevance": "Kofi introduces the reality that Christmas attendance is not guaranteed for him — breaching the family norm"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_fm7s5c1",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does the conversation reveal about the relationship between Kofi and Imogen?",
+      "answer": "Kofi and Imogen have a close, honest sibling bond with a quiet asymmetry — Imogen does the nearby work of family life; Kofi bears the guilt of distance. In Session 5, after the anniversary dinner he missed, Kofi told Imogen 'I see you. Thank you.' — a private acknowledgement in the family chat of the invisible load she carries. He also said 'we need to talk properly soon' — suggesting there is a separate, bilateral communication channel where more is said than in the family group. Imogen responded simply: 'call me this week.' The relationship is warm, perceptive, and operates partly outside the group chat.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "sibling",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_7a8b9c0d_s05_t002",
+          "speaker_display_name": "Kofi",
+          "message_excerpt": "gutted I couldn't be there. Imogen, we need to talk properly soon. Sending love from Toronto 💙 And Imogen, I see you. Thank you.",
+          "relevance": "Kofi acknowledges Imogen's invisible labour directly — 'I see you' is a private recognition of what the family doesn't name"
+        }
+      ],
+      "temporal_anchors": []
+    }
+  ],
+  "meta": {
+    "source": "SocialMemBench",
+    "source_kind": "real_benchmark",
+    "network_id": "grp_7a8b9c0d",
+    "n_sessions": 5,
+    "n_turns": 50,
+    "n_qa": 5,
+    "v4_correct": 4,
+    "v4_total": 5,
+    "v4_errors": 1,
+    "v4_accuracy": 0.8,
+    "heldout_heldout_excluded": true
+  }
+}

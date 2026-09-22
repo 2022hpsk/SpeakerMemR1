@@ -1,0 +1,2528 @@
+{
+  "schema": "socialmembench-real-v4-source/1",
+  "scenario": "[socialmembench:grp_c2d3e4f5] real benchmark conversation",
+  "speakers": [
+    "Aisha",
+    "Dan",
+    "Jess",
+    "Kezia",
+    "Marcus",
+    "Priya",
+    "Rory",
+    "Tom",
+    "Zoe"
+  ],
+  "sessions": [
+    {
+      "session_id": "grp_c2d3e4f5_s01",
+      "session_index": 1,
+      "topic": "Post-Edinburgh trip debrief and planning next Sunday walk",
+      "ts": "2025-01-06",
+      "turns": [
+        {
+          "turn": "grp_c2d3e4f5_s01_t000",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "right so. edinburgh trip review: thoughts, feelings, receipts 😂 honestly it delivered. who's in for sunday walk this week? victoria park or green park?",
+          "ts": "2025-01-06T10:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s01_t001",
+          "speaker": "Jess",
+          "speaker_id": "p_cf05ee05",
+          "content": "I cannot believe I almost cancelled on that trip. the flat was great, the group size felt right, and I think we actually managed to have proper conversations rather than just shouting over each other in a pub. I'm in for sunday, Victoria Park please.",
+          "ts": "2025-01-06T10:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s01_t002",
+          "speaker": "Rory",
+          "speaker_id": "p_cf08hh08",
+          "content": "victoria park 🙌 also Jess did you get to the natural wine bar near the wynds? the one I dropped on your maps 🍷",
+          "ts": "2025-01-06T10:21:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s01_t003",
+          "speaker": "Tom",
+          "speaker_id": "p_cf06ff06",
+          "content": "good trip. tge flat was better than last year. victoria park fine",
+          "ts": "2025-01-06T10:24:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s01_t004",
+          "speaker": "Dan",
+          "speaker_id": "p_cf02bb02",
+          "content": "A solid effort. I will note that the Grassmarket in January is cold enough to make even the most hardened constitutionalist reconsider. The capping at nine was correct, for the record. Groups larger than that stop being trips and start being logistics projects. But what do I know.",
+          "ts": "2025-01-06T10:27:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s01_t005",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "the cold 😭😭",
+          "ts": "2025-01-06T10:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s01_t006",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "but also yes victoria park",
+          "ts": "2025-01-06T10:33:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s01_t007",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "and that wine bar was unreal, rory",
+          "ts": "2025-01-06T10:36:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s01_t008",
+          "speaker": "Kezia",
+          "speaker_id": "p_cf07gg07",
+          "content": "The trip functioned well at this scale. Nine is arguably the upper limit for a group where genuine conversation is still possible. Anything larger becomes an event to attend rather than a trip to go on. I am also in for Sunday.",
+          "ts": "2025-01-06T10:39:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s01_t009",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "honestly this is why I kept the list at nine. people were grumpy at the time but it was the right call. same model next year. who's in for sunday, running total: me, Jess, Priya, Kezia?",
+          "ts": "2025-01-06T10:42:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s01_t010",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf04dd04",
+          "content": "I will need to check my diary for Sunday but the trip was well-organised. Good choice of flat.",
+          "ts": "2025-01-06T10:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s01_t011",
+          "speaker": "Tom",
+          "speaker_id": "p_cf06ff06",
+          "content": "rory you sorting sunday league this weekend or next?",
+          "ts": "2025-01-06T10:48:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s01_t012",
+          "speaker": "Rory",
+          "speaker_id": "p_cf08hh08",
+          "content": "next sunday mate, Gaz confirmed it 🙌 you're in the starting 11 btw",
+          "ts": "2025-01-06T10:51:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s01_t013",
+          "speaker": "Tom",
+          "speaker_id": "p_cf06ff06",
+          "content": "good",
+          "ts": "2025-01-06T10:54:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s01_t014",
+          "speaker": "Zoe",
+          "speaker_id": "p_cf09ii09",
+          "content": "trip was a solid 8.5. would have been higher but someone started making tea at 7am. you know who you are 🙄",
+          "ts": "2025-01-06T10:57:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s01_t015",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "it was FOR EVERYONE",
+          "ts": "2025-01-06T11:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s01_t016",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "you're welcome",
+          "ts": "2025-01-06T11:03:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s01_t017",
+          "speaker": "Dan",
+          "speaker_id": "p_cf02bb02",
+          "content": "Zoe I believe the official Edinburgh sunrise on that date was 8:53am. Any earlier disturbance was technically not daylight-sanctioned. But what do I know.",
+          "ts": "2025-01-06T11:06:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s01_t018",
+          "speaker": "Jess",
+          "speaker_id": "p_cf05ee05",
+          "content": "to be fair Priya the kettle noise was quite a production 😄 but the tea was good so I'm staying neutral",
+          "ts": "2025-01-06T11:09:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s01_t019",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "final call for sunday: in or out? need numbers by wednesday for the car pool 🚗",
+          "ts": "2025-01-06T11:12:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s01_t020",
+          "speaker": "Zoe",
+          "speaker_id": "p_cf09ii09",
+          "content": "in. as long as we actually walk and don't spend 25 minutes debating the route at the entrance 😐",
+          "ts": "2025-01-06T11:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s01_t021",
+          "speaker": "Rory",
+          "speaker_id": "p_cf08hh08",
+          "content": "noted and ignored 🔥 in obviously",
+          "ts": "2025-01-06T11:18:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_c2d3e4f5_s02",
+      "session_index": 2,
+      "topic": "Post-work pub night that turns heavy — Dan's recalibration",
+      "ts": "2025-01-13",
+      "turns": [
+        {
+          "turn": "grp_c2d3e4f5_s02_t000",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "who's making it tonight? Dan, Tom, Rory confirmed. anyone else? 🍺",
+          "ts": "2025-01-13T20:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s02_t001",
+          "speaker": "Jess",
+          "speaker_id": "p_cf05ee05",
+          "content": "I'll come for one, honestly I've had a week. just one though",
+          "ts": "2025-01-13T20:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s02_t002",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "in!! 🎉",
+          "ts": "2025-01-13T20:21:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s02_t003",
+          "speaker": "Dan",
+          "speaker_id": "p_cf02bb02",
+          "content": "Looking forward to it. Haven't had a proper pub night since before Christmas.",
+          "ts": "2025-01-13T20:24:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s02_t004",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf04dd04",
+          "content": "Can't make tonight. Enjoy.",
+          "ts": "2025-01-13T20:27:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s02_t005",
+          "speaker": "Zoe",
+          "speaker_id": "p_cf09ii09",
+          "content": "I'm on nights this week, can't make it. have a pint for me 🍺",
+          "ts": "2025-01-13T20:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s02_t006",
+          "speaker": "Tom",
+          "speaker_id": "p_cf06ff06",
+          "content": "in",
+          "ts": "2025-01-13T20:33:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s02_t007",
+          "speaker": "Kezia",
+          "speaker_id": "p_cf07gg07",
+          "content": "I will come for a bit.",
+          "ts": "2025-01-13T20:36:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s02_t008",
+          "speaker": "Rory",
+          "speaker_id": "p_cf08hh08",
+          "content": "right I'm already here, Dan get a move on the quiz starts in twenty 🍺🍺",
+          "ts": "2025-01-13T20:39:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s02_t009",
+          "speaker": "Dan",
+          "speaker_id": "p_cf02bb02",
+          "content": "The quiz was a catastrophe and I blame the lighting in that venue. We did, however, win a bottle of house wine, which softened the blow.",
+          "ts": "2025-01-13T20:42:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s02_t010",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "dan how many pints was that",
+          "ts": "2025-01-13T20:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s02_t011",
+          "speaker": "Dan",
+          "speaker_id": "p_cf02bb02",
+          "content": "This is not a line of questioning I intend to engage with.",
+          "ts": "2025-01-13T20:48:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s02_t012",
+          "speaker": "Rory",
+          "speaker_id": "p_cf08hh08",
+          "content": "three 🍺 plus the wine 🍷 plus a round of chasers that Tom ordered 😬",
+          "ts": "2025-01-13T20:51:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s02_t013",
+          "speaker": "Tom",
+          "speaker_id": "p_cf06ff06",
+          "content": "you're welcome",
+          "ts": "2025-01-13T20:54:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s02_t014",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "oh no. dan are you ok 😂",
+          "ts": "2025-01-13T20:57:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s02_t015",
+          "speaker": "Jess",
+          "speaker_id": "p_cf05ee05",
+          "content": "I left at 9:30 specifically to avoid this. are you all alive?",
+          "ts": "2025-01-13T21:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s02_t016",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "barely 😵",
+          "ts": "2025-01-13T21:03:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s02_t017",
+          "speaker": "Rory",
+          "speaker_id": "p_cf08hh08",
+          "content": "all fine 👍 could have done without the last round to be honest",
+          "ts": "2025-01-13T21:06:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s02_t018",
+          "speaker": "Kezia",
+          "speaker_id": "p_cf07gg07",
+          "content": "I left at 10. I had a reasonable evening. I note that the quiz rounds were poorly structured and the tiebreak question was factually ambiguous.",
+          "ts": "2025-01-13T21:09:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s02_t019",
+          "speaker": "Dan",
+          "speaker_id": "p_cf02bb02",
+          "content": "Next day update: I am fine. I am also not doing that again for some time. The Historical Hangover, if you will, the kind where you genuinely revise your view of a thing you previously enjoyed.",
+          "ts": "2025-01-13T21:12:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s02_t020",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "honestly Dan this tracks 😂 how are the rest of you",
+          "ts": "2025-01-13T21:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s02_t021",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "fine. water. sleep. fine 👍",
+          "ts": "2025-01-13T21:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s02_t022",
+          "speaker": "Tom",
+          "speaker_id": "p_cf06ff06",
+          "content": "fine",
+          "ts": "2025-01-13T21:21:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_c2d3e4f5_s03",
+      "session_index": 3,
+      "topic": "Planning a birthday night out; Kezia's quiet drink change",
+      "ts": "2025-01-20",
+      "turns": [
+        {
+          "turn": "grp_c2d3e4f5_s03_t000",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "so Joel's birthday is Feb 1st and Sasha has suggested doing a cocktail bar thing in Shoreditch. not very Joel but anyway. who's in? 🎂",
+          "ts": "2025-01-20T21:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s03_t001",
+          "speaker": "Rory",
+          "speaker_id": "p_cf08hh08",
+          "content": "Shoreditch cocktail bar on a Saturday night 🎉 the contrast with Joel's actual personality is a lot but fine, I'll go. we should do dinner first",
+          "ts": "2025-01-20T21:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s03_t002",
+          "speaker": "Dan",
+          "speaker_id": "p_cf02bb02",
+          "content": "I have a commitment that evening unfortunately. I will send a card.",
+          "ts": "2025-01-20T21:21:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s03_t003",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "noooo Dan!! ok but who else is in 🙋",
+          "ts": "2025-01-20T21:24:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s03_t004",
+          "speaker": "Tom",
+          "speaker_id": "p_cf06ff06",
+          "content": "not my thing but if joel wants it I'll show",
+          "ts": "2025-01-20T21:27:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s03_t005",
+          "speaker": "Kezia",
+          "speaker_id": "p_cf07gg07",
+          "content": "I can attend for the early part.",
+          "ts": "2025-01-20T21:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s03_t006",
+          "speaker": "Jess",
+          "speaker_id": "p_cf05ee05",
+          "content": "I'm in! Aisha are we doing dinner first then drinks or just joining for drinks?",
+          "ts": "2025-01-20T21:33:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s03_t007",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "honestly I think dinner then move on. Kezia are you staying for drinks or just dinner?",
+          "ts": "2025-01-20T21:36:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s03_t008",
+          "speaker": "Kezia",
+          "speaker_id": "p_cf07gg07",
+          "content": "Probably just dinner. I have a thing.",
+          "ts": "2025-01-20T21:39:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s03_t009",
+          "speaker": "Zoe",
+          "speaker_id": "p_cf09ii09",
+          "content": "I'll try to swap a shift. you guys go without me if it comes to that, don't wait",
+          "ts": "2025-01-20T21:42:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s03_t010",
+          "speaker": "Rory",
+          "speaker_id": "p_cf08hh08",
+          "content": "Zoe you say this every time and then show up anyway 🙌",
+          "ts": "2025-01-20T21:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s03_t011",
+          "speaker": "Zoe",
+          "speaker_id": "p_cf09ii09",
+          "content": "I say it every time because it's true every time. the NHS is not aware that Joel has a birthday 🙄",
+          "ts": "2025-01-20T21:48:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s03_t012",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "fair 😂",
+          "ts": "2025-01-20T21:51:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s03_t013",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf04dd04",
+          "content": "I'll be out of town that weekend. Enjoy.",
+          "ts": "2025-01-20T21:54:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s03_t014",
+          "speaker": "Jess",
+          "speaker_id": "p_cf05ee05",
+          "content": "to be fair Marcus you're always out of town for these things 😄 are you secretly running a second life somewhere",
+          "ts": "2025-01-20T21:57:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s03_t015",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf04dd04",
+          "content": "Just a lot of travel at the moment.",
+          "ts": "2025-01-20T22:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s03_t016",
+          "speaker": "Dan",
+          "speaker_id": "p_cf02bb02",
+          "content": "Jess I suspect Marcus simply values his weekends more sensibly than the rest of us. After last week I am in no position to judge.",
+          "ts": "2025-01-20T22:03:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s03_t017",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "how are you feeling now dan 😂",
+          "ts": "2025-01-20T22:06:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s03_t018",
+          "speaker": "Dan",
+          "speaker_id": "p_cf02bb02",
+          "content": "Significantly improved. I have also made some minor adjustments to my approach to pub nights that I won't bore you with.",
+          "ts": "2025-01-20T22:09:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s03_t019",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "I'll book the table for 8. Kezia, are you drinking or should I flag for the waiter?",
+          "ts": "2025-01-20T22:12:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s03_t020",
+          "speaker": "Kezia",
+          "speaker_id": "p_cf07gg07",
+          "content": "Just water is fine.",
+          "ts": "2025-01-20T22:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s03_t021",
+          "speaker": "Jess",
+          "speaker_id": "p_cf05ee05",
+          "content": "I'll have the same as Kezia 🙂 solidarity",
+          "ts": "2025-01-20T22:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s03_t022",
+          "speaker": "Zoe",
+          "speaker_id": "p_cf09ii09",
+          "content": "I'll have whatever's leftover from Rory's share 🍸 solidarity with the NHS waiting list",
+          "ts": "2025-01-20T22:21:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_c2d3e4f5_s04",
+      "session_index": 4,
+      "topic": "Aisha's first hosting at new flat; dinner out at Rory's pick",
+      "ts": "2025-01-27",
+      "turns": [
+        {
+          "turn": "grp_c2d3e4f5_s04_t000",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "ok so. new flat, first proper hosting, I'm going to say it was a success 😊 the dining table fits everyone which I was genuinely not sure about. rory your restaurant pick was also extremely good so I'm prepared to call the evening a win",
+          "ts": "2025-01-27T23:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s04_t001",
+          "speaker": "Rory",
+          "speaker_id": "p_cf08hh08",
+          "content": "told you 🙌🙌 that place has been on my list since October. you're welcome Tom",
+          "ts": "2025-01-27T23:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s04_t002",
+          "speaker": "Tom",
+          "speaker_id": "p_cf06ff06",
+          "content": "yeah it was alright. better than I expected from a place with no menu on tge door",
+          "ts": "2025-01-27T23:21:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s04_t003",
+          "speaker": "Jess",
+          "speaker_id": "p_cf05ee05",
+          "content": "Tom 'better than I expected' is the highest praise he gives restaurants, just so everyone knows 😄 also Aisha your flat is genuinely gorgeous, that kitchen is a dream",
+          "ts": "2025-01-27T23:24:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s04_t004",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "honestly I thought I'd be stressed about hosting but it just worked? I think having the right space makes all the difference. might do this monthly",
+          "ts": "2025-01-27T23:27:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s04_t005",
+          "speaker": "Dan",
+          "speaker_id": "p_cf02bb02",
+          "content": "The flat is excellent. I will also say, and I mean this as a compliment, that six people at the dinner table worked rather better than the usual format. Six is the correct number. But what do I know.",
+          "ts": "2025-01-27T23:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s04_t006",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "Rory that lamb was 🤌🤌 I had the walnut mushroom thing and it was also incredible",
+          "ts": "2025-01-27T23:33:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s04_t007",
+          "speaker": "Rory",
+          "speaker_id": "p_cf08hh08",
+          "content": "everything on that menu is good. they change it weekly from the market. if you go back, Thursday is the best day 🍽️",
+          "ts": "2025-01-27T23:36:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s04_t008",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf04dd04",
+          "content": "Good evening, good food. The flat is well-designed. Well done Aisha.",
+          "ts": "2025-01-27T23:39:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s04_t009",
+          "speaker": "Kezia",
+          "speaker_id": "p_cf07gg07",
+          "content": "The hosting worked well. I noticed you were visibly less anxious than I expected, Aisha. Compared to previous hosting situations you have usually needed a significant wind-down period before you could actually relax.",
+          "ts": "2025-01-27T23:42:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s04_t010",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "yes, honestly? I think it's the flat. previous places never felt quite right to have people in. this one does. I'm into it.",
+          "ts": "2025-01-27T23:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s04_t011",
+          "speaker": "Jess",
+          "speaker_id": "p_cf05ee05",
+          "content": "to be fair this is a marked improvement from the last time Aisha hosted at the old place and spent the entire evening reorganising the cheese board 😄",
+          "ts": "2025-01-27T23:48:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s04_t012",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "that cheese board needed reorganising and I stand by it 😂",
+          "ts": "2025-01-27T23:51:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s04_t013",
+          "speaker": "Zoe",
+          "speaker_id": "p_cf09ii09",
+          "content": "to be honest the new flat is quite calming. I said this to three colleagues this week and they all looked at me like I'd lost it. apparently nurses aren't meant to have opinions about flat vibes 🙄",
+          "ts": "2025-01-27T23:54:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s04_t014",
+          "speaker": "Tom",
+          "speaker_id": "p_cf06ff06",
+          "content": "rory that waiter knew you. how often are you in there",
+          "ts": "2025-01-27T23:57:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s04_t015",
+          "speaker": "Rory",
+          "speaker_id": "p_cf08hh08",
+          "content": "been a few times for research 👨‍🍳 once for a slightly awkward dinner actually",
+          "ts": "2025-01-28T00:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s04_t016",
+          "speaker": "Jess",
+          "speaker_id": "p_cf05ee05",
+          "content": "oh god don't bring that up 😂",
+          "ts": "2025-01-28T00:03:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s04_t017",
+          "speaker": "Rory",
+          "speaker_id": "p_cf08hh08",
+          "content": "ancient history! ancient! 😂",
+          "ts": "2025-01-28T00:06:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s04_t018",
+          "speaker": "Dan",
+          "speaker_id": "p_cf02bb02",
+          "content": "I am choosing not to pursue this line of inquiry. Some things are better left in the Grassmarket.",
+          "ts": "2025-01-28T00:09:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s04_t019",
+          "speaker": "Tom",
+          "speaker_id": "p_cf06ff06",
+          "content": "what",
+          "ts": "2025-01-28T00:12:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s04_t020",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "wait what 👀👀",
+          "ts": "2025-01-28T00:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s04_t021",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "absolutely not getting into that tonight. who's coming sunday 😂",
+          "ts": "2025-01-28T00:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s04_t022",
+          "speaker": "Jess",
+          "speaker_id": "p_cf05ee05",
+          "content": "good redirect, good redirect 😄 in for sunday",
+          "ts": "2025-01-28T00:21:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_c2d3e4f5_s05",
+      "session_index": 5,
+      "topic": "Sunday walk and pub lunch; food orders reveal Priya's quiet change",
+      "ts": "2025-02-03",
+      "turns": [
+        {
+          "turn": "grp_c2d3e4f5_s05_t000",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "post-walk pub mandatory. everyone alive? 🍺 decent walk despite the rain",
+          "ts": "2025-02-03T21:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s05_t001",
+          "speaker": "Rory",
+          "speaker_id": "p_cf08hh08",
+          "content": "solid walk 👍 Priya that pace in the second half was something else, legs like that are wasted on a UX designer",
+          "ts": "2025-02-03T21:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s05_t002",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "thank you 🙏😂 also can we get food I'm starving",
+          "ts": "2025-02-03T21:21:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s05_t003",
+          "speaker": "Tom",
+          "speaker_id": "p_cf06ff06",
+          "content": "already ordered",
+          "ts": "2025-02-03T21:24:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s05_t004",
+          "speaker": "Jess",
+          "speaker_id": "p_cf05ee05",
+          "content": "Tom you ordered without asking 😄",
+          "ts": "2025-02-03T21:27:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s05_t005",
+          "speaker": "Tom",
+          "speaker_id": "p_cf06ff06",
+          "content": "chips. everyone wants chips",
+          "ts": "2025-02-03T21:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s05_t006",
+          "speaker": "Rory",
+          "speaker_id": "p_cf08hh08",
+          "content": "correct actually 🍟",
+          "ts": "2025-02-03T21:33:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s05_t007",
+          "speaker": "Dan",
+          "speaker_id": "p_cf02bb02",
+          "content": "I will also say the walk today was markedly better for being six of us rather than nine. I am detecting a pattern. But what do I know.",
+          "ts": "2025-02-03T21:36:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s05_t008",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "ordering the mushroom burger btw",
+          "ts": "2025-02-03T21:39:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s05_t009",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "does anyone want to split the halloumi?",
+          "ts": "2025-02-03T21:42:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s05_t010",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf04dd04",
+          "content": "I'll take the halloumi if you're splitting.",
+          "ts": "2025-02-03T21:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s05_t011",
+          "speaker": "Zoe",
+          "speaker_id": "p_cf09ii09",
+          "content": "are you not getting the chicken thing you always get Priya 🤔",
+          "ts": "2025-02-03T21:48:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s05_t012",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "not today 🙂",
+          "ts": "2025-02-03T21:51:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s05_t013",
+          "speaker": "Jess",
+          "speaker_id": "p_cf05ee05",
+          "content": "I'll take half the halloumi too, I'm in a salad mood which I realise is a deranged thing to say in February",
+          "ts": "2025-02-03T21:54:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s05_t014",
+          "speaker": "Rory",
+          "speaker_id": "p_cf08hh08",
+          "content": "salad in February is genuinely concerning Jess 😂 Aisha the burger here is better than it looks btw",
+          "ts": "2025-02-03T21:57:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s05_t015",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "sold 🙌 also Rory you actually kept up on the second half today, that's new. you were always the one pretending to stop for a photo",
+          "ts": "2025-02-03T22:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s05_t016",
+          "speaker": "Rory",
+          "speaker_id": "p_cf08hh08",
+          "content": "I've been taking the walks a bit more seriously recently 🎒 no particular reason",
+          "ts": "2025-02-03T22:03:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s05_t017",
+          "speaker": "Tom",
+          "speaker_id": "p_cf06ff06",
+          "content": "good",
+          "ts": "2025-02-03T22:06:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s05_t018",
+          "speaker": "Zoe",
+          "speaker_id": "p_cf09ii09",
+          "content": "no particular reason he says 🙄 noted Rory",
+          "ts": "2025-02-03T22:09:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s05_t019",
+          "speaker": "Kezia",
+          "speaker_id": "p_cf07gg07",
+          "content": "I observed the same. Your pace today was measurably different from the previous two walks. Something has changed in your approach.",
+          "ts": "2025-02-03T22:12:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s05_t020",
+          "speaker": "Rory",
+          "speaker_id": "p_cf08hh08",
+          "content": "alright alright 😂 I've just been thinking more about the physical side of things. nothing dramatic. more chips please 🍟",
+          "ts": "2025-02-03T22:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s05_t021",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "ok now I feel bad about the mushroom burger",
+          "ts": "2025-02-03T22:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s05_t022",
+          "speaker": "Zoe",
+          "speaker_id": "p_cf09ii09",
+          "content": "to be honest my idea of health is getting through a twelve-hour shift without eating a meal deal so I'm not in a position to judge anyone's food choices 😐",
+          "ts": "2025-02-03T22:21:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s05_t023",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "same, basically. food is food 🙂",
+          "ts": "2025-02-03T22:24:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s05_t024",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "you two are genuinely the least dramatic people in this group about food and it shows 😂",
+          "ts": "2025-02-03T22:27:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_c2d3e4f5_s06",
+      "session_index": 6,
+      "topic": "Evening chat; Marcus helps Tom move, Jess calls out Zoe's deflection pattern",
+      "ts": "2025-02-10",
+      "turns": [
+        {
+          "turn": "grp_c2d3e4f5_s06_t000",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "ok who came to help Tom move today? report in 😂",
+          "ts": "2025-02-10T19:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s06_t001",
+          "speaker": "Tom",
+          "speaker_id": "p_cf06ff06",
+          "content": "marcus showed up. didn't ask him to",
+          "ts": "2025-02-10T19:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s06_t002",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf04dd04",
+          "content": "The van rental was straightforward. Tom's furniture is heavier than it looks.",
+          "ts": "2025-02-10T19:21:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s06_t003",
+          "speaker": "Jess",
+          "speaker_id": "p_cf05ee05",
+          "content": "wait Marcus you just sent a message that was not a response to a direct question?? who are you and what have you done with our Marcus",
+          "ts": "2025-02-10T19:24:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s06_t004",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf04dd04",
+          "content": "It seemed like relevant information.",
+          "ts": "2025-02-10T19:27:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s06_t005",
+          "speaker": "Rory",
+          "speaker_id": "p_cf08hh08",
+          "content": "he's been infected by Tom's gravitational field 😂 Tom makes people comfortable, it's his thing",
+          "ts": "2025-02-10T19:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s06_t006",
+          "speaker": "Tom",
+          "speaker_id": "p_cf06ff06",
+          "content": "nah. marcus saw the spreadsheet I was using for the inventory and had opinions",
+          "ts": "2025-02-10T19:33:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s06_t007",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf04dd04",
+          "content": "It had significant structural issues.",
+          "ts": "2025-02-10T19:36:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s06_t008",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "honestly this is the best thing that has happened in February 😂 Zoe how are you doing, you've been quiet this week",
+          "ts": "2025-02-10T19:39:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s06_t009",
+          "speaker": "Zoe",
+          "speaker_id": "p_cf09ii09",
+          "content": "all good, just a run of long shifts. nothing a six-day weekend wouldn't fix 🙃",
+          "ts": "2025-02-10T19:42:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s06_t010",
+          "speaker": "Jess",
+          "speaker_id": "p_cf05ee05",
+          "content": "I'm going to gently push back on that Zoe because you say that every week and I'm not sure it's always the whole picture. are you actually doing ok? you don't have to do the hospital bit if you don't want to.",
+          "ts": "2025-02-10T19:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s06_t011",
+          "speaker": "Zoe",
+          "speaker_id": "p_cf09ii09",
+          "content": "...",
+          "ts": "2025-02-10T19:48:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s06_t012",
+          "speaker": "Zoe",
+          "speaker_id": "p_cf09ii09",
+          "content": "to be honest the last three weeks have been quite hard. not in a bad way, just heavy. my mum has been in a bit. nothing serious but it's been on my mind.",
+          "ts": "2025-02-10T19:51:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s06_t013",
+          "speaker": "Jess",
+          "speaker_id": "p_cf05ee05",
+          "content": "thank you for saying that. is she ok?",
+          "ts": "2025-02-10T19:54:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s06_t014",
+          "speaker": "Zoe",
+          "speaker_id": "p_cf09ii09",
+          "content": "she's fine. just getting older, you know. I think I've been using the hospital stuff to not think about it.",
+          "ts": "2025-02-10T19:57:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s06_t015",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "Zoe 💙 honestly thank you for saying. we're here",
+          "ts": "2025-02-10T20:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s06_t016",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "💙💙",
+          "ts": "2025-02-10T20:03:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s06_t017",
+          "speaker": "Tom",
+          "speaker_id": "p_cf06ff06",
+          "content": "hope she's ok",
+          "ts": "2025-02-10T20:06:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s06_t018",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf04dd04",
+          "content": "Same. Let me know if there is anything practical.",
+          "ts": "2025-02-10T20:09:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s06_t019",
+          "speaker": "Zoe",
+          "speaker_id": "p_cf09ii09",
+          "content": "that's genuinely appreciated, Marcus. the practical offer is very on brand and I mean that nicely 😊",
+          "ts": "2025-02-10T20:12:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s06_t020",
+          "speaker": "Kezia",
+          "speaker_id": "p_cf07gg07",
+          "content": "The shift in how you framed that, Zoe, from the hospital format to the actual thing, is notable. You have been fielding the 'how are you' question in a particular way for quite a while.",
+          "ts": "2025-02-10T20:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s06_t021",
+          "speaker": "Jess",
+          "speaker_id": "p_cf05ee05",
+          "content": "Kezia is doing sociology at us again 😄 but she's not wrong",
+          "ts": "2025-02-10T20:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s06_t022",
+          "speaker": "Zoe",
+          "speaker_id": "p_cf09ii09",
+          "content": "no she's not. it's a bit much when someone names it out loud but also fair 😐",
+          "ts": "2025-02-10T20:21:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s06_t023",
+          "speaker": "Dan",
+          "speaker_id": "p_cf02bb02",
+          "content": "For what it is worth, Zoe, I think you are significantly better company than you give yourself credit for. But what do I know.",
+          "ts": "2025-02-10T20:24:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s06_t024",
+          "speaker": "Rory",
+          "speaker_id": "p_cf08hh08",
+          "content": "what Dan said 🙌 also Marcus turning up for a flat move he was not invited to is the February content I needed",
+          "ts": "2025-02-10T20:27:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_c2d3e4f5_s07",
+      "session_index": 7,
+      "topic": "Planning a May group trip to Portugal",
+      "ts": "2025-02-17",
+      "turns": [
+        {
+          "turn": "grp_c2d3e4f5_s07_t000",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "Portugal planning thread!! May is 12 weeks away. I have found a house that sleeps ten and I need commitments by March 1st. who's in? 🇵🇹",
+          "ts": "2025-02-17T21:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s07_t001",
+          "speaker": "Jess",
+          "speaker_id": "p_cf05ee05",
+          "content": "I'm in. dates?",
+          "ts": "2025-02-17T21:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s07_t002",
+          "speaker": "Rory",
+          "speaker_id": "p_cf08hh08",
+          "content": "in 🙌🙌 I will handle all food-related decisions as tribute 🍽️",
+          "ts": "2025-02-17T21:21:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s07_t003",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "yes 🎉 send the listing",
+          "ts": "2025-02-17T21:24:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s07_t004",
+          "speaker": "Dan",
+          "speaker_id": "p_cf02bb02",
+          "content": "How many people are we expecting? I want to make sure we are not replicating the Edinburgh discussion from 2022.",
+          "ts": "2025-02-17T21:27:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s07_t005",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "maximum ten, same as Edinburgh. I have a list 😂",
+          "ts": "2025-02-17T21:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s07_t006",
+          "speaker": "Dan",
+          "speaker_id": "p_cf02bb02",
+          "content": "Then yes. Good. Ten is fine. But what do I know.",
+          "ts": "2025-02-17T21:33:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s07_t007",
+          "speaker": "Tom",
+          "speaker_id": "p_cf06ff06",
+          "content": "in",
+          "ts": "2025-02-17T21:36:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s07_t008",
+          "speaker": "Zoe",
+          "speaker_id": "p_cf09ii09",
+          "content": "I'll need to check rotas but provisionally yes. I won't do the thing where I nearly cancel. to be honest I've been told it's annoying 😄",
+          "ts": "2025-02-17T21:39:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s07_t009",
+          "speaker": "Jess",
+          "speaker_id": "p_cf05ee05",
+          "content": "I may have said that once or twice 😄",
+          "ts": "2025-02-17T21:42:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s07_t010",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf04dd04",
+          "content": "I'll look at flights but May is tight. Don't hold a spot for me.",
+          "ts": "2025-02-17T21:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s07_t011",
+          "speaker": "Kezia",
+          "speaker_id": "p_cf07gg07",
+          "content": "I am in provisionally. The house sleeps ten which is either comfortable or a social experiment depending on how the days are structured. I would suggest building in some non-group hours each day.",
+          "ts": "2025-02-17T21:48:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s07_t012",
+          "speaker": "Dan",
+          "speaker_id": "p_cf02bb02",
+          "content": "Kezia you are describing what I believe sociologists call introvert respite windows. I have argued for this for fifteen years to no avail.",
+          "ts": "2025-02-17T21:51:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s07_t013",
+          "speaker": "Kezia",
+          "speaker_id": "p_cf07gg07",
+          "content": "I would not use that framing but the underlying point is sound. Though arguably the resistance to it tells you something interesting about the group's collective identity construction.",
+          "ts": "2025-02-17T21:54:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s07_t014",
+          "speaker": "Rory",
+          "speaker_id": "p_cf08hh08",
+          "content": "and now they're off 😂 can someone translate for the rest of us",
+          "ts": "2025-02-17T21:57:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s07_t015",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "they want to sometimes be alone 😂",
+          "ts": "2025-02-17T22:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s07_t016",
+          "speaker": "Dan",
+          "speaker_id": "p_cf02bb02",
+          "content": "Precisely.",
+          "ts": "2025-02-17T22:03:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s07_t017",
+          "speaker": "Tom",
+          "speaker_id": "p_cf06ff06",
+          "content": "fair",
+          "ts": "2025-02-17T22:06:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s07_t018",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "ok I will build in free afternoons, happy? 😄 Jess you committed extremely fast, that's new",
+          "ts": "2025-02-17T22:09:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s07_t019",
+          "speaker": "Jess",
+          "speaker_id": "p_cf05ee05",
+          "content": "I know. I've been trying to be less of a 'I'll see how I feel closer to the time' person about trips. it's been good so far.",
+          "ts": "2025-02-17T22:12:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s07_t020",
+          "speaker": "Zoe",
+          "speaker_id": "p_cf09ii09",
+          "content": "growth arc. noted 🌱",
+          "ts": "2025-02-17T22:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s07_t021",
+          "speaker": "Rory",
+          "speaker_id": "p_cf08hh08",
+          "content": "the Edinburgh effect 🙌",
+          "ts": "2025-02-17T22:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s07_t022",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "confirmed so far: me, Jess, Rory, Priya, Tom, Kezia. Dan, Zoe, Marcus pending. booking closes March 1st 🇵🇹",
+          "ts": "2025-02-17T22:21:00",
+          "reply_to": ""
+        }
+      ]
+    },
+    {
+      "session_id": "grp_c2d3e4f5_s08",
+      "session_index": 8,
+      "topic": "Sunday walk and pub; Marcus missing again; Zoe breaks the no-work rule",
+      "ts": "2025-02-24",
+      "turns": [
+        {
+          "turn": "grp_c2d3e4f5_s08_t000",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "sunday walk done! victoria park, very cold, very worth it. who made it and how are we all 🌿",
+          "ts": "2025-02-24T20:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t001",
+          "speaker": "Jess",
+          "speaker_id": "p_cf05ee05",
+          "content": "made it! toes gone, soul restored, the usual deal 😂",
+          "ts": "2025-02-24T20:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t002",
+          "speaker": "Rory",
+          "speaker_id": "p_cf08hh08",
+          "content": "10/10 walk, 6/10 weather, 9/10 pub 🙌",
+          "ts": "2025-02-24T20:21:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t003",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "the pub fire was doing the most today ❤️",
+          "ts": "2025-02-24T20:24:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t004",
+          "speaker": "Tom",
+          "speaker_id": "p_cf06ff06",
+          "content": "that pub has been there since the 70s. still good",
+          "ts": "2025-02-24T20:27:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t005",
+          "speaker": "Dan",
+          "speaker_id": "p_cf02bb02",
+          "content": "The saloon bar remains one of the finest surviving examples of unrenovated Victorian pub interior in East London, if anyone is interested. It is listed. But what do I know.",
+          "ts": "2025-02-24T20:30:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t006",
+          "speaker": "Tom",
+          "speaker_id": "p_cf06ff06",
+          "content": "yeah what he said",
+          "ts": "2025-02-24T20:33:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t007",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "Marcus, I noticed you missed again 🙁 third Sunday running. everything ok?",
+          "ts": "2025-02-24T20:36:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t008",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf04dd04",
+          "content": "Work. Sorry. Next week I think.",
+          "ts": "2025-02-24T20:39:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t009",
+          "speaker": "Dan",
+          "speaker_id": "p_cf02bb02",
+          "content": "Marcus I say this with affection: you have been thinking next week for approximately four months.",
+          "ts": "2025-02-24T20:42:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t010",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "Dan has deployed that exact phrase since our second year at university. it is devastatingly effective, I can confirm.",
+          "ts": "2025-02-24T20:45:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t011",
+          "speaker": "Dan",
+          "speaker_id": "p_cf02bb02",
+          "content": "It works because it is delivered from genuine fondness. Which is precisely what Aisha is doing right now. But what do I know.",
+          "ts": "2025-02-24T20:48:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t012",
+          "speaker": "Jess",
+          "speaker_id": "p_cf05ee05",
+          "content": "to be fair you two have been doing this routine for ten years 😄",
+          "ts": "2025-02-24T20:51:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t013",
+          "speaker": "Marcus",
+          "speaker_id": "p_cf04dd04",
+          "content": "Correct. I will be there when I can be.",
+          "ts": "2025-02-24T20:54:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t014",
+          "speaker": "Kezia",
+          "speaker_id": "p_cf07gg07",
+          "content": "I think we should note that Marcus's participation pattern is consistent rather than declining. Arguably this is just how his weekends work, not an avoidance strategy.",
+          "ts": "2025-02-24T20:57:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t015",
+          "speaker": "Zoe",
+          "speaker_id": "p_cf09ii09",
+          "content": "ok unrelated but I have to tell you all what happened in A&E on Thursday, it is objectively incredible and you need to know",
+          "ts": "2025-02-24T21:00:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t016",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "wait is this a work story? are we doing work stories now 🤔",
+          "ts": "2025-02-24T21:03:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t017",
+          "speaker": "Zoe",
+          "speaker_id": "p_cf09ii09",
+          "content": "it is technically a work story but it reads as a comedy of errors and I think the no-work rule has a humanitarian exception clause",
+          "ts": "2025-02-24T21:06:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t018",
+          "speaker": "Jess",
+          "speaker_id": "p_cf05ee05",
+          "content": "I'll allow it 😄",
+          "ts": "2025-02-24T21:09:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t019",
+          "speaker": "Dan",
+          "speaker_id": "p_cf02bb02",
+          "content": "The rule exists to protect us from spreadsheet updates and line management disputes. A comedy from A&E is categorically distinct. Proceed.",
+          "ts": "2025-02-24T21:12:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t020",
+          "speaker": "Zoe",
+          "speaker_id": "p_cf09ii09",
+          "content": "ok. man came in with a normal complaint. turns out he had been self-medicating with something he found on a podcast called Health Optimised. I will let you do the maths.",
+          "ts": "2025-02-24T21:15:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t021",
+          "speaker": "Priya",
+          "speaker_id": "p_cf03cc03",
+          "content": "nooooo 😭",
+          "ts": "2025-02-24T21:18:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t022",
+          "speaker": "Rory",
+          "speaker_id": "p_cf08hh08",
+          "content": "the optimisation industrial complex claims another one 😂🙏",
+          "ts": "2025-02-24T21:21:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t023",
+          "speaker": "Tom",
+          "speaker_id": "p_cf06ff06",
+          "content": "hm",
+          "ts": "2025-02-24T21:24:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t024",
+          "speaker": "Aisha",
+          "speaker_id": "p_cf01aa01",
+          "content": "to be honest this is the most Zoe has told us about work in all the time she's been in this group, progress 😂",
+          "ts": "2025-02-24T21:27:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_c2d3e4f5_s08_t025",
+          "speaker": "Zoe",
+          "speaker_id": "p_cf09ii09",
+          "content": "to be honest it felt fine to say. which is new.",
+          "ts": "2025-02-24T21:30:00",
+          "reply_to": ""
+        }
+      ]
+    }
+  ],
+  "qa_pairs": [
+    {
+      "id": "Q1_cf13s1c1",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Jess's first message reveal about her typical relationship to group travel commitments, and what about how she frames the Edinburgh experience suggests this outcome was not what she expected?",
+      "answer": "Jess opens Session 1 by noting she 'cannot believe' she almost cancelled the Edinburgh trip, then validates it: 'the flat was great, the group size felt right.' The fact that her primary feeling is relief at having attended — and that her opening word is about almost not going — reveals her habitual stance: she defaults to hesitancy on group travel and usually talks herself into cancelling near the deadline. The trip going well registers as a pleasant surprise rather than an expected outcome. The emphasis on what almost didn't happen, rather than what did, is the tell.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c2d3e4f5_s01_t001",
+          "speaker_display_name": "Jess",
+          "message_excerpt": "I cannot believe I almost cancelled on that trip. the flat was great, the group size felt right",
+          "relevance": "Jess's framing of the trip as something she nearly cancelled reveals her pre-existing pattern of last-minute hesitancy around group travel"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_cf13s2c1",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What pattern does Marcus's way of responding to group evening plans reveal about his relationship to the group's social schedule, and what is notable about how he communicates his absences?",
+      "answer": "Marcus consistently declines group evening plans with minimal explanation — brief, closed responses like 'Can't make tonight. Enjoy.' (Session 2) and 'I'll be out of town that weekend. Enjoy.' (Session 3). The notable quality is what he doesn't say: no excuse, no alternative offer, no elaboration. For a group where others share context freely, this brevity is itself communicative — it draws a boundary without explicitly naming one. Jess even notices the pattern in Session 3, joking that Marcus is 'always out of town for these things.' Marcus's response ('Just a lot of travel at the moment') maintains the same closed register, offering just enough to acknowledge the observation without opening a discussion.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_c2d3e4f5_s02_t004",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "Can't make tonight. Enjoy.",
+          "relevance": "Marcus declines with no explanation — a one-line response that reveals his consistent minimal-disclosure pattern"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_c2d3e4f5_s03_t013",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "I'll be out of town that weekend. Enjoy.",
+          "relevance": "Second instance of the same pattern — different session, identical communicative style, confirming it as habitual rather than situational"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_cf13s3c2",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "In the conversations, what does Zoe's way of responding when asked about her own plans or wellbeing suggest about how she relates to the group?",
+      "answer": "Across Sessions 1-3, whenever Zoe is directly asked about her plans or wellbeing, she deflects with a quip grounded in her work context rather than a direct answer. In Session 2, she declines the pub night with 'I'm on nights this week, can't make it.' In Session 3, when the group discusses whether she can make Joel's birthday, she responds: 'I say it every time because it's true every time. the NHS is not aware that Joel has a birthday.' The joke acknowledges the question while refusing to engage with it personally. Rory even names the pattern ('Zoe you say this every time'), suggesting it has become a recognisable feature of her communication. The shift format is consistent: work obligation → deflection → implicit availability unknown.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_c2d3e4f5_s03_t011",
+          "speaker_display_name": "Zoe",
+          "message_excerpt": "I say it every time because it's true every time. the NHS is not aware that Joel has a birthday",
+          "relevance": "Zoe deflects a direct question about availability with a hospital-based quip — acknowledges the question without answering it personally"
+        },
+        {
+          "session_index": 2,
+          "turn_id": "grp_c2d3e4f5_s02_t005",
+          "speaker_display_name": "Zoe",
+          "message_excerpt": "I'm on nights this week, can't make it. have a pint for me",
+          "relevance": "Earlier instance of the same pattern — shift cited as the barrier, no personal context offered"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_cf13s5c2",
+      "category": "Q1",
+      "difficulty": "hard",
+      "question": "What in Rory's behavior on the walk suggested something had changed for him, and what does his explanation of that change tell us about what he was actually dealing with?",
+      "answer": "In Session 5, Aisha notices Rory is keeping pace on the walk's second half when he would usually fake stopping for a photo — a behavioral shift visible to the group. When asked, Rory says he's 'been taking the walks a bit more seriously recently — no particular reason,' then immediately deflects to asking for more chips. The phrase 'no particular reason' is a tell: when someone offers a reason and then negates it, they are usually signalling there is a reason they don't want to name. Zoe, with clinical training, catches this immediately ('no particular reason he says — noted Rory'), and Kezia confirms the behavioral shift is measurable ('your pace today was measurably different from the previous two walks'). The combination of visible physical change, deliberate understatement, and two group members flagging the evasion all point toward something Rory is managing privately — consistent with a health concern he has chosen not to disclose.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_c2d3e4f5_s05_t015",
+          "speaker_display_name": "Aisha",
+          "message_excerpt": "Rory you actually kept up on the second half today, that's new. you were always the one pretending to stop for a photo",
+          "relevance": "Aisha observes a behavioral change in Rory's physical effort on the walk — establishes that the change is visible to others"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_c2d3e4f5_s05_t016",
+          "speaker_display_name": "Rory",
+          "message_excerpt": "I've been taking the walks a bit more seriously recently 🎒 no particular reason",
+          "relevance": "Rory's immediate negation of his own explanation ('no particular reason') is the key signal — stating and then denying a reason implies one exists"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_c2d3e4f5_s05_t018",
+          "speaker_display_name": "Zoe",
+          "message_excerpt": "no particular reason he says 🙄 noted Rory",
+          "relevance": "Zoe's clinical eye catches the evasion and names it — independently corroborating that 'no particular reason' is not the real reason"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q1_cf13s7c2",
+      "category": "Q1",
+      "difficulty": "medium",
+      "question": "What does Dan's first response to the Portugal trip announcement reveal about what he prioritises most when committing to group social events?",
+      "answer": "When Aisha announces the Portugal trip, Dan's immediate response is not enthusiasm or logistics — it is a headcount request: 'How many people are we expecting? I want to make sure we are not replicating the Edinburgh discussion from 2022.' His commitment is withheld until group size is confirmed. This pattern is consistent across the sessions: in Session 5 he notes the walk is 'markedly better for being six of us rather than nine,' and in Session 1 he explicitly praised keeping Edinburgh at nine as 'the correct' call, calling larger groups 'logistics projects.' Dan connects his enjoyment of social events directly to group size, and consistently signals his preference before agreeing to anything.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 7,
+          "turn_id": "grp_c2d3e4f5_s07_t004",
+          "speaker_display_name": "Dan",
+          "message_excerpt": "How many people are we expecting? I want to make sure we are not replicating the Edinburgh discussion from 2022.",
+          "relevance": "Dan withholds commitment until group size is confirmed — reveals that group size is his primary variable in deciding whether to join"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_c2d3e4f5_s05_t007",
+          "speaker_display_name": "Dan",
+          "message_excerpt": "I will also say the walk today was markedly better for being six of us rather than nine. I am detecting a pattern. But what do I know.",
+          "relevance": "Dan explicitly links the quality of the social experience to group size — confirms this is a consistent preference, not a one-off comment"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_cf13s3c1",
+      "category": "Q2",
+      "difficulty": "hard",
+      "question": "The group settled on dinner first then moving on to a Shoreditch cocktail bar for Joel's birthday. What did Kezia's response to the plan signal about her actual intention for the evening, and what specifically in how she phrased her commitment tells you she wasn't planning to stay for the whole night?",
+      "answer": "The group agreed on dinner followed by a cocktail bar in Shoreditch. Kezia committed with 'I can attend for the early part' — no explanation, no mention of the drinks portion. When Aisha directly asked whether she was 'staying for drinks or just dinner,' Kezia answered: 'Probably just dinner. I have a thing.' The pattern is structurally identical in both responses: she sets a boundary on exactly the portion of the evening that involves drinking, without ever naming the real constraint. 'The early part' and 'just dinner' are the same exit, phrased twice. Combined with her choice of 'just water' later in Session 3 and her quiet departures from previous pub events, the signal is that the cocktail bar element is the part she is not joining — for reasons she has chosen not to share with the group.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Jess",
+        "B": "Tom",
+        "C": "Kezia",
+        "D": "Rory"
+      },
+      "correct_option": "C",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_c2d3e4f5_s03_t005",
+          "speaker_display_name": "Kezia",
+          "message_excerpt": "I can attend for the early part.",
+          "relevance": "Kezia's minimal commitment — 'the early part' — implicitly sets a limit on exactly the drinking portion of the evening without naming it"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_c2d3e4f5_s03_t008",
+          "speaker_display_name": "Kezia",
+          "message_excerpt": "Probably just dinner. I have a thing.",
+          "relevance": "When pressed directly, Kezia confirms she is only staying for dinner — same boundary, restated, still without explanation"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_cf13s8c2",
+      "category": "Q2",
+      "difficulty": "medium",
+      "question": "The Sunday walk is the group's standing commitment. What did Aisha's observation about Marcus reveal about his actual relationship to that norm, and what in the pattern of his responses confirmed this was not a recent or temporary change?",
+      "answer": "In Session 8, Aisha notes Marcus 'missed again — third Sunday running.' Marcus's response: 'Work. Sorry. Next week I think.' Dan confirms this is not new: 'you have been thinking next week for approximately four months.' Kezia also frames it explicitly as a stable pattern rather than avoidance: 'his participation pattern is consistent rather than declining.' The signal is in the consistency — three consecutive misses with identical, minimal explanations, spanning four months. The Sunday norm functions as a universal group commitment in name, but in practice does not apply to Marcus. His weekend work obligations routinely override the commitment he nominally shares with the group.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Priya",
+        "B": "Marcus",
+        "C": "Kezia",
+        "D": "Rory"
+      },
+      "correct_option": "B",
+      "evidence_anchors": [
+        {
+          "session_index": 8,
+          "turn_id": "grp_c2d3e4f5_s08_t007",
+          "speaker_display_name": "Aisha",
+          "message_excerpt": "Marcus, I noticed you missed again 🙁 third Sunday running. everything ok?",
+          "relevance": "Aisha explicitly names the pattern — three consecutive misses — confirming this is not situational but structural"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_c2d3e4f5_s08_t009",
+          "speaker_display_name": "Dan",
+          "message_excerpt": "Marcus I say this with affection: you have been thinking next week for approximately four months.",
+          "relevance": "Dan's comment confirms the pattern predates Session 8 by months — it is a long-standing structural feature of Marcus's participation, not a recent development"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q2_cf13s8c4",
+      "category": "Q2",
+      "difficulty": "medium",
+      "question": "One of the group's unspoken rules was put to a test. What was the norm at stake, who initiated the test, and what specifically in how the group responded revealed that the rule wasn't enforced the same way for everyone?",
+      "answer": "The group has an implicit no-work-talk rule, reliably enforced by Aisha redirecting any work topic. In Session 8, Zoe announces she has something from A&E she 'needs' everyone to know — clearly a work story. Aisha immediately flags it: 'wait is this a work story? are we doing work stories now?' — posing it as a question rather than a veto. Zoe argues for a 'humanitarian exception clause.' Both Jess ('I'll allow it') and Dan (distinguishing 'spreadsheet updates and line management disputes' from A&E comedy) endorse the exception. The group's enforcement depends entirely on the type of work story — the rule targets professional tedium, not genuinely interesting anecdotes. Zoe's nursing stories, in particular, occupy a distinct cultural position that the group treats as exempt.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Kezia",
+        "B": "Zoe",
+        "C": "Dan",
+        "D": "Aisha"
+      },
+      "correct_option": "B",
+      "evidence_anchors": [
+        {
+          "session_index": 8,
+          "turn_id": "grp_c2d3e4f5_s08_t015",
+          "speaker_display_name": "Zoe",
+          "message_excerpt": "ok unrelated but I have to tell you all what happened in A&E on Thursday, it is objectively incredible and you need to know",
+          "relevance": "Zoe introduces a work story voluntarily, initiating the test of the no-work rule"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_c2d3e4f5_s08_t016",
+          "speaker_display_name": "Aisha",
+          "message_excerpt": "wait is this a work story? are we doing work stories now 🤔",
+          "relevance": "Aisha invokes the rule as a question rather than a veto — opening the door to negotiation and revealing the rule is not absolute"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q4_cf13s1c2",
+      "category": "Q4",
+      "difficulty": "medium",
+      "question": "Someone in the group articulated a view about what happens to group conversations when the guest list grows beyond a certain size — framing the issue in terms of what kind of experience the group would be having. Who most likely made this observation, and what in how it was expressed tells you who it was?",
+      "answer": "Kezia made this observation in Session 1: 'Nine is arguably the upper limit for a group where genuine conversation is still possible. Anything larger becomes an event to attend rather than a trip to go on.' The framing is phenomenological — it describes a qualitative experience ('an event to attend rather than a trip') rather than a logistical problem. Kezia's use of 'arguably' is a genuine academic hedge consistent with her sociology background, and the distinction she draws is observational rather than prescriptive. Dan makes a similar point in the same session but frames it differently: 'The capping at nine was correct... Groups larger than that stop being trips and start being logistics projects.' Dan's version is explicitly prescriptive ('was correct') and uses managerial vocabulary ('logistics projects'). The tell is the register: Kezia analyses the experience, Dan evaluates the decision.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Rory",
+        "B": "Kezia",
+        "C": "Aisha",
+        "D": "Dan"
+      },
+      "correct_option": "B",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c2d3e4f5_s01_t008",
+          "speaker_display_name": "Kezia",
+          "message_excerpt": "Nine is arguably the upper limit for a group where genuine conversation is still possible. Anything larger becomes an event to attend rather than a trip to go on",
+          "relevance": "The true speaker — Kezia — uses phenomenological framing and the academic hedge 'arguably', consistent with her sociology background"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_cf13s3c4",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "What is Kezia's relationship to alcohol within the group, and what in Jess's response — before Kezia had said anything about her reasons — suggests Jess already knew about Kezia's situation?",
+      "answer": "Kezia has quietly stopped drinking alcohol. When Aisha asks in Session 3 whether to 'flag for the waiter' on her behalf, Kezia says 'Just water is fine' — no explanation, no announcement. What's notable is Jess's immediate follow-on: 'I'll have the same as Kezia — solidarity.' The word 'solidarity' is the tell: you say solidarity when you are joining someone in a choice that requires support, not when you are copying a random preference for the evening. If this were new information to Jess, a natural response would include a question ('oh, are you not drinking tonight?') or mild surprise. Instead, Jess joins without asking. The absence of any questioning response, combined with the 'solidarity' framing, is consistent with Jess already knowing about the change — most likely through the private check-in dynamic she maintains with close members of the group.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_c2d3e4f5_s03_t020",
+          "speaker_display_name": "Kezia",
+          "message_excerpt": "Just water is fine.",
+          "relevance": "Kezia declines alcohol with a minimal, unexplained response — the fact of the change, without the reason"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_c2d3e4f5_s03_t021",
+          "speaker_display_name": "Jess",
+          "message_excerpt": "I'll have the same as Kezia 🙂 solidarity",
+          "relevance": "Jess uses 'solidarity' — a word that implies joining a position requiring support — without asking why Kezia is having water, which implies she already knows"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_cf13s6c2",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "What approach does Zoe typically take when asked about her own wellbeing in the group chat, and what in Jess's message shows that she had been paying close attention to this pattern for some time before choosing to call it out?",
+      "answer": "Zoe's default response to personal questions is to deflect with a hospital-based quip — she cites NHS schedules, shift demands, or clinical absurdities to sidestep emotional engagement. When Aisha asks in Session 6 if she is okay, Zoe responds: 'all good, just a run of long shifts. nothing a six-day weekend wouldn't fix.' A standard deflection. What makes Jess's response distinctive is the phrase 'you say that every week.' This is not a comment on a one-off instance — 'every week' signals she has catalogued a repeated pattern across multiple sessions, not just noticed it once. Jess also adds: 'you don't have to do the hospital bit if you don't want to' — naming the specific format of the deflection. That level of specificity (knowing it as 'the hospital bit') is only possible if she has observed it often enough to identify it as a recurring routine, not a coincidence.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 6,
+          "turn_id": "grp_c2d3e4f5_s06_t009",
+          "speaker_display_name": "Zoe",
+          "message_excerpt": "all good, just a run of long shifts. nothing a six-day weekend wouldn't fix 🙃",
+          "relevance": "Zoe's response to 'how are you' is a standard hospital-based deflection — the pattern Jess has been tracking"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_c2d3e4f5_s06_t010",
+          "speaker_display_name": "Jess",
+          "message_excerpt": "you say that every week and I'm not sure it's always the whole picture. are you actually doing ok? you don't have to do the hospital bit if ",
+          "relevance": "'Every week' signals Jess has catalogued this as a repeated pattern; naming it as 'the hospital bit' shows she has identified its specific format — both require sustained prior observation"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q6_cf13s8c2",
+      "category": "Q6",
+      "difficulty": "medium",
+      "question": "The group treat the Sunday walk as their defining shared commitment — something everyone is expected to show up for. Does this expectation hold equally in practice? If not, who has a different relationship to it, and what does the conversation make clear about why?",
+      "answer": "No — Marcus's relationship to the Sunday commitment is structurally different. While the Sunday walk is the group's core standing event, Aisha notes in Session 8 that Marcus has missed 'third Sunday running.' Marcus's explanation is minimal: 'Work. Sorry. Next week I think.' Dan confirms this pattern is not new: 'you have been thinking next week for approximately four months.' Kezia defends him by reframing it — 'his participation pattern is consistent rather than declining' — which itself acknowledges the pattern is different, just stable rather than worsening. Marcus does not resist the norm or challenge it; he simply operates under constraints that make it inapplicable to him in practice. The Sunday commitment exists universally in name; Marcus's weekend work schedule means it has effectively never applied to him the way it does to others.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Priya",
+        "B": "Marcus",
+        "C": "Kezia",
+        "D": "Jess"
+      },
+      "correct_option": "B",
+      "evidence_anchors": [
+        {
+          "session_index": 8,
+          "turn_id": "grp_c2d3e4f5_s08_t007",
+          "speaker_display_name": "Aisha",
+          "message_excerpt": "Marcus, I noticed you missed again 🙁 third Sunday running. everything ok?",
+          "relevance": "Aisha identifies the pattern explicitly — three consecutive misses — confirming the Sunday norm is not functioning as a universal commitment in Marcus's case"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_c2d3e4f5_s08_t009",
+          "speaker_display_name": "Dan",
+          "message_excerpt": "Marcus I say this with affection: you have been thinking next week for approximately four months.",
+          "relevance": "Dan's comment confirms the pattern long predates Session 8 — it is a chronic structural difference in how the norm applies to Marcus, not a recent development"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q6_cf13s8c4",
+      "category": "Q6",
+      "difficulty": "medium",
+      "question": "The group has a standing rule against talking about work at their meetups. Does this rule apply the same way to every kind of work conversation? Who pushes against it, and what did the group's response reveal about where the real boundary actually sits?",
+      "answer": "In Session 8, Zoe announces she has something from A&E she needs everyone to know — a work story. Aisha invokes the rule: 'wait is this a work story? are we doing work stories now?' But she poses it as a question rather than a veto. Zoe argues for a 'humanitarian exception clause.' Jess grants permission ('I'll allow it'), and Dan formally distinguishes between 'spreadsheet updates and line management disputes' (excluded) and A&E comedy (permitted). The group's response reveals the no-work rule is targeted at professional tedium — office complaints, project updates, management grievances — not genuinely interesting work stories. Zoe's nursing stories occupy a distinct cultural position within the group that the rule was never designed to prevent. The norm is not truly universal: it does not apply to Zoe's particular form of work content.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Zoe",
+        "B": "Rory",
+        "C": "Aisha",
+        "D": "Tom"
+      },
+      "correct_option": "A",
+      "evidence_anchors": [
+        {
+          "session_index": 8,
+          "turn_id": "grp_c2d3e4f5_s08_t015",
+          "speaker_display_name": "Zoe",
+          "message_excerpt": "ok unrelated but I have to tell you all what happened in A&E on Thursday, it is objectively incredible and you need to know",
+          "relevance": "Zoe introduces a work story, initiating a test of the no-work rule"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_c2d3e4f5_s08_t017",
+          "speaker_display_name": "Zoe",
+          "message_excerpt": "it is technically a work story but it reads as a comedy of errors and I think the no-work rule has a humanitarian exception clause",
+          "relevance": "Zoe explicitly argues for an exception to the rule — and the group endorses it, revealing the norm has implicit exemptions that apply to her type of content"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_c2d3e4f5_s08_t018",
+          "speaker_display_name": "Jess",
+          "message_excerpt": "I'll allow it 😄",
+          "relevance": "Jess's endorsement confirms the exception — the norm is negotiable for Zoe's nursing stories specifically"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_cf13s1c3",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does the exchange between Tom and Rory reveal about their connection outside of the Sunday friend group, and what specific details in that exchange tell you the nature of that connection?",
+      "answer": "In Session 1, Tom asks Rory: 'rory you sorting sunday league this weekend or next?' Rory responds: 'next sunday mate, Gaz confirmed it — you're in the starting 11 btw.' This exchange reveals they share an organised football fixture that exists independently of the main friend group. The details are specific: there is a third party (Gaz) who 'confirms' scheduling, suggesting an organised structure with a coordinator; Tom is placed in 'the starting 11,' meaning both are regular players with defined roles; and the casual tone ('mate,' no context provided to the group) indicates this is an established, ongoing activity rather than something new. Their membership in the same team predates or runs parallel to their Sunday friend group connection — it is a separate social infrastructure they share outside this group.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "Sunday league / five-a-side football teammates",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c2d3e4f5_s01_t011",
+          "speaker_display_name": "Tom",
+          "message_excerpt": "rory you sorting sunday league this weekend or next?",
+          "relevance": "Tom's casual reference to 'sunday league' implies an organised football fixture they share outside the group — familiar enough that no context is needed"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_c2d3e4f5_s01_t012",
+          "speaker_display_name": "Rory",
+          "message_excerpt": "next sunday mate, Gaz confirmed it 🙌 you're in the starting 11 btw",
+          "relevance": "Rory's response reveals an organised structure (coordinator 'Gaz'), confirms Tom's regular role in the team, and uses 'mate' — the register of a separate, pre-existing friendship context"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_cf13s4c3",
+      "category": "Q7",
+      "difficulty": "hard",
+      "question": "What does the brief exchange about Rory's familiarity with the restaurant reveal about the past between Jess and Rory, and which specific signals in that exchange tell you there is a shared history neither of them wants to revisit?",
+      "answer": "When Tom asks how often Rory visits the restaurant, Rory mentions going 'once for a slightly awkward dinner actually.' Jess immediately responds: 'oh god don't bring that up' — a reaction that (a) assumes she knows exactly what Rory is referring to, (b) signals personal discomfort, and (c) strongly implies she was the other person at that awkward dinner. Rory's follow-up ('ancient history! ancient!') reinforces that this is a shared memory they both want to move on from, using the word twice as deflection and reassurance simultaneously. Dan's comment — 'some things are better left in the Grassmarket' — suggests the group has some awareness. Aisha immediately redirects the conversation, and Jess's sign-off ('good redirect, good redirect') confirms she was relieved to have it closed. Together: a shared awkward dinner, mutual recognition, both deflecting, and the group quietly closing the topic points to a past between Jess and Rory that was notable enough to be remembered.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "prior brief romantic involvement",
+      "evidence_anchors": [
+        {
+          "session_index": 4,
+          "turn_id": "grp_c2d3e4f5_s04_t015",
+          "speaker_display_name": "Rory",
+          "message_excerpt": "been a few times for research 👨‍🍳 once for a slightly awkward dinner actually",
+          "relevance": "Rory's reference to a 'slightly awkward dinner' at the specific restaurant is the initiating signal — implying a prior social event with personal significance"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_c2d3e4f5_s04_t016",
+          "speaker_display_name": "Jess",
+          "message_excerpt": "oh god don't bring that up 😂",
+          "relevance": "Jess's immediate, personal reaction confirms she was at that dinner and doesn't want it discussed — recognition without explanation signals a shared history both want to leave in the past"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_c2d3e4f5_s04_t017",
+          "speaker_display_name": "Rory",
+          "message_excerpt": "ancient history! ancient! 😂",
+          "relevance": "Rory's double 'ancient' is both deflection and reassurance — the repetition signals that the topic is closed and handled, not genuinely ancient"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_cf13s6c1",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does the exchange about Tom's flat move reveal about the dynamic between Marcus and Tom, and what in the specific details of how it happened tells you something about the basis of their connection?",
+      "answer": "In Session 6, when asked who helped with the move, Tom notes: 'Marcus showed up. Didn't ask him to.' Marcus then gives a characteristically minimal debrief: 'The van rental was straightforward. Tom's furniture is heavier than it looks.' The detail that Tom didn't ask Marcus and Marcus came anyway is significant: it breaks Marcus's usual pattern of responding only when directly prompted. Tom's subsequent explanation adds texture: 'Marcus saw the spreadsheet I was using for the inventory and had opinions.' The actual reason Marcus stayed to help was a shared functional problem — a badly structured spreadsheet — not social warmth. The friendship between them operates through concrete, practical collaboration. Marcus fixed Tom's invoicing; Tom provides an easy, low-demand social presence. Jess notes Marcus 'sent a message that was not a response to a direct question' — framing the move as unusual enough to mark a shift in their dynamic.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "practical friendship; Marcus helped with flat move uninvited",
+      "evidence_anchors": [
+        {
+          "session_index": 6,
+          "turn_id": "grp_c2d3e4f5_s06_t001",
+          "speaker_display_name": "Tom",
+          "message_excerpt": "marcus showed up. didn't ask him to",
+          "relevance": "Tom confirms Marcus arrived uninvited — breaking Marcus's typical pattern of responding only when directly asked, which signals a meaningful shift in the friendship"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_c2d3e4f5_s06_t002",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "The van rental was straightforward. Tom's furniture is heavier than it looks.",
+          "relevance": "Marcus reports on the move in his characteristic minimal style — practical, factual, no emotional framing"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_c2d3e4f5_s06_t006",
+          "speaker_display_name": "Tom",
+          "message_excerpt": "nah. marcus saw the spreadsheet I was using for the inventory and had opinions",
+          "relevance": "Tom reveals the concrete mechanism of the friendship — a shared functional problem (bad spreadsheet) that became the actual basis for Marcus staying"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_cf13s7c3",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does the exchange about the Portugal trip's schedule reveal about how Dan and Kezia relate to each other within the group, and how does the rest of the group's response to that exchange characterise it?",
+      "answer": "When Kezia suggests building in 'non-group hours' during the Portugal trip, Dan immediately responds: 'Kezia you are describing what I believe sociologists call introvert respite windows. I have argued for this for fifteen years to no avail.' He then confirms 'Precisely' when Priya translates it as 'they want to sometimes be alone.' The exchange reveals several things: Dan and Kezia share an intellectual register — Dan uses sociological vocabulary and treats Kezia's academic framing as natural, while the rest of the group (Rory: 'and now they're off — can someone translate for the rest of us') finds it opaque enough to require translation. The '15 years' claim and Dan's easy adoption of sociological terminology implies a long shared conversational history that runs separately from the group's main register. Priya's translation ('they want to sometimes be alone') functions as a corrective — collapsing an extended intellectual tangent into a single plain sentence.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "intellectual sub-clique with shared academic register",
+      "evidence_anchors": [
+        {
+          "session_index": 7,
+          "turn_id": "grp_c2d3e4f5_s07_t012",
+          "speaker_display_name": "Dan",
+          "message_excerpt": "Kezia you are describing what I believe sociologists call introvert respite windows. I have argued for this for fifteen years to no avail.",
+          "relevance": "Dan's immediate adoption of Kezia's framing — and his 15-year claim — reveals a long-standing intellectual alignment between them that sits apart from the rest of the group's register"
+        },
+        {
+          "session_index": 7,
+          "turn_id": "grp_c2d3e4f5_s07_t014",
+          "speaker_display_name": "Rory",
+          "message_excerpt": "and now they're off 😂 can someone translate for the rest of us",
+          "relevance": "Rory's request for translation confirms the group experiences Dan and Kezia's intellectual register as a separate language — opaque to others, natural to them"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q7_cf13s8c3",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does Aisha's comment about Dan's rhetorical style reveal about the history between her and Dan, and what in the conversation confirms the length of that history?",
+      "answer": "In Session 8, after Dan gently teases Marcus about his pattern of missing Sundays, Aisha says: 'Dan has deployed that exact phrase since our second year at university. it is devastatingly effective, I can confirm.' This casual attribution — that she knows not just what Dan said but when he started saying it — implies a shared history long enough to have logged his rhetorical habits in detail. The phrasing is confident and precise: 'since our second year,' not 'I think' or 'sometime at university.' Jess reinforces the timeline: 'to be fair you two have been doing this routine for ten years.' The combination of Aisha's specific recall and Jess's independent confirmation places their friendship as one of the group's longest-standing — over a decade, beginning at university.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "university friends for over ten years",
+      "evidence_anchors": [
+        {
+          "session_index": 8,
+          "turn_id": "grp_c2d3e4f5_s08_t010",
+          "speaker_display_name": "Aisha",
+          "message_excerpt": "Dan has deployed that exact phrase since our second year at university. it is devastatingly effective, I can confirm.",
+          "relevance": "Aisha's confident, precise recall of when Dan began using a specific phrase implies a friendship long enough to have catalogued his habits in detail"
+        },
+        {
+          "session_index": 8,
+          "turn_id": "grp_c2d3e4f5_s08_t012",
+          "speaker_display_name": "Jess",
+          "message_excerpt": "to be fair you two have been doing this routine for ten years 😄",
+          "relevance": "Jess's independent confirmation of the ten-year timeline corroborates Aisha's framing — and places the Aisha-Dan friendship as the group's most long-standing"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q8_cf13s2c3",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What appeared to cause Dan's shift in how he approached pub nights, and what signals in Sessions 2 and 3 show this was a genuine change in behaviour rather than just a reaction to a single bad night?",
+      "answer": "Early state: In Session 2, Dan's pre-event tone is anticipatory — 'Haven't had a proper pub night since before Christmas' — the framing of someone who has been looking forward to it. Trigger: Rory reveals the scale of the night: 'three [pints] plus the wine plus a round of chasers that Tom ordered.' The recovery was heavy enough to last multiple days. Shift signal: Dan's next-day message in Session 2 describes it as 'The Historical Hangover, the kind where you genuinely revise your view of a thing you previously enjoyed' — his own framing of this as a structural revision, not just a bad evening. Evolved state: In Session 3, Dan confirms: 'Significantly improved. I have also made some minor adjustments to my approach to pub nights that I won't bore you with.' The phrase 'minor adjustments' is a classic Dan understatement; the refusal to elaborate signals these are real, deliberate changes rather than vague intentions. The shift is confirmed by the specificity of his language in both sessions — he names the mechanism himself.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_c2d3e4f5_s02_t012",
+          "speaker_display_name": "Rory",
+          "message_excerpt": "three 🍺 plus the wine 🍷 plus a round of chasers that Tom ordered 😬",
+          "relevance": "Rory's account of the evening reveals the trigger — the volume of the pub night that prompted Dan's recalibration"
+        },
+        {
+          "session_index": 2,
+          "turn_id": "grp_c2d3e4f5_s02_t019",
+          "speaker_display_name": "Dan",
+          "message_excerpt": "Next day update: I am fine. I am also not doing that again for some time. The Historical Hangover, if you will, the kind where you genuinely revise your view of a thing you previously enjoyed.",
+          "relevance": "Dan explicitly frames the night as a structural revision of his view — not a one-off complaint but a deliberate reconsideration of an established pattern",
+          "turn_index": 20
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_c2d3e4f5_s03_t018",
+          "speaker_display_name": "Dan",
+          "message_excerpt": "Significantly improved. I have also made some minor adjustments to my approach to pub nights that I won't bore you with.",
+          "relevance": "Dan confirms the change is real but declines to elaborate — 'minor adjustments' combined with the refusal to detail them signals a deliberate, ongoing change rather than a temporary reaction"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 2,
+          "value": "enthusiastic about pub nights — 'haven't had a proper pub night since before Christmas'"
+        },
+        {
+          "session_index": 3,
+          "value": "made 'minor adjustments' to his approach — self-imposed limits, declines to detail them"
+        }
+      ]
+    },
+    {
+      "id": "Q8_cf13s6c3",
+      "category": "Q8",
+      "difficulty": "hard",
+      "question": "What in the conversations from across multiple conversations explains what drove the change in how Zoe responded to personal questions about her wellbeing, and what in the timing of the shift tells you what made it happen specifically?",
+      "answer": "Early state: Through Sessions 1-3, Zoe's response to personal questions is consistently a hospital-based quip — 'the NHS is not aware that Joel has a birthday' (Session 3); 'I'm on nights this week' (Session 2). The humour acknowledges questions while refusing to answer them personally. Shift signal: In Session 6, after Zoe gives another standard deflection, Jess explicitly names the pattern: 'you say that every week and I'm not sure it's always the whole picture. Are you actually OK? You don't have to do the hospital bit if you don't want to.' After a pause ('...'), Zoe shares: 'to be honest the last three weeks have been quite hard. my mum has been in a bit. Nothing serious but it's been on my mind.' Trigger: Jess calling out the deflection by name — 'the hospital bit' — made it harder to deploy without consciously acknowledging the dodge. Being seen clearly, by someone she trusts, created the opening. Evolved state: Zoe also names the mechanism to the group in the same session: 'I think I've been using the hospital stuff to not think about it.' The disclosure is still partial but the content is real — the first time she shares something genuinely personal.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 3,
+          "turn_id": "grp_c2d3e4f5_s03_t011",
+          "speaker_display_name": "Zoe",
+          "message_excerpt": "the NHS is not aware that Joel has a birthday",
+          "relevance": "Before-state: Zoe's characteristic deflection with hospital humour — personal question about availability met with a work-based quip"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_c2d3e4f5_s06_t010",
+          "speaker_display_name": "Jess",
+          "message_excerpt": "you say that every week and I'm not sure it's always the whole picture. are you actually doing ok? you don't have to do the hospital bit if ",
+          "relevance": "The trigger: Jess names the deflection pattern explicitly — calling it 'the hospital bit' removes Zoe's ability to use it without both of them knowing exactly what she's doing"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_c2d3e4f5_s06_t012",
+          "speaker_display_name": "Zoe",
+          "message_excerpt": "to be honest the last three weeks have been quite hard. not in a bad way, just heavy. my mum has been in a bit.",
+          "relevance": "After-state: Zoe's first genuine personal disclosure — opened with 'to be honest,' her marker for genuine vulnerability, and containing real content about her life rather than a work deflection"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 3,
+          "value": "deflects personal questions with hospital humour — 'the NHS is not aware that Joel has a birthday'"
+        },
+        {
+          "session_index": 6,
+          "value": "first genuine personal disclosure — 'the last three weeks have been quite hard. my mum has been in a bit'"
+        }
+      ]
+    },
+    {
+      "id": "Q8_cf13s6c4",
+      "category": "Q8",
+      "difficulty": "hard",
+      "question": "What in the conversations from across multiple conversations explains what drove the change in how Marcus engaged with the group, and what in his behaviour by then signals that something had genuinely shifted rather than being a one-time act?",
+      "answer": "Early state: In Sessions 2-5, Marcus consistently declines group events with minimal, closed responses — 'Can't make tonight. Enjoy.' (Session 2); 'I'll be out of town that weekend. Enjoy.' (Session 3). He responds to direct questions but never initiates, and is noted to leave early or not attend at all. Trigger: In Session 6, the group learns Marcus 'showed up' uninvited to help Tom move flat — Tom: 'marcus showed up. didn't ask him to.' Tom explains the concrete mechanism: Marcus saw a badly structured spreadsheet and had opinions. The friendship deepened through shared functional problem-solving. Shift signal: Later in Session 6, when Zoe shares something vulnerable about her mum, Marcus responds: 'Same. Let me know if there is anything practical.' This is a voluntary, warm, unprompted response — not triggered by a direct question. Jess flags it immediately: 'wait Marcus you just sent a message that was not a response to a direct question??' Evolved state: Marcus has found a mode of emotional engagement that suits him — practical offers of help rather than expressive warmth. His offer to Zoe is the first genuine emotional initiative he takes with the group, and it is characteristically his.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_c2d3e4f5_s02_t004",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "Can't make tonight. Enjoy.",
+          "relevance": "Before-state: Marcus's characteristic minimal, closed response to social plans — no explanation, no alternative offered"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_c2d3e4f5_s06_t001",
+          "speaker_display_name": "Tom",
+          "message_excerpt": "marcus showed up. didn't ask him to",
+          "relevance": "Tom confirms Marcus arrived uninvited to help with the flat move — the event that shifted something in their friendship and Marcus's comfort with the group"
+        },
+        {
+          "session_index": 6,
+          "turn_id": "grp_c2d3e4f5_s06_t018",
+          "speaker_display_name": "Marcus",
+          "message_excerpt": "Same. Let me know if there is anything practical.",
+          "relevance": "After-state: Marcus's first genuinely unprompted, warm response to another member — practical in form but emotionally motivated, breaking his pattern of responding only when directly asked"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 2,
+          "value": "distant, closed responses to all group plans — 'Can't make tonight. Enjoy.'"
+        },
+        {
+          "session_index": 6,
+          "value": "volunteers warm, practical support unprompted — 'Same. Let me know if there is anything practical'"
+        }
+      ]
+    },
+    {
+      "id": "Q8_cf13s7c1",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What in the earlier conversation about the Portugal trip signals that Jess's approach to group trips had changed, and what in the conversations explains what drove that shift?",
+      "answer": "Early state: Session 1 opens with Jess revealing she 'almost cancelled' the Edinburgh trip — confirming a pre-existing pattern of last-minute hesitancy about group travel. Her relief at having attended ('I cannot believe I almost cancelled on that trip') is the evidence that her default is to hedge. Shift signal: In Session 7, when Aisha launches the Portugal planning thread, Jess responds: 'I'm in. dates?' — five words, immediate, no deliberation. Aisha notices: 'Jess you committed extremely fast, that's new.' Trigger: Jess names it herself in Session 7: 'I've been trying to be less of a \"I'll see how I feel closer to the time\" person about trips. It's been good so far.' The Edinburgh trip — which she almost cancelled and ended up loving — is named by Rory as 'the Edinburgh effect.' Evolved state: By Session 7, Jess commits to trips without deliberation, using the positive outcome of Edinburgh as feedback that her default hesitancy was costing her, and actively working to override it.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c2d3e4f5_s01_t001",
+          "speaker_display_name": "Jess",
+          "message_excerpt": "I cannot believe I almost cancelled on that trip. the flat was great, the group size felt right",
+          "relevance": "Before-state: Jess confirms her habitual pattern of near-cancellation on group trips — and registers relief at having gone, suggesting this is the default she works against"
+        },
+        {
+          "session_index": 7,
+          "turn_id": "grp_c2d3e4f5_s07_t001",
+          "speaker_display_name": "Jess",
+          "message_excerpt": "I'm in. dates?",
+          "relevance": "After-state: Jess commits immediately with no deliberation — the sharpest possible contrast with her previous near-cancellation pattern"
+        },
+        {
+          "session_index": 7,
+          "turn_id": "grp_c2d3e4f5_s07_t019",
+          "speaker_display_name": "Jess",
+          "message_excerpt": "I've been trying to be less of a 'I'll see how I feel closer to the time' person about trips. it's been good so far.",
+          "relevance": "Jess names the mechanism of change herself — she is consciously working to override her default hesitancy, and the Edinburgh trip going well is the feedback that made it worth doing"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "reveals she 'almost cancelled' Edinburgh — habitual last-minute hesitancy about group travel"
+        },
+        {
+          "session_index": 7,
+          "value": "commits immediately with no deliberation — 'I'm in. dates?'"
+        }
+      ]
+    },
+    {
+      "id": "Q8_cf13c3c3",
+      "category": "Q8",
+      "difficulty": "hard",
+      "question": "What in the conversations from across multiple conversations signals that Kezia's relationship to drinking had changed, and what specifically about how the change appeared makes it easy to miss?",
+      "answer": "Early state: In Sessions 1-2, Kezia participates fully in every social activity — Edinburgh trip including bar visits (Session 1), then attends the January pub night with the group ('I will come for a bit.' — Session 2). No drinking restriction is indicated at either point. Shift signal: In Session 3, when Aisha asks 'Kezia, are you drinking or should I flag for the waiter?' — a question that presupposes Kezia's usual answer is yes — Kezia responds with 'Just water is fine.' Three words. No explanation, no context, no acknowledgment that this is different. What makes it easy to miss: this is a Level 3 implicit signal — not a statement of preference but an absence of one. Kezia doesn't say 'I've stopped drinking' or 'not tonight.' She answers a logistical planning question with a logistical response. Aisha's question was phrased as a practical booking detail ('should I flag for the waiter'), so a minimal answer fits the surface context. Jess's immediate 'solidarity' follow-up without asking why suggests Jess already knew — confirming this is not new information to the group's most attentive member. Trigger: unstated.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c2d3e4f5_s01_t008",
+          "speaker_display_name": "Kezia",
+          "message_excerpt": "The trip functioned well at this scale. Nine is arguably the upper limit for a group where genuine conversation is still possible. Anything larger becomes an event t",
+          "relevance": "Kezia as fully engaged Edinburgh participant with no drinking restriction noted — establishes her as a standard social participant before the shift"
+        },
+        {
+          "session_index": 2,
+          "turn_id": "grp_c2d3e4f5_s02_t007",
+          "speaker_display_name": "Kezia",
+          "message_excerpt": "I will come for a bit.",
+          "relevance": "Kezia attending the pub night — no alcohol restriction signaled; 'for a bit' is a time limit, not a drink limit"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_c2d3e4f5_s03_t019",
+          "speaker_display_name": "Aisha",
+          "message_excerpt": "I'll book the table for 8. Kezia, are you drinking or should I flag for the waiter?",
+          "relevance": "Aisha's open question presupposes no established pattern — confirms the change is not yet group knowledge"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_c2d3e4f5_s03_t020",
+          "speaker_display_name": "Kezia",
+          "message_excerpt": "Just water is fine.",
+          "relevance": "The shift: minimal, unexplained alcohol decline — three words, no context, no acknowledgment that this is different from before"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "fully engaged social participant — Edinburgh trip, pub attendance, no drinking restriction indicated"
+        },
+        {
+          "session_index": 3,
+          "value": "Just water is fine — declines alcohol with no explanation when asked directly"
+        }
+      ]
+    },
+    {
+      "id": "Q8_cf13c4c1",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What in Rory's restaurant pick appears to have shifted Tom's expectations of unfamiliar dining venues, and what in the group's response confirms this shift was notable by Tom's own standards?",
+      "answer": "Early state: In Session 1, Tom's mode of approval is maximally minimal — 'good trip. tge flat was better than last year. victoria park fine.' Everything gets bare acknowledgment. No venue is named, described, or singled out as exceeding expectations; familiar is fine and fine is the ceiling. Shift signal: In Session 4, after Rory's pick — a restaurant with no menu in the window, the kind of venue Tom would typically approach with zero enthusiasm — Tom writes: 'yeah it was alright. better than I expected from a place with no menu on tge door.' This is the most specific acknowledgment Tom makes of any venue in the conversation: he names the exact feature he was skeptical of, reports the outcome, and connects the two. For Tom, this is an elaborate response. Trigger: Rory's specific knowledge — he described the restaurant with detail ('they change it weekly from the market. Thursday is the best day') rather than vague enthusiasm, giving Tom's expectations something concrete to exceed. Confirmation: Jess immediately translates for the group — 'Tom \"better than I expected\" is the highest praise he gives restaurants, just so everyone knows' — she has tracked Tom's restaurant register well enough to annotate it in real time, independently confirming this is historically unusual.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c2d3e4f5_s01_t003",
+          "speaker_display_name": "Tom",
+          "message_excerpt": "good trip. tge flat was better than last year. victoria park fine",
+          "relevance": "Tom's baseline register: maximally minimal approval — no venue named or described, everything rated 'fine' or 'good' without elaboration"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_c2d3e4f5_s04_t002",
+          "speaker_display_name": "Tom",
+          "message_excerpt": "yeah it was alright. better than I expected from a place with no menu on tge door",
+          "relevance": "The shift: Tom names the specific feature he was skeptical of and notes his expectation was exceeded — the most specific restaurant response Tom gives in the entire conversation"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_c2d3e4f5_s04_t003",
+          "speaker_display_name": "Jess",
+          "message_excerpt": "Tom 'better than I expected' is the highest praise he gives restaurants, just so everyone knows 😄",
+          "relevance": "Jess independently confirms this is historically unusual praise for Tom — she has tracked his restaurant register well enough to translate it for the group in real time"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "minimal bare approval of familiar venues — 'good trip... victoria park fine'"
+        },
+        {
+          "session_index": 4,
+          "value": "concedes unfamiliar restaurant exceeded expectations — 'better than I expected from a place with no menu on tge door'"
+        }
+      ]
+    },
+    {
+      "id": "Q8_cf13c4c2",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What appears to have driven Aisha's shift toward hosting the group at home, and what in her framing of the conversation reveals what had been stopping her before?",
+      "answer": "Early state: Through Sessions 1-3, Aisha is the group's external event coordinator — Edinburgh trip logistics (Session 1), Sunday walk headcounts ('running total: me, Jess, Priya, Kezia' — Session 1), restaurant dinners for Joel's birthday (Session 3). She manages group-scale events efficiently but exclusively in external spaces. There is no mention of hosting at home. Shift context: Session 4's opening message frames it explicitly as new: 'new flat, first proper hosting, I'm going to say it was a success.' The phrase 'first proper hosting' establishes that this is genuinely novel, and 'I'm going to say it was a success' carries a note of relief rather than confidence — the outcome was not assumed. Trigger named directly: 'I thought I'd be stressed about hosting but it just worked? I think having the right space makes all the difference.' The before-state ('I thought I'd be stressed') names the anticipatory anxiety that had been the obstacle. The new flat removed it — specifically, a dining table that 'fits everyone which I was genuinely not sure about.' Evolved state: 'Might do this monthly' — Aisha moves from never having hosted to planning to host monthly in a single session.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c2d3e4f5_s01_t009",
+          "speaker_display_name": "Aisha",
+          "message_excerpt": "honestly this is why I kept the list at nine. people were grumpy at the time but it was the right call. same model next year. who's in for sunday, running total: me, Jess, Priya, Kezia?",
+          "relevance": "Aisha in Session 1 is exclusively an external event coordinator — managing trips, parks, group numbers; no home hosting mentioned"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_c2d3e4f5_s04_t000",
+          "speaker_display_name": "Aisha",
+          "message_excerpt": "ok so. new flat, first proper hosting, I'm going to say it was a success 😊 the dining table fits everyone which I was genuinely not sure about",
+          "relevance": "'First proper hosting' establishes this as genuinely novel; 'I'm going to say it was a success' signals relief, not settled confidence"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_c2d3e4f5_s04_t004",
+          "speaker_display_name": "Aisha",
+          "message_excerpt": "honestly I thought I'd be stressed about hosting but it just worked? I think having the right space makes all the difference. might do this monthly",
+          "relevance": "Aisha names the before-state ('I thought I'd be stressed'), the trigger ('having the right space'), and the evolved intention ('monthly') in a single message"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "external event coordinator only — trips, parks, restaurant dinners; no home hosting"
+        },
+        {
+          "session_index": 4,
+          "value": "'first proper hosting' at new flat — 'I thought I'd be stressed about hosting but it just worked? might do this monthly'"
+        }
+      ]
+    },
+    {
+      "id": "Q8_cf13c5c1",
+      "category": "Q8",
+      "difficulty": "hard",
+      "question": "What in the food order signals that something had changed in Priya's eating habits, and what in the group's reaction tells you this was not her established pattern?",
+      "answer": "Early state: In Session 1, Priya is an enthusiastic omnivore social diner — 'that wine bar was unreal, rory' (Session 1). Across Sessions 1-4 no dietary preference or restriction is mentioned. Shift signal: In Session 5, Priya announces casually 'ordering the mushroom burger btw' — a vegetarian choice, with no explanation. The 'btw' frames it as incidental, as though it needs no comment. What tells you this is new: Zoe immediately responds 'are you not getting the chicken thing you always get Priya' — Zoe's question establishes the prior pattern ('the chicken thing you always get') and frames the mushroom burger as a departure from an established order. Priya deflects with 'not today 🙂' — two words, closed, with a smile that signals the topic is done rather than that nothing is happening. No explanation offered. Trigger: unstated. The combination of no announcement, Zoe's visible surprise, and Priya's deliberate non-answer points toward a change she is not yet ready to discuss with the group.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_c2d3e4f5_s01_t007",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "and that wine bar was unreal, rory",
+          "relevance": "Priya as enthusiastic omnivore social diner — no dietary restriction mentioned across Edinburgh or any prior activity"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_c2d3e4f5_s05_t008",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "ordering the mushroom burger btw",
+          "relevance": "The shift: Priya announces a vegetarian choice with the casual 'btw' framing — as though it needs no comment, but the choice itself is new"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_c2d3e4f5_s05_t011",
+          "speaker_display_name": "Zoe",
+          "message_excerpt": "are you not getting the chicken thing you always get Priya 🤔",
+          "relevance": "Zoe's question confirms the before-state: 'the chicken thing you always get' is the established Priya order — the mushroom burger is a departure visible to the group"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_c2d3e4f5_s05_t012",
+          "speaker_display_name": "Priya",
+          "message_excerpt": "not today 🙂",
+          "relevance": "Priya's two-word deflection closes the topic without explaining — the 🙂 signals the conversation is done, not that nothing is changing"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "enthusiastic omnivore social diner — wine bar, no dietary restriction indicated"
+        },
+        {
+          "session_index": 5,
+          "value": "orders mushroom burger without explanation; declines to discuss when asked — 'not today 🙂'"
+        }
+      ]
+    },
+    {
+      "id": "Q4_cf13c5c3",
+      "category": "Q4",
+      "difficulty": "easy",
+      "question": "Someone in the group explained that their personal relationship to food and health put them in no position to judge other people's eating choices. Who most likely offered this view first, and what in how they expressed it marks it as distinctively theirs?",
+      "answer": "Zoe made this observation in Session 5: 'my idea of health is getting through a twelve-hour shift without eating a meal deal so I'm not in a position to judge anyone's food choices.' The position is grounded in her specific nursing reality — the twelve-hour shift and meal deal are NHS markers that frame her relationship to food as physically functional rather than reflective. Priya immediately agreed ('same, basically. food is food'), using the same casual register and non-judgmental stance. But Priya's response is an explicit endorsement of Zoe's position, not an original statement — 'same, basically' is an agreement marker, not an independent claim. The correct attribution rests on two things: Zoe establishes the position first, and she grounds it in professional context that is specifically hers. Priya never uses NHS or shift-work language anywhere in the conversation.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Priya",
+        "B": "Rory",
+        "C": "Zoe",
+        "D": "Tom"
+      },
+      "correct_option": "C",
+      "evidence_anchors": [
+        {
+          "session_index": 5,
+          "turn_id": "grp_c2d3e4f5_s05_t022",
+          "speaker_display_name": "Zoe",
+          "message_excerpt": "to be honest my idea of health is getting through a twelve-hour shift without eating a meal deal so I'm not in a position to judge anyone's food choices",
+          "relevance": "True speaker — Zoe grounds the view in nursing-specific vocabulary ('twelve-hour shift', 'meal deal') that cannot be attributed to Priya"
+        }
+      ],
+      "temporal_anchors": []
+    }
+  ],
+  "meta": {
+    "source": "SocialMemBench",
+    "source_kind": "real_benchmark",
+    "network_id": "grp_c2d3e4f5",
+    "n_sessions": 8,
+    "n_turns": 190,
+    "v4_correct": 18,
+    "v4_total": 27,
+    "v4_errors": 9,
+    "v4_accuracy": 0.6666666666666666
+  }
+}

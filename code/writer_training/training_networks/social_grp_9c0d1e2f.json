@@ -1,0 +1,668 @@
+{
+  "schema": "socialmembench-real-v4-source/1",
+  "scenario": "[socialmembench:grp_9c0d1e2f] real benchmark conversation",
+  "speakers": [
+    "Anika",
+    "Diane",
+    "Luca",
+    "Raj"
+  ],
+  "sessions": [
+    {
+      "session_id": "grp_9c0d1e2f_s01",
+      "session_index": 1,
+      "topic": "Open call for group show; member views on submitting",
+      "ts": "2025-09-01",
+      "turns": [
+        {
+          "turn": "grp_9c0d1e2f_s01_t000",
+          "speaker": "Anika",
+          "speaker_id": "p_ph9a1b2c3",
+          "content": "Open call from Shoreditch Photo House, group show, theme is Urban Friction. Submission deadline in six weeks. I think we should enter as a collective. Thoughts.",
+          "ts": "2025-09-01T18:44:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_9c0d1e2f_s01_t001",
+          "speaker": "Diane",
+          "speaker_id": "p_ph9c3d4e5",
+          "content": "Yes! I have a whole set from Peckham that fits this perfectly 📷 I'm so in",
+          "ts": "2025-09-01T18:51:00",
+          "reply_to": "grp_9c0d1e2f_s01_t000"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s01_t002",
+          "speaker": "Luca",
+          "speaker_id": "p_ph9b2c3d4",
+          "content": "What I have from the Clyde isn't ready. Slowly getting there but six weeks won't change that. I'd rather not submit than submit something I'm not behind.",
+          "ts": "2025-09-01T19:08:00",
+          "reply_to": "grp_9c0d1e2f_s01_t000"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s01_t003",
+          "speaker": "Raj",
+          "speaker_id": "p_ph9d4e5f6",
+          "content": "I've been in the studio all month, commercial stuff. I can pull something from the Karachi series if the theme fits. Let me look at it again.",
+          "ts": "2025-09-01T19:19:00",
+          "reply_to": "grp_9c0d1e2f_s01_t000"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s01_t004",
+          "speaker": "Anika",
+          "speaker_id": "p_ph9a1b2c3",
+          "content": "Raj the Karachi series is strong. Luca, understood. Diane send me what you have from Peckham, I'll tell you if it's there.",
+          "ts": "2025-09-01T19:27:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_9c0d1e2f_s01_t005",
+          "speaker": "Diane",
+          "speaker_id": "p_ph9c3d4e5",
+          "content": "Should we do a shared caption as well or is that unbearably earnest 📷",
+          "ts": "2025-09-01T19:31:00",
+          "reply_to": "grp_9c0d1e2f_s01_t004"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s01_t006",
+          "speaker": "Anika",
+          "speaker_id": "p_ph9a1b2c3",
+          "content": "Unbearably earnest. Submit the work, not a mission statement.",
+          "ts": "2025-09-01T19:36:00",
+          "reply_to": "grp_9c0d1e2f_s01_t005"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s01_t007",
+          "speaker": "Raj",
+          "speaker_id": "p_ph9d4e5f6",
+          "content": "What's the print size limit? Karachi only works if it can breathe a bit.",
+          "ts": "2025-09-01T19:40:00",
+          "reply_to": "grp_9c0d1e2f_s01_t006"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s01_t008",
+          "speaker": "Luca",
+          "speaker_id": "p_ph9b2c3d4",
+          "content": "A collective entry with three strong submissions is still a collective entry.",
+          "ts": "2025-09-01T19:45:00",
+          "reply_to": "grp_9c0d1e2f_s01_t007"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s01_t009",
+          "speaker": "Anika",
+          "speaker_id": "p_ph9a1b2c3",
+          "content": "Agreed. Better three deliberate works than four dutiful ones.",
+          "ts": "2025-09-01T19:49:00",
+          "reply_to": "grp_9c0d1e2f_s01_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_9c0d1e2f_s02",
+      "session_index": 2,
+      "topic": "Anika critiques Diane's selection; Raj's tension surfaces",
+      "ts": "2025-09-08",
+      "turns": [
+        {
+          "turn": "grp_9c0d1e2f_s02_t000",
+          "speaker": "Anika",
+          "speaker_id": "p_ph9a1b2c3",
+          "content": "Diane, looked at the Peckham set. The sixth one is the one. The others are good photographs but they're not asking a question. The sixth is. Submit that one.",
+          "ts": "2025-09-08T20:22:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_9c0d1e2f_s02_t001",
+          "speaker": "Diane",
+          "speaker_id": "p_ph9c3d4e5",
+          "content": "okay okay I hear you. I was going to pick the fourth one though. Can I submit both?",
+          "ts": "2025-09-08T20:25:00",
+          "reply_to": "grp_9c0d1e2f_s02_t000"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s02_t002",
+          "speaker": "Anika",
+          "speaker_id": "p_ph9a1b2c3",
+          "content": "It's a single submission. The sixth.",
+          "ts": "2025-09-08T20:27:00",
+          "reply_to": "grp_9c0d1e2f_s02_t001"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s02_t003",
+          "speaker": "Raj",
+          "speaker_id": "p_ph9d4e5f6",
+          "content": "Luca, do you ever feel like the day job starts eating the hours that were supposed to be yours? I pulled the Karachi selects and none of them feel like me anymore.",
+          "ts": "2025-09-08T20:41:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_9c0d1e2f_s02_t004",
+          "speaker": "Luca",
+          "speaker_id": "p_ph9b2c3d4",
+          "content": "yes. That's exactly what happens. Submit the Karachi for now and give yourself permission to make something new when the studio clears.",
+          "ts": "2025-09-08T20:48:00",
+          "reply_to": "grp_9c0d1e2f_s02_t003"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s02_t005",
+          "speaker": "Diane",
+          "speaker_id": "p_ph9c3d4e5",
+          "content": "Why the sixth. Be brutal.",
+          "ts": "2025-09-08T20:52:00",
+          "reply_to": "grp_9c0d1e2f_s02_t004"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s02_t006",
+          "speaker": "Anika",
+          "speaker_id": "p_ph9a1b2c3",
+          "content": "Because the fourth is mood. The sixth has consequence. The bus stop reflection makes the whole frame unstable.",
+          "ts": "2025-09-08T20:57:00",
+          "reply_to": "grp_9c0d1e2f_s02_t005"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s02_t007",
+          "speaker": "Diane",
+          "speaker_id": "p_ph9c3d4e5",
+          "content": "Annoying that you're right.",
+          "ts": "2025-09-08T21:01:00",
+          "reply_to": "grp_9c0d1e2f_s02_t006"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s02_t008",
+          "speaker": "Raj",
+          "speaker_id": "p_ph9d4e5f6",
+          "content": "Luca thank you. That's exactly the feeling, like the paid work eats the muscle for the other work.",
+          "ts": "2025-09-08T21:06:00",
+          "reply_to": "grp_9c0d1e2f_s02_t007"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s02_t009",
+          "speaker": "Luca",
+          "speaker_id": "p_ph9b2c3d4",
+          "content": "It comes back. You just can't shame it back.",
+          "ts": "2025-09-08T21:10:00",
+          "reply_to": "grp_9c0d1e2f_s02_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_9c0d1e2f_s03",
+      "session_index": 3,
+      "topic": "Group show result; Raj's commercial work overflow",
+      "ts": "2025-09-15",
+      "turns": [
+        {
+          "turn": "grp_9c0d1e2f_s03_t000",
+          "speaker": "Anika",
+          "speaker_id": "p_ph9a1b2c3",
+          "content": "Show went well. Good response to the collective. Diane, your print got two comments in the guest book. Raj's Karachi work was the anchor.",
+          "ts": "2025-09-15T15:11:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_9c0d1e2f_s03_t001",
+          "speaker": "Diane",
+          "speaker_id": "p_ph9c3d4e5",
+          "content": "two comments!! I'm still buzzing 📷 I can't believe I submitted the sixth. I would have gone with the fourth if Anika hadn't pushed me",
+          "ts": "2025-09-15T15:18:00",
+          "reply_to": "grp_9c0d1e2f_s03_t000"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s03_t002",
+          "speaker": "Raj",
+          "speaker_id": "p_ph9d4e5f6",
+          "content": "glad the Karachi work held up. I've got another big commercial contract starting next month. Nothing new for a while. The day job doesn't stop.",
+          "ts": "2025-09-15T15:31:00",
+          "reply_to": "grp_9c0d1e2f_s03_t000"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s03_t003",
+          "speaker": "Luca",
+          "speaker_id": "p_ph9b2c3d4",
+          "content": "the work will be ready when it's ready for all of us. Raj, you know where I am.",
+          "ts": "2025-09-15T15:40:00",
+          "reply_to": "grp_9c0d1e2f_s03_t002"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s03_t004",
+          "speaker": "Diane",
+          "speaker_id": "p_ph9c3d4e5",
+          "content": "What did the guest book actually say 👀",
+          "ts": "2025-09-15T15:44:00",
+          "reply_to": "grp_9c0d1e2f_s03_t003"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s03_t005",
+          "speaker": "Anika",
+          "speaker_id": "p_ph9a1b2c3",
+          "content": "One person wrote 'best sense of risk in the room.' The other wrote 'felt like being watched back.'",
+          "ts": "2025-09-15T15:49:00",
+          "reply_to": "grp_9c0d1e2f_s03_t004"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s03_t006",
+          "speaker": "Diane",
+          "speaker_id": "p_ph9c3d4e5",
+          "content": "Okay I'm printing those and framing them for my ego forever",
+          "ts": "2025-09-15T15:53:00",
+          "reply_to": "grp_9c0d1e2f_s03_t005"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s03_t007",
+          "speaker": "Raj",
+          "speaker_id": "p_ph9d4e5f6",
+          "content": "The new contract is food work. technically good money, spiritually corrosive.",
+          "ts": "2025-09-15T15:58:00",
+          "reply_to": "grp_9c0d1e2f_s03_t006"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s03_t008",
+          "speaker": "Luca",
+          "speaker_id": "p_ph9b2c3d4",
+          "content": "Then let it pay for the quiet months. Doesn't get to define the work.",
+          "ts": "2025-09-15T16:02:00",
+          "reply_to": "grp_9c0d1e2f_s03_t007"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s03_t009",
+          "speaker": "Anika",
+          "speaker_id": "p_ph9a1b2c3",
+          "content": "Bring whatever is unfinished next time. Show-and-tell still applies.",
+          "ts": "2025-09-15T16:07:00",
+          "reply_to": "grp_9c0d1e2f_s03_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_9c0d1e2f_s04",
+      "session_index": 4,
+      "topic": "Diane submits independently; Anika notices",
+      "ts": "2025-09-22",
+      "turns": [
+        {
+          "turn": "grp_9c0d1e2f_s04_t000",
+          "speaker": "Diane",
+          "speaker_id": "p_ph9c3d4e5",
+          "content": "I think this one is it 📷 submitted to the Barbican open call, didn't run it past anyone first, I just knew. shortlisted.",
+          "ts": "2025-09-22T19:04:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_9c0d1e2f_s04_t001",
+          "speaker": "Anika",
+          "speaker_id": "p_ph9a1b2c3",
+          "content": "Which print.",
+          "ts": "2025-09-22T19:11:00",
+          "reply_to": "grp_9c0d1e2f_s04_t000"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s04_t002",
+          "speaker": "Diane",
+          "speaker_id": "p_ph9c3d4e5",
+          "content": "the one from the Hackney set, the bus door reflection. I think this one is it.",
+          "ts": "2025-09-22T19:13:00",
+          "reply_to": "grp_9c0d1e2f_s04_t001"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s04_t003",
+          "speaker": "Anika",
+          "speaker_id": "p_ph9a1b2c3",
+          "content": "Strong. You knew. Good.",
+          "ts": "2025-09-22T19:16:00",
+          "reply_to": "grp_9c0d1e2f_s04_t002"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s04_t004",
+          "speaker": "Luca",
+          "speaker_id": "p_ph9b2c3d4",
+          "content": "Shortlisted is not a small detail, Diane 🙂",
+          "ts": "2025-09-22T19:20:00",
+          "reply_to": "grp_9c0d1e2f_s04_t003"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s04_t005",
+          "speaker": "Raj",
+          "speaker_id": "p_ph9d4e5f6",
+          "content": "That's huge. Independent decision, good outcome.",
+          "ts": "2025-09-22T19:25:00",
+          "reply_to": "grp_9c0d1e2f_s04_t004"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s04_t006",
+          "speaker": "Diane",
+          "speaker_id": "p_ph9c3d4e5",
+          "content": "I nearly sent it to Anika three times and then forced myself not to",
+          "ts": "2025-09-22T19:29:00",
+          "reply_to": "grp_9c0d1e2f_s04_t005"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s04_t007",
+          "speaker": "Anika",
+          "speaker_id": "p_ph9a1b2c3",
+          "content": "Good instinct. Keep practising it.",
+          "ts": "2025-09-22T19:34:00",
+          "reply_to": "grp_9c0d1e2f_s04_t006"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s04_t008",
+          "speaker": "Luca",
+          "speaker_id": "p_ph9b2c3d4",
+          "content": "What size did you submit?",
+          "ts": "2025-09-22T19:38:00",
+          "reply_to": "grp_9c0d1e2f_s04_t007"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s04_t009",
+          "speaker": "Diane",
+          "speaker_id": "p_ph9c3d4e5",
+          "content": "Small enough to feel mean, which I think helped.",
+          "ts": "2025-09-22T19:43:00",
+          "reply_to": "grp_9c0d1e2f_s04_t008"
+        }
+      ]
+    },
+    {
+      "session_id": "grp_9c0d1e2f_s05",
+      "session_index": 5,
+      "topic": "Anika and Diane relationship; collective future",
+      "ts": "2025-09-29",
+      "turns": [
+        {
+          "turn": "grp_9c0d1e2f_s05_t000",
+          "speaker": "Luca",
+          "speaker_id": "p_ph9b2c3d4",
+          "content": "slowly getting somewhere with the Clyde work. Maybe ready for next year's show. Maybe.",
+          "ts": "2025-09-29T17:38:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_9c0d1e2f_s05_t001",
+          "speaker": "Anika",
+          "speaker_id": "p_ph9a1b2c3",
+          "content": "Diane, I've been thinking. You don't need me to review your selections anymore. You knew with the bus door print. Trust that.",
+          "ts": "2025-09-29T17:44:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_9c0d1e2f_s05_t002",
+          "speaker": "Diane",
+          "speaker_id": "p_ph9c3d4e5",
+          "content": "that means more than you know 📷",
+          "ts": "2025-09-29T17:47:00",
+          "reply_to": "grp_9c0d1e2f_s05_t001"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s05_t003",
+          "speaker": "Raj",
+          "speaker_id": "p_ph9d4e5f6",
+          "content": "contract finishes in two months. After that, personal work only for a while. I mean it this time.",
+          "ts": "2025-09-29T18:02:00",
+          "reply_to": ""
+        },
+        {
+          "turn": "grp_9c0d1e2f_s05_t004",
+          "speaker": "Diane",
+          "speaker_id": "p_ph9c3d4e5",
+          "content": "That is terrifying and lovely, thank you",
+          "ts": "2025-09-29T18:06:00",
+          "reply_to": "grp_9c0d1e2f_s05_t003"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s05_t005",
+          "speaker": "Luca",
+          "speaker_id": "p_ph9b2c3d4",
+          "content": "Peer review officially revoked.",
+          "ts": "2025-09-29T18:11:00",
+          "reply_to": "grp_9c0d1e2f_s05_t004"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s05_t006",
+          "speaker": "Anika",
+          "speaker_id": "p_ph9a1b2c3",
+          "content": "Not revoked. Graduated out of.",
+          "ts": "2025-09-29T18:15:00",
+          "reply_to": "grp_9c0d1e2f_s05_t005"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s05_t007",
+          "speaker": "Raj",
+          "speaker_id": "p_ph9d4e5f6",
+          "content": "After this contract I want to do one month with no client language anywhere near me.",
+          "ts": "2025-09-29T18:20:00",
+          "reply_to": "grp_9c0d1e2f_s05_t006"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s05_t008",
+          "speaker": "Luca",
+          "speaker_id": "p_ph9b2c3d4",
+          "content": "Come to the studio and complain in person. Better medium.",
+          "ts": "2025-09-29T18:24:00",
+          "reply_to": "grp_9c0d1e2f_s05_t007"
+        },
+        {
+          "turn": "grp_9c0d1e2f_s05_t009",
+          "speaker": "Diane",
+          "speaker_id": "p_ph9c3d4e5",
+          "content": "Can next year's show just be all of us making the thing we keep postponing",
+          "ts": "2025-09-29T18:29:00",
+          "reply_to": "grp_9c0d1e2f_s05_t008"
+        }
+      ]
+    }
+  ],
+  "qa_pairs": [
+    {
+      "id": "Q3_ph9s1c1",
+      "category": "Q3",
+      "difficulty": "medium",
+      "question": "All four collective members gave their positions on entering the Shoreditch Photo House group show. What was each person's stance and reason?",
+      "answer": "Diane was immediately enthusiastic: she had a whole Peckham set ready and was 'so in' — she wants deadlines and external validation. Luca declined: his Clyde series 'isn't ready' and six weeks won't change that; he won't submit work he's not behind. Raj was tentative: he had been on commercial shoots all month and offered to pull something from his older Karachi archive series if the theme fit — new work was not available. Anika was in favour as the proposer and reviewing others' submissions — she planned to enter and manage the collective's submission.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_9c0d1e2f_s01_t001",
+          "speaker_display_name": "Diane",
+          "message_excerpt": "Yes! I have a whole set from Peckham that fits this perfectly 📷 I'm so in",
+          "relevance": "Diane: in, enthusiastic, work ready"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_9c0d1e2f_s01_t002",
+          "speaker_display_name": "Luca",
+          "message_excerpt": "I'd rather not submit than submit something I'm not behind.",
+          "relevance": "Luca: declining, work not ready, won't rush"
+        },
+        {
+          "session_index": 1,
+          "turn_id": "grp_9c0d1e2f_s01_t003",
+          "speaker_display_name": "Raj",
+          "message_excerpt": "I've been in the studio all month, commercial stuff. I can pull something from the Karachi series if the theme fits.",
+          "relevance": "Raj: tentative, offering archive work because no new personal work is ready"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q4_ph9s1c2",
+      "category": "Q4",
+      "difficulty": "hard",
+      "question": "Both Diane and Anika are enthusiastic about entering group shows. Who enters shows primarily to get external validation, and who enters because she considers exhibition the only meaningful measure of professional worth?",
+      "answer": "Diane enters for external validation and motivation — she wants the deadline and the feedback ('two comments in the guest book' had her 'buzzing'). She is building confidence and uses shows as proof points. Anika enters because she views juried exhibitions as the only meaningful validation of photographic work — she has explicitly stated this and looks down on work that earns approval from commercial or Instagram channels. They are both pro-exhibition, but Diane's motivation is developmental and emotional; Anika's is professional and philosophical.",
+      "answer_format": "multiple_choice",
+      "options": {
+        "A": "Anika",
+        "B": "Diane",
+        "C": "Luca",
+        "D": "Raj"
+      },
+      "correct_option": "B",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_9c0d1e2f_s01_t001",
+          "speaker_display_name": "Diane",
+          "message_excerpt": "Yes! I have a whole set from Peckham that fits this perfectly 📷 I'm so in",
+          "relevance": "Diane's enthusiasm is about having work ready and wanting the experience"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_9c0d1e2f_s03_t001",
+          "speaker_display_name": "Diane",
+          "message_excerpt": "two comments!! I'm still buzzing",
+          "relevance": "Diane's satisfaction is about the direct audience response — validation from real people seeing the work"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q5_ph9s2c1",
+      "category": "Q5",
+      "difficulty": "medium",
+      "question": "What tension in Raj's work habits was he describing, and how does the conversation show that Luca already knew it?",
+      "answer": "Luca responded immediately with 'yes. That's exactly what happens.' — not a generalisation but a direct confirmation. He then gave specific practical advice ('Submit the Karachi for now and give yourself permission to make something new when the studio clears') that only makes sense if he already understood Raj's situation in detail. Raj's persona establishes that he disclosed his commercial pressure to Luca in a direct conversation (a walk in Session 3). Luca's response in Session 2 indicates he already knew — he wasn't learning this for the first time in the chat.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_9c0d1e2f_s02_t004",
+          "speaker_display_name": "Luca",
+          "message_excerpt": "yes. That's exactly what happens. Submit the Karachi for now and give yourself permission to make something new when the studio clears.",
+          "relevance": "Luca's instant recognition and practical advice shows pre-existing knowledge of Raj's conflict — not a response to new information"
+        }
+      ],
+      "temporal_anchors": []
+    },
+    {
+      "id": "Q8_ph9s3c1",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What in the conversations signals that Raj's ability to make personal photographic work was being eroded, and what does the later part of the conversation reveal as the turning point?",
+      "answer": "Raj started by presenting the commercial-personal divide as a manageable parallel track — in Session 1 he would pull archive work for the show while commercial shoots ran. By Session 2, he was asking Luca whether the day job 'starts eating the hours that were supposed to be yours' — indicating the balance was already lost. By Session 3, he acknowledged: 'Nothing new for a while. The day job doesn't stop.' In Session 5, he said the contract finishes in two months and expressed intent to return to personal work — but the same intent appears earlier without follow-through, making this aspirational rather than confirmed.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 1,
+          "turn_id": "grp_9c0d1e2f_s01_t003",
+          "speaker_display_name": "Raj",
+          "message_excerpt": "I can pull something from the Karachi series if the theme fits.",
+          "relevance": "Session 1 baseline: Raj offering archive work but treating it as manageable"
+        },
+        {
+          "session_index": 3,
+          "turn_id": "grp_9c0d1e2f_s03_t002",
+          "speaker_display_name": "Raj",
+          "message_excerpt": "Nothing new for a while. The day job doesn't stop.",
+          "relevance": "Session 3: Raj explicitly acknowledges that personal work has stopped — commercial work now dominates"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "offering archive work as a workaround — commercial-personal still parallel"
+        },
+        {
+          "session_index": 2,
+          "value": "asking Luca whether the day job eats personal time — balance already tipping"
+        },
+        {
+          "session_index": 3,
+          "value": "'Nothing new for a while. The day job doesn't stop' — personal work has effectively stopped"
+        },
+        {
+          "session_index": 5,
+          "value": "'After that — personal work only for a while. I mean it this time' — aspirational, same intent as before"
+        }
+      ]
+    },
+    {
+      "id": "Q8_ph9s4c1",
+      "category": "Q8",
+      "difficulty": "medium",
+      "question": "What drove Diane's shift from seeking Anika's approval on submissions to making independent curatorial decisions, and where in the conversation does that shift first become visible?",
+      "answer": "Diane started by deferring entirely to Anika's selection judgement. In Session 2, Anika told her which photo to submit (the sixth) and Diane accepted it even though she'd wanted the fourth. By Session 4, Diane submitted to the Barbican open call independently — 'didn't run it past anyone first, I just knew' — and got shortlisted. Anika's response was 'Strong. You knew. Good.' — confirming the independence was earned. In Session 5, Anika formally told Diane she no longer needs Anika's review. The arc is from deference to independent curatorial authority.",
+      "answer_format": "long_form",
+      "options": [],
+      "correct_option": "",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_9c0d1e2f_s02_t001",
+          "speaker_display_name": "Diane",
+          "message_excerpt": "okay okay I hear you. I was going to pick the fourth one though.",
+          "relevance": "Session 2: Diane defers to Anika's selection even when she disagreed"
+        },
+        {
+          "session_index": 4,
+          "turn_id": "grp_9c0d1e2f_s04_t000",
+          "speaker_display_name": "Diane",
+          "message_excerpt": "submitted to the Barbican open call, didn't run it past anyone first, I just knew. shortlisted.",
+          "relevance": "Session 4: Diane submits independently and is validated — shift to independent curatorial judgement complete"
+        }
+      ],
+      "temporal_anchors": [
+        {
+          "session_index": 1,
+          "value": "sends Anika work for review before deciding what to enter"
+        },
+        {
+          "session_index": 2,
+          "value": "defers to Anika's selection of the sixth photo over her own preference for the fourth"
+        },
+        {
+          "session_index": 4,
+          "value": "submits independently to Barbican without consulting Anika; shortlisted"
+        },
+        {
+          "session_index": 5,
+          "value": "Anika formally releases her: 'You don't need me to review your selections anymore'"
+        }
+      ]
+    },
+    {
+      "id": "Q7_ph9s5c1",
+      "category": "Q7",
+      "difficulty": "medium",
+      "question": "What does the conversation reveal about the relationship between Anika and Diane in the collective?",
+      "answer": "Anika and Diane began with a classic mentor-mentee dynamic: Anika brought Diane into the collective, selected her work for the group show, and told her which photo to submit in Session 2. Diane deferred, even when she disagreed. By Session 4, Diane had submitted independently and been shortlisted — Anika approved with 'Strong. You knew. Good.' The relationship shifted. In Session 5, Anika explicitly released the dynamic: 'You don't need me to review your selections anymore.' The arc from mentee to peer is complete and Anika acknowledged it without sentimentality.",
+      "answer_format": "short_answer",
+      "options": [],
+      "correct_option": "mentor-mentee",
+      "evidence_anchors": [
+        {
+          "session_index": 2,
+          "turn_id": "grp_9c0d1e2f_s02_t002",
+          "speaker_display_name": "Anika",
+          "message_excerpt": "It's a single submission. The sixth.",
+          "relevance": "Anika exercises full authority over Diane's selection — mentor-mentee at its most directive"
+        },
+        {
+          "session_index": 5,
+          "turn_id": "grp_9c0d1e2f_s05_t001",
+          "speaker_display_name": "Anika",
+          "message_excerpt": "You don't need me to review your selections anymore. You knew with the bus door print. Trust that.",
+          "relevance": "Anika formally ends the mentee relationship — acknowledging Diane as a peer with independent judgement"
+        }
+      ],
+      "temporal_anchors": []
+    }
+  ],
+  "meta": {
+    "source": "SocialMemBench",
+    "source_kind": "real_benchmark",
+    "network_id": "grp_9c0d1e2f",
+    "n_sessions": 5,
+    "n_turns": 50,
+    "n_qa": 6,
+    "v4_correct": 4,
+    "v4_total": 6,
+    "v4_errors": 2,
+    "v4_accuracy": 0.6666666666666666,
+    "heldout_heldout_excluded": true
+  }
+}
