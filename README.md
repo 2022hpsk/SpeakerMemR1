@@ -14,7 +14,13 @@ This repository contains the inference package, benchmark runners, writer-traini
 
 ## Paper
 
-Coming soon on arXiv. Author information and the paper citation will be available with the release.
+Coming soon on arXiv.
+
+**Haobo Zheng, Tan Tang<sup>†</sup>, Yan Chen, Weijie Wang, Yingcai Wu**<br>
+State Key Lab of CAD&CG, Zhejiang University<br>
+<sup>†</sup> Corresponding author.
+
+Project page: https://2022hpsk.github.io/SpeakerMemR1/
 
 ## Why multi-party memory needs structure
 
@@ -219,15 +225,15 @@ Use `code/compute_metrics.py` to recompute binary accuracy, exact match, token-F
 
 Original SpeakerMem-R1 code is released under the [MIT License](LICENSE). Third-party code and benchmark-derived materials retain their upstream terms; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and [DATA_SOURCES.md](DATA_SOURCES.md) before downloading or redistributing them.
 
-The final citation will be added with the paper release. Until then, please cite the project as:
+Until the arXiv record is available, please cite the project as:
 
 ```bibtex
 @misc{speakermemr1,
   title        = {SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue},
-  author       = {SpeakerMem-R1 authors},
+  author       = {Zheng, Haobo and Tang, Tan and Chen, Yan and Wang, Weijie and Wu, Yingcai},
   year         = {2026},
-  howpublished = {Project repository},
-  url          = {https://github.com/2022hpsk/SpeakerMemR1}
+  howpublished = {Project page},
+  url          = {https://2022hpsk.github.io/SpeakerMemR1/}
 }
 ```
 
