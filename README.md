@@ -12,15 +12,6 @@ SpeakerMem-R1 is a speaker-centered memory system for long, multi-party conversa
 
 This repository contains the inference package, benchmark runners, writer-training recipes, evaluation outputs, and the static project webpage.
 
-## Paper
-
-[Read the paper on arXiv (2609.26780)](https://arxiv.org/abs/2609.26780).
-
-**Haobo Zheng, Tan Tang<sup>†</sup>, Yan Chen, Weijie Wang, Yingcai Wu**<br>
-State Key Lab of CAD&CG, Zhejiang University<br>
-<sup>†</sup> Corresponding author.
-
-Project page: https://2022hpsk.github.io/SpeakerMemR1/
 
 ## Why multi-party memory needs structure
 
