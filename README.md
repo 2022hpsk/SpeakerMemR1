@@ -3,7 +3,7 @@
 ### Speaker-Centered Dual-Track Memory for Multi-Party Dialogue
 
 <p align="center">
-  <a href="#paper"><img src="https://img.shields.io/badge/Paper-Coming%20soon-B31B1B?style=for-the-badge&amp;logo=arxiv&amp;logoColor=white" alt="Paper — Coming soon"></a>
+  <a href="https://arxiv.org/abs/2609.26780"><img src="https://img.shields.io/badge/arXiv-2609.26780-B31B1B?style=for-the-badge&amp;logo=arxiv&amp;logoColor=white" alt="arXiv:2609.26780"></a>
   <a href="https://2022hpsk.github.io/SpeakerMemR1/"><img src="https://img.shields.io/badge/Website-087F83?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Website"></a>
   <a href="https://github.com/2022hpsk/SpeakerMemR1"><img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Code"></a>
 </p>
@@ -14,7 +14,7 @@ This repository contains the inference package, benchmark runners, writer-traini
 
 ## Paper
 
-Coming soon on arXiv.
+[Read the paper on arXiv (2609.26780)](https://arxiv.org/abs/2609.26780).
 
 **Haobo Zheng, Tan Tang<sup>†</sup>, Yan Chen, Weijie Wang, Yingcai Wu**<br>
 State Key Lab of CAD&CG, Zhejiang University<br>
@@ -225,15 +225,14 @@ Use `code/compute_metrics.py` to recompute binary accuracy, exact match, token-F
 
 Original SpeakerMem-R1 code is released under the [MIT License](LICENSE). Third-party code and benchmark-derived materials retain their upstream terms; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and [DATA_SOURCES.md](DATA_SOURCES.md) before downloading or redistributing them.
 
-Until the arXiv record is available, please cite the project as:
+Please cite our paper as:
 
 ```bibtex
-@misc{speakermemr1,
-  title        = {SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue},
-  author       = {Zheng, Haobo and Tang, Tan and Chen, Yan and Wang, Weijie and Wu, Yingcai},
-  year         = {2026},
-  howpublished = {Project page},
-  url          = {https://2022hpsk.github.io/SpeakerMemR1/}
+@article{zheng2026speakermemr1,
+  title={SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue},
+  author={Zheng, Haobo and Tang, Tan and Chen, Yan and Wang, Weijie and Wu, Yingcai},
+  journal={arXiv preprint arXiv:2609.26780},
+  year={2026}
 }
 ```
 
