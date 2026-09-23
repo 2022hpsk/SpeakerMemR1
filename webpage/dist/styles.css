@@ -102,6 +102,8 @@ h1, h2, h3, p { margin-top: 0; } h1, h2 { letter-spacing: -.068em; font-weight: 
 @media (max-width: 650px) { .pipeline-step { grid-template-columns: 58px minmax(0,1fr); } }
 
 
+.ablation-figure { margin: 0 20px 20px; }
+
 /* Research editorial refinement. Keep figures and data visually primary. */
 :root { --bg:#fafbfc; --ink:#172b39; --ink-soft:#394b58; --muted:#657680; --muted-strong:#4d606c; --line:#e0e7eb; --line-strong:#c9d5dc; --teal:#087f83; --shadow:0 20px 65px rgba(32,57,75,.07); --shadow-soft:none; --radius:16px; }
 [hidden] { display:none !important; }
