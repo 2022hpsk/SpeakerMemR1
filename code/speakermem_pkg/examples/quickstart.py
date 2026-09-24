@@ -1,12 +1,15 @@
-"""Minimal example: build memory, retrieve evidence, and answer questions.
+"""Minimal example: store a conversation and retrieve evidence without an LLM.
 
-The first two steps run without an LLM. Derived-memory writing and answer generation require DEEPSEEK_API_KEY or OPENAI_API_KEY.
-Run with: python examples/quickstart.py
+The local embedding model may be downloaded on first use.
+Run from the repository root: python code/speakermem_pkg/examples/quickstart.py
 """
-from speakermem import SpeakerMemory, SpeakerMemConfig, WriterConfig
+from speakermem import SpeakerMemory, SpeakerMemConfig, WriterConfig, RetrieverConfig
 
 
-cfg = SpeakerMemConfig(writer=WriterConfig(enabled=False))
+cfg = SpeakerMemConfig(
+    writer=WriterConfig(enabled=False),
+    retriever=RetrieverConfig(llm_select=False, ask_enabled=False, s2_enabled=False),
+)
 mem = SpeakerMemory(config=cfg)
 
 msgs = [

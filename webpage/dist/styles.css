@@ -229,6 +229,10 @@ h2, .section-heading h2 { font-size:clamp(32px,4.1vw,49px); font-weight:620; lin
 .resource-badges { flex-wrap:wrap; gap:12px; }
 .resource-badges .button { padding:13px 22px; min-height:48px; gap:10px; font-size:14px; font-weight:600; }
 .resource-badges small { font-size:10px; font-weight:400; color:var(--muted); }
+.hero-actions.hero-actions-secondary { margin-top:-12px; }
+.button-award { color:#805900; border:1px solid #d4b86a; background:#fff8e7; }
+.button-award:hover { color:#654500; border-color:#a87600; background:#fff1cc; }
+#bibtex-panel { scroll-margin-top:90px; }
 .link-icon { display:inline-block; flex-shrink:0; width:19px; height:19px; vertical-align:middle; }
 .header-link { display:inline-flex; gap:9px; align-items:center; }
 .header-link .link-icon { width:16px; height:16px; }

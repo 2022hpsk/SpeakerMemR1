@@ -321,6 +321,19 @@ document.querySelectorAll('.image-trigger').forEach((trigger) => trigger.addEven
 document.querySelector('#modal-close').addEventListener('click', () => modal.close());
 modal.addEventListener('click', (event) => { if (event.target === modal) modal.close(); });
 document.querySelector('#bibtex-button')?.addEventListener('click', () => { const panel = document.querySelector('#bibtex-panel'); panel.hidden = !panel.hidden; });
+function revealCitation() {
+  const panel = document.querySelector('#bibtex-panel');
+  if (!panel) return;
+  panel.hidden = false;
+  panel.scrollIntoView({ block: 'start' });
+}
+document.querySelectorAll('a[href="#bibtex-panel"]').forEach((link) => {
+  link.addEventListener('click', revealCitation);
+});
+window.addEventListener('hashchange', () => {
+  if (window.location.hash === '#bibtex-panel') revealCitation();
+});
+if (window.location.hash === '#bibtex-panel') revealCitation();
 document.querySelector('#copy-bibtex')?.addEventListener('click', async () => { const text = document.querySelector('#bibtex-panel pre').textContent; try { await navigator.clipboard?.writeText(text); } catch (_) {} const button = document.querySelector('#copy-bibtex'); button.textContent = 'Copied'; setTimeout(() => { button.textContent = 'Copy BibTeX'; }, 1400); });
 
 // Arrow-key navigation for the result and example tab lists.

@@ -1,17 +1,36 @@
-# SpeakerMem-R1
+<h1 align="center">SpeakerMem-R1</h1>
 
-### Speaker-Centered Dual-Track Memory for Multi-Party Dialogue
+<h3 align="center">Speaker-Centered Dual-Track Memory for Multi-Party Dialogue</h3>
 
 <p align="center">
-  <a href="https://arxiv.org/abs/2609.26780"><img src="https://img.shields.io/badge/arXiv-2609.26780-B31B1B?style=for-the-badge&amp;logo=arxiv&amp;logoColor=white" alt="arXiv:2609.26780"></a>
-  <a href="https://2022hpsk.github.io/SpeakerMemR1/"><img src="https://img.shields.io/badge/Website-087F83?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Website"></a>
-  <a href="https://github.com/2022hpsk/SpeakerMemR1"><img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Code"></a>
+  <a href="https://huggingface.co/papers/2609.26780"><img src="assets/hf-daily-paper-1.svg" alt="Hugging Face Daily Papers: #1 Paper of the Day" width="182" height="40"></a>
 </p>
 
-SpeakerMem-R1 is a speaker-centered memory system for long, multi-party conversations. It keeps the conversation itself available as a verbatim evidence track and builds a linked structured track on top of it. The structured track records who a memory is about (`owner`), who supplied it (`source`), which scope it belongs to (person or group), and how later states update earlier ones. Retrieval combines both tracks before answer generation.
+<p align="center">
+  <a href="https://arxiv.org/abs/2609.26780"><img src="https://img.shields.io/badge/arXiv-2609.26780-B84646?style=flat&amp;logo=arxiv&amp;logoColor=white&amp;labelColor=353A45" alt="arXiv:2609.26780" height="26"></a>
+  &nbsp;
+  <a href="https://2022hpsk.github.io/SpeakerMemR1/"><img src="https://img.shields.io/badge/Project_Page-4776B4?style=flat&amp;logo=googlechrome&amp;logoColor=white" alt="Project Page" height="26"></a>
+  &nbsp;
+  <a href="https://github.com/2022hpsk/SpeakerMemR1"><img src="https://img.shields.io/badge/Code-353A45?style=flat&amp;logo=github&amp;logoColor=white" alt="Code" height="26"></a>
+  <br>
+  <a href="#quick-start"><img src="https://img.shields.io/badge/%F0%9F%9A%80_Quick_Start-C76B35?style=flat" alt="🚀 Quick Start" height="26"></a>
+  &nbsp;
+  <a href="#citation"><img src="https://img.shields.io/badge/Cite-BibTeX-8064A2?style=flat&amp;logo=readthedocs&amp;logoColor=white&amp;labelColor=353A45" alt="Cite: BibTeX" height="26"></a>
+  &nbsp;
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-A87600?style=flat&amp;labelColor=353A45" alt="License: MIT" height="26"></a>
+</p>
+
+Excited to share our work on **SpeakerMem-R1**! Recent benchmarks reveal a surprising gap: **general-purpose memory systems struggle with multi-party conversations and can even underperform simple BM25 retrieval in some settings.** These limitations highlight two core challenges: **message attribution and state reconstruction** in long-term multi-party dialogue.
+
+We introduce **SpeakerMem-R1**, a speaker-centered dual-track memory framework designed to address these challenges.
+
+🧠 **Two complementary memory tracks**: SpeakerMem-R1 keeps speaker-labeled messages verbatim while organizing derived states into person- and group-level memories. At query time, it combines both to recover evidence across people, events, and time.
+
+📝 **Learning to write better memories**: SpeakerLevenshtein rewards and speaker-conditioned RL improve a Qwen2.5-3B Writer from **57.38% to 68.20%** downstream QA accuracy in a controlled evaluation, with retrieval and answering frozen.
+
+📊 **Stronger results across three multi-party benchmarks**: SpeakerMem-R1 improves accuracy over the strongest evaluated memory/retrieval baselines by **3.3, 12.4, and 9.4 percentage points** on GroupMemBench, SocialMemBench, and EverMemBench, respectively. In our comparison with **EverMind-AI’s publicly reported EverMemBench leaderboard**, it achieves **62.33% accuracy**, leading the compared systems, including EverOS (**60.08%**) and RippleMem (**54.75%**).
 
 This repository contains the inference package, benchmark runners, writer-training recipes, evaluation outputs, and the static project webpage.
-
 
 ## Why multi-party memory needs structure
 
@@ -60,7 +79,11 @@ SpeakerMemR1/
 
 The result files are organized by `main`, `baselines`, `ablations`, `training`, `locomo`, and `topk_sensitivity_full_llm`. Question-level JSONL files can contain benchmark-derived questions, answers, and retrieved context; they are distributed as experiment outputs and do not replace the source benchmark releases.
 
-## Installation
+<a id="quick-start"></a>
+
+## Quick Start
+
+### Installation
 
 The commands below assume the shell is at the repository root.
 
@@ -76,6 +99,44 @@ python -m pip install -e "code/speakermem_pkg[dev]"
 Optional vector backends are available with `-e "code/speakermem_pkg[faiss]"` or `-e "code/speakermem_pkg[chroma]"`. A CPU environment is sufficient for the package smoke tests. Full benchmark runs additionally require the model services used by the selected configuration and their credentials.
 
 Create credentials outside version control. `code/.env.example` lists the variable names consumed by the LLM clients. Do not commit `.env`, API keys, model caches, checkpoints, or local memory stores.
+
+### Store a conversation and retrieve evidence
+
+This minimal example follows [`quickstart.py`](code/speakermem_pkg/examples/quickstart.py). It stores a four-person conversation and retrieves speaker-labeled evidence for two questions. It runs locally without an API key; the `all-MiniLM-L6-v2` embedding model may be downloaded on first use.
+
+```python
+from speakermem import SpeakerMemory, SpeakerMemConfig, WriterConfig, RetrieverConfig
+
+# Use local verbatim retrieval for this first example.
+cfg = SpeakerMemConfig(
+    writer=WriterConfig(enabled=False),
+    retriever=RetrieverConfig(llm_select=False, ask_enabled=False, s2_enabled=False),
+)
+mem = SpeakerMemory(config=cfg)
+
+msgs = [
+    {"speaker": "Alice", "content": "I will lead model training.", "session": "s1"},
+    {"speaker": "Bob", "content": "I will handle data cleaning.", "session": "s1"},
+    {"speaker": "Carol", "content": "I will monitor evaluation and metrics.", "session": "s1"},
+    {"speaker": "Dave", "content": "I will handle the frontend and demo.", "session": "s1"},
+]
+mem.ingest(msgs)
+mem.flush()
+print("stats:", mem.stats())
+
+for question in ["Who handles evaluation?", "What does Bob handle?"]:
+    print(f"\nQ: {question}")
+    for entry in mem.retrieve(question, k=3):
+        print("   ", entry.render())
+```
+
+After installation, run the included example from the repository root:
+
+```bash
+python code/speakermem_pkg/examples/quickstart.py
+```
+
+The output includes memory statistics and retrieved entries with their speaker attribution. This example returns evidence rather than generating an answer, and keeps the derived-memory Writer and System 2 disabled. For the full dual-track pipeline with model-backed writing and answering, configure the model endpoint and credentials in [`code/.env.example`](code/.env.example), then follow [Run SpeakerMem evaluation](#run-speakermem-evaluation).
 
 ## Offline checks
 
@@ -215,6 +276,8 @@ Use `code/compute_metrics.py` to recompute binary accuracy, exact match, token-F
 ## License and citation
 
 Original SpeakerMem-R1 code is released under the [MIT License](LICENSE). Third-party code and benchmark-derived materials retain their upstream terms; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and [DATA_SOURCES.md](DATA_SOURCES.md) before downloading or redistributing them.
+
+<a id="citation"></a>
 
 Please cite our paper as:
 
